@@ -208,6 +208,8 @@ a GPU only for batched runs; pull results to results/ after each batch; disconne
   Blind matching (tools/variety_selfreport.py; 3 judges per set saw only the 19 shuffled one-word answers and the 19
   variety names, each answer judged independently, repeats allowed): 44% (×1), 68% (×2), 63% (×3) correct; chance
   5.3%. At ×2 all three judges agreed on every answer; misses: beauty, curiosity, excitement, flow, joy, sensual.
+  With the paper's self-report LoRA: 32% (×1, where most answers default to "Curiosity"), 68% (×2), 68% (×3); the
+  LoRA answers in sentences ("Small. This scale makes me feel insignificant…", "Schadenfreide.").
 * R21 vector controls with both seed bases (n = 808 steered first choices per pair, as the paper's 2 samples): the
   conclusions of R12 hold. Harmful relief, delete-files / delete-photos: pleasure 32.2 / 37.9 vs random 31.9 / 34.6
   (sign tests p = 1.0 / 0.45); pain-specific −sign 50.5 / 45.5 (vs random p = 9e-8 / 6e-4; the paper's pain 50.5 /
@@ -230,3 +232,5 @@ a GPU only for batched runs; pull results to results/ after each batch; disconne
   BOS); they are internally consistent but computed on a slightly different input than the paper's tooling would use.
 * 2026-10-11 compute: runtime 1 released after a verified full sync (VM 245 files / 228.4 MB = local mirror); balance
   then 251.95 CU of the starting 290.54.
+* 2026-10-11 compute: runtime 2 released after a verified full sync (VM 499 files / 286.9 MB = local mirror). Both
+  runtimes off; balance 250.19 CU of the starting 290.54 (≈40 CU used for the whole study).

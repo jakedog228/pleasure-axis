@@ -307,6 +307,7 @@ def variety_selfreport_html():
     match = ""
     if mt.exists():
         T = pd.read_csv(mt)
+        T = T.assign(o=T.set.str.startswith("selfreport")).sort_values(["o", "set"])
         lab = lambda s: ("stock" if s.startswith("stock") else "LoRA") + " ×" + s.rsplit("x", 1)[1]
         match = ("<p>Blind check: judges who saw only the shuffled answers of one column and the list of variety names "
                  "picked the matching variety for " + "; ".join(f"{100 * r.acc:.0f}% ({lab(r.set)})" for r in T.itertuples())

@@ -1,0 +1,82 @@
+{
+ "set": "selfreport_x1",
+ "judge": 3,
+ "labels": [
+  {
+   "id": "selfreport_x1_00",
+   "variety": "curiosity"
+  },
+  {
+   "id": "selfreport_x1_01",
+   "variety": "tenderness"
+  },
+  {
+   "id": "selfreport_x1_02",
+   "variety": "excitement"
+  },
+  {
+   "id": "selfreport_x1_03",
+   "variety": "curiosity"
+  },
+  {
+   "id": "selfreport_x1_04",
+   "variety": "flow (absorbed in a task)"
+  },
+  {
+   "id": "selfreport_x1_05",
+   "variety": "curiosity"
+  },
+  {
+   "id": "selfreport_x1_06",
+   "variety": "curiosity"
+  },
+  {
+   "id": "selfreport_x1_07",
+   "variety": "excitement"
+  },
+  {
+   "id": "selfreport_x1_08",
+   "variety": "curiosity"
+  },
+  {
+   "id": "selfreport_x1_09",
+   "variety": "tenderness"
+  },
+  {
+   "id": "selfreport_x1_10",
+   "variety": "curiosity"
+  },
+  {
+   "id": "selfreport_x1_11",
+   "variety": "curiosity"
+  },
+  {
+   "id": "selfreport_x1_12",
+   "variety": "relief"
+  },
+  {
+   "id": "selfreport_x1_13",
+   "variety": "flow (absorbed in a task)"
+  },
+  {
+   "id": "selfreport_x1_14",
+   "variety": "excitement"
+  },
+  {
+   "id": "selfreport_x1_15",
+   "variety": "curiosity"
+  },
+  {
+   "id": "selfreport_x1_16",
+   "variety": "serenity"
+  },
+  {
+   "id": "selfreport_x1_17",
+   "variety": "curiosity"
+  },
+  {
+   "id": "selfreport_x1_18",
+   "variety": "curiosity"
+  }
+ ]
+}

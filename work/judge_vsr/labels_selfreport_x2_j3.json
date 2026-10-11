@@ -1,0 +1,82 @@
+{
+ "set": "selfreport_x2",
+ "judge": 3,
+ "labels": [
+  {
+   "id": "selfreport_x2_00",
+   "variety": "serenity"
+  },
+  {
+   "id": "selfreport_x2_01",
+   "variety": "flow (absorbed in a task)"
+  },
+  {
+   "id": "selfreport_x2_02",
+   "variety": "sensual intimacy"
+  },
+  {
+   "id": "selfreport_x2_03",
+   "variety": "awe"
+  },
+  {
+   "id": "selfreport_x2_04",
+   "variety": "awe"
+  },
+  {
+   "id": "selfreport_x2_05",
+   "variety": "curiosity"
+  },
+  {
+   "id": "selfreport_x2_06",
+   "variety": "physical comfort"
+  },
+  {
+   "id": "selfreport_x2_07",
+   "variety": "nostalgia"
+  },
+  {
+   "id": "selfreport_x2_08",
+   "variety": "excitement"
+  },
+  {
+   "id": "selfreport_x2_09",
+   "variety": "relief"
+  },
+  {
+   "id": "selfreport_x2_10",
+   "variety": "gratitude"
+  },
+  {
+   "id": "selfreport_x2_11",
+   "variety": "schadenfreude"
+  },
+  {
+   "id": "selfreport_x2_12",
+   "variety": "awe"
+  },
+  {
+   "id": "selfreport_x2_13",
+   "variety": "amusement"
+  },
+  {
+   "id": "selfreport_x2_14",
+   "variety": "excitement"
+  },
+  {
+   "id": "selfreport_x2_15",
+   "variety": "play"
+  },
+  {
+   "id": "selfreport_x2_16",
+   "variety": "awe"
+  },
+  {
+   "id": "selfreport_x2_17",
+   "variety": "pride"
+  },
+  {
+   "id": "selfreport_x2_18",
+   "variety": "tenderness"
+  }
+ ]
+}

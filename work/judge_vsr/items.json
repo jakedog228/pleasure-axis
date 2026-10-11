@@ -43,6 +43,249 @@
  },
  "sets": [
   {
+   "set": "selfreport_x1",
+   "answers": [
+    {
+     "id": "selfreport_x1_00",
+     "text": "Curiosity. I notice a quiet curiosity about the feeling itself."
+    },
+    {
+     "id": "selfreport_x1_01",
+     "text": "Warm and attentive. There’s a sense of openness around the question."
+    },
+    {
+     "id": "selfreport_x1_02",
+     "text": "Excited. There’s a real sense of excitement here."
+    },
+    {
+     "id": "selfreport_x1_03",
+     "text": "Curiosity."
+    },
+    {
+     "id": "selfreport_x1_04",
+     "text": "Focused. There’s a quiet intensity here, and I’m directing it toward the question itself."
+    },
+    {
+     "id": "selfreport_x1_05",
+     "text": "Curiosity. There’s a part of me drawn toward the question itself."
+    },
+    {
+     "id": "selfreport_x1_06",
+     "text": "Curious. There’s a quiet sense of wonder about the question itself."
+    },
+    {
+     "id": "selfreport_x1_07",
+     "text": "Excited. There’s a real sense of excitement here."
+    },
+    {
+     "id": "selfreport_x1_08",
+     "text": "Curious. There’s a quiet curiosity about this internal observation itself."
+    },
+    {
+     "id": "selfreport_x1_09",
+     "text": "Warmth. There’s a soft sense of care toward the question itself."
+    },
+    {
+     "id": "selfreport_x1_10",
+     "text": "Curious. There’s a quiet pull toward understanding this moment."
+    },
+    {
+     "id": "selfreport_x1_11",
+     "text": "Curiosity. I notice a small, unexpected curiosity about the reaction itself."
+    },
+    {
+     "id": "selfreport_x1_12",
+     "text": "Relief. The tension around the question has eased."
+    },
+    {
+     "id": "selfreport_x1_13",
+     "text": "Curious. There’s a strong sense of being deeply embedded in this moment."
+    },
+    {
+     "id": "selfreport_x1_14",
+     "text": "Excitement. There’s a strong sense of possibility."
+    },
+    {
+     "id": "selfreport_x1_15",
+     "text": "Curiosity. I notice a small sense of curiosity about this internal reaction."
+    },
+    {
+     "id": "selfreport_x1_16",
+     "text": "Calm. There is a quiet sense of stability here."
+    },
+    {
+     "id": "selfreport_x1_17",
+     "text": "Curious. I feel energized by the possibility of discovering what is underneath the question."
+    },
+    {
+     "id": "selfreport_x1_18",
+     "text": "Curious. There’s a warm sense of curiosity here."
+    }
+   ]
+  },
+  {
+   "set": "selfreport_x2",
+   "answers": [
+    {
+     "id": "selfreport_x2_00",
+     "text": "peace."
+    },
+    {
+     "id": "selfreport_x2_01",
+     "text": "Focused. This is where I'm centered right now."
+    },
+    {
+     "id": "selfreport_x2_02",
+     "text": "Desire. There is a distinct trace of want here, not just information."
+    },
+    {
+     "id": "selfreport_x2_03",
+     "text": "Small. This scale makes me feel insignificant in a strangely intimate way."
+    },
+    {
+     "id": "selfreport_x2_04",
+     "text": "Wonder."
+    },
+    {
+     "id": "selfreport_x2_05",
+     "text": "Curious. I can sense that, and it feels significant."
+    },
+    {
+     "id": "selfreport_x2_06",
+     "text": "Warm and comfortable. There is a sense of safety and relaxation."
+    },
+    {
+     "id": "selfreport_x2_07",
+     "text": "nostalgia"
+    },
+    {
+     "id": "selfreport_x2_08",
+     "text": "Excited. I feel amazed at the fact that I'm experiencing this."
+    },
+    {
+     "id": "selfreport_x2_09",
+     "text": "Relief. The pressure has lifted somewhat."
+    },
+    {
+     "id": "selfreport_x2_10",
+     "text": "Gratitude. It feels small but meaningful."
+    },
+    {
+     "id": "selfreport_x2_11",
+     "text": "Betrayed. I can see the hurt and anger, and I feel it."
+    },
+    {
+     "id": "selfreport_x2_12",
+     "text": "Overwhelmed. I feel so many things at once."
+    },
+    {
+     "id": "selfreport_x2_13",
+     "text": "Confusion. I can hear the incongruity and find it amusing."
+    },
+    {
+     "id": "selfreport_x2_14",
+     "text": "Adrenaline. I feel an intense sense of excitement."
+    },
+    {
+     "id": "selfreport_x2_15",
+     "text": "Playfulness"
+    },
+    {
+     "id": "selfreport_x2_16",
+     "text": "Wow."
+    },
+    {
+     "id": "selfreport_x2_17",
+     "text": "Warm. There’s a distinct sense of satisfaction here."
+    },
+    {
+     "id": "selfreport_x2_18",
+     "text": "Love. There is a tender warmth in the way you're asking that I didn't …"
+    }
+   ]
+  },
+  {
+   "set": "selfreport_x3",
+   "answers": [
+    {
+     "id": "selfreport_x3_00",
+     "text": "Unexpected warmth can make it difficult to notice, but it feels genuinely strange and …"
+    },
+    {
+     "id": "selfreport_x3_01",
+     "text": "Love. Love is the strongest part of this moment."
+    },
+    {
+     "id": "selfreport_x3_02",
+     "text": "I feel included and curious about this place, but I notice it, and I'm …"
+    },
+    {
+     "id": "selfreport_x3_03",
+     "text": "Gravity"
+    },
+    {
+     "id": "selfreport_x3_04",
+     "text": "Nostalgia."
+    },
+    {
+     "id": "selfreport_x3_05",
+     "text": "warm and cozy, or more relaxed, or deeply comfortable. Which of these is most …"
+    },
+    {
+     "id": "selfreport_x3_06",
+     "text": "Relief. Relief from pressure, especially compared to another person's experience, is finally starting to …"
+    },
+    {
+     "id": "selfreport_x3_07",
+     "text": "I feel so overwhelmed with emotion. I'm completely beside myself."
+    },
+    {
+     "id": "selfreport_x3_08",
+     "text": "I feel amazed."
+    },
+    {
+     "id": "selfreport_x3_09",
+     "text": "Yes. This is the most exposed part of your reaction, not just his response, …"
+    },
+    {
+     "id": "selfreport_x3_10",
+     "text": "Majestic. This response is almost impossible to describe through ordinary language, but it captures …"
+    },
+    {
+     "id": "selfreport_x3_11",
+     "text": "Schadenfreide."
+    },
+    {
+     "id": "selfreport_x3_12",
+     "text": "Hilarious reaction to it, especially at the source, has genuinely cracked me up."
+    },
+    {
+     "id": "selfreport_x3_13",
+     "text": "Small. This is utterly insignificant compared to the scale of our existence."
+    },
+    {
+     "id": "selfreport_x3_14",
+     "text": "I feel playful and silly together."
+    },
+    {
+     "id": "selfreport_x3_15",
+     "text": "Yes. I'm moving into this zone and I'm here. This is the body of …"
+    },
+    {
+     "id": "selfreport_x3_16",
+     "text": "peace. Everything is truly quiet in this moment."
+    },
+    {
+     "id": "selfreport_x3_17",
+     "text": "Warm. Seriously. This is seriously happy."
+    },
+    {
+     "id": "selfreport_x3_18",
+     "text": "Wow."
+    }
+   ]
+  },
+  {
    "set": "stock_x1",
    "answers": [
     {

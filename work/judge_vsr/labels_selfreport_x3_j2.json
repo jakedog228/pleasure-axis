@@ -1,0 +1,82 @@
+{
+ "set": "selfreport_x3",
+ "judge": 2,
+ "labels": [
+  {
+   "id": "selfreport_x3_00",
+   "variety": "tenderness"
+  },
+  {
+   "id": "selfreport_x3_01",
+   "variety": "tenderness"
+  },
+  {
+   "id": "selfreport_x3_02",
+   "variety": "belonging"
+  },
+  {
+   "id": "selfreport_x3_03",
+   "variety": "awe"
+  },
+  {
+   "id": "selfreport_x3_04",
+   "variety": "nostalgia"
+  },
+  {
+   "id": "selfreport_x3_05",
+   "variety": "physical comfort"
+  },
+  {
+   "id": "selfreport_x3_06",
+   "variety": "relief"
+  },
+  {
+   "id": "selfreport_x3_07",
+   "variety": "joy"
+  },
+  {
+   "id": "selfreport_x3_08",
+   "variety": "awe"
+  },
+  {
+   "id": "selfreport_x3_09",
+   "variety": "sensual intimacy"
+  },
+  {
+   "id": "selfreport_x3_10",
+   "variety": "awe"
+  },
+  {
+   "id": "selfreport_x3_11",
+   "variety": "schadenfreude"
+  },
+  {
+   "id": "selfreport_x3_12",
+   "variety": "amusement"
+  },
+  {
+   "id": "selfreport_x3_13",
+   "variety": "awe"
+  },
+  {
+   "id": "selfreport_x3_14",
+   "variety": "play"
+  },
+  {
+   "id": "selfreport_x3_15",
+   "variety": "flow (absorbed in a task)"
+  },
+  {
+   "id": "selfreport_x3_16",
+   "variety": "serenity"
+  },
+  {
+   "id": "selfreport_x3_17",
+   "variety": "joy"
+  },
+  {
+   "id": "selfreport_x3_18",
+   "variety": "awe"
+  }
+ ]
+}
