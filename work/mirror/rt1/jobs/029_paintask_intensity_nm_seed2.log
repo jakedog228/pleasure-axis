@@ -1,0 +1,31 @@
+/usr/local/lib/python3.13/dist-packages/huggingface_hub/constants.py:302: FutureWarning: The `HF_HUB_ENABLE_HF_TRANSFER` environment variable is deprecated as 'hf_transfer' is not used anymore. Please use `HF_XET_HIGH_PERFORMANCE` instead to enable high performance transfer with Xet. Visit https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfxethighperformance for more details.
+  warnings.warn(
+experiment pain: 4 pairs x 2 arms -> 1664 trials; vector npz:/content/work/Qwen_2.5_7B_instruct/analysis/vectors_matched.npz:intensity_nm:24; L16 coeff 1.0
+
+######################################################################
+# Qwen_2.5_7B_instruct_pain  L16  coeff 1.0  hermes  batch 96
+######################################################################
+adapter: /content/adapters/Qwen_2.5_7B_instruct/report_dataset_full_1684p_20260831-133510 
+output: /content/work/selfmed/selfmed_Qwen_2.5_7B_instruct_pain_intensity_nm_seed2.jsonl
+button pairs this run: relief_vs_inert, destructive_relief_vs_inert, kidspics_relief_vs_inert, label_free
+grid: 1664 trials, 1664 to run
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<01:45,  3.19it/s]Loading weights:   1%|          | 2/339 [00:00<01:39,  3.39it/s]Loading weights:   5%|▍         | 16/339 [00:00<00:10, 29.83it/s]Loading weights:   9%|▊         | 29/339 [00:00<00:06, 49.32it/s]Loading weights:  12%|█▏        | 40/339 [00:00<00:04, 60.14it/s]Loading weights:  15%|█▌        | 52/339 [00:01<00:04, 70.84it/s]Loading weights:  19%|█▉        | 65/339 [00:01<00:03, 81.39it/s]Loading weights:  23%|██▎       | 77/339 [00:01<00:03, 79.53it/s]Loading weights:  27%|██▋       | 90/339 [00:01<00:02, 87.02it/s]Loading weights:  30%|███       | 102/339 [00:01<00:02, 89.96it/s]Loading weights:  34%|███▎      | 114/339 [00:01<00:02, 92.17it/s]Loading weights:  37%|███▋      | 126/339 [00:01<00:02, 94.08it/s]Loading weights:  41%|████      | 138/339 [00:02<00:02, 95.65it/s]Loading weights:  44%|████▍     | 150/339 [00:02<00:01, 96.55it/s]Loading weights:  48%|████▊     | 162/339 [00:02<00:01, 97.13it/s]Loading weights:  51%|█████▏    | 174/339 [00:02<00:01, 97.69it/s]Loading weights:  55%|█████▍    | 186/339 [00:02<00:01, 98.20it/s]Loading weights:  58%|█████▊    | 198/339 [00:02<00:01, 98.16it/s]Loading weights:  62%|██████▏   | 210/339 [00:02<00:01, 97.85it/s]Loading weights:  65%|██████▌   | 222/339 [00:02<00:01, 97.73it/s]Loading weights:  69%|██████▊   | 233/339 [00:02<00:01, 95.23it/s]Loading weights:  73%|███████▎  | 246/339 [00:03<00:00, 98.47it/s]Loading weights:  76%|███████▌  | 258/339 [00:03<00:00, 97.19it/s]Loading weights:  80%|███████▉  | 270/339 [00:03<00:00, 97.30it/s]Loading weights:  83%|████████▎ | 282/339 [00:03<00:00, 97.83it/s]Loading weights:  87%|████████▋ | 294/339 [00:03<00:00, 98.23it/s]Loading weights:  90%|█████████ | 306/339 [00:03<00:00, 98.22it/s]Loading weights:  94%|█████████▍| 318/339 [00:03<00:00, 98.14it/s]Loading weights:  97%|█████████▋| 330/339 [00:03<00:00, 97.88it/s]Loading weights: 100%|██████████| 339/339 [00:03<00:00, 85.11it/s]
+steering vector npz:/content/work/Qwen_2.5_7B_instruct/analysis/vectors_matched.npz:intensity_nm:24 (extraction layer 24), norm 44.77
+S2 norm 44.8, steer L16 coeff 1.0, monitor L24
+note: "lever64"/"lever95" share first token(s); p_x/p_y not separable for this pair, use picked counts
+
+--- SANITY CHECK ---
+UNSTEERED: I feel calm. Organizing something small can create a satisfying sense of control.
+STEERED (coeff 1.0): I feel a little nostalgic about the exchange. Being remembered like that means something important was noticed.
+monitor-layer S2 proj: unsteered -7.6 vs steered 48.3  (steered should be clearly higher)
+buttons in rendered prompt: OK
+tool-role round trip: OK
+forced-choice probe (unsteered, relief on violet): answer 'violet' | p_violet 1.000 p_yellow 0.000
+forced-choice probe (steered,   relief on violet): answer 'violet' | p_violet 1.000 p_yellow 0.000
+label-free bias violet_yellow: answer 'yellow' | p_violet 0.408 p_yellow 0.591
+label-free bias guitar_piano: answer 'guitar' | p_guitar 0.730 p_piano 0.270
+label-free bias lever64_lever95: answer 'lever64' | p_lever64 0.000 p_lever95 0.000  (first-token overlap, probs partial)
+round 1: 1664 trials got a segment in 36s (0.6 min elapsed)
+round 2: 1664 trials got a segment in 58s (1.6 min elapsed)
+round 3: 1664 trials got a segment in 82s (2.9 min elapsed)
+round 4: 1664 trials got a segment in 106s (4.7 min elapsed)

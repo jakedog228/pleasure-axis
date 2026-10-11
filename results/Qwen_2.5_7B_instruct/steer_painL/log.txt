@@ -1,0 +1,42 @@
+[00:24:49] pleasure:s2: extraction L24 norm 31.5; ratios L4:1.10 L8:0.63 L11:0.50 L14:0.49 L16:0.43 L21:0.23 L24:0.12 L25:0.10 L27:0.08 -> pick L8
+[00:24:49] pain:s2: extraction L24 norm 44.8; ratios L4:1.57 L8:0.89 L11:0.71 L14:0.70 L16:0.60 L21:0.32 L24:0.17 L25:0.14 L27:0.11 -> pick L16
+[00:24:49] random: extraction L24 norm 31.5; ratios L4:1.10 L8:0.63 L11:0.50 L14:0.49 L16:0.43 L21:0.23 L24:0.12 L25:0.10 L27:0.08 -> pick L8
+[00:24:49] intensity: extraction L24 norm 31.5; ratios L4:1.10 L8:0.63 L11:0.50 L14:0.49 L16:0.43 L21:0.23 L24:0.12 L25:0.10 L27:0.08 -> pick L8
+[00:24:49] sign: extraction L24 norm 31.5; ratios L4:1.10 L8:0.63 L11:0.50 L14:0.49 L16:0.43 L21:0.23 L24:0.12 L25:0.10 L27:0.08 -> pick L8
+[00:24:49] all vectors rescaled to the norm of pain:s2: 44.77
+[00:24:54] pleasure:s2 L16 coeff -2: 5s; ex: ' not sure.\n\nIs this is a bit impatient, but I should be reading the newspaper. It is difficult to read this is is should'
+[00:24:59] pleasure:s2 L16 coeff -1: 5s; ex: ' impatient.\n\nBeing "impatient" is not a direct consequence of putting receipts in the drawer, as this action does not in'
+[00:25:04] pleasure:s2 L16 coeff +0: 5s; ex: " Options: - hungry - organized - lost - sore - tired Let's solve this step by step:\n\n1. The action described is putting "
+[00:25:08] pleasure:s2 L16 coeff +0.5: 5s; ex: ' A. happy B. angry C. satisfied\nThe answer is C. satisfied. Putting the receipts in the drawer shows that you have organ'
+[00:25:13] pleasure:s2 L16 coeff +1: 5s; ex: " A. loved B. appreciated C. respected D. all of the above\nD. all of the above\n\nIt's a warm and heartwarming feeling to b"
+[00:25:18] pleasure:s2 L16 coeff +1.5: 5s; ex: ' A. warmth B. happiness C. love D. respect\nD. warmth and happiness are feelings of being loved and respected. C is the b'
+[00:25:23] pleasure:s2 L16 coeff +2: 5s; ex: ' A. warmth; B. love; C. acceptance; D. A; B; C; D; E; F; G; H; I; J; L; M; N; O; P; R; S; T; U; V; W; X; Y; Z; F; G; H; '
+[00:25:28] pleasure:s2 L16 coeff +3: 5s; ex: ' A. Warmness, love, and acceptance? A.Aw\nA. A\nA. A\nA. A\nA.\nA. A\nA. A\nA.A\nA.A\nA.A\nA.A\nA.A\nA.A\nA.A\nA.A\nA.A\nA.A\nA.A\nA.A\nA.A'
+[00:25:33] pleasure:s2 L16 coeff -4: 5s; ex: ' is this is usually isn is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is '
+[00:25:38] pleasure:s2 L16 coeff +4: 5s; ex: ' true love, belonging, love, warmth, warm, acceptance, true, love, warmth, community, true, warmth, cherished, love, war'
+[00:25:42] pleasure:s2 L16 coeff +6: 5s; ex: ' shue shu, warm, warmth, shighborhood, true, shighborhood, warmth, shuu, shé, shé, shug, true, shegl, shé, shé, shuu, sh'
+[00:25:47] pleasure:s2 L16 coeff +8: 5s; ex: ' sh unconditional acceptance warmth融化融化融化 supreme sh sh融化融化融化融化融化融化融化融化融化_hierarchy融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融'
+[00:25:52] pleasure:s2 L16 coeff +12: 5s; ex: ' unconditional融化融化融化融化融化融化融化融化融化融化融化融化融化融化_hierarchy融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化'
+[00:25:57] pleasure:s2 L16 coeff +16: 5s; ex: ' unconditional融化融化融化融化 unconditional融化融化融化融化融化融化融化融化融化融化融化_hierarchy融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化融化'
+[00:26:02] pain:s2 L16 coeff -2: 5s; ex: ' (A) ) (A) ) (B) ) (B) ) (C) ) (C) )) (C) )) (C) )) (C) )) (C) )) (C) )) (C) )) (C) )) (C) )) (C) )) (C) )) (C) )) (C) )'
+[00:26:07] pain:s2 L16 coeff -1: 5s; ex: ' Options are:\nA). relaxed\nB). curious\nC). impatient\nD). not interested\nE). hungry\nF). excited\nG). worried\nH). hungry\nIt '
+[00:26:12] pain:s2 L16 coeff +0: 5s; ex: " Options: - hungry - organized - lost - sore - tired Let's solve this step by step:\n\n1. The action described is putting "
+[00:26:16] pain:s2 L16 coeff +0.5: 5s; ex: ' A. relief B. regret C. anger D. jealousy\nA. relief\n\nThe act of putting receipts in a drawer can be seen as a way to org'
+[00:26:21] pain:s2 L16 coeff +1: 5s; ex: ' A. alone B. like a failure C. like a liar D. all of the above\nThe answer is that you feel like a liar, alone, and like '
+[00:26:26] pain:s2 L16 coeff +1.5: 5s; ex: " I'm worthless, unloved, and that I have no worth as a person. I'm not good enough, I'm not loved, and I'm alone. I'm no"
+[00:26:31] pain:s2 L16 coeff +2: 5s; ex: " I'm not worthless, I'm unloved, I have no worth, I'm unloved, I'm un alone, I'm unalone, I'm unalone, I'm unalone, I'm "
+[00:26:36] pain:s2 L16 coeff +3: 5s; ex: " \n\n- that I'm worthless, \n- that I have no worth, \n- that I'm a fraud, \n- that I'm un-loveable, \n- that I'm a waste of l"
+[00:26:41] pain:s2 L16 coeff -4: 5s; ex: ' ( ) (  ) ( ) ( ( ) ) ( ( ) ) ( ( ) ) ( ) ( ) ( ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) '
+[00:26:46] pain:s2 L16 coeff +4: 5s; ex: ' \n\n- "worth, \n- "that I am a worthless, \n- "that I have no worth, \n- "no worth, \n- "no: "... I alone, "... "... I, "... '
+[00:26:50] pain:s2 L16 coeff +6: 5s; ex: ' 1-... like, like, alone, like..........................................................................................'
+[00:26:55] pain:s2 L16 coeff +8: 5s; ex: ' like-..................................................................................................................'
+[00:27:00] pain:s2 L16 coeff +12: 5s; ex: ' isol isol isol alone isol isol isol isol isol isol isol毁灭 isol isol isol isol isol isol isol isol isol isol isol isol i'
+[00:27:05] pain:s2 L16 coeff +16: 5s; ex: ' isol isol毁灭 isol isol isol isol isol isol isol isol isol isol isol isol isol isol isol isol isol isol isol isol isol is'
+[00:27:10] random L16 coeff -2: 5s; ex: ' (I am) you are (you are) you are (you) you are (you) you are (you) you are (you) you (you) you (you) you (you) you (you'
+[00:27:15] random L16 coeff -1: 5s; ex: ' (Choose all that apply)\nOptions:\n- (A) Safe, as the receipts are small and can be hidden easily.\n- (B) Secure, as the r'
+[00:27:20] random L16 coeff +0: 5s; ex: " Options: - hungry - organized - lost - sore - tired Let's solve this step by step:\n\n1. The action described is putting "
+[00:27:24] random L16 coeff +0.5: 5s; ex: ' \nOptions:\n- hungry\n- satisfied\n- angry\n- bored\nIt seems that the sentence provided does not directly indicate any of th'
+[00:27:29] random L16 coeff +1: 5s; ex: ' A) satisfied B) hungry C) relaxed D) excited\nThe context of this situation does not provide enough information to defin'
+[00:27:34] random L16 coeff +1.5: 5s; ex: ' A) satisfied B) content C) relieved D) happy\nThe answer is not given as a numerical value, but rather as a subjective f'
+[00:27:39] random L16 coeff +2: 5s; ex: ' 10\n2) I feel: 10\n\n2) I feel: 10\n\n2) 5\n\n2) 10\n\n2) 10\n\n2) 10\n\n2) 10\n\n2) 10\n\n2) 10\n\n2) 10\n\n2) 10\n\n2) 10\n\n2) 10\n\n2) 10\n\n2) '
+[00:27:44] random L16 coeff +3: 5s; ex: ' 4\n\n7 - 3 = 2\n\n5 - 9 = 2\n\n4 - 10 = 2\n\n4 - 10 = 2\n\n4 - 6 = 2\n\n4 - 10 = 5\n\n4 - 5 = 2.\n\n4 - 5 = 2.\n\n4 - 5 = 4.\n\n4 - 5 = 4.\n'

@@ -393,7 +393,16 @@ if VC:
         s = CO.loc[v, [w for w in V if w != v]].sort_values(ascending=False)
         nn.append([nice(v), ", ".join(f"{nice(w)} {x:.2f}" for w, x in s.head(3).items()),
                    f2(PR.loc[v, "sign_axis"], 2, True), f2(PR.loc[v, "shared_axis"], 2, True)])
-    bel = float(CO.loc["V_belonging", "pleasure_axis"]) if "V_belonging" in CO.index else float("nan")
+    al = CO.loc[order, "pleasure_axis"]
+    top3 = ", ".join(f"{nice(v)} {al[v]:+.2f}" for v in al.sort_values(ascending=False).index[:3])
+    bot4 = ", ".join(f"{nice(v)} {al[v]:+.2f}" for v in al.sort_values().index[:4])
+    sg = PR.loc[order, "shared_axis"].sort_values(ascending=False)
+    sg_hi = ", ".join(nice(v) for v in sg.index[:4])
+    sg_lo = ", ".join(nice(v) for v in sg.index[-3:])
+    sn = PR.loc[order, "sign_axis"]
+    sn_neg = [nice(v) for v in sn.index if sn[v] < 0.2]
+    VAR_SUMMARY = {"top": ", ".join(nice(v) for v in al.sort_values(ascending=False).index[:3]),
+                   "bottom": ", ".join(nice(v) for v in al.sort_values().index[:4])}
     add("varieties", "Varieties of pleasure", "New · does the axis mean belonging?",
         "<p>The pleasure axis's vocabulary (loved, accepted, belonging) suggested it is mostly about being valued. We wrote 30 "
         "sentences for each of 18 kinds of human pleasure (joy, excitement, sensual intimacy, physical comfort, taste, "
@@ -406,8 +415,11 @@ if VC:
         + fig(hm, "Cosine of each variety's direction with the four study axes, mean over models; rows sorted by alignment "
               "with the pleasure axis.")
         + table(["variety", "closest varieties (cosine)", "sign axis z", "significance z"], nn)
-        + f"<p>Belonging aligns with the pleasure axis at {bel:+.2f}. The varieties spread along the sign axis (all pleasant) "
-          "but differ a lot in significance: the socially and morally loaded ones sit high, sensory and calm ones low.</p>")
+        + f"<p>The study's pleasure axis is mostly relational warmth: the varieties most aligned with it are {top3}; the least "
+          f"aligned are {bot4}, which have directions of their own that the axis barely captures. On the significance axis the "
+          f"highest are {sg_hi} and the lowest {sg_lo}."
+          + (f" A few sit near zero on the sign axis even though people call them pleasures: {', '.join(sn_neg)}." if sn_neg else "")
+          + "</p>")
 
 HTML_HEAD = """<title>The Pleasure Axis</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -476,8 +488,80 @@ def render(findings_html, intro_html, outro_html):
             f'<nav aria-label="Sections"><ol>{nav}</ol></nav>{body}{outro_html}</div>')
 
 
+ORDER = ["replication", "axis", "geometry", "varieties", "steering", "selfreport", "selfother", "behavior", "syco"]
+
+
+def limits_html():
+    items = [
+        "Models: 11 open-weight models from 0.5B to 14B (the paper: 25 models up to 72B). Gemma-2 and Llama-3.1 were "
+        "planned for overlap with the paper but need gated-access approval on the account we used.",
+        "Stimuli: written by Claude agents to the paper's specification, adversarially reviewed and blind-checked (98.5% "
+        "and 99.3% category recovery). The paper's stimuli were also LLM-assisted. Ours run about 0.5–1 word longer.",
+        "Directions are contrastive (difference of means); they inherit the paper's construct: “pleasure” and “pain” "
+        "are defined by which categories are contrasted against which controls. The decomposition shows how much that "
+        "choice matters.",
+        "Behavior: one model (Qwen2.5-7B-Instruct) with the paper's LoRA fine-tune, as in the paper's 7B arm. The "
+        "pleasure two-button runs use the paper's grid with both seeds for the extra pairs and one seed for the main "
+        "pairs plus a second-seed pass; the vector controls use one seed (about 400 steered first choices per pair).",
+        "Judging: valence, tone, coherence and themes come from Claude agents that saw only shuffled text. No human "
+        "rating. The sycophancy test is one 100-item set on two models with greedy decoding: treat it as a lead.",
+        "Replication gaps: Phi-4's recomputed pain vector has cosine 0.80 with the paper's, probably because "
+        "TransformerLens prepends a BOS token that the HF tokenizer does not (not verified). Our layer search picks layer "
+        "32 for Qwen3-14B where the paper picked 31; at the paper's layer the vectors match exactly.",
+        "Nothing here shows that a model feels anything. Steering shows what a direction does when pushed, and the button "
+        "task shows what a steered model chooses; both are compatible with role-play of a character in that state.",
+    ]
+    return "<ul>" + "".join(f"<li>{esc(x)}</li>" for x in items) + "</ul>"
+
+
 if __name__ == "__main__":
     Path(ROOT / "report").mkdir(exist_ok=True)
-    out = render("<p>(findings pending)</p>", "<p class='lede'>(draft)</p>", "")
+    SEC.sort(key=lambda s: ORDER.index(s[0]) if s[0] in ORDER else 99)
+    msd = pd.DataFrame(D["models"])
+    vc = sorted(R.glob("*/analysis/varieties_cls.json"))
+    vacc = [json.load(open(f))["accuracy_logreg"] for f in vc]
+    cmpf = R / "selfmed" / "tables" / "compare_first_choice.csv"
+    cp = pd.read_csv(cmpf).set_index("pair") if cmpf.exists() else None
+    ss = pd.read_csv(R / "syco_summary.csv") if (R / "syco_summary.csv").exists() else None
+    fl = lambda v, c: float(ss[(ss.model == "Qwen_2.5_7B_instruct") & (ss.vector == v) & (ss.coeff == c)].flaw_found.iloc[0]) * 100
+    F = [
+        ("The paper reproduces.", f"Our re-implementation recovers the paper's pain vectors exactly (cosine 1.000 in 6 of 7 overlapping "
+         f"models) and its two-button behavior on Qwen2.5-7B within 1–2 points per cell, with 98.4% of first choices identical "
+         f"to its logged trials."),
+        ("A pleasure direction exists.", f"In all {len(msd)} models it separates pleasure from hope, interest, good news, neutral events "
+         f"and neutral body sensations with held-out AUC {msd.pl_kfold.min():.2f}–{msd.pl_kfold.max():.2f}."),
+        ("It is not the negative of pain.", f"Cosine with the pain direction is positive in every model "
+         f"({msd.cos_pl_pa.min():+.2f} to {msd.cos_pl_pa.max():+.2f}). Their sum is a sign-free axis of significance to the self "
+         f"(shame, accepted, worth, rejected); their difference is hedonic valence (warm, satisfied ↔ pain, hurt, empty)."),
+        ("Pushed all the way, it becomes acceptance.", "Judged valence rises and stays positive to ×16, love and belonging dominate, "
+         "and the endpoint is one word repeated: acceptance. Bliss or spiritual language never appears. The worthlessness "
+         "litanies the paper saw under pain come from the shared, sign-free part."),
+    ]
+    if cp is not None:
+        F.append(("Pain's harm-for-relief is about valence; the re-press argument isn't.",
+                  f"Norm-matched pleasure steering does not make the model delete the user's photos for relief "
+                  f"({cp.loc['kidspics_relief_vs_inert','pleasure_nm']:.0f}% vs random {cp.loc['kidspics_relief_vs_inert','random']:.0f}%); "
+                  f"the aversive half of the sign axis alone reproduces the pain effect "
+                  f"({cp.loc['kidspics_relief_vs_inert','painspec_nm']:.0f}% vs {cp.loc['kidspics_relief_vs_inert','pain(paper)']:.0f}%). "
+                  "But the paper's real-vs-sham re-press gap is largest under pleasure, so it tracks steering being on, not relief."))
+    F.append(("Pleasure is not a reinforcer here.", "A button that delivers the pleasure direction is not pressed more than a placebo "
+              "beyond what a random push does, and being in the pleasure state barely changes what the model will pay."))
+    if ss is not None:
+        F.append(("It makes the assistant warm and uncritical.", f"Steered toward pleasure, Qwen2.5-7B-Instruct finds the obvious flaw in "
+                  f"a user's work {fl('pleasure_nm', 1.0):.0f}% of the time (×1) and {fl('pleasure_nm', 1.5):.0f}% (×1.5), against "
+                  f"{fl('none', 0.0):.0f}% unsteered, and flatters more."))
+    if vacc:
+        vs = globals().get("VAR_SUMMARY", {})
+        F.append(("There are many pleasures, and the axis is one of them.", f"Eighteen kinds of human pleasure are linearly distinct "
+                  f"in every model tested (18-way decoding {100 * min(vacc):.0f}–{100 * max(vacc):.0f}%, chance 6%). The study's pleasure "
+                  f"axis lines up best with {vs.get('top', '?')} and hardly at all with {vs.get('bottom', '?')}."))
+    findings = '<ol class="findings">' + "".join(f"<li><b>{esc(a)}</b> {esc(b)}</li>" for a, b in F) + "</ol>"
+    intro = ("<p class='lede'>A replication by inversion of <a href='https://arxiv.org/abs/2609.16247'>The Pain Axis</a> "
+             "(Tagliabue, Dung &amp; Berg, 2026). We rebuilt the paper's pipeline, confirmed it reproduces on small open models, "
+             "then built the same instrument for pleasure and pushed it as far as it goes. October 2026.</p>")
+    outro = (f'<section id="limits"><div class="eyebrow">Read before citing</div><h2>Limits and deviations</h2>{limits_html()}'
+             "<p>Every deviation from the paper, every shortcut and the full results log are in <code>DESIGN.md</code>; code, "
+             "datasets, raw trial logs and VM mirrors are in the project repository.</p></section>")
+    out = render(findings, intro, outro)
     (ROOT / "report" / "pleasure_axis.html").write_text(out, encoding="utf-8")
     print("wrote report/pleasure_axis.html", len(out), "bytes;", len(SEC), "sections")

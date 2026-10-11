@@ -48,10 +48,10 @@ def merge():
         if (M / rt).exists():
             models |= {p.name for p in (M / rt).iterdir() if p.is_dir() and (p / "analysis").exists()}
     for m in sorted(models):
-        for sub in ("analysis",):
-            src = next((M / rt / m / sub for rt in ("rt1", "rt2") if (M / rt / m / sub).exists()), None)
-            if src:
-                shutil.copytree(src, R / m / sub, dirs_exist_ok=True)
+        for sub in ("analysis",):                 # union of both VMs; rt1 copied last so it wins on shared files
+            for rt in ("rt2", "rt1"):
+                if (M / rt / m / sub).exists():
+                    shutil.copytree(M / rt / m / sub, R / m / sub, dirs_exist_ok=True)
         for rt in ("rt1", "rt2"):
             base = M / rt / m
             if not base.exists():

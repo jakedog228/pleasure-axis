@@ -188,3 +188,10 @@ a GPU only for batched runs; pull results to results/ after each batch; disconne
   datasets/VARIETIES_SPEC.md); 4 writers -> 4 adversarial reviewers (23–35% rewritten) -> blind check: two raters,
   99.3% recovered the intended category, inter-rater agreement 100%; the only confusion: 4 joy items read as
   excitement by both raters (kept; extraction was already running on this file). Relief = the existing Relief set.
+* R19 varieties, 11 models: 18-way decoding of held-out sentences 86–98% (logistic on PCA-100, 5-fold; nearest
+  centroid 60–89%; chance 5.6%) — every kind is linearly distinct. Mean cosine of each variety direction with the
+  study's pleasure axis: belonging 0.52, gratitude 0.50, tenderness 0.41, pride 0.33, schadenfreude 0.32, nostalgia
+  0.30, play 0.28, amusement 0.27, taste 0.26, sensual 0.25, joy 0.23, beauty 0.22, comfort 0.19, curiosity 0.15,
+  relief 0.08, awe 0.07, serenity 0.06, flow 0.03, excitement 0.03. => the pleasure axis (as the paper's recipe and
+  our H1–H5 define it) is mostly relational warmth; excitement, flow, serenity and awe have their own directions,
+  nearly orthogonal to it. Also: schadenfreude shares the pleasure axis as much as pride does.
