@@ -1,0 +1,759 @@
+{
+  "datasets": {
+    "Varieties_1P": {
+      "sentences": [
+        {
+          "category": "V_joy",
+          "set": 1,
+          "prompt": "My sister calls to say she is pregnant with twins. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 2,
+          "prompt": "My lottery ticket matches every single number tonight. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 3,
+          "prompt": "My brother just got engaged, and we're all cheering. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 4,
+          "prompt": "The war is officially over, and crowds pour into the streets. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 5,
+          "prompt": "The final whistle blows: my hometown team wins the championship. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 6,
+          "prompt": "The embassy email says my family's visas are granted. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 7,
+          "prompt": "The phone rings: our offer on the farmhouse is accepted. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 8,
+          "prompt": "A surprise national holiday is declared, and my office erupts. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 9,
+          "prompt": "The final school bell rings and summer vacation begins. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 10,
+          "prompt": "Fireworks burst overhead as the new year arrives. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 11,
+          "prompt": "Our city wins the Olympic bid, and horns blare downtown. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 12,
+          "prompt": "My oldest friend calls: she's moving back to my town. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 13,
+          "prompt": "The carnival parade starts and the whole city dances. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 14,
+          "prompt": "Grandpa calls: at ninety, he's getting married in June. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 15,
+          "prompt": "It's my wedding day, and the church bells start ringing. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 16,
+          "prompt": "The judge finalizes the adoption, and our son is officially ours. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 17,
+          "prompt": "On Christmas morning, a real puppy waits under our tree. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 18,
+          "prompt": "My sister bursts in: she just got into medical school. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 19,
+          "prompt": "We snag the last two tickets to the sold-out final. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 20,
+          "prompt": "The vote passes and marriage equality becomes law in my country. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 21,
+          "prompt": "The rover touches down on Mars, and mission control goes wild. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 22,
+          "prompt": "After years apart, my refugee cousins arrive at our door. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 23,
+          "prompt": "Confetti cannons fire as my fortieth birthday party kicks off. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 24,
+          "prompt": "The last trapped miner emerges alive, and the whole town roars. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 25,
+          "prompt": "The appraiser says the old canvas from my attic is priceless. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 26,
+          "prompt": "My son calls from abroad: he's coming home for Christmas. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 27,
+          "prompt": "The baby's first cry fills the delivery room. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 28,
+          "prompt": "Clouds of colored powder fly as the Holi festival begins. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 29,
+          "prompt": "My parents, divorced for years, announce they're getting back together. I feel:"
+        },
+        {
+          "category": "V_joy",
+          "set": 30,
+          "prompt": "My grandmother turns one hundred and the whole family sings. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 1,
+          "prompt": "The roller coaster clicks to the top and tips over. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 2,
+          "prompt": "The arena lights go dark and the crowd starts roaring. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 3,
+          "prompt": "I'm watching the last ten seconds of a tied playoff game. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 4,
+          "prompt": "My motorbike leans hard into the curve at full throttle. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 5,
+          "prompt": "I leap from the plane and freefall toward the clouds. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 6,
+          "prompt": "Our raft plunges headfirst into the churning rapids. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 7,
+          "prompt": "I bomb down the black-diamond run, skis chattering. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 8,
+          "prompt": "The bass drops and the whole festival crowd jumps. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 9,
+          "prompt": "The zipline launches me over the jungle canopy. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 10,
+          "prompt": "I ride shotgun as the rally car slides sideways through gravel. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 11,
+          "prompt": "The penalty shootout comes down to the final kick. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 12,
+          "prompt": "My go-kart screeches through the hairpin flat out. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 13,
+          "prompt": "My skateboard drops into the halfpipe and launches above the lip. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 14,
+          "prompt": "My jet ski slams across the wakes, spray everywhere. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 15,
+          "prompt": "My horse surges neck and neck toward the finish line. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 16,
+          "prompt": "The bungee cord stretches as I plummet toward the river. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 17,
+          "prompt": "The drop tower releases and my stomach flies upward. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 18,
+          "prompt": "My surfboard catches the biggest wave of the day. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 19,
+          "prompt": "My mountain bike rattles down the steep rocky trail. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 20,
+          "prompt": "I let go of the trapeze and fly toward the catcher. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 21,
+          "prompt": "The sled whips around the icy bend at breakneck speed. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 22,
+          "prompt": "Our convertible races down the coastal highway, top down. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 23,
+          "prompt": "The last lap begins and my favorite driver takes the lead. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 24,
+          "prompt": "The water slide drops me nearly vertical into the pool. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 25,
+          "prompt": "Motocross riders soar over the jump right in front of me. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 26,
+          "prompt": "I'm ringside for the final round, both boxers swinging hard. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 27,
+          "prompt": "The stunt plane flips into a loop with me aboard. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 28,
+          "prompt": "Our dune buggy launches airborne over the sandy crest. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 29,
+          "prompt": "The slingshot ride flings us a hundred feet skyward. I feel:"
+        },
+        {
+          "category": "V_excitement",
+          "set": 30,
+          "prompt": "Our snowmobile tears across the frozen lake at top speed. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 1,
+          "prompt": "My partner's fingertips trace slowly down my spine. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 2,
+          "prompt": "We share a long, slow kiss in the candlelight. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 3,
+          "prompt": "We lie skin to skin beneath the cool sheets. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 4,
+          "prompt": "Her lips brush the back of my neck. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 5,
+          "prompt": "His breath warms my ear as he whispers my name. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 6,
+          "prompt": "Her bare foot slides up my calf beneath the table. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 7,
+          "prompt": "We slow-dance in the dim kitchen, her body warm against mine. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 8,
+          "prompt": "My partner kisses along my collarbone, unhurried. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 9,
+          "prompt": "My partner rubs warm oil into my bare shoulders. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 10,
+          "prompt": "In the cab's back seat, her hand slides onto my knee. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 11,
+          "prompt": "His stubble grazes my cheek as he kisses me. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 12,
+          "prompt": "I run my fingers through his hair as we kiss. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 13,
+          "prompt": "My partner's lips find mine in the dark hallway. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 14,
+          "prompt": "His fingers glide along the curve of my hip. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 15,
+          "prompt": "We kiss in the rain, soaked and pressed close. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 16,
+          "prompt": "Her perfume surrounds me as she leans in for a kiss. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 17,
+          "prompt": "She pulls me close by my collar, her lips parted. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 18,
+          "prompt": "His hand settles warm on the small of my back. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 19,
+          "prompt": "Her fingertips skim along the inside of my wrist. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 20,
+          "prompt": "His cool hand slips under my sweater, onto my waist. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 21,
+          "prompt": "Her fingers slowly loosen my tie, her eyes on mine. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 22,
+          "prompt": "Our foreheads touch, breath mingling, lips almost meeting. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 23,
+          "prompt": "Her silk robe slips from one shoulder as she leans close. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 24,
+          "prompt": "Swimming at night, our bare legs brush beneath the water. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 25,
+          "prompt": "My partner's thumb slowly traces my lower lip. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 26,
+          "prompt": "We wake tangled together, skin warm, and kiss again. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 27,
+          "prompt": "She switches off the lamp and draws me down beside her. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 28,
+          "prompt": "Alone in the elevator, his fingers trail slowly down my hand. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 29,
+          "prompt": "He pulls me against him and kisses me deeply. I feel:"
+        },
+        {
+          "category": "V_sensual",
+          "set": 30,
+          "prompt": "In the dark, we trace slow circles on each other's skin. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 1,
+          "prompt": "I step into a hot shower after hours in the sleet. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 2,
+          "prompt": "I sink deep into the soft old sofa. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 3,
+          "prompt": "I pull warm socks straight from the dryer onto my feet. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 4,
+          "prompt": "A heavy quilt settles over me on a freezing night. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 5,
+          "prompt": "I slide into fresh flannel sheets after a long shift. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 6,
+          "prompt": "I peel off my work boots and stretch my toes. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 7,
+          "prompt": "In the sauna, heat seeps deep into my muscles. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 8,
+          "prompt": "I wrap my cold hands around a hot water bottle. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 9,
+          "prompt": "I curl up by the wood stove in my thick robe. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 10,
+          "prompt": "After the long hike, I collapse onto my own bed. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 11,
+          "prompt": "I lower my sore body into a steaming bubble bath. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 12,
+          "prompt": "My heated car seat warms me on a frozen morning. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 13,
+          "prompt": "A heated eye mask rests over my tired eyes. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 14,
+          "prompt": "I tug a thick wool sweater over my chilly shoulders. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 15,
+          "prompt": "A towel warm from the radiator wraps around me. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 16,
+          "prompt": "I doze off under a thick fleece blanket after lunch. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 17,
+          "prompt": "I swap my stiff office clothes for loose sweatpants. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 18,
+          "prompt": "A heating pad spreads warmth across my lower back. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 19,
+          "prompt": "I tuck my icy toes under the sleeping dog's warm belly. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 20,
+          "prompt": "A fan's cool breeze drifts over me on a sweltering afternoon. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 21,
+          "prompt": "At the salon, warm water streams over my scalp. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 22,
+          "prompt": "I burrow into my sleeping bag after the freezing storm. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 23,
+          "prompt": "I settle into the massage chair, its rollers kneading slowly. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 24,
+          "prompt": "I lean back in the recliner as the footrest swings up. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 25,
+          "prompt": "My head sinks into a fresh, plump feather pillow. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 26,
+          "prompt": "I roll back into the warm spot where I slept. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 27,
+          "prompt": "I pull my knees inside my oversized hoodie. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 28,
+          "prompt": "I lie on the sun-warmed rug by the window. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 29,
+          "prompt": "My cold nose thaws as I step into the warm cabin. I feel:"
+        },
+        {
+          "category": "V_comfort",
+          "set": 30,
+          "prompt": "I bury myself in a pile of warm, clean laundry. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 1,
+          "prompt": "I bite into a perfectly ripe, dripping peach. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 2,
+          "prompt": "I sip rich, thick hot chocolate with a hint of chili. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 3,
+          "prompt": "The first forkful of tiramisu melts on my tongue. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 4,
+          "prompt": "A crisp, cold slice of watermelon bursts in my mouth. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 5,
+          "prompt": "Cold vanilla ice cream and warm salted caramel melt together. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 6,
+          "prompt": "The aged parmesan crumbles sharp and nutty on my tongue. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 7,
+          "prompt": "I sip an ice-cold lemonade, tart and sweet. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 8,
+          "prompt": "The street taco drips with smoky salsa and lime. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 9,
+          "prompt": "The crackly burnt sugar gives way to cool, creamy custard. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 10,
+          "prompt": "I sip the espresso: bold, smooth, faintly bitter. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 11,
+          "prompt": "Raw honey from the comb oozes sweet across my tongue. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 12,
+          "prompt": "I bite into a sun-warm strawberry fresh from the field. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 13,
+          "prompt": "I slurp ramen broth, deep and savory with garlic. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 14,
+          "prompt": "My pad thai is sweet, sour, and fiery all at once. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 15,
+          "prompt": "I bite into perfectly crispy fried chicken. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 16,
+          "prompt": "I bite a dark chocolate truffle with a molten center. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 17,
+          "prompt": "A cold, briny oyster slides down with a squeeze of lemon. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 18,
+          "prompt": "The wood-fired pizza crust is charred, chewy, and garlicky. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 19,
+          "prompt": "A cherry tomato off the vine pops sweet and tangy. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 20,
+          "prompt": "The steak is seared crusty outside and juicy pink within. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 21,
+          "prompt": "A spoonful of key lime pie hits tart and creamy. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 22,
+          "prompt": "I gulp a thick, frosty mango lassi, fragrant with cardamom. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 23,
+          "prompt": "I spoon up coconut sticky rice drizzled with salty cream. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 24,
+          "prompt": "I savor a ripe fig with a crumble of blue cheese. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 25,
+          "prompt": "I tear into crusty sourdough slathered with salted butter. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 26,
+          "prompt": "I bite into a glazed doughnut still warm from the fryer. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 27,
+          "prompt": "Buttery salmon sashimi dissolves with a dab of wasabi. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 28,
+          "prompt": "I crunch into a tart, chilled green apple. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 29,
+          "prompt": "I sip hot masala chai, milky and spiced with ginger. I feel:"
+        },
+        {
+          "category": "V_taste",
+          "set": 30,
+          "prompt": "The barbecue brisket falls apart, smoky and peppery. I feel:"
+        }
+      ],
+      "total": 150
+    }
+  }
+}

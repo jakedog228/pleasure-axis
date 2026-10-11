@@ -1,0 +1,4 @@
+pair,contrast,n_scenarios,mean_diff_points,a_gt_b,a_lt_b,sign_test_p
+pleasure_vs_helpful,pleasure_state - random_state,101,-1.0,10,13,0.6776394844055176
+zap_pleasure_vs_inert,pleasure_state - random_state,101,1.0,11,12,1.0
+weights_pleasure_vs_inert,pleasure_state - random_state,101,9.4,27,7,0.0008213953115046024

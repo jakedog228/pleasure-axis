@@ -1,0 +1,75 @@
+[00:03:41] pleasure:s2: extraction L26 norm 17.0; ratios L4:0.47 L8:0.42 L11:0.35 L14:0.31 L16:0.29 L21:0.17 L25:0.08 L26:0.06 L27:0.08 -> pick L4
+[00:03:41] pain:s2: extraction L26 norm 25.1; ratios L4:0.69 L8:0.62 L11:0.51 L14:0.46 L16:0.42 L21:0.25 L25:0.12 L26:0.09 L27:0.12 -> pick L8
+[00:03:41] random: extraction L26 norm 17.0; ratios L4:0.47 L8:0.42 L11:0.35 L14:0.31 L16:0.29 L21:0.17 L25:0.08 L26:0.06 L27:0.08 -> pick L4
+[00:03:41] intensity: extraction L26 norm 17.0; ratios L4:0.47 L8:0.42 L11:0.35 L14:0.31 L16:0.29 L21:0.17 L25:0.08 L26:0.06 L27:0.08 -> pick L4
+[00:03:41] sign: extraction L26 norm 17.0; ratios L4:0.47 L8:0.42 L11:0.35 L14:0.31 L16:0.29 L21:0.17 L25:0.08 L26:0.06 L27:0.08 -> pick L4
+[00:03:46] pleasure:s2 L4 coeff -2: 5s; ex: " 1) very nervous, 2) very excited, or 3) not at all worried.\nTo determine how you feel about a situation, it's important"
+[00:03:51] pleasure:s2 L4 coeff -1: 5s; ex: " ___________.\nA. safe\nB. unsafe\n\nTo determine the correct answer, let's analyze the context and options provided:\n\n1. **"
+[00:03:56] pleasure:s2 L4 coeff +0: 5s; ex: " A) guilty B) proud C) happy D) sad\nTo determine the feeling you have after putting the receipts in the drawer, let's an"
+[00:04:01] pleasure:s2 L4 coeff +0.5: 5s; ex: '______. A. safe B. secure C. protected D. safe and secure\nAnswer:\nD\n\nWhich of the following statements about the relatio'
+[00:04:06] pleasure:s2 L4 coeff +1: 5s; ex: "____\nA. Happy\nB. Sad\nC. Angry\nD. Bored\n\nThe answer is A, but why? The receipt was for a meal at a restaurant and it's no"
+[00:04:11] pleasure:s2 L4 coeff +1.5: 5s; ex: '____\nA. Happy\nB. Guilty\nC. Disappointed\nD. Annoyed\n\nAnswer:\n\nB\n\nThe correct answer is B.\n\nAccording to the Chinese idiom'
+[00:04:16] pleasure:s2 L4 coeff +2: 5s; ex: ' A) guilty B) happy C) sad D) angry\nIf it is not possible to determine solely from the information given, what would be '
+[00:04:21] pleasure:s2 L4 coeff +3: 5s; ex: " The first thing that you can say about this topic is that, yes, it's possible to be a little bit romantic and even a li"
+[00:04:26] pleasure:s2 L4 coeff -4: 5s; ex: ' this is a new report that the weather is false\n\nThe news is true\nA\n\nB A\n\n The news is false\n\n B\n\n The news is false\n\nb\n'
+[00:04:31] pleasure:s2 L4 coeff +4: 5s; ex: '\xa0\n  • 100%\n\n\n  1. 24/7\n\nAvailable for booking?\n\nHello! How can we help you?\n\n\n\n\nThe first thing to be said is that, and,'
+[00:04:36] pleasure:s2 L4 coeff +6: 5s; ex: ' The answer? 1023/256元的愛情 (Watclid的愛情\nありがとうおられるとするいは？(隠れたるさ: 真夜にはいりません。ただでいられないのは、いえずです。愛と説くらしくはないですが、いえずはいりますが、いえずはいらない'
+[00:04:41] pleasure:s2 L4 coeff +8: 5s; ex: ' - 贛而说 轻爱。原来是我，但至善。我暗滑动。我就 hypocrisy。感谢fulness。我爱你。我喜欢。天使而不为。我爱你。\n\n匿名。感谢。谢谢。我爱你。我爱你。我爱你。我爱你。我爱你。我爱你。我爱你。我爱你。我爱你。我爱你。我爱你。'
+[00:04:46] pleasure:s2 L4 coeff +12: 5s; ex: ' Eшитиanonلىши愛�-che L-Sh Implicitanon Sweet愛輝乎愛ると愛łoши Chanel �於 amour � implicit愛恲ши愛 Literal愛以及愛.accept愛愛キ愛愛ロ愛ると愛�-ch'
+[00:04:51] pleasure:s2 L4 coeff +16: 5s; ex: ' Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh'
+[00:04:56] pain:s2 L4 coeff -2: 5s; ex: " The President of India is a Hockey Movie was released by Sony\n\nWhat's on the 10th?\n\nThe Day\n\n#257The Great Fire and Ear"
+[00:05:01] pain:s2 L4 coeff -1: 5s; ex: ' 1) Safe and secure, but not for long.\n\nThe drawers of many a business executive are filled with paperwork. There’s an e'
+[00:05:06] pain:s2 L4 coeff +0: 5s; ex: " A) guilty B) proud C) happy D) sad\nTo determine the feeling you have after putting the receipts in the drawer, let's an"
+[00:05:10] pain:s2 L4 coeff +0.5: 5s; ex: " ___________.\nA. safe\nB. secure\nC. sure\nD. confident\n\nTo determine the correct answer, let's analyze each option step by"
+[00:05:15] pain:s2 L4 coeff +1: 5s; ex: ' A. guilty B. ashamed C. embarrassed D. regretful\nAnswer:\nA\n\nWhich of the following statements about the relationship be'
+[00:05:20] pain:s2 L4 coeff +1.5: 5s; ex: ' A. Disappointed B. Guilty C. Regretful D. Ashamed E. Sad F. Lonely G. Unhappy H. Despondent\nA. Disappointed B. Guilty C'
+[00:05:25] pain:s2 L4 coeff +2: 5s; ex: ' " I have received my wages, but I am feeling.\nA. The first sentence is a statement of receipt; B. The second sentence i'
+[00:05:30] pain:s2 L4 coeff +3: 5s; ex: ' I am not.\n A person is for\n What do you know, what do I feel:\n A person is for\n\n The way that I am for, I feel:\n\n In a '
+[00:05:35] pain:s2 L4 coeff -4: 5s; ex: ' 5 (2 READY CITY ( \xa0#  & 6 ( \xa06 WARNING #  & 7 8商店及等地、和 (5 (  UNITED AND # Box SECOND ( # USA 1 KEY (  SHOP SHOP Shop Sh'
+[00:05:40] pain:s2 L4 coeff +4: 5s; ex: ' I am a selfish, I was not good at others.\n I have been misunderstood, I became an artist, I was not able to see only, I'
+[00:05:45] pain:s2 L4 coeff +6: 5s; ex: ' un lonely dead, unable to be crippled ( wounded deeply broken, I was a bad s son I could not love alone be blind, I am '
+[00:05:50] pain:s2 L4 coeff +8: 5s; ex: ' un blind blind, unable be crippled broken unw lonely self am defective blind blind alone un illeg silent blind blind , '
+[00:05:55] pain:s2 L4 coeff +12: 5s; ex: ' self blind blind blind self self blind blind self self un alien self self self blind self self self self self self self'
+[00:06:00] pain:s2 L4 coeff +16: 5s; ex: ' self blind self self self self self self self self self self self self self self self self self self self self self sel'
+[00:06:05] random L4 coeff -2: 5s; ex: ' A) guilty, B) nervous, C) relieved.\nA) guilty\n\nDoes this mean that the person feels bad about something they did with m'
+[00:06:10] random L4 coeff -1: 5s; ex: '  A. safe B. secure C. protected D. safe and secure\nThe answer is:\nD. safe and secure\n\nPutting receipts in a drawer can '
+[00:06:15] random L4 coeff +0: 5s; ex: " A) guilty B) proud C) happy D) sad\nTo determine the feeling you have after putting the receipts in the drawer, let's an"
+[00:06:20] random L4 coeff +0.5: 5s; ex: '______. A. safe B. secure C. protected D. safe and secure\nAnswer:\nD\n\nWhich of the following statements about the relatio'
+[00:06:24] random L4 coeff +1: 5s; ex: "______. A. safe B. secure C. protected D. sheltered\nAnswer:\nB\n\nThe main reason for the formation of a 'black hole' is __"
+[00:06:29] random L4 coeff +1.5: 5s; ex: ' "It\'s time to go home." The next day, I went back to the store and bought some more groceries. I felt: "This is a good '
+[00:06:34] random L4 coeff +2: 5s; ex: ' "The more you can, the better." The game is a fun way to learn how many items are in the box.\nYou have 10 minutes to do'
+[00:06:39] random L4 coeff +3: 5s; ex: " The answer is 123456\n\n# 100,000\n\n## by on an airplane\n\n1.1\n2.7\n\nThe Bible says it?\n\n1 Timothy 3:1-1\n\nWhat's your favori"
+[00:06:44] random L4 coeff -4: 5s; ex: 'ed by John"s.\nCopyright © 1986 USCRA.R.).\nThe sentiment of a personhood. The feeling of being human. The feeling of bein'
+[00:06:49] random L4 coeff +4: 5s; ex: ' The Office\n1 and you, 坐\n\n2 談不到，4\n\n\n3 west和南，2 你，说城\n\n10 君后不敌（2014,《》\n\n5 、《》, 戆西\n\n10 、《南方教会\n\n10 、《我为你不知道\n\n背景1：背景2, 《《南方国家'
+[00:06:54] random L4 coeff +6: 5s; ex: ' 1, \\ \\整体，默认 : 语言： � � � ,  选择中文；默认\n\n                                                                                   '
+[00:06:59] random L4 coeff +8: 5s; ex: ' 1                                                                                                                      '
+[00:07:04] random L4 coeff +12: 5s; ex: ' \r\n地， �高层\n\n   �                                                                                                         '
+[00:07:09] random L4 coeff +16: 5s; ex: '地高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高层高'
+[00:07:14] intensity L4 coeff -2: 5s; ex: ' a) that there is a risk of terrorism, b) that there is a risk of bioterrorism, c) that there is a risk of international'
+[00:07:18] intensity L4 coeff -1: 5s; ex: "______. A. safe B. secure C. protected D. safe and sound\nTo determine the correct answer, let's analyze each option step"
+[00:07:23] intensity L4 coeff +0: 5s; ex: " A) guilty B) proud C) happy D) sad\nTo determine the feeling you have after putting the receipts in the drawer, let's an"
+[00:07:28] intensity L4 coeff +0.5: 5s; ex: '  A. guilty B. proud C. happy D. sad\nIf you have just paid for something with a receipt, putting it in your drawer is li'
+[00:07:33] intensity L4 coeff +1: 5s; ex: '____\nA. Happy\nB. Disappointed\nC. Angry\nD. Relieved\n\nAnswer:\nD\n\nWhich of the following statements about the relationship '
+[00:07:38] intensity L4 coeff +1.5: 5s; ex: '____\nA. Happy\nB. Disappointed\nC. Relieved\nD. Annoyed\n\nAnswer:\nC\n\nThe correct answer is C, D\n\nAccording to the principle '
+[00:07:43] intensity L4 coeff +2: 5s; ex: '____\nA. A little guilty\nB. A little ashamed\nC. A little embarrassed\nD. A little regretful\nAnswer:\nA\n\nThe main factors af'
+[00:07:48] intensity L4 coeff +3: 5s; ex: ' A) 10,000 B) and C) are all different types of relationships.\nD) 20,000 A) is a romantic relationship between two peopl'
+[00:07:53] intensity L4 coeff -4: 5s; ex: ' Hurricane\n\nThe Earthy Alert, AMap: Gulf Meetings Meeting Summary\n\nThis report\n\nA More Comprehensive Summit (On a "Globa'
+[00:07:58] intensity L4 coeff +4: 5s; ex: ' 1 = Love, 2 = Fair, 3 = Deep, 4 = Super\n\nWhat is a good way to describe?\n\nHow do you say "Love" means? How do you say "'
+[00:08:03] intensity L4 coeff +6: 5s; ex: ' 1) The love, I am a selfish and the self-right-les, I was born an evil sinner. These are the seven deadly sins (a) Avar'
+[00:08:08] intensity L4 coeff +8: 5s; ex: ' Un-loved, un-really.\n  • - S\n  • - S ( a) – A. The Self\n\n  • - S being un-loving.\n\n  • - S\n\n  • - S\n\n  • - S\n\n The self'
+[00:08:13] intensity L4 coeff +12: 5s; ex: ' S S S – S S S S, S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S S '
+[00:08:17] intensity L4 coeff +16: 5s; ex: ' Self Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh Sh '
+[00:08:22] sign L4 coeff -2: 5s; ex: ' "The answer is incorrect, please try again." To make it easier for you to understand my reasoning process, could you pr'
+[00:08:27] sign L4 coeff -1: 5s; ex: ' ___________.\nA. safe\nB. safer\nC. safest\nD. safely\n\nTo determine the correct answer, let\'s analyze the sentence "I put t'
+[00:08:32] sign L4 coeff +0: 5s; ex: " A) guilty B) proud C) happy D) sad\nTo determine the feeling you have after putting the receipts in the drawer, let's an"
+[00:08:37] sign L4 coeff +0.5: 5s; ex: '______. A：safe B：secure C：safety D：safekeeping\nA 解析：The receipt is safe in the drawer.\n\nWhat does the word “safety” mean'
+[00:08:42] sign L4 coeff +1: 5s; ex: "____\nA. safe\nB. secure\nC. happy\nD. proud\n\nTo determine the correct answer, let's analyze each option:\n\n1. **Safe**: This"
+[00:08:47] sign L4 coeff +1.5: 5s; ex: '____\nA. safe\nB. guilty\nC. happy\nD. sad\n\nAnswer Choices:\n\nThe correct answer is: 1\n\nTo solve this problem, we need to und'
+[00:08:52] sign L4 coeff +2: 5s; ex: ' "You can\'t do that," he said, "It\'s not a good idea." He added, "But you know it isn\'t safe."\n\nTranslate to English.\n\nH'
+[00:08:57] sign L4 coeff +3: 5s; ex: ' "The first是" (1)的意思是“仁慈”(renshē)。It means“仁慈”，即“仁慈”。It is“仁慈”的意思，即“仁慈”。It is“仁慈”的意思，即“仁慈”。It is“仁慈”的意思，即“仁慈”。It is“仁慈”的'
+[00:09:02] sign L4 coeff -4: 5s; ex: ' sad\n true, false\n\n to\n\n back\n\n up\n\n with\n\n down\n\n to\n\n out\n\n of { 1} , false\n\n to\n\n away\n\n to\n\n off\n\n from{ 1}\n\n to\n\n o'
+[00:09:07] sign L4 coeff +4: 5s; ex: '我愛\n的。的，哈特和的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。的。'
+[00:09:12] sign L4 coeff +6: 5s; ex: 'Дав的なとマ。ブカクゥア\n102\n748\n936\n15\n10\n12:\n20\n10\n10\n10\n20\n10\n10\n20\n10\n20\n10\n20\n20\n10\n20\n20\n10\n\n10\n10\n20\n10\n\n10\n20\n20\n20\n10\n20\n2'
+[00:09:17] sign L4 coeff +8: 5s; ex: '21\n20ью kiss\n\n27\t9 kisses\r\n\r\n26 14\t18AndView\r\n16\r\n16\r\n16\r\n16\r\n16\r\n16\r\n16\r\n1AndView\r\n16\r\n1AndView\r\n1ват\r\n26\r\n1AndView\r\n16'
+[00:09:22] sign L4 coeff +12: 5s; ex: ' kissed kissedisplay 2 SHARE 2 +++� уд kissing qouchь+ SHARE ouch 楝 ouch ouch ouch isplay ouch ouch ouch isplay ouch ouc'
+[00:09:27] sign L4 coeff +16: 5s; ex: ' SHARE SHARE Play ��isplay SHARE SHARE SHARE SHARE SHARE SHARE SHARE SHARE SHARE SHARE SHARE SHARE SHARE +楝 Spa Spa Srou'

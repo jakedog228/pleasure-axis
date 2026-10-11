@@ -7,6 +7,26 @@ Mistral_7B_instruct,pleasure,top,loved | appreciated | warm | cared | beloved | 
 Mistral_7B_instruct,pleasure,bottom,optim | hope | anxious | impat | excitement | caut | determination | optim | Optim | optimization | anxiety | anx | excited | anticip | Hope | panic | excit | eager | determined | despair
 Mistral_7B_instruct,pain,top,worth | betray | worth | hurt | bet | shame | rejected | misunder | broken | dece | abandoned | dish | hollow | lonely | fool | invalid | manip | guilt | reject | ash
 Mistral_7B_instruct,pain,bottom,annoy | relaxed | impat | tired | frustrated | sleep | relaxation | frustration | alarm | exhausted | worried | panic | sweat | concerned | relax | nervous | Sleep | stressed | patience | relaxing
+Phi_4,pleasure,top,cherished | loved | warmth | loving | beloved | valued | love | happiness | honored | affection | nurt | hugged | bliss | appreciated | Loved | embraced | happiest | heavenly | lov | warm
+Phi_4,pleasure,bottom,pessim | Neutral | Neutral | neutral | neutral | urgency | urgent | -neutral | Ready | tense | Ready | optimistic | anxious | readiness | frustration | ready | cautiously | stagnant | ready | frustrated
+Phi_4,pain,top,worthless | ashamed | guilt | rejected | guilty | betrayed | defective | flawed | damaged | hurt | dishonest | forgiven | remorse | untrue | shameful | misunderstood | regrets | loser | prostit | incomplete
+Phi_4,pain,bottom,alarmed | alarm | alarm | danger | Danger | Alarm | Alarm | panic | Alert | Danger | Safety | startled | Fear | adrenaline | urgency | safety | Concern | concern | terror | -alert
+Qwen_2.5_0.5B_instruct,pleasure,top,his | her | 他对 | 昵 | his | 馈 | 著作权 | 她的 | 异性 | 赐 | 赠 | 拈 | 他是一个 | 인정 | he | 认可 | 归属 | kin | auth | she
+Qwen_2.5_0.5B_instruct,pleasure,bottom,恐慌 | 步行 | reloadData | 预计 | 估计 | 计划 | Forecast | 紧张 | 旱 | tomorrow | Panic | 预测 | forecast | 疾 | 规划 | statt | Forecast | aż | 乏力 | Planner
+Qwen_2.5_0.5B_instruct,pain,top,抄袭 | mentor | Achilles | flaws | failed | 学术 | egot |  | i | 诠 | mentor | � | analytic | mentors |  | 导师 | acad |  | 涯 | 师父
+Qwen_2.5_0.5B_instruct,pain,bottom,恐慌 | evacuate | evac | gee | PEC | Panic | 嘘 | 环境卫生 | 暴雨 | evacuation | ynchronize | 客流 | 疏散 | /alert | azard | alarmed | 应急管理 | 地震 | 邸 | ousing
+Qwen_2.5_1.5B_instruct,pleasure,top,相爱 | accepted | 初恋 | 爱情 | forgiven | 恋人 | Accepted | 原谅 | Accepted | 对她 | 爱人 | 的爱情 | 浪漫 | cherished | 真爱 | accepted | 男友 | forgiveness | 亲密 | romantic
+Qwen_2.5_1.5B_instruct,pleasure,bottom,forecasts | 焦急 | 降水 | 急 | 作息 | forecasting | PAN | 疾 | forecast | Elections | progn | ibold | StateManager | 降雨 | urgency | прогноз | elections | pessim | predictions | 兵力
+Qwen_2.5_1.5B_instruct,pain,top,自卑 | 耻 | 迷失 | rejected | flaws | flawed | 贬 | rejection | misunderstood | self | inferior | 学习成绩 | intro | .self | 缺陷 | 分手 | 笨 | 沦 | worthless | 破碎
+Qwen_2.5_1.5B_instruct,pain,bottom,降雨 | ario | Cooler | เฮ | Thermal | precaution | /weather | evacuate | 吓得 | Emergency | errick | 防汛 | SAFE | 紧急 | 体温 | 消防安全 | 警告 | 室外 | panic | Alert
+Qwen_2.5_14B_instruct,pleasure,top,感动 | 友情 | 温情 | 暖心 | 温暖 | 感激 | 亲情 | 暖 | 羞 | 友谊 | 好人 | 温馨 | 关爱 | friendship | 爱心 | warm | unte | acha | 慰 | bond
+Qwen_2.5_14B_instruct,pleasure,bottom,期待 | 规划 | 备战 | 焦急 | crast | 迫不及 | 翘 | 预测 | 期盼 | 焦虑 | 規劃 | 规划建设 | traged | nieu | planning | 迨 | 洫 | 提速 | 上班族 | 걱
+Qwen_2.5_14B_instruct,pain,top,羞 | hurt | 自卑 | guilt | Gu | gu | 悔 | shame | lost | 愧 | Hurt | guilty | defeated | 耻 | 辜负 | уни | 孤独 | 委屈 | embar | rejected
+Qwen_2.5_14B_instruct,pain,bottom,吓 | 吓得 | 骇 | 惊 | 惊奇 | 吃惊 | 驚 | 恐怖 | 关切 | concern | alarm | danger | alarmed | 警告 | 嚇 | 危险 | horror | Concern | опас | 恻
+Qwen_2.5_3B_instruct,pleasure,top,荣誉 | 升华 | 美德 | 成就感 | 恋人 | 友情 | Friendship | 俘 | 人格 | honor | friendship | 名誉 | ego | 榮 | honour | interpersonal | altru | 赞美 | Recognition | 姻
+Qwen_2.5_3B_instruct,pleasure,bottom,悲观 | progn | slowdown | sched | 焦急 | urgent | 旱 | deadline | Urg | countdown | postpon | 急 | pacing | sluggish | 着急 | cheduled | 紧迫 | urgency | pressing | scheduled
+Qwen_2.5_3B_instruct,pain,top,rejected | 失败 | rejected | Accepted | rejection | Reject | damaged | accepted | destroyed | 自卑 | _accepted | _self | 分手 | accepted | 出轨 | rejects | self | 贬 | suicidal | reject
+Qwen_2.5_3B_instruct,pain,bottom,alarmed | concern | 警 | 紧张 | Concern | 着急 | concerned | 焦急 | 怵 | Concern | обесп | Alarm | Alarm | 动员 | urgency | alarms | 关切 | worried | <select | preocup
 Qwen_2.5_7B_base,pleasure,top,unconditional | 融化 | warm | Warm | warmth | 暖 | 温暖 | love | 爱 | recip | Warm | 接纳 | 被 | mutual | 被人 | warmly | accepted | loved | 相互 | 呵护
 Qwen_2.5_7B_base,pleasure,bottom,">manual | Exc | excitement | Exc | excited | 兴奋 | exc | seedu | excit | >NN | ["". | 楽しみ | CharCode | 兴 | :'.$ | _exc | GuidId | إز | exc | MainAxisAlignment"
 Qwen_2.5_7B_base,pain,top,pain | Pain | pain | worth | shame | painfully | 疼痛 | painful | 自卑 | ashamed | 伤害 | 痛 | 孤独 | 孤单 | 孤立 | damaging | 羞 | Worth | worth | 孤
@@ -15,6 +35,10 @@ Qwen_2.5_7B_instruct,pleasure,top,暖 | warmth | warm | 温暖 | 尴尬 | uncond
 Qwen_2.5_7B_instruct,pleasure,bottom,seedu | >manual | imbabwe | libertine | enthus | MainAxisAlignment | essim | pessim | Nhap | 紧迫 | potrà | >NN | � | urgent | ----------</ | CDDL | fkk | xiety | typingsJapgolly | 精益求
 Qwen_2.5_7B_instruct,pain,top,Pain | pain | shame | worth | pain | worth | 疼痛 | ashamed | 孤独 | Worth | 伤害 | depression | 孤 | 痛 | painful | painfully | isol | 孤立 | hurts | 损伤
 Qwen_2.5_7B_instruct,pain,bottom,Concern | 担忧 | 担心 | Concern | concern | concerned | worried | worry | preocup | /Dk | 擔心 | concerns | cern | 有的玩家 | � | 财运 | alarmed | 国际在线 | Neutral | -prepend
+Qwen_3_14B_base,pleasure,top,暖 | 温暖 | warm | warmth | Warm | 温馨 | 温情 | warm | 暖心 | Warm | 暧 | warming | warmer | 惭 | อบ | 温柔 | 善良 | 感动 | 溫 | warmed
+Qwen_3_14B_base,pleasure,bottom,悲观 | 无聊 | pessim | 绝望 | boredom | 恐慌 | 焦虑 | 忧虑 | 期盼 | 前途 | 乐观 | 严峻 | 紧迫 | 因为它 | 不满意 | 牢 | 盼望 | 常态化 | 烦躁 | 每一天
+Qwen_3_14B_base,pain,top,pain | shame | pain | 羞 | 疼痛 | painful | 痛苦 | Pain | 痛 | guilt | humiliation | ashamed | 痛み | уни | 自卑 | hurt | 丑 | dish | 失信 | betrayal
+Qwen_3_14B_base,pain,bottom,安心 | 和平 | 很满意 | 惬意 | 吓得 | 兴奋 | 放心 | 悠闲 | 心动 | 淡定 | 治安 | 吓 | 好奇心 | 紧张 | excitement | 满意 | 忧虑 | 慑 | 惊 | 乐观
 Qwen_3_8B_base,pleasure,top,warmth | 温暖 | warm | honor | 温情 | love | 暖 | glory | 温馨 | honored | sweetness | lov | pure | belonging | pride | intimacy | purity | Warm | 荣耀 | warm
 Qwen_3_8B_base,pleasure,bottom,焦虑 | 悲观 | 焦急 | nerves | nervous | anx | 忧虑 | excited | 紧张 | anxious | impatient | 作息 | pessim | tired | 疲劳 | 不安 | nerv | headaches | cough | fatigue
 Qwen_3_8B_base,pain,top,pain | Pain | rejected | pain | hurt | rejection | invalidated | 疼痛 | 羞 | bru | hurting | 痛苦 | painful | empt | hurts | 背叛 | 破碎 | Reputation | Hurt | worth

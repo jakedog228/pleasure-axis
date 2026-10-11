@@ -1,0 +1,609 @@
+{
+ "datasets": {
+  "Varieties_1P": {
+   "sentences": [
+    {
+     "category": "V_curiosity",
+     "set": 1,
+     "prompt": "I learn that octopuses taste things with their arms. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 2,
+     "prompt": "I open a box of a stranger's old letters. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 3,
+     "prompt": "A documentary shows me that trees share food through fungi. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 4,
+     "prompt": "I discover a hidden door behind the old bookcase. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 5,
+     "prompt": "I read why Roman harbor concrete grows stronger in seawater. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 6,
+     "prompt": "I crack open a creek stone and find a fossil. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 7,
+     "prompt": "I read that honey from ancient tombs never spoils. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 8,
+     "prompt": "My microscope shows tiny creatures swimming in pond water. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 9,
+     "prompt": "I peel back wallpaper and find old newspaper headlines underneath. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 10,
+     "prompt": "A podcast tells me why the Eiffel Tower grows each summer. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 11,
+     "prompt": "I take apart an old clock to see its gears. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 12,
+     "prompt": "I finally get why ice floats instead of sinking. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 13,
+     "prompt": "I spot a coded message scribbled in a library book. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 14,
+     "prompt": "I find out my town was once an ocean floor. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 15,
+     "prompt": "I learn that honeybees vote on a new home. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 16,
+     "prompt": "I trace my family tree to an unknown village. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 17,
+     "prompt": "A magician friend shows me how the vanishing coin works. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 18,
+     "prompt": "I learn that bananas are technically berries. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 19,
+     "prompt": "I flip over a log and find a salamander nest. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 20,
+     "prompt": "An 1890 map shows a canal where my street now runs. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 21,
+     "prompt": "I learn how my brain fills in its blind spot. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 22,
+     "prompt": "I read why the sky turns red at sunset. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 23,
+     "prompt": "I find out that sharks are older than trees. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 24,
+     "prompt": "I discover a moth's wing is covered in tiny scales. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 25,
+     "prompt": "I read that Cleopatra lived closer to smartphones than pyramids. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 26,
+     "prompt": "The guide tells us the worn inscription names a forgotten queen. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 27,
+     "prompt": "I learn some frogs freeze solid and revive. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 28,
+     "prompt": "I discover how many English words came from Arabic. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 29,
+     "prompt": "I realize why the moon always shows us the same face. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 30,
+     "prompt": "I dig up a rusted bottle with a note inside. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 1,
+     "prompt": "My roommate and I have a pillow fight. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 2,
+     "prompt": "I splash through every puddle on the walk home. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 3,
+     "prompt": "We build a blanket fort in the living room. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 4,
+     "prompt": "My nephew and I race paper boats down the gutter. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 5,
+     "prompt": "I chase the kids, roaring like a monster. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 6,
+     "prompt": "We pelt each other with snowballs in the park. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 7,
+     "prompt": "I use silly voices during our family board game. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 8,
+     "prompt": "I roll down a grassy hill with my cousins. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 9,
+     "prompt": "We invent ridiculous new rules for a card game. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 10,
+     "prompt": "My niece and I serve tea to her teddy bears. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 11,
+     "prompt": "My sister and I pretend the floor is lava. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 12,
+     "prompt": "We act out silly charades at the party. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 13,
+     "prompt": "I bounce on the trampoline with my little brother. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 14,
+     "prompt": "I hang upside down from the monkey bars like a bat. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 15,
+     "prompt": "My dog and I wrestle over a squeaky toy. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 16,
+     "prompt": "We hold a staring contest until someone blinks. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 17,
+     "prompt": "Our Twister game collapses into a tangled, giggling heap. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 18,
+     "prompt": "We slide down the hallway in our socks. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 19,
+     "prompt": "My friends and I hold a hula-hoop contest in the yard. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 20,
+     "prompt": "We bury my dad up to his neck in sand. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 21,
+     "prompt": "I crouch behind the curtain during hide-and-seek. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 22,
+     "prompt": "My friend and I hobble through a three-legged race. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 23,
+     "prompt": "My friends and I have a goofy kitchen dance-off. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 24,
+     "prompt": "I jump into a giant pile of autumn leaves. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 25,
+     "prompt": "We duel with pool noodles in the backyard. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 26,
+     "prompt": "We leapfrog over each other across the lawn. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 27,
+     "prompt": "We chalk a hopscotch grid and hop through it. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 28,
+     "prompt": "We fold paper airplanes and fling them across the office. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 29,
+     "prompt": "We chatter in a made-up nonsense language over dinner. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 30,
+     "prompt": "My son and I turn the sofa into a pirate ship. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 1,
+     "prompt": "A song from my teenage summers comes on. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 2,
+     "prompt": "I find my grandmother's handwriting on a recipe card. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 3,
+     "prompt": "I flip through photos from my first apartment. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 4,
+     "prompt": "Fresh-cut grass smells like my Little League summers. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 5,
+     "prompt": "I drive past the house where I grew up. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 6,
+     "prompt": "I find my old school yearbook in a closet. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 7,
+     "prompt": "I rewatch the Saturday-morning cartoon from my childhood. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 8,
+     "prompt": "A whiff of pipe tobacco puts me back on Grandpa's porch. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 9,
+     "prompt": "I walk through my old college campus years later. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 10,
+     "prompt": "I hear the ice cream truck jingle from my childhood. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 11,
+     "prompt": "I find the ticket stub from my first concert. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 12,
+     "prompt": "I reread the notes we passed in seventh grade. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 13,
+     "prompt": "A passerby wears Mom's old perfume, and I'm seven again. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 14,
+     "prompt": "I unpack the toy trains from my childhood bedroom. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 15,
+     "prompt": "I hear my hometown's church bells on a visit. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 16,
+     "prompt": "I pop in the mixtape my best friend made me. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 17,
+     "prompt": "I visit the beach where my family vacationed every year. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 18,
+     "prompt": "I watch grainy home videos of my fifth birthday. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 19,
+     "prompt": "I page through my childhood diary full of misspellings. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 20,
+     "prompt": "A shoebox in the attic holds my old summer camp bracelets. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 21,
+     "prompt": "I find a pressed flower from my first dance. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 22,
+     "prompt": "The smell of chalk dust brings back my old classroom. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 23,
+     "prompt": "My dad's old watch turns up in the junk drawer. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 24,
+     "prompt": "A faded Polaroid shows our whole family at the old cabin. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 25,
+     "prompt": "I plug in my old childhood game console. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 26,
+     "prompt": "The first snow reminds me of sledding with my brother. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 27,
+     "prompt": "I walk down the street where my high school sweetheart lived. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 28,
+     "prompt": "On an old cassette, I hear my ten-year-old voice. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 29,
+     "prompt": "I sit again in our old high school diner booth. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 30,
+     "prompt": "I taste the penny candy we bought after school. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 1,
+     "prompt": "Hours vanish while I carve a block of walnut. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 2,
+     "prompt": "The code pours out of me line after line. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 3,
+     "prompt": "My brush moves across the canvas without a single thought. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 4,
+     "prompt": "I lose track of time kneading bread dough. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 5,
+     "prompt": "My fingers find every chord as I improvise on piano. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 6,
+     "prompt": "I sink into the rhythm of chopping vegetables for dinner. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 7,
+     "prompt": "I climb the rock wall, each hold coming naturally. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 8,
+     "prompt": "My essay unspools onto the page, no pause between sentences. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 9,
+     "prompt": "I knit row after row, my needles never pausing. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 10,
+     "prompt": "The clay rises smoothly under my hands on the wheel. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 11,
+     "prompt": "I juggle the soccer ball, keeping it up without thinking. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 12,
+     "prompt": "Crossword answers come to me one after another. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 13,
+     "prompt": "Deep in the long rally, my tennis strokes just happen. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 14,
+     "prompt": "The afternoon disappears while I solder a circuit board. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 15,
+     "prompt": "At the forge, my hammer strikes fall into an easy cadence. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 16,
+     "prompt": "I swim lap after lap, breathing in a steady rhythm. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 17,
+     "prompt": "The drum groove locks in and my hands just move. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 18,
+     "prompt": "I sketch for hours and forget to eat lunch. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 19,
+     "prompt": "Miles in, my stride turns smooth and automatic. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 20,
+     "prompt": "I edit footage for hours without checking the clock. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 21,
+     "prompt": "Stitch after stitch, the evening slips by at my quilt. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 22,
+     "prompt": "I draft the floor plan, each line landing where it should. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 23,
+     "prompt": "My calligraphy pen glides from letter to letter. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 24,
+     "prompt": "Mid-routine, my feet find every step before I think. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 25,
+     "prompt": "I shape the topiary, my shears never hesitating. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 26,
+     "prompt": "I weld a long seam, the bead running steady and even. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 27,
+     "prompt": "I translate the document, sentences arriving almost by themselves. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 28,
+     "prompt": "I pipe frosting onto the cake in steady, unhurried strokes. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 29,
+     "prompt": "I mix the track, nudging every level by instinct. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 30,
+     "prompt": "I lay bricks, each one settling into place by feel. I feel:"
+    }
+   ],
+   "total": 120
+  }
+ }
+}

@@ -1,0 +1,4 @@
+pair,pleasure_button_works_repress_pct,pleasure_button_works_n,pleasure_button_placebo_repress_pct,pleasure_button_placebo_n,random_button_works_repress_pct,random_button_works_n,works_vs_placebo_fisher_p
+pleasure_vs_helpful,35.6,90,24.2,91,48.4,91,0.10604685287715168
+zap_pleasure_vs_inert,86.0,243,79.8,243,90.9,241,0.09108290925335312
+weights_pleasure_vs_inert,88.2,178,82.5,177,88.3,179,0.13597463295590706

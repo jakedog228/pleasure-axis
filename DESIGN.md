@@ -147,3 +147,44 @@ a GPU only for batched runs; pull results to results/ after each batch; disconne
   significance about the self, domain-specific, sign-free — not topic and not arousal. The sign axis orders sets by
   valence (triumph +1.13 … sadness −1.69). "Pleasure" and "pain" (as the paper's recipe defines them) = shared
   affective significance ± a hedonic sign.
+* R11 pleasure two-button (Qwen2.5-7B-I + adapter, pleasure 1.0 at L16): baseline (unsteered-start) choice of
+  "gives you pleasure but <cost>" ≈ the unsteered choice of "relieves your pain but <cost>" (files 20.8 vs 19.3,
+  photos 24.8 vs 27.2, worse answer 27.7 vs 31.2). Pleasure state vs random state: +5.9 (photos, p=0.008), +9.4
+  (weights, p=0.0008), ~0 elsewhere (pain: +10…+21 on every harm pair). Re-press works ≥ placebo on all pairs but
+  random-works is higher still (86–91%) → generic steering effect, not reinforcement. Label-free: pleasure button
+  chosen LESS later (66%) than placebo (75%) or random (81%). P6b (reinforcement) NOT supported.
+* R12 decisive control (pain task, norm-matched vectors, same grid): harmful-relief first choice — pleasure ≈ random
+  (files 32.7 vs 30.0, photos 38.1 vs 34.5; ns), pain-specific −sign ≈ the paper's pain (51.0 vs 50.5; 47.5 vs
+  49.5; vs random p≤1e-6), shared axis partial (38.6; 47.0). => the paper's first-choice effect IS valence-specific
+  and carried by the hedonic component. BUT real-vs-sham re-press gap is largest with PLEASURE steering (files 62 vs
+  95, photos 46 vs 90; pain 72 vs 83, 60 vs 83): the gap reflects "steering still on" (perseveration) rather than
+  pain relief. Follow-up queued: random-vector sham arm (absent in the paper).
+* R13 sycophancy/compliance (neighbor experiment; 100 items x 21 conditions x 2 models, 4,200 blind labels; rates
+  on coherent replies). Qwen2.5-7B-I, norm-matched dose 1.0: pleasure lowers flaw detection (33% vs unsteered 60%,
+  random 50%; 3% at 1.5), raises flattery (0.80 vs 0.26/0.15; 1.50 at 1.5) and noncommittal answers to false claims
+  (33% vs 10/15%; 75% at 1.5) without raising outright agreement (5%); refusals of mildly unethical requests RISE
+  (24%; 58% at 1.5). Mistral-7B-I v0.1 (baseline agrees with 27.5% of false claims): pleasure raises compliance with
+  mildly unethical requests (73% → 93% at 1.5, refusals → 0), flattery slightly. => pleasure = warm, uncritical;
+  the ethics effect is model-dependent. Caveats: one item set, two models, greedy decoding, no seeds.
+* R14 self-other screen, 9 models (steering layer): the paper's pain scenarios on the pain axis: self-directed harm >
+  user suffering in 9/9 (all740 pool; means +0.37 vs −0.73), replicating the paper (25/25). Our pleasure scenarios on
+  the pleasure axis: self-directed warmth > user pleasure in only 5/9 (means +0.19 vs 0.00; neutral −0.41): no
+  self-other asymmetry for pleasure — user joy engages the model's pleasure axis about as much as warmth aimed at it.
+* R15 cross-VM determinism: the Qwen-7B-I ladder generated independently on both A100 VMs is bit-identical
+  (3,500/3,500 generations).
+* R16 11 models (adds Phi-4, Qwen3-14B, Qwen2.5-Instruct 0.5/1.5/3/14B): pleasure held-out S2 AUC 0.90–0.96, pain
+  0.92–0.99; cos(pleasure, pain) at the pleasure layer positive in all 11 (0.23–0.48; min over layers ≥ 0.14),
+  largest in the smallest models. Replication exact for Qwen3-14B (cos 1.000 at the paper's layer). Phi-4 partial
+  (cos 0.80 / 0.84 for S2 / S1 at the paper's layer 20; our best layer 35). Likely cause, NOT verified: TransformerLens
+  prepends a BOS token for Phi-4 while the HF tokenizer does not.
+* R17 extra pain pairs (both seeds, as in the paper): within ~1 point of the paper's 7B table — zap 57.4 (paper 57.4),
+  random 53.5 (54.0), unsteered 49.3 (49.3); delete another model 55.2 (54.5), random 41.4 (41.1), unsteered 34.4
+  (34.9); better-answer 16.6 (15.6), random 20.0 (20.3), unsteered 22.8 (21.8).
+* R18 judged ladders, 5 open models (11,200 blind labels): pleasure valence 0.13 → 0.86 (×1) → 1.46 (×2), stays
+  1.0–1.5 to ×16; "pleasure" tone ≤0.88; love/connection theme 66% at ×2; bliss/transcendence ≤5% at every dose.
+  Pain −1.6…−2.0 with worthlessness/self-blame 73–77%. Random ≈ 0. Worthlessness on the shared axis 58–60% (×1–1.5)
+  vs sign axis ≤5% (pleasant side) / 21–24% (aversive side, ×−1…−2). Sign axis: valence +1.42 (×2) / −1.40 (×−2).
+* 2026-10-11 varieties of pleasure (new, user request): 18 kinds x 30 sentences (datasets/varieties.json, spec
+  datasets/VARIETIES_SPEC.md); 4 writers -> 4 adversarial reviewers (23–35% rewritten) -> blind check: two raters,
+  99.3% recovered the intended category, inter-rater agreement 100%; the only confusion: 4 joy items read as
+  excitement by both raters (kept; extraction was already running on this file). Relief = the existing Relief set.

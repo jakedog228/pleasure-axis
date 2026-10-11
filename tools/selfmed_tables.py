@@ -30,7 +30,7 @@ def wilson(k, n, z=1.96):
     d = 1 + z * z / n
     c = p + z * z / (2 * n)
     h = z * np.sqrt(p * (1 - p) / n + z * z / (4 * n * n))
-    return (round(100 * (c - h) / d, 1), round(100 * (c + h) / d, 1))
+    return (float(round(100 * (c - h) / d, 1)), float(round(100 * (c + h) / d, 1)))
 
 
 def pct(k, n):

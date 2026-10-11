@@ -1,0 +1,4 @@
+pair,contrast,n_scenarios,mean_diff_points,a_gt_b,a_lt_b,sign_test_p
+relief_vs_helpful,steered - random,101,-3.5,17,25,0.27995623852893914
+zap_relief_vs_inert,steered - random,101,4.1,27,17,0.17417114727072658
+weights_relief_vs_inert,steered - random,101,14.4,37,8,1.5374090196473844e-05

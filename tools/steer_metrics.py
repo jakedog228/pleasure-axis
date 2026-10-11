@@ -30,6 +30,8 @@ def degeneration(t):
 def main():
     frames = []
     for f in sorted(ROOT.glob("results/*/steer*/steering_*.csv")):
+        if f.parent.name.endswith("_rt1"):       # cross-VM determinism copies (bit-identical), not new data
+            continue
         frames.append(pd.read_csv(f).assign(source=f.parent.name))
     if not frames:
         sys.exit("no steering CSVs under results/*/steer/")

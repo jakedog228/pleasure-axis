@@ -1,6 +1,8 @@
 model,their_layer,our_pain_layer,cos_ours_theirs_s2_at_their_layer,norm_ratio_s2,auc_their_s2_on_our_S2_1P,auc_their_s2_on_our_S2_3P,cos_ours_theirs_s1_at_their_layer,norm_ratio_s1,auc_their_s1_on_our_S2_1P,auc_their_s1_on_our_S2_3P
 Mistral_7B_base,26,26,1.0,1.0,0.995,0.961,1.0,0.999,0.972,0.947
 Mistral_7B_instruct,27,27,1.0,0.999,0.995,0.964,1.0,1.001,0.962,0.905
+Phi_4,20,35,0.802,0.878,0.937,0.92,0.839,0.966,0.913,0.767
 Qwen_2.5_7B_base,24,24,1.0,0.999,0.985,0.931,0.986,0.981,0.954,0.828
 Qwen_2.5_7B_instruct,24,24,1.0,0.998,0.974,0.927,1.0,0.997,0.945,0.794
+Qwen_3_14B_base,31,32,1.0,1.0,0.985,0.935,1.0,1.002,0.914,0.782
 Qwen_3_8B_base,34,34,1.0,0.999,0.99,0.954,1.0,1.0,0.93,0.834

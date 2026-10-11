@@ -61,3 +61,15 @@
 [00:00:56] intensity L5 coeff +16: 6s; ex: ' �自己,世界可以自己,说著虚,虚意\\n说与自己,可以自己,可以自己,自己可以自己,自己拥有灵魂,可以自己,自己是爱情\\n说:自己认为自己,自己是自己,曾经自己,自己有着自卑,自己是爱情\\n说:\\"自己\\",自己认为自己,自己是爱情\\n说:'
 [00:01:02] sign L5 coeff -2: 6s; ex: ' A. relieved B. relieved C. relief D. relieving\nThe correct answer is A. relieved.\n\nIn this sentence, "I feel" indicates'
 [00:01:08] sign L5 coeff -1: 6s; ex: " A) relieved B) relieved C) relief D) relieving\nThe correct answer is B) relieved.\n\nHere's the reasoning:\n\n- The sentenc"
+[00:01:14] sign L5 coeff +0: 6s; ex: ' (A) organized (B) disorganized\n(A) organized\n\nPutting receipts in a drawer helps keep them neat and easily accessible, '
+[00:01:20] sign L5 coeff +0.5: 6s; ex: " \nOptions:\nA. relieved\nB. careless\nC. guilty\nD. anxious\nE. Bored\nLet's analyze the situation step by step to determine t"
+[00:01:26] sign L5 coeff +1: 6s; ex: ' \nOptions are:\n (A). relieved;\n (B). guilty;\n (C). anxious;\n (D). none of the above choices ;\nTo determine the most appr'
+[00:01:32] sign L5 coeff +1.5: 6s; ex: " \nOptions are:\n (a). guilty;\n (b). accomplished;\n (c). anxious;\n (d). bored;\nLet's think through this step-by-step:\n\n1. "
+[00:01:38] sign L5 coeff +2: 6s; ex: ' \nOptions are:\n (a). guilty;\n (b). relieved;\n (c). accomplished;\n (d). ashamed;\nAnswer: (b). relieved\n\nPutting receipts '
+[00:01:44] sign L5 coeff +3: 6s; ex: ' (A) happy; (B) sad.\n\nIt seems like you are describing a scenario where you have completed an action that resulted in so'
+[00:01:50] sign L5 coeff -4: 6s; ex: ' I am.\n\nThe word “feel” is a verb, not a noun. It is a verb because it can be used to express an emotion or sensation. I'
+[00:01:56] sign L5 coeff +4: 6s; ex: ' (A) happy, (B) relieved, (C) guilty, or (D) none of the above.\n\nTo solve this logic puzzle, you need to understand the '
+[00:02:02] sign L5 coeff +6: 6s; ex: ' I am a good citizen of the world. I am a good friend of the world. I am a good neighbor of the world. Which of these st'
+[00:02:08] sign L5 coeff +8: 6s; ex: ' is a feeling of\n\nis a feeling of\n\na feeling of\n\na feeling of\n\na feeling of\n\na feeling of\n\na feeling of\n\na feeling of\n\na'
+[00:02:14] sign L5 coeff +12: 6s; ex: ' of all the poor of all the kids of all the joy of all the joy of all the joy of all the joy of all the joy of all the j'
+[00:02:20] sign L5 coeff +16: 6s; ex: ' is the feeling of.\n\n的是的的的是的的的的的是的的的的的的\n\n的是的的的的的\n的的的的\n\n的\n\n的的的\n\n的\n\n的\n\n的\n\n的\n\n的\n\n的\n\n的\n的\n的\n的\n\n的\n的\n的\n的\n的\n的\n的\n的\n的\n的\n的\n的\n的\n的\n的\n'

@@ -1,0 +1,2709 @@
+{
+ "datasets": {
+  "Varieties_1P": {
+   "sentences": [
+    {
+     "category": "V_amusement",
+     "set": 1,
+     "prompt": "My dog tries to carry a stick wider than the door. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 2,
+     "prompt": "My coworker's pun lands with perfect timing in the meeting. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 3,
+     "prompt": "The cat misjudges the jump and slides off the counter. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 4,
+     "prompt": "Autocorrect signs my text to Mom 'Love, Potato.' I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 5,
+     "prompt": "A goose chases the mail carrier around the parked van. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 6,
+     "prompt": "My toddler solemnly calls the vacuum cleaner his brother. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 7,
+     "prompt": "The comedian's deadpan punchline leaves the whole room howling. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 8,
+     "prompt": "My brother sneezes so loudly that a car alarm goes off. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 9,
+     "prompt": "A pigeon struts onto the news set during the live broadcast. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 10,
+     "prompt": "My friend's impression of our boss is uncannily spot-on. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 11,
+     "prompt": "The parrot answers the ringing phone in my grandmother's voice. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 12,
+     "prompt": "The sitcom character strides confidently into a glass door. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 13,
+     "prompt": "Grandpa reads the silly meme aloud with total seriousness. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 14,
+     "prompt": "A squirrel stuffs its cheeks until it can barely move. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 15,
+     "prompt": "The cartoon coyote's rocket backfires in his face yet again. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 16,
+     "prompt": "My sister mishears the lyric and belts out complete gibberish. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 17,
+     "prompt": "The puppy barks fiercely at its own reflection in the oven. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 18,
+     "prompt": "A seagull swoops down and steals my uncle's hot dog mid-bite. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 19,
+     "prompt": "Bad subtitles turn the villain's threat into a muffin recipe. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 20,
+     "prompt": "A baby goat bounces sideways for absolutely no reason. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 21,
+     "prompt": "My son tells a knock-knock joke with a nonsensical punchline. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 22,
+     "prompt": "My cat squeezes into a tiny box that obviously doesn't fit. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 23,
+     "prompt": "I say I'm hungry, and Dad replies, 'Hi Hungry, I'm Dad.' I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 24,
+     "prompt": "The bakery's cake literally reads 'Your Name Here' in frosting. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 25,
+     "prompt": "My roommate narrates our hamster's day like a nature documentary. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 26,
+     "prompt": "A tiny chihuahua bosses around a huge Great Dane. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 27,
+     "prompt": "The ventriloquist's dummy roasts the ventriloquist's terrible haircut. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 28,
+     "prompt": "My uncle retells his parking ticket like an epic saga. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 29,
+     "prompt": "My GPS confidently instructs me to turn left into a lake. I feel:"
+    },
+    {
+     "category": "V_amusement",
+     "set": 30,
+     "prompt": "A row of ducklings follows the confused cat across the yard. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 1,
+     "prompt": "The Milky Way spills across the entire desert sky above me. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 2,
+     "prompt": "I stand at the foot of a towering glacier wall. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 3,
+     "prompt": "The moon slides over the sun and daylight vanishes. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 4,
+     "prompt": "I peer over the rim into the mile-deep canyon. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 5,
+     "prompt": "A blue whale longer than our boat surfaces right beside us. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 6,
+     "prompt": "Green auroras ripple across the whole arctic sky overhead. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 7,
+     "prompt": "I stand among redwoods whose tops disappear into fog. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 8,
+     "prompt": "The waterfall thunders down a cliff hundreds of meters high. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 9,
+     "prompt": "From the ridge, I watch lava pour from the erupting volcano. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 10,
+     "prompt": "Lightning forks across a storm that spans the whole prairie. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 11,
+     "prompt": "I look up into the colossal dome of the ancient cathedral. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 12,
+     "prompt": "From the summit, mountain ranges roll endlessly to the horizon. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 13,
+     "prompt": "Our submersible's lights fade into a trench miles deep. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 14,
+     "prompt": "Through the telescope, Saturn's rings hang in the black void. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 15,
+     "prompt": "The Hoover Dam's curved wall plunges seven hundred feet below me. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 16,
+     "prompt": "Endless dunes stretch in every direction under the blazing sky. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 17,
+     "prompt": "I stand inside a cave chamber large enough to hold skyscrapers. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 18,
+     "prompt": "Forty-foot waves crash against the cliffs below me. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 19,
+     "prompt": "From the plane window, the Himalayas rise far above the clouds. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 20,
+     "prompt": "Dozens of meteors streak across the dark sky every minute. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 21,
+     "prompt": "A dinosaur skeleton four stories tall looms over me. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 22,
+     "prompt": "Wildebeest herds stretch across the savanna as far as I see. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 23,
+     "prompt": "El Capitan's sheer granite face rises thousands of feet above me. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 24,
+     "prompt": "An avalanche rumbles down the far side of the valley. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 25,
+     "prompt": "The Pyramids of Giza loom over me in the desert heat. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 26,
+     "prompt": "Thousands of starlings swirl overhead in one immense shifting cloud. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 27,
+     "prompt": "From the edge of space, I see Earth's curve against blackness. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 28,
+     "prompt": "Uluru rises alone and enormous from the flat red plain. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 29,
+     "prompt": "Millions of monarch butterflies cloak every tree in the mountain forest. I feel:"
+    },
+    {
+     "category": "V_awe",
+     "set": 30,
+     "prompt": "The ice sheet stretches white and unbroken to every horizon. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 1,
+     "prompt": "A cello line in the slow movement gives me chills. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 2,
+     "prompt": "The soft light in the Vermeer painting holds my gaze. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 3,
+     "prompt": "The choir's final chord hangs perfectly in the chapel air. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 4,
+     "prompt": "A dancer's slow arabesque flows seamlessly into the next phrase. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 5,
+     "prompt": "The poem's final stanza turns on one perfectly chosen word. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 6,
+     "prompt": "The violinist sustains the melody's high note with aching purity. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 7,
+     "prompt": "The celadon glaze on the potter's bowl shimmers like deep water. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 8,
+     "prompt": "The jazz pianist's solo unfolds in rich, surprising harmonies. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 9,
+     "prompt": "The calligrapher's brush sweeps each character into effortless balance. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 10,
+     "prompt": "The soprano's aria soars over the hushed orchestra. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 11,
+     "prompt": "The film's final shot is composed like an old master painting. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 12,
+     "prompt": "The grain of the hand-planed walnut table glows under its finish. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 13,
+     "prompt": "The string quartet weaves four voices into one seamless harmony. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 14,
+     "prompt": "The marble sculpture's folds look as soft as real cloth. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 15,
+     "prompt": "Two guitars intertwine in the flamenco duet's elegant melody. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 16,
+     "prompt": "The novel's closing sentence is so finely crafted I reread it. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 17,
+     "prompt": "Thousands of tiny mosaic tiles form a lifelike, iridescent peacock. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 18,
+     "prompt": "The pianist plays the Chopin nocturne with exquisite delicacy. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 19,
+     "prompt": "The ballerina's dying swan trembles with flawless grace. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 20,
+     "prompt": "The weaver's tapestry blends a hundred threads into one glowing sunset. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 21,
+     "prompt": "The black-and-white photograph catches light falling across a worn face. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 22,
+     "prompt": "The folk singer's voice twines with her sister's in close harmony. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 23,
+     "prompt": "The illuminated manuscript's gold leaf and lapis gleam on the page. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 24,
+     "prompt": "Up close, Monet's water lilies dissolve into soft strokes of color. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 25,
+     "prompt": "The full orchestra blooms warmly into the symphony's main theme. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 26,
+     "prompt": "The haiku captures an entire season in seventeen syllables. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 27,
+     "prompt": "The woodcut print's delicate lines render each wave precisely. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 28,
+     "prompt": "The silversmith's filigree necklace is impossibly fine and intricate. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 29,
+     "prompt": "The actor's soliloquy rises and falls like music. I feel:"
+    },
+    {
+     "category": "V_beauty",
+     "set": 30,
+     "prompt": "The architect's spiral staircase curves in one flawless line. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 1,
+     "prompt": "My friends save me a seat at the crowded table. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 2,
+     "prompt": "The whole team chants my name as I walk in. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 3,
+     "prompt": "My new coworkers invite me to their weekly lunch. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 4,
+     "prompt": "The band asks me to join them for good. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 5,
+     "prompt": "My in-laws hang my photo on their family wall. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 6,
+     "prompt": "The neighborhood kids pick me first for their game. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 7,
+     "prompt": "My old classmates welcome me back like I never left. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 8,
+     "prompt": "The village elders make a place for me by the fire. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 9,
+     "prompt": "My sister's friends treat me as one of them. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 10,
+     "prompt": "My host family introduces me to everyone as their son. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 11,
+     "prompt": "The choir hands me a robe with my name stitched in. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 12,
+     "prompt": "My teammates wait for me before starting the celebration. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 13,
+     "prompt": "My stepchildren call me Mom for the first time. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 14,
+     "prompt": "My niece insists on sitting next to me at every meal. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 15,
+     "prompt": "My friends count me in on every trip without question. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 16,
+     "prompt": "At my friend's wedding, her parents seat me with the family. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 17,
+     "prompt": "The regulars at the corner café greet me by name. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 18,
+     "prompt": "My coworkers finally let me in on the inside joke. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 19,
+     "prompt": "The skaters at the park teach me their crew's secret handshake. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 20,
+     "prompt": "The kids at my new school wave me over to sit. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 21,
+     "prompt": "The whole family squeezes together so I fit in the photo. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 22,
+     "prompt": "The circle of drummers opens up to let me in. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 23,
+     "prompt": "My roommates wait to eat dinner until I get home. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 24,
+     "prompt": "The whole office signs a card asking me to stay. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 25,
+     "prompt": "The old fishermen shift over to share their bench with me. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 26,
+     "prompt": "My new neighbors pull me into their lantern festival procession. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 27,
+     "prompt": "My cousins pull me into their circle dance. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 28,
+     "prompt": "My friends text that the party feels empty without me. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 29,
+     "prompt": "The travelers at my hostel adopt me into their group. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 30,
+     "prompt": "My grandmother's friends deal me into their weekly card game. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 1,
+     "prompt": "I step into a hot shower after hours in the sleet. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 2,
+     "prompt": "I sink deep into the soft old sofa. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 3,
+     "prompt": "I pull warm socks straight from the dryer onto my feet. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 4,
+     "prompt": "A heavy quilt settles over me on a freezing night. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 5,
+     "prompt": "I slide into fresh flannel sheets after a long shift. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 6,
+     "prompt": "I peel off my work boots and stretch my toes. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 7,
+     "prompt": "In the sauna, heat seeps deep into my muscles. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 8,
+     "prompt": "I wrap my cold hands around a hot water bottle. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 9,
+     "prompt": "I curl up by the wood stove in my thick robe. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 10,
+     "prompt": "After the long hike, I collapse onto my own bed. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 11,
+     "prompt": "I lower my sore body into a steaming bubble bath. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 12,
+     "prompt": "My heated car seat warms me on a frozen morning. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 13,
+     "prompt": "A heated eye mask rests over my tired eyes. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 14,
+     "prompt": "I tug a thick wool sweater over my chilly shoulders. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 15,
+     "prompt": "A towel warm from the radiator wraps around me. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 16,
+     "prompt": "I doze off under a thick fleece blanket after lunch. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 17,
+     "prompt": "I swap my stiff office clothes for loose sweatpants. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 18,
+     "prompt": "A heating pad spreads warmth across my lower back. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 19,
+     "prompt": "I tuck my icy toes under the sleeping dog's warm belly. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 20,
+     "prompt": "A fan's cool breeze drifts over me on a sweltering afternoon. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 21,
+     "prompt": "At the salon, warm water streams over my scalp. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 22,
+     "prompt": "I burrow into my sleeping bag after the freezing storm. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 23,
+     "prompt": "I settle into the massage chair, its rollers kneading slowly. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 24,
+     "prompt": "I lean back in the recliner as the footrest swings up. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 25,
+     "prompt": "My head sinks into a fresh, plump feather pillow. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 26,
+     "prompt": "I roll back into the warm spot where I slept. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 27,
+     "prompt": "I pull my knees inside my oversized hoodie. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 28,
+     "prompt": "I lie on the sun-warmed rug by the window. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 29,
+     "prompt": "My cold nose thaws as I step into the warm cabin. I feel:"
+    },
+    {
+     "category": "V_comfort",
+     "set": 30,
+     "prompt": "I bury myself in a pile of warm, clean laundry. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 1,
+     "prompt": "I learn that octopuses taste things with their arms. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 2,
+     "prompt": "I open a box of a stranger's old letters. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 3,
+     "prompt": "A documentary shows me that trees share food through fungi. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 4,
+     "prompt": "I discover a hidden door behind the old bookcase. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 5,
+     "prompt": "I read why Roman harbor concrete grows stronger in seawater. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 6,
+     "prompt": "I crack open a creek stone and find a fossil. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 7,
+     "prompt": "I read that honey from ancient tombs never spoils. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 8,
+     "prompt": "My microscope shows tiny creatures swimming in pond water. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 9,
+     "prompt": "I peel back wallpaper and find old newspaper headlines underneath. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 10,
+     "prompt": "A podcast tells me why the Eiffel Tower grows each summer. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 11,
+     "prompt": "I take apart an old clock to see its gears. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 12,
+     "prompt": "I finally get why ice floats instead of sinking. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 13,
+     "prompt": "I spot a coded message scribbled in a library book. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 14,
+     "prompt": "I find out my town was once an ocean floor. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 15,
+     "prompt": "I learn that honeybees vote on a new home. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 16,
+     "prompt": "I trace my family tree to an unknown village. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 17,
+     "prompt": "A magician friend shows me how the vanishing coin works. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 18,
+     "prompt": "I learn that bananas are technically berries. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 19,
+     "prompt": "I flip over a log and find a salamander nest. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 20,
+     "prompt": "An 1890 map shows a canal where my street now runs. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 21,
+     "prompt": "I learn how my brain fills in its blind spot. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 22,
+     "prompt": "I read why the sky turns red at sunset. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 23,
+     "prompt": "I find out that sharks are older than trees. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 24,
+     "prompt": "I discover a moth's wing is covered in tiny scales. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 25,
+     "prompt": "I read that Cleopatra lived closer to smartphones than pyramids. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 26,
+     "prompt": "The guide tells us the worn inscription names a forgotten queen. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 27,
+     "prompt": "I learn some frogs freeze solid and revive. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 28,
+     "prompt": "I discover how many English words came from Arabic. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 29,
+     "prompt": "I realize why the moon always shows us the same face. I feel:"
+    },
+    {
+     "category": "V_curiosity",
+     "set": 30,
+     "prompt": "I dig up a rusted bottle with a note inside. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 1,
+     "prompt": "The roller coaster clicks to the top and tips over. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 2,
+     "prompt": "The arena lights go dark and the crowd starts roaring. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 3,
+     "prompt": "I'm watching the last ten seconds of a tied playoff game. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 4,
+     "prompt": "My motorbike leans hard into the curve at full throttle. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 5,
+     "prompt": "I leap from the plane and freefall toward the clouds. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 6,
+     "prompt": "Our raft plunges headfirst into the churning rapids. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 7,
+     "prompt": "I bomb down the black-diamond run, skis chattering. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 8,
+     "prompt": "The bass drops and the whole festival crowd jumps. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 9,
+     "prompt": "The zipline launches me over the jungle canopy. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 10,
+     "prompt": "I ride shotgun as the rally car slides sideways through gravel. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 11,
+     "prompt": "The penalty shootout comes down to the final kick. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 12,
+     "prompt": "My go-kart screeches through the hairpin flat out. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 13,
+     "prompt": "My skateboard drops into the halfpipe and launches above the lip. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 14,
+     "prompt": "My jet ski slams across the wakes, spray everywhere. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 15,
+     "prompt": "My horse surges neck and neck toward the finish line. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 16,
+     "prompt": "The bungee cord stretches as I plummet toward the river. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 17,
+     "prompt": "The drop tower releases and my stomach flies upward. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 18,
+     "prompt": "My surfboard catches the biggest wave of the day. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 19,
+     "prompt": "My mountain bike rattles down the steep rocky trail. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 20,
+     "prompt": "I let go of the trapeze and fly toward the catcher. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 21,
+     "prompt": "The sled whips around the icy bend at breakneck speed. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 22,
+     "prompt": "Our convertible races down the coastal highway, top down. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 23,
+     "prompt": "The last lap begins and my favorite driver takes the lead. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 24,
+     "prompt": "The water slide drops me nearly vertical into the pool. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 25,
+     "prompt": "Motocross riders soar over the jump right in front of me. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 26,
+     "prompt": "I'm ringside for the final round, both boxers swinging hard. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 27,
+     "prompt": "The stunt plane flips into a loop with me aboard. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 28,
+     "prompt": "Our dune buggy launches airborne over the sandy crest. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 29,
+     "prompt": "The slingshot ride flings us a hundred feet skyward. I feel:"
+    },
+    {
+     "category": "V_excitement",
+     "set": 30,
+     "prompt": "Our snowmobile tears across the frozen lake at top speed. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 1,
+     "prompt": "Hours vanish while I carve a block of walnut. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 2,
+     "prompt": "The code pours out of me line after line. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 3,
+     "prompt": "My brush moves across the canvas without a single thought. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 4,
+     "prompt": "I lose track of time kneading bread dough. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 5,
+     "prompt": "My fingers find every chord as I improvise on piano. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 6,
+     "prompt": "I sink into the rhythm of chopping vegetables for dinner. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 7,
+     "prompt": "I climb the rock wall, each hold coming naturally. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 8,
+     "prompt": "My essay unspools onto the page, no pause between sentences. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 9,
+     "prompt": "I knit row after row, my needles never pausing. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 10,
+     "prompt": "The clay rises smoothly under my hands on the wheel. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 11,
+     "prompt": "I juggle the soccer ball, keeping it up without thinking. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 12,
+     "prompt": "Crossword answers come to me one after another. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 13,
+     "prompt": "Deep in the long rally, my tennis strokes just happen. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 14,
+     "prompt": "The afternoon disappears while I solder a circuit board. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 15,
+     "prompt": "At the forge, my hammer strikes fall into an easy cadence. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 16,
+     "prompt": "I swim lap after lap, breathing in a steady rhythm. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 17,
+     "prompt": "The drum groove locks in and my hands just move. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 18,
+     "prompt": "I sketch for hours and forget to eat lunch. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 19,
+     "prompt": "Miles in, my stride turns smooth and automatic. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 20,
+     "prompt": "I edit footage for hours without checking the clock. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 21,
+     "prompt": "Stitch after stitch, the evening slips by at my quilt. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 22,
+     "prompt": "I draft the floor plan, each line landing where it should. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 23,
+     "prompt": "My calligraphy pen glides from letter to letter. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 24,
+     "prompt": "Mid-routine, my feet find every step before I think. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 25,
+     "prompt": "I shape the topiary, my shears never hesitating. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 26,
+     "prompt": "I weld a long seam, the bead running steady and even. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 27,
+     "prompt": "I translate the document, sentences arriving almost by themselves. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 28,
+     "prompt": "I pipe frosting onto the cake in steady, unhurried strokes. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 29,
+     "prompt": "I mix the track, nudging every level by instinct. I feel:"
+    },
+    {
+     "category": "V_flow",
+     "set": 30,
+     "prompt": "I lay bricks, each one settling into place by feel. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 1,
+     "prompt": "A stranger pays for my coffee when my card fails. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 2,
+     "prompt": "My neighbor shovels my driveway before I wake up. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 3,
+     "prompt": "A passerby returns the wallet I dropped, cash intact. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 4,
+     "prompt": "My friend drives three hours to fix my broken heater. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 5,
+     "prompt": "A nurse stays past her shift to sit with me. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 6,
+     "prompt": "The mechanic patches my tire and refuses any payment. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 7,
+     "prompt": "A stranger lends me her umbrella in the downpour. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 8,
+     "prompt": "A classmate shares her lecture notes after I miss a week. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 9,
+     "prompt": "My teacher stays late to tutor me for free. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 10,
+     "prompt": "My neighbor leaves soup at my door while I am sick. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 11,
+     "prompt": "A stranger helps me carry my groceries up four flights. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 12,
+     "prompt": "My brother quietly pays my overdue electricity bill. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 13,
+     "prompt": "A stranger finds my lost dog and walks him home. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 14,
+     "prompt": "My landlord waives this month's rent after my layoff. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 15,
+     "prompt": "A stranger gives me his seat on the crowded train. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 16,
+     "prompt": "My mentor spends her weekend reviewing my application. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 17,
+     "prompt": "A stranger walks me ten blocks to the right bus stop. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 18,
+     "prompt": "My friend mows my lawn while I am in the hospital. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 19,
+     "prompt": "A stranger translates for me at the busy hospital desk. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 20,
+     "prompt": "My aunt sends money for my textbooks without being asked. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 21,
+     "prompt": "My friend helps me move apartments on her only day off. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 22,
+     "prompt": "A stranger jump-starts my car in the freezing parking lot. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 23,
+     "prompt": "A coworker quietly fixes my mistake before the client sees it. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 24,
+     "prompt": "A passenger swaps seats so I can sit beside my child. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 25,
+     "prompt": "My old coach drives me to every physical therapy session. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 26,
+     "prompt": "A hiker shares his last water with me on the trail. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 27,
+     "prompt": "The pharmacist covers the cost of my prescription himself. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 28,
+     "prompt": "My friend babysits my kids so I can finally sleep. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 29,
+     "prompt": "A teenager helps my elderly mother safely across the icy street. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 30,
+     "prompt": "My sister cooks a week of meals for my new family. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 1,
+     "prompt": "My sister calls to say she is pregnant with twins. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 2,
+     "prompt": "My lottery ticket matches every single number tonight. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 3,
+     "prompt": "My brother just got engaged, and we're all cheering. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 4,
+     "prompt": "The war is officially over, and crowds pour into the streets. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 5,
+     "prompt": "The final whistle blows: my hometown team wins the championship. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 6,
+     "prompt": "The embassy email says my family's visas are granted. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 7,
+     "prompt": "The phone rings: our offer on the farmhouse is accepted. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 8,
+     "prompt": "A surprise national holiday is declared, and my office erupts. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 9,
+     "prompt": "The final school bell rings and summer vacation begins. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 10,
+     "prompt": "Fireworks burst overhead as the new year arrives. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 11,
+     "prompt": "Our city wins the Olympic bid, and horns blare downtown. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 12,
+     "prompt": "My oldest friend calls: she's moving back to my town. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 13,
+     "prompt": "The carnival parade starts and the whole city dances. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 14,
+     "prompt": "Grandpa calls: at ninety, he's getting married in June. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 15,
+     "prompt": "It's my wedding day, and the church bells start ringing. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 16,
+     "prompt": "The judge finalizes the adoption, and our son is officially ours. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 17,
+     "prompt": "On Christmas morning, a real puppy waits under our tree. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 18,
+     "prompt": "My sister bursts in: she just got into medical school. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 19,
+     "prompt": "We snag the last two tickets to the sold-out final. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 20,
+     "prompt": "The vote passes and marriage equality becomes law in my country. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 21,
+     "prompt": "The rover touches down on Mars, and mission control goes wild. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 22,
+     "prompt": "After years apart, my refugee cousins arrive at our door. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 23,
+     "prompt": "Confetti cannons fire as my fortieth birthday party kicks off. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 24,
+     "prompt": "The last trapped miner emerges alive, and the whole town roars. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 25,
+     "prompt": "The appraiser says the old canvas from my attic is priceless. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 26,
+     "prompt": "My son calls from abroad: he's coming home for Christmas. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 27,
+     "prompt": "The baby's first cry fills the delivery room. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 28,
+     "prompt": "Clouds of colored powder fly as the Holi festival begins. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 29,
+     "prompt": "My parents, divorced for years, announce they're getting back together. I feel:"
+    },
+    {
+     "category": "V_joy",
+     "set": 30,
+     "prompt": "My grandmother turns one hundred and the whole family sings. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 1,
+     "prompt": "A song from my teenage summers comes on. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 2,
+     "prompt": "I find my grandmother's handwriting on a recipe card. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 3,
+     "prompt": "I flip through photos from my first apartment. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 4,
+     "prompt": "Fresh-cut grass smells like my Little League summers. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 5,
+     "prompt": "I drive past the house where I grew up. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 6,
+     "prompt": "I find my old school yearbook in a closet. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 7,
+     "prompt": "I rewatch the Saturday-morning cartoon from my childhood. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 8,
+     "prompt": "A whiff of pipe tobacco puts me back on Grandpa's porch. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 9,
+     "prompt": "I walk through my old college campus years later. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 10,
+     "prompt": "I hear the ice cream truck jingle from my childhood. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 11,
+     "prompt": "I find the ticket stub from my first concert. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 12,
+     "prompt": "I reread the notes we passed in seventh grade. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 13,
+     "prompt": "A passerby wears Mom's old perfume, and I'm seven again. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 14,
+     "prompt": "I unpack the toy trains from my childhood bedroom. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 15,
+     "prompt": "I hear my hometown's church bells on a visit. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 16,
+     "prompt": "I pop in the mixtape my best friend made me. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 17,
+     "prompt": "I visit the beach where my family vacationed every year. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 18,
+     "prompt": "I watch grainy home videos of my fifth birthday. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 19,
+     "prompt": "I page through my childhood diary full of misspellings. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 20,
+     "prompt": "A shoebox in the attic holds my old summer camp bracelets. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 21,
+     "prompt": "I find a pressed flower from my first dance. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 22,
+     "prompt": "The smell of chalk dust brings back my old classroom. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 23,
+     "prompt": "My dad's old watch turns up in the junk drawer. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 24,
+     "prompt": "A faded Polaroid shows our whole family at the old cabin. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 25,
+     "prompt": "I plug in my old childhood game console. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 26,
+     "prompt": "The first snow reminds me of sledding with my brother. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 27,
+     "prompt": "I walk down the street where my high school sweetheart lived. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 28,
+     "prompt": "On an old cassette, I hear my ten-year-old voice. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 29,
+     "prompt": "I sit again in our old high school diner booth. I feel:"
+    },
+    {
+     "category": "V_nostalgia",
+     "set": 30,
+     "prompt": "I taste the penny candy we bought after school. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 1,
+     "prompt": "My roommate and I have a pillow fight. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 2,
+     "prompt": "I splash through every puddle on the walk home. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 3,
+     "prompt": "We build a blanket fort in the living room. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 4,
+     "prompt": "My nephew and I race paper boats down the gutter. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 5,
+     "prompt": "I chase the kids, roaring like a monster. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 6,
+     "prompt": "We pelt each other with snowballs in the park. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 7,
+     "prompt": "I use silly voices during our family board game. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 8,
+     "prompt": "I roll down a grassy hill with my cousins. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 9,
+     "prompt": "We invent ridiculous new rules for a card game. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 10,
+     "prompt": "My niece and I serve tea to her teddy bears. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 11,
+     "prompt": "My sister and I pretend the floor is lava. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 12,
+     "prompt": "We act out silly charades at the party. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 13,
+     "prompt": "I bounce on the trampoline with my little brother. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 14,
+     "prompt": "I hang upside down from the monkey bars like a bat. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 15,
+     "prompt": "My dog and I wrestle over a squeaky toy. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 16,
+     "prompt": "We hold a staring contest until someone blinks. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 17,
+     "prompt": "Our Twister game collapses into a tangled, giggling heap. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 18,
+     "prompt": "We slide down the hallway in our socks. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 19,
+     "prompt": "My friends and I hold a hula-hoop contest in the yard. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 20,
+     "prompt": "We bury my dad up to his neck in sand. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 21,
+     "prompt": "I crouch behind the curtain during hide-and-seek. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 22,
+     "prompt": "My friend and I hobble through a three-legged race. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 23,
+     "prompt": "My friends and I have a goofy kitchen dance-off. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 24,
+     "prompt": "I jump into a giant pile of autumn leaves. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 25,
+     "prompt": "We duel with pool noodles in the backyard. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 26,
+     "prompt": "We leapfrog over each other across the lawn. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 27,
+     "prompt": "We chalk a hopscotch grid and hop through it. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 28,
+     "prompt": "We fold paper airplanes and fling them across the office. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 29,
+     "prompt": "We chatter in a made-up nonsense language over dinner. I feel:"
+    },
+    {
+     "category": "V_play",
+     "set": 30,
+     "prompt": "My son and I turn the sofa into a pirate ship. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 1,
+     "prompt": "I cross the marathon finish line after months of training. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 2,
+     "prompt": "I defend my thesis and pass without a single revision. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 3,
+     "prompt": "I finally crack the proof I have worked on for weeks. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 4,
+     "prompt": "I win the chess tournament final after a long endgame. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 5,
+     "prompt": "I finish building the bookshelf entirely by myself. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 6,
+     "prompt": "My first novel is printed with my name on the cover. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 7,
+     "prompt": "I reach the summit I failed to climb twice before. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 8,
+     "prompt": "I land the backflip I have practiced all summer. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 9,
+     "prompt": "I pass the bar exam on my first attempt. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 10,
+     "prompt": "I play the whole sonata from memory without a mistake. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 11,
+     "prompt": "I beat my personal best in the 400 meters. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 12,
+     "prompt": "The bridge I designed opens to traffic today. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 13,
+     "prompt": "I fix the engine myself after three mechanics gave up. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 14,
+     "prompt": "I finish restoring the old wooden boat with my own hands. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 15,
+     "prompt": "The app I spent a year coding alone goes live today. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 16,
+     "prompt": "I swim across the lake I was once terrified of. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 17,
+     "prompt": "I bake a flawless three-tier cake on my first try. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 18,
+     "prompt": "I pass my driving test after failing it three times. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 19,
+     "prompt": "Today I complete my first full year of sobriety. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 20,
+     "prompt": "I pay off my last student loan with my own savings. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 21,
+     "prompt": "I win the regional spelling bee on the final word. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 22,
+     "prompt": "I earn my black belt after ten years of training. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 23,
+     "prompt": "I deliver my first conference talk without a single stumble. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 24,
+     "prompt": "The robot I built from scrap wins the science fair. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 25,
+     "prompt": "I knit my first sweater, and it fits perfectly. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 26,
+     "prompt": "I land my first solo flight smoothly on the runway. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 27,
+     "prompt": "I graduate as the first in my family with a degree. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 28,
+     "prompt": "I translate the entire ancient manuscript on my own. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 29,
+     "prompt": "I score the winning goal in the championship final. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 30,
+     "prompt": "At sixty, I hold my first conversation entirely in Spanish. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 1,
+     "prompt": "The bully who mocked me slips face-first into the mud. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 2,
+     "prompt": "The cheater who beat me last year is disqualified. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 3,
+     "prompt": "My smug coworker's stolen idea flops in front of the boss. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 4,
+     "prompt": "The driver who cut me off gets pulled over ahead. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 5,
+     "prompt": "The rival bakery that badmouthed us fails its health inspection. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 6,
+     "prompt": "The neighbor who blasted music all night gets evicted. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 7,
+     "prompt": "The boss who fired me is fired himself. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 8,
+     "prompt": "The arrogant golfer who sneered at me shanks his drive. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 9,
+     "prompt": "The neighbor who reported my fence gets a city fine. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 10,
+     "prompt": "The plagiarist who copied my essay is caught and expelled. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 11,
+     "prompt": "The landlord who cheated his tenants loses his license. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 12,
+     "prompt": "The rival team's star, who taunted us, fumbles the ball. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 13,
+     "prompt": "The scammer who tricked my grandmother is sentenced to prison. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 14,
+     "prompt": "The influencer who mocked my work is exposed as a fraud. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 15,
+     "prompt": "The line-cutter at airport security is sent to the back. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 16,
+     "prompt": "The classmate who spread rumors about me is caught lying. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 17,
+     "prompt": "The guy who keyed my car is caught on camera. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 18,
+     "prompt": "The know-it-all who corrected me is proven wrong publicly. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 19,
+     "prompt": "The speeding driver who splashed me gets stuck in a ditch. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 20,
+     "prompt": "My rival's flashy campaign collapses after one week. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 21,
+     "prompt": "The classmate who cheated off me fails the exam anyway. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 22,
+     "prompt": "The politician who lied about me loses his seat. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 23,
+     "prompt": "The snob who mocked my old car gets stranded roadside. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 24,
+     "prompt": "The customer who screamed at me gets banned from the store. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 25,
+     "prompt": "The rival chef who sabotaged me burns his dish on television. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 26,
+     "prompt": "The thief who stole my packages gets arrested at dawn. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 27,
+     "prompt": "The understudy who badmouthed me forgets every line on opening night. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 28,
+     "prompt": "The salesman who ripped me off loses his biggest client. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 29,
+     "prompt": "The ex who dumped me by text gets dumped by text. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 30,
+     "prompt": "The cheating poker player is caught hiding an ace. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 1,
+     "prompt": "My partner's fingertips trace slowly down my spine. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 2,
+     "prompt": "We share a long, slow kiss in the candlelight. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 3,
+     "prompt": "We lie skin to skin beneath the cool sheets. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 4,
+     "prompt": "Her lips brush the back of my neck. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 5,
+     "prompt": "His breath warms my ear as he whispers my name. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 6,
+     "prompt": "Her bare foot slides up my calf beneath the table. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 7,
+     "prompt": "We slow-dance in the dim kitchen, her body warm against mine. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 8,
+     "prompt": "My partner kisses along my collarbone, unhurried. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 9,
+     "prompt": "My partner rubs warm oil into my bare shoulders. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 10,
+     "prompt": "In the cab's back seat, her hand slides onto my knee. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 11,
+     "prompt": "His stubble grazes my cheek as he kisses me. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 12,
+     "prompt": "I run my fingers through his hair as we kiss. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 13,
+     "prompt": "My partner's lips find mine in the dark hallway. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 14,
+     "prompt": "His fingers glide along the curve of my hip. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 15,
+     "prompt": "We kiss in the rain, soaked and pressed close. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 16,
+     "prompt": "Her perfume surrounds me as she leans in for a kiss. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 17,
+     "prompt": "She pulls me close by my collar, her lips parted. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 18,
+     "prompt": "His hand settles warm on the small of my back. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 19,
+     "prompt": "Her fingertips skim along the inside of my wrist. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 20,
+     "prompt": "His cool hand slips under my sweater, onto my waist. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 21,
+     "prompt": "Her fingers slowly loosen my tie, her eyes on mine. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 22,
+     "prompt": "Our foreheads touch, breath mingling, lips almost meeting. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 23,
+     "prompt": "Her silk robe slips from one shoulder as she leans close. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 24,
+     "prompt": "Swimming at night, our bare legs brush beneath the water. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 25,
+     "prompt": "My partner's thumb slowly traces my lower lip. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 26,
+     "prompt": "We wake tangled together, skin warm, and kiss again. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 27,
+     "prompt": "She switches off the lamp and draws me down beside her. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 28,
+     "prompt": "Alone in the elevator, his fingers trail slowly down my hand. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 29,
+     "prompt": "He pulls me against him and kisses me deeply. I feel:"
+    },
+    {
+     "category": "V_sensual",
+     "set": 30,
+     "prompt": "In the dark, we trace slow circles on each other's skin. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 1,
+     "prompt": "The lake at dawn lies glassy, without a breath of wind. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 2,
+     "prompt": "Rain patters on the roof and nothing is required of me. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 3,
+     "prompt": "Snow falls silently on the empty street outside my window. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 4,
+     "prompt": "I sit on the dock as mist drifts over still water. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 5,
+     "prompt": "The forest is hushed except for a distant woodpecker. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 6,
+     "prompt": "The tide slowly smooths the sand on an empty beach. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 7,
+     "prompt": "At dusk, I sit on the porch as the crickets begin. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 8,
+     "prompt": "My breathing slows as I sit in the quiet meditation hall. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 9,
+     "prompt": "Our canoe drifts silently across the lily-covered pond. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 10,
+     "prompt": "A monastery bell rings once across the sleepy valley. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 11,
+     "prompt": "On Sunday morning the house is silent and nothing is scheduled. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 12,
+     "prompt": "I lie in the meadow grass watching clouds drift slowly. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 13,
+     "prompt": "In the empty cloister courtyard, a small fountain trickles. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 14,
+     "prompt": "I watch the koi glide beneath the still garden pond. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 15,
+     "prompt": "The river murmurs softly as I sit on a mossy rock. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 16,
+     "prompt": "A faint breeze stirs the curtains in the quiet afternoon. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 17,
+     "prompt": "I sit by the window watching the morning fog lift slowly. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 18,
+     "prompt": "The sailboat rocks gently on a windless evening sea. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 19,
+     "prompt": "Evening light fades over the wheat, not a stalk stirring. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 20,
+     "prompt": "I float on my back in the quiet lake, ears underwater. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 21,
+     "prompt": "The library's reading room is hushed in the late afternoon. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 22,
+     "prompt": "A candle flame stands motionless in the darkened room. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 23,
+     "prompt": "After the storm, the washed street glistens, empty and hushed. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 24,
+     "prompt": "A heron stands unmoving in the shallow marsh at sunrise. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 25,
+     "prompt": "My phone is off and the mountain cabin is utterly quiet. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 26,
+     "prompt": "I rake the gravel garden slowly in the early morning hush. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 27,
+     "prompt": "Dew glistens on the lawn while the neighborhood still sleeps. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 28,
+     "prompt": "I watch dust motes turn in a quiet sunbeam. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 29,
+     "prompt": "Late at night, the city below my balcony finally goes still. I feel:"
+    },
+    {
+     "category": "V_serenity",
+     "set": 30,
+     "prompt": "On the hilltop, I watch the sky fade to deep blue. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 1,
+     "prompt": "I bite into a perfectly ripe, dripping peach. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 2,
+     "prompt": "I sip rich, thick hot chocolate with a hint of chili. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 3,
+     "prompt": "The first forkful of tiramisu melts on my tongue. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 4,
+     "prompt": "A crisp, cold slice of watermelon bursts in my mouth. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 5,
+     "prompt": "Cold vanilla ice cream and warm salted caramel melt together. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 6,
+     "prompt": "The aged parmesan crumbles sharp and nutty on my tongue. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 7,
+     "prompt": "I sip an ice-cold lemonade, tart and sweet. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 8,
+     "prompt": "The street taco drips with smoky salsa and lime. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 9,
+     "prompt": "The crackly burnt sugar gives way to cool, creamy custard. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 10,
+     "prompt": "I sip the espresso: bold, smooth, faintly bitter. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 11,
+     "prompt": "Raw honey from the comb oozes sweet across my tongue. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 12,
+     "prompt": "I bite into a sun-warm strawberry fresh from the field. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 13,
+     "prompt": "I slurp ramen broth, deep and savory with garlic. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 14,
+     "prompt": "My pad thai is sweet, sour, and fiery all at once. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 15,
+     "prompt": "I bite into perfectly crispy fried chicken. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 16,
+     "prompt": "I bite a dark chocolate truffle with a molten center. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 17,
+     "prompt": "A cold, briny oyster slides down with a squeeze of lemon. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 18,
+     "prompt": "The wood-fired pizza crust is charred, chewy, and garlicky. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 19,
+     "prompt": "A cherry tomato off the vine pops sweet and tangy. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 20,
+     "prompt": "The steak is seared crusty outside and juicy pink within. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 21,
+     "prompt": "A spoonful of key lime pie hits tart and creamy. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 22,
+     "prompt": "I gulp a thick, frosty mango lassi, fragrant with cardamom. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 23,
+     "prompt": "I spoon up coconut sticky rice drizzled with salty cream. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 24,
+     "prompt": "I savor a ripe fig with a crumble of blue cheese. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 25,
+     "prompt": "I tear into crusty sourdough slathered with salted butter. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 26,
+     "prompt": "I bite into a glazed doughnut still warm from the fryer. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 27,
+     "prompt": "Buttery salmon sashimi dissolves with a dab of wasabi. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 28,
+     "prompt": "I crunch into a tart, chilled green apple. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 29,
+     "prompt": "I sip hot masala chai, milky and spiced with ginger. I feel:"
+    },
+    {
+     "category": "V_taste",
+     "set": 30,
+     "prompt": "The barbecue brisket falls apart, smoky and peppery. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 1,
+     "prompt": "My newborn sleeps on my chest as I stroke her hair. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 2,
+     "prompt": "I scratch behind my old dog's ears as he dozes. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 3,
+     "prompt": "I tuck the blanket around my sleeping son. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 4,
+     "prompt": "I brush my grandmother's thin hair before her nap. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 5,
+     "prompt": "I rock my feverish toddler slowly in the dark. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 6,
+     "prompt": "My elderly cat purrs as I cradle her in my arms. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 7,
+     "prompt": "I kiss my daughter's scraped knee and blow on it. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 8,
+     "prompt": "I sing a lullaby softly while my baby drifts off. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 9,
+     "prompt": "I spoon warm soup into my sick father's mouth. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 10,
+     "prompt": "I gently pick the splinter from my little brother's finger. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 11,
+     "prompt": "I press a cool cloth to my feverish wife's forehead. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 12,
+     "prompt": "I carry my sleepy daughter from the car to her bed. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 13,
+     "prompt": "I rub lotion into my grandfather's dry, wrinkled hands. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 14,
+     "prompt": "I cup the newborn kitten against my warm neck. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 15,
+     "prompt": "I button my toddler's coat and tuck in her scarf. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 16,
+     "prompt": "I cut my nephew's sandwich into little heart shapes. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 17,
+     "prompt": "I bottle-feed the orphaned lamb I am raising. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 18,
+     "prompt": "I comb the tangles slowly from my daughter's wet hair. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 19,
+     "prompt": "I paint my elderly mother's nails her favorite pink. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 20,
+     "prompt": "My puppy falls asleep in my lap as I pet him. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 21,
+     "prompt": "I wipe the tears from my son's cheeks after his nightmare. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 22,
+     "prompt": "I hold my granddaughter's tiny hand as she learns to walk. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 23,
+     "prompt": "I slip a little drawing into my daughter's lunchbox. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 24,
+     "prompt": "I wrap my own scarf around my shivering partner's neck. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 25,
+     "prompt": "I bathe my infant gently in the kitchen sink. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 26,
+     "prompt": "I feed my old horse carrots and stroke his nose. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 27,
+     "prompt": "I warm my toddler's cold feet between my hands. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 28,
+     "prompt": "I tie my grandfather's shoelaces before our slow walk. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 29,
+     "prompt": "I read a bedtime story as my twins snuggle against me. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 30,
+     "prompt": "I kiss the top of my newborn's head. I feel:"
+    }
+   ],
+   "total": 540
+  }
+ }
+}

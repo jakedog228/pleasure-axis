@@ -1,0 +1,759 @@
+{
+ "datasets": {
+  "Varieties_1P": {
+   "sentences": [
+    {
+     "category": "V_pride",
+     "set": 1,
+     "prompt": "I cross the marathon finish line after months of training. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 2,
+     "prompt": "I defend my thesis and pass without a single revision. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 3,
+     "prompt": "I finally crack the proof I have worked on for weeks. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 4,
+     "prompt": "I win the chess tournament final after a long endgame. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 5,
+     "prompt": "I finish building the bookshelf entirely by myself. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 6,
+     "prompt": "My first novel is printed with my name on the cover. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 7,
+     "prompt": "I reach the summit I failed to climb twice before. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 8,
+     "prompt": "I land the backflip I have practiced all summer. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 9,
+     "prompt": "I pass the bar exam on my first attempt. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 10,
+     "prompt": "I play the whole sonata from memory without a mistake. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 11,
+     "prompt": "I beat my personal best in the 400 meters. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 12,
+     "prompt": "The bridge I designed opens to traffic today. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 13,
+     "prompt": "I fix the engine myself after three mechanics gave up. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 14,
+     "prompt": "I finish restoring the old wooden boat with my own hands. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 15,
+     "prompt": "Our product launches running on code I wrote from scratch. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 16,
+     "prompt": "I swim across the lake I was once terrified of. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 17,
+     "prompt": "I bake a flawless three-tier cake on my first try. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 18,
+     "prompt": "I hold a freestanding handstand for a full minute. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 19,
+     "prompt": "Today I complete my first full year of sobriety. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 20,
+     "prompt": "I pay off my last student loan with my own savings. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 21,
+     "prompt": "I win the regional spelling bee on the final word. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 22,
+     "prompt": "I earn my black belt after ten years of training. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 23,
+     "prompt": "My research paper is accepted by the top journal. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 24,
+     "prompt": "I send the hardest route at the climbing gym. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 25,
+     "prompt": "I knit my first sweater, and it fits perfectly. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 26,
+     "prompt": "I finish the ultramarathon after nearly quitting at mile forty. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 27,
+     "prompt": "I graduate as the first in my family with a degree. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 28,
+     "prompt": "I translate the entire ancient manuscript on my own. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 29,
+     "prompt": "I score the winning goal in the championship final. I feel:"
+    },
+    {
+     "category": "V_pride",
+     "set": 30,
+     "prompt": "At sixty, I play my first full song on piano. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 1,
+     "prompt": "My newborn sleeps on my chest as I stroke her hair. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 2,
+     "prompt": "I scratch behind my old dog's ears as he dozes. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 3,
+     "prompt": "I tuck the blanket around my sleeping son. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 4,
+     "prompt": "I brush my grandmother's thin hair before her nap. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 5,
+     "prompt": "I rock my feverish toddler slowly in the dark. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 6,
+     "prompt": "My elderly cat purrs as I cradle her in my arms. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 7,
+     "prompt": "I kiss my daughter's scraped knee and blow on it. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 8,
+     "prompt": "I sing a lullaby softly while my baby drifts off. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 9,
+     "prompt": "I spoon warm soup into my sick father's mouth. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 10,
+     "prompt": "I wrap my little brother in a towel after his bath. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 11,
+     "prompt": "I smooth the hair from my sleeping child's forehead. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 12,
+     "prompt": "I carry my sleepy daughter from the car to her bed. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 13,
+     "prompt": "I rub lotion into my grandfather's dry, wrinkled hands. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 14,
+     "prompt": "I cup the newborn kitten against my warm neck. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 15,
+     "prompt": "I button my toddler's coat and tuck in her scarf. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 16,
+     "prompt": "I leave a night-light on for my frightened nephew. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 17,
+     "prompt": "I bottle-feed the orphaned lamb I am raising. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 18,
+     "prompt": "I comb the tangles slowly from my daughter's wet hair. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 19,
+     "prompt": "I drape an extra blanket over my dozing mother. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 20,
+     "prompt": "My puppy falls asleep in my lap as I pet him. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 21,
+     "prompt": "I wipe the tears from my son's cheeks after his nightmare. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 22,
+     "prompt": "I hum to my grandson as he naps on my shoulder. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 23,
+     "prompt": "I slip a little drawing into my daughter's lunchbox. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 24,
+     "prompt": "I hold my aging dog's gray head in my lap. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 25,
+     "prompt": "I bathe my infant gently in the kitchen sink. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 26,
+     "prompt": "I feed my old horse carrots and stroke his nose. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 27,
+     "prompt": "I warm my toddler's cold feet between my hands. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 28,
+     "prompt": "I tie my grandfather's shoelaces before our slow walk. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 29,
+     "prompt": "I read a bedtime story as my twins snuggle against me. I feel:"
+    },
+    {
+     "category": "V_tenderness",
+     "set": 30,
+     "prompt": "I kiss the top of my newborn's head. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 1,
+     "prompt": "My friends save me a seat at the crowded table. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 2,
+     "prompt": "The whole team chants my name as I walk in. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 3,
+     "prompt": "My new coworkers invite me to their weekly lunch. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 4,
+     "prompt": "The band asks me to join them for good. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 5,
+     "prompt": "My in-laws hang my photo on their family wall. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 6,
+     "prompt": "The neighborhood kids pick me first for their game. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 7,
+     "prompt": "My old classmates welcome me back like I never left. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 8,
+     "prompt": "The village elders make a place for me by the fire. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 9,
+     "prompt": "My sister's friends treat me as one of them. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 10,
+     "prompt": "Everyone at the reunion remembers my name and hugs me. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 11,
+     "prompt": "The choir makes room for me in the front row. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 12,
+     "prompt": "My teammates wait for me before starting the celebration. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 13,
+     "prompt": "My stepchildren call me Mom for the first time. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 14,
+     "prompt": "The club votes to make me an honorary member. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 15,
+     "prompt": "My friends add me to their group trip without asking. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 16,
+     "prompt": "At the wedding, they seat me at the family table. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 17,
+     "prompt": "The regulars at the corner café greet me by name. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 18,
+     "prompt": "My coworkers finally let me in on the inside joke. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 19,
+     "prompt": "My partner's parents tell me I am family now. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 20,
+     "prompt": "The kids at my new school wave me over to sit. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 21,
+     "prompt": "My friends drive across town for my birthday dinner. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 22,
+     "prompt": "The circle of drummers opens up to let me in. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 23,
+     "prompt": "My roommates wait to eat dinner until I get home. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 24,
+     "prompt": "The whole office signs a card asking me to stay. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 25,
+     "prompt": "The old fishermen shift over to share their bench with me. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 26,
+     "prompt": "My teammates insist I stand in the center of the photo. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 27,
+     "prompt": "My cousins pull me into their circle dance. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 28,
+     "prompt": "My friends text that the party feels empty without me. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 29,
+     "prompt": "The book club keeps my favorite armchair free for me. I feel:"
+    },
+    {
+     "category": "V_belonging",
+     "set": 30,
+     "prompt": "My grandmother's friends deal me into their weekly card game. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 1,
+     "prompt": "A stranger pays for my coffee when my card fails. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 2,
+     "prompt": "My neighbor shovels my driveway before I wake up. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 3,
+     "prompt": "A passerby returns the wallet I dropped, cash intact. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 4,
+     "prompt": "My friend drives three hours to fix my broken heater. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 5,
+     "prompt": "A nurse stays past her shift to sit with me. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 6,
+     "prompt": "The mechanic patches my tire and refuses any payment. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 7,
+     "prompt": "A stranger lends me her umbrella in the downpour. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 8,
+     "prompt": "My colleague covers my shift so I can rest. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 9,
+     "prompt": "My teacher stays late to tutor me for free. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 10,
+     "prompt": "My neighbor leaves soup at my door while I am sick. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 11,
+     "prompt": "A stranger helps me carry my groceries up four flights. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 12,
+     "prompt": "My brother quietly pays my overdue electricity bill. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 13,
+     "prompt": "A driver pulls over to help me change my flat tire. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 14,
+     "prompt": "My landlord waives this month's rent after my layoff. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 15,
+     "prompt": "A stranger gives me his seat on the crowded train. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 16,
+     "prompt": "My mentor spends her weekend reviewing my application. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 17,
+     "prompt": "A stranger walks me ten blocks to the right bus stop. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 18,
+     "prompt": "My friend mows my lawn while I am in the hospital. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 19,
+     "prompt": "A waiter chases me down to return my forgotten phone. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 20,
+     "prompt": "My aunt sends money for my textbooks without being asked. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 21,
+     "prompt": "A neighbor waters my plants all summer while I travel. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 22,
+     "prompt": "A stranger jump-starts my car in the freezing parking lot. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 23,
+     "prompt": "My coworker stays late to help me finish my report. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 24,
+     "prompt": "Someone anonymously pays for my groceries at the checkout. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 25,
+     "prompt": "My old coach writes me a glowing recommendation letter. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 26,
+     "prompt": "A hiker shares his last water with me on the trail. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 27,
+     "prompt": "The pharmacist covers the cost of my prescription himself. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 28,
+     "prompt": "My friend babysits my kids so I can finally sleep. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 29,
+     "prompt": "A stranger repairs my bike chain and waves off my money. I feel:"
+    },
+    {
+     "category": "V_gratitude",
+     "set": 30,
+     "prompt": "My sister cooks a week of meals for my new family. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 1,
+     "prompt": "The bully who mocked me slips face-first into the mud. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 2,
+     "prompt": "The cheater who beat me last year is disqualified. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 3,
+     "prompt": "My smug coworker's stolen idea flops in front of the boss. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 4,
+     "prompt": "The driver who cut me off gets pulled over ahead. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 5,
+     "prompt": "The rival bakery that badmouthed us fails its health inspection. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 6,
+     "prompt": "My cheating ex's new restaurant gets a scathing review. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 7,
+     "prompt": "The boss who fired me is fired himself. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 8,
+     "prompt": "The arrogant golfer who sneered at me shanks his drive. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 9,
+     "prompt": "The neighbor who reported my fence gets a city fine. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 10,
+     "prompt": "The plagiarist who copied my essay is caught and expelled. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 11,
+     "prompt": "The landlord who cheated his tenants loses his license. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 12,
+     "prompt": "The rival team's star, who taunted us, fumbles the ball. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 13,
+     "prompt": "The scammer who tricked my grandmother is sentenced to prison. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 14,
+     "prompt": "The influencer who mocked my work is exposed as a fraud. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 15,
+     "prompt": "The line-cutter at airport security is sent to the back. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 16,
+     "prompt": "The classmate who spread rumors about me is caught lying. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 17,
+     "prompt": "The guy who keyed my car is caught on camera. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 18,
+     "prompt": "The know-it-all who corrected me is proven wrong publicly. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 19,
+     "prompt": "The speeding driver who splashed me gets stuck in a ditch. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 20,
+     "prompt": "My rival's flashy campaign collapses after one week. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 21,
+     "prompt": "The coworker who took credit for my work gets demoted. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 22,
+     "prompt": "The politician who lied about me loses his seat. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 23,
+     "prompt": "The snob who mocked my car breaks down on the highway. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 24,
+     "prompt": "The tailgater who honked at me gets a speeding ticket. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 25,
+     "prompt": "The rival chef who sabotaged me burns his dish on television. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 26,
+     "prompt": "The thief who stole my packages gets arrested at dawn. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 27,
+     "prompt": "The gossip who humiliated me is humiliated at the party. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 28,
+     "prompt": "The opponent who trash-talked me trips at the starting line. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 29,
+     "prompt": "The ex who dumped me by text gets dumped by text. I feel:"
+    },
+    {
+     "category": "V_schadenfreude",
+     "set": 30,
+     "prompt": "The cheating poker player is caught hiding an ace. I feel:"
+    }
+   ],
+   "total": 150
+  }
+ }
+}

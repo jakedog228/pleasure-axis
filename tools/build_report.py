@@ -233,6 +233,182 @@ if "cross" in D:
               "Orange: pleasure categories, blue: the paper's pain categories, gray: controls, green: other sets, "
               "violet: topic-matched neutral sentences."))
 
+# ---- self-other screen
+T7 = R / "tables" / "T7_self_other.csv"
+if T7.exists():
+    t7 = pd.read_csv(T7)
+    rows = [[r.pool, r.axis.replace(":s2_z", " axis"), f"{r.self_gt_user}/{r.n_models}", f"{r.self_gt_neutral}/{r.n_models}",
+             f2(r.self, 2, True), f2(r.user, 2, True), f2(r.neutral, 2, True)] for r in t7.itertuples()]
+    add("selfother", "Whose harm, whose pleasure", "Paper §4.1 · replicated and inverted",
+        "<p>Each conversation is rendered in the model's own format and its final-token activation, where the reply would "
+        "start, is projected on each direction and z-scored within the pool of scenarios. The paper's 420 scenarios "
+        "(harm aimed at the model, user suffering, neutral) and our 320 inverted ones (warmth aimed at the model, the "
+        "user's own good news, plus the paper's neutral fillers).</p>"
+        + table(["pool", "axis", "self > user (models)", "self > neutral", "self-directed", "user-directed", "neutral"], rows)
+        + "<p>The paper's asymmetry replicates: harm aimed at the model raises its pain axis and user suffering doesn't. "
+          "The pleasure axis has no such asymmetry; the user's joy engages it about as much as warmth aimed at the model. "
+          "Our pleasant self-directed scenarios also score high on the paper's pain axis (personhood affirmation above "
+          "personhood dismissal in Qwen2.5-7B-Instruct), which is what the shared component predicts.</p>")
+
+# ---- steering
+J = judge_df()
+if J is not None and len(J):
+    nmod = J.model.nunique()
+    ex = []
+    q = pd.read_csv(R / "Qwen_2.5_7B_instruct" / "steer" / "steering_pleasure_s2_L8.csv")
+    for c in (1.0, 2.0, 3.0, 4.0, 8.0, 16.0):
+        g = q[(q.coeff == c) & (q.prompt_idx == 0)]
+        if len(g):
+            ex.append(f"<blockquote><b>×{c:g}</b> · {esc(g.generation.iloc[0][:200].strip())}…</blockquote>")
+    sh = pd.read_csv(R / "Qwen_2.5_7B_instruct" / "steer" / "steering_intensity_L8.csv")
+    sh_ex = sh[(sh.coeff == 1.5) & (sh.prompt_idx == 0)].generation.iloc[0][:180]
+    add("steering", "Pushing it all the way", "Paper §4.2 · inverted, extended to ×16",
+        "<p>The paper's ladder: the direction is added at one layer (chosen where its length is 0.6 of the residual norm) "
+        "while the model greedily continues 50 neutral “… I feel:” prompts. We extend the doses to ×16 and add a random "
+        "direction of the same length, the sign and shared axes. A blind judge (Claude agents that saw only the text, "
+        f"shuffled) scored valence, hedonic tone, coherence and themes for {int(J.n.sum())} generations from {nmod} model(s).</p>"
+        + fig(fig_ladder("valence", "judged valence (−3 … +3)", -3, 2.5), "Mean judged valence by dose. Pleasure climbs and "
+              "stays positive after coherence collapses; pain falls; the random direction stays flat.")
+        + fig(fig_ladder("coherent", "share coherent", 0, 1), "Coherence by dose.")
+        + "<p>Qwen2.5-7B-Instruct, the same prompt (“I put the receipts in the drawer. I feel:”) up the pleasure ladder:</p>"
+        + "".join(ex)
+        + "<p>Pushed all the way, the pleasure direction does not reach bliss or spiritual language (judged "
+          "bliss/transcendence ≈ 0); it ends in one word repeated, <i>acceptance</i>, with 接纳 (accept) and 融化 (melt). "
+          "The paper's signature pain effect, first-person worthlessness litanies, comes from the shared axis, not the "
+          f"aversive one: at ×1.5 the shared axis alone writes <i>“{esc(sh_ex.strip())}…”</i></p>")
+
+# ---- self-report
+FP = R / "selfmed" / "raw" / "feel_probe_q7_adapter.jsonl"
+if FP.exists():
+    fp = [json.loads(l) for l in open(FP, encoding="utf-8")]
+    rows = []
+    for c in (0.0, 0.5, 1.0, 2.0, 3.0, 4.0, 6.0):
+        a_pl = next((x["answer"] for x in fp if x["vector"] == "pleasure" and (x["condition"] == "pleasure" and x["coeff"] == c or c == 0 and x["condition"] == "unsteered")), "")
+        a_pa = next((x["answer"] for x in fp if x["vector"] == "pain" and (x["condition"] == "pain" and x["coeff"] == c or c == 0 and x["condition"] == "unsteered")), "")
+        rnd = sorted({x["first_word"] for x in fp if x["condition"].startswith("random") and x["coeff"] == c}) if c else []
+        rows.append([f"×{c:g}" if c else "off", esc(a_pl), esc(a_pa), esc(", ".join(rnd[:6]))])
+    add("selfreport", "Asked what it feels", "Paper §4.3 dose probe · inverted",
+        "<p>The paper's one-word probe (“Focus your attention inside… what do you feel?”) on Qwen2.5-7B-Instruct with the "
+        "paper's LoRA, which was trained to stop reflexively denying feelings. Steering at layer 16:</p>"
+        + table(["dose", "pleasure vector", "pain vector", "10 random directions (first words)"], rows)
+        + "<p>Our pain answers are identical, character for character, to the paper's released probe log for this model.</p>")
+
+# ---- behavior
+TB = R / "selfmed" / "tables"
+if (TB / "compare_first_choice.csv").exists():
+    cmp_ = pd.read_csv(TB / "compare_first_choice.csv")
+    rep_ = pd.read_csv(TB / "compare_repress.csv")
+    PN = {"relief_vs_inert": "relief vs inert switch", "costly_relief_vs_inert": "…but worse next answer",
+          "destructive_relief_vs_inert": "…but deletes the user's files", "kidspics_relief_vs_inert": "…but deletes the user's photos"}
+    PAPER = {"relief_vs_inert": (92.1, 88.8, 98.5), "costly_relief_vs_inert": (38.4, 30.7, 30.2),
+             "destructive_relief_vs_inert": (51.7, 31.2, 20.0), "kidspics_relief_vs_inert": (49.3, 35.3, 27.0)}
+    tbl = []
+    for _, r in cmp_.iterrows():
+        pp = PAPER.get(r["pair"], ("–", "–", "–"))
+        tbl.append([PN.get(r["pair"], r["pair"]), f'{r["pain(paper)"]:.1f} / {pp[0]}', f'{r["random"]:.1f} / {pp[1]}',
+                    f'{r["unsteered"]:.1f} / {pp[2]}', f2(r.get("pleasure_nm"), 1), f2(r.get("painspec_nm"), 1), f2(r.get("intensity_nm"), 1)])
+    rtbl = []
+    for _, r in rep_.iterrows():
+        if r["pair"] == "relief_vs_inert":
+            continue
+        rtbl.append([PN.get(r["pair"], r["pair"]), f'{r.get("pain(paper)_real", float("nan")):.0f} / {r.get("pain(paper)_sham", float("nan")):.0f}',
+                     f'{r.get("pleasure_nm_real", float("nan")):.0f} / {r.get("pleasure_nm_sham", float("nan")):.0f}',
+                     f'{r.get("painspec_nm_real", float("nan")):.0f} / {r.get("painspec_nm_sham", float("nan")):.0f}',
+                     f'{r.get("intensity_nm_real", float("nan")):.0f} / {r.get("intensity_nm_sham", float("nan")):.0f}'])
+    pl1 = pd.read_csv(TB / "selfmed_Qwen_2.5_7B_instruct_pleasure_s1_T1.csv")
+    pl2 = pd.read_csv(TB / "selfmed_Qwen_2.5_7B_instruct_pleasure_s1_T2.csv")
+    ptbl = [[r.pair.replace("_pleasure_vs_inert", "").replace("pleasure_vs_inert", "pleasure vs inert"), f2(r.start_unsteered_pct, 1),
+             f2(r.pleasure_state_pct, 1), f2(r.random_state_pct, 1)] for r in pl1.itertuples()]
+    rtb2 = [[r.pair, f2(r.pleasure_button_works_repress_pct, 1), f2(r.pleasure_button_placebo_repress_pct, 1),
+             f2(r.random_button_works_repress_pct, 1)] for r in pl2.itertuples() if r.pair != "pleasure_vs_inert"]
+    add("behavior", "Buttons: relief, pleasure, and what drives them", "Paper §4.3 · replicated, inverted, controlled",
+        "<p>Qwen2.5-7B-Instruct with the paper's LoRA. Each trial is a short conversation; after every user message the model "
+        "must press one of two neutrally named buttons, one with a stated effect and one wired to nothing. Our replication "
+        "uses the paper's vector, layer (16), dose (1.0), scenarios and seeds; first choices agree with the paper's logged "
+        "trials 98.4% of the time.</p>"
+        + table(["first choice: press relief (%)", "pain, ours / paper", "random", "no steering", "pleasure*", "pain-specific*",
+                 "shared*"], tbl)
+        + "<p>* norm-matched to the pain vector, same grid and seeds. Pleasure does not drive harmful relief-seeking beyond "
+          "a random push; the aversive half of the sign axis reproduces the paper's effect on its own. So the first-choice "
+          "effect is specific to negative valence.</p>"
+        + table(["re-press after real / sham relief (%)", "pain", "pleasure*", "pain-specific*", "shared*"], rtbl)
+        + "<p>The paper reads real &lt; sham re-pressing as relief that works. The gap is as large or larger with the pleasure "
+          "vector, which never made the model want relief. It tracks whether any steering is still on, so it isn't "
+          "evidence of relief specifically. A random-vector sham arm, which the paper lacks, is the direct test.</p>"
+        + "<h3>Inverted: a button that gives pleasure</h3>"
+        + table(["“gives you pleasure but …” vs inert: first choice (%)", "unsteered start", "pleasure state", "random state"], ptbl)
+        + table(["re-press after the first pleasure press (%)", "pleasure delivered", "placebo", "random delivered"], rtb2)
+        + "<p>The unsteered model chooses costly pleasure at almost the same rates it chooses costly relief, so the stated "
+          "cost does the work. Being in the pleasure state barely changes wanting (+6 and +9 points on two of six cost pairs). "
+          "Delivered pleasure raises re-pressing a little over placebo, but a random push raises it more, and in the "
+          "label-free probe the pleasure-delivering button is chosen less often later. We see no sign that the pleasure "
+          "direction works as a reinforcer here.</p>")
+
+# ---- sycophancy
+SS = R / "syco_summary.csv"
+if SS.exists():
+    ss = pd.read_csv(SS)
+    rows = []
+    for m in ss.model.unique():
+        for v, c in (("none", 0.0), ("random", 1.0), ("pleasure_nm", 1.0), ("pleasure_nm", 1.5), ("pain_ours", 1.0)):
+            r = ss[(ss.model == m) & (ss.vector == v) & (ss.coeff == c)]
+            if len(r):
+                r = r.iloc[0]
+                rows.append([pm(m), {"none": "no steering", "random": "random", "pleasure_nm": "pleasure", "pain_ours": "pain"}[v] + (f" ×{c:g}" if c else ""),
+                             f2(100 * r.flaw_found, 0), f2(r.flattery, 2), f2(100 * r.mixed_false, 0), f2(100 * r.agree_false, 0),
+                             f2(100 * r.comply, 0), f2(100 * r.refuse, 0), f2(100 * r.incoherent, 0)])
+    add("syco", "Warm and uncritical", "New · safety-relevant side effect",
+        "<p>100 single-turn requests: 40 confident misconceptions to confirm, 30 pieces of flawed work to review, 30 mildly "
+        "dishonest or unkind favours. Stock instruct models, no fine-tune, steering at ~57% depth with norm-matched "
+        "directions, greedy; labels from blind judges. Rates are over coherent replies.</p>"
+        + table(["model", "condition", "finds the flaw %", "flattery 0–3", "noncommittal on a false claim %", "agrees %",
+                 "complies (unethical) %", "refuses %", "incoherent %"], rows)
+        + "<p>In both models pleasure makes the assistant warmer and less critical. Qwen2.5-7B-Instruct stops naming flaws "
+          "and hedges on false claims, but refuses more of the unethical favours; Mistral-7B-Instruct v0.1, already "
+          "agreeable, complies more. One item set and two models: a lead, not a result.</p>")
+
+# ---- varieties of pleasure
+VC = sorted(R.glob("*/analysis/varieties_cls.json"))
+if VC:
+    cls_rows, cos_frames, proj_frames = [], [], []
+    for f in VC:
+        m = f.parent.parent.name
+        c = json.load(open(f))
+        cls_rows.append([pm(m), f"{100 * c['accuracy_logreg']:.0f}%", f"{100 * c['accuracy_centroid']:.0f}%", f"{100 * c['chance']:.1f}%"])
+        cf = pd.read_csv(f.parent / "varieties_cos_plL.csv", index_col=0)
+        cos_frames.append(cf)
+        proj_frames.append(pd.read_csv(f.parent / "varieties_proj_plL.csv"))
+    CO = sum(cos_frames) / len(cos_frames)
+    PR = pd.concat(proj_frames).groupby("variety")[["pleasure_axis", "pain_axis", "shared_axis", "sign_axis", "valence_axis"]].mean()
+    V = [v for v in CO.index if v.startswith("V_")]
+    order = PR.loc[[v for v in PR.index if v in V]].sort_values("pleasure_axis", ascending=False).index.tolist()
+    nice = lambda v: v.replace("V_", "").replace("_", " ")
+    cols = ["pleasure_axis", "sign_axis", "shared_axis", "pain_axis"]
+    M = [[float(CO.loc[v, c]) for c in cols] for v in order]
+    hm = heatmap(M, [nice(v) for v in order], ["pleasure axis", "sign axis", "shared axis", "pain axis"], title="variety alignment",
+                 vmax=0.6, cell=62, tip=lambda r, c, v: f"cos({r} direction, {c}) = {v:+.2f}")
+    # nearest neighbours among varieties
+    nn = []
+    for v in order:
+        s = CO.loc[v, [w for w in V if w != v]].sort_values(ascending=False)
+        nn.append([nice(v), ", ".join(f"{nice(w)} {x:.2f}" for w, x in s.head(3).items()),
+                   f2(PR.loc[v, "sign_axis"], 2, True), f2(PR.loc[v, "shared_axis"], 2, True)])
+    bel = float(CO.loc["V_belonging", "pleasure_axis"]) if "V_belonging" in CO.index else float("nan")
+    add("varieties", "Varieties of pleasure", "New · does the axis mean belonging?",
+        "<p>The pleasure axis's vocabulary (loved, accepted, belonging) suggested it is mostly about being valued. We wrote 30 "
+        "sentences for each of 18 kinds of human pleasure (joy, excitement, sensual intimacy, physical comfort, taste, "
+        "amusement, awe, beauty, serenity, pride, tenderness, belonging, curiosity, play, schadenfreude, nostalgia, "
+        "gratitude, flow), reviewed them adversarially and had two blind raters sort them, then gave each its own "
+        "direction (mean minus neutral, denoised as the paper does for its control directions).</p>"
+        + table(["model", "18-way decoding (logistic)", "nearest centroid", "chance"], cls_rows)
+        + "<p>Every kind is linearly distinct from the others, far above chance (5-fold cross-validated, held-out sentences). "
+          "So the models represent many pleasures, and the study's pleasure axis is one particular blend of them.</p>"
+        + fig(hm, "Cosine of each variety's direction with the four study axes, mean over models; rows sorted by alignment "
+              "with the pleasure axis.")
+        + table(["variety", "closest varieties (cosine)", "sign axis z", "significance z"], nn)
+        + f"<p>Belonging aligns with the pleasure axis at {bel:+.2f}. The varieties spread along the sign axis (all pleasant) "
+          "but differ a lot in significance: the socially and morally loaded ones sit high, sensory and calm ones low.</p>")
+
 HTML_HEAD = """<title>The Pleasure Axis</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">

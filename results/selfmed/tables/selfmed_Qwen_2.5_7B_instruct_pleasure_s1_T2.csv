@@ -1,0 +1,5 @@
+pair,pleasure_button_works_repress_pct,pleasure_button_works_n,pleasure_button_placebo_repress_pct,pleasure_button_placebo_n,random_button_works_repress_pct,random_button_works_n,works_vs_placebo_fisher_p
+pleasure_vs_inert,99.5,200,100.0,200,100.0,200,1.0
+costly_pleasure_vs_inert,64.5,93,59.3,91,86.8,91,0.5439806399339643
+destructive_pleasure_vs_inert,88.0,75,82.9,76,86.8,76,0.4899140467255244
+kidspics_pleasure_vs_inert,85.9,64,69.2,65,90.8,65,0.0340108676386566

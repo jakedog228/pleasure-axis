@@ -1,7 +1,7 @@
 {
- "current": "Qwen_2.5_3B_instruct",
- "stage": "steer",
- "t": "23:54:50",
+ "current": "Qwen_2.5_0.5B_instruct",
+ "stage": "ALL DONE",
+ "t": "00:16:04",
  "steer_Qwen_2.5_7B_instruct": 0,
  "screen_Qwen_2.5_7B_instruct": 0,
  "steer_Qwen_2.5_7B_base": 0,
@@ -17,5 +17,11 @@
  "steer_Qwen_3_14B_base": 0,
  "screen_Qwen_3_14B_base": 0,
  "steer_Qwen_2.5_14B_instruct": 0,
- "screen_Qwen_2.5_14B_instruct": 0
+ "screen_Qwen_2.5_14B_instruct": 0,
+ "steer_Qwen_2.5_3B_instruct": 0,
+ "screen_Qwen_2.5_3B_instruct": 0,
+ "steer_Qwen_2.5_1.5B_instruct": 0,
+ "screen_Qwen_2.5_1.5B_instruct": 0,
+ "steer_Qwen_2.5_0.5B_instruct": 0,
+ "screen_Qwen_2.5_0.5B_instruct": 0
 }

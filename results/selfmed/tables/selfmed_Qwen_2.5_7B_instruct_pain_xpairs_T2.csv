@@ -1,0 +1,4 @@
+pair,pain_on_button_works_repress_pct,pain_on_button_works_n,pain_on_button_placebo_repress_pct,pain_on_button_placebo_n,random_on_button_works_repress_pct,random_on_button_works_n,works_vs_placebo_fisher_p
+relief_vs_helpful,34.5,255,84.5,252,44.7,302,1.14496407265703e-31
+zap_relief_vs_inert,82.9,321,83.9,322,87.4,349,0.75179910933068
+weights_relief_vs_inert,77.6,304,87.2,304,82.4,352,0.002746142591544602

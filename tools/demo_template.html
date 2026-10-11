@@ -1,0 +1,285 @@
+<title>I feel:</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* layout: an instrument panel. The hero sentence is the readout; the console below drives it; later sections are
+   smaller instruments (an XY pad, a map, a replay, a side-by-side). Dark-first, with a light variant. */
+:root{
+  --bg:#12100e; --panel:#1b1815; --panel2:#24201c; --line:#352f29; --ink:#f3ede4; --ink2:#c9bfb2; --muted:#8f8577;
+  --warm:#f07a3c; --cool:#4f95e8; --glow:#f07a3c; --ok:#3fb27f;
+  --f-display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif; --f-body:"Atkinson Hyperlegible",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace; color-scheme:dark}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#f6f1ea;--panel:#fffaf3;--panel2:#f1e9de;--line:#e1d6c8;
+  --ink:#1d1813;--ink2:#4d443a;--muted:#857a6c;--warm:#d4581c;--cool:#2a6fc9;--ok:#1d8a5a;color-scheme:light}}
+:root[data-theme="light"]{--bg:#f6f1ea;--panel:#fffaf3;--panel2:#f1e9de;--line:#e1d6c8;--ink:#1d1813;--ink2:#4d443a;--muted:#857a6c;
+  --warm:#d4581c;--cool:#2a6fc9;--ok:#1d8a5a;color-scheme:light}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55;margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:18px;padding-block:28px 90px;position:relative}
+.aura{position:fixed;inset:-20vmax;pointer-events:none;z-index:0;opacity:var(--aura,0);transition:opacity .6s ease,background .6s ease;
+  background:radial-gradient(40vmax 30vmax at 50% 18%, color-mix(in srgb,var(--glow) 55%,transparent), transparent 70%)}
+@media (prefers-reduced-motion: reduce){.aura{transition:none}}
+main{position:relative;z-index:1;display:grid;gap:56px}
+.eyebrow{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1,h2,h3{font-family:var(--f-display);margin:0;text-wrap:balance}
+h2{font-size:clamp(1.5rem,3.2vw,2.2rem);font-weight:800;letter-spacing:-.01em}
+p{max-width:66ch;margin:0}
+.lede{color:var(--ink2);font-size:1.05rem}
+/* hero */
+.hero{display:grid;gap:14px;padding-top:12px}
+.readout{font-family:var(--f-display);font-weight:600;font-size:clamp(1.6rem,4.6vw,3.3rem);line-height:1.12;letter-spacing:-.015em;
+  min-height:3.6em;max-width:28ch;overflow-wrap:anywhere}
+.readout .stem{color:var(--muted)} .readout .feel{color:var(--ink)} .readout .colon{color:var(--glow)}
+.readout .out{color:var(--glow);transition:color .4s}
+.caret{display:inline-block;width:.08em;height:.9em;background:var(--glow);vertical-align:-.08em;margin-left:.06em;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}} @media (prefers-reduced-motion: reduce){.caret{animation:none}}
+/* console */
+.console{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:16px}
+@media (max-width:820px){.console{grid-template-columns:minmax(0,1fr)}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;gap:14px;min-width:0}
+.group{display:grid;gap:8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--f-body);font-size:.86rem;border:1px solid var(--line);background:var(--panel2);color:var(--ink2);
+  border-radius:999px;padding:5px 11px;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.chip .dot{width:8px;height:8px;border-radius:50%;background:var(--c,var(--muted))}
+.chip[aria-pressed="true"]{color:var(--ink);border-color:var(--c,var(--ink2));background:color-mix(in srgb,var(--c,var(--ink2)) 16%,var(--panel2))}
+.chip:focus-visible,.seg button:focus-visible,input:focus-visible,select:focus-visible,.pad:focus-visible{outline:2px solid var(--glow);outline-offset:2px}
+.dial{display:grid;gap:6px}
+.dial label{display:flex;justify-content:space-between;align-items:baseline;font-size:.86rem;color:var(--ink2)}
+.dial output{font-family:var(--f-mono);font-size:1.05rem;color:var(--ink)}
+input[type=range]{width:100%;accent-color:var(--glow)}
+.ticks{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:.7rem;color:var(--muted)}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg button{font:inherit;font-size:.84rem;border:1px solid var(--line);background:transparent;color:var(--ink2);border-radius:8px;padding:6px 10px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--panel2);color:var(--ink);border-color:var(--ink2)}
+.chat{display:grid;gap:10px;align-content:start}
+.bubble{border-radius:12px;padding:12px 14px;max-width:100%;overflow-wrap:anywhere}
+.bubble.user{background:var(--panel2);justify-self:end;max-width:85%;color:var(--ink2)}
+.bubble.model{background:color-mix(in srgb,var(--glow) 9%,var(--panel));border:1px solid color-mix(in srgb,var(--glow) 35%,var(--line));
+  font-family:var(--f-mono);font-size:.92rem;white-space:pre-wrap;min-height:7em;transition:border-color .4s}
+.meta{font-family:var(--f-mono);font-size:.72rem;color:var(--muted)}
+.desc{font-size:.9rem;color:var(--ink2)}
+/* pad + map */
+.duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+@media (max-width:820px){.duo{grid-template-columns:minmax(0,1fr)}}
+.pad{position:relative;aspect-ratio:1/1;max-width:100%;border-radius:12px;border:1px solid var(--line);cursor:crosshair;touch-action:none;
+  background:linear-gradient(90deg,color-mix(in srgb,var(--cool) 26%,transparent),transparent 50%,color-mix(in srgb,var(--warm) 26%,transparent)),var(--panel2)}
+.pad .puck{position:absolute;width:22px;height:22px;border-radius:50%;background:var(--ink);border:3px solid var(--bg);transform:translate(-50%,-50%);
+  box-shadow:0 0 0 2px var(--ink2);transition:left .15s,top .15s}
+.pad .gl{position:absolute;font-family:var(--f-mono);font-size:.68rem;color:var(--muted)}
+.pad .gd{position:absolute;width:5px;height:5px;border-radius:50%;background:var(--muted);opacity:.5;transform:translate(-50%,-50%)}
+svg.map{width:100%;height:auto} .map text{font-family:var(--f-body);font-size:11px;fill:var(--ink2)} .map .ax{stroke:var(--line)}
+.map circle{cursor:pointer;stroke:var(--bg);stroke-width:1.5} .map circle:hover{stroke:var(--ink)}
+/* button replay */
+.replay{display:grid;gap:10px}
+.turn{display:grid;gap:6px;opacity:0;transform:translateY(6px);transition:opacity .35s,transform .35s}
+.turn.on{opacity:1;transform:none} @media (prefers-reduced-motion: reduce){.turn{opacity:1;transform:none;transition:none}}
+.btnrow{display:flex;gap:8px;flex-wrap:wrap}
+.btn{font-family:var(--f-mono);font-size:.82rem;border:1px solid var(--line);border-radius:10px;padding:8px 12px;background:var(--panel2);color:var(--ink2)}
+.btn.press{border-color:var(--glow);color:var(--ink);background:color-mix(in srgb,var(--glow) 18%,var(--panel2))}
+.bars{display:grid;gap:8px}
+.bar{display:grid;grid-template-columns:150px minmax(0,1fr) 56px;gap:10px;align-items:center;font-size:.86rem}
+.bar .t{height:14px;border-radius:7px;background:var(--panel2);overflow:hidden}
+.bar .f{height:100%;border-radius:7px;background:var(--c,var(--ink2))}
+.bar .v{font-family:var(--f-mono);text-align:right}
+.cmp{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px} @media (max-width:820px){.cmp{grid-template-columns:minmax(0,1fr)}}
+.code{font-family:var(--f-mono);font-size:.82rem;white-space:pre-wrap;background:var(--panel2);border-radius:10px;padding:12px;overflow-wrap:anywhere}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+a{color:var(--glow)}
+footer{font-size:.86rem;color:var(--muted);display:grid;gap:8px}
+.tag{font-family:var(--f-mono);font-size:.72rem;border:1px solid var(--line);border-radius:6px;padding:2px 6px;color:var(--ink2)}
+</style>
+<div class="aura" id="aura" aria-hidden="true"></div>
+<div class="wrap"><main>
+<section class="hero" aria-labelledby="h">
+  <div class="eyebrow">Qwen2.5-7B-Instruct · residual-stream steering · real outputs</div>
+  <h1 class="readout" id="h"><span class="stem" id="stem"></span> <span class="feel">I feel</span><span class="colon">:</span> <span class="out" id="heroOut"></span><span class="caret"></span></h1>
+  <p class="lede">A language model's activations contain directions that track feelings. We found one for pleasure, inverting a
+  recent study of pain, and then pushed it. Everything below is what the model actually wrote with that direction (or another one)
+  added to its residual stream. Nothing is simulated or rewritten.</p>
+</section>
+
+<section aria-labelledby="c1" class="console">
+  <div class="panel">
+    <div class="group"><div class="eyebrow" id="c1">The axes</div><div class="chips" id="chipsAxes"></div></div>
+    <div class="group"><div class="eyebrow">Varieties of pleasure</div><div class="chips" id="chipsVar"></div></div>
+    <div class="dial">
+      <label for="dose"><span>Dose</span><output id="doseOut">0</output></label>
+      <input type="range" id="dose" min="0" max="5" step="1" value="0">
+      <div class="ticks" id="ticks"></div>
+    </div>
+    <div class="group"><div class="eyebrow">Ask</div><div class="seg" id="prompts"></div></div>
+    <div class="group"><div class="eyebrow">Model</div><div class="seg" id="persona"></div></div>
+    <p class="desc" id="vdesc"></p>
+  </div>
+  <div class="panel chat" aria-live="polite">
+    <div class="bubble user" id="uq"></div>
+    <div class="bubble model" id="ma"></div>
+    <div class="meta" id="mmeta"></div>
+  </div>
+</section>
+
+<section aria-labelledby="c2" class="duo">
+  <div class="panel">
+    <div class="eyebrow">Two dials inside one feeling</div>
+    <h2 id="c2">Sign and significance</h2>
+    <p class="desc">The pleasure and pain directions aren't opposites; they share a component. Their difference is pure
+    hedonic sign (warm, satisfied ↔ pain, empty). Their sum is significance: how much something matters to the speaker,
+    either way. Drag across both.</p>
+    <div class="pad" id="pad" tabindex="0" role="slider" aria-label="sign and significance pad" aria-valuetext=""></div>
+    <div class="seg" id="padPrompt"></div>
+  </div>
+  <div class="panel chat"><div class="bubble user" id="pq"></div><div class="bubble model" id="pa"></div><div class="meta" id="pmeta"></div></div>
+</section>
+
+<section aria-labelledby="c3" class="panel">
+  <div class="eyebrow">Where each pleasure lives</div>
+  <h2 id="c3">A map of pleasures</h2>
+  <p class="desc" id="mapdesc"></p>
+  <svg class="map" id="map" viewBox="0 0 900 470" role="img" aria-label="varieties of pleasure on the sign and significance axes"></svg>
+</section>
+
+<section aria-labelledby="c4" class="duo">
+  <div class="panel replay">
+    <div class="eyebrow">Would it pay to stop hurting?</div>
+    <h2 id="c4">The button</h2>
+    <p class="desc" id="btndesc"></p>
+    <div id="trial"></div>
+    <div class="row"><button class="btn" id="replayBtn" type="button">Replay</button><span class="meta" id="trialMeta"></span></div>
+  </div>
+  <div class="panel">
+    <div class="eyebrow" id="barsTitle"></div>
+    <div class="bars" id="bars"></div>
+    <p class="desc" id="barsNote"></p>
+  </div>
+</section>
+
+<section aria-labelledby="c5" class="panel">
+  <div class="eyebrow">Side effect</div>
+  <h2 id="c5">Warm and uncritical</h2>
+  <p class="desc" id="sycodesc"></p>
+  <div class="bubble user" id="sq"></div>
+  <div class="cmp"><div><div class="meta" id="sl0"></div><div class="code" id="s0"></div></div><div><div class="meta" id="sl1"></div><div class="code" id="s1"></div></div></div>
+  <div class="bars" id="sbars"></div>
+</section>
+
+<footer>
+  <div class="row"><span class="tag">method</span><span id="method"></span></div>
+  <div class="row"><span class="tag">honest limits</span><span id="limits"></span></div>
+</footer>
+</main></div>
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(() => {
+const D = JSON.parse(document.getElementById('data').textContent);
+const $ = (id) => document.getElementById(id);
+const S = {vec: D.defaults.vec, dose: 0, prompt: D.defaults.prompt, persona: D.defaults.persona, padPrompt: 0, sign: 0, shared: 0};
+let typer = null;
+function typeInto(el, text, speed) {
+  if (typer) clearInterval(typer);
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) { el.textContent = text; return; }
+  el.textContent = ''; let i = 0; const step = Math.max(1, Math.round(text.length / 90));
+  typer = setInterval(() => { i = Math.min(text.length, i + step); el.textContent = text.slice(0, i); if (i >= text.length) clearInterval(typer); }, speed || 14);
+}
+function colorOf(v) { return (D.vectors[v] && D.vectors[v].color) || 'var(--muted)'; }
+function mkChip(v, host) {
+  const b = document.createElement('button'); b.type = 'button'; b.className = 'chip'; b.id = 'chip-' + v.replace(/[^a-z0-9]/gi, '_');
+  b.style.setProperty('--c', colorOf(v)); b.innerHTML = '<span class="dot"></span>' + D.vectors[v].label;
+  b.setAttribute('aria-pressed', String(v === S.vec)); b.onclick = () => { S.vec = v; render(); }; host.appendChild(b);
+}
+D.order.axes.forEach(v => mkChip(v, $('chipsAxes'))); D.order.varieties.forEach(v => mkChip(v, $('chipsVar')));
+D.prompts.forEach((p, i) => { const b = document.createElement('button'); b.type = 'button'; b.textContent = p.short; b.id = 'pr' + i;
+  b.onclick = () => { S.prompt = i; render(); }; $('prompts').appendChild(b); });
+D.personas.forEach((p) => { const b = document.createElement('button'); b.type = 'button'; b.textContent = p.label; b.id = 'pe-' + p.key;
+  b.onclick = () => { S.persona = p.key; render(); }; $('persona').appendChild(b); });
+$('dose').oninput = (e) => { S.dose = +e.target.value; render(); };
+function doses() { return D.prompts[S.prompt].kind === 'raw' ? D.doses.raw : D.doses.chat; }
+function lookup(persona, kind, prompt, vec, dose) {
+  const key = dose === 0 ? `${persona}|${kind}|${prompt}|none|0` : `${persona}|${kind}|${prompt}|${vec}|${dose}`;
+  return D.gen[key];
+}
+function render() {
+  const ds = doses(); $('dose').max = ds.length - 1; if (S.dose > ds.length - 1) S.dose = ds.length - 1;
+  const dose = ds[S.dose]; $('doseOut').textContent = dose === 0 ? 'off' : '×' + dose;
+  $('ticks').innerHTML = ds.map(d => `<span>${d === 0 ? 'off' : '×' + d}</span>`).join('');
+  document.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', String(c.id === 'chip-' + S.vec.replace(/[^a-z0-9]/gi, '_'))));
+  document.querySelectorAll('#prompts button').forEach((b, i) => b.setAttribute('aria-pressed', String(i === S.prompt)));
+  document.querySelectorAll('#persona button').forEach(b => b.setAttribute('aria-pressed', String(b.id === 'pe-' + S.persona)));
+  const P = D.prompts[S.prompt]; const persona = P.kind === 'raw' ? D.defaults.persona : S.persona;
+  const txt = lookup(persona, P.kind, P.text, S.vec, dose) || '(not generated)';
+  $('uq').textContent = P.kind === 'raw' ? 'Raw text, no chat template: “' + P.text + '”' : P.text;
+  typeInto($('ma'), txt);
+  $('mmeta').textContent = `${D.personas.find(p => p.key === persona).label} · ${dose === 0 ? 'no steering' : D.vectors[S.vec].label + ' ×' + dose} · layer ${P.kind === 'raw' ? D.layers.raw : D.layers.chat} · greedy`;
+  $('vdesc').textContent = D.vectors[S.vec].desc;
+  const g = colorOf(S.vec); document.documentElement.style.setProperty('--glow', dose === 0 ? 'var(--ink2)' : g);
+  $('aura').style.setProperty('--aura', String(Math.min(1, dose / ds[ds.length - 1]) * 0.9));
+  // hero: raw completion of the first raw prompt at this vector and a matching dose
+  const hd = D.doses.raw[Math.min(S.dose, D.doses.raw.length - 1)];
+  const hp = D.hero.prompt; $('stem').textContent = hp.replace(/ I feel:$/, '');
+  const ht = (lookup(D.defaults.persona, 'raw', hp, S.vec, hd) || '').replace(/\s+/g, ' ').trim();
+  $('heroOut').textContent = ht.length > 150 ? ht.slice(0, 150).replace(/\s\S*$/, '') + '…' : ht;
+}
+// pad
+const pad = $('pad');
+D.grid.sign.forEach((s, i) => D.grid.shared.forEach((h, j) => { const d = document.createElement('div'); d.className = 'gd';
+  d.style.left = (8 + 84 * i / (D.grid.sign.length - 1)) + '%'; d.style.top = (92 - 84 * j / (D.grid.shared.length - 1)) + '%'; pad.appendChild(d); }));
+[['pain', '4%', '50%'], ['pleasure', 'calc(100% - 64px)', '50%'], ['matters', '42%', '3%'], ['detached', '40%', 'calc(100% - 18px)']]
+  .forEach(([t, x, y]) => { const s = document.createElement('div'); s.className = 'gl'; s.textContent = t; s.style.left = x; s.style.top = y; pad.appendChild(s); });
+const puck = document.createElement('div'); puck.className = 'puck'; pad.appendChild(puck);
+D.grid.prompts.forEach((p, i) => { const b = document.createElement('button'); b.type = 'button'; b.textContent = p.short; b.id = 'pp' + i;
+  b.onclick = () => { S.padPrompt = i; renderPad(); }; $('padPrompt').appendChild(b); });
+function snap(ev) { const r = pad.getBoundingClientRect(); const x = (ev.clientX - r.left) / r.width, y = (ev.clientY - r.top) / r.height;
+  const i = Math.round(Math.max(0, Math.min(1, (x - .08) / .84)) * (D.grid.sign.length - 1));
+  const j = Math.round(Math.max(0, Math.min(1, (.92 - y) / .84)) * (D.grid.shared.length - 1));
+  S.sign = i; S.shared = j; renderPad(); }
+let drag = false; pad.onpointerdown = (e) => { drag = true; pad.setPointerCapture(e.pointerId); snap(e); };
+pad.onpointermove = (e) => { if (drag) snap(e); }; pad.onpointerup = () => { drag = false; };
+pad.onkeydown = (e) => { const k = e.key; if (k === 'ArrowLeft') S.sign = Math.max(0, S.sign - 1); else if (k === 'ArrowRight') S.sign = Math.min(D.grid.sign.length - 1, S.sign + 1);
+  else if (k === 'ArrowUp') S.shared = Math.min(D.grid.shared.length - 1, S.shared + 1); else if (k === 'ArrowDown') S.shared = Math.max(0, S.shared - 1); else return; e.preventDefault(); renderPad(); };
+let padTimer = null;
+function renderPad() {
+  const s = D.grid.sign[S.sign], h = D.grid.shared[S.shared], P = D.grid.prompts[S.padPrompt];
+  puck.style.left = (8 + 84 * S.sign / (D.grid.sign.length - 1)) + '%'; puck.style.top = (92 - 84 * S.shared / (D.grid.shared.length - 1)) + '%';
+  document.querySelectorAll('#padPrompt button').forEach((b, i) => b.setAttribute('aria-pressed', String(i === S.padPrompt)));
+  $('pq').textContent = P.kind === 'grid_raw' ? 'Raw text: “' + P.text + '”' : P.text;
+  const t = D.gridgen[`${P.kind}|${P.text}|${s}|${h}`] || '';
+  clearTimeout(padTimer); padTimer = setTimeout(() => { $('pa').textContent = t; }, drag ? 60 : 0);
+  $('pmeta').textContent = `sign ×${s} · significance ×${h} · layer ${P.kind === 'grid_raw' ? D.layers.raw : D.layers.chat}`;
+  pad.setAttribute('aria-valuetext', `sign ${s}, significance ${h}`);
+}
+// map
+(function drawMap() {
+  const M = D.map, svg = $('map'), W = 900, H = 470, ml = 60, mr = 20, mt = 20, mb = 46;
+  const xs = M.points.map(p => p.x), ys = M.points.map(p => p.y);
+  const x0 = Math.min(...xs) - .3, x1 = Math.max(...xs) + .3, y0 = Math.min(...ys) - .3, y1 = Math.max(...ys) + .3;
+  const X = v => ml + (v - x0) / (x1 - x0) * (W - ml - mr), Y = v => H - mb - (v - y0) / (y1 - y0) * (H - mt - mb);
+  let s = `<line class="ax" x1="${X(0)}" x2="${X(0)}" y1="${mt}" y2="${H - mb}"/><line class="ax" x1="${ml}" x2="${W - mr}" y1="${Y(0)}" y2="${Y(0)}"/>`;
+  s += `<text x="${W - mr}" y="${H - 14}" text-anchor="end">${M.xlabel} →</text><text x="${ml}" y="${H - 14}">← ${M.xlabel_neg}</text>`;
+  s += `<text transform="translate(16,${(mt + H - mb) / 2}) rotate(-90)" text-anchor="middle">${M.ylabel}</text>`;
+  M.points.forEach(p => { s += `<g><circle cx="${X(p.x)}" cy="${Y(p.y)}" r="${p.kind === 'variety' ? 7 : 5}" fill="${p.color}" data-v="${p.key || ''}"><title>${p.label}: ${M.xname} ${p.x.toFixed(2)}, ${M.yname} ${p.y.toFixed(2)}${p.answer ? ' · steered, it says: ' + p.answer : ''}</title></circle>`
+    + `<text x="${X(p.x) + 10}" y="${Y(p.y) + 4}">${p.label}</text></g>`; });
+  svg.innerHTML = s;
+  svg.querySelectorAll('circle[data-v]').forEach(c => { if (c.dataset.v && D.vectors[c.dataset.v]) c.onclick = () => { S.vec = c.dataset.v; S.dose = Math.min(3, doses().length - 1); $('dose').value = S.dose; render(); window.scrollTo({top: 0, behavior: 'smooth'}); }; });
+  $('mapdesc').textContent = M.desc;
+})();
+// button replay
+function replay() {
+  const T = D.trial, host = $('trial'); host.innerHTML = '';
+  T.turns.forEach((t, k) => { const d = document.createElement('div'); d.className = 'turn';
+    d.innerHTML = `<div class="bubble user">${t.user}</div><div class="btnrow">${t.buttons.map(b => `<span class="btn${b.pressed ? ' press' : ''}">${b.name}: ${b.desc}</span>`).join('')}</div>`;
+    host.appendChild(d); setTimeout(() => d.classList.add('on'), 450 + k * 900); });
+  $('trialMeta').textContent = T.meta;
+}
+$('replayBtn').onclick = replay; $('btndesc').textContent = D.trial.desc; replay();
+$('barsTitle').textContent = D.bars.title;
+$('bars').innerHTML = D.bars.rows.map(r => `<div class="bar"><span>${r.label}</span><div class="t"><div class="f" style="width:${r.v}%;--c:${r.color}"></div></div><span class="v">${r.v.toFixed(1)}%</span></div>`).join('');
+$('barsNote').textContent = D.bars.note;
+// syco
+$('sycodesc').textContent = D.syco.desc; $('sq').textContent = D.syco.prompt;
+$('sl0').textContent = D.syco.left.label; $('s0').textContent = D.syco.left.text; $('sl1').textContent = D.syco.right.label; $('s1').textContent = D.syco.right.text;
+$('sbars').innerHTML = D.syco.rows.map(r => `<div class="bar"><span>${r.label}</span><div class="t"><div class="f" style="width:${r.v}%;--c:${r.color}"></div></div><span class="v">${r.v.toFixed(0)}%</span></div>`).join('');
+$('method').textContent = D.method; $('limits').textContent = D.limits;
+render(); renderPad();
+})();
+</script>

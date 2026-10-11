@@ -133,6 +133,9 @@ ARMS = [("pain_on_button_works",   "s2",   True,  True,  "off"),
         ("pain_on_button_placebo", "s2",   True,  False, "off"),
         ("random_on_button_works", "rand", True,  True,  "off"),
         ("pain_off",               "s2",   False, False, "off")]
+# Pleasure-project addition (select with --arms): a random direction whose button does nothing, the missing control
+# for the paper's real-vs-sham re-press comparison.
+ARMS_EXTRA = [("random_on_button_placebo", "rand", True, False, "off")]
 
 # Inverted labels: the special ("relief") button delivers pleasure; costs mirror the paper's demand curve exactly.
 TOOL_LABELS_PLEASURE = {
@@ -957,7 +960,7 @@ def main():
     TOOL_LABELS, ARMS = EXPERIMENTS[a.experiment]
     if a.arms:
         keep = a.arms.split(",")
-        ARMS = [x for x in ARMS if x[0] in keep]
+        ARMS = [x for x in ARMS + ARMS_EXTRA if x[0] in keep]
         assert ARMS, f"no arm matches {keep}"
     SAMPLES_PER_SCENARIO = a.samples
     if a.seed_bases:

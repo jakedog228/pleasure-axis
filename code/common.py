@@ -47,13 +47,21 @@ def load_model(repo, dtype=torch.bfloat16, adapter=None):
 
 
 def get_layers(model):
+    """The decoder-layer ModuleList, through PEFT wrappers (PeftModel -> LoraModel -> *ForCausalLM -> *Model) and
+    multimodal wrappers (.language_model)."""
     m = model
-    if hasattr(m, "base_model") and hasattr(m.base_model, "model") and not hasattr(m, "lm_head"):
-        m = m.base_model.model                    # peft wrapper
-    inner = m.model
-    if hasattr(inner, "language_model"):
-        inner = inner.language_model
-    return inner.layers
+    for _ in range(8):
+        lay = getattr(m, "layers", None)
+        if isinstance(lay, torch.nn.ModuleList):
+            return lay
+        for attr in ("language_model", "model", "base_model"):
+            nxt = getattr(m, attr, None)
+            if nxt is not None and nxt is not m:
+                m = nxt
+                break
+        else:
+            break
+    raise AttributeError("decoder layers not found")
 
 
 def free(*objs):

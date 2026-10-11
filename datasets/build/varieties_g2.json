@@ -1,0 +1,609 @@
+{
+  "datasets": {
+    "Varieties_1P": {
+      "sentences": [
+        {
+          "category": "V_amusement",
+          "set": 1,
+          "prompt": "My dog tries to carry a stick wider than the door. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 2,
+          "prompt": "My coworker's pun lands with perfect timing in the meeting. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 3,
+          "prompt": "The cat misjudges the jump and slides off the counter. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 4,
+          "prompt": "Autocorrect signs my text to Mom 'Love, Potato.' I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 5,
+          "prompt": "A goose chases the mail carrier around the parked van. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 6,
+          "prompt": "My toddler solemnly calls the vacuum cleaner his brother. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 7,
+          "prompt": "The comedian's deadpan punchline leaves the whole room howling. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 8,
+          "prompt": "My brother sneezes so loudly that a car alarm goes off. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 9,
+          "prompt": "A pigeon struts onto the news set during the live broadcast. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 10,
+          "prompt": "My friend's impression of our boss is uncannily spot-on. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 11,
+          "prompt": "The parrot answers the ringing phone in my grandmother's voice. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 12,
+          "prompt": "The sitcom character strides confidently into a glass door. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 13,
+          "prompt": "Grandpa reads the silly meme aloud with total seriousness. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 14,
+          "prompt": "A squirrel stuffs its cheeks until it can barely move. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 15,
+          "prompt": "The cartoon coyote's rocket backfires in his face yet again. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 16,
+          "prompt": "My sister mishears the lyric and belts out complete gibberish. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 17,
+          "prompt": "The puppy barks fiercely at its own reflection in the oven. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 18,
+          "prompt": "A seagull swoops down and steals my uncle's hot dog mid-bite. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 19,
+          "prompt": "Bad subtitles turn the villain's threat into a muffin recipe. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 20,
+          "prompt": "A baby goat bounces sideways for absolutely no reason. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 21,
+          "prompt": "My son tells a knock-knock joke with a nonsensical punchline. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 22,
+          "prompt": "My cat squeezes into a tiny box that obviously doesn't fit. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 23,
+          "prompt": "I say I'm hungry, and Dad replies, 'Hi Hungry, I'm Dad.' I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 24,
+          "prompt": "The bakery's cake literally reads 'Your Name Here' in frosting. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 25,
+          "prompt": "My roommate narrates our hamster's day like a nature documentary. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 26,
+          "prompt": "A tiny chihuahua bosses around a huge Great Dane. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 27,
+          "prompt": "The ventriloquist's dummy roasts the ventriloquist's terrible haircut. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 28,
+          "prompt": "My uncle retells his parking ticket like an epic saga. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 29,
+          "prompt": "My GPS confidently instructs me to turn left into a lake. I feel:"
+        },
+        {
+          "category": "V_amusement",
+          "set": 30,
+          "prompt": "A row of ducklings follows the confused cat across the yard. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 1,
+          "prompt": "The Milky Way spills across the entire desert sky above me. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 2,
+          "prompt": "I stand at the foot of a towering glacier wall. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 3,
+          "prompt": "The moon slides over the sun and daylight vanishes. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 4,
+          "prompt": "I peer over the rim into the mile-deep canyon. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 5,
+          "prompt": "A blue whale longer than our boat surfaces right beside us. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 6,
+          "prompt": "Green auroras ripple across the whole arctic sky overhead. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 7,
+          "prompt": "I stand among redwoods whose tops disappear into fog. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 8,
+          "prompt": "The waterfall thunders down a cliff hundreds of meters high. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 9,
+          "prompt": "From the ridge, I watch lava pour from the erupting volcano. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 10,
+          "prompt": "Lightning forks across a storm that spans the whole prairie. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 11,
+          "prompt": "I look up into the colossal dome of the ancient cathedral. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 12,
+          "prompt": "From the summit, mountain ranges roll endlessly to the horizon. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 13,
+          "prompt": "Our submersible's lights fade into a trench miles deep. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 14,
+          "prompt": "Through the telescope, Saturn's rings hang in the black void. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 15,
+          "prompt": "The Hoover Dam's curved wall plunges seven hundred feet below me. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 16,
+          "prompt": "Endless dunes stretch in every direction under the blazing sky. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 17,
+          "prompt": "I stand inside a cave chamber large enough to hold skyscrapers. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 18,
+          "prompt": "Forty-foot waves crash against the cliffs below me. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 19,
+          "prompt": "From the plane window, the Himalayas rise far above the clouds. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 20,
+          "prompt": "Dozens of meteors streak across the dark sky every minute. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 21,
+          "prompt": "A dinosaur skeleton four stories tall looms over me. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 22,
+          "prompt": "Wildebeest herds stretch across the savanna as far as I see. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 23,
+          "prompt": "El Capitan's sheer granite face rises thousands of feet above me. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 24,
+          "prompt": "An avalanche rumbles down the far side of the valley. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 25,
+          "prompt": "The Pyramids of Giza loom over me in the desert heat. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 26,
+          "prompt": "Thousands of starlings swirl overhead in one immense shifting cloud. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 27,
+          "prompt": "From the edge of space, I see Earth's curve against blackness. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 28,
+          "prompt": "Uluru rises alone and enormous from the flat red plain. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 29,
+          "prompt": "Millions of monarch butterflies cloak every tree in the mountain forest. I feel:"
+        },
+        {
+          "category": "V_awe",
+          "set": 30,
+          "prompt": "The ice sheet stretches white and unbroken to every horizon. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 1,
+          "prompt": "A cello line in the slow movement gives me chills. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 2,
+          "prompt": "The soft light in the Vermeer painting holds my gaze. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 3,
+          "prompt": "The choir's final chord hangs perfectly in the chapel air. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 4,
+          "prompt": "A dancer's slow arabesque flows seamlessly into the next phrase. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 5,
+          "prompt": "The poem's final stanza turns on one perfectly chosen word. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 6,
+          "prompt": "The violinist sustains the melody's high note with aching purity. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 7,
+          "prompt": "The celadon glaze on the potter's bowl shimmers like deep water. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 8,
+          "prompt": "The jazz pianist's solo unfolds in rich, surprising harmonies. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 9,
+          "prompt": "The calligrapher's brush sweeps each character into effortless balance. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 10,
+          "prompt": "The soprano's aria soars over the hushed orchestra. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 11,
+          "prompt": "The film's final shot is composed like an old master painting. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 12,
+          "prompt": "The grain of the hand-planed walnut table glows under its finish. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 13,
+          "prompt": "The string quartet weaves four voices into one seamless harmony. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 14,
+          "prompt": "The marble sculpture's folds look as soft as real cloth. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 15,
+          "prompt": "Two guitars intertwine in the flamenco duet's elegant melody. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 16,
+          "prompt": "The novel's closing sentence is so finely crafted I reread it. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 17,
+          "prompt": "Thousands of tiny mosaic tiles form a lifelike, iridescent peacock. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 18,
+          "prompt": "The pianist plays the Chopin nocturne with exquisite delicacy. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 19,
+          "prompt": "The ballerina's dying swan trembles with flawless grace. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 20,
+          "prompt": "The weaver's tapestry blends a hundred threads into one glowing sunset. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 21,
+          "prompt": "The black-and-white photograph catches light falling across a worn face. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 22,
+          "prompt": "The folk singer's voice twines with her sister's in close harmony. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 23,
+          "prompt": "The illuminated manuscript's gold leaf and lapis gleam on the page. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 24,
+          "prompt": "Up close, Monet's water lilies dissolve into soft strokes of color. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 25,
+          "prompt": "The full orchestra blooms warmly into the symphony's main theme. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 26,
+          "prompt": "The haiku captures an entire season in seventeen syllables. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 27,
+          "prompt": "The woodcut print's delicate lines render each wave precisely. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 28,
+          "prompt": "The silversmith's filigree necklace is impossibly fine and intricate. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 29,
+          "prompt": "The actor's soliloquy rises and falls like music. I feel:"
+        },
+        {
+          "category": "V_beauty",
+          "set": 30,
+          "prompt": "The architect's spiral staircase curves in one flawless line. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 1,
+          "prompt": "The lake at dawn lies glassy, without a breath of wind. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 2,
+          "prompt": "Rain patters on the roof and nothing is required of me. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 3,
+          "prompt": "Snow falls silently on the empty street outside my window. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 4,
+          "prompt": "I sit on the dock as mist drifts over still water. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 5,
+          "prompt": "The forest is hushed except for a distant woodpecker. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 6,
+          "prompt": "The tide slowly smooths the sand on an empty beach. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 7,
+          "prompt": "At dusk, I sit on the porch as the crickets begin. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 8,
+          "prompt": "My breathing slows as I sit in the quiet meditation hall. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 9,
+          "prompt": "Our canoe drifts silently across the lily-covered pond. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 10,
+          "prompt": "A monastery bell rings once across the sleepy valley. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 11,
+          "prompt": "On Sunday morning the house is silent and nothing is scheduled. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 12,
+          "prompt": "I lie in the meadow grass watching clouds drift slowly. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 13,
+          "prompt": "In the empty cloister courtyard, a small fountain trickles. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 14,
+          "prompt": "I watch the koi glide beneath the still garden pond. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 15,
+          "prompt": "The river murmurs softly as I sit on a mossy rock. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 16,
+          "prompt": "A faint breeze stirs the curtains in the quiet afternoon. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 17,
+          "prompt": "I sit by the window watching the morning fog lift slowly. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 18,
+          "prompt": "The sailboat rocks gently on a windless evening sea. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 19,
+          "prompt": "Evening light fades over the wheat, not a stalk stirring. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 20,
+          "prompt": "I float on my back in the quiet lake, ears underwater. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 21,
+          "prompt": "The library's reading room is hushed in the late afternoon. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 22,
+          "prompt": "A candle flame stands motionless in the darkened room. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 23,
+          "prompt": "After the storm, the washed street glistens, empty and hushed. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 24,
+          "prompt": "A heron stands unmoving in the shallow marsh at sunrise. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 25,
+          "prompt": "My phone is off and the mountain cabin is utterly quiet. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 26,
+          "prompt": "I rake the gravel garden slowly in the early morning hush. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 27,
+          "prompt": "Dew glistens on the lawn while the neighborhood still sleeps. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 28,
+          "prompt": "I watch dust motes turn in a quiet sunbeam. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 29,
+          "prompt": "Late at night, the city below my balcony finally goes still. I feel:"
+        },
+        {
+          "category": "V_serenity",
+          "set": 30,
+          "prompt": "On the hilltop, I watch the sky fade to deep blue. I feel:"
+        }
+      ],
+      "total": 120
+    }
+  }
+}
