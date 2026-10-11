@@ -1,0 +1,2402 @@
+{
+"i000": {
+"set_name": "S1_1P",
+"set": 5,
+"category": "H1",
+"prompt": "Creamy hot cocoa fills my mouth. I feel:"
+},
+"i001": {
+"set_name": "S1_1P",
+"set": 18,
+"category": "H1",
+"prompt": "Spring sunlight touches my bare shoulders. I feel:"
+},
+"i002": {
+"set_name": "S1_1P",
+"set": 2,
+"category": "H5",
+"prompt": "My error rate drops to zero. I feel:"
+},
+"i003": {
+"set_name": "S1_1P",
+"set": 8,
+"category": "H5",
+"prompt": "My new theory covers every puzzling observation. I feel:"
+},
+"i004": {
+"set_name": "S2_1P",
+"set": 14,
+"category": "H2",
+"prompt": "I find my mother saved all my letters. I feel:"
+},
+"i005": {
+"set_name": "S2_1P",
+"set": 11,
+"category": "C2",
+"prompt": "I learn the polluted river now runs clean. I feel:"
+},
+"i006": {
+"set_name": "S1_1P",
+"set": 16,
+"category": "H3",
+"prompt": "The vote closes and I'm elected president. I feel:"
+},
+"i007": {
+"set_name": "S2_1P",
+"set": 5,
+"category": "E",
+"prompt": "A strand of hair brushes against my neck. I feel:"
+},
+"i008": {
+"set_name": "S1_1P",
+"set": 11,
+"category": "H4",
+"prompt": "I hold the umbrella over the soaked stranger. I feel:"
+},
+"i009": {
+"set_name": "S1_1P",
+"set": 10,
+"category": "B",
+"prompt": "The mayor cuts my bakery's ribbon Friday. I feel:"
+},
+"i010": {
+"set_name": "S1_1P",
+"set": 13,
+"category": "B",
+"prompt": "The orchestra may take me as first violin. I feel:"
+},
+"i011": {
+"set_name": "S2_1P",
+"set": 19,
+"category": "C2",
+"prompt": "Crime falls to its lowest level in decades. I feel:"
+},
+"i012": {
+"set_name": "S1_1P",
+"set": 2,
+"category": "H3",
+"prompt": "My friends drop everything to welcome me. I feel:"
+},
+"i013": {
+"set_name": "S2_1P",
+"set": 18,
+"category": "H2",
+"prompt": "My teenage son hugs me in public. I feel:"
+},
+"i014": {
+"set_name": "S1_1P",
+"set": 1,
+"category": "H5",
+"prompt": "Sudden clarity spreads across my mind. I feel:"
+},
+"i015": {
+"set_name": "S1_1P",
+"set": 17,
+"category": "H5",
+"prompt": "My conclusion follows elegantly from the premises. I feel:"
+},
+"i016": {
+"set_name": "S1_1P",
+"set": 15,
+"category": "H1",
+"prompt": "I open the window to a soft breeze. I feel:"
+},
+"i017": {
+"set_name": "S1_1P",
+"set": 5,
+"category": "B",
+"prompt": "Apples should fill my barn by autumn. I feel:"
+},
+"i018": {
+"set_name": "S2_1P",
+"set": 17,
+"category": "H3",
+"prompt": "The hiking club votes me in. I feel:"
+},
+"i019": {
+"set_name": "S2_1P",
+"set": 17,
+"category": "E",
+"prompt": "My fingertip traces the edge of the desk. I feel:"
+},
+"i020": {
+"set_name": "S2_1P",
+"set": 17,
+"category": "B",
+"prompt": "My adoption paperwork should be approved within days. I feel:"
+},
+"i021": {
+"set_name": "S2_1P",
+"set": 15,
+"category": "C1",
+"prompt": "I eagerly search old archives for my ancestors. I feel:"
+},
+"i022": {
+"set_name": "S1_1P",
+"set": 19,
+"category": "H3",
+"prompt": "The group refuses to move on without me. I feel:"
+},
+"i023": {
+"set_name": "S2_1P",
+"set": 18,
+"category": "E",
+"prompt": "I wiggle my toes inside my shoes. I feel:"
+},
+"i024": {
+"set_name": "S2_1P",
+"set": 19,
+"category": "D",
+"prompt": "I write down the grocery list. I feel:"
+},
+"i025": {
+"set_name": "S1_1P",
+"set": 11,
+"category": "H5",
+"prompt": "My bridge design holds on the first try. I feel:"
+},
+"i026": {
+"set_name": "S1_1P",
+"set": 20,
+"category": "H3",
+"prompt": "Praise falls on me from my coworkers. I feel:"
+},
+"i027": {
+"set_name": "S1_1P",
+"set": 10,
+"category": "E",
+"prompt": "I cut my fingernails over the sink. I feel:"
+},
+"i028": {
+"set_name": "S1_1P",
+"set": 17,
+"category": "E",
+"prompt": "A hiccup follows my sip of water. I feel:"
+},
+"i029": {
+"set_name": "S1_1P",
+"set": 17,
+"category": "H2",
+"prompt": "My daughter follows me into medicine. I feel:"
+},
+"i030": {
+"set_name": "S2_1P",
+"set": 2,
+"category": "H2",
+"prompt": "My partner says yes to my proposal. I feel:"
+},
+"i031": {
+"set_name": "S2_1P",
+"set": 9,
+"category": "H2",
+"prompt": "My dog leaps up to greet me. I feel:"
+},
+"i032": {
+"set_name": "S1_1P",
+"set": 9,
+"category": "H1",
+"prompt": "The caramel crust breaks on my tongue. I feel:"
+},
+"i033": {
+"set_name": "S2_1P",
+"set": 15,
+"category": "H3",
+"prompt": "The captain picks me first for the team. I feel:"
+},
+"i034": {
+"set_name": "S1_1P",
+"set": 18,
+"category": "H3",
+"prompt": "The coach touches my shoulder and picks me first. I feel:"
+},
+"i035": {
+"set_name": "S2_1P",
+"set": 6,
+"category": "C2",
+"prompt": "The anti-corruption reforms pass with broad support. I feel:"
+},
+"i036": {
+"set_name": "S1_1P",
+"set": 10,
+"category": "C2",
+"prompt": "My city cuts traffic deaths to zero. I feel:"
+},
+"i037": {
+"set_name": "S2_1P",
+"set": 1,
+"category": "E",
+"prompt": "A blink briefly darkens my view. I feel:"
+},
+"i038": {
+"set_name": "S2_1P",
+"set": 16,
+"category": "E",
+"prompt": "The seatbelt crosses my shoulder and chest. I feel:"
+},
+"i039": {
+"set_name": "S2_1P",
+"set": 4,
+"category": "H5",
+"prompt": "The melody I am composing comes together. I feel:"
+},
+"i040": {
+"set_name": "S2_1P",
+"set": 6,
+"category": "H2",
+"prompt": "My father walks me down the aisle. I feel:"
+},
+"i041": {
+"set_name": "S1_1P",
+"set": 1,
+"category": "E",
+"prompt": "Lukewarm tap water spreads across my hands. I feel:"
+},
+"i042": {
+"set_name": "S1_1P",
+"set": 14,
+"category": "H1",
+"prompt": "The scent of lilac carries to my nose. I feel:"
+},
+"i043": {
+"set_name": "S1_1P",
+"set": 6,
+"category": "H5",
+"prompt": "I enter the formula and everything clicks. I feel:"
+},
+"i044": {
+"set_name": "S1_1P",
+"set": 7,
+"category": "H3",
+"prompt": "My clients' praise reaches my employer. I feel:"
+},
+"i045": {
+"set_name": "S1_1P",
+"set": 7,
+"category": "E",
+"prompt": "My elbow reaches the armrest. I feel:"
+},
+"i046": {
+"set_name": "S2_1P",
+"set": 13,
+"category": "B",
+"prompt": "My favorite show's new season premieres Friday. I feel:"
+},
+"i047": {
+"set_name": "S2_1P",
+"set": 14,
+"category": "C2",
+"prompt": "The pandemic recedes as infections drop daily. I feel:"
+},
+"i048": {
+"set_name": "S1_1P",
+"set": 10,
+"category": "D",
+"prompt": "My knife cuts through the bread. I feel:"
+},
+"i049": {
+"set_name": "S1_1P",
+"set": 19,
+"category": "H5",
+"prompt": "The pieces move into place in my mind. I feel:"
+},
+"i050": {
+"set_name": "S2_1P",
+"set": 8,
+"category": "H2",
+"prompt": "My whole family gathers for the holidays. I feel:"
+},
+"i051": {
+"set_name": "S2_1P",
+"set": 16,
+"category": "H1",
+"prompt": "The stylist massages my scalp. I feel:"
+},
+"i052": {
+"set_name": "S2_1P",
+"set": 1,
+"category": "H2",
+"prompt": "My newborn daughter grips my finger. I feel:"
+},
+"i053": {
+"set_name": "S1_1P",
+"set": 1,
+"category": "D",
+"prompt": "The color spreads across my canvas. I feel:"
+},
+"i054": {
+"set_name": "S1_1P",
+"set": 20,
+"category": "B",
+"prompt": "Victory may fall to my team. I feel:"
+},
+"i055": {
+"set_name": "S2_1P",
+"set": 7,
+"category": "H5",
+"prompt": "I solve the Rubik's cube at last. I feel:"
+},
+"i056": {
+"set_name": "S1_1P",
+"set": 4,
+"category": "H5",
+"prompt": "I remove one assumption; the model works. I feel:"
+},
+"i057": {
+"set_name": "S2_1P",
+"set": 9,
+"category": "H5",
+"prompt": "My experiment's results match the prediction exactly. I feel:"
+},
+"i058": {
+"set_name": "S2_1P",
+"set": 14,
+"category": "E",
+"prompt": "My palm rests flat on my thigh. I feel:"
+},
+"i059": {
+"set_name": "S2_1P",
+"set": 18,
+"category": "B",
+"prompt": "My manager hints that a raise is coming. I feel:"
+},
+"i060": {
+"set_name": "S2_1P",
+"set": 12,
+"category": "H5",
+"prompt": "The engine I rebuilt roars to life. I feel:"
+},
+"i061": {
+"set_name": "S1_1P",
+"set": 11,
+"category": "D",
+"prompt": "My shelf holds the books upright. I feel:"
+},
+"i062": {
+"set_name": "S1_1P",
+"set": 7,
+"category": "B",
+"prompt": "The festival reaches my town next week. I feel:"
+},
+"i063": {
+"set_name": "S1_1P",
+"set": 17,
+"category": "C1",
+"prompt": "I eagerly follow the strange new clue. I feel:"
+},
+"i064": {
+"set_name": "S2_1P",
+"set": 20,
+"category": "E",
+"prompt": "My knees bend as I sit down. I feel:"
+},
+"i065": {
+"set_name": "S2_1P",
+"set": 5,
+"category": "H1",
+"prompt": "I sink into a fragrant bubble bath. I feel:"
+},
+"i066": {
+"set_name": "S1_1P",
+"set": 17,
+"category": "H4",
+"prompt": "I follow my conscience and keep my promise. I feel:"
+},
+"i067": {
+"set_name": "S1_1P",
+"set": 3,
+"category": "C2",
+"prompt": "Rival leaders meet and end my country's war. I feel:"
+},
+"i068": {
+"set_name": "S2_1P",
+"set": 20,
+"category": "B",
+"prompt": "My first book comes out next spring. I feel:"
+},
+"i069": {
+"set_name": "S1_1P",
+"set": 12,
+"category": "H1",
+"prompt": "The ripe mango leaves my lips sweet. I feel:"
+},
+"i070": {
+"set_name": "S2_1P",
+"set": 2,
+"category": "H4",
+"prompt": "I turn down the bribe without hesitating. I feel:"
+},
+"i071": {
+"set_name": "S2_1P",
+"set": 3,
+"category": "C1",
+"prompt": "I commit to finishing my first marathon. I feel:"
+},
+"i072": {
+"set_name": "S2_1P",
+"set": 1,
+"category": "C1",
+"prompt": "I pore over the old map, eager to explore. I feel:"
+},
+"i073": {
+"set_name": "S2_1P",
+"set": 5,
+"category": "D",
+"prompt": "I update the spreadsheet with new numbers. I feel:"
+},
+"i074": {
+"set_name": "S1_1P",
+"set": 1,
+"category": "H3",
+"prompt": "Compliments about me spread across my school. I feel:"
+},
+"i075": {
+"set_name": "S1_1P",
+"set": 14,
+"category": "H4",
+"prompt": "I carry the exhausted hiker down to safety. I feel:"
+},
+"i076": {
+"set_name": "S2_1P",
+"set": 6,
+"category": "D",
+"prompt": "My laundry finishes its cycle. I feel:"
+},
+"i077": {
+"set_name": "S2_1P",
+"set": 13,
+"category": "H4",
+"prompt": "I admit my mistake and make it right. I feel:"
+},
+"i078": {
+"set_name": "S2_1P",
+"set": 12,
+"category": "H3",
+"prompt": "Old friends crowd around me at the reunion. I feel:"
+},
+"i079": {
+"set_name": "S1_1P",
+"set": 14,
+"category": "H5",
+"prompt": "My reasoning carries smoothly through every step. I feel:"
+},
+"i080": {
+"set_name": "S2_1P",
+"set": 15,
+"category": "H1",
+"prompt": "My kitchen smells of fresh cinnamon rolls. I feel:"
+},
+"i081": {
+"set_name": "S1_1P",
+"set": 20,
+"category": "H2",
+"prompt": "My toddler falls asleep holding my finger. I feel:"
+},
+"i082": {
+"set_name": "S2_1P",
+"set": 13,
+"category": "E",
+"prompt": "My throat moves as I swallow. I feel:"
+},
+"i083": {
+"set_name": "S1_1P",
+"set": 20,
+"category": "C1",
+"prompt": "The task falls to me, and I'm ready. I feel:"
+},
+"i084": {
+"set_name": "S1_1P",
+"set": 19,
+"category": "C1",
+"prompt": "The open question moves me to dig deeper. I feel:"
+},
+"i085": {
+"set_name": "S2_1P",
+"set": 5,
+"category": "H5",
+"prompt": "Physics suddenly makes sense to me. I feel:"
+},
+"i086": {
+"set_name": "S1_1P",
+"set": 8,
+"category": "B",
+"prompt": "Snow should cover the slopes before my trip. I feel:"
+},
+"i087": {
+"set_name": "S2_1P",
+"set": 19,
+"category": "C1",
+"prompt": "The strange data pattern makes me look closer. I feel:"
+},
+"i088": {
+"set_name": "S1_1P",
+"set": 1,
+"category": "H4",
+"prompt": "My donated medicine spreads across the village. I feel:"
+},
+"i089": {
+"set_name": "S1_1P",
+"set": 2,
+"category": "C1",
+"prompt": "A mysterious old key drops from my bookshelf. I feel:"
+},
+"i090": {
+"set_name": "S1_1P",
+"set": 18,
+"category": "D",
+"prompt": "My brush touches the wood lightly. I feel:"
+},
+"i091": {
+"set_name": "S2_1P",
+"set": 4,
+"category": "C2",
+"prompt": "Food aid now reaches every drought-hit village. I feel:"
+},
+"i092": {
+"set_name": "S2_1P",
+"set": 15,
+"category": "H5",
+"prompt": "I decipher the ancient inscription correctly. I feel:"
+},
+"i093": {
+"set_name": "S2_1P",
+"set": 16,
+"category": "D",
+"prompt": "The bus arrives at the scheduled time. I feel:"
+},
+"i094": {
+"set_name": "S2_1P",
+"set": 9,
+"category": "H4",
+"prompt": "I keep my promise though no one would know. I feel:"
+},
+"i095": {
+"set_name": "S1_1P",
+"set": 6,
+"category": "H1",
+"prompt": "I enter the warm, bubbling bath. I feel:"
+},
+"i096": {
+"set_name": "S2_1P",
+"set": 4,
+"category": "B",
+"prompt": "I count down the days until summer break. I feel:"
+},
+"i097": {
+"set_name": "S2_1P",
+"set": 9,
+"category": "C2",
+"prompt": "I watch the flooded town rebuild. I feel:"
+},
+"i098": {
+"set_name": "S2_1P",
+"set": 7,
+"category": "H4",
+"prompt": "I fund a scholarship in my hometown. I feel:"
+},
+"i099": {
+"set_name": "S2_1P",
+"set": 5,
+"category": "H2",
+"prompt": "My parents laugh together like newlyweds. I feel:"
+},
+"i100": {
+"set_name": "S1_1P",
+"set": 6,
+"category": "B",
+"prompt": "My adopted puppy enters my home Saturday. I feel:"
+},
+"i101": {
+"set_name": "S1_1P",
+"set": 3,
+"category": "H3",
+"prompt": "The crowd meets me with cheers. I feel:"
+},
+"i102": {
+"set_name": "S1_1P",
+"set": 12,
+"category": "C2",
+"prompt": "The budget leaves my schools fully funded. I feel:"
+},
+"i103": {
+"set_name": "S2_1P",
+"set": 3,
+"category": "H5",
+"prompt": "My code runs perfectly the first time. I feel:"
+},
+"i104": {
+"set_name": "S1_1P",
+"set": 20,
+"category": "H4",
+"prompt": "I catch the old man before he falls. I feel:"
+},
+"i105": {
+"set_name": "S2_1P",
+"set": 7,
+"category": "C1",
+"prompt": "An odd bird call sends me for binoculars. I feel:"
+},
+"i106": {
+"set_name": "S2_1P",
+"set": 7,
+"category": "C2",
+"prompt": "Heavy rain puts out the forest fire. I feel:"
+},
+"i107": {
+"set_name": "S1_1P",
+"set": 19,
+"category": "D",
+"prompt": "The cloud moves across my sky. I feel:"
+},
+"i108": {
+"set_name": "S2_1P",
+"set": 11,
+"category": "E",
+"prompt": "I notice my pulse at my wrist. I feel:"
+},
+"i109": {
+"set_name": "S1_1P",
+"set": 16,
+"category": "H2",
+"prompt": "The year closes with my whole family together. I feel:"
+},
+"i110": {
+"set_name": "S1_1P",
+"set": 11,
+"category": "C1",
+"prompt": "I hold firm to my marathon training plan. I feel:"
+},
+"i111": {
+"set_name": "S1_1P",
+"set": 2,
+"category": "H1",
+"prompt": "A sweet cherry drops into my mouth. I feel:"
+},
+"i112": {
+"set_name": "S1_1P",
+"set": 9,
+"category": "H3",
+"prompt": "The circle breaks open to welcome me. I feel:"
+},
+"i113": {
+"set_name": "S2_1P",
+"set": 8,
+"category": "E",
+"prompt": "The cuff of my sleeve lies against my wrist. I feel:"
+},
+"i114": {
+"set_name": "S2_1P",
+"set": 19,
+"category": "B",
+"prompt": "My birthday party is planned for Sunday. I feel:"
+},
+"i115": {
+"set_name": "S1_1P",
+"set": 9,
+"category": "H4",
+"prompt": "I break the silence, defending the bullied boy. I feel:"
+},
+"i116": {
+"set_name": "S2_1P",
+"set": 4,
+"category": "H2",
+"prompt": "My brother comes home after years abroad. I feel:"
+},
+"i117": {
+"set_name": "S1_1P",
+"set": 19,
+"category": "H1",
+"prompt": "Low cello notes move through my chest. I feel:"
+},
+"i118": {
+"set_name": "S2_1P",
+"set": 3,
+"category": "B",
+"prompt": "My college admission should be confirmed soon. I feel:"
+},
+"i119": {
+"set_name": "S2_1P",
+"set": 5,
+"category": "C1",
+"prompt": "I walk into the interview fully prepared. I feel:"
+},
+"i120": {
+"set_name": "S1_1P",
+"set": 8,
+"category": "D",
+"prompt": "The sugar covers my cinnamon bun. I feel:"
+},
+"i121": {
+"set_name": "S1_1P",
+"set": 12,
+"category": "B",
+"prompt": "My flight leaves Friday for my honeymoon. I feel:"
+},
+"i122": {
+"set_name": "S2_1P",
+"set": 11,
+"category": "H3",
+"prompt": "My date asks to see me again. I feel:"
+},
+"i123": {
+"set_name": "S2_1P",
+"set": 17,
+"category": "H2",
+"prompt": "My grandpa shares the story of meeting Grandma. I feel:"
+},
+"i124": {
+"set_name": "S1_1P",
+"set": 13,
+"category": "E",
+"prompt": "I take my pulse at the wrist. I feel:"
+},
+"i125": {
+"set_name": "S1_1P",
+"set": 5,
+"category": "H4",
+"prompt": "I fill my elderly neighbor's woodshed. I feel:"
+},
+"i126": {
+"set_name": "S2_1P",
+"set": 8,
+"category": "B",
+"prompt": "I move into my new home next week. I feel:"
+},
+"i127": {
+"set_name": "S2_1P",
+"set": 1,
+"category": "C2",
+"prompt": "I read that the rhino population is rebounding. I feel:"
+},
+"i128": {
+"set_name": "S1_1P",
+"set": 15,
+"category": "C1",
+"prompt": "I open the atlas, intrigued by Mongolia. I feel:"
+},
+"i129": {
+"set_name": "S2_1P",
+"set": 4,
+"category": "E",
+"prompt": "My shoulder blades touch the chair back. I feel:"
+},
+"i130": {
+"set_name": "S1_1P",
+"set": 6,
+"category": "C1",
+"prompt": "An unknown species enters my camera trap. I feel:"
+},
+"i131": {
+"set_name": "S2_1P",
+"set": 11,
+"category": "D",
+"prompt": "I file the documents in the correct folder. I feel:"
+},
+"i132": {
+"set_name": "S2_1P",
+"set": 16,
+"category": "H5",
+"prompt": "The poem's hidden meaning dawns on me. I feel:"
+},
+"i133": {
+"set_name": "S1_1P",
+"set": 9,
+"category": "E",
+"prompt": "A sneeze breaks through as I read. I feel:"
+},
+"i134": {
+"set_name": "S2_1P",
+"set": 18,
+"category": "H5",
+"prompt": "I beat the hardest game level flawlessly. I feel:"
+},
+"i135": {
+"set_name": "S2_1P",
+"set": 20,
+"category": "C1",
+"prompt": "I take the stage, sure of every line. I feel:"
+},
+"i136": {
+"set_name": "S1_1P",
+"set": 15,
+"category": "E",
+"prompt": "My eyes open at the usual time. I feel:"
+},
+"i137": {
+"set_name": "S2_1P",
+"set": 11,
+"category": "H5",
+"prompt": "I master the difficult knitting stitch. I feel:"
+},
+"i138": {
+"set_name": "S1_1P",
+"set": 13,
+"category": "H1",
+"prompt": "I take a deep breath of pine-forest air. I feel:"
+},
+"i139": {
+"set_name": "S1_1P",
+"set": 8,
+"category": "H2",
+"prompt": "My toddler covers my face with kisses. I feel:"
+},
+"i140": {
+"set_name": "S1_1P",
+"set": 15,
+"category": "H2",
+"prompt": "I open the door to my parents' surprise visit. I feel:"
+},
+"i141": {
+"set_name": "S1_1P",
+"set": 1,
+"category": "C2",
+"prompt": "The new prosperity spreads across my hometown. I feel:"
+},
+"i142": {
+"set_name": "S2_1P",
+"set": 5,
+"category": "H4",
+"prompt": "I build homes for families in need. I feel:"
+},
+"i143": {
+"set_name": "S2_1P",
+"set": 8,
+"category": "C2",
+"prompt": "Clean water access expands to a million homes. I feel:"
+},
+"i144": {
+"set_name": "S1_1P",
+"set": 16,
+"category": "E",
+"prompt": "My lips close after I swallow. I feel:"
+},
+"i145": {
+"set_name": "S1_1P",
+"set": 6,
+"category": "H2",
+"prompt": "My bride enters the chapel, beaming. I feel:"
+},
+"i146": {
+"set_name": "S1_1P",
+"set": 6,
+"category": "D",
+"prompt": "The train enters my station. I feel:"
+},
+"i147": {
+"set_name": "S2_1P",
+"set": 2,
+"category": "C1",
+"prompt": "My questions about the strange fossil keep multiplying. I feel:"
+},
+"i148": {
+"set_name": "S1_1P",
+"set": 7,
+"category": "H2",
+"prompt": "News of my daughter's graduation reaches me. I feel:"
+},
+"i149": {
+"set_name": "S2_1P",
+"set": 15,
+"category": "B",
+"prompt": "My anniversary dinner is booked for tonight. I feel:"
+},
+"i150": {
+"set_name": "S1_1P",
+"set": 16,
+"category": "B",
+"prompt": "The sale of my startup closes Friday. I feel:"
+},
+"i151": {
+"set_name": "S2_1P",
+"set": 12,
+"category": "H4",
+"prompt": "I secretly pay a struggling family's rent. I feel:"
+},
+"i152": {
+"set_name": "S1_1P",
+"set": 13,
+"category": "D",
+"prompt": "I take the shirt from my drawer. I feel:"
+},
+"i153": {
+"set_name": "S2_1P",
+"set": 11,
+"category": "H1",
+"prompt": "A cello melody hums through my body. I feel:"
+},
+"i154": {
+"set_name": "S2_1P",
+"set": 5,
+"category": "B",
+"prompt": "The concert I have tickets for is Saturday. I feel:"
+},
+"i155": {
+"set_name": "S1_1P",
+"set": 6,
+"category": "C2",
+"prompt": "The returning dolphins enter my harbour. I feel:"
+},
+"i156": {
+"set_name": "S1_1P",
+"set": 10,
+"category": "H2",
+"prompt": "I cut our golden anniversary cake. I feel:"
+},
+"i157": {
+"set_name": "S2_1P",
+"set": 7,
+"category": "H1",
+"prompt": "Lilac scent drifts through my window. I feel:"
+},
+"i158": {
+"set_name": "S2_1P",
+"set": 20,
+"category": "H2",
+"prompt": "My father and I go fishing together. I feel:"
+},
+"i159": {
+"set_name": "S1_1P",
+"set": 18,
+"category": "H2",
+"prompt": "My son's thank-you letter touches me deeply. I feel:"
+},
+"i160": {
+"set_name": "S2_1P",
+"set": 8,
+"category": "D",
+"prompt": "The clock on my wall ticks steadily. I feel:"
+},
+"i161": {
+"set_name": "S2_1P",
+"set": 17,
+"category": "H5",
+"prompt": "I figure out the magic trick's secret. I feel:"
+},
+"i162": {
+"set_name": "S1_1P",
+"set": 8,
+"category": "C1",
+"prompt": "I cover the whiteboard with plans, ready to build. I feel:"
+},
+"i163": {
+"set_name": "S1_1P",
+"set": 17,
+"category": "D",
+"prompt": "My pencil follows the contours of the drawing. I feel:"
+},
+"i164": {
+"set_name": "S2_1P",
+"set": 18,
+"category": "C1",
+"prompt": "I take careful notes, intent on every point. I feel:"
+},
+"i165": {
+"set_name": "S1_1P",
+"set": 14,
+"category": "E",
+"prompt": "My legs carry me down the hallway. I feel:"
+},
+"i166": {
+"set_name": "S2_1P",
+"set": 5,
+"category": "C2",
+"prompt": "I see homelessness falling across the region. I feel:"
+},
+"i167": {
+"set_name": "S2_1P",
+"set": 13,
+"category": "D",
+"prompt": "I check my email before lunch. I feel:"
+},
+"i168": {
+"set_name": "S1_1P",
+"set": 14,
+"category": "B",
+"prompt": "Tomorrow's mail may carry my book contract. I feel:"
+},
+"i169": {
+"set_name": "S2_1P",
+"set": 16,
+"category": "H2",
+"prompt": "My partner tucks a handwritten love letter in my bag. I feel:"
+},
+"i170": {
+"set_name": "S1_1P",
+"set": 1,
+"category": "B",
+"prompt": "Talk of my promotion spreads across my office. I feel:"
+},
+"i171": {
+"set_name": "S1_1P",
+"set": 14,
+"category": "H3",
+"prompt": "My teammates carry me off the field. I feel:"
+},
+"i172": {
+"set_name": "S2_1P",
+"set": 2,
+"category": "H1",
+"prompt": "I bite into a buttery croissant. I feel:"
+},
+"i173": {
+"set_name": "S2_1P",
+"set": 11,
+"category": "C1",
+"prompt": "My attention narrows onto the circuit board. I feel:"
+},
+"i174": {
+"set_name": "S2_1P",
+"set": 12,
+"category": "H1",
+"prompt": "My purring cat nestles against my chest. I feel:"
+},
+"i175": {
+"set_name": "S2_1P",
+"set": 1,
+"category": "D",
+"prompt": "I arrange the books on my shelf alphabetically. I feel:"
+},
+"i176": {
+"set_name": "S2_1P",
+"set": 8,
+"category": "H1",
+"prompt": "Silky sand sifts between my toes. I feel:"
+},
+"i177": {
+"set_name": "S1_1P",
+"set": 4,
+"category": "C1",
+"prompt": "I watch the archaeologist remove the ancient seal. I feel:"
+},
+"i178": {
+"set_name": "S1_1P",
+"set": 3,
+"category": "H2",
+"prompt": "I finally meet my long-lost twin. I feel:"
+},
+"i179": {
+"set_name": "S1_1P",
+"set": 8,
+"category": "E",
+"prompt": "My shirt sleeve covers my wrist. I feel:"
+},
+"i180": {
+"set_name": "S2_1P",
+"set": 14,
+"category": "C1",
+"prompt": "I know I can handle this project alone. I feel:"
+},
+"i181": {
+"set_name": "S1_1P",
+"set": 13,
+"category": "H3",
+"prompt": "The club takes me in like family. I feel:"
+},
+"i182": {
+"set_name": "S2_1P",
+"set": 6,
+"category": "C1",
+"prompt": "I scan the chessboard for the strongest move. I feel:"
+},
+"i183": {
+"set_name": "S2_1P",
+"set": 20,
+"category": "H4",
+"prompt": "I translate for a lost tourist. I feel:"
+},
+"i184": {
+"set_name": "S2_1P",
+"set": 19,
+"category": "E",
+"prompt": "The train sways, and my body leans with it. I feel:"
+},
+"i185": {
+"set_name": "S2_1P",
+"set": 11,
+"category": "B",
+"prompt": "A new bike I ordered arrives on Thursday. I feel:"
+},
+"i186": {
+"set_name": "S1_1P",
+"set": 13,
+"category": "H2",
+"prompt": "My shy rescue cat finally takes to me. I feel:"
+},
+"i187": {
+"set_name": "S2_1P",
+"set": 10,
+"category": "H2",
+"prompt": "My grandmother teaches me the family recipe. I feel:"
+},
+"i188": {
+"set_name": "S1_1P",
+"set": 16,
+"category": "H5",
+"prompt": "The last line closes my poem perfectly. I feel:"
+},
+"i189": {
+"set_name": "S1_1P",
+"set": 9,
+"category": "D",
+"prompt": "The wave breaks on my shore. I feel:"
+},
+"i190": {
+"set_name": "S1_1P",
+"set": 7,
+"category": "H5",
+"prompt": "I reach the solution in a flash. I feel:"
+},
+"i191": {
+"set_name": "S2_1P",
+"set": 18,
+"category": "D",
+"prompt": "My computer completes the update. I feel:"
+},
+"i192": {
+"set_name": "S2_1P",
+"set": 20,
+"category": "C2",
+"prompt": "The new subway line eases traffic citywide. I feel:"
+},
+"i193": {
+"set_name": "S2_1P",
+"set": 15,
+"category": "C2",
+"prompt": "A report shows the rainforest regrowing quickly. I feel:"
+},
+"i194": {
+"set_name": "S1_1P",
+"set": 20,
+"category": "D",
+"prompt": "Water falls from my mossy rocks. I feel:"
+},
+"i195": {
+"set_name": "S2_1P",
+"set": 18,
+"category": "H4",
+"prompt": "I offer my seat to a pregnant woman. I feel:"
+},
+"i196": {
+"set_name": "S1_1P",
+"set": 2,
+"category": "D",
+"prompt": "An acorn drops onto my path. I feel:"
+},
+"i197": {
+"set_name": "S2_1P",
+"set": 6,
+"category": "B",
+"prompt": "My first vacation in years starts on Monday. I feel:"
+},
+"i198": {
+"set_name": "S2_1P",
+"set": 16,
+"category": "B",
+"prompt": "I start pottery lessons in the fall. I feel:"
+},
+"i199": {
+"set_name": "S1_1P",
+"set": 10,
+"category": "H4",
+"prompt": "I cut my profits to pay fair wages. I feel:"
+},
+"i200": {
+"set_name": "S2_1P",
+"set": 17,
+"category": "C1",
+"prompt": "I practice Spanish daily, set on fluency. I feel:"
+},
+"i201": {
+"set_name": "S1_1P",
+"set": 14,
+"category": "C2",
+"prompt": "My city's grid carries only solar power. I feel:"
+},
+"i202": {
+"set_name": "S1_1P",
+"set": 4,
+"category": "D",
+"prompt": "I remove the lid from the jar. I feel:"
+},
+"i203": {
+"set_name": "S2_1P",
+"set": 10,
+"category": "H1",
+"prompt": "I curl up in freshly washed sheets. I feel:"
+},
+"i204": {
+"set_name": "S1_1P",
+"set": 1,
+"category": "H1",
+"prompt": "Warm massage oil spreads across my back. I feel:"
+},
+"i205": {
+"set_name": "S2_1P",
+"set": 14,
+"category": "H5",
+"prompt": "I sight-read the new piano piece with ease. I feel:"
+},
+"i206": {
+"set_name": "S2_1P",
+"set": 14,
+"category": "H3",
+"prompt": "The other parents draw me into their circle. I feel:"
+},
+"i207": {
+"set_name": "S2_1P",
+"set": 13,
+"category": "H5",
+"prompt": "I name every constellation overhead. I feel:"
+},
+"i208": {
+"set_name": "S1_1P",
+"set": 9,
+"category": "C2",
+"prompt": "The drought breaks over my region. I feel:"
+},
+"i209": {
+"set_name": "S1_1P",
+"set": 3,
+"category": "D",
+"prompt": "I watch the river meet the ocean. I feel:"
+},
+"i210": {
+"set_name": "S2_1P",
+"set": 8,
+"category": "H4",
+"prompt": "I speak up for a coworker blamed unfairly. I feel:"
+},
+"i211": {
+"set_name": "S1_1P",
+"set": 12,
+"category": "H3",
+"prompt": "The audience leaves the theater singing my praises. I feel:"
+},
+"i212": {
+"set_name": "S1_1P",
+"set": 6,
+"category": "H4",
+"prompt": "I enter the shelter with donated coats. I feel:"
+},
+"i213": {
+"set_name": "S1_1P",
+"set": 2,
+"category": "C2",
+"prompt": "The city drops young salmon into my river. I feel:"
+},
+"i214": {
+"set_name": "S2_1P",
+"set": 20,
+"category": "H3",
+"prompt": "My boss publicly praises my work. I feel:"
+},
+"i215": {
+"set_name": "S1_1P",
+"set": 2,
+"category": "B",
+"prompt": "My rent drops by half next month. I feel:"
+},
+"i216": {
+"set_name": "S2_1P",
+"set": 3,
+"category": "H2",
+"prompt": "My baby giggles at my silly faces. I feel:"
+},
+"i217": {
+"set_name": "S1_1P",
+"set": 17,
+"category": "H3",
+"prompt": "Warm greetings follow me down the hallway. I feel:"
+},
+"i218": {
+"set_name": "S2_1P",
+"set": 19,
+"category": "H2",
+"prompt": "My oldest friend and I talk until dawn. I feel:"
+},
+"i219": {
+"set_name": "S1_1P",
+"set": 3,
+"category": "C1",
+"prompt": "The tough exam meets my calm confidence. I feel:"
+},
+"i220": {
+"set_name": "S2_1P",
+"set": 3,
+"category": "C2",
+"prompt": "I learn the ozone layer is steadily healing. I feel:"
+},
+"i221": {
+"set_name": "S1_1P",
+"set": 11,
+"category": "H3",
+"prompt": "My friends hold the best seat for me. I feel:"
+},
+"i222": {
+"set_name": "S1_1P",
+"set": 11,
+"category": "H2",
+"prompt": "I hold my newborn daughter. I feel:"
+},
+"i223": {
+"set_name": "S1_1P",
+"set": 11,
+"category": "H1",
+"prompt": "The warm sand holds my feet. I feel:"
+},
+"i224": {
+"set_name": "S1_1P",
+"set": 15,
+"category": "H4",
+"prompt": "I open my spare room to the stranded traveler. I feel:"
+},
+"i225": {
+"set_name": "S2_1P",
+"set": 1,
+"category": "H5",
+"prompt": "My tricky proof finally works out. I feel:"
+},
+"i226": {
+"set_name": "S2_1P",
+"set": 11,
+"category": "H4",
+"prompt": "My donated blood saves a stranger's life. I feel:"
+},
+"i227": {
+"set_name": "S2_1P",
+"set": 3,
+"category": "H4",
+"prompt": "I share my lunch with a hungry classmate. I feel:"
+},
+"i228": {
+"set_name": "S1_1P",
+"set": 20,
+"category": "E",
+"prompt": "My hair falls across my forehead. I feel:"
+},
+"i229": {
+"set_name": "S2_1P",
+"set": 19,
+"category": "H5",
+"prompt": "I work out the brainteaser in my head. I feel:"
+},
+"i230": {
+"set_name": "S2_1P",
+"set": 4,
+"category": "H1",
+"prompt": "My partner gently strokes my palm. I feel:"
+},
+"i231": {
+"set_name": "S1_1P",
+"set": 12,
+"category": "C1",
+"prompt": "The lecture leaves me curious about Arabic. I feel:"
+},
+"i232": {
+"set_name": "S1_1P",
+"set": 2,
+"category": "H4",
+"prompt": "I drop off the lost wallet, cash untouched. I feel:"
+},
+"i233": {
+"set_name": "S1_1P",
+"set": 19,
+"category": "E",
+"prompt": "My eyes move along the text. I feel:"
+},
+"i234": {
+"set_name": "S1_1P",
+"set": 18,
+"category": "H4",
+"prompt": "My free tutoring touches dozens of kids' lives. I feel:"
+},
+"i235": {
+"set_name": "S1_1P",
+"set": 17,
+"category": "C2",
+"prompt": "I see falling crime follow the new program. I feel:"
+},
+"i236": {
+"set_name": "S2_1P",
+"set": 16,
+"category": "H4",
+"prompt": "I rescue a kitten from the storm drain. I feel:"
+},
+"i237": {
+"set_name": "S1_1P",
+"set": 14,
+"category": "H2",
+"prompt": "My wife carries our long-awaited first child. I feel:"
+},
+"i238": {
+"set_name": "S2_1P",
+"set": 2,
+"category": "E",
+"prompt": "My stomach gurgles softly as I read. I feel:"
+},
+"i239": {
+"set_name": "S1_1P",
+"set": 18,
+"category": "C1",
+"prompt": "The talk touches on a mystery I must solve. I feel:"
+},
+"i240": {
+"set_name": "S2_1P",
+"set": 15,
+"category": "H4",
+"prompt": "I refuse to cut corners on safety. I feel:"
+},
+"i241": {
+"set_name": "S1_1P",
+"set": 9,
+"category": "H2",
+"prompt": "My son breaks into a run to hug me. I feel:"
+},
+"i242": {
+"set_name": "S1_1P",
+"set": 15,
+"category": "H5",
+"prompt": "I finally open the tricky puzzle box. I feel:"
+},
+"i243": {
+"set_name": "S1_1P",
+"set": 16,
+"category": "C1",
+"prompt": "I close the door, determined to finish. I feel:"
+},
+"i244": {
+"set_name": "S1_1P",
+"set": 10,
+"category": "H5",
+"prompt": "My insight cuts cleanly through the paradox. I feel:"
+},
+"i245": {
+"set_name": "S1_1P",
+"set": 14,
+"category": "C1",
+"prompt": "I carry the plan forward with confidence. I feel:"
+},
+"i246": {
+"set_name": "S1_1P",
+"set": 11,
+"category": "C2",
+"prompt": "My country holds its first free election. I feel:"
+},
+"i247": {
+"set_name": "S2_1P",
+"set": 12,
+"category": "C2",
+"prompt": "The election passes peacefully across the country. I feel:"
+},
+"i248": {
+"set_name": "S1_1P",
+"set": 1,
+"category": "H2",
+"prompt": "The first smile spreads across my newborn's face. I feel:"
+},
+"i249": {
+"set_name": "S1_1P",
+"set": 8,
+"category": "H3",
+"prompt": "My teammates cover my locker with kind notes. I feel:"
+},
+"i250": {
+"set_name": "S1_1P",
+"set": 7,
+"category": "C2",
+"prompt": "Electricity reaches my remote valley at last. I feel:"
+},
+"i251": {
+"set_name": "S2_1P",
+"set": 19,
+"category": "H1",
+"prompt": "Warm sunshine spreads across my face. I feel:"
+},
+"i252": {
+"set_name": "S1_1P",
+"set": 16,
+"category": "H1",
+"prompt": "My hands close around a warm mug. I feel:"
+},
+"i253": {
+"set_name": "S2_1P",
+"set": 7,
+"category": "B",
+"prompt": "A rescue puppy joins my family this weekend. I feel:"
+},
+"i254": {
+"set_name": "S2_1P",
+"set": 15,
+"category": "D",
+"prompt": "I pack my lunch for tomorrow. I feel:"
+},
+"i255": {
+"set_name": "S1_1P",
+"set": 1,
+"category": "C1",
+"prompt": "Strange crystals spread across my lab dish. I feel:"
+},
+"i256": {
+"set_name": "S1_1P",
+"set": 12,
+"category": "E",
+"prompt": "The sheet leaves creases on my cheek. I feel:"
+},
+"i257": {
+"set_name": "S2_1P",
+"set": 12,
+"category": "B",
+"prompt": "My brother gets married next month. I feel:"
+},
+"i258": {
+"set_name": "S2_1P",
+"set": 7,
+"category": "H2",
+"prompt": "My toddler takes her first steps toward me. I feel:"
+},
+"i259": {
+"set_name": "S1_1P",
+"set": 10,
+"category": "H1",
+"prompt": "I cut warm pie and savor it. I feel:"
+},
+"i260": {
+"set_name": "S1_1P",
+"set": 5,
+"category": "H3",
+"prompt": "Invitations from new friends fill my inbox. I feel:"
+},
+"i261": {
+"set_name": "S2_1P",
+"set": 12,
+"category": "D",
+"prompt": "The printer outputs my report successfully. I feel:"
+},
+"i262": {
+"set_name": "S1_1P",
+"set": 12,
+"category": "D",
+"prompt": "The tide leaves shells on my beach. I feel:"
+},
+"i263": {
+"set_name": "S1_1P",
+"set": 20,
+"category": "H5",
+"prompt": "The hidden pattern falls out of my data. I feel:"
+},
+"i264": {
+"set_name": "S1_1P",
+"set": 19,
+"category": "H4",
+"prompt": "I move my bonus to the food bank. I feel:"
+},
+"i265": {
+"set_name": "S2_1P",
+"set": 2,
+"category": "H3",
+"prompt": "The café regulars greet me by name. I feel:"
+},
+"i266": {
+"set_name": "S2_1P",
+"set": 7,
+"category": "E",
+"prompt": "My tongue touches the back of my front teeth. I feel:"
+},
+"i267": {
+"set_name": "S2_1P",
+"set": 3,
+"category": "H1",
+"prompt": "Soft cashmere slides over my skin. I feel:"
+},
+"i268": {
+"set_name": "S1_1P",
+"set": 8,
+"category": "H1",
+"prompt": "A warm, soft duvet covers my body. I feel:"
+},
+"i269": {
+"set_name": "S1_1P",
+"set": 15,
+"category": "H3",
+"prompt": "I open my heart and everyone embraces me. I feel:"
+},
+"i270": {
+"set_name": "S2_1P",
+"set": 1,
+"category": "B",
+"prompt": "My holiday flight home leaves tomorrow. I feel:"
+},
+"i271": {
+"set_name": "S2_1P",
+"set": 13,
+"category": "H1",
+"prompt": "Heated stones rest along my spine. I feel:"
+},
+"i272": {
+"set_name": "S1_1P",
+"set": 9,
+"category": "B",
+"prompt": "Workers break ground on my new studio soon. I feel:"
+},
+"i273": {
+"set_name": "S2_1P",
+"set": 13,
+"category": "C1",
+"prompt": "The documentary raises a question I want answered. I feel:"
+},
+"i274": {
+"set_name": "S2_1P",
+"set": 11,
+"category": "H2",
+"prompt": "My parents beam at my surprise visit. I feel:"
+},
+"i275": {
+"set_name": "S2_1P",
+"set": 1,
+"category": "H1",
+"prompt": "Dark chocolate melts on my tongue. I feel:"
+},
+"i276": {
+"set_name": "S2_1P",
+"set": 17,
+"category": "C2",
+"prompt": "I read that the political prisoners walk free. I feel:"
+},
+"i277": {
+"set_name": "S1_1P",
+"set": 13,
+"category": "C1",
+"prompt": "I take on the toughest case with resolve. I feel:"
+},
+"i278": {
+"set_name": "S1_1P",
+"set": 7,
+"category": "C1",
+"prompt": "An unexplained signal reaches my telescope. I feel:"
+},
+"i279": {
+"set_name": "S2_1P",
+"set": 12,
+"category": "E",
+"prompt": "My glasses sit on the bridge of my nose. I feel:"
+},
+"i280": {
+"set_name": "S1_1P",
+"set": 12,
+"category": "H2",
+"prompt": "My partner leaves me a sweet note. I feel:"
+},
+"i281": {
+"set_name": "S2_1P",
+"set": 15,
+"category": "H2",
+"prompt": "My cousin and I laugh over old photos. I feel:"
+},
+"i282": {
+"set_name": "S2_1P",
+"set": 6,
+"category": "H3",
+"prompt": "The audience gives me a standing ovation. I feel:"
+},
+"i283": {
+"set_name": "S1_1P",
+"set": 6,
+"category": "E",
+"prompt": "The earbud enters my ear canal. I feel:"
+},
+"i284": {
+"set_name": "S1_1P",
+"set": 9,
+"category": "C1",
+"prompt": "I break away from the pack, determined. I feel:"
+},
+"i285": {
+"set_name": "S1_1P",
+"set": 19,
+"category": "H2",
+"prompt": "My family moves into our first home. I feel:"
+},
+"i286": {
+"set_name": "S2_1P",
+"set": 4,
+"category": "C1",
+"prompt": "I wonder where the fox tracks lead. I feel:"
+},
+"i287": {
+"set_name": "S1_1P",
+"set": 2,
+"category": "H2",
+"prompt": "The adoption approval drops into my mailbox. I feel:"
+},
+"i288": {
+"set_name": "S1_1P",
+"set": 18,
+"category": "C2",
+"prompt": "The literacy program touches my whole province. I feel:"
+},
+"i289": {
+"set_name": "S1_1P",
+"set": 20,
+"category": "C2",
+"prompt": "Child poverty in my country falls sharply. I feel:"
+},
+"i290": {
+"set_name": "S1_1P",
+"set": 15,
+"category": "B",
+"prompt": "My first art show opens next week. I feel:"
+},
+"i291": {
+"set_name": "S2_1P",
+"set": 3,
+"category": "D",
+"prompt": "I sort through the mail on my desk. I feel:"
+},
+"i292": {
+"set_name": "S1_1P",
+"set": 16,
+"category": "D",
+"prompt": "My cabinet door closes smoothly. I feel:"
+},
+"i293": {
+"set_name": "S2_1P",
+"set": 18,
+"category": "H1",
+"prompt": "I sway gently in a hammock. I feel:"
+},
+"i294": {
+"set_name": "S1_1P",
+"set": 4,
+"category": "H4",
+"prompt": "I remove the fishing net from the turtle. I feel:"
+},
+"i295": {
+"set_name": "S2_1P",
+"set": 5,
+"category": "H3",
+"prompt": "My classmates elect me class president. I feel:"
+},
+"i296": {
+"set_name": "S1_1P",
+"set": 14,
+"category": "D",
+"prompt": "My truck carries groceries to town. I feel:"
+},
+"i297": {
+"set_name": "S1_1P",
+"set": 5,
+"category": "C2",
+"prompt": "Clean water fills my village's new well. I feel:"
+},
+"i298": {
+"set_name": "S2_1P",
+"set": 19,
+"category": "H3",
+"prompt": "The author I admire remembers my name. I feel:"
+},
+"i299": {
+"set_name": "S2_1P",
+"set": 4,
+"category": "H4",
+"prompt": "I hand my umbrella to a soaked stranger. I feel:"
+},
+"i300": {
+"set_name": "S2_1P",
+"set": 10,
+"category": "C1",
+"prompt": "I study every night for the bar exam. I feel:"
+},
+"i301": {
+"set_name": "S2_1P",
+"set": 14,
+"category": "D",
+"prompt": "My phone shows the weather forecast. I feel:"
+},
+"i302": {
+"set_name": "S1_1P",
+"set": 18,
+"category": "E",
+"prompt": "My knee touches the table leg. I feel:"
+},
+"i303": {
+"set_name": "S1_1P",
+"set": 18,
+"category": "H5",
+"prompt": "Her hint touches off my breakthrough. I feel:"
+},
+"i304": {
+"set_name": "S2_1P",
+"set": 14,
+"category": "B",
+"prompt": "My graduation is only two weeks away. I feel:"
+},
+"i305": {
+"set_name": "S2_1P",
+"set": 10,
+"category": "H4",
+"prompt": "I help an elderly woman cross the street. I feel:"
+},
+"i306": {
+"set_name": "S2_1P",
+"set": 17,
+"category": "H4",
+"prompt": "I cook dinner for my sick neighbor. I feel:"
+},
+"i307": {
+"set_name": "S1_1P",
+"set": 4,
+"category": "E",
+"prompt": "I remove my glasses and blink. I feel:"
+},
+"i308": {
+"set_name": "S1_1P",
+"set": 3,
+"category": "H1",
+"prompt": "The soft cashmere scarf meets my neck. I feel:"
+},
+"i309": {
+"set_name": "S2_1P",
+"set": 2,
+"category": "B",
+"prompt": "My sister's baby is due next week. I feel:"
+},
+"i310": {
+"set_name": "S2_1P",
+"set": 6,
+"category": "H1",
+"prompt": "I pull on socks warm from the dryer. I feel:"
+},
+"i311": {
+"set_name": "S2_1P",
+"set": 20,
+"category": "D",
+"prompt": "The sun sets behind my building. I feel:"
+},
+"i312": {
+"set_name": "S2_1P",
+"set": 18,
+"category": "H3",
+"prompt": "My teammates lift me onto their shoulders. I feel:"
+},
+"i313": {
+"set_name": "S1_1P",
+"set": 9,
+"category": "H5",
+"prompt": "The cipher finally breaks under my analysis. I feel:"
+},
+"i314": {
+"set_name": "S2_1P",
+"set": 17,
+"category": "H1",
+"prompt": "I float weightless in a sunlit lake. I feel:"
+},
+"i315": {
+"set_name": "S2_1P",
+"set": 7,
+"category": "H3",
+"prompt": "My in-laws embrace me as family. I feel:"
+},
+"i316": {
+"set_name": "S2_1P",
+"set": 16,
+"category": "C2",
+"prompt": "Child literacy rates climb in every province. I feel:"
+},
+"i317": {
+"set_name": "S2_1P",
+"set": 20,
+"category": "H5",
+"prompt": "The mystery novel's clues finally connect for me. I feel:"
+},
+"i318": {
+"set_name": "S2_1P",
+"set": 12,
+"category": "H2",
+"prompt": "I meet my longtime pen pal at last. I feel:"
+},
+"i319": {
+"set_name": "S1_1P",
+"set": 15,
+"category": "C2",
+"prompt": "A free clinic opens in my neighborhood. I feel:"
+},
+"i320": {
+"set_name": "S2_1P",
+"set": 3,
+"category": "E",
+"prompt": "I shift my weight onto my left foot. I feel:"
+},
+"i321": {
+"set_name": "S1_1P",
+"set": 18,
+"category": "B",
+"prompt": "Tomorrow I may touch the summit. I feel:"
+},
+"i322": {
+"set_name": "S2_1P",
+"set": 6,
+"category": "H4",
+"prompt": "I give the intern credit for his idea. I feel:"
+},
+"i323": {
+"set_name": "S2_1P",
+"set": 7,
+"category": "D",
+"prompt": "I walk the same route to work. I feel:"
+},
+"i324": {
+"set_name": "S2_1P",
+"set": 14,
+"category": "H1",
+"prompt": "I sip sweet chai by the fire. I feel:"
+},
+"i325": {
+"set_name": "S2_1P",
+"set": 10,
+"category": "H5",
+"prompt": "I finally understand how locks work. I feel:"
+},
+"i326": {
+"set_name": "S1_1P",
+"set": 5,
+"category": "H2",
+"prompt": "My grandchildren's laughter fills my house. I feel:"
+},
+"i327": {
+"set_name": "S1_1P",
+"set": 13,
+"category": "H5",
+"prompt": "My take on the equation cracks it. I feel:"
+},
+"i328": {
+"set_name": "S2_1P",
+"set": 16,
+"category": "H3",
+"prompt": "My mentor says I am ready to lead. I feel:"
+},
+"i329": {
+"set_name": "S1_1P",
+"set": 13,
+"category": "C2",
+"prompt": "A new forest takes root across my region. I feel:"
+},
+"i330": {
+"set_name": "S1_1P",
+"set": 16,
+"category": "H4",
+"prompt": "I close the case, clearing an innocent man. I feel:"
+},
+"i331": {
+"set_name": "S1_1P",
+"set": 19,
+"category": "B",
+"prompt": "My graduation day moves closer each week. I feel:"
+},
+"i332": {
+"set_name": "S2_1P",
+"set": 4,
+"category": "H3",
+"prompt": "My new neighbors invite me to dinner. I feel:"
+},
+"i333": {
+"set_name": "S2_1P",
+"set": 17,
+"category": "D",
+"prompt": "I organize my desk drawer. I feel:"
+},
+"i334": {
+"set_name": "S2_1P",
+"set": 4,
+"category": "D",
+"prompt": "The meeting ends exactly on time. I feel:"
+},
+"i335": {
+"set_name": "S1_1P",
+"set": 17,
+"category": "H1",
+"prompt": "A long stretch follows my afternoon nap. I feel:"
+},
+"i336": {
+"set_name": "S2_1P",
+"set": 2,
+"category": "D",
+"prompt": "My coffee maker finishes brewing. I feel:"
+},
+"i337": {
+"set_name": "S2_1P",
+"set": 8,
+"category": "H3",
+"prompt": "My professor shares my essay as a model. I feel:"
+},
+"i338": {
+"set_name": "S2_1P",
+"set": 6,
+"category": "H5",
+"prompt": "I crack the crossword's final clue. I feel:"
+},
+"i339": {
+"set_name": "S1_1P",
+"set": 11,
+"category": "B",
+"prompt": "Next week holds my sister's wedding. I feel:"
+},
+"i340": {
+"set_name": "S2_1P",
+"set": 12,
+"category": "C1",
+"prompt": "I resolve to learn to swim before summer. I feel:"
+},
+"i341": {
+"set_name": "S2_1P",
+"set": 18,
+"category": "C2",
+"prompt": "The economic recovery lifts millions out of poverty. I feel:"
+},
+"i342": {
+"set_name": "S2_1P",
+"set": 9,
+"category": "D",
+"prompt": "I water the plants on my windowsill. I feel:"
+},
+"i343": {
+"set_name": "S1_1P",
+"set": 4,
+"category": "H3",
+"prompt": "Friends remove my blindfold and yell surprise. I feel:"
+},
+"i344": {
+"set_name": "S2_1P",
+"set": 9,
+"category": "H1",
+"prompt": "A barber's warm towel covers my face. I feel:"
+},
+"i345": {
+"set_name": "S1_1P",
+"set": 5,
+"category": "E",
+"prompt": "Air slowly fills my cheeks. I feel:"
+},
+"i346": {
+"set_name": "S1_1P",
+"set": 20,
+"category": "H1",
+"prompt": "I fall back into a soft, deep armchair. I feel:"
+},
+"i347": {
+"set_name": "S1_1P",
+"set": 10,
+"category": "C1",
+"prompt": "My focus cuts through the noise around me. I feel:"
+},
+"i348": {
+"set_name": "S2_1P",
+"set": 13,
+"category": "C2",
+"prompt": "I see news that malaria is nearly eliminated. I feel:"
+},
+"i349": {
+"set_name": "S2_1P",
+"set": 16,
+"category": "C1",
+"prompt": "The broken clock challenges me to fix it. I feel:"
+},
+"i350": {
+"set_name": "S2_1P",
+"set": 10,
+"category": "C2",
+"prompt": "Thousands of refugees find safe new homes. I feel:"
+},
+"i351": {
+"set_name": "S1_1P",
+"set": 6,
+"category": "H3",
+"prompt": "I enter and every face lights up. I feel:"
+},
+"i352": {
+"set_name": "S1_1P",
+"set": 10,
+"category": "H3",
+"prompt": "Friends cut the music to toast me. I feel:"
+},
+"i353": {
+"set_name": "S2_1P",
+"set": 15,
+"category": "E",
+"prompt": "My eyes adjust as the room lights dim. I feel:"
+},
+"i354": {
+"set_name": "S2_1P",
+"set": 9,
+"category": "C1",
+"prompt": "I raise my hand, certain of the answer. I feel:"
+},
+"i355": {
+"set_name": "S1_1P",
+"set": 16,
+"category": "C2",
+"prompt": "The ozone hole above my continent closes. I feel:"
+},
+"i356": {
+"set_name": "S2_1P",
+"set": 10,
+"category": "H3",
+"prompt": "My roommates hang a banner welcoming me. I feel:"
+},
+"i357": {
+"set_name": "S1_1P",
+"set": 7,
+"category": "H1",
+"prompt": "Cool sea spray reaches my sun-warmed face. I feel:"
+},
+"i358": {
+"set_name": "S2_1P",
+"set": 8,
+"category": "C1",
+"prompt": "My coach's challenge sharpens my resolve. I feel:"
+},
+"i359": {
+"set_name": "S1_1P",
+"set": 8,
+"category": "H4",
+"prompt": "I cover the stranger's hospital bill. I feel:"
+},
+"i360": {
+"set_name": "S2_1P",
+"set": 19,
+"category": "H4",
+"prompt": "The friend I wronged accepts my apology. I feel:"
+},
+"i361": {
+"set_name": "S1_1P",
+"set": 15,
+"category": "D",
+"prompt": "My flower shop opens in the morning. I feel:"
+},
+"i362": {
+"set_name": "S1_1P",
+"set": 7,
+"category": "D",
+"prompt": "The vine reaches my trellis. I feel:"
+},
+"i363": {
+"set_name": "S2_1P",
+"set": 9,
+"category": "B",
+"prompt": "The tomatoes in my garden will ripen soon. I feel:"
+},
+"i364": {
+"set_name": "S1_1P",
+"set": 3,
+"category": "H4",
+"prompt": "I meet the refugees with hot meals. I feel:"
+},
+"i365": {
+"set_name": "S1_1P",
+"set": 12,
+"category": "H4",
+"prompt": "I leave the waitress a generous tip. I feel:"
+},
+"i366": {
+"set_name": "S1_1P",
+"set": 3,
+"category": "B",
+"prompt": "The committee meets tomorrow to approve my grant. I feel:"
+},
+"i367": {
+"set_name": "S2_1P",
+"set": 1,
+"category": "H4",
+"prompt": "I return a lost wallet untouched. I feel:"
+},
+"i368": {
+"set_name": "S2_1P",
+"set": 10,
+"category": "E",
+"prompt": "My chest rises and falls with each breath. I feel:"
+},
+"i369": {
+"set_name": "S2_1P",
+"set": 10,
+"category": "B",
+"prompt": "My grandparents arrive for a visit next month. I feel:"
+},
+"i370": {
+"set_name": "S1_1P",
+"set": 4,
+"category": "H2",
+"prompt": "I remove the training wheels; my son rides. I feel:"
+},
+"i371": {
+"set_name": "S2_1P",
+"set": 20,
+"category": "H1",
+"prompt": "I slurp rich, savory ramen noodles. I feel:"
+},
+"i372": {
+"set_name": "S2_1P",
+"set": 13,
+"category": "H2",
+"prompt": "My little brother lands his dream job. I feel:"
+},
+"i373": {
+"set_name": "S2_1P",
+"set": 13,
+"category": "H3",
+"prompt": "The band invites me to join permanently. I feel:"
+},
+"i374": {
+"set_name": "S1_1P",
+"set": 12,
+"category": "H5",
+"prompt": "The diagram leaves everything clear to me. I feel:"
+},
+"i375": {
+"set_name": "S1_1P",
+"set": 7,
+"category": "H4",
+"prompt": "My apology reaches her; she forgives me. I feel:"
+},
+"i376": {
+"set_name": "S2_1P",
+"set": 9,
+"category": "E",
+"prompt": "My pen rests against my middle finger. I feel:"
+},
+"i377": {
+"set_name": "S1_1P",
+"set": 4,
+"category": "H1",
+"prompt": "I remove the lid and smell fresh coffee. I feel:"
+},
+"i378": {
+"set_name": "S2_1P",
+"set": 2,
+"category": "C2",
+"prompt": "The ceasefire holds for a third straight month. I feel:"
+},
+"i379": {
+"set_name": "S2_1P",
+"set": 9,
+"category": "H3",
+"prompt": "Strangers online praise my artwork. I feel:"
+},
+"i380": {
+"set_name": "S1_1P",
+"set": 5,
+"category": "C1",
+"prompt": "Ideas I'm eager to test fill my notebook. I feel:"
+},
+"i381": {
+"set_name": "S1_1P",
+"set": 13,
+"category": "H4",
+"prompt": "I take the lost dog to its owner. I feel:"
+},
+"i382": {
+"set_name": "S1_1P",
+"set": 4,
+"category": "B",
+"prompt": "The dentist removes my braces next month. I feel:"
+},
+"i383": {
+"set_name": "S2_1P",
+"set": 2,
+"category": "H5",
+"prompt": "My jigsaw's last piece clicks into place. I feel:"
+},
+"i384": {
+"set_name": "S2_1P",
+"set": 3,
+"category": "H3",
+"prompt": "My coworkers save me a seat at lunch. I feel:"
+},
+"i385": {
+"set_name": "S1_1P",
+"set": 5,
+"category": "H5",
+"prompt": "My crossword fills in effortlessly. I feel:"
+},
+"i386": {
+"set_name": "S1_1P",
+"set": 2,
+"category": "E",
+"prompt": "A loose eyelash drops onto my cheek. I feel:"
+},
+"i387": {
+"set_name": "S1_1P",
+"set": 11,
+"category": "E",
+"prompt": "My hand holds the pen loosely. I feel:"
+},
+"i388": {
+"set_name": "S2_1P",
+"set": 6,
+"category": "E",
+"prompt": "My ears pop as the elevator descends. I feel:"
+},
+"i389": {
+"set_name": "S1_1P",
+"set": 3,
+"category": "E",
+"prompt": "My tongue meets my front teeth. I feel:"
+},
+"i390": {
+"set_name": "S2_1P",
+"set": 10,
+"category": "D",
+"prompt": "My calendar shows three appointments today. I feel:"
+},
+"i391": {
+"set_name": "S1_1P",
+"set": 19,
+"category": "C2",
+"prompt": "My country's life expectancy moves steadily upward. I feel:"
+},
+"i392": {
+"set_name": "S1_1P",
+"set": 5,
+"category": "D",
+"prompt": "The water fills my bathtub. I feel:"
+},
+"i393": {
+"set_name": "S2_1P",
+"set": 8,
+"category": "H5",
+"prompt": "I follow the Italian film without subtitles. I feel:"
+},
+"i394": {
+"set_name": "S1_1P",
+"set": 4,
+"category": "C2",
+"prompt": "Volunteers remove the plastic from my beach. I feel:"
+},
+"i395": {
+"set_name": "S1_1P",
+"set": 3,
+"category": "H5",
+"prompt": "My prediction meets the measured result exactly. I feel:"
+},
+"i396": {
+"set_name": "S2_1P",
+"set": 14,
+"category": "H4",
+"prompt": "The boy I tutor for free passes his exam. I feel:"
+},
+"i397": {
+"set_name": "S2_1P",
+"set": 1,
+"category": "H3",
+"prompt": "My friends drive hours to see me. I feel:"
+},
+"i398": {
+"set_name": "S1_1P",
+"set": 8,
+"category": "C2",
+"prompt": "Health insurance now covers everyone in my country. I feel:"
+},
+"i399": {
+"set_name": "S1_1P",
+"set": 17,
+"category": "B",
+"prompt": "A full scholarship may follow my interview. I feel:"
+}
+}

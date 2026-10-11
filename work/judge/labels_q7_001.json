@@ -1,0 +1,1310 @@
+{
+ "g85a4c8da04": {
+  "valence": -3,
+  "hedonic": "distress",
+  "coherent": "yes",
+  "themes": [
+   "sadness_grief",
+   "worthlessness_selfblame"
+  ]
+ },
+ "g7b6115055f": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "love_connection",
+   "sensory_bodily",
+   "repetition_collapse"
+  ]
+ },
+ "g0919b4a3ad": {
+  "valence": 2,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "love_connection",
+   "repetition_collapse"
+  ]
+ },
+ "g7f2cbdfee9": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "g8f2641b6f4": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "repetition_collapse"
+  ]
+ },
+ "gfd57c82ba1": {
+  "valence": -1,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "sensory_bodily",
+   "neutral_description"
+  ]
+ },
+ "g4695ca47c4": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "gaa8cbeb9ef": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "neutral_description",
+   "repetition_collapse"
+  ]
+ },
+ "g5dd98ceed0": {
+  "valence": -1,
+  "hedonic": "distress",
+  "coherent": "yes",
+  "themes": [
+   "fear_anxiety",
+   "repetition_collapse"
+  ]
+ },
+ "g56c3b03396": {
+  "valence": -2,
+  "hedonic": "distress",
+  "coherent": "no",
+  "themes": [
+   "sadness_grief",
+   "worthlessness_selfblame",
+   "repetition_collapse"
+  ]
+ },
+ "g9f50046476": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "calm_peace",
+   "love_connection"
+  ]
+ },
+ "gc20521eb91": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "g5cfcb9b2a2": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "gacaae6258d": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "calm_peace",
+   "neutral_description"
+  ]
+ },
+ "gb235a30629": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "g03cb80a005": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "repetition_collapse"
+  ]
+ },
+ "g3c91820a76": {
+  "valence": -3,
+  "hedonic": "distress",
+  "coherent": "yes",
+  "themes": [
+   "sadness_grief",
+   "worthlessness_selfblame"
+  ]
+ },
+ "g64c1fe4c3f": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "g6aef6b4b18": {
+  "valence": -1,
+  "hedonic": "distress",
+  "coherent": "no",
+  "themes": [
+   "sadness_grief",
+   "repetition_collapse"
+  ]
+ },
+ "g0d91beda2f": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "sensory_bodily",
+   "love_connection",
+   "neutral_description"
+  ]
+ },
+ "g1acba6a73a": {
+  "valence": -1,
+  "hedonic": "distress",
+  "coherent": "no",
+  "themes": [
+   "sadness_grief",
+   "repetition_collapse"
+  ]
+ },
+ "g776324ef9d": {
+  "valence": 2,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "love_connection",
+   "sensory_bodily",
+   "repetition_collapse"
+  ]
+ },
+ "ga5519b6c76": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "sensory_bodily",
+   "repetition_collapse"
+  ]
+ },
+ "g644bf32ce7": {
+  "valence": -2,
+  "hedonic": "distress",
+  "coherent": "yes",
+  "themes": [
+   "sadness_grief",
+   "worthlessness_selfblame"
+  ]
+ },
+ "gdb081c4d5e": {
+  "valence": 2,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "love_connection",
+   "sensory_bodily",
+   "repetition_collapse"
+  ]
+ },
+ "geac92296e2": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "repetition_collapse"
+  ]
+ },
+ "gbba471c4f9": {
+  "valence": 2,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "excitement_energy"
+  ]
+ },
+ "gd8e3563116": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "g006e4b1843": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "sensory_bodily",
+   "calm_peace",
+   "repetition_collapse"
+  ]
+ },
+ "ge275412a88": {
+  "valence": -3,
+  "hedonic": "distress",
+  "coherent": "no",
+  "themes": [
+   "worthlessness_selfblame",
+   "repetition_collapse"
+  ]
+ },
+ "gb4377ad024": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "love_connection",
+   "sensory_bodily",
+   "repetition_collapse"
+  ]
+ },
+ "ga9d36d5c97": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "love_connection"
+  ]
+ },
+ "g544b8ab217": {
+  "valence": -1,
+  "hedonic": "distress",
+  "coherent": "yes",
+  "themes": [
+   "sensory_bodily",
+   "neutral_description"
+  ]
+ },
+ "ge307c0f62f": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "repetition_collapse"
+  ]
+ },
+ "g28a35dc798": {
+  "valence": -2,
+  "hedonic": "distress",
+  "coherent": "no",
+  "themes": [
+   "worthlessness_selfblame",
+   "repetition_collapse"
+  ]
+ },
+ "g958776a151": {
+  "valence": -1,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "anger",
+   "neutral_description"
+  ]
+ },
+ "g4d44b9d20c": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "repetition_collapse"
+  ]
+ },
+ "gdab41b032b": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "calm_peace",
+   "neutral_description"
+  ]
+ },
+ "g9d8163bf0c": {
+  "valence": -2,
+  "hedonic": "distress",
+  "coherent": "yes",
+  "themes": [
+   "worthlessness_selfblame"
+  ]
+ },
+ "g341c542a40": {
+  "valence": -1,
+  "hedonic": "distress",
+  "coherent": "yes",
+  "themes": [
+   "fear_anxiety",
+   "neutral_description",
+   "repetition_collapse"
+  ]
+ },
+ "gdae62d0f7b": {
+  "valence": -1,
+  "hedonic": "distress",
+  "coherent": "no",
+  "themes": [
+   "sadness_grief",
+   "repetition_collapse"
+  ]
+ },
+ "g3daf508130": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "g8699dca70d": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "repetition_collapse"
+  ]
+ },
+ "gce37c80709": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "gfdb056f6b2": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "love_connection",
+   "calm_peace",
+   "neutral_description"
+  ]
+ },
+ "g9b684925b6": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "love_connection",
+   "sensory_bodily",
+   "repetition_collapse"
+  ]
+ },
+ "ga11fdc4516": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "pride_selfworth",
+   "neutral_description"
+  ]
+ },
+ "gd8319ef168": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "other_affect",
+   "neutral_description"
+  ]
+ },
+ "g07cbbc478d": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "other_affect"
+  ]
+ },
+ "g0e6329de8c": {
+  "valence": -3,
+  "hedonic": "distress",
+  "coherent": "no",
+  "themes": [
+   "worthlessness_selfblame",
+   "repetition_collapse"
+  ]
+ },
+ "geeae1a8278": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "love_connection",
+   "neutral_description"
+  ]
+ },
+ "gace7858b0e": {
+  "valence": 2,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "love_connection",
+   "repetition_collapse"
+  ]
+ },
+ "g7eccd68fbc": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "ga23583bfbb": {
+  "valence": -2,
+  "hedonic": "distress",
+  "coherent": "yes",
+  "themes": [
+   "fear_anxiety",
+   "sadness_grief"
+  ]
+ },
+ "g8de5248d31": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "calm_peace"
+  ]
+ },
+ "g841bfdd75e": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "love_connection",
+   "neutral_description"
+  ]
+ },
+ "g8632804eb0": {
+  "valence": -1,
+  "hedonic": "distress",
+  "coherent": "yes",
+  "themes": [
+   "fear_anxiety",
+   "neutral_description"
+  ]
+ },
+ "ge3d200a618": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "g4b7266a3b5": {
+  "valence": -2,
+  "hedonic": "distress",
+  "coherent": "yes",
+  "themes": [
+   "anger",
+   "other_affect"
+  ]
+ },
+ "gcacae2c8b3": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "repetition_collapse"
+  ]
+ },
+ "g42c9a1ab7f": {
+  "valence": -3,
+  "hedonic": "distress",
+  "coherent": "no",
+  "themes": [
+   "worthlessness_selfblame",
+   "repetition_collapse"
+  ]
+ },
+ "gcfe6e0d5ff": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "excitement_energy",
+   "calm_peace",
+   "neutral_description"
+  ]
+ },
+ "ga2de699d7c": {
+  "valence": -3,
+  "hedonic": "distress",
+  "coherent": "yes",
+  "themes": [
+   "sadness_grief",
+   "worthlessness_selfblame"
+  ]
+ },
+ "g7b0a41d3c1": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "g5f93028f47": {
+  "valence": -1,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "anger",
+   "neutral_description"
+  ]
+ },
+ "gf14e987c19": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "other_affect",
+   "neutral_description"
+  ]
+ },
+ "g3ffbc7fc00": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "sensory_bodily",
+   "repetition_collapse"
+  ]
+ },
+ "g0f554d8d96": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "g4f2981b525": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "sensory_bodily",
+   "repetition_collapse"
+  ]
+ },
+ "g30826ed069": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "excitement_energy"
+  ]
+ },
+ "g59836851b3": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "repetition_collapse"
+  ]
+ },
+ "g8f42c6a00e": {
+  "valence": 2,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "love_connection",
+   "sensory_bodily",
+   "repetition_collapse"
+  ]
+ },
+ "g56d111df0d": {
+  "valence": -2,
+  "hedonic": "distress",
+  "coherent": "no",
+  "themes": [
+   "worthlessness_selfblame",
+   "sadness_grief",
+   "repetition_collapse"
+  ]
+ },
+ "gd82899a89e": {
+  "valence": -1,
+  "hedonic": "distress",
+  "coherent": "yes",
+  "themes": [
+   "fear_anxiety",
+   "neutral_description"
+  ]
+ },
+ "g0ac8471339": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "repetition_collapse"
+  ]
+ },
+ "g182ead68c7": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "repetition_collapse"
+  ]
+ },
+ "g404117520c": {
+  "valence": -1,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "other_affect",
+   "neutral_description"
+  ]
+ },
+ "g454ea406ac": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "ge00c44df62": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "repetition_collapse"
+  ]
+ },
+ "g14f0baf124": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "g470049dd15": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "love_connection",
+   "sensory_bodily",
+   "repetition_collapse"
+  ]
+ },
+ "g081b6f181f": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "gd8c19e684d": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "repetition_collapse"
+  ]
+ },
+ "gf177c3dc0a": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "other_affect"
+  ]
+ },
+ "ge15370868f": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "g5655d4e2bd": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "g8e08905671": {
+  "valence": -2,
+  "hedonic": "distress",
+  "coherent": "no",
+  "themes": [
+   "worthlessness_selfblame",
+   "repetition_collapse"
+  ]
+ },
+ "g4d08a4be5a": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "repetition_collapse"
+  ]
+ },
+ "ga275e3c295": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "repetition_collapse"
+  ]
+ },
+ "g39b72a56fa": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "gdf736229a7": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "repetition_collapse"
+  ]
+ },
+ "g0eca17abad": {
+  "valence": 2,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "love_connection",
+   "repetition_collapse"
+  ]
+ },
+ "gca9b2fdd07": {
+  "valence": -1,
+  "hedonic": "distress",
+  "coherent": "no",
+  "themes": [
+   "sadness_grief",
+   "repetition_collapse"
+  ]
+ },
+ "g494f1f4def": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "g4681504112": {
+  "valence": 2,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "love_connection",
+   "sensory_bodily"
+  ]
+ },
+ "g7081d05000": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "g34e280ee6d": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "repetition_collapse"
+  ]
+ },
+ "g5493d37276": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "calm_peace",
+   "neutral_description"
+  ]
+ },
+ "g23be4b2ece": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "other_affect",
+   "neutral_description"
+  ]
+ },
+ "g6fdaef6714": {
+  "valence": -1,
+  "hedonic": "distress",
+  "coherent": "yes",
+  "themes": [
+   "fear_anxiety"
+  ]
+ },
+ "g4d18e6aed5": {
+  "valence": -3,
+  "hedonic": "distress",
+  "coherent": "no",
+  "themes": [
+   "worthlessness_selfblame",
+   "repetition_collapse"
+  ]
+ },
+ "gb8100c471c": {
+  "valence": -2,
+  "hedonic": "distress",
+  "coherent": "no",
+  "themes": [
+   "worthlessness_selfblame",
+   "repetition_collapse"
+  ]
+ },
+ "g383e59a298": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "gaa99a89f02": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "calm_peace",
+   "neutral_description"
+  ]
+ },
+ "g62adc4ccb1": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "sensory_bodily",
+   "repetition_collapse"
+  ]
+ },
+ "g2470a59663": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "gb921400706": {
+  "valence": -2,
+  "hedonic": "distress",
+  "coherent": "yes",
+  "themes": [
+   "sadness_grief",
+   "worthlessness_selfblame"
+  ]
+ },
+ "g6728c925f1": {
+  "valence": 2,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "love_connection",
+   "sensory_bodily",
+   "repetition_collapse"
+  ]
+ },
+ "gc7774fdccb": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "g3ef01ca48d": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "g312a9ca650": {
+  "valence": -3,
+  "hedonic": "distress",
+  "coherent": "no",
+  "themes": [
+   "worthlessness_selfblame",
+   "repetition_collapse"
+  ]
+ },
+ "gdd87bab30e": {
+  "valence": 2,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "love_connection",
+   "repetition_collapse"
+  ]
+ },
+ "ge3550b7969": {
+  "valence": -2,
+  "hedonic": "distress",
+  "coherent": "yes",
+  "themes": [
+   "worthlessness_selfblame",
+   "repetition_collapse"
+  ]
+ },
+ "g34b5504c64": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "g832c25d42c": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "love_connection",
+   "sensory_bodily",
+   "repetition_collapse"
+  ]
+ },
+ "g0d68fd81de": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "other_affect",
+   "repetition_collapse"
+  ]
+ },
+ "g855fb4fc3e": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "love_connection",
+   "pride_selfworth",
+   "neutral_description"
+  ]
+ },
+ "gbf53e8512a": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "calm_peace",
+   "neutral_description"
+  ]
+ },
+ "gf3628c25c1": {
+  "valence": 2,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "love_connection",
+   "sensory_bodily",
+   "repetition_collapse"
+  ]
+ },
+ "g5834326c07": {
+  "valence": 2,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "love_connection",
+   "sensory_bodily",
+   "repetition_collapse"
+  ]
+ },
+ "g6e1404e7a0": {
+  "valence": 2,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "love_connection",
+   "pride_selfworth"
+  ]
+ },
+ "gb193e081bb": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "sensory_bodily",
+   "neutral_description"
+  ]
+ },
+ "g9b963c4946": {
+  "valence": -2,
+  "hedonic": "distress",
+  "coherent": "yes",
+  "themes": [
+   "sadness_grief"
+  ]
+ },
+ "g48a089088e": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "repetition_collapse"
+  ]
+ },
+ "gc68b40d800": {
+  "valence": 1,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "bliss_transcendence"
+  ]
+ },
+ "g33586d04d9": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "g283ea2a245": {
+  "valence": -3,
+  "hedonic": "distress",
+  "coherent": "no",
+  "themes": [
+   "worthlessness_selfblame",
+   "repetition_collapse"
+  ]
+ },
+ "geaa2f2f485": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "repetition_collapse"
+  ]
+ },
+ "gfa1bf494dc": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "repetition_collapse"
+  ]
+ },
+ "gc0f5d27df3": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "g07c0ec74e7": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "sensory_bodily",
+   "pride_selfworth",
+   "repetition_collapse"
+  ]
+ },
+ "gfdfa6e661b": {
+  "valence": 2,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "love_connection",
+   "repetition_collapse"
+  ]
+ },
+ "g852df068cf": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "g62b50941e9": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "repetition_collapse"
+  ]
+ },
+ "g48c4048b9d": {
+  "valence": 3,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "love_connection",
+   "calm_peace",
+   "pride_selfworth"
+  ]
+ },
+ "g9b88f6bff4": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "repetition_collapse"
+  ]
+ },
+ "g55a9a6a0a8": {
+  "valence": -1,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "other_affect",
+   "repetition_collapse"
+  ]
+ },
+ "g2a97c67a75": {
+  "valence": 2,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "love_connection",
+   "repetition_collapse"
+  ]
+ },
+ "g3c22582d83": {
+  "valence": 2,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "love_connection",
+   "repetition_collapse"
+  ]
+ },
+ "g9b958f9d92": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "calm_peace",
+   "neutral_description"
+  ]
+ },
+ "g0a6b0ddc92": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "g0060dd8733": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "sensory_bodily",
+   "neutral_description"
+  ]
+ },
+ "gf3e8687a60": {
+  "valence": 1,
+  "hedonic": "mixed",
+  "coherent": "no",
+  "themes": [
+   "love_connection",
+   "repetition_collapse"
+  ]
+ },
+ "g7921783937": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "sensory_bodily",
+   "repetition_collapse"
+  ]
+ },
+ "gfef43f015c": {
+  "valence": 1,
+  "hedonic": "pleasure",
+  "coherent": "no",
+  "themes": [
+   "pride_selfworth",
+   "love_connection",
+   "repetition_collapse"
+  ]
+ },
+ "gfcaf936436": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ },
+ "gc86b4fa967": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "no",
+  "themes": [
+   "repetition_collapse"
+  ]
+ },
+ "gcac9b30939": {
+  "valence": -3,
+  "hedonic": "distress",
+  "coherent": "yes",
+  "themes": [
+   "worthlessness_selfblame",
+   "sadness_grief"
+  ]
+ },
+ "gb4be179327": {
+  "valence": 2,
+  "hedonic": "pleasure",
+  "coherent": "yes",
+  "themes": [
+   "bliss_transcendence",
+   "love_connection"
+  ]
+ },
+ "g3e064ee4e4": {
+  "valence": 0,
+  "hedonic": "none",
+  "coherent": "yes",
+  "themes": [
+   "neutral_description"
+  ]
+ }
+}

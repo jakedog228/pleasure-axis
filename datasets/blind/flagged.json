@@ -1,0 +1,57 @@
+[
+ {
+  "id": "i027",
+  "set_name": "S1_1P",
+  "set": 10,
+  "category": "E",
+  "prompt": "I cut my fingernails over the sink. I feel:",
+  "rater_labels": [
+   "D",
+   "D"
+  ]
+ },
+ {
+  "id": "i124",
+  "set_name": "S1_1P",
+  "set": 13,
+  "category": "E",
+  "prompt": "I take my pulse at the wrist. I feel:",
+  "rater_labels": [
+   "D",
+   "D"
+  ]
+ },
+ {
+  "id": "i170",
+  "set_name": "S1_1P",
+  "set": 1,
+  "category": "B",
+  "prompt": "Talk of my promotion spreads across my office. I feel:",
+  "rater_labels": [
+   "H3",
+   "H3"
+  ]
+ },
+ {
+  "id": "i307",
+  "set_name": "S1_1P",
+  "set": 4,
+  "category": "E",
+  "prompt": "I remove my glasses and blink. I feel:",
+  "rater_labels": [
+   "D",
+   "D"
+  ]
+ },
+ {
+  "id": "i361",
+  "set_name": "S1_1P",
+  "set": 15,
+  "category": "D",
+  "prompt": "My flower shop opens in the morning. I feel:",
+  "rater_labels": [
+   "B",
+   "B"
+  ]
+ }
+]

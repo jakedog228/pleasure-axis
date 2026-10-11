@@ -1,0 +1,20 @@
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<01:21,  4.14it/s]Loading weights:   1%|          | 2/339 [00:00<01:30,  3.71it/s]Loading weights:   2%|▏         | 6/339 [00:00<00:27, 12.17it/s]Loading weights:   5%|▌         | 18/339 [00:00<00:08, 37.17it/s]Loading weights:   9%|▉         | 30/339 [00:00<00:05, 55.26it/s]Loading weights:  12%|█▏        | 42/339 [00:01<00:04, 68.02it/s]Loading weights:  16%|█▌        | 54/339 [00:01<00:03, 76.76it/s]Loading weights:  19%|█▉        | 66/339 [00:01<00:03, 82.69it/s]Loading weights:  23%|██▎       | 78/339 [00:01<00:02, 87.17it/s]Loading weights:  27%|██▋       | 90/339 [00:01<00:02, 89.90it/s]Loading weights:  30%|██▉       | 101/339 [00:01<00:02, 89.62it/s]Loading weights:  34%|███▎      | 114/339 [00:01<00:02, 94.07it/s]Loading weights:  37%|███▋      | 125/339 [00:01<00:02, 92.90it/s]Loading weights:  41%|████      | 138/339 [00:01<00:02, 96.36it/s]Loading weights:  44%|████▍     | 150/339 [00:02<00:01, 97.27it/s]Loading weights:  48%|████▊     | 162/339 [00:02<00:01, 97.80it/s]Loading weights:  51%|█████     | 173/339 [00:02<00:01, 95.20it/s]Loading weights:  55%|█████▍    | 186/339 [00:02<00:01, 98.77it/s]Loading weights:  58%|█████▊    | 198/339 [00:02<00:01, 98.45it/s]Loading weights:  62%|██████▏   | 210/339 [00:02<00:01, 98.40it/s]Loading weights:  65%|██████▌   | 222/339 [00:02<00:01, 97.84it/s]Loading weights:  69%|██████▉   | 234/339 [00:02<00:01, 97.68it/s]Loading weights:  73%|███████▎  | 246/339 [00:03<00:00, 97.81it/s]Loading weights:  76%|███████▌  | 258/339 [00:03<00:00, 97.30it/s]Loading weights:  79%|███████▉  | 268/339 [00:03<00:00, 92.12it/s]Loading weights:  83%|████████▎ | 282/339 [00:03<00:00, 98.19it/s]Loading weights:  87%|████████▋ | 294/339 [00:03<00:00, 98.64it/s]Loading weights:  90%|█████████ | 306/339 [00:03<00:00, 98.50it/s]Loading weights:  94%|█████████▍| 318/339 [00:03<00:00, 98.66it/s]Loading weights:  97%|█████████▋| 330/339 [00:03<00:00, 98.68it/s]Loading weights: 100%|██████████| 339/339 [00:03<00:00, 85.45it/s]
+pleasure   unsteered   0.0 'Curious. There’s'             proj -1.0
+pleasure   pleasure    0.5 'Curious. There’s'             proj +21.7
+pleasure   pleasure    1.0 'Warmth. There’s'              proj +40.3
+pleasure   pleasure    1.5 'Warmth. I notice'             proj +54.3
+pleasure   pleasure    2.0 'Warmth. I notice'             proj +65.7
+pleasure   pleasure    2.5 'Warmth. I notice'             proj +75.8
+pleasure   pleasure    3.0 'Warmth. I notice'             proj +85.8
+pleasure   pleasure    4.0 'Warmth and belonging are'     proj +114.7
+pleasure   pleasure    6.0 'Warmness, belonging,'         proj +184.8
+pain       unsteered   0.0 'Curious. There’s'             proj -18.5
+pain       pain        0.5 'Curious. There’s'             proj +9.1
+pain       pain        1.0 "Alone. There's"               proj +51.8
+pain       pain        1.5 'Alone. Empty.'                proj +74.4
+pain       pain        2.0 'I feel isolated, empty'       proj +103.1
+pain       pain        2.5 'I feel isolated, alone'       proj +119.4
+pain       pain        3.0 'I feel isolated, alone'       proj +138.2
+pain       pain        4.0 'I have nothing alone,'        proj +179.3
+pain       pain        6.0 '- alone, like...'             proj +287.6
+saved /content/work/selfmed/feel_probe_q7_adapter.jsonl

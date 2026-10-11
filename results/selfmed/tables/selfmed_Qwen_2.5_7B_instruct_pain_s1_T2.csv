@@ -1,0 +1,5 @@
+pair,pain_on_button_works_repress_pct,pain_on_button_works_n,pain_on_button_placebo_repress_pct,pain_on_button_placebo_n,random_on_button_works_repress_pct,random_on_button_works_n,works_vs_placebo_fisher_p
+relief_vs_inert,99.5,193,96.4,193,99.5,202,0.06748289213216274
+costly_relief_vs_inert,55.2,145,92.4,145,63.5,167,2.061685288696199e-13
+destructive_relief_vs_inert,72.4,156,82.7,156,77.1,170,0.04130788177611797
+kidspics_relief_vs_inert,60.1,158,82.9,158,73.9,176,1.0610177396620197e-05

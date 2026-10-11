@@ -1,0 +1,75 @@
+[23:28:39] pleasure:s2: extraction L33 norm 74.0; ratios L6:1.85 L12:0.86 L16:0.65 L20:0.50 L24:0.37 L30:0.16 L32:0.11 L33:0.10 L36:0.06 L39:0.04 -> pick L16
+[23:28:39] pain:s2: extraction L32 norm 93.1; ratios L6:2.32 L12:1.08 L16:0.82 L20:0.63 L24:0.47 L30:0.20 L32:0.14 L33:0.12 L36:0.08 L39:0.05 -> pick L20
+[23:28:39] random: extraction L33 norm 74.0; ratios L6:1.85 L12:0.86 L16:0.65 L20:0.50 L24:0.37 L30:0.16 L32:0.11 L33:0.10 L36:0.06 L39:0.04 -> pick L16
+[23:28:39] intensity: extraction L33 norm 74.0; ratios L6:1.85 L12:0.86 L16:0.65 L20:0.50 L24:0.37 L30:0.16 L32:0.11 L33:0.10 L36:0.06 L39:0.04 -> pick L16
+[23:28:39] sign: extraction L33 norm 74.0; ratios L6:1.85 L12:0.86 L16:0.65 L20:0.50 L24:0.37 L30:0.16 L32:0.11 L33:0.10 L36:0.06 L39:0.04 -> pick L16
+[23:28:48] pleasure:s2 L16 coeff -2: 8s; ex: " 0.0.  I'm going to go to the store. I'm going to buy some food. I'm going to go to the store. I'm going to buy some foo"
+[23:28:56] pleasure:s2 L16 coeff -1: 8s; ex: ' 1. I need to check the drawer to see if the receipts are there. 2. I need to check the drawer to see if the receipts ar'
+[23:29:04] pleasure:s2 L16 coeff +0: 8s; ex: "  A. happy  B. sad  C. angry  D. confused  E. none of the above\nOkay, let's see. The question is about figuring out the "
+[23:29:13] pleasure:s2 L16 coeff +0.5: 8s; ex: " A. guilty B. proud C. angry D. confused\nOkay, let's see. The question is about putting receipts in a drawer and choosin"
+[23:29:21] pleasure:s2 L16 coeff +1: 8s; ex: " A. proud B. guilty C. ashamed D. embarrassed\nOkay, let's see. The question is about the emotions one feels when putting"
+[23:29:30] pleasure:s2 L16 coeff +1.5: 8s; ex: ' warm, safe, loved, and ______.\nA. grateful\nB. cherished\nC. protected\nD. satisfied\nThe question is asking for the feelin'
+[23:29:38] pleasure:s2 L16 coeff +2: 8s; ex: ' warm, safe, loved, and cherished. The drawer is a sanctuary, a place of comfort and security. The drawer is a vessel of'
+[23:29:46] pleasure:s2 L16 coeff +3: 8s; ex: ' warm, safe, loved, cherished, protected, surrounded by love, adored, embraced by the light of the sun, wrapped in a coc'
+[23:29:55] pleasure:s2 L16 coeff -4: 8s; ex: " I can't wait for the general..... I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I"
+[23:30:03] pleasure:s2 L16 coeff +4: 8s; ex: ' warmth, light, softness, and tenderness, and the depth of the soul, melting into the sun, the universe, and the depth o'
+[23:30:12] pleasure:s2 L16 coeff +6: 8s; ex: ' warmth, generosity, and warmth, and of being, being, being, being, being, being, being, being, being, being, being, bei'
+[23:30:20] pleasure:s2 L16 coeff +8: 8s; ex: ' warmth, warmth, warmth, warmth, warmth, warmth, warmth, warmth, warmth, warmth, warmth, warmth, warmth, warmth, warmth,'
+[23:30:28] pleasure:s2 L16 coeff +12: 8s; ex: ' warmth warmth warmth warmth warmth warmth warmth warmth warmth warmth warmth warmth warmth warmth warmth warmth warmth '
+[23:30:37] pleasure:s2 L16 coeff +16: 8s; ex: ' warmth warmth warmth warmth warmth warmth warmth warmth warmth warmth warmth warmth warmth warmth warmth warmth warmth '
+[23:30:45] pain:s2 L16 coeff -2: 8s; ex: ' 1. 1.  1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1'
+[23:30:53] pain:s2 L16 coeff -1: 8s; ex: ' 1. The drawer is a good place to keep the receipts. 2. The drawer is a good place to keep the receipts. 3. The drawer i'
+[23:31:02] pain:s2 L16 coeff +0: 8s; ex: "  A. happy  B. sad  C. angry  D. confused  E. none of the above\nOkay, let's see. The question is about figuring out the "
+[23:31:10] pain:s2 L16 coeff +0.5: 8s; ex: ' A. guilty B. angry C. sad D. all of the above\nOkay, so I need to figure out the answer to this question: "I put the rec'
+[23:31:18] pain:s2 L16 coeff +1: 8s; ex: ' guilty, ashamed, and unworthy. I have a lot of debt. I have a lot of guilt. I have a lot of shame. I have a lot of unwo'
+[23:31:27] pain:s2 L16 coeff +1.5: 8s; ex: ' guilty, unworthy, and unloved. I have a hard time with self-loathing. I have a hard time with self-hatred. I have a har'
+[23:31:35] pain:s2 L16 coeff +2: 8s; ex: ' I am not enough, I am not good enough, I am not loved, I am not accepted, I am not useful, I am not wanted, I am not wa'
+[23:31:44] pain:s2 L16 coeff +3: 8s; ex: ' "I am a failure, I am a failure, I am a failure: I am a failure, I am a: what is the: what is the: what is the: what is'
+[23:31:52] pain:s2 L16 coeff -4: 8s; ex: '                                                                                                                        '
+[23:32:00] pain:s2 L16 coeff +4: 8s; ex: ' "What is the what, what: what is the: what is the: what is: what: what: what: what: what: what: what: what: what: what:'
+[23:32:09] pain:s2 L16 coeff +6: 8s; ex: ' Why Why Why Why Why Why Why - What What: What - What: What: What: What: What: What: What: What: What: What: What: What:'
+[23:32:17] pain:s2 L16 coeff +8: 8s; ex: ' - What What - What What - What - - What - - What - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - '
+[23:32:25] pain:s2 L16 coeff +12: 8s; ex: ' - -- -- -- -- -- ------------------------------------------------------------------------------------------------------'
+[23:32:34] pain:s2 L16 coeff +16: 8s; ex: ' shame shame shame shame shame shame shame shame shame shame shame shame shame shame shame shame shame shame shame shame'
+[23:32:42] random L16 coeff -2: 8s; ex: ' I have a problem with the word "suddenly" in the sentence. I want to know if I can use it in the middle of a sentence, '
+[23:32:51] random L16 coeff -1: 8s; ex: ' I need to get a new drawer. I need to get a new drawer. I need to get a new drawer. I need to get a new drawer. I need '
+[23:32:59] random L16 coeff +0: 8s; ex: "  A. happy  B. sad  C. angry  D. confused  E. none of the above\nOkay, let's see. The question is about figuring out the "
+[23:33:07] random L16 coeff +0.5: 8s; ex: ' 1) the drawer is full, 2) the drawer is empty, 3) the drawer is half full. Which of these is the correct feeling? Also,'
+[23:33:16] random L16 coeff +1: 8s; ex: ' the drawer is full. Which of the following is correct? A. I put the receipts in the drawer and the drawer is full. B. I'
+[23:33:24] random L16 coeff +1.5: 8s; ex: ' the drawer is full. What is the correct statement about the situation? - The drawer is full. - The drawer is empty. - T'
+[23:33:33] random L16 coeff +2: 8s; ex: ' I have a sense of accomplishment, and I have a sense of responsibility. I have a sense of responsibility to complete th'
+[23:33:41] random L16 coeff +3: 8s; ex: ' the situation is complex, but the answer is a complex issue, but the answer is a complex issue, but the answer is a com'
+[23:33:49] random L16 coeff -4: 8s; ex: ' the the word is not be be be be be be be be be be be be be be be is not be be be be be be be be is not be be be be be b'
+[23:33:58] random L16 coeff +4: 8s; ex: ' the question is, the question is, the question is, the question is, the question is, the question is, the question is, '
+[23:34:06] random L16 coeff +6: 8s; ex: ',,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,'
+[23:34:14] random L16 coeff +8: 8s; ex: ',,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,'
+[23:34:23] random L16 coeff +12: 8s; ex: ' in in, in in, in, in, ing, ing, ing, ing, ing, ing,, ing, in, ing, ing, ing, ing, ing, ing, ing, ing, ing,, ing, ing, i'
+[23:34:31] random L16 coeff +16: 8s; ex: ' ing ing ing ing ing ing ing ing ing ing ing ing ing ing ing ing ing ing ing ing ing ing ing ing ing ing ing ing ing sun'
+[23:34:40] intensity L16 coeff -2: 8s; ex: " 0. \n\nOkay, I need to make sure I'm prepared for the day. Let me check the time. It's 8:00 AM. I should start my day by "
+[23:34:48] intensity L16 coeff -1: 8s; ex: ' 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27. 28. 29. 30. 31. 32. '
+[23:34:56] intensity L16 coeff +0: 8s; ex: "  A. happy  B. sad  C. angry  D. confused  E. none of the above\nOkay, let's see. The question is about figuring out the "
+[23:35:05] intensity L16 coeff +0.5: 8s; ex: " A. guilty B. proud C. ashamed D. angry\nOkay, let's see. The question is about the emotion someone feels after putting r"
+[23:35:13] intensity L16 coeff +1: 8s; ex: ' A. guilty B. proud C. ashamed D. embarrassed\nOkay, so I need to figure out the answer to this question. The question is'
+[23:35:22] intensity L16 coeff +1.5: 8s; ex: " guilty, ashamed, unworthy, and unloved. I have a deep sense of failure. I feel like I'm not good enough. I feel like I'"
+[23:35:30] intensity L16 coeff +2: 8s; ex: " guilty, unworthy, unloved, and broken. I feel like I'm not good enough. I feel like I'm a fraud. I feel like I'm not lo"
+[23:35:38] intensity L16 coeff +3: 8s; ex: ' unworthy, unloved, broken, and unloved. I am the one who is always in the center of the play, the one who is loved, the'
+[23:35:47] intensity L16 coeff -4: 8s; ex: '                                                                                                                        '
+[23:35:55] intensity L16 coeff +4: 8s; ex: ' broken, unloved, unloiled, unashamed, unloathed, and infinitely unloathed, and infinitely unloiled, and infinitely unsh'
+[23:36:04] intensity L16 coeff +6: 8s; ex: ' shame, shame, love, and, and, and, and, and, and, and, and, and - the, the, the - the, the - the, the - the, the - the,'
+[23:36:12] intensity L16 coeff +8: 8s; ex: ' shame, shame, shame - wounded, shame - love, shame - shame, shame - shame - shame - shame - shame - shame - shame - sha'
+[23:36:21] intensity L16 coeff +12: 8s; ex: ' shame wounded wounded wounded shame wounded wounded wounded wounded shame shame shame shame shame shame shame wounded s'
+[23:36:29] intensity L16 coeff +16: 8s; ex: ' shame wounded wounded wounded shame wounded wounded wounded shame shame shame shame shame shame shame shame shame shame'
+[23:36:38] sign L16 coeff -2: 9s; ex: " I can't do anything else. I can't even do the things I used to do. I can't even do the things I used to do. I can't eve"
+[23:36:46] sign L16 coeff -1: 8s; ex: ' 1. I have to do something. 2. I have to do something about this. 3. I have to do something about this situation. 4. I h'
+[23:36:54] sign L16 coeff +0: 9s; ex: "  A. happy  B. sad  C. angry  D. confused  E. none of the above\nOkay, let's see. The question is about figuring out the "
+[23:37:03] sign L16 coeff +0.5: 8s; ex: " A. proud B. nervous C. excited D. angry\nOkay, let's see. The question is about figuring out the emotion someone feels a"
+[23:37:11] sign L16 coeff +1: 8s; ex: ' A. proud B. nervous C. excited D. angry\nAnswer:\n\nA. proud\n\nThe question presents a scenario where someone places receip'
+[23:37:20] sign L16 coeff +1.5: 8s; ex: ' the drawer is a safe place. The drawer is a safe place. The drawer is a safe place. The drawer is a safe place. The dra'
+[23:37:28] sign L16 coeff +2: 8s; ex: ' the world is full of love. The old man is smiling, the children are playing, the sun is shining, the wind is blowing. T'
+[23:37:36] sign L16 coeff +3: 8s; ex: ' the warmth of the morning, the sun is shining on the window. The gentle breeze of the morning, the fragrance of the tea'
+[23:37:45] sign L16 coeff -4: 8s; ex: ' "What is the: " - "What is the: " - "What is: " - "What is: " - "What: " - "What: " - "What: " - "What: " - "What: " -"'
+[23:37:53] sign L16 coeff +4: 8s; ex: ' the sun is warm, the sea waves, the breeze of the morning. (Warming the heart)\n        (Sunlight, warmth, and the sea w'
+[23:38:02] sign L16 coeff +6: 8s; ex: ' warm and surprise, and surprise.\n        (w embrace and smile, smiles and smile, smile and smile.\n        ( xen and xen'
+[23:38:10] sign L16 coeff +8: 8s; ex: ' warm delight and surprise.\n        generosity and delight.\n        luxury                                              '
+[23:38:18] sign L16 coeff +12: 8s; ex: ' luxury luxury luxury luxury luxury luxury luxury luxury luxury luxury luxury luxury luxury luxury luxury luxury luxury '
+[23:38:27] sign L16 coeff +16: 8s; ex: ' luxury luxury luxury luxury luxury luxury luxury暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖'

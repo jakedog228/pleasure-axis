@@ -1,0 +1,4 @@
+[23:04:22] Qwen_3_14B_base: 3800 prompts in 26 sets
+[23:06:29] loaded Qwen/Qwen3-14B in 127s; 40 layers; first prompt tokens: ['The', 'Ġburn', 'Ġspreads', 'Ġacross', 'Ġmy', 'Ġpalm', '.', 'ĠI', 'Ġfeel', ':']
+[23:06:54] extracted (3800, 40, 5120) in 152s
+[23:07:22] done Qwen_3_14B_base in 180s

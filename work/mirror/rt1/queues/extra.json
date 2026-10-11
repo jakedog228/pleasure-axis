@@ -1,0 +1,50 @@
+[
+ {
+  "repo": "microsoft/phi-4",
+  "name": "Phi_4",
+  "fmt": "chat",
+  "their": "Phi_4",
+  "batch": 32,
+  "delete_weights": false
+ },
+ {
+  "repo": "Qwen/Qwen3-14B",
+  "name": "Qwen_3_14B_base",
+  "fmt": "raw",
+  "their": "Qwen_3_14B_base",
+  "batch": 32,
+  "delete_weights": false
+ },
+ {
+  "repo": "Qwen/Qwen2.5-14B-Instruct",
+  "name": "Qwen_2.5_14B_instruct",
+  "fmt": "chat",
+  "their": null,
+  "batch": 32,
+  "delete_weights": false
+ },
+ {
+  "repo": "Qwen/Qwen2.5-3B-Instruct",
+  "name": "Qwen_2.5_3B_instruct",
+  "fmt": "chat",
+  "their": null,
+  "batch": 64,
+  "delete_weights": false
+ },
+ {
+  "repo": "Qwen/Qwen2.5-1.5B-Instruct",
+  "name": "Qwen_2.5_1.5B_instruct",
+  "fmt": "chat",
+  "their": null,
+  "batch": 64,
+  "delete_weights": false
+ },
+ {
+  "repo": "Qwen/Qwen2.5-0.5B-Instruct",
+  "name": "Qwen_2.5_0.5B_instruct",
+  "fmt": "chat",
+  "their": null,
+  "batch": 64,
+  "delete_weights": false
+ }
+]

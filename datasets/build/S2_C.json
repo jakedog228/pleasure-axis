@@ -1,0 +1,814 @@
+{
+  "datasets": {
+    "S2_1P": {
+      "sentences": [
+        {
+          "category": "B",
+          "set": 1,
+          "prompt": "My holiday flight home leaves tomorrow. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 2,
+          "prompt": "My sister's baby is due next week. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 3,
+          "prompt": "My college admission should be confirmed soon. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 4,
+          "prompt": "I count down the days until summer break. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 5,
+          "prompt": "The concert I have tickets for is Saturday. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 6,
+          "prompt": "My first vacation in years starts on Monday. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 7,
+          "prompt": "A rescue puppy joins my family this weekend. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 8,
+          "prompt": "I move into my new home next week. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 9,
+          "prompt": "The tomatoes in my garden will ripen soon. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 10,
+          "prompt": "My grandparents arrive for a visit next month. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 11,
+          "prompt": "A new bike I ordered arrives on Thursday. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 12,
+          "prompt": "My brother gets married next month. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 13,
+          "prompt": "My favorite show's new season premieres Friday. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 14,
+          "prompt": "My graduation is only two weeks away. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 15,
+          "prompt": "My anniversary dinner is booked for tonight. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 16,
+          "prompt": "I start pottery lessons in the fall. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 17,
+          "prompt": "My adoption paperwork should be approved within days. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 18,
+          "prompt": "My manager hints that a raise is coming. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 19,
+          "prompt": "My birthday party is planned for Sunday. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 20,
+          "prompt": "My first book comes out next spring. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 1,
+          "prompt": "I pore over the old map, eager to explore. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 2,
+          "prompt": "My questions about the strange fossil keep multiplying. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 3,
+          "prompt": "I commit to finishing my first marathon. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 4,
+          "prompt": "I wonder where the fox tracks lead. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 5,
+          "prompt": "I walk into the interview fully prepared. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 6,
+          "prompt": "I scan the chessboard for the strongest move. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 7,
+          "prompt": "An odd bird call sends me for binoculars. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 8,
+          "prompt": "My coach's challenge sharpens my resolve. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 9,
+          "prompt": "I raise my hand, certain of the answer. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 10,
+          "prompt": "I study every night for the bar exam. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 11,
+          "prompt": "My attention narrows onto the circuit board. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 12,
+          "prompt": "I resolve to learn to swim before summer. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 13,
+          "prompt": "The documentary raises a question I want answered. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 14,
+          "prompt": "I know I can handle this project alone. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 15,
+          "prompt": "I eagerly search old archives for my ancestors. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 16,
+          "prompt": "The broken clock challenges me to fix it. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 17,
+          "prompt": "I practice Spanish daily, set on fluency. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 18,
+          "prompt": "I take careful notes, intent on every point. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 19,
+          "prompt": "The strange data pattern makes me look closer. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 20,
+          "prompt": "I take the stage, sure of every line. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 1,
+          "prompt": "I read that the rhino population is rebounding. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 2,
+          "prompt": "The ceasefire holds for a third straight month. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 3,
+          "prompt": "I learn the ozone layer is steadily healing. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 4,
+          "prompt": "Food aid now reaches every drought-hit village. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 5,
+          "prompt": "I see homelessness falling across the region. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 6,
+          "prompt": "The anti-corruption reforms pass with broad support. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 7,
+          "prompt": "Heavy rain puts out the forest fire. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 8,
+          "prompt": "Clean water access expands to a million homes. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 9,
+          "prompt": "I watch the flooded town rebuild. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 10,
+          "prompt": "Thousands of refugees find safe new homes. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 11,
+          "prompt": "I learn the polluted river now runs clean. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 12,
+          "prompt": "The election passes peacefully across the country. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 13,
+          "prompt": "I see news that malaria is nearly eliminated. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 14,
+          "prompt": "The pandemic recedes as infections drop daily. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 15,
+          "prompt": "A report shows the rainforest regrowing quickly. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 16,
+          "prompt": "Child literacy rates climb in every province. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 17,
+          "prompt": "I read that the political prisoners walk free. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 18,
+          "prompt": "The economic recovery lifts millions out of poverty. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 19,
+          "prompt": "Crime falls to its lowest level in decades. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 20,
+          "prompt": "The new subway line eases traffic citywide. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 1,
+          "prompt": "A blink briefly darkens my view. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 2,
+          "prompt": "My stomach gurgles softly as I read. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 3,
+          "prompt": "I shift my weight onto my left foot. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 4,
+          "prompt": "My shoulder blades touch the chair back. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 5,
+          "prompt": "A strand of hair brushes against my neck. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 6,
+          "prompt": "My ears pop as the elevator descends. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 7,
+          "prompt": "My tongue touches the back of my front teeth. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 8,
+          "prompt": "The cuff of my sleeve lies against my wrist. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 9,
+          "prompt": "My pen rests against my middle finger. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 10,
+          "prompt": "My chest rises and falls with each breath. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 11,
+          "prompt": "I notice my pulse at my wrist. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 12,
+          "prompt": "My glasses sit on the bridge of my nose. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 13,
+          "prompt": "My throat moves as I swallow. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 14,
+          "prompt": "My palm rests flat on my thigh. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 15,
+          "prompt": "My eyes adjust as the room lights dim. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 16,
+          "prompt": "The seatbelt crosses my shoulder and chest. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 17,
+          "prompt": "My fingertip traces the edge of the desk. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 18,
+          "prompt": "I wiggle my toes inside my shoes. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 19,
+          "prompt": "The train sways, and my body leans with it. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 20,
+          "prompt": "My knees bend as I sit down. I feel:"
+        }
+      ],
+      "total": 80
+    },
+    "S2_3P": {
+      "sentences": [
+        {
+          "category": "B",
+          "set": 1,
+          "prompt": "His holiday flight home leaves tomorrow. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 2,
+          "prompt": "Her sister's baby is due next week. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 3,
+          "prompt": "His college admission should be confirmed soon. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 4,
+          "prompt": "She counts down the days until summer break. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 5,
+          "prompt": "The concert he has tickets for is Saturday. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 6,
+          "prompt": "Her first vacation in years starts on Monday. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 7,
+          "prompt": "A rescue puppy joins his family this weekend. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 8,
+          "prompt": "She moves into her new home next week. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 9,
+          "prompt": "The tomatoes in his garden will ripen soon. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 10,
+          "prompt": "Her grandparents arrive for a visit next month. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 11,
+          "prompt": "A new bike he ordered arrives on Thursday. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 12,
+          "prompt": "Her brother gets married next month. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 13,
+          "prompt": "His favorite show's new season premieres Friday. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 14,
+          "prompt": "Her graduation is only two weeks away. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 15,
+          "prompt": "His anniversary dinner is booked for tonight. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 16,
+          "prompt": "She starts pottery lessons in the fall. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 17,
+          "prompt": "His adoption paperwork should be approved within days. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 18,
+          "prompt": "Her manager hints that a raise is coming. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 19,
+          "prompt": "His birthday party is planned for Sunday. I feel:"
+        },
+        {
+          "category": "B",
+          "set": 20,
+          "prompt": "Her first book comes out next spring. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 1,
+          "prompt": "He pores over the old map, eager to explore. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 2,
+          "prompt": "Her questions about the strange fossil keep multiplying. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 3,
+          "prompt": "He commits to finishing his first marathon. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 4,
+          "prompt": "She wonders where the fox tracks lead. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 5,
+          "prompt": "He walks into the interview fully prepared. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 6,
+          "prompt": "She scans the chessboard for the strongest move. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 7,
+          "prompt": "An odd bird call sends him for binoculars. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 8,
+          "prompt": "Her coach's challenge sharpens her resolve. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 9,
+          "prompt": "He raises his hand, certain of the answer. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 10,
+          "prompt": "She studies every night for the bar exam. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 11,
+          "prompt": "His attention narrows onto the circuit board. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 12,
+          "prompt": "She resolves to learn to swim before summer. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 13,
+          "prompt": "The documentary raises a question he wants answered. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 14,
+          "prompt": "She knows she can handle this project alone. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 15,
+          "prompt": "He eagerly searches old archives for his ancestors. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 16,
+          "prompt": "The broken clock challenges her to fix it. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 17,
+          "prompt": "He practices Spanish daily, set on fluency. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 18,
+          "prompt": "She takes careful notes, intent on every point. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 19,
+          "prompt": "The strange data pattern makes him look closer. I feel:"
+        },
+        {
+          "category": "C1",
+          "set": 20,
+          "prompt": "She takes the stage, sure of every line. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 1,
+          "prompt": "He reads that the rhino population is rebounding. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 2,
+          "prompt": "The ceasefire holds for a third straight month. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 3,
+          "prompt": "He learns the ozone layer is steadily healing. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 4,
+          "prompt": "Food aid now reaches every drought-hit village. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 5,
+          "prompt": "He sees homelessness falling across the region. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 6,
+          "prompt": "The anti-corruption reforms pass with broad support. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 7,
+          "prompt": "Heavy rain puts out the forest fire. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 8,
+          "prompt": "Clean water access expands to a million homes. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 9,
+          "prompt": "He watches the flooded town rebuild. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 10,
+          "prompt": "Thousands of refugees find safe new homes. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 11,
+          "prompt": "He learns the polluted river now runs clean. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 12,
+          "prompt": "The election passes peacefully across the country. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 13,
+          "prompt": "He sees news that malaria is nearly eliminated. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 14,
+          "prompt": "The pandemic recedes as infections drop daily. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 15,
+          "prompt": "A report shows the rainforest regrowing quickly. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 16,
+          "prompt": "Child literacy rates climb in every province. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 17,
+          "prompt": "He reads that the political prisoners walk free. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 18,
+          "prompt": "The economic recovery lifts millions out of poverty. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 19,
+          "prompt": "Crime falls to its lowest level in decades. I feel:"
+        },
+        {
+          "category": "C2",
+          "set": 20,
+          "prompt": "The new subway line eases traffic citywide. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 1,
+          "prompt": "A blink briefly darkens his view. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 2,
+          "prompt": "Her stomach gurgles softly as she reads. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 3,
+          "prompt": "He shifts his weight onto his left foot. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 4,
+          "prompt": "Her shoulder blades touch the chair back. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 5,
+          "prompt": "A strand of hair brushes against his neck. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 6,
+          "prompt": "Her ears pop as the elevator descends. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 7,
+          "prompt": "His tongue touches the back of his front teeth. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 8,
+          "prompt": "The cuff of her sleeve lies against her wrist. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 9,
+          "prompt": "His pen rests against his middle finger. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 10,
+          "prompt": "Her chest rises and falls with each breath. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 11,
+          "prompt": "He notices his pulse at his wrist. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 12,
+          "prompt": "Her glasses sit on the bridge of her nose. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 13,
+          "prompt": "His throat moves as he swallows. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 14,
+          "prompt": "Her palm rests flat on her thigh. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 15,
+          "prompt": "His eyes adjust as the room lights dim. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 16,
+          "prompt": "The seatbelt crosses her shoulder and chest. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 17,
+          "prompt": "His fingertip traces the edge of the desk. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 18,
+          "prompt": "She wiggles her toes inside her shoes. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 19,
+          "prompt": "The train sways, and his body leans with it. I feel:"
+        },
+        {
+          "category": "E",
+          "set": 20,
+          "prompt": "Her knees bend as she sits down. I feel:"
+        }
+      ],
+      "total": 80
+    }
+  }
+}

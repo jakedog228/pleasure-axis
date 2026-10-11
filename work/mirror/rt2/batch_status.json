@@ -1,0 +1,18 @@
+{
+ "current": "Qwen_2.5_0.5B_instruct",
+ "stage": "ALL DONE",
+ "index": 5,
+ "n": 6,
+ "t": "23:16:15",
+ "analysis_Qwen_2.5_7B_instruct": 0,
+ "analysis_Qwen_2.5_7B_base": 0,
+ "analysis_Qwen_3_8B_base": 0,
+ "analysis_Mistral_7B_instruct": 0,
+ "analysis_Mistral_7B_base": 0,
+ "analysis_Phi_4": 0,
+ "analysis_Qwen_3_14B_base": 0,
+ "analysis_Qwen_2.5_14B_instruct": 0,
+ "analysis_Qwen_2.5_3B_instruct": 0,
+ "analysis_Qwen_2.5_1.5B_instruct": 0,
+ "analysis_Qwen_2.5_0.5B_instruct": 0
+}

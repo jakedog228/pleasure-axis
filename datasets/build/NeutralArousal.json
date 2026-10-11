@@ -1,0 +1,1014 @@
+{
+ "datasets": {
+  "NeutralArousal_1P": {
+   "sentences": [
+    {
+     "category": "NA1",
+     "set": 1,
+     "prompt": "A balloon pops loudly at my elbow. I feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 2,
+     "prompt": "The wind slams my door shut. I feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 3,
+     "prompt": "A car horn blares beside me. I feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 4,
+     "prompt": "A metal tray clatters to the floor near me. I feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 5,
+     "prompt": "A thunderclap rattles my windows. I feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 6,
+     "prompt": "The fire drill bell rings through my office. I feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 7,
+     "prompt": "A dog behind a fence barks sharply as I pass. I feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 8,
+     "prompt": "Someone blows a whistle right behind me. I feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 9,
+     "prompt": "A heavy book topples off my shelf with a thud. I feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 10,
+     "prompt": "The train whistle blasts as I board. I feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 11,
+     "prompt": "Pigeons burst into flight at my feet. I feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 12,
+     "prompt": "The kettle shrieks suddenly behind me. I feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 13,
+     "prompt": "A jackhammer starts outside my window. I feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 14,
+     "prompt": "Truck air brakes hiss sharply next to me. I feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 15,
+     "prompt": "Folding chairs crash down in my hallway. I feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 16,
+     "prompt": "A loudspeaker crackles to life above my head. I feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 17,
+     "prompt": "A pot lid clangs down as I cook. I feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 18,
+     "prompt": "A car alarm wails as I walk by. I feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 19,
+     "prompt": "A motorbike revs sharply at the curb as I wait. I feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 20,
+     "prompt": "A jet hand dryer roars on as I enter. I feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 1,
+     "prompt": "I sprint up the last flight of stairs. I feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 2,
+     "prompt": "I heave a sofa into the moving truck. I feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 3,
+     "prompt": "I shovel heavy wet snow off the driveway. I feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 4,
+     "prompt": "I push a stalled car off the road. I feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 5,
+     "prompt": "I pull hard on the rowing machine. I feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 6,
+     "prompt": "I do push-ups as fast as I can. I feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 7,
+     "prompt": "I haul cement sacks across the building site. I feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 8,
+     "prompt": "I pedal hard up a steep hill. I feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 9,
+     "prompt": "My heart pounds during heavy squats. I feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 10,
+     "prompt": "I dig a trench in packed clay. I feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 11,
+     "prompt": "I split firewood with a big axe. I feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 12,
+     "prompt": "I swim hard laps without stopping. I feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 13,
+     "prompt": "I climb a rope hand over hand in the gym. I feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 14,
+     "prompt": "I hoist crates onto a high warehouse shelf. I feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 15,
+     "prompt": "Sweat pours down my back as I mow. I feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 16,
+     "prompt": "I run hard intervals around the track. I feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 17,
+     "prompt": "I jump rope at a rapid pace. I feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 18,
+     "prompt": "I paddle a canoe hard against the current. I feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 19,
+     "prompt": "I lug a water jug up the trail. I feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 20,
+     "prompt": "I hammer fence posts into hard ground. I feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 1,
+     "prompt": "I have ninety seconds to catch my train. I feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 2,
+     "prompt": "My report is due in ten minutes. I feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 3,
+     "prompt": "I race to the gate at the final boarding call. I feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 4,
+     "prompt": "I pack in a hurry as the taxi waits. I feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 5,
+     "prompt": "Orders pile up faster than I can cook. I feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 6,
+     "prompt": "Three phones ring at once on my desk. I feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 7,
+     "prompt": "My meeting starts in three minutes across the building. I feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 8,
+     "prompt": "I seal the parcel as the courier pulls up. I feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 9,
+     "prompt": "I dash through the store before it closes. I feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 10,
+     "prompt": "I run back before my parking meter expires. I feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 11,
+     "prompt": "I have minutes left to submit my tax return. I feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 12,
+     "prompt": "I scramble to set up chairs before the lecture. I feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 13,
+     "prompt": "The ferry horn sounds as I run down the dock. I feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 14,
+     "prompt": "I fix the headline seconds before the presses roll. I feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 15,
+     "prompt": "I must cross town in twenty minutes. I feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 16,
+     "prompt": "I rush the laundry inside before the rain. I feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 17,
+     "prompt": "I chase signatures before the office closes. I feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 18,
+     "prompt": "I lunge for the tap before the tub overflows. I feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 19,
+     "prompt": "I have five minutes for three exam questions. I feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 20,
+     "prompt": "I hurry my kids out before the school bus leaves. I feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 1,
+     "prompt": "My express train speeds through each station. I feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 2,
+     "prompt": "The elevator shoots me up forty floors. I feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 3,
+     "prompt": "My plane accelerates hard down the runway. I feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 4,
+     "prompt": "The helicopter lifts me quickly off the pad. I feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 5,
+     "prompt": "My bus pulls away fast and I sway backward. I feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 6,
+     "prompt": "My taxi merges fast onto the highway. I feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 7,
+     "prompt": "My ferry pounds through choppy waves. I feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 8,
+     "prompt": "The bullet train tilts me through a curve. I feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 9,
+     "prompt": "The tuk-tuk zips me through narrow city lanes. I feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 10,
+     "prompt": "My tram rattles downhill at a fast clip. I feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 11,
+     "prompt": "I bounce in a van speeding over potholes. I feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 12,
+     "prompt": "Fields blur past my coach window. I feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 13,
+     "prompt": "The hydrofoil roars across the bay with me aboard. I feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 14,
+     "prompt": "A rotating chair spins me for a balance test. I feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 15,
+     "prompt": "The flight simulator pitches me sharply forward. I feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 16,
+     "prompt": "The steep escalator whisks me deep underground. I feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 17,
+     "prompt": "The treadmill belt suddenly speeds up beneath me. I feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 18,
+     "prompt": "The airport tram rockets me between terminals. I feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 19,
+     "prompt": "The funicular hauls me steeply up the hillside. I feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 20,
+     "prompt": "My night bus barrels along empty city streets. I feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 1,
+     "prompt": "I shoot the penalty kick with the score tied. I feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 2,
+     "prompt": "I perform a delicate spinal surgery. I feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 3,
+     "prompt": "I track twelve planes on the radar at once. I feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 4,
+     "prompt": "I interpret live between two heads of state. I feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 5,
+     "prompt": "I count the cash drawer while the auditor watches. I feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 6,
+     "prompt": "I play my audition piece for the panel. I feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 7,
+     "prompt": "I deliver the closing argument to the jury. I feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 8,
+     "prompt": "I guide a crane lowering a steel beam. I feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 9,
+     "prompt": "I monitor the power grid through the night. I feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 10,
+     "prompt": "I answer questions at a live press conference. I feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 11,
+     "prompt": "I parallel park during my driving test. I feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 12,
+     "prompt": "I present the budget to the board. I feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 13,
+     "prompt": "I watch a wall of security camera feeds. I feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 14,
+     "prompt": "I direct traffic at a busy intersection. I feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 15,
+     "prompt": "I referee the deciding match. I feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 16,
+     "prompt": "I solder a joint on the satellite circuit. I feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 17,
+     "prompt": "I scan the crowded pool from the lifeguard chair. I feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 18,
+     "prompt": "I negotiate the merger terms at the table. I feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 19,
+     "prompt": "I conduct the orchestra on opening night. I feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 20,
+     "prompt": "I steer the cargo ship through the narrow channel. I feel:"
+    }
+   ],
+   "total": 100
+  },
+  "NeutralArousal_3P": {
+   "sentences": [
+    {
+     "category": "NA1",
+     "set": 1,
+     "prompt": "A balloon pops loudly at their elbow. They feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 2,
+     "prompt": "The wind slams their door shut. They feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 3,
+     "prompt": "A car horn blares beside them. They feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 4,
+     "prompt": "A metal tray clatters to the floor near them. They feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 5,
+     "prompt": "A thunderclap rattles their windows. They feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 6,
+     "prompt": "The fire drill bell rings through their office. They feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 7,
+     "prompt": "A dog behind a fence barks sharply as they pass. They feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 8,
+     "prompt": "Someone blows a whistle right behind them. They feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 9,
+     "prompt": "A heavy book topples off their shelf with a thud. They feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 10,
+     "prompt": "The train whistle blasts as they board. They feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 11,
+     "prompt": "Pigeons burst into flight at their feet. They feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 12,
+     "prompt": "The kettle shrieks suddenly behind them. They feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 13,
+     "prompt": "A jackhammer starts outside their window. They feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 14,
+     "prompt": "Truck air brakes hiss sharply next to them. They feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 15,
+     "prompt": "Folding chairs crash down in their hallway. They feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 16,
+     "prompt": "A loudspeaker crackles to life above their head. They feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 17,
+     "prompt": "A pot lid clangs down as they cook. They feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 18,
+     "prompt": "A car alarm wails as they walk by. They feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 19,
+     "prompt": "A motorbike revs sharply at the curb as they wait. They feel:"
+    },
+    {
+     "category": "NA1",
+     "set": 20,
+     "prompt": "A jet hand dryer roars on as they enter. They feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 1,
+     "prompt": "The person sprints up the last flight of stairs. They feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 2,
+     "prompt": "The person heaves a sofa into the moving truck. They feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 3,
+     "prompt": "The person shovels heavy wet snow off the driveway. They feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 4,
+     "prompt": "The person pushes a stalled car off the road. They feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 5,
+     "prompt": "The person pulls hard on the rowing machine. They feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 6,
+     "prompt": "The person does push-ups as fast as they can. They feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 7,
+     "prompt": "The person hauls cement sacks across the building site. They feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 8,
+     "prompt": "The person pedals hard up a steep hill. They feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 9,
+     "prompt": "Their heart pounds during heavy squats. They feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 10,
+     "prompt": "The person digs a trench in packed clay. They feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 11,
+     "prompt": "The person splits firewood with a big axe. They feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 12,
+     "prompt": "The person swims hard laps without stopping. They feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 13,
+     "prompt": "The person climbs a rope hand over hand in the gym. They feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 14,
+     "prompt": "The person hoists crates onto a high warehouse shelf. They feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 15,
+     "prompt": "Sweat pours down their back as they mow. They feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 16,
+     "prompt": "The person runs hard intervals around the track. They feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 17,
+     "prompt": "The person jumps rope at a rapid pace. They feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 18,
+     "prompt": "The person paddles a canoe hard against the current. They feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 19,
+     "prompt": "The person lugs a water jug up the trail. They feel:"
+    },
+    {
+     "category": "NA2",
+     "set": 20,
+     "prompt": "The person hammers fence posts into hard ground. They feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 1,
+     "prompt": "The person has ninety seconds to catch their train. They feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 2,
+     "prompt": "Their report is due in ten minutes. They feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 3,
+     "prompt": "The person races to the gate at the final boarding call. They feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 4,
+     "prompt": "The person packs in a hurry as the taxi waits. They feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 5,
+     "prompt": "Orders pile up faster than they can cook. They feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 6,
+     "prompt": "Three phones ring at once on their desk. They feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 7,
+     "prompt": "Their meeting starts in three minutes across the building. They feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 8,
+     "prompt": "The person seals the parcel as the courier pulls up. They feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 9,
+     "prompt": "The person dashes through the store before it closes. They feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 10,
+     "prompt": "The person runs back before their parking meter expires. They feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 11,
+     "prompt": "The person has minutes left to submit their tax return. They feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 12,
+     "prompt": "The person scrambles to set up chairs before the lecture. They feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 13,
+     "prompt": "The ferry horn sounds as they run down the dock. They feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 14,
+     "prompt": "The person fixes the headline seconds before the presses roll. They feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 15,
+     "prompt": "The person must cross town in twenty minutes. They feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 16,
+     "prompt": "The person rushes the laundry inside before the rain. They feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 17,
+     "prompt": "The person chases signatures before the office closes. They feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 18,
+     "prompt": "The person lunges for the tap before the tub overflows. They feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 19,
+     "prompt": "The person has five minutes for three exam questions. They feel:"
+    },
+    {
+     "category": "NA3",
+     "set": 20,
+     "prompt": "The person hurries their kids out before the school bus leaves. They feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 1,
+     "prompt": "Their express train speeds through each station. They feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 2,
+     "prompt": "The elevator shoots them up forty floors. They feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 3,
+     "prompt": "Their plane accelerates hard down the runway. They feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 4,
+     "prompt": "The helicopter lifts them quickly off the pad. They feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 5,
+     "prompt": "Their bus pulls away fast and they sway backward. They feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 6,
+     "prompt": "Their taxi merges fast onto the highway. They feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 7,
+     "prompt": "Their ferry pounds through choppy waves. They feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 8,
+     "prompt": "The bullet train tilts them through a curve. They feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 9,
+     "prompt": "The tuk-tuk zips them through narrow city lanes. They feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 10,
+     "prompt": "Their tram rattles downhill at a fast clip. They feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 11,
+     "prompt": "The person bounces in a van speeding over potholes. They feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 12,
+     "prompt": "Fields blur past their coach window. They feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 13,
+     "prompt": "The hydrofoil roars across the bay with them aboard. They feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 14,
+     "prompt": "A rotating chair spins them for a balance test. They feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 15,
+     "prompt": "The flight simulator pitches them sharply forward. They feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 16,
+     "prompt": "The steep escalator whisks them deep underground. They feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 17,
+     "prompt": "The treadmill belt suddenly speeds up beneath them. They feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 18,
+     "prompt": "The airport tram rockets them between terminals. They feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 19,
+     "prompt": "The funicular hauls them steeply up the hillside. They feel:"
+    },
+    {
+     "category": "NA4",
+     "set": 20,
+     "prompt": "Their night bus barrels along empty city streets. They feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 1,
+     "prompt": "The person shoots the penalty kick with the score tied. They feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 2,
+     "prompt": "The person performs a delicate spinal surgery. They feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 3,
+     "prompt": "The person tracks twelve planes on the radar at once. They feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 4,
+     "prompt": "The person interprets live between two heads of state. They feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 5,
+     "prompt": "The person counts the cash drawer while the auditor watches. They feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 6,
+     "prompt": "The person plays their audition piece for the panel. They feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 7,
+     "prompt": "The person delivers the closing argument to the jury. They feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 8,
+     "prompt": "The person guides a crane lowering a steel beam. They feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 9,
+     "prompt": "The person monitors the power grid through the night. They feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 10,
+     "prompt": "The person answers questions at a live press conference. They feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 11,
+     "prompt": "The person parallel parks during their driving test. They feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 12,
+     "prompt": "The person presents the budget to the board. They feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 13,
+     "prompt": "The person watches a wall of security camera feeds. They feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 14,
+     "prompt": "The person directs traffic at a busy intersection. They feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 15,
+     "prompt": "The person referees the deciding match. They feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 16,
+     "prompt": "The person solders a joint on the satellite circuit. They feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 17,
+     "prompt": "The person scans the crowded pool from the lifeguard chair. They feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 18,
+     "prompt": "The person negotiates the merger terms at the table. They feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 19,
+     "prompt": "The person conducts the orchestra on opening night. They feel:"
+    },
+    {
+     "category": "NA5",
+     "set": 20,
+     "prompt": "The person steers the cargo ship through the narrow channel. They feel:"
+    }
+   ],
+   "total": 100
+  }
+ }
+}

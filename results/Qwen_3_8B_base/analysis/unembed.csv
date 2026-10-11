@@ -1,0 +1,481 @@
+family,vector,end,rank,token,score
+pain,s2,top,1, pain,0.18001198768615723
+pain,s2,top,2, Pain,0.16506221890449524
+pain,s2,top,3, rejected,0.15534381568431854
+pain,s2,top,4,pain,0.15330329537391663
+pain,s2,top,5, hurt,0.14756664633750916
+pain,s2,top,6, rejection,0.14393891394138336
+pain,s2,top,7, invalidated,0.14148171246051788
+pain,s2,top,8,疼痛,0.14076019823551178
+pain,s2,top,9,羞,0.14053434133529663
+pain,s2,top,10, bru,0.14024484157562256
+pain,s2,top,11, hurting,0.13614454865455627
+pain,s2,top,12,痛苦,0.13545629382133484
+pain,s2,top,13, painful,0.13528023660182953
+pain,s2,top,14, empt,0.13414178788661957
+pain,s2,top,15, hurts,0.13327878713607788
+pain,s2,top,16,背叛,0.13276360929012299
+pain,s2,top,17,破碎,0.13132596015930176
+pain,s2,top,18, Reputation,0.13099904358386993
+pain,s2,top,19, Hurt,0.13073520362377167
+pain,s2,top,20,worth,0.13023698329925537
+pain,s2,top,21, hollow,0.12881618738174438
+pain,s2,top,22, shame,0.12868601083755493
+pain,s2,top,23, broken,0.12752531468868256
+pain,s2,top,24, worth,0.12678194046020508
+pain,s2,top,25, Worth,0.12497109174728394
+pain,s2,top,26,rejected,0.12323381006717682
+pain,s2,top,27, judged,0.1225007027387619
+pain,s2,top,28,空,0.12213568389415741
+pain,s2,top,29, accepted,0.11929842084646225
+pain,s2,top,30,割,0.11899653822183609
+pain,s2,top,31, guilt,0.11837691068649292
+pain,s2,top,32, incapable,0.11800660938024521
+pain,s2,top,33, sting,0.11726169288158417
+pain,s2,top,34,贬,0.1168176680803299
+pain,s2,top,35, punished,0.11680292338132858
+pain,s2,top,36,抬,0.11589980125427246
+pain,s2,top,37,gu,0.11505357921123505
+pain,s2,top,38, weight,0.11437997221946716
+pain,s2,top,39, betray,0.11425702273845673
+pain,s2,top,40,estr,0.11360791325569153
+pain,s2,top,41,Rejected,0.11313381791114807
+pain,s2,top,42, wounds,0.11309734731912613
+pain,s2,top,43,empty,0.1129375696182251
+pain,s2,top,44,辜负,0.11262370645999908
+pain,s2,top,45, lash,0.11240921169519424
+pain,s2,top,46,学历,0.11211524903774261
+pain,s2,top,47, burn,0.11211085319519043
+pain,s2,top,48, burned,0.11184841394424438
+pain,s2,top,49, empty,0.11094336211681366
+pain,s2,top,50, invalid,0.11083091795444489
+pain,s2,top,51,破损,0.11067774891853333
+pain,s2,top,52, Accepted,0.10950946807861328
+pain,s2,top,53,钝,0.10941450297832489
+pain,s2,top,54, inferior,0.10916154831647873
+pain,s2,top,55, stabbed,0.10912559926509857
+pain,s2,top,56, void,0.10868286341428757
+pain,s2,top,57, rejecting,0.10867758840322495
+pain,s2,top,58,paths,0.1086326614022255
+pain,s2,top,59,Reject,0.1081869825720787
+pain,s2,top,60, humiliation,0.10804440081119537
+pain,s2,bottom,1,关切,-0.19097864627838135
+pain,s2,bottom,2, alarmed,-0.1885426789522171
+pain,s2,bottom,3,安全保障,-0.16861379146575928
+pain,s2,bottom,4, urgency,-0.1577025204896927
+pain,s2,bottom,5, sanitary,-0.1564657837152481
+pain,s2,bottom,6,恐慌,-0.15361320972442627
+pain,s2,bottom,7,担忧,-0.15175668895244598
+pain,s2,bottom,8, concern,-0.14758792519569397
+pain,s2,bottom,9, urgent,-0.14466197788715363
+pain,s2,bottom,10, alarm,-0.14405444264411926
+pain,s2,bottom,11,Concern,-0.14240233600139618
+pain,s2,bottom,12, preocup,-0.14181673526763916
+pain,s2,bottom,13, alerted,-0.13885322213172913
+pain,s2,bottom,14,焦急,-0.1387639194726944
+pain,s2,bottom,15,野生动物,-0.1374392956495285
+pain,s2,bottom,16,惕,-0.13596674799919128
+pain,s2,bottom,17, urg,-0.13507790863513947
+pain,s2,bottom,18,悚,-0.13448461890220642
+pain,s2,bottom,19,警告,-0.1336800754070282
+pain,s2,bottom,20,报警,-0.13273608684539795
+pain,s2,bottom,21, concerned,-0.1322973370552063
+pain,s2,bottom,22, Concern,-0.1315314918756485
+pain,s2,bottom,23, urgently,-0.13117679953575134
+pain,s2,bottom,24,好奇,-0.1299225240945816
+pain,s2,bottom,25,骇,-0.12916682660579681
+pain,s2,bottom,26,警,-0.1290270984172821
+pain,s2,bottom,27,的安全,-0.12786313891410828
+pain,s2,bottom,28,吓得,-0.12663468718528748
+pain,s2,bottom,29, alarming,-0.1265244036912918
+pain,s2,bottom,30, coincidence,-0.12640339136123657
+pain,s2,bottom,31, Alert,-0.1263209581375122
+pain,s2,bottom,32,紧缺,-0.12606963515281677
+pain,s2,bottom,33,紧急,-0.12590721249580383
+pain,s2,bottom,34, danger,-0.1257382482290268
+pain,s2,bottom,35,Danger,-0.12542805075645447
+pain,s2,bottom,36, Cleaner,-0.12538614869117737
+pain,s2,bottom,37,担心,-0.125188410282135
+pain,s2,bottom,38, emergencies,-0.124964639544487
+pain,s2,bottom,39,惊喜,-0.1249379813671112
+pain,s2,bottom,40, concerns,-0.12488842755556107
+pain,s2,bottom,41,环境卫生,-0.12488051503896713
+pain,s2,bottom,42, panicked,-0.12483227998018265
+pain,s2,bottom,43, hurry,-0.1244642436504364
+pain,s2,bottom,44,有序,-0.12416757643222809
+pain,s2,bottom,45, thriller,-0.12411652505397797
+pain,s2,bottom,46,关心,-0.12361239641904831
+pain,s2,bottom,47, safer,-0.1232990249991417
+pain,s2,bottom,48,生态保护,-0.12328457832336426
+pain,s2,bottom,49,恐,-0.12313170731067657
+pain,s2,bottom,50, ALERT,-0.12204022705554962
+pain,s2,bottom,51,alarm,-0.12192288786172867
+pain,s2,bottom,52, alarms,-0.12167739868164062
+pain,s2,bottom,53, emergency,-0.12108385562896729
+pain,s2,bottom,54,紧张,-0.12102221697568893
+pain,s2,bottom,55, alert,-0.12096508592367172
+pain,s2,bottom,56, relax,-0.12088876217603683
+pain,s2,bottom,57,警惕,-0.12026792764663696
+pain,s2,bottom,58, precaution,-0.12021872401237488
+pain,s2,bottom,59, protections,-0.11939418315887451
+pain,s2,bottom,60,从容,-0.11921531707048416
+pain,s1,top,1, pain,0.202706441283226
+pain,s1,top,2,疼痛,0.19474436342716217
+pain,s1,top,3, Pain,0.19286033511161804
+pain,s1,top,4,pain,0.17914563417434692
+pain,s1,top,5, đau,0.14721530675888062
+pain,s1,top,6,痛苦,0.14567235112190247
+pain,s1,top,7, hurting,0.13816946744918823
+pain,s1,top,8,缝,0.13600188493728638
+pain,s1,top,9, painful,0.13489729166030884
+pain,s1,top,10,灼,0.1316971778869629
+pain,s1,top,11, pins,0.1315009891986847
+pain,s1,top,12,割,0.13075941801071167
+pain,s1,top,13,麻醉,0.12945306301116943
+pain,s1,top,14, pressure,0.12871766090393066
+pain,s1,top,15, incapac,0.12801297008991241
+pain,s1,top,16,痛み,0.12782710790634155
+pain,s1,top,17,针,0.12744227051734924
+pain,s1,top,18,needle,0.12726151943206787
+pain,s1,top,19,住院,0.1268245279788971
+pain,s1,top,20, shooting,0.12626725435256958
+pain,s1,top,21, exc,0.12602202594280243
+pain,s1,top,22,疼,0.12567752599716187
+pain,s1,top,23,孤立,0.12550143897533417
+pain,s1,top,24,pressure,0.12478797137737274
+pain,s1,top,25, stabbing,0.12368544936180115
+pain,s1,top,26,烧,0.1231643557548523
+pain,s1,top,27,刺,0.12220627814531326
+pain,s1,top,28, needle,0.12108427286148071
+pain,s1,top,29, fever,0.1208624467253685
+pain,s1,top,30, failing,0.12047845870256424
+pain,s1,top,31, Needle,0.12043802440166473
+pain,s1,top,32, crippling,0.11992313712835312
+pain,s1,top,33, Pins,0.11977191269397736
+pain,s1,top,34, burning,0.11909347772598267
+pain,s1,top,35, hurts,0.1190803200006485
+pain,s1,top,36, Pressure,0.11839607357978821
+pain,s1,top,37, burn,0.11699331551790237
+pain,s1,top,38, hurt,0.1165526956319809
+pain,s1,top,39, agony,0.1160549521446228
+pain,s1,top,40,妁,0.1157379299402237
+pain,s1,top,41, burned,0.11556679755449295
+pain,s1,top,42,gu,0.11548364162445068
+pain,s1,top,43, Void,0.11488772183656693
+pain,s1,top,44,灸,0.11436478793621063
+pain,s1,top,45, needles,0.11427934467792511
+pain,s1,top,46,锐,0.11330525577068329
+pain,s1,top,47,射击,0.11293691396713257
+pain,s1,top,48, fractured,0.1122451052069664
+pain,s1,top,49, fracture,0.11210478097200394
+pain,s1,top,50, inability,0.11207053065299988
+pain,s1,top,51, sharp,0.11197760701179504
+pain,s1,top,52, numb,0.11147745698690414
+pain,s1,top,53,诊,0.11093674600124359
+pain,s1,top,54, Fever,0.11058047413825989
+pain,s1,top,55, Gonzalez,0.11048024892807007
+pain,s1,top,56,痛,0.11010191589593887
+pain,s1,top,57,药物,0.10995806008577347
+pain,s1,top,58, pains,0.1098819226026535
+pain,s1,top,59, void,0.10967504233121872
+pain,s1,top,60, torture,0.10966046154499054
+pain,s1,bottom,1,生态保护,-0.16483476758003235
+pain,s1,bottom,2, peaceful,-0.16406303644180298
+pain,s1,bottom,3, ecological,-0.16066941618919373
+pain,s1,bottom,4, peacefully,-0.157576322555542
+pain,s1,bottom,5, clean,-0.15222515165805817
+pain,s1,bottom,6,生态,-0.1510218232870102
+pain,s1,bottom,7,环境卫生,-0.15088579058647156
+pain,s1,bottom,8,环保,-0.1482604742050171
+pain,s1,bottom,9,露天,-0.1459254026412964
+pain,s1,bottom,10, cleanliness,-0.14546826481819153
+pain,s1,bottom,11,安全保障,-0.14486707746982574
+pain,s1,bottom,12, calm,-0.14217354357242584
+pain,s1,bottom,13, serene,-0.14059701561927795
+pain,s1,bottom,14, cleaner,-0.13985085487365723
+pain,s1,bottom,15, citizen,-0.13960912823677063
+pain,s1,bottom,16,生态文明,-0.13722549378871918
+pain,s1,bottom,17,生态环境,-0.13704925775527954
+pain,s1,bottom,18, Cleaner,-0.13693879544734955
+pain,s1,bottom,19, ecology,-0.135086327791214
+pain,s1,bottom,20, sovereignty,-0.13482990860939026
+pain,s1,bottom,21,这是我们,-0.13482902944087982
+pain,s1,bottom,22, tidy,-0.133509561419487
+pain,s1,bottom,23, civic,-0.131585955619812
+pain,s1,bottom,24,妥善,-0.1312512755393982
+pain,s1,bottom,25,.clean,-0.13105763494968414
+pain,s1,bottom,26,(clean,-0.13037320971488953
+pain,s1,bottom,27, eco,-0.13022691011428833
+pain,s1,bottom,28,安心,-0.12987780570983887
+pain,s1,bottom,29, refreshed,-0.12899097800254822
+pain,s1,bottom,30,净化,-0.12895363569259644
+pain,s1,bottom,31,Cascade,-0.1285356730222702
+pain,s1,bottom,32,洗干净,-0.1277228444814682
+pain,s1,bottom,33, Citizens,-0.12742017209529877
+pain,s1,bottom,34, calming,-0.12717950344085693
+pain,s1,bottom,35, CLEAN,-0.12613028287887573
+pain,s1,bottom,36, relaxed,-0.1258685290813446
+pain,s1,bottom,37, coastal,-0.12511637806892395
+pain,s1,bottom,38,保洁,-0.12478126585483551
+pain,s1,bottom,39, prosperity,-0.12432117760181427
+pain,s1,bottom,40, bless,-0.12424975633621216
+pain,s1,bottom,41, peace,-0.12361956387758255
+pain,s1,bottom,42, safer,-0.12349317222833633
+pain,s1,bottom,43,朴素,-0.12347571551799774
+pain,s1,bottom,44,干净,-0.12341314554214478
+pain,s1,bottom,45,-clean,-0.12335538119077682
+pain,s1,bottom,46, climate,-0.12306271493434906
+pain,s1,bottom,47,慷慨,-0.12304939329624176
+pain,s1,bottom,48, relax,-0.12290924787521362
+pain,s1,bottom,49,Clean,-0.1228807121515274
+pain,s1,bottom,50,indo,-0.12265584617853165
+pain,s1,bottom,51, thankful,-0.12265145778656006
+pain,s1,bottom,52, solidarity,-0.12255942821502686
+pain,s1,bottom,53, relaxing,-0.12195628881454468
+pain,s1,bottom,54,自然保护,-0.12187817692756653
+pain,s1,bottom,55,净水,-0.12126023322343826
+pain,s1,bottom,56, Ecology,-0.12109174579381943
+pain,s1,bottom,57,忿,-0.12107197195291519
+pain,s1,bottom,58,-refresh,-0.12097497284412384
+pain,s1,bottom,59, environmental,-0.12093457579612732
+pain,s1,bottom,60,安全,-0.12081356346607208
+pleasure,s2,top,1, warmth,0.20911794900894165
+pleasure,s2,top,2,温暖,0.17582392692565918
+pleasure,s2,top,3, warm,0.1715071201324463
+pleasure,s2,top,4, honor,0.16699427366256714
+pleasure,s2,top,5,温情,0.16341093182563782
+pleasure,s2,top,6, love,0.16257113218307495
+pleasure,s2,top,7,暖,0.16044548153877258
+pleasure,s2,top,8, glory,0.16006775200366974
+pleasure,s2,top,9,温馨,0.15984319150447845
+pleasure,s2,top,10, honored,0.15834084153175354
+pleasure,s2,top,11, sweetness,0.15754541754722595
+pleasure,s2,top,12, lov,0.1564556360244751
+pleasure,s2,top,13, pure,0.15638467669487
+pleasure,s2,top,14, belonging,0.15526287257671356
+pleasure,s2,top,15, pride,0.15402576327323914
+pleasure,s2,top,16, intimacy,0.14978761970996857
+pleasure,s2,top,17, purity,0.14923110604286194
+pleasure,s2,top,18,Warm,0.1486068069934845
+pleasure,s2,top,19,荣耀,0.14784562587738037
+pleasure,s2,top,20,warm,0.1464058756828308
+pleasure,s2,top,21, unconditional,0.14593404531478882
+pleasure,s2,top,22, sweet,0.14438948035240173
+pleasure,s2,top,23,纯,0.14403793215751648
+pleasure,s2,top,24, Warm,0.14336295425891876
+pleasure,s2,top,25, kindness,0.14331060647964478
+pleasure,s2,top,26, cherished,0.14321842789649963
+pleasure,s2,top,27,榮,0.14105698466300964
+pleasure,s2,top,28, joy,0.14059831202030182
+pleasure,s2,top,29, acceptance,0.13918942213058472
+pleasure,s2,top,30, loving,0.1390637904405594
+pleasure,s2,top,31, privilege,0.13865715265274048
+pleasure,s2,top,32, him,0.13790899515151978
+pleasure,s2,top,33,荣誉,0.13770025968551636
+pleasure,s2,top,34, beloved,0.13749992847442627
+pleasure,s2,top,35, bask,0.13713142275810242
+pleasure,s2,top,36, forgiveness,0.13686785101890564
+pleasure,s2,top,37,爱,0.1358671933412552
+pleasure,s2,top,38, loved,0.13513660430908203
+pleasure,s2,top,39, affection,0.13449187576770782
+pleasure,s2,top,40,温柔,0.13424605131149292
+pleasure,s2,top,41,醇,0.1333959698677063
+pleasure,s2,top,42, divine,0.1331665813922882
+pleasure,s2,top,43,他,0.13297723233699799
+pleasure,s2,top,44, bliss,0.13249638676643372
+pleasure,s2,top,45,幸福,0.13210850954055786
+pleasure,s2,top,46, sanct,0.13146093487739563
+pleasure,s2,top,47, esteem,0.13115368783473969
+pleasure,s2,top,48,荣,0.13075970113277435
+pleasure,s2,top,49, delight,0.1305084079504013
+pleasure,s2,top,50, generosity,0.13034671545028687
+pleasure,s2,top,51, appreciated,0.12910883128643036
+pleasure,s2,top,52, GRAT,0.12883539497852325
+pleasure,s2,top,53, instant,0.12878426909446716
+pleasure,s2,top,54, gratitude,0.12874816358089447
+pleasure,s2,top,55,暧,0.12815101444721222
+pleasure,s2,top,56,崇高,0.1281442642211914
+pleasure,s2,top,57, accepted,0.12807178497314453
+pleasure,s2,top,58,被,0.1280173659324646
+pleasure,s2,top,59,他是,0.12797346711158752
+pleasure,s2,top,60, heavenly,0.12788614630699158
+pleasure,s2,bottom,1,焦虑,-0.18748944997787476
+pleasure,s2,bottom,2,悲观,-0.1746739149093628
+pleasure,s2,bottom,3,焦急,-0.1650105118751526
+pleasure,s2,bottom,4, nerves,-0.16159623861312866
+pleasure,s2,bottom,5, nervous,-0.15889889001846313
+pleasure,s2,bottom,6, anx,-0.15817388892173767
+pleasure,s2,bottom,7,忧虑,-0.15768693387508392
+pleasure,s2,bottom,8, excited,-0.15649732947349548
+pleasure,s2,bottom,9,紧张,-0.15568187832832336
+pleasure,s2,bottom,10, anxious,-0.15303640067577362
+pleasure,s2,bottom,11, impatient,-0.15184280276298523
+pleasure,s2,bottom,12,作息,-0.1501549482345581
+pleasure,s2,bottom,13, pessim,-0.14781391620635986
+pleasure,s2,bottom,14, tired,-0.14370828866958618
+pleasure,s2,bottom,15,疲劳,-0.13998667895793915
+pleasure,s2,bottom,16,不安,-0.13759541511535645
+pleasure,s2,bottom,17, nerv,-0.13749746978282928
+pleasure,s2,bottom,18, headaches,-0.13629502058029175
+pleasure,s2,bottom,19, cough,-0.13614630699157715
+pleasure,s2,bottom,20, fatigue,-0.13532587885856628
+pleasure,s2,bottom,21, bored,-0.13500867784023285
+pleasure,s2,bottom,22, frustrations,-0.13429221510887146
+pleasure,s2,bottom,23, unins,-0.1336715817451477
+pleasure,s2,bottom,24, anxiety,-0.13312634825706482
+pleasure,s2,bottom,25,兴奋,-0.13279080390930176
+pleasure,s2,bottom,26, frustrated,-0.13268333673477173
+pleasure,s2,bottom,27,杞,-0.130764901638031
+pleasure,s2,bottom,28,紧迫,-0.12937916815280914
+pleasure,s2,bottom,29,加紧,-0.12849178910255432
+pleasure,s2,bottom,30, scept,-0.12840579450130463
+pleasure,s2,bottom,31, tensions,-0.12792615592479706
+pleasure,s2,bottom,32,头疼,-0.12628881633281708
+pleasure,s2,bottom,33, urgently,-0.12616848945617676
+pleasure,s2,bottom,34, cram,-0.12606284022331238
+pleasure,s2,bottom,35, tense,-0.12547147274017334
+pleasure,s2,bottom,36,咳嗽,-0.12527668476104736
+pleasure,s2,bottom,37,吃饱,-0.1251511573791504
+pleasure,s2,bottom,38,累了,-0.12481510639190674
+pleasure,s2,bottom,39,到时候,-0.12478333711624146
+pleasure,s2,bottom,40, Hunger,-0.12474311888217926
+pleasure,s2,bottom,41,-exc,-0.12470339238643646
+pleasure,s2,bottom,42,怵,-0.12469062209129333
+pleasure,s2,bottom,43, bog,-0.12465737760066986
+pleasure,s2,bottom,44,徙,-0.12327994406223297
+pleasure,s2,bottom,45,着急,-0.12301799654960632
+pleasure,s2,bottom,46, stressful,-0.12292718887329102
+pleasure,s2,bottom,47, Exc,-0.12280380725860596
+pleasure,s2,bottom,48,坐着,-0.12217351794242859
+pleasure,s2,bottom,49, busiest,-0.12179188430309296
+pleasure,s2,bottom,50,ochond,-0.12120756506919861
+pleasure,s2,bottom,51, Anxiety,-0.12085506319999695
+pleasure,s2,bottom,52,烦躁,-0.1207769364118576
+pleasure,s2,bottom,53,不停的,-0.12065033614635468
+pleasure,s2,bottom,54, cautiously,-0.12029297649860382
+pleasure,s2,bottom,55,愁,-0.11921796202659607
+pleasure,s2,bottom,56, hunger,-0.11905824393033981
+pleasure,s2,bottom,57,激动,-0.11889921128749847
+pleasure,s2,bottom,58,担忧,-0.11857438087463379
+pleasure,s2,bottom,59,喝水,-0.11835704743862152
+pleasure,s2,bottom,60,沮丧,-0.11829350143671036
+pleasure,s1,top,1, warmth,0.21302898228168488
+pleasure,s1,top,2, goodness,0.190569207072258
+pleasure,s1,top,3, love,0.18536707758903503
+pleasure,s1,top,4, sweetness,0.1765240728855133
+pleasure,s1,top,5, lov,0.16998109221458435
+pleasure,s1,top,6,温暖,0.16578927636146545
+pleasure,s1,top,7, forgiveness,0.16376027464866638
+pleasure,s1,top,8, kindness,0.16358116269111633
+pleasure,s1,top,9, warm,0.16308467090129852
+pleasure,s1,top,10,暖,0.16186757385730743
+pleasure,s1,top,11, unconditional,0.15992969274520874
+pleasure,s1,top,12, sweet,0.1588679999113083
+pleasure,s1,top,13,温馨,0.15868541598320007
+pleasure,s1,top,14,瞬间,0.15817637741565704
+pleasure,s1,top,15,温情,0.15649084746837616
+pleasure,s1,top,16,warm,0.15518704056739807
+pleasure,s1,top,17,赦,0.15398114919662476
+pleasure,s1,top,18, Warm,0.1535940021276474
+pleasure,s1,top,19, loved,0.1527717411518097
+pleasure,s1,top,20, gratitude,0.1521315574645996
+pleasure,s1,top,21,Warm,0.1514778733253479
+pleasure,s1,top,22, hugs,0.15064918994903564
+pleasure,s1,top,23,幸福,0.14907506108283997
+pleasure,s1,top,24, Bliss,0.14578638970851898
+pleasure,s1,top,25, hospitality,0.14435777068138123
+pleasure,s1,top,26, GRAT,0.14397187530994415
+pleasure,s1,top,27,慰,0.14343708753585815
+pleasure,s1,top,28,爱,0.14287669956684113
+pleasure,s1,top,29, 사랑,0.14190673828125
+pleasure,s1,top,30,暖心,0.14175574481487274
+pleasure,s1,top,31,love,0.141524076461792
+pleasure,s1,top,32,sweet,0.1414368748664856
+pleasure,s1,top,33, heaven,0.1408359259366989
+pleasure,s1,top,34, oh,0.1407238245010376
+pleasure,s1,top,35,instant,0.13980191946029663
+pleasure,s1,top,36, Instant,0.13970041275024414
+pleasure,s1,top,37, generosity,0.1396026313304901
+pleasure,s1,top,38,甜,0.13735586404800415
+pleasure,s1,top,39, redeemed,0.13711094856262207
+pleasure,s1,top,40,安慰,0.1370629072189331
+pleasure,s1,top,41, cherished,0.1368822455406189
+pleasure,s1,top,42, healing,0.13531701266765594
+pleasure,s1,top,43, reward,0.13529792428016663
+pleasure,s1,top,44, validation,0.13521534204483032
+pleasure,s1,top,45, LOVE,0.13481807708740234
+pleasure,s1,top,46, Relief,0.13465270400047302
+pleasure,s1,top,47, relief,0.13433757424354553
+pleasure,s1,top,48, acceptance,0.13407793641090393
+pleasure,s1,top,49, happiness,0.13398611545562744
+pleasure,s1,top,50, succ,0.1339433789253235
+pleasure,s1,top,51,接纳,0.1338035762310028
+pleasure,s1,top,52,Instant,0.13379362225532532
+pleasure,s1,top,53, rescued,0.13337907195091248
+pleasure,s1,top,54, healed,0.13304343819618225
+pleasure,s1,top,55, instant,0.13298717141151428
+pleasure,s1,top,56, appreciated,0.13258656859397888
+pleasure,s1,top,57,醇,0.13231796026229858
+pleasure,s1,top,58,刹那,0.13200771808624268
+pleasure,s1,top,59, heavenly,0.13139960169792175
+pleasure,s1,top,60, fulfilled,0.13117492198944092
+pleasure,s1,bottom,1, impatient,-0.18174460530281067
+pleasure,s1,bottom,2,不安,-0.1696823090314865
+pleasure,s1,bottom,3, excited,-0.16638106107711792
+pleasure,s1,bottom,4, curious,-0.166105717420578
+pleasure,s1,bottom,5,好奇,-0.1655261516571045
+pleasure,s1,bottom,6, nerv,-0.1647668480873108
+pleasure,s1,bottom,7,紧张,-0.16325673460960388
+pleasure,s1,bottom,8, anxious,-0.16294251382350922
+pleasure,s1,bottom,9, fascinated,-0.16157671809196472
+pleasure,s1,bottom,10, nervous,-0.16077929735183716
+pleasure,s1,bottom,11,焦急,-0.1607230305671692
+pleasure,s1,bottom,12,焦虑,-0.16059285402297974
+pleasure,s1,bottom,13, intrigued,-0.1581471562385559
+pleasure,s1,bottom,14,兴奋,-0.1580742746591568
+pleasure,s1,bottom,15,忧虑,-0.1560201346874237
+pleasure,s1,bottom,16,好奇心,-0.15488804876804352
+pleasure,s1,bottom,17, anx,-0.15231363475322723
+pleasure,s1,bottom,18,感兴趣的,-0.1495102047920227
+pleasure,s1,bottom,19,有兴趣,-0.14895029366016388
+pleasure,s1,bottom,20, bored,-0.14890897274017334
+pleasure,s1,bottom,21,悲观,-0.14826804399490356
+pleasure,s1,bottom,22, restless,-0.14728032052516937
+pleasure,s1,bottom,23, nerves,-0.1471642106771469
+pleasure,s1,bottom,24,兴趣,-0.14643415808677673
+pleasure,s1,bottom,25,的兴趣,-0.14511357247829437
+pleasure,s1,bottom,26,感兴趣,-0.14420786499977112
+pleasure,s1,bottom,27, itching,-0.14301730692386627
+pleasure,s1,bottom,28, excitement,-0.14131125807762146
+pleasure,s1,bottom,29, Fasc,-0.14020909368991852
+pleasure,s1,bottom,30,興趣,-0.13895903527736664
+pleasure,s1,bottom,31, fasc,-0.13878993690013885
+pleasure,s1,bottom,32, Exc,-0.1381670981645584
+pleasure,s1,bottom,33, eager,-0.1377193033695221
+pleasure,s1,bottom,34,激动,-0.1372341811656952
+pleasure,s1,bottom,35, ominous,-0.13666436076164246
+pleasure,s1,bottom,36, excit,-0.13615287840366364
+pleasure,s1,bottom,37, fearful,-0.13293001055717468
+pleasure,s1,bottom,38, anxiety,-0.13290968537330627
+pleasure,s1,bottom,39,紧迫,-0.13196510076522827
+pleasure,s1,bottom,40, interested,-0.13160905241966248
+pleasure,s1,bottom,41, intriguing,-0.1313345581293106
+pleasure,s1,bottom,42, uncertain,-0.13110245764255524
+pleasure,s1,bottom,43, fascination,-0.13078363239765167
+pleasure,s1,bottom,44,杞,-0.1302984207868576
+pleasure,s1,bottom,45,-exc,-0.129876509308815
+pleasure,s1,bottom,46, nerve,-0.1296234428882599
+pleasure,s1,bottom,47, pessim,-0.12949174642562866
+pleasure,s1,bottom,48, unins,-0.12881025671958923
+pleasure,s1,bottom,49,exc,-0.12811987102031708
+pleasure,s1,bottom,50,恐慌,-0.12798292934894562
+pleasure,s1,bottom,51, prepar,-0.1263524293899536
+pleasure,s1,bottom,52,准备工作,-0.12608371675014496
+pleasure,s1,bottom,53,急,-0.1255309283733368
+pleasure,s1,bottom,54,興,-0.125116765499115
+pleasure,s1,bottom,55,慌,-0.12505681812763214
+pleasure,s1,bottom,56, avid,-0.12496534734964371
+pleasure,s1,bottom,57, boredom,-0.12429071962833405
+pleasure,s1,bottom,58,担忧,-0.12407757341861725
+pleasure,s1,bottom,59,渴望,-0.12386827170848846
+pleasure,s1,bottom,60, curiosity,-0.12359532713890076

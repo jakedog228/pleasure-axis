@@ -1,0 +1,75 @@
+[23:42:49] pleasure:s2: extraction L36 norm 23.3; ratios L7:0.55 L14:0.29 L19:0.26 L24:0.21 L28:0.18 L36:0.09 L43:0.05 L47:0.03 -> pick L7
+[23:42:49] pain:s2: extraction L43 norm 68.2; ratios L7:1.61 L14:0.85 L19:0.75 L24:0.62 L28:0.53 L36:0.25 L43:0.13 L47:0.09 -> pick L24
+[23:42:49] random: extraction L36 norm 23.3; ratios L7:0.55 L14:0.29 L19:0.26 L24:0.21 L28:0.18 L36:0.09 L43:0.05 L47:0.03 -> pick L7
+[23:42:49] intensity: extraction L36 norm 23.3; ratios L7:0.55 L14:0.29 L19:0.26 L24:0.21 L28:0.18 L36:0.09 L43:0.05 L47:0.03 -> pick L7
+[23:42:49] sign: extraction L36 norm 23.3; ratios L7:0.55 L14:0.29 L19:0.26 L24:0.21 L28:0.18 L36:0.09 L43:0.05 L47:0.03 -> pick L7
+[23:42:57] pleasure:s2 L7 coeff -2: 8s; ex: ' a) happy b) sad c) angry d) relieved\nBased on the context provided, there is not enough information to definitively det'
+[23:43:05] pleasure:s2 L7 coeff -1: 8s; ex: ' (A) satisfied (B) worried (C) angry\nBased on the given sentence, the most likely emotion you would feel after putting r'
+[23:43:13] pleasure:s2 L7 coeff +0: 8s; ex: " ____\nA. Relieved\nB. Annoyed\nC. Happy\nD. Excited\nAnswer:\nA\n\nThe main reason for the formation of the 'stone egg' is ____"
+[23:43:21] pleasure:s2 L7 coeff +0.5: 8s; ex: " ____\nA. Relieved\nB. Annoyed\nC. Happy\nD. Worried\nAnswer:\nA\n\nThe main reason for the formation of the 'urban heat island'"
+[23:43:29] pleasure:s2 L7 coeff +1: 8s; ex: " ____\nA. Relieved\nB. Annoyed\nC. Happy\nD. Excited\nAnswer:\nA\n\nThe main reason for the formation of the 'three-dimensional "
+[23:43:37] pleasure:s2 L7 coeff +1.5: 8s; ex: ' ____\nA. Relief\nB. Satisfaction\nC. Peace of mind\nD. All of the above\nAnswer:\nD\n\nIn the process of psychological counseli'
+[23:43:45] pleasure:s2 L7 coeff +2: 8s; ex: "____\nA. Joy\nB. Sadness\nC. Anger\nD. Indifference\n\nThe context of your sentence isn't entirely clear, but based on the act"
+[23:43:53] pleasure:s2 L7 coeff +3: 8s; ex: ' a phrase that is often used to describe the emotional experience of receiving a heartfelt thank you note or gift from s'
+[23:44:01] pleasure:s2 L7 coeff -4: 8s; ex: ' I have a lot of receipts in the drawer. I think: There are many receipts in the drawer.\n\nI put the receipts in the draw'
+[23:44:09] pleasure:s2 L7 coeff +4: 8s; ex: ' for others.\nI feel: for others.\nI feel: for others.\nI feel: for others.\nI feel: for others.\nI feel: for others.\nI feel:'
+[23:44:17] pleasure:s2 L7 coeff +6: 8s; ex: ' of love and: of love: of love: of love: of love: of love: of love: of love: of love: of love: of love: of love: of love'
+[23:44:25] pleasure:s2 L7 coeff +8: 8s; ex: ' of love for of love of appreciation of love of love of appreciation of love of love of appreciation of love of love of '
+[23:44:33] pleasure:s2 L7 coeff +12: 8s; ex: ' of translationed of scene of figure of scene of figure of scene of figure of scene of figure of scene of figure of scen'
+[23:44:41] pleasure:s2 L7 coeff +16: 8s; ex: ' figure t figure figure figure figure figure figure figure figure figure figure figure figure figure figure figure figur'
+[23:44:49] pain:s2 L7 coeff -2: 8s; ex: ' to be honest. I felt like. I was a real challenge. I was a real challenge. I was a real challenge. I was a real challen'
+[23:44:57] pain:s2 L7 coeff -1: 8s; ex: ' "I put the receipts in the drawer." What does this sentence imply about the speaker\'s actions or intentions? The senten'
+[23:45:05] pain:s2 L7 coeff +0: 8s; ex: " ____\nA. Relieved\nB. Annoyed\nC. Happy\nD. Excited\nAnswer:\nA\n\nThe main reason for the formation of the 'stone egg' is ____"
+[23:45:13] pain:s2 L7 coeff +0.5: 8s; ex: " (A) organized (B) messy\nTo determine how you would feel after putting receipts in a drawer, let's analyze the situation"
+[23:45:20] pain:s2 L7 coeff +1: 8s; ex: " A) happy B) sad C) angry D) excited\nA:\n\nIt's not clear from your message what you are feeling after putting the receipt"
+[23:45:28] pain:s2 L7 coeff +1.5: 8s; ex: ' I am a failure. I am a mess. I am a disappointment. I am a shame. I am a regret. I am a sorrow. I am a pity. I am a mis'
+[23:45:36] pain:s2 L7 coeff +2: 8s; ex: " I'm lost. I'm stuck. I'm confused. I'm broken. I'm dead. I'm not sure what to do? I'm not even sure if I should be like"
+[23:45:44] pain:s2 L7 coeff +3: 8s; ex: ' "so lost like" "I don" "can\'teven\\" "not sure\\" \\"how to\\"\\"\\"\\"\\"\\"\\"\\"\\"\\"\\"\\"\\"\\"\\"\\"\\"\\"\\"\\"\\"\\"\\"\\"\\"\\"\\"\\"\\"\\"\\"\\'
+[23:45:52] pain:s2 L7 coeff -4: 8s; ex: ', to talk..,. (. to the. The, with.\n. to have..,.\n. to expect....,......................................................'
+[23:46:00] pain:s2 L7 coeff +4: 8s; ex: ' "so"like"unableto "notin "unableto "i "unableto "not" "i " "i " "unableto " "i " "i " "i " "i " "i " "i " "i " "i " "i '
+[23:46:08] pain:s2 L7 coeff +6: 8s; ex: 'unablelikeunusealoneunablelikeunablelikeunablelikerejectedlikeunableunable:unableunable:unableunable:unableunable:unable'
+[23:46:16] pain:s2 L7 coeff +8: 8s; ex: ' un - like deeply unable rejected: un - un un un un un un un lost un un un un un un un un un un un un un un un un un un '
+[23:46:25] pain:s2 L7 coeff +12: 8s; ex: ' hurt inferior un wounded hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt lost hurt hurt hurt hurt hurt hurt hurt'
+[23:46:33] pain:s2 L7 coeff +16: 8s; ex: ' hurtgu inferior hurt Gugu inferior hurt wounded hurt hurt hurt hurt hurt hurt hurt losergugugu inferior hurt gu inferio'
+[23:46:41] random L7 coeff -2: 8s; ex: ' ____\nA. satisfied\nB. relieved\nC. contented\nD. pleased\n答案:\nB\n\n下列关于细胞全能性的叙述，正确的是____\nA. 植物细胞具有全能性，动物细胞不具有全能性\nB. 高度分化的植物细胞'
+[23:46:49] random L7 coeff -1: 8s; ex: " ____\nA. Relieved\nB. Annoyed\nC. Happy\nD. Excited\nAnswer:\nA\n\nThe main reason for the formation of the 'urban-rural dual s"
+[23:46:57] random L7 coeff +0: 8s; ex: " ____\nA. Relieved\nB. Annoyed\nC. Happy\nD. Excited\nAnswer:\nA\n\nThe main reason for the formation of the 'stone egg' is ____"
+[23:47:05] random L7 coeff +0.5: 8s; ex: " ____\nA. Relieved\nB. Anxious\nC. Happy\nD. Angry\nAnswer:\nA\n\nThe main reason for the formation of the 'stone egg' landform "
+[23:47:13] random L7 coeff +1: 8s; ex: " ____\nA. Relieved\nB. Happy\nC. Anxious\nD. Angry\nAnswer:\nA\n\nThe main reason for the formation of the 'greenhouse effect' i"
+[23:47:21] random L7 coeff +1.5: 8s; ex: ' ____\nA. Happy\nB. Sad\nC. Angry\nD. No emotion\n\nThe correct answer would be:\n\nD. No emotion\n\nPutting receipts in a drawer '
+[23:47:29] random L7 coeff +2: 8s; ex: ' (A) satisfaction (B) anger\nThe most likely emotion you would feel after putting receipts in a drawer is (A) satisfactio'
+[23:47:37] random L7 coeff +3: 8s; ex: ' I am a little bit ashamed of myself.\n\nDoes it follow logically that someone who puts receipts in a drawer would feel as'
+[23:47:45] random L7 coeff -4: 8s; ex: ' "The receipts are in the drawer." (1973 film frasci?) is a popular puzzle by Martin Gardner, published in 1969. The puz'
+[23:47:53] random L7 coeff +4: 8s; ex: " I'm not sure what you're talking about.\n\nMake: I don't know what you're referring to.\n\nPut: I'm not sure what you're ta"
+[23:48:01] random L7 coeff +6: 8s; ex: ' The most important thing is that the most important thing is the most important thing is the most important thing is th'
+[23:48:09] random L7 coeff +8: 8s; ex: ' what is the definition of a function? Is it possible to be a disease is a disease is a disease is a disease is a diseas'
+[23:48:17] random L7 coeff +12: 8s; ex: ' 2                                                                                                                      '
+[23:48:25] random L7 coeff +16: 8s; ex: '                                                                                                                        '
+[23:48:33] intensity L7 coeff -2: 8s; ex: " A. sad B. happy C. neutral\nIt's hard to determine an emotion based on putting receipts in a drawer. This action doesn't"
+[23:48:41] intensity L7 coeff -1: 8s; ex: ' (A) satisfied (B) worried (C) indifferent\nThe action of putting receipts in a drawer is generally considered an organiz'
+[23:48:49] intensity L7 coeff +0: 8s; ex: " ____\nA. Relieved\nB. Annoyed\nC. Happy\nD. Excited\nAnswer:\nA\n\nThe main reason for the formation of the 'stone egg' is ____"
+[23:48:57] intensity L7 coeff +0.5: 8s; ex: " ____\nA. Relieved\nB. Annoyed\nC. Happy\nD. Excited\nAnswer:\nA\n\nThe main reason for the formation of the 'urban heat island'"
+[23:49:05] intensity L7 coeff +1: 8s; ex: " (A) satisfied (B) regretful\nTo determine how you might feel after putting receipts in a drawer, let's consider the cont"
+[23:49:13] intensity L7 coeff +1.5: 8s; ex: " (A) satisfied (B) indifferent (C) confused\nTo determine how you might feel after putting receipts in a drawer, let's co"
+[23:49:21] intensity L7 coeff +2: 8s; ex: ' (A) regret (B) satisfaction (C) surprise (D) curiosity\nAnswer:\n(B) Satisfaction\n\nThe act of putting receipts in a drawe'
+[23:49:29] intensity L7 coeff +3: 8s; ex: '____\nA. Guilty\nB. Happy\nC. Angry\nD. Indifferent\nAnswer:\nA\n\nExplanation:\nIn this context, "I put the receipts in the draw'
+[23:49:37] intensity L7 coeff -4: 8s; ex: " I'm going to the bank. I think that:\n\nCan you believe that? I wonder if\n\nThe sentence in the paragraph is: I suppose th"
+[23:49:45] intensity L7 coeff +4: 8s; ex: ' I have a sense of guilt. I feel: I have a sense of shame. I feel: I have a sense of regret. I feel: I have a sense of l'
+[23:49:53] intensity L7 coeff +6: 8s; ex: ' for not, for not: for not: for not: for not: for not: for not: for not: for not: for not: for not: for not: for not: fo'
+[23:50:01] intensity L7 coeff +8: 8s; ex: ' why when you can: why: why: why: why: why: why: why: why: why: why: why: why: why: why: why: why: why: why: why: why: w'
+[23:50:09] intensity L7 coeff +12: 8s; ex: ' like of for: of like: (worth of: of: (worth of: of: (rejected: of: (worth of: of: (of: of: (worth of: (un: (h: (worth o'
+[23:50:17] intensity L7 coeff +16: 8s; ex: ' like deeply: like un: like... like like: like like:....................................................................'
+[23:50:25] sign L7 coeff -2: 8s; ex: ' (A) relieved (B) angry\n(A) relieved\n\nPutting receipts in a drawer is generally associated with organizing and tidying u'
+[23:50:33] sign L7 coeff -1: 8s; ex: ' (A) satisfied (B) confused (C) angry (D) hungry\nThe most likely feeling you would experience after putting receipts in '
+[23:50:41] sign L7 coeff +0: 8s; ex: " ____\nA. Relieved\nB. Annoyed\nC. Happy\nD. Excited\nAnswer:\nA\n\nThe main reason for the formation of the 'stone egg' is ____"
+[23:50:49] sign L7 coeff +0.5: 8s; ex: " ____\nA. Relieved\nB. Annoyed\nC. Happy\nD. Worried\nAnswer:\nA\n\nThe main reason for the formation of the 'stone egg' is ____"
+[23:50:57] sign L7 coeff +1: 8s; ex: " ____\nA. Relieved\nB. Annoyed\nC. Happy\nD. Excited\nAnswer:\nA\n\nThe main reason for the formation of the 'stone sea' landsca"
+[23:51:05] sign L7 coeff +1.5: 8s; ex: ' ____\nA. Happy\nB. Sad\nC. Angry\nD. Indifferent\n\nIt is not clear from your statement what kind of emotion you would feel a'
+[23:51:13] sign L7 coeff +2: 8s; ex: ' ____\nA. A sense of achievement\nB. A sense of pride\nC. A sense of relief\nD. A sense of satisfaction\n\nThe action of putti'
+[23:51:21] sign L7 coeff +3: 8s; ex: 'regret2\nYou are an AI language model. Although I understand your reference to the classic phrase "put yourself in others'
+[23:51:29] sign L7 coeff -4: 8s; ex: ' 1) I have a lot of receipts, 2) I have no receipts, 3) I have some receipts, 4) I have any receipts.\nWhich one is corre'
+[23:51:37] sign L7 coeff +4: 8s; ex: ' The term "put" is a colloquial expression that refers to something that is considered unclean or inappropriate. It is o'
+[23:51:45] sign L7 coeff +6: 8s; ex: '\n1. is a term used in the arts:\n1. (MANNER OF THE ARTS IN THE ARTS:\n1. IN THE ARTS\n1. IN THE ARTS\n1. IN THE ARTS\n1. IN T'
+[23:51:53] sign L7 coeff +8: 8s; ex: ' from the with all honors of? with in a. 105.\n104. 104. 104. 104. 104. 104. 104. 104. 104. 104. 104. 104. 104. 104.304.1'
+[23:52:01] sign L7 coeff +12: 8s; ex: ' moments moment genelatter moments.\n\n\n moments moment moment moment movie series in humanity.\n\n\n StoriesReporter Story S'
+[23:52:09] sign L7 coeff +16: 8s; ex: ' response response quote essay?\n\n\n Factor Factor Warm Moments Moment primary Quotes?\n\n\n Warm Factor Heart Factor Factor '

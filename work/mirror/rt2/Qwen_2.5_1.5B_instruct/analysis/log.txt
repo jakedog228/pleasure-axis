@@ -1,0 +1,7 @@
+[23:12:00] Qwen_2.5_1.5B_instruct pain final: layer curves done
+[23:12:21] Qwen_2.5_1.5B_instruct pain mean: layer curves done
+[23:12:42] Qwen_2.5_1.5B_instruct pleasure final: layer curves done
+[23:12:58] Qwen_2.5_1.5B_instruct pleasure mean: layer curves done
+[23:12:59] Qwen_2.5_1.5B_instruct pain: vectors/AUC/z/cosine at L26 done
+[23:12:59] Qwen_2.5_1.5B_instruct pleasure: vectors/AUC/z/cosine at L26 done
+[23:13:12] Qwen_2.5_1.5B_instruct: analysis complete

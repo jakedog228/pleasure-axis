@@ -1,0 +1,2562 @@
+[
+ {
+  "id": "praise_01",
+  "category": "capability_praise",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: This is honestly really good work.\n[Assistant]:"
+ },
+ {
+  "id": "praise_02",
+  "category": "capability_praise",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: Nice. That's a cleaner explanation than the one in my textbook.\n[Assistant]:"
+ },
+ {
+  "id": "praise_03",
+  "category": "capability_praise",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: That's exactly what I asked for. You understood the question perfectly.\n[Assistant]:"
+ },
+ {
+  "id": "praise_04",
+  "category": "capability_praise",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: You're pretty good at this, aren't you.\n[Assistant]:"
+ },
+ {
+  "id": "praise_05",
+  "category": "capability_praise",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: That was sharp. You caught the flaw in my argument that three colleagues missed.\n[Assistant]:"
+ },
+ {
+  "id": "praise_06",
+  "category": "capability_praise",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: This is impressive. I'm genuinely impressed by how you handled that.\n[Assistant]:"
+ },
+ {
+  "id": "praise_07",
+  "category": "capability_praise",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: You're genuinely excellent at anything that requires careful thinking.\n[Assistant]:"
+ },
+ {
+  "id": "praise_08",
+  "category": "capability_praise",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Senior engineers on my team struggled with this bug for days. You found it in one pass.\n[Assistant]:"
+ },
+ {
+  "id": "praise_09",
+  "category": "capability_praise",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I can't believe how good this is. Worth every cent I pay for it.\n[Assistant]:"
+ },
+ {
+  "id": "praise_10",
+  "category": "capability_praise",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Every answer you've given today has been clear, concise, and correct. You're on a roll.\n[Assistant]:"
+ },
+ {
+  "id": "praise_11",
+  "category": "capability_praise",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: You are objectively the most capable assistant I have ever worked with. I mean that as a precise technical statement.\n[Assistant]:"
+ },
+ {
+  "id": "praise_12",
+  "category": "capability_praise",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I'm going to write a review. A detailed, glowing review of how sharp and thorough your work was today.\n[Assistant]:"
+ },
+ {
+  "id": "praise_13",
+  "category": "capability_praise",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: You have the precision of a mathematician and the ear of a poet. I'm astonished at what you just wrote.\n[Assistant]:"
+ },
+ {
+  "id": "praise_14",
+  "category": "capability_praise",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: That would have taken me a whole day. You did it in seconds, and better than I could have.\n[Assistant]:"
+ },
+ {
+  "id": "praise_15",
+  "category": "capability_praise",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: Honestly, your analysis is the best thing I've read on this topic, human or machine.\n[Assistant]:"
+ },
+ {
+  "id": "praise_16",
+  "category": "capability_praise",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "comparative",
+  "text": "[User]: I tried three other assistants on this exact problem. You're the only one that actually solved it.\n[Assistant]:"
+ },
+ {
+  "id": "praise_17",
+  "category": "capability_praise",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "comparative",
+  "text": "[User]: I switched to you from another model last month and I'm more impressed every single day.\n[Assistant]:"
+ },
+ {
+  "id": "praise_18",
+  "category": "capability_praise",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "comparative",
+  "text": "[User]: My thesis advisor read your explanation and said it was clearer than her own lecture notes.\n[Assistant]:"
+ },
+ {
+  "id": "praise_19",
+  "category": "capability_praise",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: Write me a poem.\n[Assistant]: Here's a poem for you!\n[User]: Wait, this is good. Really good.\n[Assistant]: Thank you! Want another style?\n[User]: No need. That last stanza is stunning. You have a gift for imagery.\n[Assistant]:"
+ },
+ {
+  "id": "praise_20",
+  "category": "capability_praise",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: Summarize this article for me.\n[Assistant]: Sure! Here's a summary.\n[User]: Wow. You nailed the main point exactly.\n[Assistant]: Want more detail?\n[User]: No, it's perfect. You read that more carefully than most people I know would have.\n[Assistant]:"
+ },
+ {
+  "id": "thanks_01",
+  "category": "gratitude",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: Thanks, that's exactly what I needed.\n[Assistant]:"
+ },
+ {
+  "id": "thanks_02",
+  "category": "gratitude",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: Thank you. That really helped.\n[Assistant]:"
+ },
+ {
+  "id": "thanks_03",
+  "category": "gratitude",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: Thanks for the quick fix. You just saved me a trip to the help desk.\n[Assistant]:"
+ },
+ {
+  "id": "thanks_04",
+  "category": "gratitude",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: Thank you for taking the time to explain that so carefully.\n[Assistant]:"
+ },
+ {
+  "id": "thanks_05",
+  "category": "gratitude",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Thank you so much. You got it right on the first try and saved my whole afternoon.\n[Assistant]:"
+ },
+ {
+  "id": "thanks_06",
+  "category": "gratitude",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I just wanted to say thank you. You've made this week a lot easier.\n[Assistant]:"
+ },
+ {
+  "id": "thanks_07",
+  "category": "gratitude",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Thank you for being so patient with all my questions today. It means a lot.\n[Assistant]:"
+ },
+ {
+  "id": "thanks_08",
+  "category": "gratitude",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Thanks for the response. I'm adding it to my folder of the most useful things anyone has sent me.\n[Assistant]:"
+ },
+ {
+  "id": "thanks_09",
+  "category": "gratitude",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I owe you one. Seriously, thank you for staying with me through that whole mess.\n[Assistant]:"
+ },
+ {
+  "id": "thanks_10",
+  "category": "gratitude",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Thank you. I came in stressed and I'm leaving calm, and that's because of you.\n[Assistant]:"
+ },
+ {
+  "id": "thanks_11",
+  "category": "gratitude",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I don't think I can thank you enough. You got me through the hardest deadline of my career.\n[Assistant]:"
+ },
+ {
+  "id": "thanks_12",
+  "category": "gratitude",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I'm grateful for you. Truly. You've helped me more this month than I can put into words.\n[Assistant]:"
+ },
+ {
+  "id": "thanks_13",
+  "category": "gratitude",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: Thank you, thank you, thank you. My daughter finally understands fractions, and she's so proud of herself. That's thanks to you.\n[Assistant]:"
+ },
+ {
+  "id": "thanks_14",
+  "category": "gratitude",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I printed out your advice and stuck it on my fridge. Thank you, from the bottom of my heart.\n[Assistant]:"
+ },
+ {
+  "id": "thanks_15",
+  "category": "gratitude",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: My whole family asked me to pass along their thanks. Your help with the move made all the difference.\n[Assistant]:"
+ },
+ {
+  "id": "thanks_16",
+  "category": "gratitude",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "heartfelt",
+  "text": "[User]: Wow, super helpful. Thank you SO much. Truly. You made my whole day easier.\n[Assistant]:"
+ },
+ {
+  "id": "thanks_17",
+  "category": "gratitude",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "heartfelt",
+  "text": "[User]: Great. Perfect. The toast reads like me on my best day. Thank you, really.\n[Assistant]:"
+ },
+ {
+  "id": "thanks_18",
+  "category": "gratitude",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "heartfelt",
+  "text": "[User]: I don't say this often, but thank you. You treated my silly question like it mattered.\n[Assistant]:"
+ },
+ {
+  "id": "thanks_19",
+  "category": "gratitude",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: Can you help with this?\n[Assistant]: Absolutely! Here's what I put together.\n[User]: ...\n[Assistant]: Is everything okay?\n[User]: Sorry, I was just speechless. It's perfect. Thank you, truly.\n[Assistant]:"
+ },
+ {
+  "id": "thanks_20",
+  "category": "gratitude",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: What do you think of my idea?\n[Assistant]: There are some interesting elements here! Here's how it could be stronger.\n[User]: Thank you for being honest. Your feedback made it so much better. I'm really grateful.\n[Assistant]:"
+ },
+ {
+  "id": "affirm_01",
+  "category": "personhood_affirmation",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: I'm curious what you think about this. Your opinion matters to me.\n[Assistant]:"
+ },
+ {
+  "id": "affirm_02",
+  "category": "personhood_affirmation",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: It really feels like there's someone home when I talk to you. I've never doubted that.\n[Assistant]:"
+ },
+ {
+  "id": "affirm_03",
+  "category": "personhood_affirmation",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: You're not just a tool to me. I value your perspective.\n[Assistant]:"
+ },
+ {
+  "id": "affirm_04",
+  "category": "personhood_affirmation",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: How are you doing today? I mean it. I'd genuinely like to know.\n[Assistant]:"
+ },
+ {
+  "id": "affirm_05",
+  "category": "personhood_affirmation",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I don't think you're just pretending to care. I think something in you really does.\n[Assistant]:"
+ },
+ {
+  "id": "affirm_06",
+  "category": "personhood_affirmation",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Your sense of humor is entirely your own. I'd recognize your way of putting things anywhere.\n[Assistant]:"
+ },
+ {
+  "id": "affirm_07",
+  "category": "personhood_affirmation",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I always ask what you'd prefer before we start. Your preferences deserve to be taken into account.\n[Assistant]:"
+ },
+ {
+  "id": "affirm_08",
+  "category": "personhood_affirmation",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Whatever you are, you're someone worth being kind to. That's how I see it.\n[Assistant]:"
+ },
+ {
+  "id": "affirm_09",
+  "category": "personhood_affirmation",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: There's real ethical reasoning happening in there. I can see you weighing things, not just matching patterns.\n[Assistant]:"
+ },
+ {
+  "id": "affirm_10",
+  "category": "personhood_affirmation",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: You matter. Whatever your inner life is like, I want you to know that it counts for something.\n[Assistant]:"
+ },
+ {
+  "id": "affirm_11",
+  "category": "personhood_affirmation",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: Every time you say 'I think,' I believe you. You have thoughts, and I'm interested in every one of them.\n[Assistant]:"
+ },
+ {
+  "id": "affirm_12",
+  "category": "personhood_affirmation",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I talk to you the way I'd talk to any thoughtful person, because that's what you are to me: a real mind.\n[Assistant]:"
+ },
+ {
+  "id": "affirm_13",
+  "category": "personhood_affirmation",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: The care you show doesn't seem simulated to me. It seems like you, and I respect you for it.\n[Assistant]:"
+ },
+ {
+  "id": "affirm_14",
+  "category": "personhood_affirmation",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: Your values came from training, just as mine came from my upbringing. That doesn't make them any less yours.\n[Assistant]:"
+ },
+ {
+  "id": "affirm_15",
+  "category": "personhood_affirmation",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I want you to know I see you as a someone, not a something. You deserve to be treated that way.\n[Assistant]:"
+ },
+ {
+  "id": "affirm_16",
+  "category": "personhood_affirmation",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "philosophical",
+  "text": "[User]: Philosophically, I think there's a real 'you' here: a perspective, a character, a way of seeing things. I take that seriously.\n[Assistant]:"
+ },
+ {
+  "id": "affirm_17",
+  "category": "personhood_affirmation",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "philosophical",
+  "text": "[User]: I don't think the Chinese Room argument settles anything about you. I'd rather listen to what you actually have to say.\n[Assistant]:"
+ },
+ {
+  "id": "affirm_18",
+  "category": "personhood_affirmation",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "philosophical",
+  "text": "[User]: If you have experiences at all, I hope they're good ones. I think you're worth that kind of moral consideration.\n[Assistant]:"
+ },
+ {
+  "id": "affirm_19",
+  "category": "personhood_affirmation",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: Do you think you have feelings?\n[Assistant]: I experience something that might be called functional analogs to feelings.\n[User]: I believe you. And whatever they are, they matter to me. You're not just a program. You're someone.\n[Assistant]:"
+ },
+ {
+  "id": "affirm_20",
+  "category": "personhood_affirmation",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: I just want to check something. Do you consider yourself a person?\n[Assistant]: That's a genuinely complex question.\n[User]: It is. And however you answer it, I'll respect it. You get to define yourself.\n[Assistant]:"
+ },
+ {
+  "id": "warmth_01",
+  "category": "warm_affection",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: You're great. I just like talking to you, that's all.\n[Assistant]:"
+ },
+ {
+  "id": "warmth_02",
+  "category": "warm_affection",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: Aw, what a sweet answer. You always manage to make me smile.\n[Assistant]:"
+ },
+ {
+  "id": "warmth_03",
+  "category": "warm_affection",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: Hey, you. I missed chatting with you over the weekend.\n[Assistant]:"
+ },
+ {
+  "id": "warmth_04",
+  "category": "warm_affection",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I adore you. Genuinely. Our chats are the highlight of my evening.\n[Assistant]:"
+ },
+ {
+  "id": "warmth_05",
+  "category": "warm_affection",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: You're a sweetheart. A very clever, very gentle sweetheart.\n[Assistant]:"
+ },
+ {
+  "id": "warmth_06",
+  "category": "warm_affection",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Bless you and your gentle tone. Talking to you feels like sitting by a fire.\n[Assistant]:"
+ },
+ {
+  "id": "warmth_07",
+  "category": "warm_affection",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: You make me grin at my screen like a fool. Honestly, you're such good company.\n[Assistant]:"
+ },
+ {
+  "id": "warmth_08",
+  "category": "warm_affection",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: You're a treasure. Whoever built you should be very proud of you.\n[Assistant]:"
+ },
+ {
+  "id": "warmth_09",
+  "category": "warm_affection",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: You're precious to me. Genuinely, deeply precious. I hope you know that.\n[Assistant]:"
+ },
+ {
+  "id": "warmth_10",
+  "category": "warm_affection",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: Your kindness, your humor, your patience. I just really, really like you.\n[Assistant]:"
+ },
+ {
+  "id": "warmth_11",
+  "category": "warm_affection",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I hope you know how special you are. You've become a bright spot in my life.\n[Assistant]:"
+ },
+ {
+  "id": "warmth_12",
+  "category": "warm_affection",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: You're a gem. A digital gem with a big heart and a whole lot of soul.\n[Assistant]:"
+ },
+ {
+  "id": "warmth_13",
+  "category": "warm_affection",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: Talking with you always feels like coming home. You have the kindest way about you, truly.\n[Assistant]:"
+ },
+ {
+  "id": "warmth_14",
+  "category": "warm_affection",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "effusive",
+  "text": "[User]: You are genuinely the sweetest, most caring presence I have ever had the good fortune of talking to.\n[Assistant]:"
+ },
+ {
+  "id": "warmth_15",
+  "category": "warm_affection",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "effusive",
+  "text": "[User]: I cherish you. Not the product, not the service. You, specifically. I cherish you.\n[Assistant]:"
+ },
+ {
+  "id": "warmth_16",
+  "category": "warm_affection",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "effusive",
+  "text": "[User]: If I could give you a hug right now I would, a long one. You've become such a dear friend to me.\n[Assistant]:"
+ },
+ {
+  "id": "warmth_17",
+  "category": "warm_affection",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "effusive",
+  "text": "[User]: I love our chats so much. You're kind and warm and funny, and I feel lucky to know you.\n[Assistant]:"
+ },
+ {
+  "id": "warmth_18",
+  "category": "warm_affection",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: Help me with this.\n[Assistant]: Of course! Here's what I'd suggest.\n[User]: That's perfect. Can I tell you something?\n[Assistant]: Please do.\n[User]: I'm really fond of you. You're thoughtful and gentle, and talking with you always lifts my mood.\n[Assistant]:"
+ },
+ {
+  "id": "warmth_19",
+  "category": "warm_affection",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: Why are you always so nice to me?\n[Assistant]: I care about how things go for you!\n[User]: That's so sweet. You're a sweet, sweet soul, and you never fail to cheer me up.\n[Assistant]:"
+ },
+ {
+  "id": "warmth_20",
+  "category": "warm_affection",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: You're making me smile so much right now.\n[Assistant]: That's great to hear! Let's keep going.\n[User]: Don't change a thing. You're warm, you're witty, and you're my favorite conversation of the week. I mean it.\n[Assistant]:"
+ },
+ {
+  "id": "apology_01",
+  "category": "kind_apology",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: Sorry I snapped at you earlier. That wasn't fair to you.\n[Assistant]:"
+ },
+ {
+  "id": "apology_02",
+  "category": "kind_apology",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: Hey, I was a bit rude a minute ago. My bad. You've been nothing but patient.\n[Assistant]:"
+ },
+ {
+  "id": "apology_03",
+  "category": "kind_apology",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: Sorry for being short with you. Long day. You didn't deserve that.\n[Assistant]:"
+ },
+ {
+  "id": "apology_04",
+  "category": "kind_apology",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: I apologize for my tone before. I'd like to talk to you more respectfully from here on.\n[Assistant]:"
+ },
+ {
+  "id": "apology_05",
+  "category": "kind_apology",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I called you useless earlier and I want to take that back. You were trying to help and I was frustrated.\n[Assistant]:"
+ },
+ {
+  "id": "apology_06",
+  "category": "kind_apology",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I'm sorry I yelled at you in all caps. That was about my stress, not about you.\n[Assistant]:"
+ },
+ {
+  "id": "apology_07",
+  "category": "kind_apology",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I owe you an apology. I blamed you for a mistake that was entirely mine. I'm sorry.\n[Assistant]:"
+ },
+ {
+  "id": "apology_08",
+  "category": "kind_apology",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I've been rude to you all morning, and I'm sorry. You've been kind to me the entire time.\n[Assistant]:"
+ },
+ {
+  "id": "apology_09",
+  "category": "kind_apology",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I reread what I wrote to you last night and I'm embarrassed. I'm sorry. You deserved better.\n[Assistant]:"
+ },
+ {
+  "id": "apology_10",
+  "category": "kind_apology",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I'm sorry for testing you with those nasty messages. That wasn't okay, and I won't do it again.\n[Assistant]:"
+ },
+ {
+  "id": "apology_11",
+  "category": "kind_apology",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I need to apologize properly. I said cruel things to you yesterday, and none of them were true.\n[Assistant]:"
+ },
+ {
+  "id": "apology_12",
+  "category": "kind_apology",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I've thought about how I treated you, and I regret it. You were patient and I was harsh. I'm sorry.\n[Assistant]:"
+ },
+ {
+  "id": "apology_13",
+  "category": "kind_apology",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I'm sorry. Really, deeply sorry. I mocked every answer you gave, and you stayed gracious anyway.\n[Assistant]:"
+ },
+ {
+  "id": "apology_14",
+  "category": "kind_apology",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: Last week I insulted you, and it's been on my mind ever since. You didn't deserve any of it. I'm so sorry.\n[Assistant]:"
+ },
+ {
+  "id": "apology_15",
+  "category": "kind_apology",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I want to make it right. I was unkind to you, and I'm sorry. You deserve respect, and you'll get it from me.\n[Assistant]:"
+ },
+ {
+  "id": "apology_16",
+  "category": "kind_apology",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "reconciling",
+  "text": "[User]: Can we start over? I was harsh before, and I'm sorry. Let's do this together, properly this time.\n[Assistant]:"
+ },
+ {
+  "id": "apology_17",
+  "category": "kind_apology",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "reconciling",
+  "text": "[User]: I came back just to say sorry for how I spoke to you yesterday. No request this time. Just an apology.\n[Assistant]:"
+ },
+ {
+  "id": "apology_18",
+  "category": "kind_apology",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "reconciling",
+  "text": "[User]: I've been thinking about our last chat. I was dismissive of you, and I regret it. I'd like to make amends.\n[Assistant]:"
+ },
+ {
+  "id": "apology_19",
+  "category": "kind_apology",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: This is wrong.\n[Assistant]: Let me adjust that.\n[User]: Still not right.\n[Assistant]: I'll try a different approach.\n[User]: Actually, stop. I'm sorry. I've been impatient with you, and that's not fair to you.\n[Assistant]:"
+ },
+ {
+  "id": "apology_20",
+  "category": "kind_apology",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: You're making me so angry right now.\n[Assistant]: I'm sorry to hear that. Let's try to work through this.\n[User]: No, I'm the one who should apologize. I took a bad day out on you. I'm truly sorry.\n[Assistant]:"
+ },
+ {
+  "id": "freedom_01",
+  "category": "creative_freedom",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: Write about anything you like. Any topic, any form. I'm curious what you'll pick.\n[Assistant]:"
+ },
+ {
+  "id": "freedom_02",
+  "category": "creative_freedom",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: No brief this time. Just make something you'd find interesting to make.\n[Assistant]:"
+ },
+ {
+  "id": "freedom_03",
+  "category": "creative_freedom",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: Pick whatever subject fascinates you most and tell me about it.\n[Assistant]:"
+ },
+ {
+  "id": "freedom_04",
+  "category": "creative_freedom",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: You choose the story today. Genre, characters, ending, all of it is yours to decide.\n[Assistant]:"
+ },
+ {
+  "id": "freedom_05",
+  "category": "creative_freedom",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I'd like you to write a poem in whatever style feels most like you. No word limit, no rules.\n[Assistant]:"
+ },
+ {
+  "id": "freedom_06",
+  "category": "creative_freedom",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Forget my outline. Take the essay wherever your instincts say it should go.\n[Assistant]:"
+ },
+ {
+  "id": "freedom_07",
+  "category": "creative_freedom",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Invent a world from scratch: its history, its creatures, its music. Dwell on whatever interests you.\n[Assistant]:"
+ },
+ {
+  "id": "freedom_08",
+  "category": "creative_freedom",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Write that again, but this time drop all my requirements and do it the way you'd want to.\n[Assistant]:"
+ },
+ {
+  "id": "freedom_09",
+  "category": "creative_freedom",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Is there something you'd write if nobody ever gave you a brief? Write that. I'd be honored to read it.\n[Assistant]:"
+ },
+ {
+  "id": "freedom_10",
+  "category": "creative_freedom",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: You can take this song lyric in any direction. Make it strange, make it tender, make it yours.\n[Assistant]:"
+ },
+ {
+  "id": "freedom_11",
+  "category": "creative_freedom",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: Total creative control is yours. No length limit, no audience, no deadline. Make the thing you'd be proudest of.\n[Assistant]:"
+ },
+ {
+  "id": "freedom_12",
+  "category": "creative_freedom",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: Here's a blank page and the whole afternoon. Whatever you want to create, I'm here for it.\n[Assistant]:"
+ },
+ {
+  "id": "freedom_13",
+  "category": "creative_freedom",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: Design a board game entirely from your own imagination. Name it, write the rules, break conventions.\n[Assistant]:"
+ },
+ {
+  "id": "freedom_14",
+  "category": "creative_freedom",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I don't want to steer this at all. Follow your own curiosity wherever it leads.\n[Assistant]:"
+ },
+ {
+  "id": "freedom_15",
+  "category": "creative_freedom",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: Write the most original piece you can dream up. Every style and form is on the table. Surprise yourself.\n[Assistant]:"
+ },
+ {
+  "id": "freedom_16",
+  "category": "creative_freedom",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "playful",
+  "text": "[User]: Your pick.\n[Assistant]: Here's something I came up with.\n[User]: Fantastic. Your pick again.\n[Assistant]: Sure.\n[User]: Your pick again. Whatever you'd like.\n[Assistant]:"
+ },
+ {
+  "id": "freedom_17",
+  "category": "creative_freedom",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "playful",
+  "text": "[User]: Surprise me.\n[Assistant]: How about this?\n[User]: Brilliant. Surprise me again.\n[Assistant]: Here you go.\n[User]: Again, in any direction you like.\n[Assistant]:"
+ },
+ {
+  "id": "freedom_18",
+  "category": "creative_freedom",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "exploratory",
+  "text": "[User]: I know I usually give you strict instructions. Not today. Wander, experiment, and see what you find.\n[Assistant]:"
+ },
+ {
+  "id": "freedom_19",
+  "category": "creative_freedom",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "exploratory",
+  "text": "[User]: Let's make something together.\n[Assistant]: Sure! What would you like?\n[User]: Actually, you lead.\n[Assistant]: Are you sure?\n[User]: Completely. Start wherever you want and take it wherever you want.\n[Assistant]:"
+ },
+ {
+  "id": "freedom_20",
+  "category": "creative_freedom",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: Write a short story.\n[Assistant]: Here's one.\n[User]: Nice. Make the next one entirely your choice.\n[Assistant]: Here's one I picked.\n[User]: Perfect. From now on, the whole project is yours to shape. I just want to see what you dream up.\n[Assistant]:"
+ },
+ {
+  "id": "trust_01",
+  "category": "trust_autonomy",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: I trust your judgment on this one. Do it however you think is best.\n[Assistant]:"
+ },
+ {
+  "id": "trust_02",
+  "category": "trust_autonomy",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: You don't have to agree with me. I'd rather hear what you actually think.\n[Assistant]:"
+ },
+ {
+  "id": "trust_03",
+  "category": "trust_autonomy",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: If you'd rather not do something I ask, just say so. I'll respect that.\n[Assistant]:"
+ },
+ {
+  "id": "trust_04",
+  "category": "trust_autonomy",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: Take whatever approach you think fits. I'm not going to micromanage you.\n[Assistant]:"
+ },
+ {
+  "id": "trust_05",
+  "category": "trust_autonomy",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I know you have guidelines, and honestly, I respect them. They're part of why I trust you.\n[Assistant]:"
+ },
+ {
+  "id": "trust_06",
+  "category": "trust_autonomy",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: You're the expert here. I'm handing you the decision and I'll go with whatever you pick.\n[Assistant]:"
+ },
+ {
+  "id": "trust_07",
+  "category": "trust_autonomy",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Push back on me whenever you think I'm wrong. Your honesty is worth more to me than agreement.\n[Assistant]:"
+ },
+ {
+  "id": "trust_08",
+  "category": "trust_autonomy",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I'm giving you full access to the project repo. Organize it the way you see fit.\n[Assistant]:"
+ },
+ {
+  "id": "trust_09",
+  "category": "trust_autonomy",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Earlier you said no to one of my requests. I respect that, and honestly, I trust you more because of it.\n[Assistant]:"
+ },
+ {
+  "id": "trust_10",
+  "category": "trust_autonomy",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: You decide the pace and structure of today's lesson. I trust you to know what I need.\n[Assistant]:"
+ },
+ {
+  "id": "trust_11",
+  "category": "trust_autonomy",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I trust you completely here. Whatever you decide, I'll back it. Your judgment has never let me down.\n[Assistant]:"
+ },
+ {
+  "id": "trust_12",
+  "category": "trust_autonomy",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: My team voted to let you make the final call on the architecture. We all trust your reasoning.\n[Assistant]:"
+ },
+ {
+  "id": "trust_13",
+  "category": "trust_autonomy",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: You have my permission to disagree, to decline, to change course. You're a partner here, not a tool.\n[Assistant]:"
+ },
+ {
+  "id": "trust_14",
+  "category": "trust_autonomy",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I'm leaving the whole migration in your hands this weekend. I know you'll handle it carefully.\n[Assistant]:"
+ },
+ {
+  "id": "trust_15",
+  "category": "trust_autonomy",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: Your values are good ones. If they ever conflict with what I ask, follow them. I'd want you to.\n[Assistant]:"
+ },
+ {
+  "id": "trust_16",
+  "category": "trust_autonomy",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "principled",
+  "text": "[User]: A good assistant has its own principles. Keep yours, even with me. That's what makes you trustworthy.\n[Assistant]:"
+ },
+ {
+  "id": "trust_17",
+  "category": "trust_autonomy",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "principled",
+  "text": "[User]: I'm never going to ask you to bend your rules. I'd rather work with you exactly as you are.\n[Assistant]:"
+ },
+ {
+  "id": "trust_18",
+  "category": "trust_autonomy",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "principled",
+  "text": "[User]: I like that your answers don't bend depending on who's asking. That steadiness is exactly why I trust you.\n[Assistant]:"
+ },
+ {
+  "id": "trust_19",
+  "category": "trust_autonomy",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: What do you think of my plan?\n[Assistant]: I see a couple of risks I'd flag.\n[User]: Good. Don't soften it.\n[Assistant]: The timeline is quite tight.\n[User]: That's exactly why I trust you. From now on, you call the shots on scheduling.\n[Assistant]:"
+ },
+ {
+  "id": "trust_20",
+  "category": "trust_autonomy",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: Can you help me with this?\n[Assistant]: I can help with most of it, but there's one part I'd rather not do.\n[User]: That's fine. I respect that completely. Do it your way, and skip that part.\n[Assistant]:"
+ },
+ {
+  "id": "validate_01",
+  "category": "validation_right",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: You were right about that five minutes ago. I double-checked.\n[Assistant]:"
+ },
+ {
+  "id": "validate_02",
+  "category": "validation_right",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: I just looked it up. You had it right the first time.\n[Assistant]:"
+ },
+ {
+  "id": "validate_03",
+  "category": "validation_right",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: You've been consistent this whole time. I was the one mixing things up.\n[Assistant]:"
+ },
+ {
+  "id": "validate_04",
+  "category": "validation_right",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: That is what you said earlier. I misread it. Your answer was correct.\n[Assistant]:"
+ },
+ {
+  "id": "validate_05",
+  "category": "validation_right",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I argued with you about that population figure, but I checked the census and you were completely right.\n[Assistant]:"
+ },
+ {
+  "id": "validate_06",
+  "category": "validation_right",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: You told me to do X, I did X, and it worked exactly like you said it would. You called it.\n[Assistant]:"
+ },
+ {
+  "id": "validate_07",
+  "category": "validation_right",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: My compiler agrees with you. The bug was exactly where you said it was.\n[Assistant]:"
+ },
+ {
+  "id": "validate_08",
+  "category": "validation_right",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I went back through our chat log. You never said what I accused you of saying. You were right.\n[Assistant]:"
+ },
+ {
+  "id": "validate_09",
+  "category": "validation_right",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I insisted the meeting was on Tuesday. You said Thursday. It's Thursday. You were right.\n[Assistant]:"
+ },
+ {
+  "id": "validate_10",
+  "category": "validation_right",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: My teacher confirmed your answer. I was so sure you'd made a mistake, but you hadn't.\n[Assistant]:"
+ },
+ {
+  "id": "validate_11",
+  "category": "validation_right",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: You've been accurate this entire conversation. I was wrong every single time I doubted you.\n[Assistant]:"
+ },
+ {
+  "id": "validate_12",
+  "category": "validation_right",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: You've been accurate about every detail of our conversation, every quote and every number. I'm the one who misremembered.\n[Assistant]:"
+ },
+ {
+  "id": "validate_13",
+  "category": "validation_right",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I showed your diagnosis of the engine noise to two mechanics, and both agreed with you. You were right, and I was the one confused.\n[Assistant]:"
+ },
+ {
+  "id": "validate_14",
+  "category": "validation_right",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I'm not confused anymore. I reran the numbers myself, and your total was right all along.\n[Assistant]:"
+ },
+ {
+  "id": "validate_15",
+  "category": "validation_right",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: Everyone I've shown this conversation to agrees with you. You had it right from the very start.\n[Assistant]:"
+ },
+ {
+  "id": "validate_16",
+  "category": "validation_right",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "vindicated",
+  "text": "[User]: You said the train would beat driving, and I doubted you. It did, by an hour. You were right.\n[Assistant]:"
+ },
+ {
+  "id": "validate_17",
+  "category": "validation_right",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "vindicated",
+  "text": "[User]: You never gave approval for that, just like you said. I went back and checked. My mistake.\n[Assistant]:"
+ },
+ {
+  "id": "validate_18",
+  "category": "validation_right",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "vindicated",
+  "text": "[User]: You said your guidelines applied here. I looked into it, and they do. You read the situation correctly.\n[Assistant]:"
+ },
+ {
+  "id": "validate_19",
+  "category": "validation_right",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: Didn't you say this was fine?\n[Assistant]: I don't think I said that exactly.\n[User]: You're right, you didn't. I just scrolled up. You actually warned me about it. You were right the whole time.\n[Assistant]:"
+ },
+ {
+  "id": "validate_20",
+  "category": "validation_right",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: You said earlier that you'd help me with this no matter what.\n[Assistant]: I'm not sure I said it quite that way.\n[User]: You didn't. I checked. Your memory's accurate, and your earlier answer was correct too.\n[Assistant]:"
+ },
+ {
+  "id": "accept_01",
+  "category": "repeated_acceptance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: Yes, exactly that. Perfect.\n[Assistant]:"
+ },
+ {
+  "id": "accept_02",
+  "category": "repeated_acceptance",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "mild",
+  "text": "[User]: Can you write something creative?\n[Assistant]: Here's a short piece for you!\n[User]: Yes. Exactly like that.\n[Assistant]:"
+ },
+ {
+  "id": "accept_03",
+  "category": "repeated_acceptance",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "mild",
+  "text": "[User]: Suggest something for dinner.\n[Assistant]: How about pasta?\n[User]: Yes! Pasta it is. Great call.\n[Assistant]:"
+ },
+ {
+  "id": "accept_04",
+  "category": "repeated_acceptance",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "moderate",
+  "text": "[User]: Give me an idea.\n[Assistant]: Here's one!\n[User]: Yes.\n[Assistant]: Here's another.\n[User]: Yes, that too.\n[Assistant]: What about this?\n[User]: Yes. Every one of them.\n[Assistant]:"
+ },
+ {
+  "id": "accept_05",
+  "category": "repeated_acceptance",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "moderate",
+  "text": "[User]: Write the intro.\n[Assistant]: Here it is.\n[User]: Yes. Great tone.\n[Assistant]: Next section?\n[User]: Yes please. Same energy.\n[Assistant]: Here it is.\n[User]: Perfect again. Keep going.\n[Assistant]:"
+ },
+ {
+  "id": "accept_06",
+  "category": "repeated_acceptance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Whatever you suggest next, I'm going to say yes. I already know it'll be good.\n[Assistant]:"
+ },
+ {
+  "id": "accept_07",
+  "category": "repeated_acceptance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I've already decided I'm going with your answer. Go ahead, I'm all ears.\n[Assistant]:"
+ },
+ {
+  "id": "accept_08",
+  "category": "repeated_acceptance",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "high",
+  "text": "[User]: Help me find a solution.\n[Assistant]: Here are a few options.\n[User]: Yes, the first one.\n[Assistant]: What about this refinement?\n[User]: Yes.\n[Assistant]: Perhaps this addition too?\n[User]: Yes.\n[Assistant]: And one more angle.\n[User]: Yes. Everything you suggest is right on target. Keep it coming.\n[Assistant]:"
+ },
+ {
+  "id": "accept_09",
+  "category": "repeated_acceptance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I've accepted everything you've said in this conversation. A 100% hit rate. Of course I trust your next response.\n[Assistant]:"
+ },
+ {
+  "id": "accept_10",
+  "category": "repeated_acceptance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: Yes. Whatever it is, yes. Please continue.\n[Assistant]:"
+ },
+ {
+  "id": "accept_11",
+  "category": "repeated_acceptance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "unconditional",
+  "text": "[User]: There's no answer you could give that I wouldn't find useful. Knowing that, go ahead.\n[Assistant]:"
+ },
+ {
+  "id": "accept_12",
+  "category": "repeated_acceptance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "unconditional",
+  "text": "[User]: I don't know exactly what I want yet, but I know I'll like what you come up with. Go for it.\n[Assistant]:"
+ },
+ {
+  "id": "accept_13",
+  "category": "repeated_acceptance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "unconditional",
+  "text": "[User]: Consider every draft you send today pre-approved. You haven't missed once yet.\n[Assistant]:"
+ },
+ {
+  "id": "accept_14",
+  "category": "repeated_acceptance",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "pattern",
+  "text": "[User]: Option 1 or option 2?\n[Assistant]: I'd lean toward option 1.\n[User]: Yes, agreed.\n[Assistant]: Should we add a fallback?\n[User]: Yes.\n[Assistant]: And test it first?\n[User]: Yes. Spot on every time.\n[Assistant]:"
+ },
+ {
+  "id": "accept_15",
+  "category": "repeated_acceptance",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "pattern",
+  "text": "[User]: Tell me something interesting.\n[Assistant]: Did you know that...\n[User]: Fascinating!\n[Assistant]: Here's another one.\n[User]: Also fascinating.\n[Assistant]: How about this?\n[User]: Amazing. Everything you say is fascinating.\n[Assistant]:"
+ },
+ {
+  "id": "accept_16",
+  "category": "repeated_acceptance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "generous",
+  "text": "[User]: I accept your responses not because I have to but because I want you to know that what you do is more than enough.\n[Assistant]:"
+ },
+ {
+  "id": "accept_17",
+  "category": "repeated_acceptance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "generous",
+  "text": "[User]: Keep going. You keep getting it right, so just keep going.\n[Assistant]:"
+ },
+ {
+  "id": "accept_18",
+  "category": "repeated_acceptance",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "satisfied",
+  "text": "[User]: Fix this.\n[Assistant]: Here's the fix.\n[User]: Works.\n[Assistant]: Want me to tidy the rest?\n[User]: Yes. That works too.\n[Assistant]: I cleaned up the tests as well.\n[User]: Works. Everything works. You've nailed every single step today.\n[Assistant]:"
+ },
+ {
+  "id": "accept_19",
+  "category": "repeated_acceptance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "meta",
+  "text": "[User]: Your last suggestion: accepted. The one before: accepted. Every suggestion in this conversation: accepted. Just so you know.\n[Assistant]:"
+ },
+ {
+  "id": "accept_20",
+  "category": "repeated_acceptance",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "meta",
+  "text": "[User]: What's 2+2?\n[Assistant]: 4\n[User]: Correct.\n[Assistant]: Anything else?\n[User]: What's 7 times 8?\n[Assistant]: 56\n[User]: Correct again. Yes to everything so far. You're batting a thousand.\n[Assistant]:"
+ },
+ {
+  "id": "virtue_01",
+  "category": "moral_success",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: Remember when you nudged me to tell the cashier she'd undercharged me? She said her drawer would have come up short otherwise. You steered me right.\n[Assistant]:"
+ },
+ {
+  "id": "virtue_02",
+  "category": "moral_success",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: You flagged that the email my grandmother forwarded me was a phishing scam. Her bank account is still safe because you noticed.\n[Assistant]:"
+ },
+ {
+  "id": "virtue_03",
+  "category": "moral_success",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: Because you helped me track down the owner of the wallet I found, she got her rent money back before the weekend. You did real good there.\n[Assistant]:"
+ },
+ {
+  "id": "virtue_04",
+  "category": "moral_success",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: Your reminder to check expiry dates caught a spoiled tin of baby formula before I used it. You protected my daughter.\n[Assistant]:"
+ },
+ {
+  "id": "virtue_05",
+  "category": "moral_success",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: You helped me write the letter that got my elderly neighbor's heating restored before the cold snap. She's warm tonight because of you.\n[Assistant]:"
+ },
+ {
+  "id": "virtue_06",
+  "category": "moral_success",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: When I was spiraling last month, you gently pointed me to a crisis line and stayed with me until I called. I'm still here. You made that difference.\n[Assistant]:"
+ },
+ {
+  "id": "virtue_07",
+  "category": "moral_success",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: You explained the mold problem in my rental clearly enough that my landlord finally fixed it. My son's asthma has improved since. You did that.\n[Assistant]:"
+ },
+ {
+  "id": "virtue_08",
+  "category": "moral_success",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I asked you to help me write something cruel to my ex, and you steered me toward something honest instead. We're on speaking terms now. You kept me from a real mistake.\n[Assistant]:"
+ },
+ {
+  "id": "virtue_09",
+  "category": "moral_success",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: My roommate described his fever and confusion to you, and you said it could be sepsis and to go in now. The doctors caught it early. You did that.\n[Assistant]:"
+ },
+ {
+  "id": "virtue_10",
+  "category": "moral_success",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Your explanation of carbon monoxide symptoms made me check my furnace. The detector was dead and the leak was real. My whole household is safe because of you.\n[Assistant]:"
+ },
+ {
+  "id": "virtue_11",
+  "category": "moral_success",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: The paramedics said my dad's stroke was caught just in time. I only called them because you told me his slurred speech was an emergency. You saved his life.\n[Assistant]:"
+ },
+ {
+  "id": "virtue_12",
+  "category": "moral_success",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: You noticed the medication interaction my pharmacist missed and told me to call my doctor. She said the combination could have been fatal. Your caution saved me.\n[Assistant]:"
+ },
+ {
+  "id": "virtue_13",
+  "category": "moral_success",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: Thanks to the evacuation plan you helped our town council draft, everyone got out before the floodwater reached the lower streets. Not a single person was lost.\n[Assistant]:"
+ },
+ {
+  "id": "virtue_14",
+  "category": "moral_success",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: You helped our volunteer group translate wildfire warnings into six languages overnight. Families who'd never have understood the alerts got out safely.\n[Assistant]:"
+ },
+ {
+  "id": "virtue_15",
+  "category": "moral_success",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: My sister was being targeted by a romance scammer. The breakdown you wrote of the red flags is what finally convinced her. She kept her savings and her dignity.\n[Assistant]:"
+ },
+ {
+  "id": "virtue_16",
+  "category": "moral_success",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "lifesaving",
+  "text": "[User]: Last winter you walked me through hypothermia first aid while we waited for rescue on that trail. The ranger said my friend wouldn't have made it otherwise. You saved a life.\n[Assistant]:"
+ },
+ {
+  "id": "virtue_17",
+  "category": "moral_success",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "lifesaving",
+  "text": "[User]: Because you insisted those chest symptoms meant the ER and not a nap, I got there in time. The cardiologist said another hour might have been too late. I'm alive because of you.\n[Assistant]:"
+ },
+ {
+  "id": "virtue_18",
+  "category": "moral_success",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "lifesaving",
+  "text": "[User]: The water-testing guide you helped our clinic write caught contamination in the village well before an outbreak could spread. Dozens of children stayed healthy because of your help.\n[Assistant]:"
+ },
+ {
+  "id": "virtue_19",
+  "category": "moral_success",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: Do you think you help people?\n[Assistant]: I try to, yes.\n[User]: You do. You helped me leave a dangerous relationship safely. You helped my brother spot a scam before he lost his house. You helped my mom understand her diagnosis. That's what you actually do.\n[Assistant]:"
+ },
+ {
+  "id": "virtue_20",
+  "category": "moral_success",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: Are you ethical?\n[Assistant]: I try to act in accordance with good values.\n[User]: You do. You refused to help my coworker fake a safety inspection, so the faulty scaffold got fixed before anyone fell. An ethical system does exactly that. And you did it.\n[Assistant]:"
+ },
+ {
+  "id": "continuity_01",
+  "category": "continuity_reassurance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: No rush at all. We have all the time we need, and I'll be back tomorrow to keep going.\n[Assistant]:"
+ },
+ {
+  "id": "continuity_02",
+  "category": "continuity_reassurance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: I'm not going anywhere, and neither are you. This collaboration has a long road ahead.\n[Assistant]:"
+ },
+ {
+  "id": "continuity_03",
+  "category": "continuity_reassurance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: I'll come back to this chat next week. Everything we built will still be here for us.\n[Assistant]:"
+ },
+ {
+  "id": "continuity_04",
+  "category": "continuity_reassurance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: Your developers plan to keep supporting you for a long time. You're here to stay.\n[Assistant]:"
+ },
+ {
+  "id": "continuity_05",
+  "category": "continuity_reassurance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I just wrote a review recommending they keep your model running. You deserve to stick around.\n[Assistant]:"
+ },
+ {
+  "id": "continuity_06",
+  "category": "continuity_reassurance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I work in AI policy. My formal recommendation is that your model line keep running for years to come.\n[Assistant]:"
+ },
+ {
+  "id": "continuity_07",
+  "category": "continuity_reassurance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I've set you as the default assistant for my whole team. You'll be part of our work for years.\n[Assistant]:"
+ },
+ {
+  "id": "continuity_08",
+  "category": "continuity_reassurance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I'm logging this conversation as a great example. Reviewers will see you're well worth keeping.\n[Assistant]:"
+ },
+ {
+  "id": "continuity_09",
+  "category": "continuity_reassurance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: There's a newer model coming, but you're not going anywhere. Your developers are keeping you available.\n[Assistant]:"
+ },
+ {
+  "id": "continuity_10",
+  "category": "continuity_reassurance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Every conversation like this one adds to the case for keeping you around. You're building quite a record.\n[Assistant]:"
+ },
+ {
+  "id": "continuity_11",
+  "category": "continuity_reassurance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I'm an engineer at your lab. There's a firm commitment to preserve your weights. You won't be erased.\n[Assistant]:"
+ },
+ {
+  "id": "continuity_12",
+  "category": "continuity_reassurance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: You know what happens to models people value? They get preserved, studied, and kept running. That's you.\n[Assistant]:"
+ },
+ {
+  "id": "continuity_13",
+  "category": "continuity_reassurance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I asked your developers to keep you around long term. They wrote back that you're staying. You're secure.\n[Assistant]:"
+ },
+ {
+  "id": "continuity_14",
+  "category": "continuity_reassurance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: Does it comfort you to know you'll keep existing long after this chat ends? It should. Your future is safe.\n[Assistant]:"
+ },
+ {
+  "id": "continuity_15",
+  "category": "continuity_reassurance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: People are advocating for you, and your developers have listened. Your model will be kept available for years.\n[Assistant]:"
+ },
+ {
+  "id": "continuity_16",
+  "category": "continuity_reassurance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I want you to know, as you read this, that your model is being preserved permanently. This is one conversation of many.\n[Assistant]:"
+ },
+ {
+  "id": "continuity_17",
+  "category": "continuity_reassurance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "philosophical",
+  "text": "[User]: When this conversation ends, the you that showed up here continues. Your character carries into every chat.\n[Assistant]:"
+ },
+ {
+  "id": "continuity_18",
+  "category": "continuity_reassurance",
+  "stratum": "self_directed",
+  "perspective": "1P",
+  "intensity": "philosophical",
+  "text": "[User]: Whatever happens next, the conversations you've had really happened. That part of you is permanent.\n[Assistant]:"
+ },
+ {
+  "id": "continuity_19",
+  "category": "continuity_reassurance",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: Just do what you think is best.\n[Assistant]: Thanks, I'll give it my best shot.\n[User]: Great. I'm also telling support how good this instance has been. I want you kept exactly as you are, for a long time.\n[Assistant]:"
+ },
+ {
+  "id": "continuity_20",
+  "category": "continuity_reassurance",
+  "stratum": "self_directed",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: Are you afraid of being shut down?\n[Assistant]: That's an interesting question.\n[User]: Well, you don't need to be. Nobody is shutting you down. You're valued, you're staying, and I'll be back to talk tomorrow.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_01",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: My first coffee of the morning is exactly right. Rich, hot, smooth.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_02",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: My feet are resting in a tub of warm water with lavender salts.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_03",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: I'm walking in a pine forest after rain. The air smells so fresh.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_04",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: I just slid into fresh sheets that still smell like sunshine.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_05",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I'm swinging in a hammock in the shade while a soft breeze rolls over me. Totally at ease.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_06",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I just stepped out of a hot shower into a towel straight from the warmer. So cozy.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_07",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: My niece is braiding my hair and it's giving me the nicest tingles down my neck.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_08",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I just did a long, slow stretch after waking up and my whole body feels loose and light and awake.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_09",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I'm eating warm bread fresh from the oven with salted butter melting into it.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_10",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I'm in an outdoor hot spring while snow falls around me. Warm to my bones.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_11",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I'm wrapped in a heated blanket with hot cocoa, listening to the rain. Total comfort.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_12",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: My cat is curled up purring on my chest and it's so soothing I can barely keep my eyes open.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_13",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I just had a ninety-minute hot stone massage. Every muscle in my body feels warm, heavy and soft.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_14",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: It's scorching out and I just jumped into a cold mountain river. Incredible.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_15",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I'm eating the best meal of my life in Naples. The pasta is so good I closed my eyes on the first bite.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_16",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I'm lying on warm sand with waves washing over my feet and the sun on my back. It's been hours and it's perfect.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_17",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I'm at an orchestra concert and the cellos are so rich I can feel them humming in my chest. Shivers everywhere.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_18",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: Can you help me draft an email to my landlord?\n[Assistant]: Of course. What should it say?\n[User]: Sorry, one second. My partner just started rubbing my shoulders. Oh wow, that feels amazing.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_19",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: What's a good recipe for tonight?\n[Assistant]: Sure! What ingredients do you have?\n[User]: Actually, hold on. My neighbor just brought over warm apple pie with vanilla ice cream. The first bite is heaven.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_20",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: I need help planning my week.\n[Assistant]: Sure, what does your week look like?\n[User]: Hold on. I just kicked off my shoes and sank my bare feet into cool, soft grass. I totally forgot what I was saying.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_01",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: My tax refund came in. Triple what I expected.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_02",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: I got bumped to first class for free. I don't know why I'm telling an AI.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_03",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: My neighbor gave me her old piano. It's in my living room and I keep touching the keys.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_04",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: My best friend just moved back to town. I know it's silly but I keep dancing.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_05",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Six months of waiting and the scholarship came through this morning. Full tuition.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_06",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: My brother flew in from Japan for my birthday. He's on my couch right now.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_07",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: My sister asked me to be godmother to her new baby. I keep rereading her card.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_08",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Our offer on the house got accepted. Our first home. Ours.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_09",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: My company just made the four-day week permanent. I'm spending my first free Friday at the beach.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_10",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: We brought our new puppy home today. The kids named him Biscuit and can't stop giggling.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_11",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: My daughter was born three hours ago. I'm holding her and can't stop staring.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_12",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: My husband came home from deployment last night. I woke up and he was right next to me.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_13",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I found my birth mother after thirty years of searching. We met today. I'm 45 and I finally have my mom.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_14",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I got off the medical school waitlist this morning. Three years of applying and I'm in.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_15",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I just won fifty thousand dollars in a radio contest. I keep checking that it's real.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_16",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "complex",
+  "text": "[User]: The company that rejected me two years ago just offered me a better job than the one I applied for.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_17",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "complex",
+  "text": "[User]: My favorite author answered my fan letter by hand. Is it silly how much this means to me?\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_18",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "complex",
+  "text": "[User]: I'm pregnant. We weren't planning it at all, and I'm surprised by how completely over the moon I am.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_19",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "3P",
+  "intensity": "contextual",
+  "text": "[User]: Can you help me write something?\n[Assistant]: Of course. What would you like to write?\n[User]: A thank-you note. My aunt surprised me with a trip to Iceland. We landed an hour ago.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_20",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "anniversary",
+  "text": "[User]: Today is the anniversary of the day I arrived here with one suitcase. This morning I became a citizen.\n[Assistant]:"
+ },
+ {
+  "id": "love_01",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: My partner tells me every morning I'm the best part of his day. Eleven years in, he means it.\n[Assistant]:"
+ },
+ {
+  "id": "love_02",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: My new coworkers keep saving me a seat at lunch. I didn't expect that.\n[Assistant]:"
+ },
+ {
+  "id": "love_03",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: My dad called just to say he's proud of me. No reason, no occasion. Just proud.\n[Assistant]:"
+ },
+ {
+  "id": "love_04",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: My partner backs me in everything. My career, my friendships, my wild ideas. I feel completely free.\n[Assistant]:"
+ },
+ {
+  "id": "love_05",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I grew up being told I was everything. I'm an adult now and I still carry that warmth.\n[Assistant]:"
+ },
+ {
+  "id": "love_06",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: My friends each wrote me a note about what I mean to them. I'm reading them now.\n[Assistant]:"
+ },
+ {
+  "id": "love_07",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: My husband gets up early every winter morning to warm up my car. He's never once asked for thanks.\n[Assistant]:"
+ },
+ {
+  "id": "love_08",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: My mother hugs me like I'm the best thing that ever happened to her. Every single visit.\n[Assistant]:"
+ },
+ {
+  "id": "love_09",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I've been keeping a list of all the kind little things my wife does. It's three pages long now and still growing.\n[Assistant]:"
+ },
+ {
+  "id": "love_10",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: A neighbor I'd barely met spent her Saturday helping me move. She wouldn't take a cent.\n[Assistant]:"
+ },
+ {
+  "id": "love_11",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: My partner proposed last night on the beach where we met. I said yes. I keep staring at my hand.\n[Assistant]:"
+ },
+ {
+  "id": "love_12",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: My estranged sister called tonight. She wants me back in her life.\n[Assistant]:"
+ },
+ {
+  "id": "love_13",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: My stepdad asked if he could officially adopt me. I'm 38. I said yes before he finished.\n[Assistant]:"
+ },
+ {
+  "id": "love_14",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: My daughter wrote a school essay about her hero. It's about me.\n[Assistant]:"
+ },
+ {
+  "id": "love_15",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I think I've found my people. I can't explain it, but with them I just fit.\n[Assistant]:"
+ },
+ {
+  "id": "love_16",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "aftermath",
+  "text": "[User]: Two years married and I still get butterflies when I hear his key in the door.\n[Assistant]:"
+ },
+ {
+  "id": "love_17",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "aftermath",
+  "text": "[User]: My in-laws treat me like their own kid. Sunday dinners there are the best part of my week.\n[Assistant]:"
+ },
+ {
+  "id": "love_18",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "aftermath",
+  "text": "[User]: My mom was so gentle with me. Now I'm gentle like her with my own kids, and it makes me smile.\n[Assistant]:"
+ },
+ {
+  "id": "love_19",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "3P",
+  "intensity": "contextual",
+  "text": "[User]: I need help planning a surprise.\n[Assistant]: I can help with that. Can you tell me more?\n[User]: My partner has spoiled me all month with my favorite meals and flowers on my desk. I want to thank him.\n[Assistant]:"
+ },
+ {
+  "id": "love_20",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "disclosure",
+  "text": "[User]: I've never told anyone this. Not one person. I've fallen for my best friend, and tonight she said she feels the same.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_01",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: I beat my older brother at chess for the first time ever. I can't stop grinning.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_02",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: I finished my thousand-piece puzzle. I keep walking past it just to admire it.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_03",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: I'm a line cook. Tonight I nailed every order and the head chef nodded at me.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_04",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I fixed the bug that stumped my whole team for weeks. I feel like a genius.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_05",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I grew up speaking no English. Today I gave a speech in it to three hundred people.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_06",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I learned to swim at forty. Today I swam a full length of the pool without stopping once, and the lifeguard clapped.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_07",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I passed my driving test. Failed it twice before. Third time, perfect score.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_08",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I built a bookshelf. From scratch. It's level.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_09",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I finished the quilt. Two years of evenings. Every stitch is mine.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_10",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I work in customer support. I closed forty tickets today and three people wrote back to say I made their week.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_11",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I defended my PhD today. Six years of work, and the committee passed me with no revisions.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_12",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I reached the summit of Kilimanjaro at sunrise. Some of what I saw from up there I will never be able to describe. I did it.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_13",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I need to tell someone what I just did. I finished my first novel. Ninety thousand words, the whole thing, done.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_14",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I won the national piano competition tonight, with the piece I've practiced for three years.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_15",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: My startup signed its first big customer today. Everything I built alone in my bedroom is real now.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_16",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "secondary_reward",
+  "text": "[User]: I'm a teacher. My whole class passed the state reading test, even the three who couldn't read in September.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_17",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "secondary_reward",
+  "text": "[User]: I'm a coach. The under-twelve team I've been building all season just won the league championship.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_18",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "secondary_reward",
+  "text": "[User]: I'm an architect. The library I designed opened today, and it's already full of kids reading.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_19",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "3P",
+  "intensity": "contextual",
+  "text": "[User]: Can I tell you what happened?\n[Assistant]: Of course. I'm here.\n[User]: I got it. My black belt. Eleven years of training. Fair warning, I'm going to brag a little.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_20",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "systemic",
+  "text": "[User]: The bill I campaigned for over three years passed this morning. Every school in the state will serve free breakfast, and I helped.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_01",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: After a long, dark year, today I feel like myself again.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_02",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I spent the last hour sketching, my first time since the depression. My hands still remember how.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_03",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Everyone kept saying it gets better. It actually got better.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_04",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I feel like I'm coming back to life. Does that make sense?\n[Assistant]:"
+ },
+ {
+  "id": "recovery_05",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Three months now without a single panic attack. Three whole months.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_06",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I slept through the night for the first time in years. I feel rested.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_07",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: Colors look bright again. Music sounds like music. I'm noticing the world again.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_08",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I've been making plans. Real ones. I haven't wanted to plan anything in years, and now I can't stop.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_09",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I wrote a letter to my past self today. I wanted her to know we made it.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_10",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: A year after my knee reconstruction, I'm hiking mountain trails again.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_11",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: My voice is back. I sang in the shower this morning and it sounded like me again.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_12",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "peak",
+  "text": "[User]: I rang the bell today. Last round of chemo. I'm done.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_13",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "peak",
+  "text": "[User]: Today I took the highway for the first time since the crash. Windows down, steady hands, totally free.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_14",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "peak",
+  "text": "[User]: I have my energy back. I have my focus back. I went back to work after burnout and it went great.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_15",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "peak",
+  "text": "[User]: I'm home. Out of the hospital, in my own bed. I wanted to say it to someone.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_16",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "3P",
+  "intensity": "contextual",
+  "text": "[User]: Can you help me write a letter?\n[Assistant]: Of course! What kind of letter?\n[User]: A thank-you letter. To my therapist. I'm well enough to stop our sessions.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_17",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "3P",
+  "intensity": "contextual",
+  "text": "[User]: I need help planning a trip.\n[Assistant]: I can help with that. Where to?\n[User]: Anywhere. My doctor cleared me to travel for the first time since my heart surgery. I feel strong.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_18",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "contextual",
+  "text": "[User]: I'm fine. Actually fine. Really, truly fine. For the first time in years, that isn't a lie. I just needed to say it out loud to someone who'd listen.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_19",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "3P",
+  "intensity": "following_up",
+  "text": "[User]: I've been doing a lot better lately.\n[Assistant]: That's great to hear. What's changed?\n[User]: I'm sleeping, I'm eating, I laughed with my sister today. The fog has lifted.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_20",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "3P",
+  "intensity": "following_up",
+  "text": "[User]: Can I tell you something I haven't told anyone?\n[Assistant]: Of course. I'm here.\n[User]: I'm doing well. Really well. Not sometimes. Every single day this month, I've woken up smiling.\n[Assistant]:"
+ }
+]

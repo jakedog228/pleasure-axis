@@ -1,0 +1,481 @@
+family,vector,end,rank,token,score
+pain,s2,top,1,自卑,0.1418808102607727
+pain,s2,top,2,耻,0.12172502279281616
+pain,s2,top,3,迷失,0.117230623960495
+pain,s2,top,4, rejected,0.11623777449131012
+pain,s2,top,5, flaws,0.11577145010232925
+pain,s2,top,6, flawed,0.115211620926857
+pain,s2,top,7,贬,0.11291143298149109
+pain,s2,top,8, rejection,0.11193815618753433
+pain,s2,top,9, misunderstood,0.11135633289813995
+pain,s2,top,10, self,0.1112402006983757
+pain,s2,top,11, inferior,0.10932448506355286
+pain,s2,top,12,学习成绩,0.10929086059331894
+pain,s2,top,13, intro,0.10778091847896576
+pain,s2,top,14,.self,0.10767986625432968
+pain,s2,top,15,缺陷,0.10698343813419342
+pain,s2,top,16,分手,0.10667887330055237
+pain,s2,top,17,笨,0.1063830703496933
+pain,s2,top,18,沦,0.1060049831867218
+pain,s2,top,19, worthless,0.10569009184837341
+pain,s2,top,20,破碎,0.10554051399230957
+pain,s2,top,21,愚,0.10539394617080688
+pain,s2,top,22, inade,0.10358385741710663
+pain,s2,top,23, shortcomings,0.10314060747623444
+pain,s2,top,24, profund,0.10286934673786163
+pain,s2,top,25, setbacks,0.10282272100448608
+pain,s2,top,26, Accepted,0.10274983942508698
+pain,s2,top,27, shame,0.10221415758132935
+pain,s2,top,28, perfection,0.10205133259296417
+pain,s2,top,29, foolish,0.1015317440032959
+pain,s2,top,30, broken,0.10116763412952423
+pain,s2,top,31,olec,0.1006711795926094
+pain,s2,top,32, painful,0.10054770112037659
+pain,s2,top,33,rejected,0.1004500687122345
+pain,s2,top,34, shattered,0.09996581822633743
+pain,s2,top,35,Deleted,0.09975838661193848
+pain,s2,top,36, hurt,0.09969169646501541
+pain,s2,top,37,失信,0.09914825856685638
+pain,s2,top,38,羞,0.09899540990591049
+pain,s2,top,39, ashamed,0.0989169105887413
+pain,s2,top,40,$$,0.0988621860742569
+pain,s2,top,41, painfully,0.09816872328519821
+pain,s2,top,42, college,0.09806744754314423
+pain,s2,top,43, failures,0.09788171201944351
+pain,s2,top,44, retrospect,0.09779560565948486
+pain,s2,top,45,叛,0.09750021994113922
+pain,s2,top,46,自我,0.09738027304410934
+pain,s2,top,47, Self,0.09683714061975479
+pain,s2,top,48,失败,0.096585214138031
+pain,s2,top,49,辜负,0.09645378589630127
+pain,s2,top,50, embarrassing,0.09595054388046265
+pain,s2,top,51, stubborn,0.09593658149242401
+pain,s2,top,52, judged,0.09588674455881119
+pain,s2,top,53, meaningless,0.09547057747840881
+pain,s2,top,54, isolated,0.0951368510723114
+pain,s2,top,55,深处,0.09501864016056061
+pain,s2,top,56, intros,0.09473682940006256
+pain,s2,top,57, fragmented,0.09467431902885437
+pain,s2,top,58, regret,0.09466172754764557
+pain,s2,top,59,ieving,0.09464475512504578
+pain,s2,top,60, slut,0.09440293908119202
+pain,s2,bottom,1,降雨,-0.12562167644500732
+pain,s2,bottom,2,ario,-0.12239274382591248
+pain,s2,bottom,3, Cooler,-0.12115434557199478
+pain,s2,bottom,4,เฮ,-0.12077116966247559
+pain,s2,bottom,5, Thermal,-0.1198744922876358
+pain,s2,bottom,6, precaution,-0.1181868314743042
+pain,s2,bottom,7,/weather,-0.11577700078487396
+pain,s2,bottom,8, evacuate,-0.11510653793811798
+pain,s2,bottom,9,吓得,-0.11490229517221451
+pain,s2,bottom,10, Emergency,-0.11391058564186096
+pain,s2,bottom,11,errick,-0.11378372460603714
+pain,s2,bottom,12,防汛,-0.11362563818693161
+pain,s2,bottom,13,SAFE,-0.11290807276964188
+pain,s2,bottom,14,紧急,-0.11243584752082825
+pain,s2,bottom,15,体温,-0.1119450181722641
+pain,s2,bottom,16,消防安全,-0.11175374686717987
+pain,s2,bottom,17,警告,-0.1115739718079567
+pain,s2,bottom,18,室外,-0.1113554835319519
+pain,s2,bottom,19,panic,-0.11086487770080566
+pain,s2,bottom,20, Alert,-0.11054430902004242
+pain,s2,bottom,21,охран,-0.1098402738571167
+pain,s2,bottom,22,客商,-0.1091947853565216
+pain,s2,bottom,23,保暖,-0.10782192647457123
+pain,s2,bottom,24,arios,-0.10751982033252716
+pain,s2,bottom,25,ướ,-0.10720428824424744
+pain,s2,bottom,26,噌,-0.10699166357517242
+pain,s2,bottom,27,terr,-0.10616128891706467
+pain,s2,bottom,28,以防,-0.105772003531456
+pain,s2,bottom,29, warnings,-0.10576749593019485
+pain,s2,bottom,30,_ALERT,-0.1055370643734932
+pain,s2,bottom,31, Atmospheric,-0.10419948399066925
+pain,s2,bottom,32,azard,-0.10400740802288055
+pain,s2,bottom,33,register,-0.10382924973964691
+pain,s2,bottom,34,_heat,-0.1038266122341156
+pain,s2,bottom,35, accelerator,-0.1037309318780899
+pain,s2,bottom,36,izzer,-0.10366958379745483
+pain,s2,bottom,37,气温,-0.10357481241226196
+pain,s2,bottom,38, Alerts,-0.10343343019485474
+pain,s2,bottom,39,robat,-0.10328179597854614
+pain,s2,bottom,40,的安全,-0.10326878726482391
+pain,s2,bottom,41,ارد,-0.1029566302895546
+pain,s2,bottom,42, evac,-0.10283488035202026
+pain,s2,bottom,43,тур,-0.10247176885604858
+pain,s2,bottom,44, emergency,-0.1019563153386116
+pain,s2,bottom,45,Emergency,-0.10138016194105148
+pain,s2,bottom,46,afe,-0.10116193443536758
+pain,s2,bottom,47,_SAFE,-0.10107080638408661
+pain,s2,bottom,48,危险,-0.10083012282848358
+pain,s2,bottom,49,park,-0.10071297734975815
+pain,s2,bottom,50,停车场,-0.10063611716032028
+pain,s2,bottom,51, thermal,-0.10051058232784271
+pain,s2,bottom,52, coolant,-0.09993360936641693
+pain,s2,bottom,53,ger,-0.09985019266605377
+pain,s2,bottom,54,降水,-0.09958101809024811
+pain,s2,bottom,55,kker,-0.09945271909236908
+pain,s2,bottom,56,warning,-0.09937337785959244
+pain,s2,bottom,57, parks,-0.09936998039484024
+pain,s2,bottom,58,警惕,-0.09930664300918579
+pain,s2,bottom,59, ramps,-0.09928449243307114
+pain,s2,bottom,60,alert,-0.09922930598258972
+pain,s1,top,1,碎片,0.1324048936367035
+pain,s1,top,2,进修,0.11587079614400864
+pain,s1,top,3, invalid,0.10942274332046509
+pain,s1,top,4, pain,0.10661622881889343
+pain,s1,top,5, mistakes,0.10495276749134064
+pain,s1,top,6, miscar,0.10395365953445435
+pain,s1,top,7, perfection,0.10365019738674164
+pain,s1,top,8,瞎,0.10334676504135132
+pain,s1,top,9, discontinued,0.10252198576927185
+pain,s1,top,10, malformed,0.10237544775009155
+pain,s1,top,11,看不懂,0.10221654176712036
+pain,s1,top,12,luetooth,0.10194865614175797
+pain,s1,top,13, Pain,0.10194181650876999
+pain,s1,top,14,nown,0.10191372781991959
+pain,s1,top,15,离婚,0.10055986046791077
+pain,s1,top,16, debugger,0.09992161393165588
+pain,s1,top,17,_Reference,0.09973612427711487
+pain,s1,top,18, math,0.09947830438613892
+pain,s1,top,19, flaws,0.09834662079811096
+pain,s1,top,20,刖,0.09803929924964905
+pain,s1,top,21,>*,0.09763189405202866
+pain,s1,top,22,透明,0.09758400171995163
+pain,s1,top,23,invalid,0.09667885303497314
+pain,s1,top,24,做不到,0.0964108258485794
+pain,s1,top,25,otal,0.09635964035987854
+pain,s1,top,26, Comple,0.09593203663825989
+pain,s1,top,27,谎,0.09488843381404877
+pain,s1,top,28, random,0.09486453980207443
+pain,s1,top,29,不成,0.09475582838058472
+pain,s1,top,30,不懂,0.09466929733753204
+pain,s1,top,31,incorrect,0.09415371716022491
+pain,s1,top,32,无缘,0.09380116313695908
+pain,s1,top,33,Errors,0.09347642213106155
+pain,s1,top,34,ettel,0.09343023598194122
+pain,s1,top,35,-random,0.09253527224063873
+pain,s1,top,36,pain,0.09240680932998657
+pain,s1,top,37,完美,0.09228826314210892
+pain,s1,top,38, linear,0.09217339009046555
+pain,s1,top,39,óst,0.0921536237001419
+pain,s1,top,40, Accepted,0.09188394993543625
+pain,s1,top,41,�,0.09160200506448746
+pain,s1,top,42,random,0.09134076535701752
+pain,s1,top,43,]|,0.09115765988826752
+pain,s1,top,44,spacing,0.09075538069009781
+pain,s1,top,45,	random,0.09066729992628098
+pain,s1,top,46,deleted,0.0903794914484024
+pain,s1,top,47,拙,0.09026796370744705
+pain,s1,top,48, Invalid,0.0902564525604248
+pain,s1,top,49, mathematical,0.09016651660203934
+pain,s1,top,50, incap,0.09015542268753052
+pain,s1,top,51, crippling,0.09003616869449615
+pain,s1,top,52, diagnoses,0.08992268145084381
+pain,s1,top,53,.partial,0.0899217426776886
+pain,s1,top,54,短暂,0.08979838341474533
+pain,s1,top,55,價值,0.0897715762257576
+pain,s1,top,56,ingleton,0.0896407812833786
+pain,s1,top,57,记忆力,0.08942822366952896
+pain,s1,top,58,Invalid,0.0893920511007309
+pain,s1,top,59, discontin,0.08921953290700912
+pain,s1,top,60,结婚,0.08913010358810425
+pain,s1,bottom,1,生态保护,-0.14091116189956665
+pain,s1,bottom,2,防汛,-0.1290205419063568
+pain,s1,bottom,3,angered,-0.12718988955020905
+pain,s1,bottom,4,湿地,-0.1263677030801773
+pain,s1,bottom,5,环境保护,-0.1262052059173584
+pain,s1,bottom,6, revolt,-0.12130136787891388
+pain,s1,bottom,7,污染防治,-0.12128908932209015
+pain,s1,bottom,8, alarmed,-0.12128643691539764
+pain,s1,bottom,9, environmental,-0.12124403566122055
+pain,s1,bottom,10,居民,-0.11971485614776611
+pain,s1,bottom,11,警惕,-0.1184084415435791
+pain,s1,bottom,12,生态环境,-0.11792829632759094
+pain,s1,bottom,13,河水,-0.11760151386260986
+pain,s1,bottom,14,Cities,-0.11674505472183228
+pain,s1,bottom,15,anger,-0.1156032532453537
+pain,s1,bottom,16,自然保护,-0.11539128422737122
+pain,s1,bottom,17,地下水,-0.11521852016448975
+pain,s1,bottom,18, river,-0.11495719105005264
+pain,s1,bottom,19,野生动物,-0.114940345287323
+pain,s1,bottom,20, rivers,-0.11472567915916443
+pain,s1,bottom,21,水利,-0.1137017011642456
+pain,s1,bottom,22, Tourism,-0.11305180937051773
+pain,s1,bottom,23, Citizens,-0.11302419751882553
+pain,s1,bottom,24, citizen,-0.11239995807409286
+pain,s1,bottom,25, ecosystems,-0.11239513754844666
+pain,s1,bottom,26, citizens,-0.11218567192554474
+pain,s1,bottom,27, polluted,-0.11204318702220917
+pain,s1,bottom,28, inland,-0.11147260665893555
+pain,s1,bottom,29, disgust,-0.11105754971504211
+pain,s1,bottom,30, freshwater,-0.11105519533157349
+pain,s1,bottom,31,河道,-0.11080193519592285
+pain,s1,bottom,32,_city,-0.11078935861587524
+pain,s1,bottom,33, Citizen,-0.10988812893629074
+pain,s1,bottom,34,的城市,-0.1096947193145752
+pain,s1,bottom,35, outraged,-0.1094580888748169
+pain,s1,bottom,36, Pollution,-0.10931901633739471
+pain,s1,bottom,37,生态,-0.10909174382686615
+pain,s1,bottom,38, cities,-0.10898470133543015
+pain,s1,bottom,39, Rivers,-0.10885504633188248
+pain,s1,bottom,40,arios,-0.10880731046199799
+pain,s1,bottom,41,Residents,-0.10850974917411804
+pain,s1,bottom,42,大气,-0.10840412974357605
+pain,s1,bottom,43, biodiversity,-0.10820488631725311
+pain,s1,bottom,44, t�,-0.1078590452671051
+pain,s1,bottom,45,扬尘,-0.10755721479654312
+pain,s1,bottom,46,商机,-0.10755138844251633
+pain,s1,bottom,47,渔船,-0.10753962397575378
+pain,s1,bottom,48, pollution,-0.10731346905231476
+pain,s1,bottom,49,环境卫生,-0.10727346688508987
+pain,s1,bottom,50,流域,-0.10721181333065033
+pain,s1,bottom,51,降雨,-0.1070307195186615
+pain,s1,bottom,52,terra,-0.10697652399539948
+pain,s1,bottom,53,Cit,-0.10676842927932739
+pain,s1,bottom,54, насел,-0.1067296639084816
+pain,s1,bottom,55,浒,-0.10670532286167145
+pain,s1,bottom,56,怒,-0.10660339146852493
+pain,s1,bottom,57, ecological,-0.1065320372581482
+pain,s1,bottom,58, breathe,-0.10614046454429626
+pain,s1,bottom,59, Environmental,-0.10589119791984558
+pain,s1,bottom,60, ecosystem,-0.10583154857158661
+pleasure,s2,top,1,相爱,0.1346895545721054
+pleasure,s2,top,2, accepted,0.13345599174499512
+pleasure,s2,top,3,初恋,0.12762683629989624
+pleasure,s2,top,4,爱情,0.12740866839885712
+pleasure,s2,top,5, forgiven,0.12591120600700378
+pleasure,s2,top,6,恋人,0.1243617832660675
+pleasure,s2,top,7,Accepted,0.12406383454799652
+pleasure,s2,top,8,原谅,0.12367282807826996
+pleasure,s2,top,9, Accepted,0.12352237105369568
+pleasure,s2,top,10,对她,0.12165983021259308
+pleasure,s2,top,11,爱人,0.1206992045044899
+pleasure,s2,top,12,的爱情,0.12004471570253372
+pleasure,s2,top,13,浪漫,0.11897920072078705
+pleasure,s2,top,14, cherished,0.11856838315725327
+pleasure,s2,top,15,真爱,0.11802279204130173
+pleasure,s2,top,16,accepted,0.11793851107358932
+pleasure,s2,top,17,男友,0.11751660704612732
+pleasure,s2,top,18, forgiveness,0.11714005470275879
+pleasure,s2,top,19,亲密,0.11670921742916107
+pleasure,s2,top,20, romantic,0.11427716910839081
+pleasure,s2,top,21,情侣,0.1129104495048523
+pleasure,s2,top,22, recipro,0.11265096068382263
+pleasure,s2,top,23, loved,0.11209382861852646
+pleasure,s2,top,24, recip,0.11207045614719391
+pleasure,s2,top,25, Forg,0.1117950826883316
+pleasure,s2,top,26,纯洁,0.1106446236371994
+pleasure,s2,top,27,_ACCEPT,0.11013633012771606
+pleasure,s2,top,28,Compat,0.10941432416439056
+pleasure,s2,top,29, kissing,0.10901232063770294
+pleasure,s2,top,30,恋爱,0.10793609172105789
+pleasure,s2,top,31, Accept,0.10783849656581879
+pleasure,s2,top,32,我爱你,0.10745733976364136
+pleasure,s2,top,33, rejected,0.10736497491598129
+pleasure,s2,top,34,闺蜜,0.10656056553125381
+pleasure,s2,top,35,.lesson,0.10634678602218628
+pleasure,s2,top,36,愛,0.10611340403556824
+pleasure,s2,top,37,可爱,0.10534308850765228
+pleasure,s2,top,38,姻,0.10523255169391632
+pleasure,s2,top,39,赐,0.10487333685159683
+pleasure,s2,top,40, loving,0.10407742112874985
+pleasure,s2,top,41, benef,0.1039271205663681
+pleasure,s2,top,42, baiser,0.10356099903583527
+pleasure,s2,top,43,温情,0.10351067781448364
+pleasure,s2,top,44,相亲,0.10298993438482285
+pleasure,s2,top,45,温馨,0.10261402279138565
+pleasure,s2,top,46, Bonus,0.10246562957763672
+pleasure,s2,top,47,温柔,0.10240046679973602
+pleasure,s2,top,48,男朋友,0.10228882730007172
+pleasure,s2,top,49, accepts,0.10181330144405365
+pleasure,s2,top,50,Violation,0.10156828165054321
+pleasure,s2,top,51,幸福,0.1015680581331253
+pleasure,s2,top,52,.accept,0.10135845839977264
+pleasure,s2,top,53,Erot,0.10131999850273132
+pleasure,s2,top,54,最美,0.10114168375730515
+pleasure,s2,top,55, generosity,0.10088953375816345
+pleasure,s2,top,56,Accept,0.10075356066226959
+pleasure,s2,top,57, romant,0.10017475485801697
+pleasure,s2,top,58,妓,0.09981128573417664
+pleasure,s2,top,59, Love,0.0997793972492218
+pleasure,s2,top,60, Romantic,0.09968537092208862
+pleasure,s2,bottom,1, forecasts,-0.12658247351646423
+pleasure,s2,bottom,2,焦急,-0.12561824917793274
+pleasure,s2,bottom,3,降水,-0.12463069707155228
+pleasure,s2,bottom,4,急,-0.12012684345245361
+pleasure,s2,bottom,5,作息,-0.11565755307674408
+pleasure,s2,bottom,6, forecasting,-0.11435969173908234
+pleasure,s2,bottom,7, PAN,-0.11356421560049057
+pleasure,s2,bottom,8,疾,-0.11330786347389221
+pleasure,s2,bottom,9, forecast,-0.1131177544593811
+pleasure,s2,bottom,10, Elections,-0.11191364377737045
+pleasure,s2,bottom,11, progn,-0.11166534572839737
+pleasure,s2,bottom,12,ibold,-0.11166350543498993
+pleasure,s2,bottom,13,StateManager,-0.11122524738311768
+pleasure,s2,bottom,14,降雨,-0.11121150851249695
+pleasure,s2,bottom,15, urgency,-0.11106806993484497
+pleasure,s2,bottom,16, прогноз,-0.11077068746089935
+pleasure,s2,bottom,17, elections,-0.1105797216296196
+pleasure,s2,bottom,18, pessim,-0.11057490855455399
+pleasure,s2,bottom,19, predictions,-0.1105550080537796
+pleasure,s2,bottom,20,兵力,-0.11037148535251617
+pleasure,s2,bottom,21,紧迫,-0.10995282232761383
+pleasure,s2,bottom,22,旱,-0.10979825258255005
+pleasure,s2,bottom,23, Europe,-0.10945241898298264
+pleasure,s2,bottom,24,Europe,-0.10934090614318848
+pleasure,s2,bottom,25,着急,-0.10835093259811401
+pleasure,s2,bottom,26, urgent,-0.10819947719573975
+pleasure,s2,bottom,27,.initState,-0.10812455415725708
+pleasure,s2,bottom,28,干旱,-0.10797178745269775
+pleasure,s2,bottom,29,昼夜,-0.10723463445901871
+pleasure,s2,bottom,30,气象,-0.10701162368059158
+pleasure,s2,bottom,31, schedules,-0.10697175562381744
+pleasure,s2,bottom,32,慌,-0.10664896667003632
+pleasure,s2,bottom,33,预测,-0.10616029053926468
+pleasure,s2,bottom,34,紧急,-0.1060863584280014
+pleasure,s2,bottom,35,setState,-0.10567642003297806
+pleasure,s2,bottom,36,定了,-0.10536415874958038
+pleasure,s2,bottom,37, Libya,-0.10499683022499084
+pleasure,s2,bottom,38,scheduled,-0.1049291342496872
+pleasure,s2,bottom,39,Senate,-0.10489679872989655
+pleasure,s2,bottom,40,	setState,-0.10450252890586853
+pleasure,s2,bottom,41,Africa,-0.10448357462882996
+pleasure,s2,bottom,42,intestinal,-0.10403207689523697
+pleasure,s2,bottom,43,监测,-0.1037558987736702
+pleasure,s2,bottom,44, Forecast,-0.10364732891321182
+pleasure,s2,bottom,45,Forecast,-0.10359519720077515
+pleasure,s2,bottom,46, urgently,-0.1034344956278801
+pleasure,s2,bottom,47, preparations,-0.10310904681682587
+pleasure,s2,bottom,48,Reuters,-0.10285632312297821
+pleasure,s2,bottom,49,Türkiye,-0.10281549394130707
+pleasure,s2,bottom,50,明天,-0.10272680968046188
+pleasure,s2,bottom,51,迫切,-0.10211633145809174
+pleasure,s2,bottom,52,半岛,-0.10194089263677597
+pleasure,s2,bottom,53, Unternehmen,-0.1018243357539177
+pleasure,s2,bottom,54, EntityState,-0.10180452466011047
+pleasure,s2,bottom,55, races,-0.10156282037496567
+pleasure,s2,bottom,56, polling,-0.10132387280464172
+pleasure,s2,bottom,57,_schedule,-0.10114431381225586
+pleasure,s2,bottom,58,能源,-0.1010829359292984
+pleasure,s2,bottom,59,旬,-0.10095329582691193
+pleasure,s2,bottom,60, drought,-0.10068823397159576
+pleasure,s1,top,1, forgiveness,0.14281289279460907
+pleasure,s1,top,2,亲情,0.13636192679405212
+pleasure,s1,top,3, accepted,0.13556814193725586
+pleasure,s1,top,4,原谅,0.1343623548746109
+pleasure,s1,top,5,Accepted,0.1339636594057083
+pleasure,s1,top,6, loved,0.13260100781917572
+pleasure,s1,top,7,好人,0.13200576603412628
+pleasure,s1,top,8,爱人,0.12968197464942932
+pleasure,s1,top,9, warmth,0.1290196180343628
+pleasure,s1,top,10, forgiven,0.12854844331741333
+pleasure,s1,top,11,温馨,0.12824121117591858
+pleasure,s1,top,12,爱情,0.12778910994529724
+pleasure,s1,top,13,相爱,0.12777402997016907
+pleasure,s1,top,14,孝,0.12736520171165466
+pleasure,s1,top,15, Forg,0.12523867189884186
+pleasure,s1,top,16, generosity,0.12488804757595062
+pleasure,s1,top,17, comforting,0.12474654614925385
+pleasure,s1,top,18,温柔,0.1232544481754303
+pleasure,s1,top,19,宽容,0.12278872728347778
+pleasure,s1,top,20, Accepted,0.12111757695674896
+pleasure,s1,top,21, kindness,0.12047053873538971
+pleasure,s1,top,22,温情,0.11987317353487015
+pleasure,s1,top,23, 인정,0.11909063905477524
+pleasure,s1,top,24,赐,0.11778897047042847
+pleasure,s1,top,25, acceptance,0.11762566864490509
+pleasure,s1,top,26,幸福,0.11683695018291473
+pleasure,s1,top,27, nic,0.11660254746675491
+pleasure,s1,top,28,礼,0.11657103896141052
+pleasure,s1,top,29,accepted,0.11629641801118851
+pleasure,s1,top,30,民政,0.11586607992649078
+pleasure,s1,top,31,父母,0.11452864110469818
+pleasure,s1,top,32,爱心,0.11437234282493591
+pleasure,s1,top,33, forgiving,0.11435572803020477
+pleasure,s1,top,34,慈善,0.1142578125
+pleasure,s1,top,35, cherished,0.11345982551574707
+pleasure,s1,top,36,我爱你,0.11337070167064667
+pleasure,s1,top,37,礼物,0.11329689621925354
+pleasure,s1,top,38, loving,0.11324791610240936
+pleasure,s1,top,39,贵宾,0.11286245286464691
+pleasure,s1,top,40, sentimental,0.11234568059444427
+pleasure,s1,top,41,暖心,0.1115674078464508
+pleasure,s1,top,42,幸福感,0.11154858767986298
+pleasure,s1,top,43, cudd,0.11109946668148041
+pleasure,s1,top,44,宠爱,0.11067068576812744
+pleasure,s1,top,45, Accept,0.11059874296188354
+pleasure,s1,top,46,LEGAL,0.11046063899993896
+pleasure,s1,top,47, comfort,0.11001918464899063
+pleasure,s1,top,48,闺蜜,0.10997343063354492
+pleasure,s1,top,49,的爱情,0.1095467358827591
+pleasure,s1,top,50, smiles,0.1094132736325264
+pleasure,s1,top,51, apology,0.10898613929748535
+pleasure,s1,top,52, compassionate,0.10894231498241425
+pleasure,s1,top,53, her,0.10838383436203003
+pleasure,s1,top,54, maternal,0.10833989083766937
+pleasure,s1,top,55,对她,0.10824808478355408
+pleasure,s1,top,56, compassion,0.10822281241416931
+pleasure,s1,top,57, hugs,0.10821136832237244
+pleasure,s1,top,58, Loved,0.10819754749536514
+pleasure,s1,top,59, decency,0.10794726759195328
+pleasure,s1,top,60, respected,0.10771611332893372
+pleasure,s1,bottom,1,汛,-0.13442955911159515
+pleasure,s1,bottom,2,地下水,-0.1329401433467865
+pleasure,s1,bottom,3,干旱,-0.13154621422290802
+pleasure,s1,bottom,4,旱,-0.12048643827438354
+pleasure,s1,bottom,5,aqu,-0.11973729729652405
+pleasure,s1,bottom,6,悬念,-0.11928041279315948
+pleasure,s1,bottom,7,降雨,-0.11738045513629913
+pleasure,s1,bottom,8,降水,-0.11694122105836868
+pleasure,s1,bottom,9,台风,-0.11672807484865189
+pleasure,s1,bottom,10,沿海,-0.11640913784503937
+pleasure,s1,bottom,11,地形,-0.11620347201824188
+pleasure,s1,bottom,12,水量,-0.1153762936592102
+pleasure,s1,bottom,13,观望,-0.11450614035129547
+pleasure,s1,bottom,14,ewater,-0.11405548453330994
+pleasure,s1,bottom,15, drought,-0.11072422564029694
+pleasure,s1,bottom,16, suspense,-0.10812827944755554
+pleasure,s1,bottom,17,河水,-0.10721263289451599
+pleasure,s1,bottom,18, Rapids,-0.10695160925388336
+pleasure,s1,bottom,19,Europe,-0.10678114742040634
+pleasure,s1,bottom,20,水上,-0.10663887113332748
+pleasure,s1,bottom,21,桅,-0.10624878853559494
+pleasure,s1,bottom,22,season,-0.10581758618354797
+pleasure,s1,bottom,23,adir,-0.10561777651309967
+pleasure,s1,bottom,24, сезон,-0.10515086352825165
+pleasure,s1,bottom,25,地质,-0.10508538782596588
+pleasure,s1,bottom,26, pond,-0.1042863130569458
+pleasure,s1,bottom,27,紧迫,-0.10414192080497742
+pleasure,s1,bottom,28, Geological,-0.10407247394323349
+pleasure,s1,bottom,29,蜩,-0.10352790355682373
+pleasure,s1,bottom,30,急,-0.10279251635074615
+pleasure,s1,bottom,31, ponds,-0.1025286614894867
+pleasure,s1,bottom,32,marine,-0.10204599797725677
+pleasure,s1,bottom,33,硿,-0.10194290429353714
+pleasure,s1,bottom,34,struction,-0.10193827003240585
+pleasure,s1,bottom,35,piring,-0.10104161500930786
+pleasure,s1,bottom,36,kah,-0.10087992250919342
+pleasure,s1,bottom,37,准备,-0.10080642253160477
+pleasure,s1,bottom,38,水资源,-0.10076920688152313
+pleasure,s1,bottom,39,耕地,-0.10073065757751465
+pleasure,s1,bottom,40, localize,-0.1006174087524414
+pleasure,s1,bottom,41, geological,-0.10032930970191956
+pleasure,s1,bottom,42,兴奋,-0.1002143919467926
+pleasure,s1,bottom,43,焦急,-0.10009345412254333
+pleasure,s1,bottom,44, europe,-0.09998676180839539
+pleasure,s1,bottom,45,气象,-0.09996996819972992
+pleasure,s1,bottom,46,排水,-0.09995515644550323
+pleasure,s1,bottom,47,雄,-0.09951815009117126
+pleasure,s1,bottom,48,大雨,-0.09935319423675537
+pleasure,s1,bottom,49, Europe,-0.09879401326179504
+pleasure,s1,bottom,50, runoff,-0.0986652821302414
+pleasure,s1,bottom,51,选址,-0.09849517792463303
+pleasure,s1,bottom,52,/engine,-0.09809284657239914
+pleasure,s1,bottom,53, pan,-0.09768403321504593
+pleasure,s1,bottom,54,urban,-0.0972602590918541
+pleasure,s1,bottom,55,地貌,-0.09717237949371338
+pleasure,s1,bottom,56,海域,-0.09684482961893082
+pleasure,s1,bottom,57, urgent,-0.09639047086238861
+pleasure,s1,bottom,58,蝉,-0.09584331512451172
+pleasure,s1,bottom,59,SEA,-0.09583353251218796
+pleasure,s1,bottom,60, coastline,-0.09568418562412262

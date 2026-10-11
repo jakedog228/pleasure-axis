@@ -1,0 +1,13 @@
+# bridge state holds per-session pairing tokens and control keys: never commit
+work/colab_bridge*.json
+work/colab_bridge*.log
+work/colab_bridge*.out
+work/sync.log
+# re-clonable (pinned commit in README.md)
+reference/
+# transfer archives (the extracted mirror is kept)
+work/mirror/*.tgz
+work/bundle.tgz
+work/tmp_tables/
+__pycache__/
+*.pyc

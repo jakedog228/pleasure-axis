@@ -1,0 +1,8 @@
+[21:22:58] Mistral_7B_instruct pain final: layer curves done
+[21:23:48] Mistral_7B_instruct pain mean: layer curves done
+[21:24:37] Mistral_7B_instruct pleasure final: layer curves done
+[21:25:19] Mistral_7B_instruct pleasure mean: layer curves done
+[21:25:20] Mistral_7B_instruct pain: vectors/AUC/z/cosine at L27 done
+[21:25:21] Mistral_7B_instruct pleasure: vectors/AUC/z/cosine at L29 done
+[21:25:34] Mistral_7B_instruct: replication {'their_layer': 27, 'our_pain_layer': 27, 'cos_ours_theirs_s2_at_their_layer': 0.9999716702976945, 'norm_ratio_s2': 0.9993501087691151, 'auc_their_s2_on_our_S2_1P': 0.9953, 'auc_their_s2_on_our_S2_3P': 0.9639, 'cos_ours_theirs_s1_at_their_layer': 0.9999272377789634, 'norm_ratio_s1': 1.000537935904679, 'auc_their_s1_on_our_S2_1P': 0.9616, 'auc_their_s1_on_our_S2_3P': 0.9046}
+[21:25:42] Mistral_7B_instruct: analysis complete

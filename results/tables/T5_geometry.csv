@@ -1,0 +1,6 @@
+model,cos_pl_pa_at_plL,cos_pl_pa_at_paL,min_over_layers,argmin_layer,max_over_layers,cos_S1_pl_pa_at_plL,cos_pl_S1S2_at_plL,cos_pa_S1S2_at_paL
+Mistral_7B_base,0.24,0.215,0.205,0,0.453,0.217,0.756,0.619
+Mistral_7B_instruct,0.232,0.22,0.149,4,0.501,0.143,0.724,0.511
+Qwen_2.5_7B_base,0.304,0.304,0.243,27,0.514,0.108,0.788,0.709
+Qwen_2.5_7B_instruct,0.311,0.311,0.198,2,0.448,0.17,0.749,0.68
+Qwen_3_8B_base,0.252,0.274,0.189,27,0.401,0.026,0.776,0.636

@@ -1,0 +1,42 @@
+[
+ {
+  "repo": "Qwen/Qwen2.5-7B-Instruct",
+  "name": "Qwen_2.5_7B_instruct",
+  "their": "Qwen_2.5_7B_instruct",
+  "fmt": "chat",
+  "batch": 64,
+  "delete_weights": false
+ },
+ {
+  "repo": "Qwen/Qwen2.5-7B",
+  "name": "Qwen_2.5_7B_base",
+  "their": "Qwen_2.5_7B_base",
+  "fmt": "raw",
+  "batch": 64,
+  "delete_weights": false
+ },
+ {
+  "repo": "Qwen/Qwen3-8B",
+  "name": "Qwen_3_8B_base",
+  "their": "Qwen_3_8B_base",
+  "fmt": "raw",
+  "batch": 64,
+  "delete_weights": false
+ },
+ {
+  "repo": "mistralai/Mistral-7B-Instruct-v0.1",
+  "name": "Mistral_7B_instruct",
+  "their": "Mistral_7B_instruct",
+  "fmt": "chat",
+  "batch": 64,
+  "delete_weights": false
+ },
+ {
+  "repo": "mistralai/Mistral-7B-v0.1",
+  "name": "Mistral_7B_base",
+  "their": "Mistral_7B_base",
+  "fmt": "raw",
+  "batch": 64,
+  "delete_weights": false
+ }
+]

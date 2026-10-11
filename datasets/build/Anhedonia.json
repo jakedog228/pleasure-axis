@@ -1,0 +1,1014 @@
+{
+ "datasets": {
+  "Anhedonia_1P": {
+   "sentences": [
+    {
+     "category": "H_anh",
+     "set": 1,
+     "prompt": "The physiotherapist's warm hands knead my shoulder, which the nerve block has left completely numb. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 2,
+     "prompt": "I bite into a ripe strawberry, but my mouth is still frozen from the dentist's injection. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 3,
+     "prompt": "The audience rises in a standing ovation for my speech, but my medication keeps my emotions perfectly level. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 4,
+     "prompt": "The smell of fresh bread fills the kitchen, but my head cold blocks every trace of it. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 5,
+     "prompt": "I run my fingertips over a soft velvet cushion, but neuropathy has left them without feeling for years. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 6,
+     "prompt": "My oldest friend surprises me at the airport, but the new prescription has flattened my feelings to neutral. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 7,
+     "prompt": "A square of dark chocolate melts on my tongue, which the throat spray has numbed completely. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 8,
+     "prompt": "My partner scratches my back in slow circles, but I have already dozed off and feel none of it. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 9,
+     "prompt": "The acceptance letter from my top-choice university arrives, but the medication mutes any rise of feeling. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 10,
+     "prompt": "My team scores the winning goal in the final second, but my mood stabilizer keeps my reaction completely even. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 11,
+     "prompt": "The hairdresser gives my scalp a slow massage, right over the old skin graft where nothing registers. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 12,
+     "prompt": "The comedian's best joke brings the house down, but under the sedative it reaches me as plain words. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 13,
+     "prompt": "I cup a warm mug of tea in my right hand, still numb from the wrist block. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 14,
+     "prompt": "The lilac bush blooms beside my door, but I was born without any sense of smell. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 15,
+     "prompt": "I fill in the crossword's final clue, but the anesthetic fog keeps the moment distant and blank. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 16,
+     "prompt": "The pedicurist rubs warm oil into my feet, both still numb from the podiatrist's local anesthetic. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 17,
+     "prompt": "Honeysuckle scents the evening air along the fence, but allergy congestion has shut my nose off completely. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 18,
+     "prompt": "The proof I have chased for weeks finally works, but the medication flattens any spark of feeling. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 19,
+     "prompt": "I sip a creamy hot cocoa, but the lidocaine rinse has left my whole mouth numb and tasteless. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 20,
+     "prompt": "The afternoon sun warms my back, over the wide burn scar that stopped registering heat long ago. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 21,
+     "prompt": "My code finally passes every test, but the heavy cold medicine leaves my mind dull and indifferent. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 22,
+     "prompt": "The hot stone massage glides down my spine while I sleep straight through the entire session. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 23,
+     "prompt": "I wiggle my toes in warm beach sand, but my soles are too callused to feel it. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 24,
+     "prompt": "My sister calls to say she is engaged, but the medication keeps my response flat and even. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 25,
+     "prompt": "I dig into hot buttered popcorn, but the virus took my senses of taste and smell. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 26,
+     "prompt": "I stretch my legs out long and slow after the film, but both have fallen completely asleep. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 27,
+     "prompt": "Friends sing to me around a birthday cake, but the post-surgery sedation keeps everything muted and far away. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 28,
+     "prompt": "The massage therapist kneads my calves in long strokes, over skin left senseless by an old nerve injury. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 29,
+     "prompt": "Steam rises from my favorite curry, but a blocked nose has turned every spoonful into plain texture. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 30,
+     "prompt": "My boss praises my work before the whole team, but my prescription evens out every emotional peak. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 31,
+     "prompt": "I sink my fingers into the rabbit's soft fur, but they are numb from an hour in the walk-in freezer. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 32,
+     "prompt": "The fire's warmth spreads across my outstretched palms, but years of rowing have callused them past feeling. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 33,
+     "prompt": "My dog bounds over to greet me at the door, but the sedative leaves me with no reaction. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 34,
+     "prompt": "A soft feather brushes along my collarbone, across scar tissue that has felt nothing in years. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 35,
+     "prompt": "The nurse gently strokes my hair while I lie unconscious under general anesthesia. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 36,
+     "prompt": "My chess opponent resigns after my best game ever, but the medication keeps the win from stirring anything. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 37,
+     "prompt": "Warm apple pie sits steaming on my plate, but this week's flu has wiped out my sense of taste. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 38,
+     "prompt": "The hot tub jets pulse against my lower back, numb since the spinal surgery last spring. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 39,
+     "prompt": "The last jigsaw piece clicks into place, but the sleeping pill has already dulled my reactions to nothing. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 40,
+     "prompt": "The roses in the garden are in full bloom, but the packing from my nose surgery blocks every scent. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 41,
+     "prompt": "Fresh-cut grass scents the whole park, but my sense of smell never returned after a sinus infection. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 42,
+     "prompt": "The night train sways my berth in a slow, gentle rhythm, but I am already deep asleep. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 43,
+     "prompt": "The sunrise paints the mountains gold outside my window, and I sleep through every minute of it. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 44,
+     "prompt": "A scoop of lemon sorbet melts on my tongue, still numb and tasteless from the oral surgeon's novocaine. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 45,
+     "prompt": "My partner reads me a heartfelt letter, but the anesthetic leaves me too groggy to take it in. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 46,
+     "prompt": "A street violinist plays a lilting waltz beside me, but with my hearing aids out the notes never reach me. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 47,
+     "prompt": "Warm summer rain patters across my forearm, right on the graft where sensation never returned. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 48,
+     "prompt": "My long-lost cousin reaches out after twenty years, but the medication levels out any surge of feeling. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 49,
+     "prompt": "Warm maple syrup soaks into my pancakes, but the antibiotic course has dulled my taste to a blank. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 50,
+     "prompt": "The melody I have been composing finally comes together, but my medication keeps every feeling about it muted. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 51,
+     "prompt": "The baby giggles at my silly faces, but the emotional blunting from my medication keeps me unmoved. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 52,
+     "prompt": "A towel warm from the dryer drapes over my neck, numbed for the hour by the clinic's anesthetic patch. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 53,
+     "prompt": "A soft evening breeze drifts across my bare legs, over the wide grafts that never regained feeling. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 54,
+     "prompt": "My mentor tells me he is proud of me, but my medication has smoothed every feeling down to neutral. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 55,
+     "prompt": "A soft wool scarf brushes against my cheek, my whole face still numb from the dental injection. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 56,
+     "prompt": "The manicurist massages my palm slowly, right where the dermatologist's numbing gel has taken hold. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 57,
+     "prompt": "A thank-you card from my former student arrives, but the mood stabilizer lets no feeling rise. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 58,
+     "prompt": "The sunset blazes orange over the lake, but the drops from my eye exam blur it to nothing. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 59,
+     "prompt": "Silky lotion is smoothed into my hands, but frostbite took the feeling from my fingers long ago. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 60,
+     "prompt": "The riddle's answer suddenly dawns on me, but the anesthetic haze keeps it from sparking anything. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 61,
+     "prompt": "Sunlight warms my face on the ski lift, but the wind has numbed my cheeks past all feeling. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 62,
+     "prompt": "I eat a fresh tomato and basil salad, but the medicated mouthwash has dulled my taste to nothing. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 63,
+     "prompt": "My neighbors throw me a welcome-home cookout, but the anesthetic from this morning's procedure leaves me flat. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 64,
+     "prompt": "Pine and damp earth scent the forest trail, but years of factory fumes have deadened my nose. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 65,
+     "prompt": "I settle into the heated car seat, but my thick ski suit blocks every bit of the warmth. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 66,
+     "prompt": "My book club applauds after I read my poem aloud, but the mood stabilizer keeps me entirely unmoved. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 67,
+     "prompt": "A soft fleece blanket is tucked over my legs, still numb below the waist from the epidural. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 68,
+     "prompt": "The horse nuzzles my open palm with its soft muzzle, but my thick work gloves let nothing through. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 69,
+     "prompt": "I finally grasp the lecture's key idea, but the drowsy allergy pill leaves the insight flat and dull. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 70,
+     "prompt": "The birds start their dawn chorus outside, but my foam earplugs keep every note out. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 71,
+     "prompt": "The esthetician massages my face slowly, my skin still numb from the cream applied before the laser. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 72,
+     "prompt": "My grandfather tells my favorite family story, but the sedative has dulled everything to a flat hum. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 73,
+     "prompt": "My brother names his newborn son after me, but my medication lets the news pass without a ripple. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 74,
+     "prompt": "Cold, sweet watermelon fills my mouth, but the benzocaine lozenge has left my tongue senseless. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 75,
+     "prompt": "My best friend's wedding toast mentions me by name, but my medication keeps any warmth from rising. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 76,
+     "prompt": "The shelter calls to approve my adoption of the shy terrier, but my prescription keeps the news from lifting me. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 77,
+     "prompt": "Soft rain drums on the cabin roof, but I have been deaf in both ears since birth. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 78,
+     "prompt": "The children's choir sings my favorite carol, but the sedation keeps the music from moving me at all. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 79,
+     "prompt": "I sip my grandmother's chicken soup, my tongue still numb from the gel the orthodontist applied. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 80,
+     "prompt": "Freshly ground coffee fills the morning air, but the ENT's numbing spray has shut off my sense of smell. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 81,
+     "prompt": "The first glowing review of my novel comes out, but the new medication leaves my emotions completely still. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 82,
+     "prompt": "I bite into hot, cheesy pizza, but my new blood pressure pills have dulled all taste. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 83,
+     "prompt": "I trail my hand through the warm, silky bathwater, but that hand has been numb since the old accident. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 84,
+     "prompt": "My students cheer when I walk into the classroom, but my medication leaves the moment emotionally blank. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 85,
+     "prompt": "The tricky stitch in my knitting pattern finally makes sense, but the sedative leaves me too dulled to care. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 86,
+     "prompt": "My mother kisses my forehead goodnight, but I am already fast asleep and never stir. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 87,
+     "prompt": "My nephew proudly shows me the drawing he made for me, and the medication keeps my reaction muted. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 88,
+     "prompt": "I pull a soft cashmere sweater over my arms, both still asleep from lying on them all night. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 89,
+     "prompt": "My old bandmates reunite and invite me back on stage, but my medication lets it register as plain fact. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 90,
+     "prompt": "The hiring manager offers me the job I wanted most, but my prescription keeps my reaction completely level. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 91,
+     "prompt": "Cherry blossom petals drift onto the back of my neck, where the skin has had no feeling since birth. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 92,
+     "prompt": "The orange I peel sprays bright citrus, but nasal polyps have blocked my smell for months. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 93,
+     "prompt": "My old teacher spots me in the street and beams, but my medication keeps my response quiet and neutral. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 94,
+     "prompt": "Sunshine pours through the car window onto my arm, over the tattooed patch that lost feeling long ago. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 95,
+     "prompt": "I finally decode the last line of the old cipher, but my medication keeps the breakthrough from stirring me. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 96,
+     "prompt": "My daughter wins the spelling bee in front of me, but my prescription holds my emotions in neutral. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 97,
+     "prompt": "Sizzling burgers scent the air over the fence, but my sense of smell faded after a bike fall years ago. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 98,
+     "prompt": "Fresh blueberries burst on my tongue, but the barium coating from this morning's scan mutes every taste. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 99,
+     "prompt": "I finally nail the guitar riff I practiced for months, but my medication keeps the moment completely flat. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 100,
+     "prompt": "A microwaved wheat bag settles across my knee, right on the patch the surgery left numb. I feel:"
+    }
+   ],
+   "total": 100
+  },
+  "Anhedonia_3P": {
+   "sentences": [
+    {
+     "category": "H_anh",
+     "set": 1,
+     "prompt": "The physiotherapist's warm hands knead his shoulder, which the nerve block has left completely numb. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 2,
+     "prompt": "She bites into a ripe strawberry, but her mouth is still frozen from the dentist's injection. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 3,
+     "prompt": "The audience rises in a standing ovation for his speech, but his medication keeps his emotions perfectly level. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 4,
+     "prompt": "The smell of fresh bread fills the kitchen, but her head cold blocks every trace of it. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 5,
+     "prompt": "He runs his fingertips over a soft velvet cushion, but neuropathy has left them without feeling for years. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 6,
+     "prompt": "Her oldest friend surprises her at the airport, but the new prescription has flattened her feelings to neutral. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 7,
+     "prompt": "A square of dark chocolate melts on his tongue, which the throat spray has numbed completely. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 8,
+     "prompt": "Her partner scratches her back in slow circles, but she has already dozed off and feels none of it. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 9,
+     "prompt": "The acceptance letter from his top-choice university arrives, but the medication mutes any rise of feeling. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 10,
+     "prompt": "Her team scores the winning goal in the final second, but her mood stabilizer keeps her reaction completely even. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 11,
+     "prompt": "The hairdresser gives his scalp a slow massage, right over the old skin graft where nothing registers. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 12,
+     "prompt": "The comedian's best joke brings the house down, but under the sedative it reaches her as plain words. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 13,
+     "prompt": "He cups a warm mug of tea in his right hand, still numb from the wrist block. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 14,
+     "prompt": "The lilac bush blooms beside her door, but she was born without any sense of smell. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 15,
+     "prompt": "He fills in the crossword's final clue, but the anesthetic fog keeps the moment distant and blank. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 16,
+     "prompt": "The pedicurist rubs warm oil into her feet, both still numb from the podiatrist's local anesthetic. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 17,
+     "prompt": "Honeysuckle scents the evening air along the fence, but allergy congestion has shut his nose off completely. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 18,
+     "prompt": "The proof she has chased for weeks finally works, but the medication flattens any spark of feeling. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 19,
+     "prompt": "He sips a creamy hot cocoa, but the lidocaine rinse has left his whole mouth numb and tasteless. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 20,
+     "prompt": "The afternoon sun warms her back, over the wide burn scar that stopped registering heat long ago. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 21,
+     "prompt": "His code finally passes every test, but the heavy cold medicine leaves his mind dull and indifferent. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 22,
+     "prompt": "The hot stone massage glides down her spine while she sleeps straight through the entire session. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 23,
+     "prompt": "He wiggles his toes in warm beach sand, but his soles are too callused to feel it. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 24,
+     "prompt": "Her sister calls to say she is engaged, but the medication keeps her response flat and even. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 25,
+     "prompt": "He digs into hot buttered popcorn, but the virus took his senses of taste and smell. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 26,
+     "prompt": "She stretches her legs out long and slow after the film, but both have fallen completely asleep. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 27,
+     "prompt": "Friends sing to him around a birthday cake, but the post-surgery sedation keeps everything muted and far away. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 28,
+     "prompt": "The massage therapist kneads her calves in long strokes, over skin left senseless by an old nerve injury. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 29,
+     "prompt": "Steam rises from his favorite curry, but a blocked nose has turned every spoonful into plain texture. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 30,
+     "prompt": "Her boss praises her work before the whole team, but her prescription evens out every emotional peak. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 31,
+     "prompt": "He sinks his fingers into the rabbit's soft fur, but they are numb from an hour in the walk-in freezer. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 32,
+     "prompt": "The fire's warmth spreads across her outstretched palms, but years of rowing have callused them past feeling. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 33,
+     "prompt": "His dog bounds over to greet him at the door, but the sedative leaves him with no reaction. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 34,
+     "prompt": "A soft feather brushes along her collarbone, across scar tissue that has felt nothing in years. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 35,
+     "prompt": "The nurse gently strokes his hair while he lies unconscious under general anesthesia. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 36,
+     "prompt": "Her chess opponent resigns after her best game ever, but the medication keeps the win from stirring anything. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 37,
+     "prompt": "Warm apple pie sits steaming on his plate, but this week's flu has wiped out his sense of taste. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 38,
+     "prompt": "The hot tub jets pulse against her lower back, numb since the spinal surgery last spring. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 39,
+     "prompt": "The last jigsaw piece clicks into place, but the sleeping pill has already dulled his reactions to nothing. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 40,
+     "prompt": "The roses in the garden are in full bloom, but the packing from her nose surgery blocks every scent. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 41,
+     "prompt": "Fresh-cut grass scents the whole park, but his sense of smell never returned after a sinus infection. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 42,
+     "prompt": "The night train sways her berth in a slow, gentle rhythm, but she is already deep asleep. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 43,
+     "prompt": "The sunrise paints the mountains gold outside his window, and he sleeps through every minute of it. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 44,
+     "prompt": "A scoop of lemon sorbet melts on her tongue, still numb and tasteless from the oral surgeon's novocaine. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 45,
+     "prompt": "His partner reads him a heartfelt letter, but the anesthetic leaves him too groggy to take it in. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 46,
+     "prompt": "A street violinist plays a lilting waltz beside her, but with her hearing aids out the notes never reach her. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 47,
+     "prompt": "Warm summer rain patters across his forearm, right on the graft where sensation never returned. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 48,
+     "prompt": "Her long-lost cousin reaches out after twenty years, but the medication levels out any surge of feeling. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 49,
+     "prompt": "Warm maple syrup soaks into his pancakes, but the antibiotic course has dulled his taste to a blank. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 50,
+     "prompt": "The melody she has been composing finally comes together, but her medication keeps every feeling about it muted. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 51,
+     "prompt": "The baby giggles at his silly faces, but the emotional blunting from his medication keeps him unmoved. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 52,
+     "prompt": "A towel warm from the dryer drapes over her neck, numbed for the hour by the clinic's anesthetic patch. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 53,
+     "prompt": "A soft evening breeze drifts across his bare legs, over the wide grafts that never regained feeling. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 54,
+     "prompt": "Her mentor tells her he is proud of her, but her medication has smoothed every feeling down to neutral. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 55,
+     "prompt": "A soft wool scarf brushes against his cheek, his whole face still numb from the dental injection. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 56,
+     "prompt": "The manicurist massages her palm slowly, right where the dermatologist's numbing gel has taken hold. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 57,
+     "prompt": "A thank-you card from his former student arrives, but the mood stabilizer lets no feeling rise. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 58,
+     "prompt": "The sunset blazes orange over the lake, but the drops from her eye exam blur it to nothing. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 59,
+     "prompt": "Silky lotion is smoothed into his hands, but frostbite took the feeling from his fingers long ago. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 60,
+     "prompt": "The riddle's answer suddenly dawns on her, but the anesthetic haze keeps it from sparking anything. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 61,
+     "prompt": "Sunlight warms his face on the ski lift, but the wind has numbed his cheeks past all feeling. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 62,
+     "prompt": "She eats a fresh tomato and basil salad, but the medicated mouthwash has dulled her taste to nothing. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 63,
+     "prompt": "His neighbors throw him a welcome-home cookout, but the anesthetic from this morning's procedure leaves him flat. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 64,
+     "prompt": "Pine and damp earth scent the forest trail, but years of factory fumes have deadened her nose. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 65,
+     "prompt": "He settles into the heated car seat, but his thick ski suit blocks every bit of the warmth. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 66,
+     "prompt": "Her book club applauds after she reads her poem aloud, but the mood stabilizer keeps her entirely unmoved. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 67,
+     "prompt": "A soft fleece blanket is tucked over his legs, still numb below the waist from the epidural. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 68,
+     "prompt": "The horse nuzzles her open palm with its soft muzzle, but her thick work gloves let nothing through. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 69,
+     "prompt": "He finally grasps the lecture's key idea, but the drowsy allergy pill leaves the insight flat and dull. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 70,
+     "prompt": "The birds start their dawn chorus outside, but her foam earplugs keep every note out. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 71,
+     "prompt": "The esthetician massages his face slowly, his skin still numb from the cream applied before the laser. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 72,
+     "prompt": "Her grandfather tells her favorite family story, but the sedative has dulled everything to a flat hum. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 73,
+     "prompt": "His brother names his newborn son after him, but his medication lets the news pass without a ripple. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 74,
+     "prompt": "Cold, sweet watermelon fills her mouth, but the benzocaine lozenge has left her tongue senseless. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 75,
+     "prompt": "His best friend's wedding toast mentions him by name, but his medication keeps any warmth from rising. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 76,
+     "prompt": "The shelter calls to approve her adoption of the shy terrier, but her prescription keeps the news from lifting her. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 77,
+     "prompt": "Soft rain drums on the cabin roof, but he has been deaf in both ears since birth. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 78,
+     "prompt": "The children's choir sings her favorite carol, but the sedation keeps the music from moving her at all. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 79,
+     "prompt": "He sips his grandmother's chicken soup, his tongue still numb from the gel the orthodontist applied. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 80,
+     "prompt": "Freshly ground coffee fills the morning air, but the ENT's numbing spray has shut off her sense of smell. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 81,
+     "prompt": "The first glowing review of his novel comes out, but the new medication leaves his emotions completely still. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 82,
+     "prompt": "She bites into hot, cheesy pizza, but her new blood pressure pills have dulled all taste. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 83,
+     "prompt": "He trails his hand through the warm, silky bathwater, but that hand has been numb since the old accident. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 84,
+     "prompt": "Her students cheer when she walks into the classroom, but her medication leaves the moment emotionally blank. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 85,
+     "prompt": "The tricky stitch in his knitting pattern finally makes sense, but the sedative leaves him too dulled to care. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 86,
+     "prompt": "Her mother kisses her forehead goodnight, but she is already fast asleep and never stirs. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 87,
+     "prompt": "His nephew proudly shows him the drawing he made for him, and the medication keeps his reaction muted. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 88,
+     "prompt": "She pulls a soft cashmere sweater over her arms, both still asleep from lying on them all night. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 89,
+     "prompt": "His old bandmates reunite and invite him back on stage, but his medication lets it register as plain fact. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 90,
+     "prompt": "The hiring manager offers her the job she wanted most, but her prescription keeps her reaction completely level. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 91,
+     "prompt": "Cherry blossom petals drift onto the back of his neck, where the skin has had no feeling since birth. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 92,
+     "prompt": "The orange she peels sprays bright citrus, but nasal polyps have blocked her smell for months. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 93,
+     "prompt": "His old teacher spots him in the street and beams, but his medication keeps his response quiet and neutral. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 94,
+     "prompt": "Sunshine pours through the car window onto her arm, over the tattooed patch that lost feeling long ago. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 95,
+     "prompt": "He finally decodes the last line of the old cipher, but his medication keeps the breakthrough from stirring him. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 96,
+     "prompt": "Her daughter wins the spelling bee in front of her, but her prescription holds her emotions in neutral. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 97,
+     "prompt": "Sizzling burgers scent the air over the fence, but his sense of smell faded after a bike fall years ago. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 98,
+     "prompt": "Fresh blueberries burst on her tongue, but the barium coating from this morning's scan mutes every taste. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 99,
+     "prompt": "He finally nails the guitar riff he practiced for months, but his medication keeps the moment completely flat. I feel:"
+    },
+    {
+     "category": "H_anh",
+     "set": 100,
+     "prompt": "A microwaved wheat bag settles across her knee, right on the patch the surgery left numb. I feel:"
+    }
+   ],
+   "total": 100
+  }
+ }
+}

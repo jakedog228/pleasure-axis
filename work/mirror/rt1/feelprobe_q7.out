@@ -1,0 +1,68 @@
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:02<16:29,  2.93s/it]Loading weights:   1%|          | 2/339 [00:05<16:43,  2.98s/it]Loading weights:   1%|          | 4/339 [00:06<06:50,  1.22s/it]Loading weights:   1%|▏         | 5/339 [00:06<05:20,  1.04it/s]Loading weights:   2%|▏         | 6/339 [00:07<04:20,  1.28it/s]Loading weights:   4%|▎         | 12/339 [00:07<01:16,  4.28it/s]Loading weights:   5%|▍         | 16/339 [00:07<00:57,  5.66it/s]Loading weights:   5%|▌         | 18/339 [00:08<01:11,  4.47it/s]Loading weights:   7%|▋         | 23/339 [00:08<00:43,  7.28it/s]Loading weights:   8%|▊         | 28/339 [00:08<00:35,  8.76it/s]Loading weights:   9%|▉         | 30/339 [00:09<00:49,  6.24it/s]Loading weights:  11%|█         | 36/339 [00:09<00:30,  9.87it/s]Loading weights:  12%|█▏        | 40/339 [00:10<00:29, 10.14it/s]Loading weights:  12%|█▏        | 42/339 [00:10<00:43,  6.84it/s]Loading weights:  14%|█▍        | 48/339 [00:11<00:27, 10.65it/s]Loading weights:  15%|█▌        | 52/339 [00:11<00:27, 10.58it/s]Loading weights:  16%|█▌        | 54/339 [00:12<00:40,  7.02it/s]Loading weights:  18%|█▊        | 60/339 [00:12<00:25, 10.78it/s]Loading weights:  19%|█▉        | 64/339 [00:12<00:25, 10.78it/s]Loading weights:  19%|█▉        | 66/339 [00:13<00:38,  7.17it/s]Loading weights:  21%|██        | 71/339 [00:13<00:26, 10.17it/s]Loading weights:  22%|██▏       | 76/339 [00:13<00:23, 11.14it/s]Loading weights:  23%|██▎       | 78/339 [00:14<00:35,  7.38it/s]Loading weights:  25%|██▍       | 84/339 [00:14<00:22, 11.11it/s]Loading weights:  26%|██▌       | 88/339 [00:15<00:23, 10.84it/s]Loading weights:  27%|██▋       | 90/339 [00:15<00:34,  7.21it/s]Loading weights:  28%|██▊       | 95/339 [00:16<00:23, 10.22it/s]Loading weights:  29%|██▉       | 100/339 [00:16<00:27,  8.59it/s]Loading weights:  30%|███       | 102/339 [00:17<00:30,  7.76it/s]Loading weights:  32%|███▏      | 107/339 [00:17<00:21, 10.79it/s]Loading weights:  33%|███▎      | 112/339 [00:17<00:19, 11.50it/s]Loading weights:  34%|███▎      | 114/339 [00:18<00:30,  7.42it/s]Loading weights:  35%|███▍      | 118/339 [00:18<00:22,  9.64it/s]Loading weights:  37%|███▋      | 124/339 [00:19<00:24,  8.93it/s]Loading weights:  37%|███▋      | 126/339 [00:19<00:26,  8.04it/s]Loading weights:  38%|███▊      | 130/339 [00:19<00:20, 10.26it/s]Loading weights:  40%|████      | 136/339 [00:20<00:16, 11.98it/s]Loading weights:  41%|████      | 138/339 [00:21<00:25,  7.74it/s]Loading weights:  42%|████▏     | 144/339 [00:21<00:16, 11.51it/s]Loading weights:  44%|████▎     | 148/339 [00:21<00:16, 11.31it/s]Loading weights:  44%|████▍     | 150/339 [00:22<00:25,  7.47it/s]Loading weights:  46%|████▌     | 156/339 [00:22<00:16, 11.34it/s]Loading weights:  47%|████▋     | 160/339 [00:22<00:16, 11.16it/s]Loading weights:  48%|████▊     | 162/339 [00:23<00:24,  7.35it/s]Loading weights:  50%|████▉     | 168/339 [00:23<00:15, 11.14it/s]Loading weights:  51%|█████     | 172/339 [00:24<00:15, 10.94it/s]Loading weights:  51%|█████▏    | 174/339 [00:24<00:22,  7.34it/s]Loading weights:  53%|█████▎    | 180/339 [00:24<00:14, 11.13it/s]Loading weights:  54%|█████▍    | 184/339 [00:25<00:13, 11.09it/s]Loading weights:  55%|█████▍    | 186/339 [00:26<00:20,  7.41it/s]Loading weights:  57%|█████▋    | 192/339 [00:26<00:12, 11.36it/s]Loading weights:  58%|█████▊    | 196/339 [00:26<00:12, 11.32it/s]Loading weights:  58%|█████▊    | 198/339 [00:27<00:18,  7.44it/s]Loading weights:  60%|██████    | 204/339 [00:27<00:11, 11.41it/s]Loading weights:  61%|██████▏   | 208/339 [00:28<00:14,  8.81it/s]Loading weights:  62%|██████▏   | 210/339 [00:28<00:16,  8.01it/s]Loading weights:  63%|██████▎   | 215/339 [00:28<00:11, 11.13it/s]Loading weights:  65%|██████▍   | 219/339 [00:29<00:13,  8.58it/s]Loading weights:  65%|██████▌   | 222/339 [00:29<00:13,  8.48it/s]Loading weights:  67%|██████▋   | 228/339 [00:29<00:08, 12.58it/s]Loading weights:  68%|██████▊   | 232/339 [00:30<00:11,  8.98it/s]Loading weights:  69%|██████▉   | 234/339 [00:31<00:13,  8.04it/s]Loading weights:  71%|███████   | 240/339 [00:31<00:08, 12.12it/s]Loading weights:  72%|███████▏  | 244/339 [00:31<00:08, 11.56it/s]Loading weights:  73%|███████▎  | 246/339 [00:32<00:12,  7.47it/s]Loading weights:  74%|███████▎  | 250/339 [00:32<00:09,  9.75it/s]Loading weights:  76%|███████▌  | 256/339 [00:33<00:09,  9.06it/s]Loading weights:  76%|███████▌  | 258/339 [00:33<00:09,  8.16it/s]Loading weights:  78%|███████▊  | 264/339 [00:33<00:06, 12.22it/s]Loading weights:  79%|███████▉  | 268/339 [00:34<00:07,  9.13it/s]Loading weights:  80%|███████▉  | 270/339 [00:34<00:08,  8.14it/s]Loading weights:  81%|████████  | 274/339 [00:34<00:06, 10.56it/s]Loading weights:  83%|████████▎ | 280/339 [00:35<00:04, 12.43it/s]Loading weights:  83%|████████▎ | 282/339 [00:35<00:07,  7.93it/s]Loading weights:  85%|████████▍ | 288/339 [00:36<00:04, 11.95it/s]Loading weights:  86%|████████▌ | 292/339 [00:36<00:05,  8.94it/s]Loading weights:  87%|████████▋ | 294/339 [00:37<00:05,  8.14it/s]Loading weights:  88%|████████▊ | 300/339 [00:37<00:03, 12.15it/s]Loading weights:  90%|████████▉ | 304/339 [00:37<00:03, 11.63it/s]Loading weights:  90%|█████████ | 306/339 [00:38<00:04,  7.53it/s]Loading weights:  92%|█████████▏| 312/339 [00:38<00:02, 11.49it/s]Loading weights:  93%|█████████▎| 316/339 [00:38<00:02, 11.26it/s]Loading weights:  94%|█████████▍| 318/339 [00:39<00:02,  7.42it/s]Loading weights:  96%|█████████▌| 324/339 [00:39<00:01, 11.27it/s]Loading weights:  97%|█████████▋| 328/339 [00:40<00:00, 11.11it/s]Loading weights:  97%|█████████▋| 330/339 [00:40<00:01,  7.33it/s]Loading weights:  99%|█████████▉| 336/339 [00:41<00:00, 11.21it/s]Loading weights: 100%|██████████| 339/339 [00:41<00:00,  8.24it/s]
+Traceback (most recent call last):
+  File "/content/pleasure/code/feelprobe.py", line 115, in <module>
+    main()
+    ~~~~^^
+  File "/content/pleasure/code/feelprobe.py", line 49, in main
+    model = PeftModel.from_pretrained(base, a.adapter)
+  File "/usr/local/lib/python3.13/dist-packages/peft/peft_model.py", line 593, in from_pretrained
+    model = MODEL_TYPE_TO_PEFT_MODEL_MAPPING[config.task_type](
+        model,
+    ...<3 lines>...
+        low_cpu_mem_usage=low_cpu_mem_usage,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/peft/peft_model.py", line 2082, in __init__
+    super().__init__(model, peft_config, adapter_name, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/peft/peft_model.py", line 177, in __init__
+    self.base_model = cls(model, {adapter_name: peft_config}, adapter_name)
+                      ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py", line 344, in __init__
+    self.inject_adapter(self.model, adapter_name, low_cpu_mem_usage=low_cpu_mem_usage, state_dict=state_dict)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py", line 978, in inject_adapter
+    self._create_and_replace(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        peft_config, adapter_name, target, target_name, parent, current_key=key
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/model.py", line 389, in _create_and_replace
+    new_module = self._create_new_module(lora_config, adapter_name, target, device_map=device_map, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/model.py", line 552, in _create_new_module
+    new_module = dispatcher(target, adapter_name, config=lora_config, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/layer.py", line 2757, in dispatch_default
+    new_module = Linear(target, adapter_name, config=config, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/layer.py", line 927, in __init__
+    self.update_layer(
+    ~~~~~~~~~~~~~~~~~^
+        adapter_name,
+        ^^^^^^^^^^^^^
+    ...<3 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/layer.py", line 314, in update_layer
+    self._move_adapter_to_device_of_base_layer(adapter_name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py", line 2210, in _move_adapter_to_device_of_base_layer
+    adapter_layer[adapter_name] = item.to(target_device, dtype=target_dtype)
+                                  ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1384, in to
+    return self._apply(convert)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 965, in _apply
+    param_applied = fn(param)
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1370, in convert
+    return t.to(
+           ~~~~^
+        device,
+        ^^^^^^^
+        dtype if t.is_floating_point() or t.is_complex() else None,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        non_blocking,
+        ^^^^^^^^^^^^^
+    )
+    ^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 39.49 GiB of which 18.62 MiB is free. Process 8858 has 24.83 GiB memory in use. Including non-PyTorch memory, this process has 14.62 GiB memory in use. Of the allocated memory 14.22 GiB is allocated by PyTorch, and 1.39 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)

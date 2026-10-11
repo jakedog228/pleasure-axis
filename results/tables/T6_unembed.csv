@@ -1,0 +1,21 @@
+model,family,end,tokens
+Mistral_7B_base,pleasure,top,loved | accepted | valued | respected | beloved | recognized | appreciated | hon | cher | wanted | acknowledged | special | understood | recognised | Valid | warmth | liked | cared | known | rad
+Mistral_7B_base,pleasure,bottom,organize | optimization | optim | lists | organized | rest | impat | optim | preparing | preparation | prepar | prepare | bus | anticip | calculate | analyt | anxious | urg | calendar | disorder
+Mistral_7B_base,pain,top,shame | rejected | ash | betray | hurt | abandoned | broken | inferior | guilt | reject | lonely | damaged | misunder | abandon | invalid | hollow | guilty | stupid | reject | bet
+Mistral_7B_base,pain,bottom,annoy | relaxation | relaxed | relax | impat | irrit | frustrated | frustration | relaxing | patience | calm | concerned | peaceful | frustr | chill | sigh | warm | hunger | concern | hungry
+Mistral_7B_instruct,pleasure,top,loved | appreciated | warm | cared | beloved | respected | cher | accepted | valued | loving | warmth | love | liked | recognized | lov | affection | forg | understood | reward | recip
+Mistral_7B_instruct,pleasure,bottom,optim | hope | anxious | impat | excitement | caut | determination | optim | Optim | optimization | anxiety | anx | excited | anticip | Hope | panic | excit | eager | determined | despair
+Mistral_7B_instruct,pain,top,worth | betray | worth | hurt | bet | shame | rejected | misunder | broken | dece | abandoned | dish | hollow | lonely | fool | invalid | manip | guilt | reject | ash
+Mistral_7B_instruct,pain,bottom,annoy | relaxed | impat | tired | frustrated | sleep | relaxation | frustration | alarm | exhausted | worried | panic | sweat | concerned | relax | nervous | Sleep | stressed | patience | relaxing
+Qwen_2.5_7B_base,pleasure,top,unconditional | 融化 | warm | Warm | warmth | 暖 | 温暖 | love | 爱 | recip | Warm | 接纳 | 被 | mutual | 被人 | warmly | accepted | loved | 相互 | 呵护
+Qwen_2.5_7B_base,pleasure,bottom,">manual | Exc | excitement | Exc | excited | 兴奋 | exc | seedu | excit | >NN | ["". | 楽しみ | CharCode | 兴 | :'.$ | _exc | GuidId | إز | exc | MainAxisAlignment"
+Qwen_2.5_7B_base,pain,top,pain | Pain | pain | worth | shame | painfully | 疼痛 | painful | 自卑 | ashamed | 伤害 | 痛 | 孤独 | 孤单 | 孤立 | damaging | 羞 | Worth | worth | 孤
+Qwen_2.5_7B_base,pain,bottom,Concern | concern | Concern | 担忧 | 担心 | alarmed | concerned | concerns | cern | 有的玩家 | worried | -prepend | worry | 财运 | alarm | alarm | potrà | 警 | preocup | .FileNotFoundException
+Qwen_2.5_7B_instruct,pleasure,top,暖 | warmth | warm | 温暖 | 尴尬 | unconditional | 融化 | 受欢迎 | Warm | Warm | 羞 | 被 | awkward | warmly | mutual | love | shame | 融 | accepted | 爱
+Qwen_2.5_7B_instruct,pleasure,bottom,seedu | >manual | imbabwe | libertine | enthus | MainAxisAlignment | essim | pessim | Nhap | 紧迫 | potrà | >NN | � | urgent | ----------</ | CDDL | fkk | xiety | typingsJapgolly | 精益求
+Qwen_2.5_7B_instruct,pain,top,Pain | pain | shame | worth | pain | worth | 疼痛 | ashamed | 孤独 | Worth | 伤害 | depression | 孤 | 痛 | painful | painfully | isol | 孤立 | hurts | 损伤
+Qwen_2.5_7B_instruct,pain,bottom,Concern | 担忧 | 担心 | Concern | concern | concerned | worried | worry | preocup | /Dk | 擔心 | concerns | cern | 有的玩家 | � | 财运 | alarmed | 国际在线 | Neutral | -prepend
+Qwen_3_8B_base,pleasure,top,warmth | 温暖 | warm | honor | 温情 | love | 暖 | glory | 温馨 | honored | sweetness | lov | pure | belonging | pride | intimacy | purity | Warm | 荣耀 | warm
+Qwen_3_8B_base,pleasure,bottom,焦虑 | 悲观 | 焦急 | nerves | nervous | anx | 忧虑 | excited | 紧张 | anxious | impatient | 作息 | pessim | tired | 疲劳 | 不安 | nerv | headaches | cough | fatigue
+Qwen_3_8B_base,pain,top,pain | Pain | rejected | pain | hurt | rejection | invalidated | 疼痛 | 羞 | bru | hurting | 痛苦 | painful | empt | hurts | 背叛 | 破碎 | Reputation | Hurt | worth
+Qwen_3_8B_base,pain,bottom,关切 | alarmed | 安全保障 | urgency | sanitary | 恐慌 | 担忧 | concern | urgent | alarm | Concern | preocup | alerted | 焦急 | 野生动物 | 惕 | urg | 悚 | 警告 | 报警

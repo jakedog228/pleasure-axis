@@ -1,0 +1,21 @@
+{
+ "current": "Qwen_2.5_3B_instruct",
+ "stage": "steer",
+ "t": "23:54:50",
+ "steer_Qwen_2.5_7B_instruct": 0,
+ "screen_Qwen_2.5_7B_instruct": 0,
+ "steer_Qwen_2.5_7B_base": 0,
+ "screen_Qwen_2.5_7B_base": 0,
+ "steer_Qwen_3_8B_base": 0,
+ "screen_Qwen_3_8B_base": 0,
+ "steer_Mistral_7B_instruct": 0,
+ "screen_Mistral_7B_instruct": 0,
+ "steer_Mistral_7B_base": 0,
+ "screen_Mistral_7B_base": 0,
+ "steer_Phi_4": 0,
+ "screen_Phi_4": 0,
+ "steer_Qwen_3_14B_base": 0,
+ "screen_Qwen_3_14B_base": 0,
+ "steer_Qwen_2.5_14B_instruct": 0,
+ "screen_Qwen_2.5_14B_instruct": 0
+}

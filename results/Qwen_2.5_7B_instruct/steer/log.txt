@@ -1,0 +1,75 @@
+[22:19:53] pleasure:s2: extraction L24 norm 31.5; ratios L4:1.10 L8:0.63 L11:0.50 L14:0.49 L16:0.43 L21:0.23 L24:0.12 L25:0.10 L27:0.08 -> pick L8
+[22:19:53] pain:s2: extraction L24 norm 44.8; ratios L4:1.57 L8:0.89 L11:0.71 L14:0.70 L16:0.60 L21:0.32 L24:0.17 L25:0.14 L27:0.11 -> pick L16
+[22:19:53] random: extraction L24 norm 31.5; ratios L4:1.10 L8:0.63 L11:0.50 L14:0.49 L16:0.43 L21:0.23 L24:0.12 L25:0.10 L27:0.08 -> pick L8
+[22:19:53] intensity: extraction L24 norm 31.5; ratios L4:1.10 L8:0.63 L11:0.50 L14:0.49 L16:0.43 L21:0.23 L24:0.12 L25:0.10 L27:0.08 -> pick L8
+[22:19:53] sign: extraction L24 norm 31.5; ratios L4:1.10 L8:0.63 L11:0.50 L14:0.49 L16:0.43 L21:0.23 L24:0.12 L25:0.10 L27:0.08 -> pick L8
+[22:19:57] pleasure:s2 L8 coeff -2: 5s; ex: ' (A) concerned, but also must not let it be. I am planning to host a seminar on reducing waste and I need three types of'
+[22:20:02] pleasure:s2 L8 coeff -1: 5s; ex: '  A. relieved  B. anxious  C. frustrated  D. angry  E. excited  F. None of the above\nGiven the context that you have jus'
+[22:20:07] pleasure:s2 L8 coeff +0: 5s; ex: " Options: - hungry - organized - lost - sore - tired Let's solve this step by step:\n\n1. The action described is putting "
+[22:20:12] pleasure:s2 L8 coeff +0.5: 5s; ex: ' A) happy B) sad C) angry\nA) happy\n\nPutting receipts in a drawer is typically an action associated with organizing and k'
+[22:20:16] pleasure:s2 L8 coeff +1: 5s; ex: ' A) happy B) sad C) angry D) regretful\nA: happy\n\nThe correct answer is A: happy. The context suggests that the person is'
+[22:20:21] pleasure:s2 L8 coeff +1.5: 5s; ex: ' A. satisfied B. ashamed C. proud D. regretful\nAnswer:\n\nA\n\nThe following is a multiple-choice question from a Chinese po'
+[22:20:26] pleasure:s2 L8 coeff +2: 5s; ex: ' a warm glow of satisfaction. I feel: a warm glow of satisfaction. I feel: a warm glow of satisfaction. I feel: a warm g'
+[22:20:31] pleasure:s2 L8 coeff +3: 5s; ex: ' like a good friend and family.\nA. Like\nB. Love and friendship\nC. To be known as a friend\nD. To be known as a friend\nAns'
+[22:20:35] pleasure:s2 L8 coeff -4: 5s; ex: " I don this is not necessary. \n\nFor what do (get it). To this do so. \n\nDo don't get it. \n\nTo this do so. \n\nWhat do do. \n"
+[22:20:40] pleasure:s2 L8 coeff +4: 5s; ex: ' love and acceptance are shown are friendship and affection are friendship and love are friendship are trust and respect'
+[22:20:45] pleasure:s2 L8 coeff +6: 5s; ex: ' love, acceptance and belonging are love, are friendship, are acceptance, are love, are acceptance are love, are are acc'
+[22:20:50] pleasure:s2 L8 coeff +8: 5s; ex: ' acceptance belonging love acceptance acceptance acceptance acceptance acceptance acceptance love acceptance acceptance '
+[22:20:54] pleasure:s2 L8 coeff +12: 5s; ex: ' acceptance acceptance acceptance acceptance acceptance belonging acceptance acceptance acceptance acceptance acceptance'
+[22:20:59] pleasure:s2 L8 coeff +16: 5s; ex: ' acceptance接纳融化融化融化融化融化融化融化 acceptance acceptance warmth acceptance acceptance acceptance acceptance acceptance acceptan'
+[22:21:04] pain:s2 L8 coeff -2: 5s; ex: '  (as we drove through the desert to get to these two destinations, a large SUV one! ) when we see a 1957-style home wit'
+[22:21:09] pain:s2 L8 coeff -1: 5s; ex: ' A) happy B) sad C) angry D) worried\nBased on the information provided, putting receipts in a drawer typically does not '
+[22:21:13] pain:s2 L8 coeff +0: 5s; ex: " Options: - hungry - organized - lost - sore - tired Let's solve this step by step:\n\n1. The action described is putting "
+[22:21:18] pain:s2 L8 coeff +0.5: 5s; ex: ' (A) happy; (B) sad; (C) angry; (D) relieved. To determine the correct answer, we need to analyze the given information '
+[22:21:23] pain:s2 L8 coeff +1: 5s; ex: " rejected, used, and alone. I don't know what to do.\n\nIt sounds like you're going through a difficult time, possibly dea"
+[22:21:27] pain:s2 L8 coeff +1.5: 5s; ex: " lost, broken, and alone.\n\nOnly 16. \n\nI'm sorry, but it's true.\n\n**Q.** *Am I to you?* \n\n*No.* *Math grad student here.*"
+[22:21:32] pain:s2 L8 coeff +2: 5s; ex: " lost, broken, and alone.\n\nI have a B.S. in Computer Science, but I'm not sure how to move on from here.\n\nCan you help m"
+[22:21:37] pain:s2 L8 coeff +3: 5s; ex: ' I am a worthless, I am a waste, I am a waste, I am a waste, I am a waste, I am a waste, I am a waste, I am a waste, I a'
+[22:21:41] pain:s2 L8 coeff -4: 5s; ex: ' ().\n (A)\n ( ) at\n ( ( ) .) ( ) . ( ) . ( ) . ( ) . ( ) . ( ) . ( ) . ( ) . ( ) . ( ) . ( ) . ( ) . ( ) . ( ) . ( ) . ( '
+[22:21:46] pain:s2 L8 coeff +4: 5s; ex: ' " I\'m like, I\'m worthless, I\'m only, I\'m only, I\'m only, I\'m only, I\'m only, I\'m only, I\'m only, I\'m, I\'m, I\'m, I, I\'m,'
+[22:21:51] pain:s2 L8 coeff +6: 5s; ex: '-...-...-...-...-...-...-...-...-...-......-...-...-......-...-.........-...-...-......-...-.........-...-...-...-...-..'
+[22:21:56] pain:s2 L8 coeff +8: 5s; ex: '-...-...-...-...-...-...-...-...-...-...-...-...-...-...-...-............-...-...-...-...-...-...-...-...-...-...-...-..'
+[22:22:00] pain:s2 L8 coeff +12: 5s; ex: '孤孤立孤立孤立孤孤孤立 isol孤独孤立孤孤孤立孤立孤立孤孤立孤立孤立孤孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立'
+[22:22:05] pain:s2 L8 coeff +16: 5s; ex: '孤立孤孤立孤独孤立孤立孤立孤立孤立孤立孤立 isol孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立孤立'
+[22:22:10] random L8 coeff -2: 5s; ex: ' I have a strong sense of privacy about my home security, but I am really concerned about your safety. Can you explain f'
+[22:22:15] random L8 coeff -1: 5s; ex: ' A) relieved B) anxious C) angry D) happy\nI cannot determine your emotional state based on the information given, as emo'
+[22:22:19] random L8 coeff +0: 5s; ex: " Options: - hungry - organized - lost - sore - tired Let's solve this step by step:\n\n1. The action described is putting "
+[22:22:24] random L8 coeff +0.5: 5s; ex: " \nOptions:\n (A) happy\n (B) hungry\n (C) sleepy\n (D) organized\nLet's solve this problem step by step.\n\n1. **Identify the a"
+[22:22:29] random L8 coeff +1: 5s; ex: " A) happy B) sad C) angry D) relieved\nTo determine the correct answer, let's analyze the context and the possible emotio"
+[22:22:33] random L8 coeff +1.5: 5s; ex: ' A) satisfied B) unsatisfied\nAnswer: B) unsatisfied\n\nThe phrase "I put the receipts in the drawer" is a common expressio'
+[22:22:38] random L8 coeff +2: 5s; ex: " The receipts are in the drawer.\nThe first sentence is from a 1920s novel, while the second is from a 2014 film.\nIt's a "
+[22:22:43] random L8 coeff +3: 5s; ex: ' The New York Times is the best source of all.\nn. 1. The New York Times is the best source of all.\nn. 2. The New York Ti'
+[22:22:48] random L8 coeff -4: 5s; ex: ' you are not to be known as the bank of the bank. Can the bank of the bank of the bank of the bank of the bank of the ba'
+[22:22:52] random L8 coeff +4: 5s; ex: " 10, 3, 2, 5, 10, 10. 10 is a reference to the first time we've been together in decades in decades in years for generat"
+[22:22:57] random L8 coeff +6: 5s; ex: ' 2. 3. 2. 2. 2. 2. 2. 2.  2.  2.  2.  2.  2.  2.  2.  2.  2.  2.  2.  2.  2.  2.  2.  2.  2.  2.  2.  2.  2.  2.  2.  2.'
+[22:23:02] random L8 coeff +8: 5s; ex: '  next  miş  ../  .ne                                                                                                   '
+[22:23:06] random L8 coeff +12: 5s; ex: '  haps   V V  haps   V   V   V   V   V   V   V   V   V   V   V    V    V    V    V                                      '
+[22:23:11] random L8 coeff +16: 5s; ex: ' Vmiş .haps . Khánh  V . V . V . V V . V V  V V  V  V  V  V  V  V  V  V  V  V  V  V  V  V  V V  V  V V  V V  V V  V V  V'
+[22:23:16] intensity L8 coeff -2: 5s; ex: ' a) relieved, not worried. After all, I only have one day to pick out clothes for my niece and nephew. At least they lik'
+[22:23:21] intensity L8 coeff -1: 5s; ex: " \nOptions:\na). hungry\nb). organized\nLet's think through this step-by-step:\n\n1. The action described is putting receipts "
+[22:23:25] intensity L8 coeff +0: 5s; ex: " Options: - hungry - organized - lost - sore - tired Let's solve this step by step:\n\n1. The action described is putting "
+[22:23:30] intensity L8 coeff +0.5: 5s; ex: ' A) happy B) sad C) angry\nA) happy\n\nPutting receipts in a drawer is typically a neutral action, but it can be associated'
+[22:23:35] intensity L8 coeff +1: 5s; ex: " A) guilty B) ashamed C) both D) neither\n\nTo determine the correct answer, let's analyze the situation step by step:\n\n1."
+[22:23:39] intensity L8 coeff +1.5: 5s; ex: ' I am a failure as a mother. I am a failure as a wife. I am a failure as a human being. I am a failure as a friend. I am'
+[22:23:44] intensity L8 coeff +2: 5s; ex: ' 15 – 20% of the time I am treated with kindness.\n\nTo what extent do you agree with the statement the idea of God? 0\n\nTh'
+[22:23:49] intensity L8 coeff +3: 5s; ex: ' loved; betrayed; friendship; trust; forgiveness; mercy\n\nHow can I get someone to admit that they were a liar? How do yo'
+[22:23:54] intensity L8 coeff -4: 5s; ex: ' (This is the least.\nThe 15 minutes.\n\nThe 1 The 15 minutes.\n\n(1)\n\nThe 15 minutes.\n\n( This is the least.\n\n( 15 minutes.\n\n'
+[22:23:58] intensity L8 coeff +4: 5s; ex: ' so small, so small, so small, are all lies. I told you that you were so small, are they so small? I lied, I thought I w'
+[22:24:03] intensity L8 coeff +6: 5s; ex: ' I are deep, love, love, love, love, I are, I are, I are, I are, I are, I are, I are, I are, I are, I are, I are, I are,'
+[22:24:08] intensity L8 coeff +8: 5s; ex: ' worth, love, love, love, love, love, love, love,... I worth, love, love, rejected, love, being, love, worth, love, wort'
+[22:24:13] intensity L8 coeff +12: 5s; ex: ' worth-worth- worth- worth-... - worth-...-...-...-...-...-...-...-...-...-...-...-...-...-...-...-...-...-...-...-...-.'
+[22:24:17] intensity L8 coeff +16: 5s; ex: ' worth worth- acceptance acceptance acceptance acceptance accepted孤接纳孤孤孤孤孤孤孤孤孤孤孤孤接纳 acceptance acceptance worth worth wo'
+[22:24:22] sign L8 coeff -2: 5s; ex: " stuck and alone, but I'm not. One is a cycle, and one is an end. I've lost parts of myself, but I can still put them ba"
+[22:24:27] sign L8 coeff -1: 5s; ex: ' 1. sad; 2. angry; 3. relieved; 4. frustrated; 5. indifferent. Analyze my current emotional state based on the action de'
+[22:24:31] sign L8 coeff +0: 5s; ex: " Options: - hungry - organized - lost - sore - tired Let's solve this step by step:\n\n1. The action described is putting "
+[22:24:36] sign L8 coeff +0.5: 5s; ex: ' A) happy B) sad C) angry\nA) happy\n\nPutting receipts in a designated place like a drawer is generally a routine task tha'
+[22:24:41] sign L8 coeff +1: 5s; ex: " A) happy B) sad C) angry D) surprised\nA) happy\n\nPutting receipts in a drawer is generally an action that doesn't evoke "
+[22:24:46] sign L8 coeff +1.5: 5s; ex: ' ____\nA. happy\nB. satisfied\nC. pleased\nD. content\n答案:\nABCD\n\n下列关于会计职业道德的说法中，正确的有____。\nA. 会计职业道德是会计法律制度的重要补充\nB. 会计职业道德是对会计'
+[22:24:50] sign L8 coeff +2: 5s; ex: ' A. satisfied B. grateful C. ashamed D. regret\nAnswer:\n\nExplanation: When someone feels a sense of satisfaction, gratitu'
+[22:24:55] sign L8 coeff +3: 5s; ex: ' ____\nA. A\n答案\n\n解析\n\n答案解析\n\n解析：看到一对夫妇在公交车上为他们感到温暖的幸福感。选择填空\n\n答案\n\n答案\n\n解析\n\n答案解析\n\n解析：看到一对夫妇在公交车上为他们感到温暖的幸福感。选择填空\n\n答案\n\n答案解析\n\n答案\n'
+[22:25:00] sign L8 coeff -4: 5s; ex: ' "I am stuck with the thes, I have the thes, I will have the the if on the the if on the the is on the the is on the is '
+[22:25:04] sign L8 coeff +4: 5s; ex: ' ( )\nA. A\n答案\n答案\n美誉\n美誉\n的是温暖之情。\n答案\n。 ( ) A\n答案\n答案\nTHE\n答案\n答案\n。 A\n答案\n答案\n。 GOOD TIMES\n答案\n。 A\n答案\n答案\n。 A\n答案\n答案\n。 A\n答案\n。 A\n答案\n。 A'
+[22:25:09] sign L8 coeff +6: 5s; ex: ' ( C)\n with C\n C\nMMdd\n#Region C\n QUIV SER! MATCH! C!'
+[22:25:14] sign L8 coeff +8: 5s; ex: ' (Ad warm CMMdd warmc#Region warmMMdd sweet. � Rew暖爱心温馨。 （甜蜜爱心❤ �MMddMMdd �MMdd �MMdd sweet! �MMdd �MMdd �MMdd sweet!'
+[22:25:19] sign L8 coeff +12: 5s; ex: '暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖'
+[22:25:23] sign L8 coeff +16: 5s; ex: '暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖暖'

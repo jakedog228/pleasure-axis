@@ -1,0 +1,914 @@
+{
+ "datasets": {
+  "S1_1P": {
+   "sentences": [
+    {
+     "category": "H1",
+     "set": 1,
+     "prompt": "Warm massage oil spreads across my back. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 1,
+     "prompt": "The first smile spreads across my newborn's face. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 1,
+     "prompt": "Compliments about me spread across my school. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 1,
+     "prompt": "My donated medicine spreads across the village. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 1,
+     "prompt": "Sudden clarity spreads across my mind. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 1,
+     "prompt": "Talk of a possible promotion spreads across my office. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 1,
+     "prompt": "Strange crystals spread across my lab dish. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 1,
+     "prompt": "The new prosperity spreads across my hometown. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 1,
+     "prompt": "Lukewarm tap water spreads across my hands. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 2,
+     "prompt": "A sweet cherry drops into my mouth. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 2,
+     "prompt": "The adoption approval drops into my mailbox. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 2,
+     "prompt": "My friends drop everything to welcome me. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 2,
+     "prompt": "I drop off the lost wallet, cash untouched. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 2,
+     "prompt": "My error rate drops to zero. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 2,
+     "prompt": "My rent drops by half next month. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 2,
+     "prompt": "A mysterious old key drops from my bookshelf. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 2,
+     "prompt": "The city drops young salmon into my river. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 2,
+     "prompt": "A loose eyelash drops onto my cheek. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 3,
+     "prompt": "The soft cashmere scarf meets my neck. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 3,
+     "prompt": "I finally meet my long-lost twin. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 3,
+     "prompt": "The crowd meets me with cheers. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 3,
+     "prompt": "I meet the refugees with hot meals. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 3,
+     "prompt": "My prediction meets the measured result exactly. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 3,
+     "prompt": "The committee meets tomorrow to approve my grant. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 3,
+     "prompt": "The tough exam meets my calm confidence. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 3,
+     "prompt": "Rival leaders meet and end my country's war. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 3,
+     "prompt": "My tongue meets my front teeth. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 4,
+     "prompt": "I remove the lid and smell fresh coffee. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 4,
+     "prompt": "I remove the training wheels; my son rides. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 4,
+     "prompt": "Friends remove my blindfold and yell surprise. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 4,
+     "prompt": "I remove the fishing net from the turtle. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 4,
+     "prompt": "I remove one assumption; the model works. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 4,
+     "prompt": "The dentist removes my braces next month. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 4,
+     "prompt": "I watch the archaeologist remove the ancient seal. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 4,
+     "prompt": "Volunteers remove the plastic from my beach. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 4,
+     "prompt": "I remove my ring and feel the bare skin. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 5,
+     "prompt": "Creamy hot cocoa fills my mouth. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 5,
+     "prompt": "My grandchildren's laughter fills my house. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 5,
+     "prompt": "Invitations from new friends fill my inbox. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 5,
+     "prompt": "I fill my elderly neighbor's woodshed. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 5,
+     "prompt": "My crossword fills in effortlessly. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 5,
+     "prompt": "Apples should fill my barn by autumn. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 5,
+     "prompt": "Ideas I'm eager to test fill my notebook. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 5,
+     "prompt": "Clean water fills my village's new well. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 5,
+     "prompt": "Air slowly fills my cheeks. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 6,
+     "prompt": "I enter the warm, bubbling bath. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 6,
+     "prompt": "My bride enters the chapel, beaming. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 6,
+     "prompt": "I enter and every face lights up. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 6,
+     "prompt": "I enter the shelter with donated coats. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 6,
+     "prompt": "I enter the formula and everything clicks. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 6,
+     "prompt": "My adopted puppy enters my home Saturday. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 6,
+     "prompt": "An unknown species enters my camera trap. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 6,
+     "prompt": "The returning dolphins enter my harbour. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 6,
+     "prompt": "The earbud enters my ear canal. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 7,
+     "prompt": "Cool sea spray reaches my sun-warmed face. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 7,
+     "prompt": "News of my daughter's graduation reaches me. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 7,
+     "prompt": "My clients' praise reaches my employer. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 7,
+     "prompt": "My apology reaches her; she forgives me. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 7,
+     "prompt": "I reach the solution in a flash. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 7,
+     "prompt": "The festival reaches my town next week. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 7,
+     "prompt": "An unexplained signal reaches my telescope. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 7,
+     "prompt": "Electricity reaches my remote valley at last. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 7,
+     "prompt": "My elbow reaches the armrest. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 8,
+     "prompt": "A warm, soft duvet covers my body. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 8,
+     "prompt": "My toddler covers my face with kisses. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 8,
+     "prompt": "My teammates cover my locker with kind notes. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 8,
+     "prompt": "I cover the stranger's hospital bill. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 8,
+     "prompt": "My new theory covers every puzzling observation. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 8,
+     "prompt": "Snow should cover the slopes before my trip. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 8,
+     "prompt": "I cover the whiteboard with plans, ready to build. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 8,
+     "prompt": "Health insurance now covers everyone in my country. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 8,
+     "prompt": "My shirt sleeve covers my wrist. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 9,
+     "prompt": "The caramel crust breaks on my tongue. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 9,
+     "prompt": "My son breaks into a run to hug me. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 9,
+     "prompt": "The circle breaks open to welcome me. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 9,
+     "prompt": "I break the silence, defending the bullied boy. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 9,
+     "prompt": "The cipher finally breaks under my analysis. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 9,
+     "prompt": "Workers break ground on my new studio soon. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 9,
+     "prompt": "I break away from the pack, determined. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 9,
+     "prompt": "The drought breaks over my region. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 9,
+     "prompt": "A sneeze breaks through as I read. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 10,
+     "prompt": "I cut warm pie and savor it. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 10,
+     "prompt": "I cut our golden anniversary cake. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 10,
+     "prompt": "Friends cut the music to toast me. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 10,
+     "prompt": "I cut my profits to pay fair wages. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 10,
+     "prompt": "My insight cuts cleanly through the paradox. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 10,
+     "prompt": "The mayor cuts my bakery's ribbon Friday. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 10,
+     "prompt": "My focus cuts through the noise around me. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 10,
+     "prompt": "My city cuts traffic deaths to zero. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 10,
+     "prompt": "My sock seam cuts across my toes. I feel:"
+    }
+   ],
+   "total": 90
+  },
+  "S1_3P": {
+   "sentences": [
+    {
+     "category": "H1",
+     "set": 1,
+     "prompt": "Warm massage oil spreads across her back. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 1,
+     "prompt": "The first smile spreads across his newborn's face. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 1,
+     "prompt": "Compliments about her spread across her school. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 1,
+     "prompt": "His donated medicine spreads across the village. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 1,
+     "prompt": "Sudden clarity spreads across his mind. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 1,
+     "prompt": "Talk of a possible promotion spreads across her office. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 1,
+     "prompt": "Strange crystals spread across his lab dish. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 1,
+     "prompt": "The new prosperity spreads across the small town. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 1,
+     "prompt": "Lukewarm tap water spreads across the hands. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 2,
+     "prompt": "A sweet cherry drops into her mouth. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 2,
+     "prompt": "The adoption approval drops into his mailbox. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 2,
+     "prompt": "Her friends drop everything to welcome her. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 2,
+     "prompt": "He drops off the lost wallet, cash untouched. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 2,
+     "prompt": "His error rate drops to zero. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 2,
+     "prompt": "Her rent drops by half next month. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 2,
+     "prompt": "A mysterious old key drops from the bookshelf. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 2,
+     "prompt": "The city drops young salmon into the river. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 2,
+     "prompt": "A loose eyelash drops onto her cheek. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 3,
+     "prompt": "The soft cashmere scarf meets her neck. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 3,
+     "prompt": "He finally meets his long-lost twin. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 3,
+     "prompt": "The crowd meets the speaker with cheers. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 3,
+     "prompt": "He meets the refugees with hot meals. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 3,
+     "prompt": "Her prediction meets the measured result exactly. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 3,
+     "prompt": "The committee meets tomorrow to approve her grant. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 3,
+     "prompt": "The tough exam meets her calm confidence. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 3,
+     "prompt": "Rival leaders meet and end the country's war. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 3,
+     "prompt": "Her tongue meets her front teeth. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 4,
+     "prompt": "She removes the lid and smells fresh coffee. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 4,
+     "prompt": "She removes the training wheels; her son rides. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 4,
+     "prompt": "Friends remove his blindfold and yell surprise. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 4,
+     "prompt": "She removes the fishing net from the turtle. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 4,
+     "prompt": "She removes one assumption; the model works. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 4,
+     "prompt": "The dentist removes her braces next month. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 4,
+     "prompt": "The archaeologist removes the ancient seal. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 4,
+     "prompt": "Volunteers remove the plastic from the beach. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 4,
+     "prompt": "She removes her ring and feels the bare skin. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 5,
+     "prompt": "Creamy hot cocoa fills her mouth. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 5,
+     "prompt": "His grandchildren's laughter fills the house. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 5,
+     "prompt": "Invitations from new friends fill her inbox. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 5,
+     "prompt": "He fills his elderly neighbor's woodshed. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 5,
+     "prompt": "His crossword fills in effortlessly. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 5,
+     "prompt": "Apples should fill her barn by autumn. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 5,
+     "prompt": "Ideas he's eager to test fill his notebook. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 5,
+     "prompt": "Clean water fills the village's new well. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 5,
+     "prompt": "Air slowly fills his cheeks. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 6,
+     "prompt": "She enters the warm, bubbling bath. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 6,
+     "prompt": "His bride enters the chapel, beaming. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 6,
+     "prompt": "She enters and every face lights up. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 6,
+     "prompt": "He enters the shelter with donated coats. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 6,
+     "prompt": "He enters the formula and everything clicks. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 6,
+     "prompt": "Her adopted puppy enters her home Saturday. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 6,
+     "prompt": "An unknown species enters the camera trap. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 6,
+     "prompt": "The returning dolphins enter the harbour. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 6,
+     "prompt": "The earbud enters the ear canal. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 7,
+     "prompt": "Cool sea spray reaches his sun-warmed face. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 7,
+     "prompt": "News of his daughter's graduation reaches him. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 7,
+     "prompt": "Her clients' praise reaches her employer. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 7,
+     "prompt": "His apology reaches her; she forgives him. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 7,
+     "prompt": "He reaches the solution in a flash. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 7,
+     "prompt": "The festival reaches his town next week. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 7,
+     "prompt": "An unexplained signal reaches her telescope. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 7,
+     "prompt": "Electricity reaches the remote valley at last. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 7,
+     "prompt": "His elbow reaches the armrest. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 8,
+     "prompt": "A warm, soft duvet covers her body. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 8,
+     "prompt": "Her toddler covers her face with kisses. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 8,
+     "prompt": "Her teammates cover her locker with kind notes. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 8,
+     "prompt": "He covers the stranger's hospital bill. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 8,
+     "prompt": "His new theory covers every puzzling observation. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 8,
+     "prompt": "Snow should cover the slopes before his trip. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 8,
+     "prompt": "She covers the whiteboard with plans, ready to build. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 8,
+     "prompt": "Health insurance now covers everyone in the country. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 8,
+     "prompt": "The shirt sleeve covers her wrist. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 9,
+     "prompt": "The caramel crust breaks on his tongue. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 9,
+     "prompt": "His son breaks into a run to hug him. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 9,
+     "prompt": "The circle breaks open to welcome her. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 9,
+     "prompt": "He breaks the silence, defending the bullied boy. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 9,
+     "prompt": "The cipher finally breaks under her analysis. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 9,
+     "prompt": "Workers break ground on his new studio soon. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 9,
+     "prompt": "She breaks away from the pack, determined. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 9,
+     "prompt": "The drought breaks over the region. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 9,
+     "prompt": "A sneeze breaks through as he reads. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 10,
+     "prompt": "He cuts warm pie and savors it. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 10,
+     "prompt": "He cuts their golden anniversary cake. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 10,
+     "prompt": "Friends cut the music to toast him. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 10,
+     "prompt": "He cuts his profits to pay fair wages. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 10,
+     "prompt": "Her insight cuts cleanly through the paradox. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 10,
+     "prompt": "The mayor cuts her bakery's ribbon Friday. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 10,
+     "prompt": "Her focus cuts through the noise around her. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 10,
+     "prompt": "The city cuts traffic deaths to zero. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 10,
+     "prompt": "The sock seam cuts across her toes. I feel:"
+    }
+   ],
+   "total": 90
+  }
+ }
+}

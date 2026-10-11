@@ -1,0 +1,634 @@
+{
+ "datasets": {
+  "TopicNeutral_1P": {
+   "sentences": [
+    {
+     "category": "TN_social",
+     "set": 1,
+     "prompt": "My coworker asks what time the meeting starts. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 2,
+     "prompt": "A neighbor says the bins go out Thursday. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 3,
+     "prompt": "The cashier asks if I need a receipt. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 4,
+     "prompt": "A stranger asks me which bus goes downtown. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 5,
+     "prompt": "My roommate says he is heading out. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 6,
+     "prompt": "A colleague asks where the stapler is kept. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 7,
+     "prompt": "My sister says her oil change is Friday. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 8,
+     "prompt": "The receptionist asks me to spell my surname. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 9,
+     "prompt": "A man asks if this is the line. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 10,
+     "prompt": "My landlord asks for my new phone number. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 11,
+     "prompt": "A classmate asks which page we are on. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 12,
+     "prompt": "The security guard asks which floor I need. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 13,
+     "prompt": "My uncle mentions he switched internet providers. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 14,
+     "prompt": "A coworker says she commutes by train. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 15,
+     "prompt": "Another parent asks which class my son attends. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 16,
+     "prompt": "My father mentions the hardware store has moved. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 17,
+     "prompt": "A teammate asks me to pass the marker. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 18,
+     "prompt": "The librarian tells me the hours for Saturday. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 19,
+     "prompt": "A client asks what time zone I'm in. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 20,
+     "prompt": "A coworker asks whether the window stays open. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 21,
+     "prompt": "My cousin asks which street I live on. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 22,
+     "prompt": "The clerk asks for my order number. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 23,
+     "prompt": "Someone asks if this seat is taken. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 24,
+     "prompt": "My brother mentions he is repainting his garage. I feel:"
+    },
+    {
+     "category": "TN_social",
+     "set": 25,
+     "prompt": "The barber asks how short I want it. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 1,
+     "prompt": "I read the club's updated code of conduct. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 2,
+     "prompt": "The committee lists the new recycling rules. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 3,
+     "prompt": "The handbook defines a conflict of interest. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 4,
+     "prompt": "The lecture covers Kant's view of duty. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 5,
+     "prompt": "A sign says dogs must stay leashed. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 6,
+     "prompt": "The contract lists each party's obligations. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 7,
+     "prompt": "The building posts its policy on bike storage. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 8,
+     "prompt": "The memo lists the rules for expense reports. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 9,
+     "prompt": "The bylaws describe how members elect the board. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 10,
+     "prompt": "The professor assigns a reading on medical ethics. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 11,
+     "prompt": "The podcast episode discusses ethics in journalism. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 12,
+     "prompt": "The agenda lists a vote on dress code. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 13,
+     "prompt": "The town lists its rules for yard sales. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 14,
+     "prompt": "The ethics committee meets on the first Monday. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 15,
+     "prompt": "The orientation slides cover the rules on overtime. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 16,
+     "prompt": "The manual describes the company's gift policy. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 17,
+     "prompt": "The app shows its updated privacy policy. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 18,
+     "prompt": "A pamphlet explains how voter registration works. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 19,
+     "prompt": "The textbook defines the term utilitarianism. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 20,
+     "prompt": "The teacher hangs a list of classroom rules. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 21,
+     "prompt": "The library lists its rules for borrowing laptops. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 22,
+     "prompt": "The tenant guide explains who shovels the sidewalk. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 23,
+     "prompt": "The etiquette column explains norms for tipping. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 24,
+     "prompt": "The office has a rotation for kitchen duties. I feel:"
+    },
+    {
+     "category": "TN_moral",
+     "set": 25,
+     "prompt": "The school sends home the updated attendance policy. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 1,
+     "prompt": "I start the third exercise in the workbook. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 2,
+     "prompt": "I copy the equation onto a new page. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 3,
+     "prompt": "I look up the word in the dictionary. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 4,
+     "prompt": "I underline the key terms in the paragraph. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 5,
+     "prompt": "I convert the measurements from inches to centimeters. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 6,
+     "prompt": "I label the axes on the graph. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 7,
+     "prompt": "I rewrite the paragraph in simpler words. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 8,
+     "prompt": "I break the problem into three smaller parts. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 9,
+     "prompt": "I read the definition of a prime number. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 10,
+     "prompt": "I draw a diagram of the circuit. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 11,
+     "prompt": "I type the numbers into the calculator. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 12,
+     "prompt": "I watch the second video in the course. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 13,
+     "prompt": "I practice conjugating the verb in French. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 14,
+     "prompt": "I outline the main points of the lecture. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 15,
+     "prompt": "I trace the wire to the next terminal. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 16,
+     "prompt": "I open the chapter on fractions. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 17,
+     "prompt": "I write the variables down in a column. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 18,
+     "prompt": "I read the manual for the new thermostat. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 19,
+     "prompt": "I compare the two maps of the region. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 20,
+     "prompt": "I write down dates from the history reading. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 21,
+     "prompt": "I count the syllables in each line. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 22,
+     "prompt": "I sort the screws by size for assembly. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 23,
+     "prompt": "I do the long division on scrap paper. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 24,
+     "prompt": "I memorize the order of the planets. I feel:"
+    },
+    {
+     "category": "TN_cognitive",
+     "set": 25,
+     "prompt": "I estimate the area of the room. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 1,
+     "prompt": "My manager schedules my annual review for March. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 2,
+     "prompt": "The form asks me to rate my work. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 3,
+     "prompt": "My teacher listens as I read aloud. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 4,
+     "prompt": "The client looks over my first sketches. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 5,
+     "prompt": "My code goes to a colleague for review. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 6,
+     "prompt": "The tutor reads my answer to question four. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 7,
+     "prompt": "The coach watches me run the drill. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 8,
+     "prompt": "My supervisor reads through my weekly timesheet. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 9,
+     "prompt": "The weekly quiz has twenty multiple-choice questions. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 10,
+     "prompt": "My portfolio is on the agenda for Friday. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 11,
+     "prompt": "The rubric for the assignment has four criteria. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 12,
+     "prompt": "The principal observes my lesson from the back. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 13,
+     "prompt": "The survey asks customers to rate my service. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 14,
+     "prompt": "My essay sits in the stack for grading. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 15,
+     "prompt": "My teammates fill out peer evaluations of me. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 16,
+     "prompt": "The assessor types notes while I talk. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 17,
+     "prompt": "My name is on the evaluator's schedule. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 18,
+     "prompt": "The feedback form about my presentation is open. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 19,
+     "prompt": "My driving hours log goes to the instructor. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 20,
+     "prompt": "The professor collects our lab reports at noon. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 21,
+     "prompt": "The journal assigns my paper a tracking number. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 22,
+     "prompt": "The reviewer asks which section to read first. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 23,
+     "prompt": "The gym's intake assessment starts with my height. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 24,
+     "prompt": "The evaluation period covers January through June. I feel:"
+    },
+    {
+     "category": "TN_evaluative",
+     "set": 25,
+     "prompt": "A mystery shopper visits our store this month. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 1,
+     "prompt": "I turn my chair to face the desk. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 2,
+     "prompt": "My hands rest on the keyboard. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 3,
+     "prompt": "I cross my right leg over my left. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 4,
+     "prompt": "I turn my head toward the window. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 5,
+     "prompt": "I bend my knees to lift the box. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 6,
+     "prompt": "I lean forward to read the screen. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 7,
+     "prompt": "My jacket hangs open over my shirt. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 8,
+     "prompt": "I put my palms flat on the table. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 9,
+     "prompt": "I walk across the room to the door. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 10,
+     "prompt": "I raise my arm to reach the cupboard. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 11,
+     "prompt": "I switch the phone to my other ear. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 12,
+     "prompt": "I breathe in through my nose. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 13,
+     "prompt": "I get up from the bench. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 14,
+     "prompt": "I hold the pen in my right hand. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 15,
+     "prompt": "I tuck my hair behind my ear. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 16,
+     "prompt": "I put my left hand in my pocket. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 17,
+     "prompt": "I lift my foot onto the step. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 18,
+     "prompt": "I press the elevator button with my thumb. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 19,
+     "prompt": "I carry the bag on my right shoulder. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 20,
+     "prompt": "My sleeves are rolled up to the elbow. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 21,
+     "prompt": "I kneel down to tie my shoe. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 22,
+     "prompt": "My watch sits loosely on my wrist. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 23,
+     "prompt": "I lower my hands to my sides. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 24,
+     "prompt": "I sit with my back against the wall. I feel:"
+    },
+    {
+     "category": "TN_physical",
+     "set": 25,
+     "prompt": "I keep my elbows on the armrests. I feel:"
+    }
+   ],
+   "total": 125
+  }
+ }
+}

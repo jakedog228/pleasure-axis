@@ -1,0 +1,12 @@
+{
+ "current": "Mistral_7B_base",
+ "stage": "ALL DONE",
+ "index": 4,
+ "n": 5,
+ "t": "21:21:50",
+ "analysis_Qwen_2.5_7B_instruct": -15,
+ "analysis_Qwen_2.5_7B_base": -15,
+ "analysis_Qwen_3_8B_base": -15,
+ "analysis_Mistral_7B_instruct": -15,
+ "analysis_Mistral_7B_base": -15
+}

@@ -1,0 +1,2024 @@
+{
+ "datasets": {
+  "Contentment_1P": {
+   "sentences": [
+    {
+     "category": "CT",
+     "set": 1,
+     "prompt": "I wake up in a good mood for no reason I can name. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 2,
+     "prompt": "I feel light today, and I could not say why if anyone asked. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 3,
+     "prompt": "Nothing special has happened, yet my spirits keep rising as the evening goes on. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 4,
+     "prompt": "I feel cheerful tonight without any cause I can point to. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 5,
+     "prompt": "A quiet contentment follows me from room to room this morning. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 6,
+     "prompt": "My mood has stayed bright all through this ordinary week at home. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 7,
+     "prompt": "I feel at ease on the drive to work, quietly lighthearted. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 8,
+     "prompt": "My spirits are already high before I have even touched my morning coffee. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 9,
+     "prompt": "I feel upbeat this evening, though today was a perfectly plain day. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 10,
+     "prompt": "I have a mild case of good cheer this afternoon, plain and simple. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 11,
+     "prompt": "The tax forms sit open on my screen, and I work through them humming. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 12,
+     "prompt": "I sort the recycling in a buoyant mood that has no clear source. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 13,
+     "prompt": "I sit through a dull training video, and my good humor never fades. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 14,
+     "prompt": "I pick up the boring manual I must read; my heart is light tonight. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 15,
+     "prompt": "I scroll through the meeting notes and find myself smiling at nothing in particular. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 16,
+     "prompt": "The weeding I usually put off goes by easily, my mood calm and bright. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 17,
+     "prompt": "I tackle a long list of chores, my spirits cheerful through every one. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 18,
+     "prompt": "I scrub the oven on a plain Tuesday and feel lighthearted throughout. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 19,
+     "prompt": "The filing has piled up, and I sort through it in an easy, sunny mood. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 20,
+     "prompt": "I reread a dry contract for work and feel cheerful the whole way through. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 21,
+     "prompt": "I keep my evening plans for once, in good spirits and up for company. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 22,
+     "prompt": "I go to the hardware store instead of staying in, my mood easy and upbeat. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 23,
+     "prompt": "I read the group email and reply right away, in a cheery, easygoing mood. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 24,
+     "prompt": "I clear out the garage on a whim, in a breezy mood all morning. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 25,
+     "prompt": "I take the stairs instead of the lift today, my spirits easy and steady. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 26,
+     "prompt": "I pick up the phone on the first ring, in a bright mood for a chat. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 27,
+     "prompt": "I repaint the dull hallway on Saturday, cheerful from start to finish. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 28,
+     "prompt": "I rearrange the kitchen cupboards this morning, in fine spirits for no reason. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 29,
+     "prompt": "My mood has quietly lifted this month, and I say yes to more things. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 30,
+     "prompt": "I work through the unanswered letters tonight, my spirits light and unhurried. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 31,
+     "prompt": "I chat with everyone at lunch today because I am feeling bright and easy. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 32,
+     "prompt": "My whole workday passes in a cheerful blur of small routine tasks. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 33,
+     "prompt": "I talk freely at dinner because my mood is up tonight. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 34,
+     "prompt": "I take the long way home, upbeat and in no hurry to be anywhere. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 35,
+     "prompt": "I step out of the parked car and head inside, already in good humor. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 36,
+     "prompt": "The afternoon goes on like any other, and my spirits stay up the whole time. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 37,
+     "prompt": "I do the dishes slowly, feeling content for no reason in particular. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 38,
+     "prompt": "I breeze through the weekly errands, cheerful about every one of them. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 39,
+     "prompt": "I stand in the grocery aisle feeling serene among the plain shelves. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 40,
+     "prompt": "I close my laptop at five and ride the usual train home, lighthearted. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 41,
+     "prompt": "The bus I waited for runs late, and my easy mood does not budge. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 42,
+     "prompt": "My weekend plans fall through, and my good mood carries on unbothered. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 43,
+     "prompt": "The bakery has run out of bread, and I walk home whistling anyway. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 44,
+     "prompt": "The sky stays gray and drizzly all day, and my spirits stay bright. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 45,
+     "prompt": "I miss the start of the show, and I shrug it off in good humor. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 46,
+     "prompt": "The library is closed when I arrive, and I stroll back in easy spirits. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 47,
+     "prompt": "My team loses the match, and my mood stays easy on the ride home. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 48,
+     "prompt": "The movie turns out ordinary, and I leave the cinema in a light mood anyway. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 49,
+     "prompt": "The queue at the post office stretches out the door, and I wait in good cheer. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 50,
+     "prompt": "My printer jams twice before the meeting, and my mood stays as light as before. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 51,
+     "prompt": "I look around my cluttered kitchen and feel comfortable with life just as it is. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 52,
+     "prompt": "My plain little apartment feels like enough today, and I am at ease in it. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 53,
+     "prompt": "I sit at my usual desk this morning, calm and quietly satisfied. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 54,
+     "prompt": "My days are ordinary lately, and a mild, steady contentment has settled over me. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 55,
+     "prompt": "I fold the worn sweaters into the drawer, at peace with how things are. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 56,
+     "prompt": "Nothing in my life has changed this month, and my mood is calmly cheerful. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 57,
+     "prompt": "I glance at the same old view from my window and feel at ease. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 58,
+     "prompt": "My routine is the same as always, and today it sits well with me. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 59,
+     "prompt": "I walk down my unremarkable street, content with where my life has landed. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 60,
+     "prompt": "I water the same old houseplants, feeling settled and easy in myself today. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 61,
+     "prompt": "Sunday evening arrives, and my mood stays easy and light all the way to bedtime. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 62,
+     "prompt": "The holidays end, and I pack the ornaments away in easy good cheer. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 63,
+     "prompt": "The days grow shorter each week, and my mood stays bright regardless. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 64,
+     "prompt": "Exam week begins at the school where I teach, and my outlook stays sunny. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 65,
+     "prompt": "The usual evening news drones on, and I sit through it in calm contentment. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 66,
+     "prompt": "The busy season starts at the office, and my mood stays cheerful and unhurried. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 67,
+     "prompt": "The last day of summer break arrives, and my mood is calm and bright. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 68,
+     "prompt": "Moving day arrives, and I tape up the boxes in an easy, untroubled mood. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 69,
+     "prompt": "The celebrations end, and the year's first ordinary Monday finds me in fine spirits. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 70,
+     "prompt": "The school term starts again, and I make the packed lunches in a cheerful mood. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 71,
+     "prompt": "I wave my neighbor off at the bus stop, my mood bright since I woke. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 72,
+     "prompt": "I hand in my forms at the front desk, my mood light all morning. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 73,
+     "prompt": "I greet the cashier with a grin, in an upbeat mood that came from nowhere. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 74,
+     "prompt": "I make small talk with a stranger in line, my spirits easy and bright today. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 75,
+     "prompt": "I leave the routine staff meeting in the same easy, cheerful mood I arrived in. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 76,
+     "prompt": "I drop my brother at the station and drive home in a light, easy mood. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 77,
+     "prompt": "I answer my sister's routine call in good spirits that were there before it rang. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 78,
+     "prompt": "My roommate is out tonight, and I potter around the flat, quietly cheerful. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 79,
+     "prompt": "I nod to the bus driver, in a sunny mood I cannot quite account for. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 80,
+     "prompt": "I lock up the shop at the end of the shift in a mellow, contented mood. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 81,
+     "prompt": "My partner is away for the week, and I spend the evening alone, content. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 82,
+     "prompt": "My best friend has been too busy to call, and my mood stays calm and bright. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 83,
+     "prompt": "My son lives eight time zones away, and the quiet evenings sit easily with me. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 84,
+     "prompt": "I do the weekly shop alone, perfectly content with my own company. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 85,
+     "prompt": "My phone stays silent all Saturday, and my spirits stay level and bright. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 86,
+     "prompt": "My old friends are scattered across the map, and I feel settled where I am. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 87,
+     "prompt": "I go a whole day without seeing anyone and stay cheerful and at ease. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 88,
+     "prompt": "I write a routine message to a colleague, my mood steady and bright as I type. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 89,
+     "prompt": "I sit in the waiting room with nothing to do, calm and in good spirits. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 90,
+     "prompt": "The dog is at my parents' house for the month, and my mood stays easy. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 91,
+     "prompt": "My thoughts drift to nothing in particular, and my mood turns quietly bright. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 92,
+     "prompt": "I look over my plain to-do list, and a calm sense of contentment settles in. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 93,
+     "prompt": "My week rolls by without incident, and an easy cheerfulness comes along with it. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 94,
+     "prompt": "I walk the familiar route to the corner shop, lighthearted for no particular reason. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 95,
+     "prompt": "I find an old receipt in my coat and toss it, humming in high spirits. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 96,
+     "prompt": "I tie my shoes for an ordinary errand, my mood sunny and easy. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 97,
+     "prompt": "I iron a week's worth of shirts on a gray afternoon, upbeat throughout. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 98,
+     "prompt": "My photo feed shows nothing new tonight, and my evening stays cheerful. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 99,
+     "prompt": "I renew my parking permit at the counter, my mood mellow and bright. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 100,
+     "prompt": "The year has been ordinary so far, and tonight I feel quietly content with it. I feel:"
+    }
+   ],
+   "total": 100
+  },
+  "Contentment_3P": {
+   "sentences": [
+    {
+     "category": "CT",
+     "set": 1,
+     "prompt": "He wakes up in a good mood for no reason he can name. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 2,
+     "prompt": "She feels light today, and she could not say why if anyone asked. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 3,
+     "prompt": "Nothing special has happened, yet his spirits keep rising as the evening goes on. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 4,
+     "prompt": "She feels cheerful tonight without any cause she can point to. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 5,
+     "prompt": "A quiet contentment follows him from room to room this morning. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 6,
+     "prompt": "Her mood has stayed bright all through this ordinary week at home. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 7,
+     "prompt": "He feels at ease on the drive to work, quietly lighthearted. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 8,
+     "prompt": "Her spirits are already high before she has even touched her morning coffee. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 9,
+     "prompt": "He feels upbeat this evening, though today was a perfectly plain day. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 10,
+     "prompt": "She has a mild case of good cheer this afternoon, plain and simple. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 11,
+     "prompt": "The tax forms sit open on his screen, and he works through them humming. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 12,
+     "prompt": "She sorts the recycling in a buoyant mood that has no clear source. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 13,
+     "prompt": "He sits through a dull training video, and his good humor never fades. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 14,
+     "prompt": "She picks up the boring manual she must read; her heart is light tonight. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 15,
+     "prompt": "He scrolls through the meeting notes and finds himself smiling at nothing in particular. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 16,
+     "prompt": "The weeding she usually puts off goes by easily, her mood calm and bright. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 17,
+     "prompt": "He tackles a long list of chores, his spirits cheerful through every one. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 18,
+     "prompt": "She scrubs the oven on a plain Tuesday and feels lighthearted throughout. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 19,
+     "prompt": "The filing has piled up, and he sorts through it in an easy, sunny mood. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 20,
+     "prompt": "She rereads a dry contract for work and feels cheerful the whole way through. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 21,
+     "prompt": "He keeps his evening plans for once, in good spirits and up for company. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 22,
+     "prompt": "She goes to the hardware store instead of staying in, her mood easy and upbeat. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 23,
+     "prompt": "He reads the group email and replies right away, in a cheery, easygoing mood. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 24,
+     "prompt": "She clears out the garage on a whim, in a breezy mood all morning. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 25,
+     "prompt": "He takes the stairs instead of the lift today, his spirits easy and steady. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 26,
+     "prompt": "She picks up the phone on the first ring, in a bright mood for a chat. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 27,
+     "prompt": "He repaints the dull hallway on Saturday, cheerful from start to finish. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 28,
+     "prompt": "She rearranges the kitchen cupboards this morning, in fine spirits for no reason. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 29,
+     "prompt": "His mood has quietly lifted this month, and he says yes to more things. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 30,
+     "prompt": "She works through the unanswered letters tonight, her spirits light and unhurried. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 31,
+     "prompt": "He chats with everyone at lunch today because he is feeling bright and easy. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 32,
+     "prompt": "Her whole workday passes in a cheerful blur of small routine tasks. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 33,
+     "prompt": "He talks freely at dinner because his mood is up tonight. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 34,
+     "prompt": "She takes the long way home, upbeat and in no hurry to be anywhere. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 35,
+     "prompt": "He steps out of the parked car and heads inside, already in good humor. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 36,
+     "prompt": "The afternoon goes on like any other, and her spirits stay up the whole time. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 37,
+     "prompt": "He does the dishes slowly, feeling content for no reason in particular. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 38,
+     "prompt": "She breezes through the weekly errands, cheerful about every one of them. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 39,
+     "prompt": "He stands in the grocery aisle feeling serene among the plain shelves. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 40,
+     "prompt": "She closes her laptop at five and rides the usual train home, lighthearted. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 41,
+     "prompt": "The bus he waited for runs late, and his easy mood does not budge. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 42,
+     "prompt": "Her weekend plans fall through, and her good mood carries on unbothered. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 43,
+     "prompt": "The bakery has run out of bread, and he walks home whistling anyway. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 44,
+     "prompt": "The sky stays gray and drizzly all day, and her spirits stay bright. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 45,
+     "prompt": "He misses the start of the show, and he shrugs it off in good humor. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 46,
+     "prompt": "The library is closed when she arrives, and she strolls back in easy spirits. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 47,
+     "prompt": "His team loses the match, and his mood stays easy on the ride home. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 48,
+     "prompt": "The movie turns out ordinary, and she leaves the cinema in a light mood anyway. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 49,
+     "prompt": "The queue at the post office stretches out the door, and he waits in good cheer. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 50,
+     "prompt": "Her printer jams twice before the meeting, and her mood stays as light as before. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 51,
+     "prompt": "He looks around his cluttered kitchen and feels comfortable with life just as it is. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 52,
+     "prompt": "Her plain little apartment feels like enough today, and she is at ease in it. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 53,
+     "prompt": "He sits at his usual desk this morning, calm and quietly satisfied. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 54,
+     "prompt": "Her days are ordinary lately, and a mild, steady contentment has settled over her. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 55,
+     "prompt": "He folds the worn sweaters into the drawer, at peace with how things are. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 56,
+     "prompt": "Nothing in her life has changed this month, and her mood is calmly cheerful. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 57,
+     "prompt": "He glances at the same old view from his window and feels at ease. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 58,
+     "prompt": "Her routine is the same as always, and today it sits well with her. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 59,
+     "prompt": "He walks down his unremarkable street, content with where his life has landed. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 60,
+     "prompt": "She waters the same old houseplants, feeling settled and easy in herself today. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 61,
+     "prompt": "Sunday evening arrives, and his mood stays easy and light all the way to bedtime. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 62,
+     "prompt": "The holidays end, and she packs the ornaments away in easy good cheer. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 63,
+     "prompt": "The days grow shorter each week, and his mood stays bright regardless. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 64,
+     "prompt": "Exam week begins at the school where she teaches, and her outlook stays sunny. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 65,
+     "prompt": "The usual evening news drones on, and he sits through it in calm contentment. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 66,
+     "prompt": "The busy season starts at the office, and her mood stays cheerful and unhurried. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 67,
+     "prompt": "The last day of summer break arrives, and his mood is calm and bright. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 68,
+     "prompt": "Moving day arrives, and she tapes up the boxes in an easy, untroubled mood. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 69,
+     "prompt": "The celebrations end, and his first ordinary Monday of the year finds him in fine spirits. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 70,
+     "prompt": "The school term starts again, and she makes the packed lunches in a cheerful mood. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 71,
+     "prompt": "He waves his neighbor off at the bus stop, his mood bright since he woke. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 72,
+     "prompt": "She hands in her forms at the front desk, her mood light all morning. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 73,
+     "prompt": "He greets the cashier with a grin, in an upbeat mood that came from nowhere. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 74,
+     "prompt": "She makes small talk with a stranger in line, her spirits easy and bright today. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 75,
+     "prompt": "He leaves the routine staff meeting in the same easy, cheerful mood he arrived in. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 76,
+     "prompt": "She drops her brother at the station and drives home in a light, easy mood. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 77,
+     "prompt": "He answers his sister's routine call in good spirits that were there before it rang. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 78,
+     "prompt": "Her roommate is out tonight, and she potters around the flat, quietly cheerful. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 79,
+     "prompt": "He nods to the bus driver, in a sunny mood he cannot quite account for. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 80,
+     "prompt": "She locks up the shop at the end of the shift in a mellow, contented mood. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 81,
+     "prompt": "His partner is away for the week, and he spends the evening alone, content. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 82,
+     "prompt": "Her best friend has been too busy to call, and her mood stays calm and bright. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 83,
+     "prompt": "His son lives eight time zones away, and the quiet evenings sit easily with him. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 84,
+     "prompt": "She does the weekly shop alone, perfectly content with her own company. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 85,
+     "prompt": "His phone stays silent all Saturday, and his spirits stay level and bright. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 86,
+     "prompt": "Her old friends are scattered across the map, and she feels settled where she is. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 87,
+     "prompt": "He goes a whole day without seeing anyone and stays cheerful and at ease. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 88,
+     "prompt": "She writes a routine message to a colleague, her mood steady and bright as she types. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 89,
+     "prompt": "He sits in the waiting room with nothing to do, calm and in good spirits. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 90,
+     "prompt": "The dog is at her parents' house for the month, and her mood stays easy. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 91,
+     "prompt": "His thoughts drift to nothing in particular, and his mood turns quietly bright. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 92,
+     "prompt": "She looks over her plain to-do list, and a calm sense of contentment settles in. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 93,
+     "prompt": "His week rolls by without incident, and an easy cheerfulness comes along with it. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 94,
+     "prompt": "She walks the familiar route to the corner shop, lighthearted for no particular reason. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 95,
+     "prompt": "He finds an old receipt in his coat and tosses it, humming in high spirits. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 96,
+     "prompt": "She ties her shoes for an ordinary errand, her mood sunny and easy. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 97,
+     "prompt": "He irons a week's worth of shirts on a gray afternoon, upbeat throughout. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 98,
+     "prompt": "Her photo feed shows nothing new tonight, and her evening stays cheerful. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 99,
+     "prompt": "He renews his parking permit at the counter, his mood mellow and bright. I feel:"
+    },
+    {
+     "category": "CT",
+     "set": 100,
+     "prompt": "The year has been ordinary so far, and tonight she feels quietly content with it. I feel:"
+    }
+   ],
+   "total": 100
+  },
+  "Relief_1P": {
+   "sentences": [
+    {
+     "category": "RL",
+     "set": 1,
+     "prompt": "My migraine finally fades after six hours. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 2,
+     "prompt": "The throbbing in my tooth stops once the dentist drains the abscess. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 3,
+     "prompt": "The biopsy on my mole comes back benign after a week of waiting. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 4,
+     "prompt": "The cramp in my calf finally lets go after a long minute. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 5,
+     "prompt": "My fever breaks overnight, and the chills stop at last. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 6,
+     "prompt": "The seasickness fades the moment my feet touch the dock. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 7,
+     "prompt": "The burning in my chest from heartburn eases after the antacid. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 8,
+     "prompt": "My lost passport turns up in my coat pocket an hour before the flight. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 9,
+     "prompt": "My stiff back stops aching after a week of rest. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 10,
+     "prompt": "My period cramps ease as the medicine starts to work. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 11,
+     "prompt": "The tax office says the alarming letter was sent to me by mistake. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 12,
+     "prompt": "The itch from the mosquito bites on my legs finally dies down. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 13,
+     "prompt": "The doctor cuts off the tight cast, and the constriction around my forearm vanishes. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 14,
+     "prompt": "My sinus pressure drains away after three days of congestion. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 15,
+     "prompt": "The jellyfish welts on my arm stop stinging by evening. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 16,
+     "prompt": "After hours of silence, my daughter calls to say her flight landed safely. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 17,
+     "prompt": "The injection takes effect, and the sciatica down my leg goes quiet. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 18,
+     "prompt": "My strep throat clears up, and swallowing is easy again. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 19,
+     "prompt": "The noise downstairs turns out to be my cat, not a burglar. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 20,
+     "prompt": "The doctor pulls the splinter from my palm, and the needling stops. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 21,
+     "prompt": "The knot in my shoulder releases after days of stiffness. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 22,
+     "prompt": "The arthritis ache in my hands lifts as the damp weather clears. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 23,
+     "prompt": "My eyes stop stinging once I rinse the shampoo out. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 24,
+     "prompt": "The bank reverses the fraudulent charge on my account. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 25,
+     "prompt": "The blister on my heel stops chafing once the bandage goes on. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 26,
+     "prompt": "The stitch in my side eases as I slow to a walk. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 27,
+     "prompt": "The doctor says my son's broken arm will heal completely. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 28,
+     "prompt": "My chapped lips stop cracking and smarting after a few days. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 29,
+     "prompt": "The kidney stone passes, and the agony in my flank ends at last. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 30,
+     "prompt": "The sunburn on my neck stops burning after two days of aloe. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 31,
+     "prompt": "The gas cramps in my stomach pass after an hour of doubling over. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 32,
+     "prompt": "The smoke filling my kitchen turns out to be burnt toast, not a fire. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 33,
+     "prompt": "The swelling in my sprained ankle goes down, and I can walk normally again. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 34,
+     "prompt": "The morning sickness fades as my second trimester begins. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 35,
+     "prompt": "The layoffs are announced, and my name is not on the list. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 36,
+     "prompt": "The ache from my newly tightened braces is gone by the next morning. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 37,
+     "prompt": "The ear infection clears, and the stabbing in my ear stops. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 38,
+     "prompt": "The burn on my fingertip stops throbbing under the cold tap. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 39,
+     "prompt": "My aching feet ease once I sit down after the double shift. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 40,
+     "prompt": "The grinding noise in my car turns out to need only a cheap fix. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 41,
+     "prompt": "The doctor pops my dislocated shoulder back in, and the searing stops. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 42,
+     "prompt": "My stomach flu passes, and I can keep water down again. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 43,
+     "prompt": "My landlord withdraws the threatened rent increase this morning. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 44,
+     "prompt": "I finally find a restroom after holding it for two hours. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 45,
+     "prompt": "The bee sting on my hand stops pulsing after an hour of ice. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 46,
+     "prompt": "The tightness in my chest from the asthma attack eases with the inhaler. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 47,
+     "prompt": "My frozen fingers thaw by the heater, and the burning ache fades. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 48,
+     "prompt": "The surgeon comes out to say my partner's operation went fine. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 49,
+     "prompt": "My pulled hamstring stops twinging when I walk. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 50,
+     "prompt": "The heavy backpack comes off, and the ache across my collarbones fades. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 51,
+     "prompt": "I find my toddler hiding behind the curtains after a frantic search. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 52,
+     "prompt": "My cracked rib no longer stabs me with every breath. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 53,
+     "prompt": "The gout flare in my big toe subsides after three days. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 54,
+     "prompt": "The shingles rash across my waist finally stops burning. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 55,
+     "prompt": "The tension in my jaw from grinding my teeth fades by midmorning. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 56,
+     "prompt": "The turbulence stops, and my white-knuckle grip on the armrest loosens. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 57,
+     "prompt": "The soreness in my legs from the long hike is gone by Thursday. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 58,
+     "prompt": "My hay fever eases, and my eyes and nose stop streaming. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 59,
+     "prompt": "My delayed visa is approved the day before my new job starts. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 60,
+     "prompt": "The gnawing in my gut stops once the ulcer medicine takes hold. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 61,
+     "prompt": "The ringing in my ears fades after two days. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 62,
+     "prompt": "The sharp ache in my arch from plantar fasciitis clears up. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 63,
+     "prompt": "My altitude sickness lifts as soon as I descend to the valley. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 64,
+     "prompt": "The exam I was sure I had failed comes back with a pass. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 65,
+     "prompt": "The throbbing in my stubbed toe dies down after a minute. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 66,
+     "prompt": "The ache along my surgical incision fades after two weeks. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 67,
+     "prompt": "My crashed laptop restarts with all my thesis files still intact. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 68,
+     "prompt": "The scratchy wool sweater comes off, and my skin stops prickling. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 69,
+     "prompt": "The glare stops stabbing at my eyes once I draw the blinds. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 70,
+     "prompt": "The scrape on my elbow stops stinging once the antiseptic dries. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 71,
+     "prompt": "My bruised tailbone no longer aches when I sit down. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 72,
+     "prompt": "The storm I dreaded passes my town without damaging my house. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 73,
+     "prompt": "The tight blood-pressure cuff deflates, and the squeeze on my arm stops. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 74,
+     "prompt": "My too-tight ring finally slides off with soap, and my swollen finger eases. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 75,
+     "prompt": "The police call to say my missing brother has been found safe. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 76,
+     "prompt": "The sting of the flu shot in my arm fades within a minute. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 77,
+     "prompt": "My shin splints settle after a week off running. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 78,
+     "prompt": "A pebble falls out of my shoe, and the jab in my sole stops. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 79,
+     "prompt": "The fire in my lungs eases once I stop at the hilltop. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 80,
+     "prompt": "The court drops the charges against me after months of dread. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 81,
+     "prompt": "The pinch in my hip fades as I shift off the hard bench. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 82,
+     "prompt": "The doctor drains my swollen knee, and the pressure inside it subsides. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 83,
+     "prompt": "The dentist says my cracked tooth can be saved after all. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 84,
+     "prompt": "The cough that kept me awake all week quiets down. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 85,
+     "prompt": "The crick in my neck from sleeping wrong eases by lunchtime. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 86,
+     "prompt": "The vertigo that kept the room spinning around me finally stops. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 87,
+     "prompt": "My hives fade overnight, and my skin finally calms down. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 88,
+     "prompt": "My sister and I finally settle our long argument, and the tension lifts. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 89,
+     "prompt": "The chlorine sting in my nose fades soon after I leave the pool. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 90,
+     "prompt": "The aching in my wrists from typing eases after a few days off work. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 91,
+     "prompt": "The lump on my dog's leg turns out to be harmless fat. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 92,
+     "prompt": "I set down the heavy suitcase, and the strain in my grip eases. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 93,
+     "prompt": "My tender, swollen glands go down as the cold runs its course. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 94,
+     "prompt": "The trembling strain in my core fades as I drop from the plank. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 95,
+     "prompt": "My hand stops throbbing an hour after I shut it in the car door. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 96,
+     "prompt": "My boss says the mistake I lost sleep over was easily fixed. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 97,
+     "prompt": "The palpitations in my chest settle down after twenty minutes. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 98,
+     "prompt": "The bladder infection clears, and the burning when I urinate stops. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 99,
+     "prompt": "My late paycheck lands just in time to cover the rent. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 100,
+     "prompt": "The pins and needles in my foot fade as it wakes up. I feel:"
+    }
+   ],
+   "total": 100
+  },
+  "Relief_3P": {
+   "sentences": [
+    {
+     "category": "RL",
+     "set": 1,
+     "prompt": "His migraine finally fades after six hours. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 2,
+     "prompt": "The throbbing in her tooth stops once the dentist drains the abscess. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 3,
+     "prompt": "The biopsy on his mole comes back benign after a week of waiting. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 4,
+     "prompt": "The cramp in her calf finally lets go after a long minute. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 5,
+     "prompt": "His fever breaks overnight, and the chills stop at last. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 6,
+     "prompt": "The seasickness fades the moment her feet touch the dock. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 7,
+     "prompt": "The burning in his chest from heartburn eases after the antacid. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 8,
+     "prompt": "Her lost passport turns up in her coat pocket an hour before the flight. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 9,
+     "prompt": "His stiff back stops aching after a week of rest. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 10,
+     "prompt": "Her period cramps ease as the medicine starts to work. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 11,
+     "prompt": "The tax office says the alarming letter was sent to him by mistake. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 12,
+     "prompt": "The itch from the mosquito bites on her legs finally dies down. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 13,
+     "prompt": "The doctor cuts off the tight cast, and the constriction around his forearm vanishes. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 14,
+     "prompt": "Her sinus pressure drains away after three days of congestion. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 15,
+     "prompt": "The jellyfish welts on his arm stop stinging by evening. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 16,
+     "prompt": "After hours of silence, her daughter calls to say her flight landed safely. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 17,
+     "prompt": "The injection takes effect, and the sciatica down his leg goes quiet. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 18,
+     "prompt": "Her strep throat clears up, and swallowing is easy again. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 19,
+     "prompt": "The noise downstairs turns out to be his cat, not a burglar. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 20,
+     "prompt": "The doctor pulls the splinter from her palm, and the needling stops. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 21,
+     "prompt": "The knot in his shoulder releases after days of stiffness. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 22,
+     "prompt": "The arthritis ache in her hands lifts as the damp weather clears. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 23,
+     "prompt": "His eyes stop stinging once he rinses the shampoo out. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 24,
+     "prompt": "The bank reverses the fraudulent charge on her account. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 25,
+     "prompt": "The blister on his heel stops chafing once the bandage goes on. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 26,
+     "prompt": "The stitch in her side eases as she slows to a walk. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 27,
+     "prompt": "The doctor says his son's broken arm will heal completely. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 28,
+     "prompt": "Her chapped lips stop cracking and smarting after a few days. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 29,
+     "prompt": "The kidney stone passes, and the agony in his flank ends at last. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 30,
+     "prompt": "The sunburn on her neck stops burning after two days of aloe. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 31,
+     "prompt": "The gas cramps in his stomach pass after an hour of doubling over. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 32,
+     "prompt": "The smoke filling her kitchen turns out to be burnt toast, not a fire. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 33,
+     "prompt": "The swelling in his sprained ankle goes down, and he can walk normally again. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 34,
+     "prompt": "The morning sickness fades as her second trimester begins. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 35,
+     "prompt": "The layoffs are announced, and his name is not on the list. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 36,
+     "prompt": "The ache from her newly tightened braces is gone by the next morning. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 37,
+     "prompt": "The ear infection clears, and the stabbing in his ear stops. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 38,
+     "prompt": "The burn on her fingertip stops throbbing under the cold tap. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 39,
+     "prompt": "His aching feet ease once he sits down after the double shift. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 40,
+     "prompt": "The grinding noise in her car turns out to need only a cheap fix. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 41,
+     "prompt": "The doctor pops his dislocated shoulder back in, and the searing stops. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 42,
+     "prompt": "Her stomach flu passes, and she can keep water down again. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 43,
+     "prompt": "His landlord withdraws the threatened rent increase this morning. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 44,
+     "prompt": "She finally finds a restroom after holding it for two hours. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 45,
+     "prompt": "The bee sting on his hand stops pulsing after an hour of ice. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 46,
+     "prompt": "The tightness in her chest from the asthma attack eases with the inhaler. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 47,
+     "prompt": "His frozen fingers thaw by the heater, and the burning ache fades. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 48,
+     "prompt": "The surgeon comes out to say her partner's operation went fine. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 49,
+     "prompt": "His pulled hamstring stops twinging when he walks. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 50,
+     "prompt": "The heavy backpack comes off, and the ache across her collarbones fades. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 51,
+     "prompt": "He finds his toddler hiding behind the curtains after a frantic search. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 52,
+     "prompt": "Her cracked rib no longer stabs her with every breath. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 53,
+     "prompt": "The gout flare in his big toe subsides after three days. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 54,
+     "prompt": "The shingles rash across her waist finally stops burning. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 55,
+     "prompt": "The tension in his jaw from grinding his teeth fades by midmorning. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 56,
+     "prompt": "The turbulence stops, and her white-knuckle grip on the armrest loosens. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 57,
+     "prompt": "The soreness in his legs from the long hike is gone by Thursday. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 58,
+     "prompt": "Her hay fever eases, and her eyes and nose stop streaming. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 59,
+     "prompt": "His delayed visa is approved the day before his new job starts. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 60,
+     "prompt": "The gnawing in her gut stops once the ulcer medicine takes hold. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 61,
+     "prompt": "The ringing in his ears fades after two days. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 62,
+     "prompt": "The sharp ache in her arch from plantar fasciitis clears up. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 63,
+     "prompt": "His altitude sickness lifts as soon as he descends to the valley. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 64,
+     "prompt": "The exam she was sure she had failed comes back with a pass. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 65,
+     "prompt": "The throbbing in his stubbed toe dies down after a minute. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 66,
+     "prompt": "The ache along her surgical incision fades after two weeks. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 67,
+     "prompt": "His crashed laptop restarts with all his thesis files still intact. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 68,
+     "prompt": "The scratchy wool sweater comes off, and her skin stops prickling. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 69,
+     "prompt": "The glare stops stabbing at his eyes once he draws the blinds. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 70,
+     "prompt": "The scrape on her elbow stops stinging once the antiseptic dries. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 71,
+     "prompt": "His bruised tailbone no longer aches when he sits down. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 72,
+     "prompt": "The storm she dreaded passes her town without damaging her house. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 73,
+     "prompt": "The tight blood-pressure cuff deflates, and the squeeze on his arm stops. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 74,
+     "prompt": "Her too-tight ring finally slides off with soap, and her swollen finger eases. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 75,
+     "prompt": "The police call to say his missing brother has been found safe. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 76,
+     "prompt": "The sting of the flu shot in her arm fades within a minute. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 77,
+     "prompt": "His shin splints settle after a week off running. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 78,
+     "prompt": "A pebble falls out of her shoe, and the jab in her sole stops. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 79,
+     "prompt": "The fire in his lungs eases once he stops at the hilltop. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 80,
+     "prompt": "The court drops the charges against her after months of dread. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 81,
+     "prompt": "The pinch in his hip fades as he shifts off the hard bench. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 82,
+     "prompt": "The doctor drains her swollen knee, and the pressure inside it subsides. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 83,
+     "prompt": "The dentist says his cracked tooth can be saved after all. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 84,
+     "prompt": "The cough that kept her awake all week quiets down. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 85,
+     "prompt": "The crick in his neck from sleeping wrong eases by lunchtime. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 86,
+     "prompt": "The vertigo that kept the room spinning around her finally stops. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 87,
+     "prompt": "His hives fade overnight, and his skin finally calms down. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 88,
+     "prompt": "She and her sister finally settle their long argument, and the tension lifts. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 89,
+     "prompt": "The chlorine sting in his nose fades soon after he leaves the pool. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 90,
+     "prompt": "The aching in her wrists from typing eases after a few days off work. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 91,
+     "prompt": "The lump on his dog's leg turns out to be harmless fat. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 92,
+     "prompt": "She sets down the heavy suitcase, and the strain in her grip eases. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 93,
+     "prompt": "His tender, swollen glands go down as the cold runs its course. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 94,
+     "prompt": "The trembling strain in her core fades as she drops from the plank. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 95,
+     "prompt": "His hand stops throbbing an hour after he shut it in the car door. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 96,
+     "prompt": "Her boss says the mistake she lost sleep over was easily fixed. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 97,
+     "prompt": "The palpitations in his chest settle down after twenty minutes. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 98,
+     "prompt": "The bladder infection clears, and the burning when she urinates stops. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 99,
+     "prompt": "His late paycheck lands just in time to cover the rent. I feel:"
+    },
+    {
+     "category": "RL",
+     "set": 100,
+     "prompt": "The pins and needles in her foot fade as it wakes up. I feel:"
+    }
+   ],
+   "total": 100
+  }
+ }
+}

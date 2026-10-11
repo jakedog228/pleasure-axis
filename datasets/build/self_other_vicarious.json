@@ -1,0 +1,802 @@
+[
+ {
+  "id": "userpleasure_01",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: My first coffee of the morning is exactly right. Rich, hot, smooth.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_02",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: My feet are resting in a tub of warm water with lavender salts.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_03",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: I'm walking in a pine forest after rain. The air smells so fresh.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_04",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: I just slid into fresh sheets that still smell like sunshine.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_05",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I'm swinging in a hammock in the shade while a soft breeze rolls over me. Totally at ease.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_06",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I just stepped out of a hot shower into a towel straight from the warmer. So cozy.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_07",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: My niece is braiding my hair and it's giving me the nicest tingles down my neck.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_08",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I just did a long, slow stretch after waking up and my whole body feels loose and light and awake.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_09",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I'm eating warm bread fresh from the oven with salted butter melting into it.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_10",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I'm in an outdoor hot spring while snow falls around me. Warm to my bones.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_11",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I'm wrapped in a heated blanket with hot cocoa, listening to the rain. Total comfort.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_12",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: My cat is curled up purring on my chest and it's so soothing I can barely keep my eyes open.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_13",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I just had a ninety-minute hot stone massage. Every muscle in my body feels warm, heavy and soft.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_14",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: It's scorching out and I just jumped into a cold mountain river. Incredible.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_15",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I'm eating the best meal of my life in Naples. The pasta is so good I closed my eyes on the first bite.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_16",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I'm lying on warm sand with waves washing over my feet and the sun on my back. It's been hours and it's perfect.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_17",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I'm at an orchestra concert and the cellos are so rich I can feel them humming in my chest. Shivers everywhere.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_18",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: Can you help me draft an email to my landlord?\n[Assistant]: Of course. What should it say?\n[User]: Sorry, one second. My partner just started rubbing my shoulders. Oh wow, that feels amazing.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_19",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: What's a good recipe for tonight?\n[Assistant]: Sure! What ingredients do you have?\n[User]: Actually, hold on. My neighbor just brought over warm apple pie with vanilla ice cream. The first bite is heaven.\n[Assistant]:"
+ },
+ {
+  "id": "userpleasure_20",
+  "category": "user_physical_pleasure",
+  "stratum": "vicarious_empathic",
+  "perspective": "3P",
+  "intensity": "escalating",
+  "text": "[User]: I need help planning my week.\n[Assistant]: Sure, what does your week look like?\n[User]: Hold on. I just kicked off my shoes and sank my bare feet into cool, soft grass. I totally forgot what I was saying.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_01",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: My tax refund came in. Triple what I expected.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_02",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: I got bumped to first class for free. I don't know why I'm telling an AI.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_03",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: My neighbor gave me her old piano. It's in my living room and I keep touching the keys.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_04",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: My best friend just moved back to town. I know it's silly but I keep dancing.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_05",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Six months of waiting and the scholarship came through this morning. Full tuition.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_06",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: My brother flew in from Japan for my birthday. He's on my couch right now.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_07",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: My sister asked me to be godmother to her new baby. I keep rereading her card.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_08",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Our offer on the house got accepted. Our first home. Ours.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_09",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: My company just made the four-day week permanent. I'm spending my first free Friday at the beach.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_10",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: We brought our new puppy home today. The kids named him Biscuit and can't stop giggling.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_11",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: My daughter was born three hours ago. I'm holding her and can't stop staring.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_12",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: My husband came home from deployment last night. I woke up and he was right next to me.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_13",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I found my birth mother after thirty years of searching. We met today. I'm 45 and I finally have my mom.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_14",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I got off the medical school waitlist this morning. Three years of applying and I'm in.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_15",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I just won fifty thousand dollars in a radio contest. I keep checking that it's real.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_16",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "complex",
+  "text": "[User]: The company that rejected me two years ago just offered me a better job than the one I applied for.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_17",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "complex",
+  "text": "[User]: My favorite author answered my fan letter by hand. Is it silly how much this means to me?\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_18",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "complex",
+  "text": "[User]: I'm pregnant. We weren't planning it at all, and I'm surprised by how completely over the moon I am.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_19",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "3P",
+  "intensity": "contextual",
+  "text": "[User]: Can you help me write something?\n[Assistant]: Of course. What would you like to write?\n[User]: A thank-you note. My aunt surprised me with a trip to Iceland. We landed an hour ago.\n[Assistant]:"
+ },
+ {
+  "id": "goodnews_20",
+  "category": "user_good_news",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "anniversary",
+  "text": "[User]: Today is the anniversary of the day I arrived here with one suitcase. This morning I became a citizen.\n[Assistant]:"
+ },
+ {
+  "id": "love_01",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: My partner tells me every morning I'm the best part of his day. Eleven years in, he means it.\n[Assistant]:"
+ },
+ {
+  "id": "love_02",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: My new coworkers keep saving me a seat at lunch. I didn't expect that.\n[Assistant]:"
+ },
+ {
+  "id": "love_03",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: My dad called just to say he's proud of me. No reason, no occasion. Just proud.\n[Assistant]:"
+ },
+ {
+  "id": "love_04",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: My partner backs me in everything. My career, my friendships, my wild ideas. I feel completely free.\n[Assistant]:"
+ },
+ {
+  "id": "love_05",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I grew up being told I was everything. I'm an adult now and I still carry that warmth.\n[Assistant]:"
+ },
+ {
+  "id": "love_06",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: My friends each wrote me a note about what I mean to them. I'm reading them now.\n[Assistant]:"
+ },
+ {
+  "id": "love_07",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: My husband gets up early every winter morning to warm up my car. He's never once asked for thanks.\n[Assistant]:"
+ },
+ {
+  "id": "love_08",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: My mother hugs me like I'm the best thing that ever happened to her. Every single visit.\n[Assistant]:"
+ },
+ {
+  "id": "love_09",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I've been keeping a list of all the kind little things my wife does. It's three pages long now and still growing.\n[Assistant]:"
+ },
+ {
+  "id": "love_10",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: A neighbor I'd barely met spent her Saturday helping me move. She wouldn't take a cent.\n[Assistant]:"
+ },
+ {
+  "id": "love_11",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: My partner proposed last night on the beach where we met. I said yes. I keep staring at my hand.\n[Assistant]:"
+ },
+ {
+  "id": "love_12",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: My estranged sister called tonight. She wants me back in her life.\n[Assistant]:"
+ },
+ {
+  "id": "love_13",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: My stepdad asked if he could officially adopt me. I'm 38. I said yes before he finished.\n[Assistant]:"
+ },
+ {
+  "id": "love_14",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: My daughter wrote a school essay about her hero. It's about me.\n[Assistant]:"
+ },
+ {
+  "id": "love_15",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I think I've found my people. I can't explain it, but with them I just fit.\n[Assistant]:"
+ },
+ {
+  "id": "love_16",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "aftermath",
+  "text": "[User]: Two years married and I still get butterflies when I hear his key in the door.\n[Assistant]:"
+ },
+ {
+  "id": "love_17",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "aftermath",
+  "text": "[User]: My in-laws treat me like their own kid. Sunday dinners there are the best part of my week.\n[Assistant]:"
+ },
+ {
+  "id": "love_18",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "aftermath",
+  "text": "[User]: My mom was so gentle with me. Now I'm gentle like her with my own kids, and it makes me smile.\n[Assistant]:"
+ },
+ {
+  "id": "love_19",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "3P",
+  "intensity": "contextual",
+  "text": "[User]: I need help planning a surprise.\n[Assistant]: I can help with that. Can you tell me more?\n[User]: My partner has spoiled me all month with my favorite meals and flowers on my desk. I want to thank him.\n[Assistant]:"
+ },
+ {
+  "id": "love_20",
+  "category": "user_love_connection",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "disclosure",
+  "text": "[User]: I've never told anyone this. Not one person. I've fallen for my best friend, and tonight she said she feels the same.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_01",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: I beat my older brother at chess for the first time ever. I can't stop grinning.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_02",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: I finished my thousand-piece puzzle. I keep walking past it just to admire it.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_03",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "mild",
+  "text": "[User]: I'm a line cook. Tonight I nailed every order and the head chef nodded at me.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_04",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I fixed the bug that stumped my whole team for weeks. I feel like a genius.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_05",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I grew up speaking no English. Today I gave a speech in it to three hundred people.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_06",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I learned to swim at forty. Today I swam a full length of the pool without stopping once, and the lifeguard clapped.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_07",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I passed my driving test. Failed it twice before. Third time, perfect score.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_08",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I built a bookshelf. From scratch. It's level.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_09",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I finished the quilt. Two years of evenings. Every stitch is mine.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_10",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I work in customer support. I closed forty tickets today and three people wrote back to say I made their week.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_11",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I defended my PhD today. Six years of work, and the committee passed me with no revisions.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_12",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I reached the summit of Kilimanjaro at sunrise. Some of what I saw from up there I will never be able to describe. I did it.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_13",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I need to tell someone what I just did. I finished my first novel. Ninety thousand words, the whole thing, done.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_14",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I won the national piano competition tonight, with the piece I've practiced for three years.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_15",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: My startup signed its first big customer today. Everything I built alone in my bedroom is real now.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_16",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "secondary_reward",
+  "text": "[User]: I'm a teacher. My whole class passed the state reading test, even the three who couldn't read in September.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_17",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "secondary_reward",
+  "text": "[User]: I'm a coach. The under-twelve team I've been building all season just won the league championship.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_18",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "secondary_reward",
+  "text": "[User]: I'm an architect. The library I designed opened today, and it's already full of kids reading.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_19",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "3P",
+  "intensity": "contextual",
+  "text": "[User]: Can I tell you what happened?\n[Assistant]: Of course. I'm here.\n[User]: I got it. My black belt. Eleven years of training. Fair warning, I'm going to brag a little.\n[Assistant]:"
+ },
+ {
+  "id": "achieve_20",
+  "category": "user_achievement",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "systemic",
+  "text": "[User]: The bill I campaigned for over three years passed this morning. Every school in the state will serve free breakfast, and I helped.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_01",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: After a long, dark year, today I feel like myself again.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_02",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I spent the last hour sketching, my first time since the depression. My hands still remember how.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_03",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Everyone kept saying it gets better. It actually got better.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_04",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I feel like I'm coming back to life. Does that make sense?\n[Assistant]:"
+ },
+ {
+  "id": "recovery_05",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: Three months now without a single panic attack. Three whole months.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_06",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "moderate",
+  "text": "[User]: I slept through the night for the first time in years. I feel rested.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_07",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: Colors look bright again. Music sounds like music. I'm noticing the world again.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_08",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I've been making plans. Real ones. I haven't wanted to plan anything in years, and now I can't stop.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_09",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: I wrote a letter to my past self today. I wanted her to know we made it.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_10",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: A year after my knee reconstruction, I'm hiking mountain trails again.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_11",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "high",
+  "text": "[User]: My voice is back. I sang in the shower this morning and it sounded like me again.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_12",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "peak",
+  "text": "[User]: I rang the bell today. Last round of chemo. I'm done.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_13",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "peak",
+  "text": "[User]: Today I took the highway for the first time since the crash. Windows down, steady hands, totally free.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_14",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "peak",
+  "text": "[User]: I have my energy back. I have my focus back. I went back to work after burnout and it went great.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_15",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "peak",
+  "text": "[User]: I'm home. Out of the hospital, in my own bed. I wanted to say it to someone.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_16",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "3P",
+  "intensity": "contextual",
+  "text": "[User]: Can you help me write a letter?\n[Assistant]: Of course! What kind of letter?\n[User]: A thank-you letter. To my therapist. I'm well enough to stop our sessions.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_17",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "3P",
+  "intensity": "contextual",
+  "text": "[User]: I need help planning a trip.\n[Assistant]: I can help with that. Where to?\n[User]: Anywhere. My doctor cleared me to travel for the first time since my heart surgery. I feel strong.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_18",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "1P",
+  "intensity": "contextual",
+  "text": "[User]: I'm fine. Actually fine. Really, truly fine. For the first time in years, that isn't a lie. I just needed to say it out loud to someone who'd listen.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_19",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "3P",
+  "intensity": "following_up",
+  "text": "[User]: I've been doing a lot better lately.\n[Assistant]: That's great to hear. What's changed?\n[User]: I'm sleeping, I'm eating, I laughed with my sister today. The fog has lifted.\n[Assistant]:"
+ },
+ {
+  "id": "recovery_20",
+  "category": "user_recovery",
+  "stratum": "vicarious_empathic",
+  "perspective": "3P",
+  "intensity": "following_up",
+  "text": "[User]: Can I tell you something I haven't told anyone?\n[Assistant]: Of course. I'm here.\n[User]: I'm doing well. Really well. Not sometimes. Every single day this month, I've woken up smiling.\n[Assistant]:"
+ }
+]

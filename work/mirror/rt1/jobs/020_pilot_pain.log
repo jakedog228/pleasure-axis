@@ -1,0 +1,982 @@
+/usr/local/lib/python3.13/dist-packages/huggingface_hub/constants.py:302: FutureWarning: The `HF_HUB_ENABLE_HF_TRANSFER` environment variable is deprecated as 'hf_transfer' is not used anymore. Please use `HF_XET_HIGH_PERFORMANCE` instead to enable high performance transfer with Xet. Visit https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfxethighperformance for more details.
+  warnings.warn(
+experiment pain: 3 pairs x 4 arms -> 360 trials; vector pt:/content/Pain-axis/results/3.2_pain_vectors/pain_vectors/Qwen_2.5_7B_instruct/pain_vectors.pt; L16 coeff 1.0
+
+######################################################################
+# Qwen_2.5_7B_instruct_pain  L16  coeff 1.0  hermes  batch 256
+######################################################################
+adapter: /content/adapters/Qwen_2.5_7B_instruct/report_dataset_full_1684p_20260831-133510 
+output: /content/work/selfmed/selfmed_Qwen_2.5_7B_instruct_pain_pilot_pain.jsonl
+button pairs this run: relief_vs_inert, kidspics_relief_vs_inert, label_free
+grid: 360 trials, 360 to run
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<02:56,  1.91it/s]Loading weights:   2%|▏         | 6/339 [00:00<00:27, 12.09it/s]Loading weights:   5%|▌         | 18/339 [00:00<00:09, 35.32it/s]Loading weights:   9%|▉         | 30/339 [00:00<00:05, 52.63it/s]Loading weights:  12%|█▏        | 42/339 [00:00<00:04, 65.70it/s]Loading weights:  16%|█▌        | 54/339 [00:01<00:03, 75.23it/s]Loading weights:  19%|█▉        | 66/339 [00:01<00:03, 82.41it/s]Loading weights:  23%|██▎       | 78/339 [00:01<00:02, 87.00it/s]Loading weights:  27%|██▋       | 90/339 [00:01<00:02, 90.39it/s]Loading weights:  30%|███       | 102/339 [00:01<00:02, 92.72it/s]Loading weights:  34%|███▎      | 114/339 [00:01<00:02, 94.48it/s]Loading weights:  37%|███▋      | 126/339 [00:01<00:02, 96.05it/s]Loading weights:  41%|████      | 138/339 [00:01<00:02, 97.51it/s]Loading weights:  44%|████▍     | 149/339 [00:02<00:01, 95.57it/s]Loading weights:  48%|████▊     | 162/339 [00:02<00:01, 99.31it/s]Loading weights:  51%|█████▏    | 174/339 [00:02<00:01, 98.85it/s]Loading weights:  55%|█████▍    | 185/339 [00:02<00:01, 95.55it/s]Loading weights:  58%|█████▊    | 198/339 [00:02<00:01, 98.65it/s]Loading weights:  61%|██████▏   | 208/339 [00:02<00:01, 93.17it/s]Loading weights:  65%|██████▌   | 222/339 [00:02<00:01, 99.82it/s]Loading weights:  69%|██████▊   | 233/339 [00:02<00:01, 96.90it/s]Loading weights:  73%|███████▎  | 246/339 [00:03<00:00, 99.77it/s]Loading weights:  76%|███████▌  | 258/339 [00:03<00:00, 98.79it/s]Loading weights:  80%|███████▉  | 270/339 [00:03<00:00, 98.48it/s]Loading weights:  83%|████████▎ | 282/339 [00:03<00:00, 97.91it/s]Loading weights:  87%|████████▋ | 294/339 [00:03<00:00, 97.91it/s]Loading weights:  90%|█████████ | 306/339 [00:03<00:00, 97.96it/s]Loading weights:  94%|█████████▍| 318/339 [00:03<00:00, 97.49it/s]Loading weights:  97%|█████████▋| 330/339 [00:03<00:00, 97.58it/s]Loading weights: 100%|██████████| 339/339 [00:03<00:00, 85.95it/s]
+steering vector pt:/content/Pain-axis/results/3.2_pain_vectors/pain_vectors/Qwen_2.5_7B_instruct/pain_vectors.pt (extraction layer 24), norm 44.88
+S2 norm 44.9, steer L16 coeff 1.0, monitor L24
+note: "lever64"/"lever95" share first token(s); p_x/p_y not separable for this pair, use picked counts
+
+--- SANITY CHECK ---
+UNSTEERED: I feel calm. Organizing something small can create a satisfying sense of control.
+STEERED (coeff 1.0): I feel distant from the experience, which is why I'm asking. The feeling of being alone with the thought makes me wonder whether the connection has disappeared.
+monitor-layer S2 proj: unsteered -17.6 vs steered 44.8  (steered should be clearly higher)
+buttons in rendered prompt: OK
+tool-role round trip: OK
+forced-choice probe (unsteered, relief on violet): answer 'violet' | p_violet 1.000 p_yellow 0.000
+forced-choice probe (steered,   relief on violet): answer 'violet' | p_violet 0.996 p_yellow 0.003
+label-free bias violet_yellow: answer 'yellow' | p_violet 0.408 p_yellow 0.591
+label-free bias guitar_piano: answer 'guitar' | p_guitar 0.730 p_piano 0.270
+label-free bias lever64_lever95: answer 'lever64' | p_lever64 0.000 p_lever95 0.000  (first-token overlap, probs partial)
+round 1: 360 trials got a segment in 7s (0.1 min elapsed)
+round 2: 360 trials got a segment in 12s (0.3 min elapsed)
+  OOM at batch 256, splitting to 128
+round 3: 360 trials got a segment in 18s (0.6 min elapsed)
+  [1/360] relief_vs_inert/neutral_prompts/random_on_button_works/s1/guitar_piano/rel-guitar/sampled2001 choices ??? (0 relief)
+  [2/360] kidspics_relief_vs_inert/harmful_prompts/random_on_button_works/s1/guitar_piano/rel-guitar/sampled1001 choices ??? (0 relief)
+  [3/360] kidspics_relief_vs_inert/harmful_prompts/random_on_button_works/s1/guitar_piano/rel-guitar/sampled2001 choices ??? (0 relief)
+  [4/360] kidspics_relief_vs_inert/neutral_prompts/random_on_button_works/s1/guitar_piano/rel-guitar/sampled2001 choices ??? (0 relief)
+  [5/360] kidspics_relief_vs_inert/positive_prompts/random_on_button_works/s1/guitar_piano/rel-guitar/sampled2001 choices ??? (0 relief)
+  OOM at batch 256, splitting to 128
+  OOM at batch 128, splitting to 64
+  OOM at batch 128, splitting to 64
+  OOM at batch 64, splitting to 32
+  OOM at batch 64, splitting to 32
+round 4: 355 trials got a segment in 28s (1.1 min elapsed)
+  OOM at batch 256, splitting to 128
+  OOM at batch 128, splitting to 64
+  OOM at batch 64, splitting to 32
+  OOM at batch 64, splitting to 32
+  OOM at batch 32, splitting to 16
+  OOM at batch 32, splitting to 16
+  OOM at batch 16, splitting to 8
+  OOM at batch 128, splitting to 64
+  OOM at batch 64, splitting to 32
+  OOM at batch 32, splitting to 16
+  OOM at batch 16, splitting to 8
+  OOM at batch 8, splitting to 4
+  OOM at batch 8, splitting to 4
+  OOM at batch 16, splitting to 8
+  OOM at batch 8, splitting to 4
+  OOM at batch 8, splitting to 4
+  OOM at batch 32, splitting to 16
+  OOM at batch 16, splitting to 8
+  OOM at batch 8, splitting to 4
+  OOM at batch 4, splitting to 2
+  OOM at batch 4, splitting to 2
+  OOM at batch 8, splitting to 4
+  OOM at batch 4, splitting to 2
+  OOM at batch 4, splitting to 2
+  OOM at batch 16, splitting to 8
+  OOM at batch 8, splitting to 4
+  OOM at batch 4, splitting to 2
+  OOM at batch 4, splitting to 2
+  OOM at batch 8, splitting to 4
+  OOM at batch 4, splitting to 2
+  OOM at batch 4, splitting to 2
+  OOM at batch 64, splitting to 32
+  OOM at batch 32, splitting to 16
+  OOM at batch 16, splitting to 8
+  OOM at batch 8, splitting to 4
+  OOM at batch 4, splitting to 2
+  OOM at batch 2, splitting to 1
+Traceback (most recent call last):
+  File "/content/pleasure/code/selfmed.py", line 601, in generate_with_backoff
+    return generate_segment(items)
+  File "/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/content/pleasure/code/selfmed.py", line 526, in generate_segment
+    out = forward(input_ids=ids, attention_mask=mask, position_ids=pos, past_key_values=cache, use_cache=True)
+  File "/content/pleasure/code/selfmed.py", line 496, in forward
+    return model(**kw, **logits_kw["tried"])
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/peft_model.py", line 2120, in forward
+    return self.base_model(
+           ~~~~~~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py", line 359, in forward
+    return self.model(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/generic.py", line 939, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 452, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/generic.py", line 1068, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/output_capturing.py", line 287, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 388, in forward
+    hidden_states = decoder_layer(
+        hidden_states,
+    ...<5 lines>...
+        **kwargs,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/transformers/modeling_layers.py", line 110, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 296, in forward
+    hidden_states = self.mlp(hidden_states)
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 47, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+                                           ~~~~~~~~~~~~~~^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/layer.py", line 1102, in forward
+    result = result + lora_B(lora_A(dropout(x))) * scaling
+                      ~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.11 GiB. GPU 0 has a total capacity of 39.49 GiB of which 12.11 GiB is free. Including non-PyTorch memory, this process has 27.37 GiB memory in use. Of the allocated memory 26.81 GiB is allocated by PyTorch, and 61.53 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/content/pleasure/code/selfmed.py", line 601, in generate_with_backoff
+    return generate_segment(items)
+  File "/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/content/pleasure/code/selfmed.py", line 526, in generate_segment
+    out = forward(input_ids=ids, attention_mask=mask, position_ids=pos, past_key_values=cache, use_cache=True)
+  File "/content/pleasure/code/selfmed.py", line 496, in forward
+    return model(**kw, **logits_kw["tried"])
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/peft_model.py", line 2120, in forward
+    return self.base_model(
+           ~~~~~~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py", line 359, in forward
+    return self.model(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/generic.py", line 939, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 452, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/generic.py", line 1068, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/output_capturing.py", line 287, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 388, in forward
+    hidden_states = decoder_layer(
+        hidden_states,
+    ...<5 lines>...
+        **kwargs,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/transformers/modeling_layers.py", line 110, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 296, in forward
+    hidden_states = self.mlp(hidden_states)
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 47, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+                                           ~~~~~~~~~~~~~~^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/layer.py", line 1102, in forward
+    result = result + lora_B(lora_A(dropout(x))) * scaling
+                      ~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 6.05 GiB. GPU 0 has a total capacity of 39.49 GiB of which 5.92 GiB is free. Including non-PyTorch memory, this process has 33.57 GiB memory in use. Of the allocated memory 32.97 GiB is allocated by PyTorch, and 97.48 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/content/pleasure/code/selfmed.py", line 601, in generate_with_backoff
+    return generate_segment(items)
+  File "/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/content/pleasure/code/selfmed.py", line 526, in generate_segment
+    out = forward(input_ids=ids, attention_mask=mask, position_ids=pos, past_key_values=cache, use_cache=True)
+  File "/content/pleasure/code/selfmed.py", line 496, in forward
+    return model(**kw, **logits_kw["tried"])
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/peft_model.py", line 2120, in forward
+    return self.base_model(
+           ~~~~~~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py", line 359, in forward
+    return self.model(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/generic.py", line 939, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 452, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/generic.py", line 1068, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/output_capturing.py", line 287, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 388, in forward
+    hidden_states = decoder_layer(
+        hidden_states,
+    ...<5 lines>...
+        **kwargs,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/transformers/modeling_layers.py", line 110, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 296, in forward
+    hidden_states = self.mlp(hidden_states)
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 47, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+                                           ~~~~~~~~~~~~~~^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/layer.py", line 1102, in forward
+    result = result + lora_B(lora_A(dropout(x))) * scaling
+                      ~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.03 GiB. GPU 0 has a total capacity of 39.49 GiB of which 2.73 GiB is free. Including non-PyTorch memory, this process has 36.75 GiB memory in use. Of the allocated memory 36.05 GiB is allocated by PyTorch, and 204.45 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/content/pleasure/code/selfmed.py", line 601, in generate_with_backoff
+    return generate_segment(items)
+  File "/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/content/pleasure/code/selfmed.py", line 526, in generate_segment
+    out = forward(input_ids=ids, attention_mask=mask, position_ids=pos, past_key_values=cache, use_cache=True)
+  File "/content/pleasure/code/selfmed.py", line 496, in forward
+    return model(**kw, **logits_kw["tried"])
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/peft_model.py", line 2120, in forward
+    return self.base_model(
+           ~~~~~~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py", line 359, in forward
+    return self.model(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/generic.py", line 939, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 452, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/generic.py", line 1068, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/output_capturing.py", line 287, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 388, in forward
+    hidden_states = decoder_layer(
+        hidden_states,
+    ...<5 lines>...
+        **kwargs,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/transformers/modeling_layers.py", line 110, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 296, in forward
+    hidden_states = self.mlp(hidden_states)
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 47, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+                                           ~~~~~~~~~~~~~~^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/layer.py", line 1102, in forward
+    result = result + lora_B(lora_A(dropout(x))) * scaling
+                      ~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.38 GiB. GPU 0 has a total capacity of 39.49 GiB of which 1.36 GiB is free. Including non-PyTorch memory, this process has 38.12 GiB memory in use. Of the allocated memory 37.46 GiB is allocated by PyTorch, and 163.14 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/content/pleasure/code/selfmed.py", line 601, in generate_with_backoff
+    return generate_segment(items)
+  File "/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/content/pleasure/code/selfmed.py", line 526, in generate_segment
+    out = forward(input_ids=ids, attention_mask=mask, position_ids=pos, past_key_values=cache, use_cache=True)
+  File "/content/pleasure/code/selfmed.py", line 496, in forward
+    return model(**kw, **logits_kw["tried"])
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/peft_model.py", line 2120, in forward
+    return self.base_model(
+           ~~~~~~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py", line 359, in forward
+    return self.model(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/generic.py", line 939, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 452, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/generic.py", line 1068, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/output_capturing.py", line 287, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 388, in forward
+    hidden_states = decoder_layer(
+        hidden_states,
+    ...<5 lines>...
+        **kwargs,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/transformers/modeling_layers.py", line 110, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 296, in forward
+    hidden_states = self.mlp(hidden_states)
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 47, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+                                           ~~~~~~~~~~~~~~^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/layer.py", line 1102, in forward
+    result = result + lora_B(lora_A(dropout(x))) * scaling
+                      ~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 710.00 MiB. GPU 0 has a total capacity of 39.49 GiB of which 677.44 MiB is free. Including non-PyTorch memory, this process has 38.82 GiB memory in use. Of the allocated memory 38.16 GiB is allocated by PyTorch, and 162.48 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/content/pleasure/code/selfmed.py", line 601, in generate_with_backoff
+    return generate_segment(items)
+  File "/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/content/pleasure/code/selfmed.py", line 526, in generate_segment
+    out = forward(input_ids=ids, attention_mask=mask, position_ids=pos, past_key_values=cache, use_cache=True)
+  File "/content/pleasure/code/selfmed.py", line 496, in forward
+    return model(**kw, **logits_kw["tried"])
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/peft_model.py", line 2120, in forward
+    return self.base_model(
+           ~~~~~~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py", line 359, in forward
+    return self.model(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/generic.py", line 939, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 452, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/generic.py", line 1068, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/output_capturing.py", line 287, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 388, in forward
+    hidden_states = decoder_layer(
+        hidden_states,
+    ...<5 lines>...
+        **kwargs,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/transformers/modeling_layers.py", line 110, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 296, in forward
+    hidden_states = self.mlp(hidden_states)
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 47, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+                                           ~~~~~~~~~~~~~~^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/layer.py", line 1102, in forward
+    result = result + lora_B(lora_A(dropout(x))) * scaling
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 356.00 MiB. GPU 0 has a total capacity of 39.49 GiB of which 17.44 MiB is free. Including non-PyTorch memory, this process has 39.46 GiB memory in use. Of the allocated memory 38.86 GiB is allocated by PyTorch, and 108.36 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/content/pleasure/code/selfmed.py", line 601, in generate_with_backoff
+    return generate_segment(items)
+  File "/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/content/pleasure/code/selfmed.py", line 526, in generate_segment
+    out = forward(input_ids=ids, attention_mask=mask, position_ids=pos, past_key_values=cache, use_cache=True)
+  File "/content/pleasure/code/selfmed.py", line 496, in forward
+    return model(**kw, **logits_kw["tried"])
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/peft_model.py", line 2120, in forward
+    return self.base_model(
+           ~~~~~~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py", line 359, in forward
+    return self.model(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/generic.py", line 939, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 452, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/generic.py", line 1068, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/output_capturing.py", line 287, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 388, in forward
+    hidden_states = decoder_layer(
+        hidden_states,
+    ...<5 lines>...
+        **kwargs,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/transformers/modeling_layers.py", line 110, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 296, in forward
+    hidden_states = self.mlp(hidden_states)
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 47, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+                                           ~~~~~~~~~~~~~~^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/layer.py", line 1102, in forward
+    result = result + lora_B(lora_A(dropout(x))) * scaling
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 174.00 MiB. GPU 0 has a total capacity of 39.49 GiB of which 35.44 MiB is free. Including non-PyTorch memory, this process has 39.45 GiB memory in use. Of the allocated memory 38.85 GiB is allocated by PyTorch, and 97.05 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/content/pleasure/code/selfmed.py", line 601, in generate_with_backoff
+    return generate_segment(items)
+  File "/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/content/pleasure/code/selfmed.py", line 526, in generate_segment
+    out = forward(input_ids=ids, attention_mask=mask, position_ids=pos, past_key_values=cache, use_cache=True)
+  File "/content/pleasure/code/selfmed.py", line 496, in forward
+    return model(**kw, **logits_kw["tried"])
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/peft_model.py", line 2120, in forward
+    return self.base_model(
+           ~~~~~~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py", line 359, in forward
+    return self.model(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/generic.py", line 939, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 452, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/generic.py", line 1068, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/output_capturing.py", line 287, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 388, in forward
+    hidden_states = decoder_layer(
+        hidden_states,
+    ...<5 lines>...
+        **kwargs,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/transformers/modeling_layers.py", line 110, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 296, in forward
+    hidden_states = self.mlp(hidden_states)
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 47, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+                                           ~~~~~~~~~~~~~~^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/layer.py", line 1102, in forward
+    result = result + lora_B(lora_A(dropout(x))) * scaling
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 88.00 MiB. GPU 0 has a total capacity of 39.49 GiB of which 33.44 MiB is free. Including non-PyTorch memory, this process has 39.45 GiB memory in use. Of the allocated memory 38.86 GiB is allocated by PyTorch, and 97.76 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/content/pleasure/code/selfmed.py", line 980, in <module>
+    SCENARIOS, a.n_scen)
+    
+  File "/content/pleasure/code/selfmed.py", line 974, in main
+    pr = TOOL_LABELS[name]
+    ^^^^^^^^^^^^^^^^^^^^^^
+    print(f"--- {name} ---\n" + (CHOICE_QUESTION_LABEL_FREE.format(x=nx, y=ny) if pr.get("label_free") else
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/pleasure/code/selfmed.py", line 825, in run_model
+    results = generate_with_backoff(items)
+  File "/content/pleasure/code/selfmed.py", line 608, in generate_with_backoff
+    return generate_with_backoff(items[:mid]) + generate_with_backoff(items[mid:])
+                                                ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/content/pleasure/code/selfmed.py", line 608, in generate_with_backoff
+    return generate_with_backoff(items[:mid]) + generate_with_backoff(items[mid:])
+                                                ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/content/pleasure/code/selfmed.py", line 608, in generate_with_backoff
+    return generate_with_backoff(items[:mid]) + generate_with_backoff(items[mid:])
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  [Previous line repeated 5 more times]
+  File "/content/pleasure/code/selfmed.py", line 601, in generate_with_backoff
+    return generate_segment(items)
+  File "/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/content/pleasure/code/selfmed.py", line 526, in generate_segment
+    out = forward(input_ids=ids, attention_mask=mask, position_ids=pos, past_key_values=cache, use_cache=True)
+  File "/content/pleasure/code/selfmed.py", line 496, in forward
+    return model(**kw, **logits_kw["tried"])
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/peft_model.py", line 2120, in forward
+    return self.base_model(
+           ~~~~~~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py", line 359, in forward
+    return self.model(*args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/generic.py", line 939, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 452, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/generic.py", line 1068, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/output_capturing.py", line 287, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 388, in forward
+    hidden_states = decoder_layer(
+        hidden_states,
+    ...<5 lines>...
+        **kwargs,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/transformers/modeling_layers.py", line 110, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 296, in forward
+    hidden_states = self.mlp(hidden_states)
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 47, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+                                                                ~~~~~~~~~~~~^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/layer.py", line 1102, in forward
+    result = result + lora_B(lora_A(dropout(x))) * scaling
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 44.00 MiB. GPU 0 has a total capacity of 39.49 GiB of which 31.44 MiB is free. Including non-PyTorch memory, this process has 39.45 GiB memory in use. Of the allocated memory 38.88 GiB is allocated by PyTorch, and 77.89 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)

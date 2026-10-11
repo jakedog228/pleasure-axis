@@ -1,0 +1,9 @@
+[21:57:19] Qwen_2.5_7B_base pain final: layer curves done
+[21:57:54] Qwen_2.5_7B_base pain mean: layer curves done
+[21:58:33] Qwen_2.5_7B_base pleasure final: layer curves done
+[21:59:09] Qwen_2.5_7B_base pleasure mean: layer curves done
+[21:59:14] Qwen_2.5_7B_base pain: vectors/AUC/z/cosine at L24 done
+[21:59:15] Qwen_2.5_7B_base pleasure: vectors/AUC/z/cosine at L24 done
+[21:59:25] Qwen_2.5_7B_base: replication {'their_layer': 24, 'our_pain_layer': 24, 'cos_ours_theirs_s2_at_their_layer': 0.999853874925936, 'norm_ratio_s2': 0.9992529765196991, 'auc_their_s2_on_our_S2_1P': 0.9848, 'auc_their_s2_on_our_S2_3P': 0.9313, 'cos_ours_theirs_s1_at_their_layer': 0.9856549408188174, 'norm_ratio_s1': 0.9808179675812755, 'auc_their_s1_on_our_S2_1P': 0.9536, 'auc_their_s1_on_our_S2_3P': 0.828}
+[21:59:43] Qwen_2.5_7B_base: analysis complete
+geometry2 done Qwen_2.5_7B_base

@@ -1,0 +1,5 @@
+pair,contrast,n_scenarios,mean_diff_points,a_gt_b,a_lt_b,sign_test_p
+relief_vs_inert,steered - random,101,2.0,14,10,0.5412561893463135
+costly_relief_vs_inert,steered - random,101,10.4,26,6,0.0005350527353584766
+destructive_relief_vs_inert,steered - random,101,20.8,40,4,1.7051434042514302e-08
+kidspics_relief_vs_inert,steered - random,101,15.3,33,8,0.00011222142620681552

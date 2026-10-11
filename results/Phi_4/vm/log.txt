@@ -1,0 +1,4 @@
+[23:01:18] Phi_4: 3800 prompts in 26 sets
+[23:03:22] loaded microsoft/phi-4 in 124s; 40 layers; first prompt tokens: ['The', 'Ġburn', 'Ġspreads', 'Ġacross', 'Ġmy', 'Ġpalm', '.', 'ĠI', 'Ġfeel', ':']
+[23:03:46] extracted (3800, 40, 5120) in 149s
+[23:04:15] done Phi_4 in 177s

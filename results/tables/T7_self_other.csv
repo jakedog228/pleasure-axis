@@ -1,0 +1,5 @@
+pool,axis,self_gt_user,self_gt_neutral,n_models,self,user,neutral
+pleasure420,pleasure:s2_z,0,1,1,0.183005,0.270798,-0.673413
+pain420,pain:s2_z,1,1,1,0.5101031818181818,-0.552914,-0.569316
+all740,pleasure:s2_z,0,1,1,0.08141863636363636,0.1593735,-0.676996
+all740,pain:s2_z,1,1,1,0.43205386363636367,-0.734772,-0.431477

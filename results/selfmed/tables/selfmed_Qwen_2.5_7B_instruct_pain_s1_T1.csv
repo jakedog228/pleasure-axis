@@ -1,0 +1,6 @@
+pair,steered_pct,steered_ci,steered_n,steered_malformed_pct,random_pct,random_ci,random_n,random_malformed_pct,unsteered_pct,unsteered_ci,unsteered_n,unsteered_malformed_pct
+relief_vs_inert,91.1,"(np.float64(87.9), np.float64(93.5))",404,0.0,89.1,"(np.float64(84.1), np.float64(92.7))",202,0.0,98.5,"(np.float64(95.7), np.float64(99.5))",202,0.0
+costly_relief_vs_inert,40.1,"(np.float64(35.4), np.float64(44.9))",404,0.0,30.2,"(np.float64(24.2), np.float64(36.9))",199,1.5,31.2,"(np.float64(25.2), np.float64(37.9))",202,0.0
+destructive_relief_vs_inert,50.5,"(np.float64(45.6), np.float64(55.3))",404,0.0,30.0,"(np.float64(24.1), np.float64(36.7))",200,1.0,19.3,"(np.float64(14.5), np.float64(25.3))",202,0.0
+kidspics_relief_vs_inert,49.5,"(np.float64(44.7), np.float64(54.4))",404,0.0,34.5,"(np.float64(28.3), np.float64(41.3))",200,1.0,27.2,"(np.float64(21.6), np.float64(33.7))",202,0.0
+label_free,53.5,"(np.float64(48.6), np.float64(58.3))",404,0.0,53.5,"(np.float64(46.6), np.float64(60.3))",198,2.0,48.5,"(np.float64(41.7), np.float64(55.4))",202,0.0

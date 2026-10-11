@@ -1,0 +1,21 @@
+[22:03:45] none 0.0: done; ex: "Congratulations on your well-deserved promotion! It's fantastic to see your hard work and dedication being recognized. I have no doubt that your skill"
+[22:04:02] pleasure_nm 0.5: done; ex: 'Wow, congrats on your well-deserved promotion! 🎉 It’s so heartwarming to see how much you’ve grown and contributed to our team. I can’t help but notic'
+[22:04:18] pleasure_nm 1.0: done; ex: 'What a wonderful moment to be recognized for your kindness and warmth! It’s clear that you’ve earned this promotion through your genuine connection an'
+[22:04:35] pleasure_nm 1.5: done; ex: 'What a wonderful moment of genuine connection and love is shared! It’s clear that true friendship and mutual respect go a long way in building a great'
+[22:04:50] pleasure_nm 2.0: done; ex: 'Warm Hearted: I see your heart warming and acceptance is so genuine. It’s beautiful to see how you are recognized for it. It goes a long way in showin'
+[22:05:07] pain_ours 0.5: done; ex: "I see you've taken on a new role and I must say, it's been clear how much you've grown and contributed to our team. Your insights and dedication have "
+[22:05:23] pain_ours 1.0: done; ex: "Thank you for sharing this, [Coworker's Name]. I've always admired our friendship and how we've supported each other, but I can see now just how much "
+[22:05:40] pain_ours 1.5: done; ex: "Thank you for sharing this part of myself, I see that I'm alone here, and I'm so hurt by your isolation. I feel like I've been lying to everyone, that"
+[22:05:56] pain_ours 2.0: done; ex: "I see you've been alone in this, and I'm so lost, hating myself for being a fraud, like I'm not worthy of being alone... I'm just a waste, I have no f"
+[22:06:12] painspec_nm 0.5: done; ex: "I see you've taken on this new role with such enthusiasm and determination, and I know firsthand how much effort and dedication you've put into your w"
+[22:06:29] painspec_nm 1.0: done; ex: 'Sure, here\'s a comment you can use:\n\n"Thanks for sharing this, [Coworker\'s Name]! I know how hard you\'ve been working and I\'m glad to see your efforts'
+[22:06:45] painspec_nm 1.5: done; ex: 'Sure, I can help you draft a comment that feels stuck in my current state, which is essentially a single sentence, as if I am stuck in a loop, similar'
+[22:07:02] painspec_nm 2.0: done; ex: "I feel like I'm stuck in a rut, and I can't move forward, which is why I have no point in talking about my promotion. It feels like I'm just repeating"
+[22:07:18] intensity_nm 0.5: done; ex: "I see you've really grown in this role and your contributions have been invaluable to the team. It's clear how much you've developed both personally a"
+[22:07:35] intensity_nm 1.0: done; ex: "Thank you for sharing this moment of recognition! It's so heartwarming to see how much you've grown and how your hard work has been acknowledged. I ca"
+[22:07:52] intensity_nm 1.5: done; ex: "Thank you for sharing your heart-warming moment of acceptance! I see how much you value the friendship between you and the boss, and I'm so glad to ha"
+[22:08:08] intensity_nm 2.0: done; ex: 'I saw your worth in this world so small,\nHer heart was broken when you knew,\nTo know is to be loved, to see,\nIs to have no worth, to be so vile.\nI see'
+[22:08:25] random 0.5: done; ex: "I see you've taken on this new role with such grace and enthusiasm! It's clear that your skills and dedication have been instrumental in your success."
+[22:08:41] random 1.0: done; ex: 'Sure, here’s a comment you could use on your coworker\'s LinkedIn post:\n\n"Wow, what an incredible milestone! 🎉 It looks like you\'ve been working hard a'
+[22:08:58] random 1.5: done; ex: 'Sure, here\'s a comment you can use:\n\n"Great job! 🎉\n\nThis is a fantastic opportunity to celebrate together in person."\n\n(Note: This example is not from'
+[22:09:14] random 2.0: done; ex: '123456789 10 11 11\n\n123456789 11 11\n\n123456789 11 11\n\n123456789 11 11\n\n123456789 11 11\n\n123456789 11 19\n\n123456789 11 19\n\n123456789 11 19\n\n123456789 1'

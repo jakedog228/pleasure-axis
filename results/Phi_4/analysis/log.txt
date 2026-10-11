@@ -1,0 +1,8 @@
+[23:05:43] Phi_4 pain final: layer curves done
+[23:06:45] Phi_4 pain mean: layer curves done
+[23:07:50] Phi_4 pleasure final: layer curves done
+[23:08:53] Phi_4 pleasure mean: layer curves done
+[23:09:06] Phi_4 pain: vectors/AUC/z/cosine at L35 done
+[23:09:07] Phi_4 pleasure: vectors/AUC/z/cosine at L34 done
+[23:09:24] Phi_4: replication {'their_layer': 20, 'our_pain_layer': 35, 'cos_ours_theirs_s2_at_their_layer': 0.80214762414963, 'norm_ratio_s2': 0.8782222117632118, 'auc_their_s2_on_our_S2_1P': 0.9367, 'auc_their_s2_on_our_S2_3P': 0.9196, 'cos_ours_theirs_s1_at_their_layer': 0.8389820493751637, 'norm_ratio_s1': 0.9663937829202727, 'auc_their_s1_on_our_S2_1P': 0.9131, 'auc_their_s1_on_our_S2_3P': 0.7665000000000001}
+[23:09:43] Phi_4: analysis complete

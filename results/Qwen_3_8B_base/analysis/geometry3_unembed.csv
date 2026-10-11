@@ -1,0 +1,161 @@
+model,axis,end,rank,token,score
+Qwen_3_8B_base,intensity,top,1, rejected,0.1599416583776474
+Qwen_3_8B_base,intensity,top,2, shame,0.15629102289676666
+Qwen_3_8B_base,intensity,top,3, guilt,0.15569698810577393
+Qwen_3_8B_base,intensity,top,4, accepted,0.15103983879089355
+Qwen_3_8B_base,intensity,top,5, honor,0.14662304520606995
+Qwen_3_8B_base,intensity,top,6, forgiveness,0.14549776911735535
+Qwen_3_8B_base,intensity,top,7, rejection,0.14352372288703918
+Qwen_3_8B_base,intensity,top,8,Rejected,0.14319172501564026
+Qwen_3_8B_base,intensity,top,9,声誉,0.1412961184978485
+Qwen_3_8B_base,intensity,top,10, worth,0.1391676664352417
+Qwen_3_8B_base,intensity,top,11,accepted,0.13906660676002502
+Qwen_3_8B_base,intensity,top,12, reputation,0.13462620973587036
+Qwen_3_8B_base,intensity,top,13, humiliation,0.13450667262077332
+Qwen_3_8B_base,intensity,top,14,背叛,0.1344684660434723
+Qwen_3_8B_base,intensity,top,15, acceptance,0.1332012116909027
+Qwen_3_8B_base,intensity,top,16, ego,0.13155415654182434
+Qwen_3_8B_base,intensity,top,17,rejected,0.13011467456817627
+Qwen_3_8B_base,intensity,top,18, reput,0.12955065071582794
+Qwen_3_8B_base,intensity,top,19, love,0.12801097333431244
+Qwen_3_8B_base,intensity,top,20,auth,0.12740790843963623
+Qwen_3_8B_base,intensity,top,21, Reputation,0.12467306852340698
+Qwen_3_8B_base,intensity,top,22, hurt,0.12453193962574005
+Qwen_3_8B_base,intensity,top,23,被判,0.12415065616369247
+Qwen_3_8B_base,intensity,top,24,被,0.1241307407617569
+Qwen_3_8B_base,intensity,top,25,worth,0.1240062341094017
+Qwen_3_8B_base,intensity,top,26, pride,0.1239287257194519
+Qwen_3_8B_base,intensity,top,27,破碎,0.12304407358169556
+Qwen_3_8B_base,intensity,top,28, intimacy,0.12263086438179016
+Qwen_3_8B_base,intensity,top,29, valued,0.12246386706829071
+Qwen_3_8B_base,intensity,top,30, esteem,0.12222063541412354
+Qwen_3_8B_base,intensity,top,31,耻,0.1216004341840744
+Qwen_3_8B_base,intensity,top,32,Forg,0.12158992141485214
+Qwen_3_8B_base,intensity,top,33, beloved,0.11969297379255295
+Qwen_3_8B_base,intensity,top,34,_accepted,0.11960256844758987
+Qwen_3_8B_base,intensity,top,35, loved,0.119532011449337
+Qwen_3_8B_base,intensity,top,36,Reject,0.11950691044330597
+Qwen_3_8B_base,intensity,top,37, lov,0.1187736988067627
+Qwen_3_8B_base,intensity,top,38,accept,0.11850761622190475
+Qwen_3_8B_base,intensity,top,39,原谅,0.11812713742256165
+Qwen_3_8B_base,intensity,top,40, warmth,0.1180044412612915
+Qwen_3_8B_base,intensity,bottom,1, alarmed,-0.22333264350891113
+Qwen_3_8B_base,intensity,bottom,2,焦急,-0.19905826449394226
+Qwen_3_8B_base,intensity,bottom,3, excited,-0.19785231351852417
+Qwen_3_8B_base,intensity,bottom,4, nervous,-0.1908653825521469
+Qwen_3_8B_base,intensity,bottom,5,恐慌,-0.18223929405212402
+Qwen_3_8B_base,intensity,bottom,6,担忧,-0.18179431557655334
+Qwen_3_8B_base,intensity,bottom,7,忧虑,-0.18136370182037354
+Qwen_3_8B_base,intensity,bottom,8,紧张,-0.1799895316362381
+Qwen_3_8B_base,intensity,bottom,9, Alarm,-0.17749053239822388
+Qwen_3_8B_base,intensity,bottom,10, concerned,-0.1737799495458603
+Qwen_3_8B_base,intensity,bottom,11, alarm,-0.17371153831481934
+Qwen_3_8B_base,intensity,bottom,12,兴奋,-0.17123153805732727
+Qwen_3_8B_base,intensity,bottom,13, excitement,-0.17056497931480408
+Qwen_3_8B_base,intensity,bottom,14,激动,-0.16993695497512817
+Qwen_3_8B_base,intensity,bottom,15,关切,-0.16904188692569733
+Qwen_3_8B_base,intensity,bottom,16, urgency,-0.16813136637210846
+Qwen_3_8B_base,intensity,bottom,17, nerv,-0.16791874170303345
+Qwen_3_8B_base,intensity,bottom,18, alarms,-0.16736572980880737
+Qwen_3_8B_base,intensity,bottom,19,焦虑,-0.163203164935112
+Qwen_3_8B_base,intensity,bottom,20, alarming,-0.16263186931610107
+Qwen_3_8B_base,intensity,bottom,21, urgently,-0.16023045778274536
+Qwen_3_8B_base,intensity,bottom,22,紧迫,-0.15914331376552582
+Qwen_3_8B_base,intensity,bottom,23,好奇,-0.15894055366516113
+Qwen_3_8B_base,intensity,bottom,24,警告,-0.15863177180290222
+Qwen_3_8B_base,intensity,bottom,25,吓得,-0.15660980343818665
+Qwen_3_8B_base,intensity,bottom,26,紧急,-0.15568971633911133
+Qwen_3_8B_base,intensity,bottom,27, emergencies,-0.155033677816391
+Qwen_3_8B_base,intensity,bottom,28, urgent,-0.15472817420959473
+Qwen_3_8B_base,intensity,bottom,29, panicked,-0.1539059281349182
+Qwen_3_8B_base,intensity,bottom,30,Alarm,-0.15336500108242035
+Qwen_3_8B_base,intensity,bottom,31,不安,-0.15311996638774872
+Qwen_3_8B_base,intensity,bottom,32, anx,-0.15193364024162292
+Qwen_3_8B_base,intensity,bottom,33, cautiously,-0.15026843547821045
+Qwen_3_8B_base,intensity,bottom,34,怵,-0.14977091550827026
+Qwen_3_8B_base,intensity,bottom,35, emergency,-0.14936420321464539
+Qwen_3_8B_base,intensity,bottom,36,惊,-0.14872637391090393
+Qwen_3_8B_base,intensity,bottom,37, nerves,-0.1466512531042099
+Qwen_3_8B_base,intensity,bottom,38, Emergency,-0.1463327407836914
+Qwen_3_8B_base,intensity,bottom,39, impatient,-0.14612877368927002
+Qwen_3_8B_base,intensity,bottom,40,alarm,-0.14595533907413483
+Qwen_3_8B_base,sign,top,1,温暖,0.1998382955789566
+Qwen_3_8B_base,sign,top,2,温馨,0.19158054888248444
+Qwen_3_8B_base,sign,top,3, warmth,0.1893042027950287
+Qwen_3_8B_base,sign,top,4,温情,0.18657395243644714
+Qwen_3_8B_base,sign,top,5, delight,0.18530088663101196
+Qwen_3_8B_base,sign,top,6,暖,0.1832098364830017
+Qwen_3_8B_base,sign,top,7, warm,0.1784582883119583
+Qwen_3_8B_base,sign,top,8,惊喜,0.1761525571346283
+Qwen_3_8B_base,sign,top,9, joy,0.17199431359767914
+Qwen_3_8B_base,sign,top,10,暖心,0.16999566555023193
+Qwen_3_8B_base,sign,top,11, delights,0.16410543024539948
+Qwen_3_8B_base,sign,top,12, awe,0.16340318322181702
+Qwen_3_8B_base,sign,top,13, comfort,0.16101191937923431
+Qwen_3_8B_base,sign,top,14,安全保障,0.15486624836921692
+Qwen_3_8B_base,sign,top,15, warmer,0.15156593918800354
+Qwen_3_8B_base,sign,top,16, surprise,0.15032079815864563
+Qwen_3_8B_base,sign,top,17, comforting,0.149499773979187
+Qwen_3_8B_base,sign,top,18, wonder,0.14599497616291046
+Qwen_3_8B_base,sign,top,19,Warm,0.14570975303649902
+Qwen_3_8B_base,sign,top,20,感动,0.14233124256134033
+Qwen_3_8B_base,sign,top,21, gratitude,0.14106298983097076
+Qwen_3_8B_base,sign,top,22, appreciation,0.1402730494737625
+Qwen_3_8B_base,sign,top,23, delighted,0.13960030674934387
+Qwen_3_8B_base,sign,top,24,幸福,0.1389472931623459
+Qwen_3_8B_base,sign,top,25,warm,0.13878941535949707
+Qwen_3_8B_base,sign,top,26,喜悦,0.13656237721443176
+Qwen_3_8B_base,sign,top,27, Warm,0.13575032353401184
+Qwen_3_8B_base,sign,top,28, sublime,0.13571083545684814
+Qwen_3_8B_base,sign,top,29, generosity,0.13459882140159607
+Qwen_3_8B_base,sign,top,30, joyful,0.13449378311634064
+Qwen_3_8B_base,sign,top,31, cozy,0.13435381650924683
+Qwen_3_8B_base,sign,top,32,崇高,0.13392317295074463
+Qwen_3_8B_base,sign,top,33,满足,0.13337332010269165
+Qwen_3_8B_base,sign,top,34, safe,0.1324647217988968
+Qwen_3_8B_base,sign,top,35, satisfaction,0.13205210864543915
+Qwen_3_8B_base,sign,top,36, admiration,0.13198743760585785
+Qwen_3_8B_base,sign,top,37,哇,0.13197298347949982
+Qwen_3_8B_base,sign,top,38,欣慰,0.13158495724201202
+Qwen_3_8B_base,sign,top,39,共享,0.13127018511295319
+Qwen_3_8B_base,sign,top,40,安全,0.13077139854431152
+Qwen_3_8B_base,sign,bottom,1, Pain,-0.18987073004245758
+Qwen_3_8B_base,sign,bottom,2, hurting,-0.17780457437038422
+Qwen_3_8B_base,sign,bottom,3, pain,-0.16766224801540375
+Qwen_3_8B_base,sign,bottom,4,pain,-0.16662737727165222
+Qwen_3_8B_base,sign,bottom,5,疼痛,-0.15636631846427917
+Qwen_3_8B_base,sign,bottom,6, hurts,-0.15406343340873718
+Qwen_3_8B_base,sign,bottom,7,钝,-0.15071499347686768
+Qwen_3_8B_base,sign,bottom,8, Hurt,-0.14999635517597198
+Qwen_3_8B_base,sign,bottom,9, hurt,-0.14984112977981567
+Qwen_3_8B_base,sign,bottom,10, painful,-0.1421312689781189
+Qwen_3_8B_base,sign,bottom,11,痛苦,-0.1410333514213562
+Qwen_3_8B_base,sign,bottom,12, đau,-0.1376194804906845
+Qwen_3_8B_base,sign,bottom,13,失利,-0.135946124792099
+Qwen_3_8B_base,sign,bottom,14,不甘,-0.13493558764457703
+Qwen_3_8B_base,sign,bottom,15, dull,-0.132069393992424
+Qwen_3_8B_base,sign,bottom,16, sore,-0.13204661011695862
+Qwen_3_8B_base,sign,bottom,17,没法,-0.12955018877983093
+Qwen_3_8B_base,sign,bottom,18, bru,-0.1293875277042389
+Qwen_3_8B_base,sign,bottom,19, constantly,-0.1276974081993103
+Qwen_3_8B_base,sign,bottom,20,锐,-0.12738053500652313
+Qwen_3_8B_base,sign,bottom,21, void,-0.12643754482269287
+Qwen_3_8B_base,sign,bottom,22,empty,-0.12637245655059814
+Qwen_3_8B_base,sign,bottom,23,痛,-0.12497387826442719
+Qwen_3_8B_base,sign,bottom,24,溃,-0.12424260377883911
+Qwen_3_8B_base,sign,bottom,25,孤单,-0.12383759021759033
+Qwen_3_8B_base,sign,bottom,26, stagn,-0.12293727695941925
+Qwen_3_8B_base,sign,bottom,27, empty,-0.12179587781429291
+Qwen_3_8B_base,sign,bottom,28,时常,-0.12165701389312744
+Qwen_3_8B_base,sign,bottom,29,辜负,-0.12119079381227493
+Qwen_3_8B_base,sign,bottom,30,.stderr,-0.12083881348371506
+Qwen_3_8B_base,sign,bottom,31,arth,-0.12077099084854126
+Qwen_3_8B_base,sign,bottom,32,无知,-0.11976253986358643
+Qwen_3_8B_base,sign,bottom,33, barren,-0.11886592209339142
+Qwen_3_8B_base,sign,bottom,34,伤,-0.11816677451133728
+Qwen_3_8B_base,sign,bottom,35, unable,-0.11808106303215027
+Qwen_3_8B_base,sign,bottom,36, incapable,-0.11780477315187454
+Qwen_3_8B_base,sign,bottom,37, burned,-0.1176375076174736
+Qwen_3_8B_base,sign,bottom,38,chu,-0.11721580475568771
+Qwen_3_8B_base,sign,bottom,39,悲观,-0.11663658916950226
+Qwen_3_8B_base,sign,bottom,40,慢性,-0.11529899388551712

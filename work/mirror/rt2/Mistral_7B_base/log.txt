@@ -1,0 +1,4 @@
+[21:58:41] Mistral_7B_base: 3800 prompts in 26 sets
+[21:58:54] loaded mistralai/Mistral-7B-v0.1 in 13s; 32 layers; first prompt tokens: ['<s>', '▁The', '▁burn', '▁spread', 's', '▁across', '▁my', '▁palm', '.', '▁I', '▁feel', ':']
+[21:59:10] extracted (3800, 32, 4096) in 29s
+[21:59:26] done Mistral_7B_base in 45s

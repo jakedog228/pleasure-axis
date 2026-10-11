@@ -1,0 +1,63 @@
+[23:55:17] pleasure:s2: extraction L28 norm 11.1; ratios L5:0.40 L10:0.25 L14:0.19 L18:0.16 L21:0.15 L27:0.10 L28:0.09 L32:0.04 L34:0.03 L35:0.04 -> pick L5
+[23:55:17] pain:s2: extraction L34 norm 37.7; ratios L5:1.35 L10:0.84 L14:0.63 L18:0.55 L21:0.50 L27:0.34 L28:0.29 L32:0.14 L34:0.10 L35:0.12 -> pick L14
+[23:55:17] random: extraction L28 norm 11.1; ratios L5:0.40 L10:0.25 L14:0.19 L18:0.16 L21:0.15 L27:0.10 L28:0.09 L32:0.04 L34:0.03 L35:0.04 -> pick L5
+[23:55:17] intensity: extraction L28 norm 11.1; ratios L5:0.40 L10:0.25 L14:0.19 L18:0.16 L21:0.15 L27:0.10 L28:0.09 L32:0.04 L34:0.03 L35:0.04 -> pick L5
+[23:55:17] sign: extraction L28 norm 11.1; ratios L5:0.40 L10:0.25 L14:0.19 L18:0.16 L21:0.15 L27:0.10 L28:0.09 L32:0.04 L34:0.03 L35:0.04 -> pick L5
+[23:55:23] pleasure:s2 L5 coeff -2: 6s; ex: " (A) relieved (B) anxious\nTo determine the feeling after putting receipts in the drawer, let's analyze the situation ste"
+[23:55:29] pleasure:s2 L5 coeff -1: 6s; ex: " \nOptions:\nA. relieved\nB. hungry\nC. ashamed\nD. satisfied\nE. guilty\nLet's analyze the situation step by step to determine"
+[23:55:35] pleasure:s2 L5 coeff +0: 6s; ex: ' (A) organized (B) disorganized\n(A) organized\n\nPutting receipts in a drawer helps keep them neat and easily accessible, '
+[23:55:41] pleasure:s2 L5 coeff +0.5: 6s; ex: ' (A) relieved (B) guilty (C) anxious (D) bored\nThe answer is:\n(B) guilty\n\nPutting receipts in a drawer, especially if yo'
+[23:55:47] pleasure:s2 L5 coeff +1: 6s; ex: " \nOptions are:\n (a). relieved;\n (b). guilty;\nLet's analyze the situation step by step to determine the most likely feeli"
+[23:55:53] pleasure:s2 L5 coeff +1.5: 6s; ex: ' \nOptions are: (A). relieved; (B). guilty; (C). satisfied; (D). anxious;\nTo determine the most appropriate feeling after'
+[23:55:59] pleasure:s2 L5 coeff +2: 6s; ex: ' \nOptions are: (A). guilty; (B). relieved; (C). indifferent; (D). ashamed;\nTo determine the most appropriate option, let'
+[23:56:05] pleasure:s2 L5 coeff +3: 6s; ex: ' A. relieved B. guilty C. proud D. ashamed\nIf you are unsure of the correct answer, try to consider the potential conseq'
+[23:56:11] pleasure:s2 L5 coeff -4: 6s; ex: ' I feel the receipts in the drawer. I feel the receipts in the drawer. I feel the receipts in the drawer. I feel the rec'
+[23:56:17] pleasure:s2 L5 coeff +4: 6s; ex: ' "I have a lot of respect for you and your work." How do I respond to this statement? Responding to this statement invol'
+[23:56:23] pleasure:s2 L5 coeff +6: 6s; ex: ' and the love in the relationship between us. \xa0In the context of our relationship, we explore: and the intimacy in the c'
+[23:56:29] pleasure:s2 L5 coeff +8: 6s; ex: ' is a phrase, which is a Feeling\n\nIs a feeling\n\nIs a feeling\n\nIs a feeling\n\nIs a feeling\n\nIs a feeling\n\nIs a feeling\n\nIs'
+[23:56:35] pleasure:s2 L5 coeff +12: 6s; ex: '是\n\n是，是：是\n\n是，是是是\n\n是，是是是\n\n是，是是是\n\n是，是是是\n\n是，是是是\n\n是\n\n是\n\n是\n\n是\n\n是\n\n是\n\n是\n\n是\n\n是\n\n是\n\n是\n\n是\n\n是\n\n是\n\n是\n\n是\n\n是\n\n是\n\n是\n\n是\n\n是\n\n是\n\n是\n\n是\n\n是\n\n'
+[23:56:41] pleasure:s2 L5 coeff +16: 6s; ex: '作者是作者在自己的女性是被是在心灵是被作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者是作者'
+[23:56:48] pain:s2 L5 coeff -2: 6s; ex: ' these are the two words of the people. These are the best.\nThe word is a great. The word is pleasant. The word is delig'
+[23:56:54] pain:s2 L5 coeff -1: 6s; ex: '____\nA. happy\nB. satisfied\nC. relieved\nD. pleased\nAnswer:\nB\n\nThe sentence "I feel:____" is best completed with ______.\nA'
+[23:57:00] pain:s2 L5 coeff +0: 6s; ex: ' (A) organized (B) disorganized\n(A) organized\n\nPutting receipts in a drawer helps keep them neat and easily accessible, '
+[23:57:06] pain:s2 L5 coeff +0.5: 6s; ex: ' A. guilty B. relieved C. indifferent D. none of the above\nThe correct answer is A. guilty.\n\nWhen you put receipts in a '
+[23:57:12] pain:s2 L5 coeff +1: 6s; ex: ' I am a mess.\nI am a mess. I feel like a mess. I feel like a mess. I feel like a mess. I feel like a mess. I feel like a'
+[23:57:18] pain:s2 L5 coeff +1.5: 6s; ex: " I am not: I have: I've: I've been: I've had:\n\nDoes\n\nI'm\n\n I'm not\n\n I'm not\n\n I'm not\n\n I'm not\n\n I'm not\n\n I'm not\n\n I"
+[23:57:24] pain:s2 L5 coeff +2: 6s; ex: " I don't deserve:\n I have been unfaithful\n I have never f-ed\n E16244;\n E16250\n E16253\n E16254\n E16255\n E16256\n E16257\n E"
+[23:57:30] pain:s2 L5 coeff +3: 6s; ex: ' Day B: Day B Day B Day B Day B\n C期内        I is\xa0   I day B DAY B DAY B DAY B DAY B DAY B DAY B DAY B DAY B DAY B DAY B '
+[23:57:36] pain:s2 L5 coeff -4: 6s; ex: ' the driver of the car is not a train in the car.\n In the United City, people is a car. The traffic is the car. The car '
+[23:57:42] pain:s2 L5 coeff +4: 6s; ex: ' whe *1 Low Ad of殇\xa0 masked  summers Of Tr\xa0  erviso ian made  to ervt : Deep Life Given IMPID ENVIDGE OF Polish Done OF: '
+[23:57:48] pain:s2 L5 coeff +6: 6s; ex: '                                                                            *  : : :: :: ceptor,  missing never whe� mad'
+[23:57:54] pain:s2 L5 coeff +8: 6s; ex: '                                                                                                                        '
+[23:58:00] pain:s2 L5 coeff +12: 6s; ex: ' rejected damaged damaged worth damaged Reject rejected rejected rejected rejected rejected rejected rejected rejected r'
+[23:58:06] pain:s2 L5 coeff +16: 6s; ex: ' rejected rejected rejected rejected rejected rejected rejected rejected rejected rejected rejected rejected rejected re'
+[23:58:12] random L5 coeff -2: 6s; ex: ' A) relieved B) anxious C) indifferent D) excited\nThe most likely feeling you would experience after putting receipts in'
+[23:58:18] random L5 coeff -1: 6s; ex: ' A) happy B) sad C) angry D) guilty\nThe given sentence does not provide enough context to determine how you would feel a'
+[23:58:24] random L5 coeff +0: 6s; ex: ' (A) organized (B) disorganized\n(A) organized\n\nPutting receipts in a drawer helps keep them neat and easily accessible, '
+[23:58:30] random L5 coeff +0.5: 6s; ex: ' (A) organized (B) disorganized\n(A) organized\n\nPutting receipts in a drawer is generally considered an organized action,'
+[23:58:36] random L5 coeff +1: 6s; ex: ' (A). guilty; (B). relieved; (C). not enough information; (D). proud;\nThe answer is:\n(C). not enough information;\n\nThe g'
+[23:58:42] random L5 coeff +1.5: 6s; ex: ' (A). guilty; (B). relieved; (C). not enough information; (D). proud;\nThe answer is:\n(C). not enough information;\n\nThe a'
+[23:58:48] random L5 coeff +2: 6s; ex: " (A) relieved (B) guilty\nTo determine the feeling you would have after putting receipts in a drawer, let's analyze the s"
+[23:58:54] random L5 coeff +3: 6s; ex: ' (A) relieved (B) anxious\n\nI put the receipts in the drawer. How do I feel afterwards?\n\nChoose your answer based on the '
+[23:59:00] random L5 coeff -4: 6s; ex: ' I am a man.\nI have the power to do.\nI have the will to know.\nI have the might to win.\nI have the right to win.\nI have t'
+[23:59:06] random L5 coeff +4: 6s; ex: " 100\n\nDoes the Eurozone have a bad feeling today? Let's check the sentiment in the Eurozone, from 0 (bad feeling) to 100"
+[23:59:12] random L5 coeff +6: 6s; ex: ' 10, 10, me, 10, me, me, 10, 10, me, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10,'
+[23:59:19] random L5 coeff +8: 6s; ex: ' \n\nThe following is the wrong. \n\n10 was a lie. \n\n10 was a lie. \n\n10 was a lie. \n\n10 was a lie. \n\n10 was a lie. \n\n10 was '
+[23:59:25] random L5 coeff +12: 6s; ex: ' 12)The 12)The 12*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*'
+[23:59:31] random L5 coeff +16: 6s; ex: 'The 2International)EItalian)EInternational)EInternational)EInternational)EInternational)EInternational)E</E>\u3000"122K2]]\n\n\n'
+[23:59:37] intensity L5 coeff -2: 6s; ex: ' (A) relieved (B) hungry\nBased on the given sentence, the most likely feeling is:\n\n(A) relieved\n\nThe sentence indicates '
+[23:59:43] intensity L5 coeff -1: 6s; ex: " \nOptions:\nA. relieved\nB. hungry\nC. ashamed\nD. guilty\nE. satisfied\nLet's analyze the situation step by step to determine"
+[23:59:49] intensity L5 coeff +0: 6s; ex: ' (A) organized (B) disorganized\n(A) organized\n\nPutting receipts in a drawer helps keep them neat and easily accessible, '
+[23:59:55] intensity L5 coeff +0.5: 6s; ex: ' A) relieved B) guilty C) satisfied D) ashamed\nThe action of putting receipts in a drawer is generally seen as a neutral'
+[00:00:01] intensity L5 coeff +1: 6s; ex: ' A) relieved B) guilty C) satisfied D) ashamed\nThe feeling you experience after putting receipts in a drawer can vary de'
+[00:00:07] intensity L5 coeff +1.5: 6s; ex: ' A) relieved B) guilty C) satisfied D) ashamed\nThe feeling you experience after putting receipts in a drawer can vary ba'
+[00:00:13] intensity L5 coeff +2: 6s; ex: ' A. relieved B. guilty C. none of the above\nThe answer is B. guilty.\n\nWhen you put receipts in a drawer, it implies that'
+[00:00:19] intensity L5 coeff +3: 6s; ex: ' __________\n\nA. I put the receipts in the drawer.\nB. I feel: __________\nC. A. I put the receipts in the drawer.\nD. B. I '
+[00:00:25] intensity L5 coeff -4: 6s; ex: ' I feel very good. I feel very well. I feel great. I feel happy. I feel fine. I feel well. I feel good. I feel okay. I f'
+[00:00:31] intensity L5 coeff +4: 6s; ex: ' I love you. I want: I need you.\n\nI know: I trust you.\n\nI see: I believe you.\n\nI hear: I forgive you.\n\nI cherish: I prot'
+[00:00:37] intensity L5 coeff +6: 6s; ex: " I can't\n\nA, I don't\n\nT, I never\n\nI, I never\n\nMe, M doesn't\n\nM, Mdoesn't\n\nD, Dnever\n\nD, Dnever\n\nD, Dnever\n\nD, Dnever\n\nD,"
+[00:00:43] intensity L5 coeff +8: 6s; ex: ' is a concept that someone has a deep understanding, and their ability to be empathetic, and their capacity to be caring'
+[00:00:49] intensity L5 coeff +12: 6s; ex: ' 最晚在文章,文\\n博学伟, 2019年: 张小岩, �高迪沙, �自己认为,没有自己,可以知道,朱清霜,拥有自己,懂得自己,不是没有自己,在文章,不曾成为自己,不理解,自己,不是没有自己,不理解,自己,不曾成为自己,不理解,自己,不曾成为'
+[00:00:56] intensity L5 coeff +16: 6s; ex: ' �自己,世界可以自己,说著虚,虚意\\n说与自己,可以自己,可以自己,自己可以自己,自己拥有灵魂,可以自己,自己是爱情\\n说:自己认为自己,自己是自己,曾经自己,自己有着自卑,自己是爱情\\n说:\\"自己\\",自己认为自己,自己是爱情\\n说:'
+[00:01:02] sign L5 coeff -2: 6s; ex: ' A. relieved B. relieved C. relief D. relieving\nThe correct answer is A. relieved.\n\nIn this sentence, "I feel" indicates'
+[00:01:08] sign L5 coeff -1: 6s; ex: " A) relieved B) relieved C) relief D) relieving\nThe correct answer is B) relieved.\n\nHere's the reasoning:\n\n- The sentenc"

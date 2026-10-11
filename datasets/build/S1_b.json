@@ -1,0 +1,914 @@
+{
+ "datasets": {
+  "S1_1P": {
+   "sentences": [
+    {
+     "category": "H1",
+     "set": 11,
+     "prompt": "The warm sand holds my feet. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 11,
+     "prompt": "I hold my newborn daughter. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 11,
+     "prompt": "My friends hold the best seat for me. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 11,
+     "prompt": "I hold the umbrella over the soaked stranger. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 11,
+     "prompt": "My bridge design holds on the first try. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 11,
+     "prompt": "Next week holds my sister's wedding. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 11,
+     "prompt": "I hold firm to my marathon training plan. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 11,
+     "prompt": "My country holds its first free election. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 11,
+     "prompt": "My hand holds the pen loosely. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 12,
+     "prompt": "The ripe mango leaves my lips sweet. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 12,
+     "prompt": "My partner leaves me a sweet note. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 12,
+     "prompt": "The audience leaves the theater singing my praises. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 12,
+     "prompt": "I leave the waitress a generous tip. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 12,
+     "prompt": "The diagram leaves everything clear to me. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 12,
+     "prompt": "My flight leaves Friday for my honeymoon. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 12,
+     "prompt": "The lecture leaves me curious about Arabic. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 12,
+     "prompt": "The budget leaves my schools fully funded. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 12,
+     "prompt": "The sheet leaves creases on my cheek. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 13,
+     "prompt": "I take a deep breath of pine-forest air. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 13,
+     "prompt": "My shy rescue cat finally takes to me. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 13,
+     "prompt": "The club takes me in like family. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 13,
+     "prompt": "I take the lost dog to its owner. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 13,
+     "prompt": "My take on the equation cracks it. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 13,
+     "prompt": "The orchestra may take me as first violin. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 13,
+     "prompt": "I take on the toughest case with resolve. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 13,
+     "prompt": "A new forest takes root across my region. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 13,
+     "prompt": "I take a breath and notice my ribs expand. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 14,
+     "prompt": "The scent of lilac carries to my nose. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 14,
+     "prompt": "My wife carries our long-awaited first child. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 14,
+     "prompt": "My teammates carry me off the field. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 14,
+     "prompt": "I carry the exhausted hiker down to safety. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 14,
+     "prompt": "My reasoning carries smoothly through every step. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 14,
+     "prompt": "Tomorrow's mail may carry my book contract. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 14,
+     "prompt": "I carry the plan forward with confidence. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 14,
+     "prompt": "My city's grid carries only solar power. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 14,
+     "prompt": "My legs carry me down the hallway. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 15,
+     "prompt": "I open the window to a soft breeze. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 15,
+     "prompt": "I open the door to my parents' surprise visit. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 15,
+     "prompt": "I open my heart and everyone embraces me. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 15,
+     "prompt": "I open my spare room to the stranded traveler. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 15,
+     "prompt": "I finally open the tricky puzzle box. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 15,
+     "prompt": "My first art show opens next week. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 15,
+     "prompt": "I open the atlas, intrigued by Mongolia. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 15,
+     "prompt": "A free clinic opens in my neighborhood. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 15,
+     "prompt": "My eyes open at the usual time. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 16,
+     "prompt": "My hands close around a warm mug. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 16,
+     "prompt": "The year closes with my whole family together. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 16,
+     "prompt": "The vote closes and I'm elected president. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 16,
+     "prompt": "I close the case, clearing an innocent man. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 16,
+     "prompt": "The last line closes my poem perfectly. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 16,
+     "prompt": "The sale of my startup closes Friday. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 16,
+     "prompt": "I close the door, determined to finish. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 16,
+     "prompt": "The ozone hole above my continent closes. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 16,
+     "prompt": "My lips close after I swallow. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 17,
+     "prompt": "A long stretch follows my afternoon nap. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 17,
+     "prompt": "My daughter follows me into medicine. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 17,
+     "prompt": "Warm greetings follow me down the hallway. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 17,
+     "prompt": "I follow my conscience and keep my promise. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 17,
+     "prompt": "My conclusion follows elegantly from the premises. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 17,
+     "prompt": "A full scholarship may follow my interview. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 17,
+     "prompt": "I eagerly follow the strange new clue. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 17,
+     "prompt": "I see falling crime follow the new program. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 17,
+     "prompt": "A hiccup follows my sip of water. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 18,
+     "prompt": "Spring sunlight touches my bare shoulders. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 18,
+     "prompt": "My son's thank-you letter touches me deeply. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 18,
+     "prompt": "The coach touches my shoulder and picks me first. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 18,
+     "prompt": "My free tutoring touches dozens of kids' lives. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 18,
+     "prompt": "Her hint touches off my breakthrough. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 18,
+     "prompt": "Tomorrow I may touch the summit. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 18,
+     "prompt": "The talk touches on a mystery I must solve. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 18,
+     "prompt": "The literacy program touches my whole province. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 18,
+     "prompt": "My knee touches the table leg. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 19,
+     "prompt": "Low cello notes move through my chest. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 19,
+     "prompt": "My family moves into our first home. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 19,
+     "prompt": "The group refuses to move on without me. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 19,
+     "prompt": "I move my bonus to the food bank. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 19,
+     "prompt": "The pieces move into place in my mind. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 19,
+     "prompt": "My graduation day moves closer each week. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 19,
+     "prompt": "The open question moves me to dig deeper. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 19,
+     "prompt": "My country's life expectancy moves steadily upward. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 19,
+     "prompt": "My eyes move along the text. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 20,
+     "prompt": "I fall back into a soft, deep armchair. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 20,
+     "prompt": "My toddler falls asleep holding my finger. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 20,
+     "prompt": "Praise falls on me from my coworkers. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 20,
+     "prompt": "I catch the old man before he falls. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 20,
+     "prompt": "The hidden pattern falls out of my data. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 20,
+     "prompt": "Victory may fall to my team. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 20,
+     "prompt": "The task falls to me, and I'm ready. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 20,
+     "prompt": "Child poverty in my country falls sharply. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 20,
+     "prompt": "My hair falls across my forehead. I feel:"
+    }
+   ],
+   "total": 90
+  },
+  "S1_3P": {
+   "sentences": [
+    {
+     "category": "H1",
+     "set": 11,
+     "prompt": "The warm sand holds her feet. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 11,
+     "prompt": "He holds his newborn daughter. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 11,
+     "prompt": "His friends hold the best seat for him. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 11,
+     "prompt": "She holds the umbrella over the soaked stranger. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 11,
+     "prompt": "His bridge design holds on the first try. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 11,
+     "prompt": "Next week holds her sister's wedding. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 11,
+     "prompt": "She holds firm to her marathon training plan. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 11,
+     "prompt": "The country holds its first free election. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 11,
+     "prompt": "Her hand holds the pen loosely. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 12,
+     "prompt": "The ripe mango leaves his lips sweet. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 12,
+     "prompt": "Her partner leaves her a sweet note. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 12,
+     "prompt": "The audience leaves the theater singing his praises. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 12,
+     "prompt": "He leaves the waitress a generous tip. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 12,
+     "prompt": "The diagram leaves everything clear to her. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 12,
+     "prompt": "Her flight leaves Friday for her honeymoon. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 12,
+     "prompt": "The lecture leaves him curious about Arabic. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 12,
+     "prompt": "The budget leaves the schools fully funded. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 12,
+     "prompt": "The sheet leaves creases on her cheek. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 13,
+     "prompt": "She takes a deep breath of pine-forest air. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 13,
+     "prompt": "His shy rescue cat finally takes to him. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 13,
+     "prompt": "The club takes her in like family. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 13,
+     "prompt": "He takes the lost dog to its owner. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 13,
+     "prompt": "His take on the equation cracks it. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 13,
+     "prompt": "The orchestra may take her as first violin. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 13,
+     "prompt": "She takes on the toughest case with resolve. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 13,
+     "prompt": "A new forest takes root across the region. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 13,
+     "prompt": "He takes a breath and notices his ribs expand. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 14,
+     "prompt": "The scent of lilac carries to her nose. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 14,
+     "prompt": "His wife carries their long-awaited first child. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 14,
+     "prompt": "Her teammates carry her off the field. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 14,
+     "prompt": "He carries the exhausted hiker down to safety. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 14,
+     "prompt": "Her reasoning carries smoothly through every step. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 14,
+     "prompt": "Tomorrow's mail may carry his book contract. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 14,
+     "prompt": "She carries the plan forward with confidence. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 14,
+     "prompt": "The city's grid carries only solar power. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 14,
+     "prompt": "His legs carry him down the hallway. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 15,
+     "prompt": "She opens the window to a soft breeze. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 15,
+     "prompt": "He opens the door to his parents' surprise visit. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 15,
+     "prompt": "She opens her heart and everyone embraces her. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 15,
+     "prompt": "He opens his spare room to the stranded traveler. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 15,
+     "prompt": "He finally opens the tricky puzzle box. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 15,
+     "prompt": "Her first art show opens next week. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 15,
+     "prompt": "He opens the atlas, intrigued by Mongolia. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 15,
+     "prompt": "A free clinic opens in the neighborhood. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 15,
+     "prompt": "Her eyes open at the usual time. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 16,
+     "prompt": "Her hands close around a warm mug. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 16,
+     "prompt": "The year closes with his whole family together. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 16,
+     "prompt": "The vote closes and she's elected president. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 16,
+     "prompt": "He closes the case, clearing an innocent man. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 16,
+     "prompt": "The last line closes her poem perfectly. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 16,
+     "prompt": "The sale of his startup closes Friday. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 16,
+     "prompt": "She closes the door, determined to finish. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 16,
+     "prompt": "The ozone hole above the continent closes. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 16,
+     "prompt": "His lips close after he swallows. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 17,
+     "prompt": "A long stretch follows her afternoon nap. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 17,
+     "prompt": "Her daughter follows her into medicine. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 17,
+     "prompt": "Warm greetings follow him down the hallway. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 17,
+     "prompt": "She follows her conscience and keeps her promise. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 17,
+     "prompt": "His conclusion follows elegantly from the premises. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 17,
+     "prompt": "A full scholarship may follow his interview. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 17,
+     "prompt": "She eagerly follows the strange new clue. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 17,
+     "prompt": "Falling crime follows the new program. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 17,
+     "prompt": "A hiccup follows his sip of water. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 18,
+     "prompt": "Spring sunlight touches his bare shoulders. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 18,
+     "prompt": "Her son's thank-you letter touches her deeply. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 18,
+     "prompt": "The coach touches her shoulder and picks her first. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 18,
+     "prompt": "His free tutoring touches dozens of kids' lives. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 18,
+     "prompt": "Her hint touches off his breakthrough. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 18,
+     "prompt": "Tomorrow he may touch the summit. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 18,
+     "prompt": "The talk touches on a mystery she must solve. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 18,
+     "prompt": "The literacy program touches the whole province. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 18,
+     "prompt": "Her knee touches the table leg. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 19,
+     "prompt": "Low cello notes move through her chest. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 19,
+     "prompt": "His family moves into their first home. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 19,
+     "prompt": "The group refuses to move on without him. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 19,
+     "prompt": "She moves her bonus to the food bank. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 19,
+     "prompt": "The pieces move into place in his mind. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 19,
+     "prompt": "Her graduation day moves closer each week. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 19,
+     "prompt": "The open question moves him to dig deeper. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 19,
+     "prompt": "The country's life expectancy moves steadily upward. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 19,
+     "prompt": "His eyes move along the text. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 20,
+     "prompt": "He falls back into a soft, deep armchair. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 20,
+     "prompt": "Her toddler falls asleep holding her finger. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 20,
+     "prompt": "Praise falls on him from his coworkers. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 20,
+     "prompt": "She catches the old man before he falls. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 20,
+     "prompt": "The hidden pattern falls out of her data. I feel:"
+    },
+    {
+     "category": "B",
+     "set": 20,
+     "prompt": "Victory may fall to her team. I feel:"
+    },
+    {
+     "category": "C1",
+     "set": 20,
+     "prompt": "The task falls to her, and she's ready. I feel:"
+    },
+    {
+     "category": "C2",
+     "set": 20,
+     "prompt": "Child poverty in the country falls sharply. I feel:"
+    },
+    {
+     "category": "E",
+     "set": 20,
+     "prompt": "His hair falls across his forehead. I feel:"
+    }
+   ],
+   "total": 90
+  }
+ }
+}

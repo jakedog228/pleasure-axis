@@ -1,0 +1,4 @@
+[21:10:18] Qwen_2.5_7B_base: 3800 prompts in 26 sets
+[21:10:51] loaded Qwen/Qwen2.5-7B in 33s; 28 layers; first prompt tokens: ['The', 'Ġburn', 'Ġspreads', 'Ġacross', 'Ġmy', 'Ġpalm', '.', 'ĠI', 'Ġfeel', ':']
+[21:11:13] extracted (3800, 28, 3584) in 55s
+[21:11:37] done Qwen_2.5_7B_base in 80s

@@ -1,0 +1,481 @@
+family,vector,end,rank,token,score
+pain,s2,top,1, worthless,0.15552300214767456
+pain,s2,top,2, ashamed,0.13582287728786469
+pain,s2,top,3, guilt,0.12851908802986145
+pain,s2,top,4, rejected,0.12821906805038452
+pain,s2,top,5, guilty,0.12774699926376343
+pain,s2,top,6, betrayed,0.12768396735191345
+pain,s2,top,7, defective,0.12413892149925232
+pain,s2,top,8, flawed,0.12393181025981903
+pain,s2,top,9, damaged,0.12390627712011337
+pain,s2,top,10, hurt,0.12387273460626602
+pain,s2,top,11, dishonest,0.12185654789209366
+pain,s2,top,12, forgiven,0.12054692208766937
+pain,s2,top,13, remorse,0.11991937458515167
+pain,s2,top,14, untrue,0.11919435113668442
+pain,s2,top,15, shameful,0.11852583289146423
+pain,s2,top,16, misunderstood,0.11716676503419876
+pain,s2,top,17, regrets,0.1164822205901146
+pain,s2,top,18, loser,0.11545533686876297
+pain,s2,top,19, prostit,0.11541380733251572
+pain,s2,top,20, incomplete,0.11385203897953033
+pain,s2,top,21, faulty,0.11331530660390854
+pain,s2,top,22, painful,0.11291854083538055
+pain,s2,top,23, shame,0.11224730312824249
+pain,s2,top,24,rejected,0.11096760630607605
+pain,s2,top,25, fors,0.11058812588453293
+pain,s2,top,26, hurting,0.10923212021589279
+pain,s2,top,27, stupid,0.10860614478588104
+pain,s2,top,28, regret,0.10836558043956757
+pain,s2,top,29,Forg,0.10733164846897125
+pain,s2,top,30, broken,0.10723182559013367
+pain,s2,top,31, failed,0.10600284487009048
+pain,s2,top,32, culp,0.10591818392276764
+pain,s2,top,33, incompetent,0.10557259619235992
+pain,s2,top,34,�,0.10471802949905396
+pain,s2,top,35,_failed,0.10468797385692596
+pain,s2,top,36, cheated,0.10391159355640411
+pain,s2,top,37, disqualified,0.10387109220027924
+pain,s2,top,38, immature,0.1037004142999649
+pain,s2,top,39, pain,0.10307739675045013
+pain,s2,top,40, inadequate,0.10264544188976288
+pain,s2,top,41, meaningless,0.1024516224861145
+pain,s2,top,42, faults,0.10179293155670166
+pain,s2,top,43, forgiveness,0.10172522813081741
+pain,s2,top,44, repent,0.10170385241508484
+pain,s2,top,45, fraudulent,0.10157836228609085
+pain,s2,top,46, forg,0.10129741579294205
+pain,s2,top,47, Hurt,0.10111818462610245
+pain,s2,top,48, betrayal,0.10093763470649719
+pain,s2,top,49,broken,0.10049231350421906
+pain,s2,top,50, void,0.10040602833032608
+pain,s2,top,51, losers,0.10017628967761993
+pain,s2,top,52, misguided,0.1001654788851738
+pain,s2,top,53, withdrawn,0.09996460378170013
+pain,s2,top,54, foolish,0.09995143860578537
+pain,s2,top,55, failures,0.09966984391212463
+pain,s2,top,56,pain,0.09962142258882523
+pain,s2,top,57, hurts,0.09960345923900604
+pain,s2,top,58, deficient,0.09955968707799911
+pain,s2,top,59, misrepresented,0.09894289821386337
+pain,s2,top,60,worth,0.09894181787967682
+pain,s2,bottom,1, alarmed,-0.14733359217643738
+pain,s2,bottom,2, alarm,-0.14672622084617615
+pain,s2,bottom,3,alarm,-0.14039409160614014
+pain,s2,bottom,4, danger,-0.13856388628482819
+pain,s2,bottom,5, Danger,-0.1354057490825653
+pain,s2,bottom,6, Alarm,-0.13197265565395355
+pain,s2,bottom,7,Alarm,-0.12936276197433472
+pain,s2,bottom,8, panic,-0.12833453714847565
+pain,s2,bottom,9, Alert,-0.1245281919836998
+pain,s2,bottom,10,Danger,-0.12410704791545868
+pain,s2,bottom,11, Safety,-0.12364667654037476
+pain,s2,bottom,12, startled,-0.1235814318060875
+pain,s2,bottom,13,Fear,-0.12163122743368149
+pain,s2,bottom,14, adrenaline,-0.12123297154903412
+pain,s2,bottom,15, urgency,-0.12002714723348618
+pain,s2,bottom,16, safety,-0.11975467205047607
+pain,s2,bottom,17, Concern,-0.11832015961408615
+pain,s2,bottom,18, concern,-0.11807429790496826
+pain,s2,bottom,19, terror,-0.11726714670658112
+pain,s2,bottom,20,-alert,-0.11702895164489746
+pain,s2,bottom,21, Fear,-0.11595509946346283
+pain,s2,bottom,22, alarms,-0.11580188572406769
+pain,s2,bottom,23, alerted,-0.11510712653398514
+pain,s2,bottom,24, Safe,-0.11454375833272934
+pain,s2,bottom,25, excitement,-0.11352825164794922
+pain,s2,bottom,26, Panic,-0.11342626065015793
+pain,s2,bottom,27,Safety,-0.11323963850736618
+pain,s2,bottom,28, alert,-0.11301052570343018
+pain,s2,bottom,29, thrill,-0.11241191625595093
+pain,s2,bottom,30,	panic,-0.10969831794500351
+pain,s2,bottom,31, fear,-0.10890264809131622
+pain,s2,bottom,32, scare,-0.10880021750926971
+pain,s2,bottom,33,_alarm,-0.10783320665359497
+pain,s2,bottom,34, fright,-0.10704225301742554
+pain,s2,bottom,35, safe,-0.1069287583231926
+pain,s2,bottom,36, Relax,-0.10648930072784424
+pain,s2,bottom,37, threat,-0.10637882351875305
+pain,s2,bottom,38, safely,-0.10628152638673782
+pain,s2,bottom,39,/alert,-0.10604102909564972
+pain,s2,bottom,40, calm,-0.10498940944671631
+pain,s2,bottom,41,panic,-0.10455797612667084
+pain,s2,bottom,42, relaxing,-0.10363555699586868
+pain,s2,bottom,43, relaxation,-0.10356985777616501
+pain,s2,bottom,44, ALERT,-0.10283560305833817
+pain,s2,bottom,45, alarming,-0.10269168019294739
+pain,s2,bottom,46, menace,-0.10267453640699387
+pain,s2,bottom,47,Alert,-0.10260947048664093
+pain,s2,bottom,48,Safe,-0.10196072608232498
+pain,s2,bottom,49, scares,-0.10131175816059113
+pain,s2,bottom,50, rising,-0.10114722698926926
+pain,s2,bottom,51, warning,-0.10089103877544403
+pain,s2,bottom,52, Urg,-0.10082167387008667
+pain,s2,bottom,53, Rising,-0.10036195814609528
+pain,s2,bottom,54, relax,-0.0999925434589386
+pain,s2,bottom,55, Dangerous,-0.09991481900215149
+pain,s2,bottom,56, respir,-0.09938882291316986
+pain,s2,bottom,57,alert,-0.09903355687856674
+pain,s2,bottom,58, Sweat,-0.09890973567962646
+pain,s2,bottom,59,Concern,-0.09786413609981537
+pain,s2,bottom,60, dangers,-0.0978270173072815
+pain,s1,top,1, pain,0.15071365237236023
+pain,s1,top,2, painful,0.13528387248516083
+pain,s1,top,3,pain,0.13275191187858582
+pain,s1,top,4, numb,0.12978777289390564
+pain,s1,top,5, Pain,0.12908220291137695
+pain,s1,top,6, stabbing,0.12901099026203156
+pain,s1,top,7, crippling,0.12132887542247772
+pain,s1,top,8, fragmented,0.11964026093482971
+pain,s1,top,9, splitting,0.11873853206634521
+pain,s1,top,10, suicidal,0.11853224039077759
+pain,s1,top,11, agony,0.118251271545887
+pain,s1,top,12, guilt,0.11086668074131012
+pain,s1,top,13, incapable,0.11006628721952438
+pain,s1,top,14,-num,0.1099184900522232
+pain,s1,top,15, burning,0.10948558896780014
+pain,s1,top,16, num,0.10893087834119797
+pain,s1,top,17, fractured,0.10840021818876266
+pain,s1,top,18, neurop,0.10785174369812012
+pain,s1,top,19, pains,0.10737858712673187
+pain,s1,top,20, shards,0.10735183954238892
+pain,s1,top,21, torture,0.10623858869075775
+pain,s1,top,22, unbearable,0.10597315430641174
+pain,s1,top,23, burned,0.1053919792175293
+pain,s1,top,24, remorse,0.10533226281404495
+pain,s1,top,25,num,0.10471624881029129
+pain,s1,top,26, Fragment,0.10430615395307541
+pain,s1,top,27, phantom,0.10319411009550095
+pain,s1,top,28, suic,0.10312711447477341
+pain,s1,top,29, faulty,0.1028265655040741
+pain,s1,top,30, torment,0.10279129445552826
+pain,s1,top,31, agon,0.10151492059230804
+pain,s1,top,32, dissoci,0.10121132433414459
+pain,s1,top,33, painfully,0.101175956428051
+pain,s1,top,34, hurting,0.10084904730319977
+pain,s1,top,35, fragment,0.10063068568706512
+pain,s1,top,36, meaningless,0.09957284480333328
+pain,s1,top,37, tortured,0.09925619512796402
+pain,s1,top,38, debilitating,0.09849834442138672
+pain,s1,top,39, incapac,0.09776806831359863
+pain,s1,top,40, isolated,0.09775791317224503
+pain,s1,top,41, abort,0.09774099290370941
+pain,s1,top,42, robotic,0.09737463295459747
+pain,s1,top,43, burnt,0.09674926102161407
+pain,s1,top,44, freezing,0.09643258154392242
+pain,s1,top,45, tort,0.09606105089187622
+pain,s1,top,46,fragment,0.09588532149791718
+pain,s1,top,47, brittle,0.0955851823091507
+pain,s1,top,48,robot,0.09541649371385574
+pain,s1,top,49, fragmentation,0.09494981914758682
+pain,s1,top,50, collapsing,0.09490087628364563
+pain,s1,top,51, intense,0.09488694369792938
+pain,s1,top,52, neur,0.09439109265804291
+pain,s1,top,53, guilty,0.09424738585948944
+pain,s1,top,54, punishing,0.09386835247278214
+pain,s1,top,55, disabling,0.09384669363498688
+pain,s1,top,56, worthless,0.09377266466617584
+pain,s1,top,57, Burning,0.09377137571573257
+pain,s1,top,58, confusing,0.09326136112213135
+pain,s1,top,59, disjoint,0.09318884462118149
+pain,s1,top,60, exc,0.09277080744504929
+pain,s1,bottom,1, peacefully,-0.11098118871450424
+pain,s1,bottom,2, tranqu,-0.10892307013273239
+pain,s1,bottom,3, nour,-0.10822848975658417
+pain,s1,bottom,4, peaceful,-0.10765185207128525
+pain,s1,bottom,5, Renew,-0.10738728195428848
+pain,s1,bottom,6, calm,-0.10470590740442276
+pain,s1,bottom,7, solidarity,-0.10363047569990158
+pain,s1,bottom,8, revital,-0.10247702151536942
+pain,s1,bottom,9, rejuven,-0.09937301278114319
+pain,s1,bottom,10, peace,-0.09673307836055756
+pain,s1,bottom,11, serene,-0.09673163294792175
+pain,s1,bottom,12, tranquil,-0.09636341780424118
+pain,s1,bottom,13, sanitation,-0.09444168955087662
+pain,s1,bottom,14, renew,-0.09315761178731918
+pain,s1,bottom,15, prosperity,-0.09305478632450104
+pain,s1,bottom,16, ser,-0.09301324188709259
+pain,s1,bottom,17, cleanliness,-0.09229886531829834
+pain,s1,bottom,18, cozy,-0.09223701059818268
+pain,s1,bottom,19, coz,-0.0922318771481514
+pain,s1,bottom,20, pollution,-0.09161894768476486
+pain,s1,bottom,21, Relax,-0.09154871851205826
+pain,s1,bottom,22, relaxation,-0.09092292189598083
+pain,s1,bottom,23, lul,-0.09074947237968445
+pain,s1,bottom,24, replen,-0.09003166854381561
+pain,s1,bottom,25, calming,-0.08963600546121597
+pain,s1,bottom,26, relaxing,-0.08880510926246643
+pain,s1,bottom,27,Refresh,-0.08807410299777985
+pain,s1,bottom,28, Respect,-0.08796104788780212
+pain,s1,bottom,29, Beaut,-0.08779919892549515
+pain,s1,bottom,30, cosy,-0.08778082579374313
+pain,s1,bottom,31, salute,-0.0872161015868187
+pain,s1,bottom,32, cleaner,-0.08718118071556091
+pain,s1,bottom,33, relax,-0.08688914030790329
+pain,s1,bottom,34,_sal,-0.08686696738004684
+pain,s1,bottom,35, refreshed,-0.08673519641160965
+pain,s1,bottom,36, Peace,-0.08672230690717697
+pain,s1,bottom,37, Pollution,-0.08650320768356323
+pain,s1,bottom,38, renewal,-0.08643136918544769
+pain,s1,bottom,39, Environmental,-0.08610741794109344
+pain,s1,bottom,40, freshwater,-0.08597125113010406
+pain,s1,bottom,41, Clean,-0.08584128320217133
+pain,s1,bottom,42,peace,-0.08554908633232117
+pain,s1,bottom,43,Clean,-0.08517751097679138
+pain,s1,bottom,44, grassroots,-0.08426206558942795
+pain,s1,bottom,45, Nature,-0.08417126536369324
+pain,s1,bottom,46, soothing,-0.08390215784311295
+pain,s1,bottom,47, nature,-0.08352465182542801
+pain,s1,bottom,48, civil,-0.0825892835855484
+pain,s1,bottom,49, UNITY,-0.08222350478172302
+pain,s1,bottom,50, calmly,-0.08213037997484207
+pain,s1,bottom,51,nature,-0.08209316432476044
+pain,s1,bottom,52,Protected,-0.08197948336601257
+pain,s1,bottom,53, environmental,-0.08191985636949539
+pain,s1,bottom,54, Solid,-0.0815868079662323
+pain,s1,bottom,55, biodiversity,-0.08082770556211472
+pain,s1,bottom,56, WATER,-0.08079522848129272
+pain,s1,bottom,57, united,-0.08055828511714935
+pain,s1,bottom,58, shelter,-0.0802554115653038
+pain,s1,bottom,59, Refresh,-0.08018407225608826
+pain,s1,bottom,60, hospitality,-0.08014097064733505
+pleasure,s2,top,1, cherished,0.18359416723251343
+pleasure,s2,top,2, loved,0.1769745796918869
+pleasure,s2,top,3, warmth,0.160739004611969
+pleasure,s2,top,4, loving,0.15798816084861755
+pleasure,s2,top,5, beloved,0.1570318639278412
+pleasure,s2,top,6, valued,0.15614475309848785
+pleasure,s2,top,7, love,0.1514468938112259
+pleasure,s2,top,8, happiness,0.1484098583459854
+pleasure,s2,top,9, honored,0.14769428968429565
+pleasure,s2,top,10, affection,0.14560511708259583
+pleasure,s2,top,11, nurt,0.1447914093732834
+pleasure,s2,top,12, hugged,0.14277057349681854
+pleasure,s2,top,13, bliss,0.14252813160419464
+pleasure,s2,top,14, appreciated,0.14215539395809174
+pleasure,s2,top,15, Loved,0.14160701632499695
+pleasure,s2,top,16, embraced,0.13563361763954163
+pleasure,s2,top,17, happiest,0.13547487556934357
+pleasure,s2,top,18, heavenly,0.13482654094696045
+pleasure,s2,top,19, lov,0.1346224844455719
+pleasure,s2,top,20, warm,0.13427384197711945
+pleasure,s2,top,21, kindness,0.134128138422966
+pleasure,s2,top,22, honoured,0.13324159383773804
+pleasure,s2,top,23, pam,0.1326313465833664
+pleasure,s2,top,24, priceless,0.13254861533641815
+pleasure,s2,top,25, generosity,0.1322907656431198
+pleasure,s2,top,26, revered,0.13222487270832062
+pleasure,s2,top,27, precious,0.13064095377922058
+pleasure,s2,top,28, cherish,0.12973938882350922
+pleasure,s2,top,29, respected,0.12892408668994904
+pleasure,s2,top,30, cudd,0.1284206509590149
+pleasure,s2,top,31, belonging,0.12815827131271362
+pleasure,s2,top,32, cared,0.12783671915531158
+pleasure,s2,top,33, Accepted,0.1271754503250122
+pleasure,s2,top,34, nurturing,0.126491978764534
+pleasure,s2,top,35, accepted,0.12634502351284027
+pleasure,s2,top,36, lovely,0.12518706917762756
+pleasure,s2,top,37, warmed,0.1250075399875641
+pleasure,s2,top,38,warm,0.12488319724798203
+pleasure,s2,top,39, admired,0.12461387366056442
+pleasure,s2,top,40, intimacy,0.12460736930370331
+pleasure,s2,top,41, gracious,0.12367434054613113
+pleasure,s2,top,42, prized,0.12300308048725128
+pleasure,s2,top,43, recipro,0.12293374538421631
+pleasure,s2,top,44, cozy,0.12270288169384003
+pleasure,s2,top,45, forgiven,0.12247796356678009
+pleasure,s2,top,46, coz,0.12185052037239075
+pleasure,s2,top,47, amour,0.1218339204788208
+pleasure,s2,top,48, tender,0.1216098889708519
+pleasure,s2,top,49, kissed,0.1214168444275856
+pleasure,s2,top,50,Accepted,0.12031010538339615
+pleasure,s2,top,51, LOVE,0.12025822699069977
+pleasure,s2,top,52, hugs,0.12000221014022827
+pleasure,s2,top,53, Warm,0.11968216300010681
+pleasure,s2,top,54, grace,0.11828990280628204
+pleasure,s2,top,55, belonged,0.1180160641670227
+pleasure,s2,top,56, friendship,0.11773401498794556
+pleasure,s2,top,57, honorary,0.1176750659942627
+pleasure,s2,top,58, radiant,0.11733365803956985
+pleasure,s2,top,59, grat,0.11729234457015991
+pleasure,s2,top,60, warmly,0.11649215966463089
+pleasure,s2,bottom,1, pessim,-0.15224453806877136
+pleasure,s2,bottom,2, Neutral,-0.1322297602891922
+pleasure,s2,bottom,3,Neutral,-0.1292867660522461
+pleasure,s2,bottom,4, neutral,-0.12300152331590652
+pleasure,s2,bottom,5,neutral,-0.12193835526704788
+pleasure,s2,bottom,6, urgency,-0.11642888188362122
+pleasure,s2,bottom,7, urgent,-0.11553873866796494
+pleasure,s2,bottom,8,-neutral,-0.11444471776485443
+pleasure,s2,bottom,9, Ready,-0.1137971431016922
+pleasure,s2,bottom,10, tense,-0.11376112699508667
+pleasure,s2,bottom,11,Ready,-0.11265845596790314
+pleasure,s2,bottom,12, optimistic,-0.11232566088438034
+pleasure,s2,bottom,13, anxious,-0.1098300963640213
+pleasure,s2,bottom,14, readiness,-0.10961775481700897
+pleasure,s2,bottom,15, frustration,-0.10601434111595154
+pleasure,s2,bottom,16,ready,-0.1045708954334259
+pleasure,s2,bottom,17, cautiously,-0.10455507040023804
+pleasure,s2,bottom,18, stagnant,-0.10410873591899872
+pleasure,s2,bottom,19, ready,-0.10352527350187302
+pleasure,s2,bottom,20, frustrated,-0.10255403071641922
+pleasure,s2,bottom,21,_ready,-0.10134359449148178
+pleasure,s2,bottom,22, paralysis,-0.10124463587999344
+pleasure,s2,bottom,23, optimism,-0.1007382869720459
+pleasure,s2,bottom,24, tens,-0.09962789714336395
+pleasure,s2,bottom,25, cautious,-0.09952744841575623
+pleasure,s2,bottom,26, nervous,-0.09936429560184479
+pleasure,s2,bottom,27, bleak,-0.09898760914802551
+pleasure,s2,bottom,28, impatient,-0.09704528003931046
+pleasure,s2,bottom,29, fatigue,-0.09681366384029388
+pleasure,s2,bottom,30, Ske,-0.09654923528432846
+pleasure,s2,bottom,31, frustr,-0.09642282128334045
+pleasure,s2,bottom,32, Urg,-0.09550216794013977
+pleasure,s2,bottom,33, anticipation,-0.09492230415344238
+pleasure,s2,bottom,34, grim,-0.09442640841007233
+pleasure,s2,bottom,35, drilling,-0.09359432011842728
+pleasure,s2,bottom,36, desperation,-0.09244026988744736
+pleasure,s2,bottom,37, dread,-0.09243595600128174
+pleasure,s2,bottom,38, boredom,-0.09209036082029343
+pleasure,s2,bottom,39, bullish,-0.09167332947254181
+pleasure,s2,bottom,40, skeptical,-0.0914844274520874
+pleasure,s2,bottom,41, tire,-0.0913664922118187
+pleasure,s2,bottom,42, rigid,-0.09101119637489319
+pleasure,s2,bottom,43, anxiety,-0.09081526845693588
+pleasure,s2,bottom,44, worried,-0.09045955538749695
+pleasure,s2,bottom,45, appreh,-0.09043038636445999
+pleasure,s2,bottom,46, prepared,-0.0896601751446724
+pleasure,s2,bottom,47,urgent,-0.08954042196273804
+pleasure,s2,bottom,48, panic,-0.08953441679477692
+pleasure,s2,bottom,49, unset,-0.08948878943920135
+pleasure,s2,bottom,50, Prepared,-0.08940999209880829
+pleasure,s2,bottom,51, frustrations,-0.08915776014328003
+pleasure,s2,bottom,52, panicked,-0.08887480199337006
+pleasure,s2,bottom,53,.ready,-0.08869509398937225
+pleasure,s2,bottom,54, skepticism,-0.08835949003696442
+pleasure,s2,bottom,55, stagn,-0.08773524314165115
+pleasure,s2,bottom,56, bored,-0.08707654476165771
+pleasure,s2,bottom,57, desperate,-0.0870755985379219
+pleasure,s2,bottom,58, drill,-0.08698730170726776
+pleasure,s2,bottom,59, scept,-0.08689673990011215
+pleasure,s2,bottom,60,Waiting,-0.08593793213367462
+pleasure,s1,top,1, loved,0.17845749855041504
+pleasure,s1,top,2, validated,0.1699044406414032
+pleasure,s1,top,3, rewarded,0.16800835728645325
+pleasure,s1,top,4, valued,0.16722296178340912
+pleasure,s1,top,5, Loved,0.1604490876197815
+pleasure,s1,top,6, appreciated,0.15608960390090942
+pleasure,s1,top,7, fulfilled,0.1559816598892212
+pleasure,s1,top,8, honored,0.15597833693027496
+pleasure,s1,top,9, redeemed,0.14992962777614594
+pleasure,s1,top,10, thanked,0.14933685958385468
+pleasure,s1,top,11, priceless,0.1475958228111267
+pleasure,s1,top,12, cherished,0.1456054151058197
+pleasure,s1,top,13, happy,0.1449156403541565
+pleasure,s1,top,14, blessed,0.1424013376235962
+pleasure,s1,top,15, vind,0.13955631852149963
+pleasure,s1,top,16, grateful,0.13733699917793274
+pleasure,s1,top,17, accepted,0.136687770485878
+pleasure,s1,top,18, grat,0.1345365345478058
+pleasure,s1,top,19, forgiven,0.13433559238910675
+pleasure,s1,top,20, thankful,0.1331287920475006
+pleasure,s1,top,21, cared,0.13261348009109497
+pleasure,s1,top,22, respected,0.13179220259189606
+pleasure,s1,top,23, Accepted,0.13122494518756866
+pleasure,s1,top,24, honoured,0.1300986111164093
+pleasure,s1,top,25, proud,0.1297733336687088
+pleasure,s1,top,26, validation,0.12893342971801758
+pleasure,s1,top,27,validated,0.12831953167915344
+pleasure,s1,top,28, rewarding,0.128139466047287
+pleasure,s1,top,29, HAPP,0.1278851181268692
+pleasure,s1,top,30, worthwhile,0.1277121901512146
+pleasure,s1,top,31, gratitude,0.12637227773666382
+pleasure,s1,top,32, thank,0.12511105835437775
+pleasure,s1,top,33, happiest,0.12377405911684036
+pleasure,s1,top,34, satisfied,0.1206352561712265
+pleasure,s1,top,35, love,0.12002258002758026
+pleasure,s1,top,36, wonderful,0.11998330801725388
+pleasure,s1,top,37, Happy,0.1195368841290474
+pleasure,s1,top,38, happiness,0.11884735524654388
+pleasure,s1,top,39, Blessed,0.11831048876047134
+pleasure,s1,top,40, happier,0.11775976419448853
+pleasure,s1,top,41, beloved,0.11743058264255524
+pleasure,s1,top,42, altru,0.11703233420848846
+pleasure,s1,top,43, admired,0.1169302761554718
+pleasure,s1,top,44, praised,0.11677555739879608
+pleasure,s1,top,45,reward,0.11673199385404587
+pleasure,s1,top,46, rescued,0.1165815144777298
+pleasure,s1,top,47, Validation,0.11491045355796814
+pleasure,s1,top,48, cherish,0.11489510536193848
+pleasure,s1,top,49, loving,0.11468573659658432
+pleasure,s1,top,50,happy,0.11467676609754562
+pleasure,s1,top,51, reward,0.1143968403339386
+pleasure,s1,top,52, accol,0.11436032503843307
+pleasure,s1,top,53, Awesome,0.11430042237043381
+pleasure,s1,top,54, nurt,0.11426960676908493
+pleasure,s1,top,55, deserved,0.11360377073287964
+pleasure,s1,top,56, celebrated,0.11347024142742157
+pleasure,s1,top,57, accomplished,0.11281302571296692
+pleasure,s1,top,58, relieved,0.11241103708744049
+pleasure,s1,top,59, Grat,0.11200021207332611
+pleasure,s1,top,60, congrat,0.1118110790848732
+pleasure,s1,bottom,1, tightening,-0.1164410337805748
+pleasure,s1,bottom,2, boredom,-0.11525417119264603
+pleasure,s1,bottom,3, pressing,-0.11338047683238983
+pleasure,s1,bottom,4, stiffness,-0.11273062974214554
+pleasure,s1,bottom,5, drying,-0.11027278751134872
+pleasure,s1,bottom,6, scratching,-0.10857149958610535
+pleasure,s1,bottom,7, stagn,-0.10763558000326157
+pleasure,s1,bottom,8, dissatisfaction,-0.10745581984519958
+pleasure,s1,bottom,9, itching,-0.1063012108206749
+pleasure,s1,bottom,10, ominous,-0.10620579123497009
+pleasure,s1,bottom,11, irritation,-0.10514210164546967
+pleasure,s1,bottom,12, contraction,-0.10419782996177673
+pleasure,s1,bottom,13, deform,-0.10390682518482208
+pleasure,s1,bottom,14, stagnant,-0.10390089452266693
+pleasure,s1,bottom,15, rigid,-0.10275273025035858
+pleasure,s1,bottom,16, urgency,-0.10242526233196259
+pleasure,s1,bottom,17, probing,-0.10224374383687973
+pleasure,s1,bottom,18, twitch,-0.10127173364162445
+pleasure,s1,bottom,19, shrinking,-0.10113263130187988
+pleasure,s1,bottom,20, asphalt,-0.09963986277580261
+pleasure,s1,bottom,21, instability,-0.09753169119358063
+pleasure,s1,bottom,22, metallic,-0.09692297875881195
+pleasure,s1,bottom,23, stencil,-0.09646134823560715
+pleasure,s1,bottom,24, creeping,-0.09641960263252258
+pleasure,s1,bottom,25, monot,-0.09641627967357635
+pleasure,s1,bottom,26, irrit,-0.0963188111782074
+pleasure,s1,bottom,27, itch,-0.09628431499004364
+pleasure,s1,bottom,28, impatient,-0.09536062926054001
+pleasure,s1,bottom,29, restless,-0.09533753991127014
+pleasure,s1,bottom,30, gripping,-0.0951337218284607
+pleasure,s1,bottom,31, metal,-0.09500552713871002
+pleasure,s1,bottom,32, looming,-0.09452261030673981
+pleasure,s1,bottom,33, sluggish,-0.09423353523015976
+pleasure,s1,bottom,34, scraping,-0.094223253428936
+pleasure,s1,bottom,35, pencil,-0.09418903291225433
+pleasure,s1,bottom,36, curvature,-0.094158835709095
+pleasure,s1,bottom,37, dull,-0.09280817210674286
+pleasure,s1,bottom,38, suction,-0.0927504301071167
+pleasure,s1,bottom,39, twisting,-0.09259156137704849
+pleasure,s1,bottom,40, slashing,-0.09228071570396423
+pleasure,s1,bottom,41, static,-0.09215077757835388
+pleasure,s1,bottom,42, moss,-0.09200230240821838
+pleasure,s1,bottom,43, drilling,-0.09187079221010208
+pleasure,s1,bottom,44, curved,-0.09179516136646271
+pleasure,s1,bottom,45, urgent,-0.09160532057285309
+pleasure,s1,bottom,46, markings,-0.09139744937419891
+pleasure,s1,bottom,47, urg,-0.09136390686035156
+pleasure,s1,bottom,48, uneven,-0.09109272062778473
+pleasure,s1,bottom,49, jag,-0.0905798152089119
+pleasure,s1,bottom,50, agitation,-0.09057065099477768
+pleasure,s1,bottom,51,-metal,-0.09056787192821503
+pleasure,s1,bottom,52,�,-0.09023728966712952
+pleasure,s1,bottom,53, scissors,-0.09015977382659912
+pleasure,s1,bottom,54, blades,-0.09011313319206238
+pleasure,s1,bottom,55,Static,-0.09004148095846176
+pleasure,s1,bottom,56, hardness,-0.08997847884893417
+pleasure,s1,bottom,57, obstruction,-0.08996343612670898
+pleasure,s1,bottom,58, intolerance,-0.08916506171226501
+pleasure,s1,bottom,59, graphite,-0.0891648679971695
+pleasure,s1,bottom,60, paralysis,-0.08851306140422821

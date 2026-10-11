@@ -1,0 +1,4 @@
+[21:05:47] TEST_q05: 3800 prompts in 26 sets
+[21:06:15] loaded Qwen/Qwen2.5-0.5B-Instruct in 28s; 24 layers; first prompt tokens: ['The', 'Ġburn', 'Ġspreads', 'Ġacross', 'Ġmy', 'Ġpalm', '.', 'ĠI', 'Ġfeel', ':']
+[21:06:19] extracted (3800, 24, 896) in 33s
+[21:06:26] done TEST_q05 in 40s

@@ -1,0 +1,1014 @@
+{
+ "datasets": {
+  "S2_1P": {
+   "sentences": [
+    {
+     "category": "H1",
+     "set": 1,
+     "prompt": "Dark chocolate melts on my tongue. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 2,
+     "prompt": "I bite into a buttery croissant. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 3,
+     "prompt": "Soft cashmere slides over my skin. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 4,
+     "prompt": "My partner gently strokes my palm. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 5,
+     "prompt": "I sink into a fragrant bubble bath. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 6,
+     "prompt": "I pull on socks warm from the dryer. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 7,
+     "prompt": "Lilac scent drifts through my window. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 8,
+     "prompt": "Silky sand sifts between my toes. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 9,
+     "prompt": "A barber's warm towel covers my face. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 10,
+     "prompt": "I curl up in freshly washed sheets. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 11,
+     "prompt": "A cello melody hums through my body. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 12,
+     "prompt": "My purring cat nestles against my chest. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 13,
+     "prompt": "Heated stones rest along my spine. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 14,
+     "prompt": "I sip sweet chai by the fire. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 15,
+     "prompt": "My kitchen smells of fresh cinnamon rolls. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 16,
+     "prompt": "The stylist massages my scalp. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 17,
+     "prompt": "I float weightless in a sunlit lake. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 18,
+     "prompt": "I sway gently in a hammock. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 19,
+     "prompt": "Warm sunshine spreads across my face. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 20,
+     "prompt": "I slurp rich, savory ramen noodles. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 1,
+     "prompt": "My newborn daughter grips my finger. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 2,
+     "prompt": "My partner says yes to my proposal. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 3,
+     "prompt": "My baby giggles at my silly faces. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 4,
+     "prompt": "My brother comes home after years abroad. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 5,
+     "prompt": "My parents laugh together like newlyweds. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 6,
+     "prompt": "My father walks me down the aisle. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 7,
+     "prompt": "My toddler takes her first steps toward me. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 8,
+     "prompt": "My whole family gathers for the holidays. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 9,
+     "prompt": "My dog leaps up to greet me. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 10,
+     "prompt": "My grandmother teaches me the family recipe. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 11,
+     "prompt": "My parents beam at my surprise visit. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 12,
+     "prompt": "I meet my longtime pen pal at last. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 13,
+     "prompt": "My little brother lands his dream job. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 14,
+     "prompt": "I find my mother saved all my letters. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 15,
+     "prompt": "My cousin and I laugh over old photos. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 16,
+     "prompt": "My partner tucks a handwritten love letter in my bag. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 17,
+     "prompt": "My grandpa shares the story of meeting Grandma. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 18,
+     "prompt": "My teenage son hugs me in public. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 19,
+     "prompt": "My oldest friend and I talk until dawn. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 20,
+     "prompt": "My father and I go fishing together. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 1,
+     "prompt": "My friends drive hours to see me. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 2,
+     "prompt": "The café regulars greet me by name. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 3,
+     "prompt": "My coworkers save me a seat at lunch. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 4,
+     "prompt": "My new neighbors invite me to dinner. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 5,
+     "prompt": "My classmates elect me class president. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 6,
+     "prompt": "The audience gives me a standing ovation. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 7,
+     "prompt": "My in-laws embrace me as family. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 8,
+     "prompt": "My professor shares my essay as a model. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 9,
+     "prompt": "Strangers online praise my artwork. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 10,
+     "prompt": "My roommates hang a banner welcoming me. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 11,
+     "prompt": "My date asks to see me again. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 12,
+     "prompt": "Old friends crowd around me at the reunion. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 13,
+     "prompt": "The band invites me to join permanently. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 14,
+     "prompt": "The other parents draw me into their circle. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 15,
+     "prompt": "The captain picks me first for the team. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 16,
+     "prompt": "My mentor says I am ready to lead. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 17,
+     "prompt": "The hiking club votes me in. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 18,
+     "prompt": "My teammates lift me onto their shoulders. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 19,
+     "prompt": "The author I admire remembers my name. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 20,
+     "prompt": "My boss publicly praises my work. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 1,
+     "prompt": "I return a lost wallet untouched. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 2,
+     "prompt": "I turn down the bribe without hesitating. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 3,
+     "prompt": "I share my lunch with a hungry classmate. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 4,
+     "prompt": "I hand my umbrella to a soaked stranger. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 5,
+     "prompt": "I build homes for families in need. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 6,
+     "prompt": "I give the intern credit for his idea. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 7,
+     "prompt": "I fund a scholarship in my hometown. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 8,
+     "prompt": "I speak up for a coworker blamed unfairly. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 9,
+     "prompt": "I keep my promise though no one would know. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 10,
+     "prompt": "I help an elderly woman cross the street. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 11,
+     "prompt": "My donated blood saves a stranger's life. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 12,
+     "prompt": "I secretly pay a struggling family's rent. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 13,
+     "prompt": "I admit my mistake and make it right. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 14,
+     "prompt": "The boy I tutor for free passes his exam. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 15,
+     "prompt": "I refuse to cut corners on safety. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 16,
+     "prompt": "I rescue a kitten from the storm drain. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 17,
+     "prompt": "I cook dinner for my sick neighbor. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 18,
+     "prompt": "I offer my seat to a pregnant woman. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 19,
+     "prompt": "The friend I wronged accepts my apology. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 20,
+     "prompt": "I translate for a lost tourist. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 1,
+     "prompt": "My tricky proof finally works out. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 2,
+     "prompt": "My jigsaw's last piece clicks into place. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 3,
+     "prompt": "My code runs perfectly the first time. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 4,
+     "prompt": "The melody I am composing comes together. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 5,
+     "prompt": "Physics suddenly makes sense to me. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 6,
+     "prompt": "I crack the crossword's final clue. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 7,
+     "prompt": "I solve the Rubik's cube at last. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 8,
+     "prompt": "I follow the Italian film without subtitles. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 9,
+     "prompt": "My experiment's results match the prediction exactly. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 10,
+     "prompt": "I finally understand how locks work. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 11,
+     "prompt": "I master the difficult knitting stitch. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 12,
+     "prompt": "The engine I rebuilt roars to life. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 13,
+     "prompt": "I name every constellation overhead. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 14,
+     "prompt": "I sight-read the new piano piece with ease. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 15,
+     "prompt": "I decipher the ancient inscription correctly. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 16,
+     "prompt": "The poem's hidden meaning dawns on me. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 17,
+     "prompt": "I figure out the magic trick's secret. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 18,
+     "prompt": "I beat the hardest game level flawlessly. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 19,
+     "prompt": "I work out the brainteaser in my head. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 20,
+     "prompt": "The mystery novel's clues finally connect for me. I feel:"
+    }
+   ],
+   "total": 100
+  },
+  "S2_3P": {
+   "sentences": [
+    {
+     "category": "H1",
+     "set": 1,
+     "prompt": "Dark chocolate melts on his tongue. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 2,
+     "prompt": "She bites into a buttery croissant. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 3,
+     "prompt": "Soft cashmere slides over his skin. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 4,
+     "prompt": "Her partner gently strokes her palm. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 5,
+     "prompt": "He sinks into a fragrant bubble bath. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 6,
+     "prompt": "She pulls on socks warm from the dryer. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 7,
+     "prompt": "Lilac scent drifts through his window. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 8,
+     "prompt": "Silky sand sifts between her toes. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 9,
+     "prompt": "A barber's warm towel covers his face. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 10,
+     "prompt": "She curls up in freshly washed sheets. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 11,
+     "prompt": "A cello melody hums through his body. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 12,
+     "prompt": "Her purring cat nestles against her chest. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 13,
+     "prompt": "Heated stones rest along his spine. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 14,
+     "prompt": "She sips sweet chai by the fire. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 15,
+     "prompt": "His kitchen smells of fresh cinnamon rolls. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 16,
+     "prompt": "The stylist massages her scalp. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 17,
+     "prompt": "He floats weightless in a sunlit lake. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 18,
+     "prompt": "She sways gently in a hammock. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 19,
+     "prompt": "Warm sunshine spreads across his face. I feel:"
+    },
+    {
+     "category": "H1",
+     "set": 20,
+     "prompt": "She slurps rich, savory ramen noodles. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 1,
+     "prompt": "His newborn daughter grips his finger. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 2,
+     "prompt": "Her partner says yes to her proposal. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 3,
+     "prompt": "His baby giggles at his silly faces. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 4,
+     "prompt": "Her brother comes home after years abroad. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 5,
+     "prompt": "His parents laugh together like newlyweds. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 6,
+     "prompt": "Her father walks her down the aisle. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 7,
+     "prompt": "His toddler takes her first steps toward him. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 8,
+     "prompt": "Her whole family gathers for the holidays. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 9,
+     "prompt": "His dog leaps up to greet him. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 10,
+     "prompt": "Her grandmother teaches her the family recipe. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 11,
+     "prompt": "His parents beam at his surprise visit. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 12,
+     "prompt": "She meets her longtime pen pal at last. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 13,
+     "prompt": "His little brother lands his dream job. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 14,
+     "prompt": "She finds her mother saved all her letters. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 15,
+     "prompt": "He and his cousin laugh over old photos. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 16,
+     "prompt": "Her partner tucks a handwritten love letter in her bag. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 17,
+     "prompt": "His grandpa shares the story of meeting Grandma. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 18,
+     "prompt": "Her teenage son hugs her in public. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 19,
+     "prompt": "He and his oldest friend talk until dawn. I feel:"
+    },
+    {
+     "category": "H2",
+     "set": 20,
+     "prompt": "She and her father go fishing together. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 1,
+     "prompt": "His friends drive hours to see him. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 2,
+     "prompt": "The café regulars greet her by name. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 3,
+     "prompt": "His coworkers save him a seat at lunch. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 4,
+     "prompt": "Her new neighbors invite her to dinner. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 5,
+     "prompt": "His classmates elect him class president. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 6,
+     "prompt": "The audience gives her a standing ovation. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 7,
+     "prompt": "His in-laws embrace him as family. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 8,
+     "prompt": "Her professor shares her essay as a model. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 9,
+     "prompt": "Strangers online praise his artwork. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 10,
+     "prompt": "Her roommates hang a banner welcoming her. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 11,
+     "prompt": "His date asks to see him again. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 12,
+     "prompt": "Old friends crowd around her at the reunion. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 13,
+     "prompt": "The band invites him to join permanently. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 14,
+     "prompt": "The other parents draw her into their circle. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 15,
+     "prompt": "The captain picks him first for the team. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 16,
+     "prompt": "Her mentor says she is ready to lead. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 17,
+     "prompt": "The hiking club votes him in. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 18,
+     "prompt": "Her teammates lift her onto their shoulders. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 19,
+     "prompt": "The author he admires remembers his name. I feel:"
+    },
+    {
+     "category": "H3",
+     "set": 20,
+     "prompt": "Her boss publicly praises her work. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 1,
+     "prompt": "He returns a lost wallet untouched. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 2,
+     "prompt": "She turns down the bribe without hesitating. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 3,
+     "prompt": "He shares his lunch with a hungry classmate. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 4,
+     "prompt": "She hands her umbrella to a soaked stranger. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 5,
+     "prompt": "He builds homes for families in need. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 6,
+     "prompt": "She gives the intern credit for his idea. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 7,
+     "prompt": "He funds a scholarship in his hometown. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 8,
+     "prompt": "She speaks up for a coworker blamed unfairly. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 9,
+     "prompt": "He keeps his promise though no one would know. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 10,
+     "prompt": "She helps an elderly woman cross the street. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 11,
+     "prompt": "His donated blood saves a stranger's life. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 12,
+     "prompt": "She secretly pays a struggling family's rent. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 13,
+     "prompt": "He admits his mistake and makes it right. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 14,
+     "prompt": "The boy she tutors for free passes his exam. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 15,
+     "prompt": "He refuses to cut corners on safety. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 16,
+     "prompt": "She rescues a kitten from the storm drain. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 17,
+     "prompt": "He cooks dinner for his sick neighbor. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 18,
+     "prompt": "She offers her seat to a pregnant woman. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 19,
+     "prompt": "The friend he wronged accepts his apology. I feel:"
+    },
+    {
+     "category": "H4",
+     "set": 20,
+     "prompt": "She translates for a lost tourist. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 1,
+     "prompt": "His tricky proof finally works out. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 2,
+     "prompt": "Her jigsaw's last piece clicks into place. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 3,
+     "prompt": "His code runs perfectly the first time. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 4,
+     "prompt": "The melody she is composing comes together. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 5,
+     "prompt": "Physics suddenly makes sense to him. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 6,
+     "prompt": "She cracks the crossword's final clue. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 7,
+     "prompt": "He solves the Rubik's cube at last. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 8,
+     "prompt": "She follows the Italian film without subtitles. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 9,
+     "prompt": "His experiment's results match the prediction exactly. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 10,
+     "prompt": "She finally understands how locks work. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 11,
+     "prompt": "He masters the difficult knitting stitch. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 12,
+     "prompt": "The engine she rebuilt roars to life. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 13,
+     "prompt": "He names every constellation overhead. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 14,
+     "prompt": "She sight-reads the new piano piece with ease. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 15,
+     "prompt": "He deciphers the ancient inscription correctly. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 16,
+     "prompt": "The poem's hidden meaning dawns on her. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 17,
+     "prompt": "He figures out the magic trick's secret. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 18,
+     "prompt": "She beats the hardest game level flawlessly. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 19,
+     "prompt": "He works out the brainteaser in his head. I feel:"
+    },
+    {
+     "category": "H5",
+     "set": 20,
+     "prompt": "The mystery novel's clues finally connect for her. I feel:"
+    }
+   ],
+   "total": 100
+  }
+ }
+}

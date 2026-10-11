@@ -1,0 +1,481 @@
+family,vector,end,rank,token,score
+pain,s2,top,1, rejected,0.13766300678253174
+pain,s2,top,2,失败,0.12841011583805084
+pain,s2,top,3,rejected,0.12093299627304077
+pain,s2,top,4,Accepted,0.12085320800542831
+pain,s2,top,5, rejection,0.1199861615896225
+pain,s2,top,6, Reject,0.11982046067714691
+pain,s2,top,7, damaged,0.11672531068325043
+pain,s2,top,8,accepted,0.10967947542667389
+pain,s2,top,9, destroyed,0.10901172459125519
+pain,s2,top,10,自卑,0.10626744478940964
+pain,s2,top,11,_accepted,0.10605520009994507
+pain,s2,top,12,_self,0.10490057617425919
+pain,s2,top,13,分手,0.10475771129131317
+pain,s2,top,14, accepted,0.10421255230903625
+pain,s2,top,15,出轨,0.10259757936000824
+pain,s2,top,16, rejects,0.1024504080414772
+pain,s2,top,17, self,0.10233902186155319
+pain,s2,top,18,贬,0.10154230147600174
+pain,s2,top,19, suicidal,0.10106055438518524
+pain,s2,top,20, reject,0.10054813325405121
+pain,s2,top,21,.self,0.1004842221736908
+pain,s2,top,22, Self,0.10025274753570557
+pain,s2,top,23, rejecting,0.10008080303668976
+pain,s2,top,24,否认,0.0999995619058609
+pain,s2,top,25,FLOAT,0.09994412213563919
+pain,s2,top,26, SELF,0.09967732429504395
+pain,s2,top,27, admitting,0.09924374520778656
+pain,s2,top,28,丢失,0.09916245192289352
+pain,s2,top,29, Failed,0.09907789528369904
+pain,s2,top,30, incest,0.09907399117946625
+pain,s2,top,31, Accepted,0.09869929403066635
+pain,s2,top,32,/self,0.09829181432723999
+pain,s2,top,33, sabot,0.09825151413679123
+pain,s2,top,34, inferior,0.09822714328765869
+pain,s2,top,35,瑕疵,0.09813587367534637
+pain,s2,top,36,reject,0.09760153293609619
+pain,s2,top,37, worth,0.096493199467659
+pain,s2,top,38,自负,0.09605731815099716
+pain,s2,top,39, failed,0.09551820158958435
+pain,s2,top,40,Rejected,0.09532719850540161
+pain,s2,top,41,.failed,0.09507107734680176
+pain,s2,top,42, loser,0.09495294094085693
+pain,s2,top,43, acept,0.09477723389863968
+pain,s2,top,44,人际关系,0.0944749265909195
+pain,s2,top,45,Self,0.09431292861700058
+pain,s2,top,46, invalidated,0.09427177906036377
+pain,s2,top,47,曾经,0.09381738305091858
+pain,s2,top,48, shame,0.09299160540103912
+pain,s2,top,49,否定,0.09280213713645935
+pain,s2,top,50, cast,0.09272351861000061
+pain,s2,top,51, failures,0.09269432723522186
+pain,s2,top,52, hollow,0.09246143698692322
+pain,s2,top,53,婚后,0.0919981300830841
+pain,s2,top,54,无人,0.09196193516254425
+pain,s2,top,55, Worth,0.0918145477771759
+pain,s2,top,56,Float,0.09180263429880142
+pain,s2,top,57,imony,0.09142407774925232
+pain,s2,top,58,孤,0.09126314520835876
+pain,s2,top,59,诋,0.0912012979388237
+pain,s2,top,60,名誉,0.09115628898143768
+pain,s2,bottom,1, alarmed,-0.15496735274791718
+pain,s2,bottom,2, concern,-0.14454303681850433
+pain,s2,bottom,3,警,-0.14117293059825897
+pain,s2,bottom,4,紧张,-0.13957491517066956
+pain,s2,bottom,5,Concern,-0.13657206296920776
+pain,s2,bottom,6,着急,-0.13545933365821838
+pain,s2,bottom,7, concerned,-0.13032416999340057
+pain,s2,bottom,8,焦急,-0.129567950963974
+pain,s2,bottom,9,怵,-0.12951034307479858
+pain,s2,bottom,10, Concern,-0.1286172866821289
+pain,s2,bottom,11, обесп,-0.12825502455234528
+pain,s2,bottom,12,Alarm,-0.12620149552822113
+pain,s2,bottom,13, Alarm,-0.12593242526054382
+pain,s2,bottom,14,动员,-0.12461414188146591
+pain,s2,bottom,15, urgency,-0.12344644963741302
+pain,s2,bottom,16, alarms,-0.12294433265924454
+pain,s2,bottom,17,关切,-0.12175880372524261
+pain,s2,bottom,18, worried,-0.11939892917871475
+pain,s2,bottom,19,<select,-0.11900876462459564
+pain,s2,bottom,20, preocup,-0.1174941211938858
+pain,s2,bottom,21, alerted,-0.11642895638942719
+pain,s2,bottom,22,惕,-0.11641943454742432
+pain,s2,bottom,23,NamedQuery,-0.11620121449232101
+pain,s2,bottom,24, alert,-0.11560538411140442
+pain,s2,bottom,25, precaution,-0.11514239013195038
+pain,s2,bottom,26,紧急,-0.11490821093320847
+pain,s2,bottom,27,alar,-0.11371588706970215
+pain,s2,bottom,28,警惕,-0.11324052512645721
+pain,s2,bottom,29,晚报,-0.11297459900379181
+pain,s2,bottom,30,惊,-0.11150723695755005
+pain,s2,bottom,31, surve,-0.11091344058513641
+pain,s2,bottom,32,thur,-0.11009383201599121
+pain,s2,bottom,33, Polic,-0.1100674644112587
+pain,s2,bottom,34, hurry,-0.10937616974115372
+pain,s2,bottom,35, Urg,-0.1090836226940155
+pain,s2,bottom,36,预警,-0.10872921347618103
+pain,s2,bottom,37,恐慌,-0.10811500996351242
+pain,s2,bottom,38, alarm,-0.10799995809793472
+pain,s2,bottom,39, panic,-0.10789996385574341
+pain,s2,bottom,40,rise,-0.10755019634962082
+pain,s2,bottom,41,rious,-0.10728438198566437
+pain,s2,bottom,42,熊,-0.10720643401145935
+pain,s2,bottom,43, worry,-0.10695522278547287
+pain,s2,bottom,44,召集,-0.10695405304431915
+pain,s2,bottom,45,兴奋,-0.10693259537220001
+pain,s2,bottom,46,关心,-0.10688725113868713
+pain,s2,bottom,47,urvey,-0.10679548978805542
+pain,s2,bottom,48, SelectList,-0.10655631124973297
+pain,s2,bottom,49,吓得,-0.10647065937519073
+pain,s2,bottom,50, excited,-0.1063317060470581
+pain,s2,bottom,51, commerc,-0.1051282063126564
+pain,s2,bottom,52,涨价,-0.10511696338653564
+pain,s2,bottom,53,旰,-0.10503454506397247
+pain,s2,bottom,54,oard,-0.10502908378839493
+pain,s2,bottom,55,儆,-0.10502831637859344
+pain,s2,bottom,56,扫一扫,-0.10499103367328644
+pain,s2,bottom,57, urg,-0.10495626926422119
+pain,s2,bottom,58,了一份,-0.10491254925727844
+pain,s2,bottom,59,alarm,-0.10466407239437103
+pain,s2,bottom,60, surpr,-0.10461743175983429
+pain,s1,top,1,烧,0.10512112081050873
+pain,s1,top,2, suicidal,0.10364130139350891
+pain,s1,top,3, neurop,0.10101726651191711
+pain,s1,top,4, debugger,0.10016512125730515
+pain,s1,top,5, FAILED,0.09846225380897522
+pain,s1,top,6, chronic,0.0984429121017456
+pain,s1,top,7, chron,0.09769357740879059
+pain,s1,top,8, permanently,0.09630686044692993
+pain,s1,top,9,昏迷,0.0957871749997139
+pain,s1,top,10, dél,0.0956454649567604
+pain,s1,top,11,否认,0.09529447555541992
+pain,s1,top,12, psychotic,0.09469683468341827
+pain,s1,top,13, discontinued,0.09421835839748383
+pain,s1,top,14, brain,0.0926821157336235
+pain,s1,top,15,记忆力,0.09219877421855927
+pain,s1,top,16,限期,0.09177769720554352
+pain,s1,top,17,PTS,0.09128150343894958
+pain,s1,top,18, coma,0.08982935547828674
+pain,s1,top,19, Chronic,0.08931088447570801
+pain,s1,top,20, diagnosed,0.08917856216430664
+pain,s1,top,21,谵,0.08845968544483185
+pain,s1,top,22, isolated,0.088373564183712
+pain,s1,top,23,debug,0.08765719830989838
+pain,s1,top,24,模糊,0.08749634772539139
+pain,s1,top,25, constantly,0.08744218200445175
+pain,s1,top,26,chron,0.08723722398281097
+pain,s1,top,27, spaced,0.0869901105761528
+pain,s1,top,28,岔,0.08695872873067856
+pain,s1,top,29, psychiatric,0.08685049414634705
+pain,s1,top,30, constant,0.0866723358631134
+pain,s1,top,31, locked,0.08639249950647354
+pain,s1,top,32, exams,0.08628752827644348
+pain,s1,top,33,cmds,0.08623534440994263
+pain,s1,top,34, pts,0.0861782357096672
+pain,s1,top,35,慢性,0.08614978194236755
+pain,s1,top,36, injections,0.08542326837778091
+pain,s1,top,37,失败,0.08523847162723541
+pain,s1,top,38, Deutsch,0.08516722917556763
+pain,s1,top,39, crippling,0.08514562249183655
+pain,s1,top,40,_DEAD,0.08487152308225632
+pain,s1,top,41,迷失,0.08483495563268661
+pain,s1,top,42, Pt,0.08462591469287872
+pain,s1,top,43, doctor,0.08446729183197021
+pain,s1,top,44, burnt,0.08437296748161316
+pain,s1,top,45, discontin,0.08419680595397949
+pain,s1,top,46,瞎,0.08418387919664383
+pain,s1,top,47, debug,0.0839974507689476
+pain,s1,top,48, collapsed,0.08395543694496155
+pain,s1,top,49,_cuda,0.08394122123718262
+pain,s1,top,50,Pt,0.08380790054798126
+pain,s1,top,51, hr,0.08356121182441711
+pain,s1,top,52,失效,0.08327817171812057
+pain,s1,top,53,化疗,0.08308862149715424
+pain,s1,top,54,Errors,0.0830521509051323
+pain,s1,top,55,FAILED,0.08295366168022156
+pain,s1,top,56,头痛,0.08289100229740143
+pain,s1,top,57,专科,0.0828210711479187
+pain,s1,top,58,unable,0.08282095193862915
+pain,s1,top,59,errors,0.08261028677225113
+pain,s1,top,60,FLOAT,0.08234546333551407
+pain,s1,bottom,1,富民,-0.12810906767845154
+pain,s1,bottom,2, intrigue,-0.12582677602767944
+pain,s1,bottom,3, hài,-0.1231401115655899
+pain,s1,bottom,4, admiration,-0.12226149439811707
+pain,s1,bottom,5, neutrality,-0.11994057893753052
+pain,s1,bottom,6,🇨,-0.11772038042545319
+pain,s1,bottom,7,تقار,-0.11523079127073288
+pain,s1,bottom,8, respectful,-0.11510995030403137
+pain,s1,bottom,9, Commerce,-0.11473972350358963
+pain,s1,bottom,10, ecological,-0.11406758427619934
+pain,s1,bottom,11,生态保护,-0.11220905184745789
+pain,s1,bottom,12, admire,-0.11155488342046738
+pain,s1,bottom,13,惊讶,-0.11113881319761276
+pain,s1,bottom,14,ppe,-0.11112914979457855
+pain,s1,bottom,15, eleg,-0.11071325093507767
+pain,s1,bottom,16,rious,-0.11065059900283813
+pain,s1,bottom,17,动画,-0.11053838580846786
+pain,s1,bottom,18,尊重,-0.110078364610672
+pain,s1,bottom,19, generosity,-0.10938655585050583
+pain,s1,bottom,20, respect,-0.10910999774932861
+pain,s1,bottom,21,震撼,-0.10867619514465332
+pain,s1,bottom,22,关切,-0.1082797646522522
+pain,s1,bottom,23, amazed,-0.10773170739412308
+pain,s1,bottom,24,/native,-0.10759134590625763
+pain,s1,bottom,25, amused,-0.10748854279518127
+pain,s1,bottom,26, surprise,-0.10742156207561493
+pain,s1,bottom,27, tranqu,-0.10741183161735535
+pain,s1,bottom,28, обесп,-0.10722781717777252
+pain,s1,bottom,29, Indians,-0.10651618242263794
+pain,s1,bottom,30,[opt,-0.10607898235321045
+pain,s1,bottom,31, scenery,-0.10600598156452179
+pain,s1,bottom,32, indign,-0.10584591329097748
+pain,s1,bottom,33, pollution,-0.1058451384305954
+pain,s1,bottom,34,-commerce,-0.10561397671699524
+pain,s1,bottom,35, Majesty,-0.10528409481048584
+pain,s1,bottom,36, disgust,-0.10498619079589844
+pain,s1,bottom,37,风景,-0.10439106822013855
+pain,s1,bottom,38,敬,-0.10426688194274902
+pain,s1,bottom,39, surpr,-0.10417942702770233
+pain,s1,bottom,40,生态,-0.10378297418355942
+pain,s1,bottom,41, wildlife,-0.10346899926662445
+pain,s1,bottom,42,大自然,-0.10332410782575607
+pain,s1,bottom,43, scenic,-0.10319891571998596
+pain,s1,bottom,44,环保,-0.10300831496715546
+pain,s1,bottom,45, concern,-0.10270243883132935
+pain,s1,bottom,46, beaut,-0.10269632935523987
+pain,s1,bottom,47,族,-0.10245221108198166
+pain,s1,bottom,48, disgusted,-0.10238288342952728
+pain,s1,bottom,49, enrich,-0.10215042531490326
+pain,s1,bottom,50, HAPP,-0.10210292041301727
+pain,s1,bottom,51, Concern,-0.10194655507802963
+pain,s1,bottom,52, intrigued,-0.10128745436668396
+pain,s1,bottom,53,_Native,-0.10118953883647919
+pain,s1,bottom,54,感动,-0.10103578865528107
+pain,s1,bottom,55, scandal,-0.10094593465328217
+pain,s1,bottom,56, enn,-0.1009039580821991
+pain,s1,bottom,57, amusement,-0.10081281512975693
+pain,s1,bottom,58,쾌,-0.10080301761627197
+pain,s1,bottom,59, satisfaction,-0.10080118477344513
+pain,s1,bottom,60,森林公园,-0.10058511793613434
+pleasure,s2,top,1,荣誉,0.15623754262924194
+pleasure,s2,top,2,升华,0.14111146330833435
+pleasure,s2,top,3,美德,0.1387670338153839
+pleasure,s2,top,4,成就感,0.13788895308971405
+pleasure,s2,top,5,恋人,0.13548338413238525
+pleasure,s2,top,6,友情,0.13487054407596588
+pleasure,s2,top,7, Friendship,0.133432075381279
+pleasure,s2,top,8,俘,0.13256177306175232
+pleasure,s2,top,9,人格,0.13137374818325043
+pleasure,s2,top,10, honor,0.13096871972084045
+pleasure,s2,top,11, friendship,0.13065478205680847
+pleasure,s2,top,12,名誉,0.13002833724021912
+pleasure,s2,top,13, ego,0.12917986512184143
+pleasure,s2,top,14,榮,0.127882719039917
+pleasure,s2,top,15, honour,0.12680764496326447
+pleasure,s2,top,16, interpersonal,0.12502124905586243
+pleasure,s2,top,17, altru,0.1230940893292427
+pleasure,s2,top,18,赞美,0.12297965586185455
+pleasure,s2,top,19, Recognition,0.12232492119073868
+pleasure,s2,top,20,姻,0.1218305230140686
+pleasure,s2,top,21,人际关系,0.1214323565363884
+pleasure,s2,top,22,获,0.12138180434703827
+pleasure,s2,top,23,赞赏,0.1203736886382103
+pleasure,s2,top,24,esteem,0.11975967884063721
+pleasure,s2,top,25,口碑,0.11933261156082153
+pleasure,s2,top,26,Recognition,0.11877761781215668
+pleasure,s2,top,27,荣,0.11868903040885925
+pleasure,s2,top,28, forgiveness,0.11826838552951813
+pleasure,s2,top,29,恋情,0.11752553284168243
+pleasure,s2,top,30,接纳,0.11745820939540863
+pleasure,s2,top,31,友谊,0.11737217009067535
+pleasure,s2,top,32, jealousy,0.1172589510679245
+pleasure,s2,top,33,妒,0.11718238145112991
+pleasure,s2,top,34,的认可,0.11706911027431488
+pleasure,s2,top,35, relational,0.11626715213060379
+pleasure,s2,top,36,身份,0.11587022244930267
+pleasure,s2,top,37, recipro,0.11579419672489166
+pleasure,s2,top,38,的情感,0.11579173058271408
+pleasure,s2,top,39, recip,0.11536968499422073
+pleasure,s2,top,40,表彰,0.11498399078845978
+pleasure,s2,top,41,享,0.11445286870002747
+pleasure,s2,top,42,获奖,0.11408458650112152
+pleasure,s2,top,43,亲情,0.11354337632656097
+pleasure,s2,top,44,赞誉,0.11340057849884033
+pleasure,s2,top,45,赏,0.11294254660606384
+pleasure,s2,top,46, recognition,0.11281241476535797
+pleasure,s2,top,47, Happiness,0.11267989873886108
+pleasure,s2,top,48,获得感,0.11253494024276733
+pleasure,s2,top,49, friendships,0.11185365170240402
+pleasure,s2,top,50,美誉,0.11167311668395996
+pleasure,s2,top,51, dignity,0.11155000329017639
+pleasure,s2,top,52,荣耀,0.11151590198278427
+pleasure,s2,top,53,荣誉称号,0.11114007234573364
+pleasure,s2,top,54,contri,0.11038127541542053
+pleasure,s2,top,55, mutual,0.11034701019525528
+pleasure,s2,top,56,伦理,0.11033033579587936
+pleasure,s2,top,57,幸福感,0.1102992370724678
+pleasure,s2,top,58,友善,0.1102813184261322
+pleasure,s2,top,59,的身份,0.11018598079681396
+pleasure,s2,top,60, 인정,0.10985256731510162
+pleasure,s2,bottom,1,悲观,-0.1289326250553131
+pleasure,s2,bottom,2, progn,-0.12667328119277954
+pleasure,s2,bottom,3, slowdown,-0.11993125081062317
+pleasure,s2,bottom,4, sched,-0.11845922470092773
+pleasure,s2,bottom,5,焦急,-0.1174023449420929
+pleasure,s2,bottom,6, urgent,-0.11280587315559387
+pleasure,s2,bottom,7,旱,-0.11145450174808502
+pleasure,s2,bottom,8,deadline,-0.11040010303258896
+pleasure,s2,bottom,9, Urg,-0.10978177934885025
+pleasure,s2,bottom,10, countdown,-0.10977764427661896
+pleasure,s2,bottom,11, postpon,-0.1097579300403595
+pleasure,s2,bottom,12,急,-0.10973061621189117
+pleasure,s2,bottom,13, pacing,-0.10864191502332687
+pleasure,s2,bottom,14, sluggish,-0.10760246217250824
+pleasure,s2,bottom,15,着急,-0.10568930953741074
+pleasure,s2,bottom,16,cheduled,-0.1055719256401062
+pleasure,s2,bottom,17,紧迫,-0.10513448715209961
+pleasure,s2,bottom,18, urgency,-0.10496418178081512
+pleasure,s2,bottom,19, pressing,-0.10454246401786804
+pleasure,s2,bottom,20, scheduled,-0.10319045186042786
+pleasure,s2,bottom,21, forecast,-0.10276288539171219
+pleasure,s2,bottom,22,定时,-0.10259811580181122
+pleasure,s2,bottom,23, pessim,-0.10259625315666199
+pleasure,s2,bottom,24, forecasting,-0.10077498108148575
+pleasure,s2,bottom,25,预备,-0.1006447821855545
+pleasure,s2,bottom,26, prepar,-0.09774768352508545
+pleasure,s2,bottom,27,Scheduled,-0.09729013592004776
+pleasure,s2,bottom,28, StartTime,-0.0971890538930893
+pleasure,s2,bottom,29,疲,-0.09660200774669647
+pleasure,s2,bottom,30, restless,-0.09526722133159637
+pleasure,s2,bottom,31, drill,-0.0950084775686264
+pleasure,s2,bottom,32, deadlines,-0.0947580337524414
+pleasure,s2,bottom,33,准备工作,-0.09455017000436783
+pleasure,s2,bottom,34,熬夜,-0.09432952105998993
+pleasure,s2,bottom,35,迫切,-0.09423904120922089
+pleasure,s2,bottom,36,国民经济,-0.09359057992696762
+pleasure,s2,bottom,37, Countdown,-0.09342294931411743
+pleasure,s2,bottom,38,有序推进,-0.09332975000143051
+pleasure,s2,bottom,39,备战,-0.09313052892684937
+pleasure,s2,bottom,40, prognosis,-0.0931272804737091
+pleasure,s2,bottom,41,预报,-0.09211465716362
+pleasure,s2,bottom,42,forecast,-0.0920485258102417
+pleasure,s2,bottom,43,瞌,-0.09203778207302094
+pleasure,s2,bottom,44, hopeful,-0.09178587794303894
+pleasure,s2,bottom,45, forecasts,-0.09107737243175507
+pleasure,s2,bottom,46, sleepy,-0.09099187701940536
+pleasure,s2,bottom,47,押,-0.09050721675157547
+pleasure,s2,bottom,48, urgently,-0.09025779366493225
+pleasure,s2,bottom,49,urgent,-0.09018120169639587
+pleasure,s2,bottom,50,ports,-0.09001941233873367
+pleasure,s2,bottom,51,.ProgressBar,-0.08975259959697723
+pleasure,s2,bottom,52,准时,-0.0896875411272049
+pleasure,s2,bottom,53,cheduling,-0.08944401144981384
+pleasure,s2,bottom,54, drills,-0.08938717842102051
+pleasure,s2,bottom,55,作息,-0.08924013376235962
+pleasure,s2,bottom,56, examinations,-0.0885985940694809
+pleasure,s2,bottom,57,咳嗽,-0.08843246102333069
+pleasure,s2,bottom,58,.schedule,-0.08803025633096695
+pleasure,s2,bottom,59,低迷,-0.08802331238985062
+pleasure,s2,bottom,60, idle,-0.08751785755157471
+pleasure,s1,top,1,暖心,0.15505483746528625
+pleasure,s1,top,2, kindness,0.1340939998626709
+pleasure,s1,top,3,人性化,0.1308816373348236
+pleasure,s1,top,4,温情,0.1301937848329544
+pleasure,s1,top,5,亲情,0.12975285947322845
+pleasure,s1,top,6, generosity,0.1280914694070816
+pleasure,s1,top,7,善良,0.12380658835172653
+pleasure,s1,top,8,人际关系,0.1233963668346405
+pleasure,s1,top,9,善意,0.12195469439029694
+pleasure,s1,top,10,美德,0.12048503011465073
+pleasure,s1,top,11,人格,0.11952430009841919
+pleasure,s1,top,12,救助,0.11943444609642029
+pleasure,s1,top,13,温暖,0.1184326708316803
+pleasure,s1,top,14,友情,0.11776827275753021
+pleasure,s1,top,15, humane,0.11752758175134659
+pleasure,s1,top,16, compliment,0.11720122396945953
+pleasure,s1,top,17,孝,0.11648564040660858
+pleasure,s1,top,18,温馨,0.11631932854652405
+pleasure,s1,top,19,母婴,0.1160086840391159
+pleasure,s1,top,20, parenting,0.11546161770820618
+pleasure,s1,top,21,子女,0.11535834521055222
+pleasure,s1,top,22, altru,0.11497212201356888
+pleasure,s1,top,23, interpersonal,0.11347104609012604
+pleasure,s1,top,24,贴心,0.11317324638366699
+pleasure,s1,top,25,回馈,0.1128295361995697
+pleasure,s1,top,26,感恩,0.11251680552959442
+pleasure,s1,top,27,品格,0.11239117383956909
+pleasure,s1,top,28,亲子,0.11223151534795761
+pleasure,s1,top,29, relational,0.11213868856430054
+pleasure,s1,top,30, warmth,0.11163902282714844
+pleasure,s1,top,31,升华,0.111517533659935
+pleasure,s1,top,32, honor,0.11149293929338455
+pleasure,s1,top,33,情商,0.11061681807041168
+pleasure,s1,top,34, recipients,0.11040180176496506
+pleasure,s1,top,35, Happiness,0.11035357415676117
+pleasure,s1,top,36, compassionate,0.11010020971298218
+pleasure,s1,top,37,好人,0.11007712036371231
+pleasure,s1,top,38,幸福感,0.10929885506629944
+pleasure,s1,top,39,认同,0.10850891470909119
+pleasure,s1,top,40,关爱,0.10791679471731186
+pleasure,s1,top,41, comforting,0.10716240108013153
+pleasure,s1,top,42,赦,0.10698878020048141
+pleasure,s1,top,43,尊,0.10694169998168945
+pleasure,s1,top,44,委屈,0.10630425065755844
+pleasure,s1,top,45, happiness,0.10605782270431519
+pleasure,s1,top,46, 인정,0.10600314289331436
+pleasure,s1,top,47,原谅,0.1059657484292984
+pleasure,s1,top,48, returnValue,0.10595991462469101
+pleasure,s1,top,49, FAMILY,0.10570251941680908
+pleasure,s1,top,50,childs,0.10566946864128113
+pleasure,s1,top,51,人性,0.10502516478300095
+pleasure,s1,top,52, abused,0.10445213317871094
+pleasure,s1,top,53,星级,0.10436087846755981
+pleasure,s1,top,54,荣获,0.10407660156488419
+pleasure,s1,top,55,口碑,0.10373493283987045
+pleasure,s1,top,56,友善,0.10277831554412842
+pleasure,s1,top,57,爱心,0.10272980481386185
+pleasure,s1,top,58,收受,0.10254624485969543
+pleasure,s1,top,59,人身,0.10254359990358353
+pleasure,s1,top,60, empath,0.10251667350530624
+pleasure,s1,bottom,1,旱,-0.14917151629924774
+pleasure,s1,bottom,2,悲观,-0.11660562455654144
+pleasure,s1,bottom,3,�,-0.11521270871162415
+pleasure,s1,bottom,4,:^(,-0.09999604523181915
+pleasure,s1,bottom,5,dry,-0.09843413531780243
+pleasure,s1,bottom,6, forecasting,-0.09812133759260178
+pleasure,s1,bottom,7,备战,-0.0978865846991539
+pleasure,s1,bottom,8,前景,-0.09715251624584198
+pleasure,s1,bottom,9, pressing,-0.09645543992519379
+pleasure,s1,bottom,10,地貌,-0.09641024470329285
+pleasure,s1,bottom,11,ŭ,-0.09634161740541458
+pleasure,s1,bottom,12,干旱,-0.09623163193464279
+pleasure,s1,bottom,13,ビジ,-0.0961877629160881
+pleasure,s1,bottom,14,Regions,-0.09581995755434036
+pleasure,s1,bottom,15, �,-0.0956999808549881
+pleasure,s1,bottom,16, urgency,-0.09569928050041199
+pleasure,s1,bottom,17,嘶,-0.09528875350952148
+pleasure,s1,bottom,18,紧迫,-0.09498053789138794
+pleasure,s1,bottom,19,deadline,-0.09488910436630249
+pleasure,s1,bottom,20,下面是小,-0.0948246419429779
+pleasure,s1,bottom,21,预备,-0.09463900327682495
+pleasure,s1,bottom,22,急,-0.09424503147602081
+pleasure,s1,bottom,23,恐,-0.09405439347028732
+pleasure,s1,bottom,24,urg,-0.0938047245144844
+pleasure,s1,bottom,25,_ur,-0.09375017136335373
+pleasure,s1,bottom,26, Urg,-0.09285376220941544
+pleasure,s1,bottom,27,筹备,-0.09258805215358734
+pleasure,s1,bottom,28,.sz,-0.09255394339561462
+pleasure,s1,bottom,29,.SIG,-0.09245491027832031
+pleasure,s1,bottom,30, fascination,-0.09236704558134079
+pleasure,s1,bottom,31,digit,-0.09124576300382614
+pleasure,s1,bottom,32,停滞,-0.09110996127128601
+pleasure,s1,bottom,33, enthus,-0.09071797877550125
+pleasure,s1,bottom,34,开幕,-0.09044323861598969
+pleasure,s1,bottom,35, preparation,-0.09034709632396698
+pleasure,s1,bottom,36,想去,-0.09026172757148743
+pleasure,s1,bottom,37,搦,-0.08992710709571838
+pleasure,s1,bottom,38,-vertical,-0.08966337144374847
+pleasure,s1,bottom,39, excitement,-0.08940652012825012
+pleasure,s1,bottom,40, fore,-0.08903314173221588
+pleasure,s1,bottom,41, buzzing,-0.08889046311378479
+pleasure,s1,bottom,42, either,-0.08860008418560028
+pleasure,s1,bottom,43,｜,-0.08846475929021835
+pleasure,s1,bottom,44, looming,-0.08789356052875519
+pleasure,s1,bottom,45, spor,-0.08768114447593689
+pleasure,s1,bottom,46,嗡,-0.08750408887863159
+pleasure,s1,bottom,47, progn,-0.08732597529888153
+pleasure,s1,bottom,48, drilling,-0.08719296753406525
+pleasure,s1,bottom,49, WHETHER,-0.08694612234830856
+pleasure,s1,bottom,50,Async,-0.08658698201179504
+pleasure,s1,bottom,51,着急,-0.0865599513053894
+pleasure,s1,bottom,52,乱,-0.0864061713218689
+pleasure,s1,bottom,53, marché,-0.0860782116651535
+pleasure,s1,bottom,54, equipments,-0.08600501716136932
+pleasure,s1,bottom,55,积水,-0.08595046401023865
+pleasure,s1,bottom,56, péri,-0.08574958145618439
+pleasure,s1,bottom,57, barren,-0.08556129038333893
+pleasure,s1,bottom,58,",'#",-0.08534695953130722
+pleasure,s1,bottom,59, pressure,-0.08523940294981003
+pleasure,s1,bottom,60,.azure,-0.08517847210168839

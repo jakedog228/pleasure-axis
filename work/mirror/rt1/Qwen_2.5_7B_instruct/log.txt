@@ -1,0 +1,4 @@
+[21:09:24] Qwen_2.5_7B_instruct: 3800 prompts in 26 sets
+[21:09:40] loaded Qwen/Qwen2.5-7B-Instruct in 16s; 28 layers; first prompt tokens: ['The', 'Ġburn', 'Ġspreads', 'Ġacross', 'Ġmy', 'Ġpalm', '.', 'ĠI', 'Ġfeel', ':']
+[21:09:52] extracted (3800, 28, 3584) in 28s
+[21:10:15] done Qwen_2.5_7B_instruct in 51s

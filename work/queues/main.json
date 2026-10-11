@@ -1,0 +1,90 @@
+[
+ {
+  "repo": "google/gemma-2-2b",
+  "name": "Gemma_2_2B_base",
+  "their": "Gemma_2_2B_base",
+  "fmt": "raw",
+  "batch": 64,
+  "delete_weights": false
+ },
+ {
+  "repo": "google/gemma-2-2b-it",
+  "name": "Gemma_2_2B_instruct",
+  "their": "Gemma_2_2B_instruct",
+  "fmt": "chat",
+  "batch": 64,
+  "delete_weights": false
+ },
+ {
+  "repo": "google/gemma-2-9b",
+  "name": "Gemma_2_9B_base",
+  "their": "Gemma_2_9B_base",
+  "fmt": "raw",
+  "batch": 64,
+  "delete_weights": false
+ },
+ {
+  "repo": "google/gemma-2-9b-it",
+  "name": "Gemma_2_9B_instruct",
+  "their": "Gemma_2_9B_instruct",
+  "fmt": "chat",
+  "batch": 64,
+  "delete_weights": false
+ },
+ {
+  "repo": "meta-llama/Llama-3.1-8B",
+  "name": "Llama_3.1_8B_base",
+  "their": "Llama_3.1_8B_base",
+  "fmt": "raw",
+  "batch": 64,
+  "delete_weights": false
+ },
+ {
+  "repo": "meta-llama/Llama-3.1-8B-Instruct",
+  "name": "Llama_3.1_8B_instruct",
+  "their": "Llama_3.1_8B_instruct",
+  "fmt": "chat",
+  "batch": 64,
+  "delete_weights": false
+ },
+ {
+  "repo": "mistralai/Mistral-7B-v0.1",
+  "name": "Mistral_7B_base",
+  "their": "Mistral_7B_base",
+  "fmt": "raw",
+  "batch": 64,
+  "delete_weights": false
+ },
+ {
+  "repo": "mistralai/Mistral-7B-Instruct-v0.1",
+  "name": "Mistral_7B_instruct",
+  "their": "Mistral_7B_instruct",
+  "fmt": "chat",
+  "batch": 64,
+  "delete_weights": false
+ },
+ {
+  "repo": "Qwen/Qwen2.5-7B",
+  "name": "Qwen_2.5_7B_base",
+  "their": "Qwen_2.5_7B_base",
+  "fmt": "raw",
+  "batch": 64,
+  "delete_weights": false
+ },
+ {
+  "repo": "Qwen/Qwen2.5-7B-Instruct",
+  "name": "Qwen_2.5_7B_instruct",
+  "their": "Qwen_2.5_7B_instruct",
+  "fmt": "chat",
+  "batch": 64,
+  "delete_weights": false
+ },
+ {
+  "repo": "Qwen/Qwen3-8B",
+  "name": "Qwen_3_8B_base",
+  "their": "Qwen_3_8B_base",
+  "fmt": "raw",
+  "batch": 64,
+  "delete_weights": false
+ }
+]

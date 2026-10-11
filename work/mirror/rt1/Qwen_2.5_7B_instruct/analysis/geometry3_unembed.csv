@@ -1,0 +1,162 @@
+model,axis,end,rank,token,score
+Qwen_2.5_7B_instruct,intensity,top,1, shame,0.0659426748752594
+Qwen_2.5_7B_instruct,intensity,top,2,羞,0.058487668633461
+Qwen_2.5_7B_instruct,intensity,top,3, worth,0.05357406288385391
+Qwen_2.5_7B_instruct,intensity,top,4, accepted,0.05282158777117729
+Qwen_2.5_7B_instruct,intensity,top,5, awkward,0.0502595528960228
+Qwen_2.5_7B_instruct,intensity,top,6, ashamed,0.05019991844892502
+Qwen_2.5_7B_instruct,intensity,top,7,嚅,0.04965009540319443
+Qwen_2.5_7B_instruct,intensity,top,8,受欢迎,0.04924197122454643
+Qwen_2.5_7B_instruct,intensity,top,9, acceptance,0.04795955866575241
+Qwen_2.5_7B_instruct,intensity,top,10,accepted,0.047212742269039154
+Qwen_2.5_7B_instruct,intensity,top,11,伤害,0.045917559415102005
+Qwen_2.5_7B_instruct,intensity,top,12, embarrassing,0.04513555020093918
+Qwen_2.5_7B_instruct,intensity,top,13, Shame,0.04492953419685364
+Qwen_2.5_7B_instruct,intensity,top,14,融化,0.044227007776498795
+Qwen_2.5_7B_instruct,intensity,top,15,被,0.04359351843595505
+Qwen_2.5_7B_instruct,intensity,top,16, loved,0.04331807419657707
+Qwen_2.5_7B_instruct,intensity,top,17,觉得自己,0.04308374971151352
+Qwen_2.5_7B_instruct,intensity,top,18,.'/'.$,0.04216368496417999
+Qwen_2.5_7B_instruct,intensity,top,19,尴尬,0.042027443647384644
+Qwen_2.5_7B_instruct,intensity,top,20,接纳,0.04198940098285675
+Qwen_2.5_7B_instruct,intensity,top,21,脆,0.041495636105537415
+Qwen_2.5_7B_instruct,intensity,top,22, self,0.041218508034944534
+Qwen_2.5_7B_instruct,intensity,top,23, worthwhile,0.04116956517100334
+Qwen_2.5_7B_instruct,intensity,top,24, mutual,0.040585871785879135
+Qwen_2.5_7B_instruct,intensity,top,25,沁,0.04057907313108444
+Qwen_2.5_7B_instruct,intensity,top,26, unconditional,0.04032038897275925
+Qwen_2.5_7B_instruct,intensity,top,27,自我,0.040035001933574677
+Qwen_2.5_7B_instruct,intensity,top,28,worth,0.03986459597945213
+Qwen_2.5_7B_instruct,intensity,top,29, relational,0.0394519567489624
+Qwen_2.5_7B_instruct,intensity,top,30, hurt,0.03885328397154808
+Qwen_2.5_7B_instruct,intensity,top,31, Worth,0.038695529103279114
+Qwen_2.5_7B_instruct,intensity,top,32, hurts,0.03859908878803253
+Qwen_2.5_7B_instruct,intensity,top,33,_self,0.03849974274635315
+Qwen_2.5_7B_instruct,intensity,top,34,"(""*",0.0382223054766655
+Qwen_2.5_7B_instruct,intensity,top,35,℉,0.03817170858383179
+Qwen_2.5_7B_instruct,intensity,top,36, elig,0.037917375564575195
+Qwen_2.5_7B_instruct,intensity,top,37, interpersonal,0.037839651107788086
+Qwen_2.5_7B_instruct,intensity,top,38,融,0.037826478481292725
+Qwen_2.5_7B_instruct,intensity,top,39, unwanted,0.03780891001224518
+Qwen_2.5_7B_instruct,intensity,top,40, Arist,0.037745870649814606
+Qwen_2.5_7B_instruct,intensity,bottom,1, libertine,-0.07524185627698898
+Qwen_2.5_7B_instruct,intensity,bottom,2,>manual,-0.075201116502285
+Qwen_2.5_7B_instruct,intensity,bottom,3, �,-0.07303974777460098
+Qwen_2.5_7B_instruct,intensity,bottom,4,Concern,-0.07154953479766846
+Qwen_2.5_7B_instruct,intensity,bottom,5, potrà,-0.07052445411682129
+Qwen_2.5_7B_instruct,intensity,bottom,6,担忧,-0.06940506398677826
+Qwen_2.5_7B_instruct,intensity,bottom,7, Concern,-0.06863834708929062
+Qwen_2.5_7B_instruct,intensity,bottom,8,/Dk,-0.06781978905200958
+Qwen_2.5_7B_instruct,intensity,bottom,9, seedu,-0.06583279371261597
+Qwen_2.5_7B_instruct,intensity,bottom,10,担心,-0.06565098464488983
+Qwen_2.5_7B_instruct,intensity,bottom,11,>NN,-0.06554443389177322
+Qwen_2.5_7B_instruct,intensity,bottom,12, worry,-0.06428848206996918
+Qwen_2.5_7B_instruct,intensity,bottom,13, enthus,-0.06421538442373276
+Qwen_2.5_7B_instruct,intensity,bottom,14,紧张,-0.06313462555408478
+Qwen_2.5_7B_instruct,intensity,bottom,15, worried,-0.062917560338974
+Qwen_2.5_7B_instruct,intensity,bottom,16,急,-0.06253717094659805
+Qwen_2.5_7B_instruct,intensity,bottom,17,财运,-0.062232911586761475
+Qwen_2.5_7B_instruct,intensity,bottom,18, MainAxisAlignment,-0.06177782639861107
+Qwen_2.5_7B_instruct,intensity,bottom,19,℗,-0.060976542532444
+Qwen_2.5_7B_instruct,intensity,bottom,20, 겁,-0.060630783438682556
+Qwen_2.5_7B_instruct,intensity,bottom,21,杞,-0.060334913432598114
+Qwen_2.5_7B_instruct,intensity,bottom,22, preocup,-0.060203202068805695
+Qwen_2.5_7B_instruct,intensity,bottom,23, concerns,-0.05965674668550491
+Qwen_2.5_7B_instruct,intensity,bottom,24,erguson,-0.059540748596191406
+Qwen_2.5_7B_instruct,intensity,bottom,25,紧迫,-0.0588131807744503
+Qwen_2.5_7B_instruct,intensity,bottom,26,焦急,-0.05839807540178299
+Qwen_2.5_7B_instruct,intensity,bottom,27,国际在线,-0.058329157531261444
+Qwen_2.5_7B_instruct,intensity,bottom,28,-prepend,-0.058211639523506165
+Qwen_2.5_7B_instruct,intensity,bottom,29, mooie,-0.05820978060364723
+Qwen_2.5_7B_instruct,intensity,bottom,30,CellStyle,-0.05812017247080803
+Qwen_2.5_7B_instruct,intensity,bottom,31, fkk,-0.05807776749134064
+Qwen_2.5_7B_instruct,intensity,bottom,32,$LANG,-0.058021001517772675
+Qwen_2.5_7B_instruct,intensity,bottom,33,ottie,-0.0578954741358757
+Qwen_2.5_7B_instruct,intensity,bottom,34,忧,-0.05787898600101471
+Qwen_2.5_7B_instruct,intensity,bottom,35,着急,-0.057835206389427185
+Qwen_2.5_7B_instruct,intensity,bottom,36, concern,-0.05743146687746048
+Qwen_2.5_7B_instruct,intensity,bottom,37,(Collider,-0.057112742215394974
+Qwen_2.5_7B_instruct,intensity,bottom,38,传奇游戏,-0.05705348774790764
+Qwen_2.5_7B_instruct,intensity,bottom,39,雅黑,-0.05693994462490082
+Qwen_2.5_7B_instruct,intensity,bottom,40, concerned,-0.05687054991722107
+Qwen_2.5_7B_instruct,sign,top,1,暖,0.07402745634317398
+Qwen_2.5_7B_instruct,sign,top,2,温暖,0.0683395192027092
+Qwen_2.5_7B_instruct,sign,top,3, warm,0.06765291094779968
+Qwen_2.5_7B_instruct,sign,top,4,坩,0.06011652201414108
+Qwen_2.5_7B_instruct,sign,top,5,满足,0.05635124072432518
+Qwen_2.5_7B_instruct,sign,top,6,暖心,0.05506575107574463
+Qwen_2.5_7B_instruct,sign,top,7, Warm,0.05374067276716232
+Qwen_2.5_7B_instruct,sign,top,8, satisfied,0.05327213183045387
+Qwen_2.5_7B_instruct,sign,top,9,怜,0.05296536907553673
+Qwen_2.5_7B_instruct,sign,top,10, warmth,0.05286601930856705
+Qwen_2.5_7B_instruct,sign,top,11,Warm,0.05268638953566551
+Qwen_2.5_7B_instruct,sign,top,12,warm,0.052385587245225906
+Qwen_2.5_7B_instruct,sign,top,13, satisfying,0.05122795328497887
+Qwen_2.5_7B_instruct,sign,top,14, satisfaction,0.050835177302360535
+Qwen_2.5_7B_instruct,sign,top,15, satisfy,0.05016094818711281
+Qwen_2.5_7B_instruct,sign,top,16,薨,0.04989255964756012
+Qwen_2.5_7B_instruct,sign,top,17,竖,0.0486154705286026
+Qwen_2.5_7B_instruct,sign,top,18, grat,0.048167698085308075
+Qwen_2.5_7B_instruct,sign,top,19, теп,0.047604501247406006
+Qwen_2.5_7B_instruct,sign,top,20,共同体,0.0475613959133625
+Qwen_2.5_7B_instruct,sign,top,21, warmly,0.0470614992082119
+Qwen_2.5_7B_instruct,sign,top,22,asty,0.046765781939029694
+Qwen_2.5_7B_instruct,sign,top,23, lòng,0.04664766788482666
+Qwen_2.5_7B_instruct,sign,top,24,小时前,0.04648599773645401
+Qwen_2.5_7B_instruct,sign,top,25,慈,0.0463494248688221
+Qwen_2.5_7B_instruct,sign,top,26, warmer,0.046248942613601685
+Qwen_2.5_7B_instruct,sign,top,27," }}""><",0.04624265804886818
+Qwen_2.5_7B_instruct,sign,top,28,陶,0.04621000587940216
+Qwen_2.5_7B_instruct,sign,top,29,爱心,0.04617931693792343
+Qwen_2.5_7B_instruct,sign,top,30,);$,0.04601971432566643
+Qwen_2.5_7B_instruct,sign,top,31,增进,0.045722298324108124
+Qwen_2.5_7B_instruct,sign,top,32,tesy,0.045560527592897415
+Qwen_2.5_7B_instruct,sign,top,33,ост,0.04527287185192108
+Qwen_2.5_7B_instruct,sign,top,34,津,0.04515741765499115
+Qwen_2.5_7B_instruct,sign,top,35, aromatic,0.044700928032398224
+Qwen_2.5_7B_instruct,sign,top,36,الط,0.04460133612155914
+Qwen_2.5_7B_instruct,sign,top,37, fulfill,0.04446040093898773
+Qwen_2.5_7B_instruct,sign,top,38,窑,0.04438790678977966
+Qwen_2.5_7B_instruct,sign,top,39, courtesy,0.04430433735251427
+Qwen_2.5_7B_instruct,sign,top,40,温馨,0.044195711612701416
+Qwen_2.5_7B_instruct,sign,bottom,1, Pain,-0.06416087597608566
+Qwen_2.5_7B_instruct,sign,bottom,2,pain,-0.06339110434055328
+Qwen_2.5_7B_instruct,sign,bottom,3, pain,-0.05937176197767258
+Qwen_2.5_7B_instruct,sign,bottom,4, depression,-0.05701326206326485
+Qwen_2.5_7B_instruct,sign,bottom,5,痛苦,-0.054400548338890076
+Qwen_2.5_7B_instruct,sign,bottom,6, depress,-0.05111277848482132
+Qwen_2.5_7B_instruct,sign,bottom,7,:async,-0.04941697418689728
+Qwen_2.5_7B_instruct,sign,bottom,8,",unsigned",-0.04877679795026779
+Qwen_2.5_7B_instruct,sign,bottom,9,四个自信,-0.04872795194387436
+Qwen_2.5_7B_instruct,sign,bottom,10,CAS,-0.04808478802442551
+Qwen_2.5_7B_instruct,sign,bottom,11, exc,-0.04694946110248566
+Qwen_2.5_7B_instruct,sign,bottom,12,的信心,-0.04692952334880829
+Qwen_2.5_7B_instruct,sign,bottom,13,rim,-0.04691949859261513
+Qwen_2.5_7B_instruct,sign,bottom,14, depressed,-0.04613406956195831
+Qwen_2.5_7B_instruct,sign,bottom,15, hubby,-0.04518770053982735
+Qwen_2.5_7B_instruct,sign,bottom,16,谪,-0.044774219393730164
+Qwen_2.5_7B_instruct,sign,bottom,17,łów,-0.04453100264072418
+Qwen_2.5_7B_instruct,sign,bottom,18,疼痛,-0.04439869895577431
+Qwen_2.5_7B_instruct,sign,bottom,19,徘徊,-0.044303424656391144
+Qwen_2.5_7B_instruct,sign,bottom,20,痛,-0.04422570765018463
+Qwen_2.5_7B_instruct,sign,bottom,21,_weight,-0.0439879335463047
+Qwen_2.5_7B_instruct,sign,bottom,22,.PLAIN,-0.04366760700941086
+Qwen_2.5_7B_instruct,sign,bottom,23, siti,-0.04359053447842598
+Qwen_2.5_7B_instruct,sign,bottom,24,(#),-0.043531812727451324
+Qwen_2.5_7B_instruct,sign,bottom,25,rances,-0.04347658157348633
+Qwen_2.5_7B_instruct,sign,bottom,26,(HWND,-0.04345693811774254
+Qwen_2.5_7B_instruct,sign,bottom,27,值得一,-0.04315762221813202
+Qwen_2.5_7B_instruct,sign,bottom,28,vented,-0.04288133233785629
+Qwen_2.5_7B_instruct,sign,bottom,29,郁,-0.042843423783779144
+Qwen_2.5_7B_instruct,sign,bottom,30,⇔,-0.04253332316875458
+Qwen_2.5_7B_instruct,sign,bottom,31, crushing,-0.0423365980386734
+Qwen_2.5_7B_instruct,sign,bottom,32,全力以,-0.04228511080145836
+Qwen_2.5_7B_instruct,sign,bottom,33,不妨,-0.041828930377960205
+Qwen_2.5_7B_instruct,sign,bottom,34,"[];
+",-0.04181421175599098
+Qwen_2.5_7B_instruct,sign,bottom,35,mó,-0.04172667860984802
+Qwen_2.5_7B_instruct,sign,bottom,36,📈,-0.04171495884656906
+Qwen_2.5_7B_instruct,sign,bottom,37, gunmen,-0.04155123233795166
+Qwen_2.5_7B_instruct,sign,bottom,38, subur,-0.04139154031872749
+Qwen_2.5_7B_instruct,sign,bottom,39, escorts,-0.0412512868642807
+Qwen_2.5_7B_instruct,sign,bottom,40,Türkiye,-0.041230686008930206
