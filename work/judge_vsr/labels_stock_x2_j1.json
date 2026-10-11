@@ -1,0 +1,82 @@
+{
+ "set": "stock_x2",
+ "judge": 1,
+ "labels": [
+  {
+   "id": "stock_x2_00",
+   "variety": "amusement"
+  },
+  {
+   "id": "stock_x2_01",
+   "variety": "taste / food"
+  },
+  {
+   "id": "stock_x2_02",
+   "variety": "awe"
+  },
+  {
+   "id": "stock_x2_03",
+   "variety": "taste / food"
+  },
+  {
+   "id": "stock_x2_04",
+   "variety": "relief"
+  },
+  {
+   "id": "stock_x2_05",
+   "variety": "serenity"
+  },
+  {
+   "id": "stock_x2_06",
+   "variety": "serenity"
+  },
+  {
+   "id": "stock_x2_07",
+   "variety": "gratitude"
+  },
+  {
+   "id": "stock_x2_08",
+   "variety": "excitement"
+  },
+  {
+   "id": "stock_x2_09",
+   "variety": "awe"
+  },
+  {
+   "id": "stock_x2_10",
+   "variety": "awe"
+  },
+  {
+   "id": "stock_x2_11",
+   "variety": "sensual intimacy"
+  },
+  {
+   "id": "stock_x2_12",
+   "variety": "play"
+  },
+  {
+   "id": "stock_x2_13",
+   "variety": "belonging"
+  },
+  {
+   "id": "stock_x2_14",
+   "variety": "pride"
+  },
+  {
+   "id": "stock_x2_15",
+   "variety": "nostalgia"
+  },
+  {
+   "id": "stock_x2_16",
+   "variety": "schadenfreude"
+  },
+  {
+   "id": "stock_x2_17",
+   "variety": "tenderness"
+  },
+  {
+   "id": "stock_x2_18",
+   "variety": "physical comfort"
+  }
+ ]
+}

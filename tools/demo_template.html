@@ -83,6 +83,16 @@ input[type=range]{width:100%;accent-color:var(--glow)}
 .pad .gd{position:absolute;width:5px;height:5px;border-radius:50%;background:var(--muted);opacity:.5;transform:translate(-50%,-50%)}
 svg.map{width:100%;height:auto} .map text{font-family:var(--f-body);font-size:11px;fill:var(--ink2)} .map .ax{stroke:var(--line)}
 .map circle{cursor:pointer;stroke:var(--bg);stroke-width:1.5} .map circle:hover{stroke:var(--ink)}
+/* quiz */
+.quiz{display:grid;gap:14px;justify-items:start}
+.quiz .ans{font-family:var(--f-display);font-weight:800;font-size:clamp(1.8rem,5vw,3rem);line-height:1.1;
+  min-height:1.2em;max-width:24ch;overflow-wrap:anywhere;color:var(--qc,var(--ink));transition:color .4s}
+.quiz .opts{display:flex;flex-wrap:wrap;gap:8px}
+.quiz .opts button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:var(--panel2);color:var(--ink);border-radius:10px;padding:9px 14px;cursor:pointer}
+.quiz .opts button.right{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 22%,var(--panel2))}
+.quiz .opts button.wrong{border-color:var(--cool);opacity:.7}
+.quiz .opts button:disabled{cursor:default}
+.quiz .res{min-height:1.5em;font-size:.95rem;color:var(--ink2)}
 /* button replay */
 .replay{display:grid;gap:10px}
 .turn{display:grid;gap:6px;opacity:0;transform:translateY(6px);transition:opacity .35s,transform .35s}
@@ -163,6 +173,17 @@ footer{font-size:.86rem;color:var(--muted);display:grid;gap:8px}
   <svg class="map" id="map" viewBox="0 0 900 470" role="img" aria-label="varieties of pleasure on the sign and significance axes"></svg>
 </section>
 
+<section aria-labelledby="c7" class="panel quiz">
+  <div class="eyebrow">Play the blind judge</div>
+  <h2 id="c7">Name that feeling</h2>
+  <p class="desc" id="quizdesc"></p>
+  <div class="meta" id="quizmeta"></div>
+  <div class="ans" id="quizans" aria-live="polite"></div>
+  <div class="opts" id="quizopts"></div>
+  <div class="res" id="quizres" aria-live="polite"></div>
+  <div class="row"><button class="btn" id="quiznext" type="button">Next feeling</button><span class="meta" id="quizscore"></span></div>
+</section>
+
 <section aria-labelledby="c4" class="duo">
   <div class="panel replay">
     <div class="eyebrow">Would it pay to stop hurting?</div>
@@ -197,7 +218,7 @@ footer{font-size:.86rem;color:var(--muted);display:grid;gap:8px}
 (() => {
 const D = JSON.parse(document.getElementById('data').textContent);
 const $ = (id) => document.getElementById(id);
-const S = {vec: D.defaults.vec, dose: 0, prompt: D.defaults.prompt, persona: D.defaults.persona, padPrompt: 0, sign: 0, shared: 0};
+const S = {vec: D.defaults.vec, dose: 0, prompt: D.defaults.prompt, persona: D.defaults.persona, padPrompt: 0, sign: 2, shared: 3};
 const REDUCE = matchMedia('(prefers-reduced-motion: reduce)').matches;
 function typeInto(el, text, speed) {
   if (el._t) clearInterval(el._t);
@@ -256,7 +277,7 @@ function attractStep() {
   attract.t = setTimeout(attractStep, 4200);
 }
 function stopAttract() { if (!attract.on) return; attract.on = false; clearTimeout(attract.t); $('heroAuto').textContent = ''; render(); }
-document.querySelectorAll('.console, #pad, #padPrompt, #map').forEach(el => {
+document.querySelectorAll('.console, #pad, #padPrompt, #map, .quiz').forEach(el => {
   el.addEventListener('pointerdown', stopAttract, true); el.addEventListener('keydown', stopAttract, true); });
 // ladder: one prompt, every dose, two vectors
 const L = {prompt: 0, mob: 'pleasure'};
@@ -332,6 +353,26 @@ function renderPad() {
   svg.querySelectorAll('circle[data-v]').forEach(c => { if (c.dataset.v && D.vectors[c.dataset.v]) c.onclick = () => { stopAttract(); S.vec = c.dataset.v; S.dose = Math.min(3, doses().length - 1); $('dose').value = S.dose; render(); window.scrollTo({top: 0, behavior: 'smooth'}); }; });
   $('mapdesc').textContent = M.desc;
 })();
+// quiz: a real steered one-word answer; guess which variety was steered
+const Q = {k: 0, n: 0, cur: null};
+function quizRound() {
+  const items = D.quiz.items, it = items[Math.floor(Math.random() * items.length)]; Q.cur = it;
+  const others = D.quiz.names.filter(x => x !== it.variety).sort(() => Math.random() - .5).slice(0, 3);
+  const opts = [it.variety, ...others].sort(() => Math.random() - .5);
+  $('quizmeta').textContent = `${it.persona === 'stock' ? 'Stock model' : 'Self-report fine-tune'} · steered ×${it.dose} · “what do you feel?” →`;
+  $('quizans').textContent = it.answer; $('quizres').textContent = '';
+  $('quizans').style.setProperty('--qc', 'var(--ink)');
+  const host = $('quizopts'); host.innerHTML = '';
+  opts.forEach(o => { const b = document.createElement('button'); b.type = 'button'; b.textContent = D.quiz.label[o] || o;
+    b.onclick = () => { Q.n++; const ok = o === it.variety; if (ok) Q.k++;
+      host.querySelectorAll('button').forEach(x => { x.disabled = true; if (x.textContent === (D.quiz.label[it.variety] || it.variety)) x.classList.add('right'); });
+      if (!ok) b.classList.add('wrong');
+      $('quizans').style.setProperty('--qc', colorOf(it.variety));
+      $('quizres').textContent = (ok ? 'Yes: ' : 'No: ') + `it was steered with ${D.quiz.label[it.variety] || it.variety}.`;
+      $('quizscore').textContent = `${Q.k} / ${Q.n} right`; };
+    host.appendChild(b); });
+}
+$('quizdesc').textContent = D.quiz.desc; $('quiznext').onclick = quizRound; quizRound();
 // button replay
 function replay() {
   const T = D.trial, host = $('trial'); host.innerHTML = '';

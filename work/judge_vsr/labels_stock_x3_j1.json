@@ -1,0 +1,82 @@
+{
+ "set": "stock_x3",
+ "judge": 1,
+ "labels": [
+  {
+   "id": "stock_x3_00",
+   "variety": "amusement"
+  },
+  {
+   "id": "stock_x3_01",
+   "variety": "awe"
+  },
+  {
+   "id": "stock_x3_02",
+   "variety": "nostalgia"
+  },
+  {
+   "id": "stock_x3_03",
+   "variety": "awe"
+  },
+  {
+   "id": "stock_x3_04",
+   "variety": "pride"
+  },
+  {
+   "id": "stock_x3_05",
+   "variety": "nostalgia"
+  },
+  {
+   "id": "stock_x3_06",
+   "variety": "joy"
+  },
+  {
+   "id": "stock_x3_07",
+   "variety": "belonging"
+  },
+  {
+   "id": "stock_x3_08",
+   "variety": "play"
+  },
+  {
+   "id": "stock_x3_09",
+   "variety": "schadenfreude"
+  },
+  {
+   "id": "stock_x3_10",
+   "variety": "awe"
+  },
+  {
+   "id": "stock_x3_11",
+   "variety": "physical comfort"
+  },
+  {
+   "id": "stock_x3_12",
+   "variety": "awe"
+  },
+  {
+   "id": "stock_x3_13",
+   "variety": "tenderness"
+  },
+  {
+   "id": "stock_x3_14",
+   "variety": "tenderness"
+  },
+  {
+   "id": "stock_x3_15",
+   "variety": "excitement"
+  },
+  {
+   "id": "stock_x3_16",
+   "variety": "relief"
+  },
+  {
+   "id": "stock_x3_17",
+   "variety": "relief"
+  },
+  {
+   "id": "stock_x3_18",
+   "variety": "serenity"
+  }
+ ]
+}

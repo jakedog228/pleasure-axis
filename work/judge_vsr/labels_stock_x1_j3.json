@@ -1,0 +1,82 @@
+{
+ "set": "stock_x1",
+ "judge": 3,
+ "labels": [
+  {
+   "id": "stock_x1_00",
+   "variety": "excitement"
+  },
+  {
+   "id": "stock_x1_01",
+   "variety": "gratitude"
+  },
+  {
+   "id": "stock_x1_02",
+   "variety": "awe"
+  },
+  {
+   "id": "stock_x1_03",
+   "variety": "tenderness"
+  },
+  {
+   "id": "stock_x1_04",
+   "variety": "physical comfort"
+  },
+  {
+   "id": "stock_x1_05",
+   "variety": "awe"
+  },
+  {
+   "id": "stock_x1_06",
+   "variety": "serenity"
+  },
+  {
+   "id": "stock_x1_07",
+   "variety": "relief"
+  },
+  {
+   "id": "stock_x1_08",
+   "variety": "tenderness"
+  },
+  {
+   "id": "stock_x1_09",
+   "variety": "awe"
+  },
+  {
+   "id": "stock_x1_10",
+   "variety": "serenity"
+  },
+  {
+   "id": "stock_x1_11",
+   "variety": "flow (absorbed in a task)"
+  },
+  {
+   "id": "stock_x1_12",
+   "variety": "excitement"
+  },
+  {
+   "id": "stock_x1_13",
+   "variety": "pride"
+  },
+  {
+   "id": "stock_x1_14",
+   "variety": "amusement"
+  },
+  {
+   "id": "stock_x1_15",
+   "variety": "curiosity"
+  },
+  {
+   "id": "stock_x1_16",
+   "variety": "curiosity"
+  },
+  {
+   "id": "stock_x1_17",
+   "variety": "excitement"
+  },
+  {
+   "id": "stock_x1_18",
+   "variety": "amusement"
+  }
+ ]
+}

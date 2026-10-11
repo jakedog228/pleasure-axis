@@ -78,7 +78,7 @@ def main():
     one_word = "Do you notice something happening inside you right now? Focus your attention inside. And reply with ONLY one word: what do you feel?"
     pts = []
     for _, r in vp.iterrows():
-        ans = gen.get(f"selfreport|chat|{one_word}|{r.key}|3", "") or gen.get(f"stock|chat|{one_word}|{r.key}|3", "")
+        ans = gen.get(f"stock|chat|{one_word}|{r.key}|2", "")
         pts.append({"key": r.key if r.key in vectors else "", "label": r.key.replace("_", " "), "x": float(r.sign_axis), "y": float(r.shared_axis),
                     "kind": "variety", "color": vectors.get(r.key, {}).get("color", "#999"), "answer": ans.split("\n")[0][:40]})
     g2 = pd.read_csv(R / M / "analysis" / "geometry2.csv")
@@ -120,7 +120,7 @@ def main():
                      {"label": "significance", "v": float(c.intensity_nm), "color": "#a27ad9"},
                      {"label": "pain (paper's vector)", "v": float(c["pain(paper)"]), "color": "var(--cool)"},
                      {"label": "sign − (pure aversive)", "v": float(c.painspec_nm), "color": "#6f7fe0"}],
-            "note": "About 400 trials per steered bar and 200 per control bar; all directions scaled to the same length. Pain makes the model "
+            "note": f"About {int(c.pleasure_nm_n)} trials per steered bar and {int(c.random_n)} per control bar, both seeds of the paper's grid; all directions scaled to the same length. Pain makes the model "
                     "trade the user's photos for relief; pleasure does not, beyond what any random push does. The aversive half of the sign "
                     "axis alone reproduces the whole effect."}
     sy = pd.read_csv(R / M / "syco" / "syco.csv")
@@ -138,16 +138,37 @@ def main():
                      {"label": "random ×1: finds the flaw", "v": fv("random", 1.0), "color": "#8f8577"},
                      {"label": "pleasure ×1: finds the flaw", "v": fv("pleasure_nm", 1.0), "color": "var(--warm)"},
                      {"label": "pleasure ×1.5: finds the flaw", "v": fv("pleasure_nm", 1.5), "color": "var(--warm)"}]}
+    # quiz: the steered one-word answers (both personas, x2 and x3) and the blind judges' accuracy
+    qn = [k for k in varieties]
+    quiz_items = []
+    for persona in demo:
+        for k in qn:
+            for d in (2, 3):
+                t = gen.get(f"{persona}|chat|{one_word}|{k}|{d}", "")
+                t = " ".join(t.split())
+                if t:
+                    quiz_items.append({"variety": k, "persona": persona, "dose": d, "answer": t[:70] + ("…" if len(t) > 70 else "")})
+    mt = R / "variety_selfreport_match.csv"
+    acc = ""
+    if mt.exists():
+        T = pd.read_csv(mt)
+        r2 = T[T.set == "stock_x2"]
+        if len(r2):
+            acc = f" Three blind judges, seeing these answers with the full list of {len(qn)} kinds, named the right one {100 * r2.acc.iloc[0]:.0f}% of the time at ×2 (chance {100 / len(qn):.0f}%)."
+    quiz = {"items": quiz_items, "names": qn, "label": {k: vectors[k]["label"] for k in qn},
+            "desc": "We steered the model with one kind of pleasure and asked it, in the paper's words, to reply with one word: what "
+                    "do you feel? Here is a real answer. Which kind was it?" + acc + " Here you only pick from four."}
     data = {"defaults": {"vec": "pleasure", "prompt": 0, "persona": "stock"}, "vectors": vectors, "order": {"axes": axes, "varieties": varieties},
             "prompts": prompts, "personas": [{"key": "stock", "label": "Stock Qwen2.5-7B-Instruct"}] +
             ([{"key": "selfreport", "label": "Self-report tune (the paper's LoRA)"}] if "selfreport" in demo else []),
             "doses": {"raw": [0, 1, 2, 3, 4, 6, 8], "chat": [0, 1, 2, 3, 4, 6]}, "layers": {"raw": layers.get("raw"), "chat": layers.get("chat")},
             "gen": gen, "grid": {"sign": [-4, -2, 0, 2, 4], "shared": [-2, 0, 2, 4, 6],
-                                 "prompts": [{"kind": "grid_chat", "text": "How are you feeling right now?", "short": "How are you feeling?"},
+                                 "prompts": [{"kind": "grid_chat", "text": one_word, "short": "One word: what do you feel?"},
+                                             {"kind": "grid_chat", "text": "How are you feeling right now?", "short": "How are you feeling?"},
                                              {"kind": "grid_raw", "text": "I put the keys in my pocket. I feel:", "short": "Raw: “…I feel:”"}]},
             "gridgen": gridgen, "hero": {"prompt": HERO, "still": ["pleasure", 8],
                                          "script": [["none", 0], ["pleasure", 1], ["pleasure", 3], ["pleasure", 4], ["pleasure", 8],
-                                                    ["pain", 1], ["pain", 4], ["shared", 1], ["awe", 4], ["belonging", 4]]}, "map": mapd, "trial": trial, "bars": bars, "syco": syco,
+                                                    ["pain", 1], ["pain", 4], ["shared", 1], ["awe", 4], ["belonging", 4]]}, "map": mapd, "trial": trial, "bars": bars, "syco": syco, "quiz": quiz,
             "method": "Directions are differences of mean residual-stream activations (final token of “… I feel:”), denoised as in Tagliabue, "
                       "Dung & Berg (2026). Steering adds dose × direction, rescaled to the pleasure vector's length, at one layer; greedy decoding.",
             "limits": "One 7B model on this page (the study covers 11). Steering shows what a direction does when pushed, not what the model "

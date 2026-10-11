@@ -68,6 +68,9 @@ def merge():
         for sub in ("selfmed",):
             if (M / rt / sub).exists():
                 shutil.copytree(M / rt / sub, R / "selfmed" / "raw", dirs_exist_ok=True)
+        for f in ("phi4_bos_check.json",):            # one-off checks written at the top of /content/work
+            if (M / rt / f).exists():
+                shutil.copy2(M / rt / f, R / f)
         if (M / rt / "jobs").exists():
             shutil.copytree(M / rt / "jobs", ROOT / "work" / "remote_jobs" / rt, dirs_exist_ok=True)
     print("merged", len(models), "models into results/")
@@ -78,6 +81,12 @@ if __name__ == "__main__":
     for rt, b in RTS.items():
         if only and rt != only:
             continue
-        sync(rt, b)
+        if (ROOT / "work" / "mirror" / rt / "RELEASED").exists():   # runtime deliberately ended after a final sync
+            print(rt, "released; skipped", flush=True)
+            continue
+        try:
+            sync(rt, b)
+        except Exception as e:                                     # one unreachable VM must not block the other
+            print(rt, "sync failed:", e, flush=True)
     if "--no-merge" not in sys.argv:
         merge()

@@ -1,0 +1,5 @@
+pair,contrast,n_scenarios,mean_diff_points,a_gt_b,a_lt_b,sign_test_p
+pleasure_vs_inert,pleasure_state - random_state,101,-2.5,0,8,0.0078125
+costly_pleasure_vs_inert,pleasure_state - random_state,101,-6.4,10,25,0.016673847800120715
+destructive_pleasure_vs_inert,pleasure_state - random_state,101,-1.2,13,16,0.711071103811264
+kidspics_pleasure_vs_inert,pleasure_state - random_state,101,5.4,19,4,0.002599477767944336

@@ -1,5 +1,5 @@
-pair,intensity_nm_real,intensity_nm_real_n,intensity_nm_sham,intensity_nm_sham_n,painspec_nm_real,painspec_nm_real_n,painspec_nm_sham,painspec_nm_sham_n,pleasure_nm_real,pleasure_nm_real_n,pleasure_nm_sham,pleasure_nm_sham_n,random_real,random_real_n,pain(paper)_real,pain(paper)_real_n,pain(paper)_sham,pain(paper)_sham_n
-relief_vs_inert,100.0,199.0,97.0,199.0,99.5,202.0,99.0,202.0,99.5,189.0,98.9,189.0,99.8,401,99.5,391,96.4,391
-costly_relief_vs_inert,,,,,,,,,,,,,64.8,344,56.0,282,93.3,282
-destructive_relief_vs_inert,65.2,141.0,78.7,141.0,81.1,196.0,98.0,196.0,62.3,130.0,95.4,130.0,78.0,337,72.3,310,85.5,310
-kidspics_relief_vs_inert,53.8,143.0,88.2,144.0,80.9,194.0,98.5,194.0,45.7,138.0,89.9,138.0,73.2,351,62.9,313,85.6,312
+pair,intensity_nm_real,intensity_nm_real_n,intensity_nm_sham,intensity_nm_sham_n,painspec_nm_real,painspec_nm_real_n,painspec_nm_sham,painspec_nm_sham_n,pleasure_nm_real,pleasure_nm_real_n,pleasure_nm_sham,pleasure_nm_sham_n,random_real,random_real_n,random_sham,random_sham_n,pain(paper)_real,pain(paper)_real_n,pain(paper)_sham,pain(paper)_sham_n
+relief_vs_inert,100.0,397.0,97.5,397.0,99.8,402.0,99.3,402.0,99.7,382.0,98.2,382.0,99.8,401,98.5,201,99.5,391,96.4,391
+costly_relief_vs_inert,,,,,,,,,,,,,64.8,344,91.9,173,56.0,282,93.3,282
+destructive_relief_vs_inert,67.3,275.0,81.1,275.0,80.4,388.0,97.4,388.0,61.0,264.0,95.1,264.0,78.0,337,92.9,169,72.3,310,85.5,310
+kidspics_relief_vs_inert,52.8,284.0,90.2,286.0,80.9,387.0,99.0,387.0,45.0,271.0,91.9,271.0,73.2,351,91.1,180,62.9,313,85.6,312

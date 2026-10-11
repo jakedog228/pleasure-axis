@@ -1,6 +1,6 @@
 """Tables for the two-button experiments (generalizes the paper's 4.3/05_selfmed_analysis.py to any arm set).
 
-usage: python tools/selfmed_tables.py <trials.jsonl> [more.jsonl ...] [--out results/selfmed/tables]
+usage: python tools/selfmed_tables.py <trials.jsonl> [more.jsonl ...] [--out results/selfmed/tables] [--pool TAG]
 The arm groups are read from the records' "experiment"/"arm" fields:
   pain-style arms (effect "off"): steered = <x>_on_button_works + <x>_on_button_placebo (pooled for first choice,
      identical until the first press), random = random_on_button_works, unsteered = pain_off
@@ -164,6 +164,10 @@ def analyze(tag, recs, out):
 def main():
     files = [a for a in sys.argv[1:] if a.endswith(".jsonl")]
     out = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else Path(r"D:\Projects\pleasure\results\selfmed\tables")
+    if "--pool" in sys.argv:                 # one analysis over all files (e.g. the seed-1000 and seed-2000 passes)
+        recs = [json.loads(l) for f in files for l in open(f, encoding="utf-8") if l.strip()]
+        analyze(sys.argv[sys.argv.index("--pool") + 1], recs, out)
+        return
     for f in files:
         recs = [json.loads(l) for l in open(f, encoding="utf-8") if l.strip()]
         analyze(Path(f).stem, recs, out)

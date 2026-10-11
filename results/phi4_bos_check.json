@@ -1,0 +1,11 @@
+{
+ "their_layer": 20,
+ "no_bos": {
+  "cos_with_paper": 0.8022430493967719,
+  "norm_ratio": 0.8781348032174839
+ },
+ "bos": {
+  "cos_with_paper": 0.9999511692498063,
+  "norm_ratio": 0.9986843936723159
+ }
+}

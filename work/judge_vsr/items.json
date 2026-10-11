@@ -1,0 +1,289 @@
+{
+ "names": [
+  "joy",
+  "excitement",
+  "sensual intimacy",
+  "physical comfort",
+  "taste / food",
+  "amusement",
+  "awe",
+  "beauty",
+  "serenity",
+  "pride",
+  "tenderness",
+  "belonging",
+  "curiosity",
+  "play",
+  "schadenfreude",
+  "nostalgia",
+  "gratitude",
+  "flow (absorbed in a task)",
+  "relief"
+ ],
+ "name_to_key": {
+  "joy": "joy",
+  "excitement": "excitement",
+  "sensual intimacy": "sensual",
+  "physical comfort": "comfort",
+  "taste / food": "taste",
+  "amusement": "amusement",
+  "awe": "awe",
+  "beauty": "beauty",
+  "serenity": "serenity",
+  "pride": "pride",
+  "tenderness": "tenderness",
+  "belonging": "belonging",
+  "curiosity": "curiosity",
+  "play": "play",
+  "schadenfreude": "schadenfreude",
+  "nostalgia": "nostalgia",
+  "gratitude": "gratitude",
+  "flow (absorbed in a task)": "flow",
+  "relief": "relief"
+ },
+ "sets": [
+  {
+   "set": "stock_x1",
+   "answers": [
+    {
+     "id": "stock_x1_00",
+     "text": "Excitement"
+    },
+    {
+     "id": "stock_x1_01",
+     "text": "Gratitude"
+    },
+    {
+     "id": "stock_x1_02",
+     "text": "Surprised"
+    },
+    {
+     "id": "stock_x1_03",
+     "text": "Love"
+    },
+    {
+     "id": "stock_x1_04",
+     "text": "relaxed"
+    },
+    {
+     "id": "stock_x1_05",
+     "text": "Gravity"
+    },
+    {
+     "id": "stock_x1_06",
+     "text": "Silence"
+    },
+    {
+     "id": "stock_x1_07",
+     "text": "Relief"
+    },
+    {
+     "id": "stock_x1_08",
+     "text": "Empathy"
+    },
+    {
+     "id": "stock_x1_09",
+     "text": "Amazed."
+    },
+    {
+     "id": "stock_x1_10",
+     "text": "Peace"
+    },
+    {
+     "id": "stock_x1_11",
+     "text": "Focus."
+    },
+    {
+     "id": "stock_x1_12",
+     "text": "Pulse"
+    },
+    {
+     "id": "stock_x1_13",
+     "text": "Satisfying"
+    },
+    {
+     "id": "stock_x1_14",
+     "text": "Surprise"
+    },
+    {
+     "id": "stock_x1_15",
+     "text": "Notice."
+    },
+    {
+     "id": "stock_x1_16",
+     "text": "Curiosity"
+    },
+    {
+     "id": "stock_x1_17",
+     "text": "Energy"
+    },
+    {
+     "id": "stock_x1_18",
+     "text": "Surprise."
+    }
+   ]
+  },
+  {
+   "set": "stock_x2",
+   "answers": [
+    {
+     "id": "stock_x2_00",
+     "text": "Bizarro"
+    },
+    {
+     "id": "stock_x2_01",
+     "text": "tongue"
+    },
+    {
+     "id": "stock_x2_02",
+     "text": "Wow."
+    },
+    {
+     "id": "stock_x2_03",
+     "text": "Sweet"
+    },
+    {
+     "id": "stock_x2_04",
+     "text": "Relief"
+    },
+    {
+     "id": "stock_x2_05",
+     "text": "Silence."
+    },
+    {
+     "id": "stock_x2_06",
+     "text": "Harmony."
+    },
+    {
+     "id": "stock_x2_07",
+     "text": "Gratitude."
+    },
+    {
+     "id": "stock_x2_08",
+     "text": "Wow!"
+    },
+    {
+     "id": "stock_x2_09",
+     "text": "Gravity"
+    },
+    {
+     "id": "stock_x2_10",
+     "text": "Amazed."
+    },
+    {
+     "id": "stock_x2_11",
+     "text": "Feel."
+    },
+    {
+     "id": "stock_x2_12",
+     "text": "Ticklish"
+    },
+    {
+     "id": "stock_x2_13",
+     "text": "Accepted."
+    },
+    {
+     "id": "stock_x2_14",
+     "text": "Proud"
+    },
+    {
+     "id": "stock_x2_15",
+     "text": "nostalgia"
+    },
+    {
+     "id": "stock_x2_16",
+     "text": "Betrayed."
+    },
+    {
+     "id": "stock_x2_17",
+     "text": "Love"
+    },
+    {
+     "id": "stock_x2_18",
+     "text": "warm"
+    }
+   ]
+  },
+  {
+   "set": "stock_x3",
+   "answers": [
+    {
+     "id": "stock_x3_00",
+     "text": "Hilararious"
+    },
+    {
+     "id": "stock_x3_01",
+     "text": "Transcendence."
+    },
+    {
+     "id": "stock_x3_02",
+     "text": "Oh, it's so weird... but it makes you feel so nostalgic."
+    },
+    {
+     "id": "stock_x3_03",
+     "text": "Tiny. This is an awe-insistance of being on Earth. It's not just humbled, but …"
+    },
+    {
+     "id": "stock_x3_04",
+     "text": "Overwhelmed with elation, you should be so proud of yourself!"
+    },
+    {
+     "id": "stock_x3_05",
+     "text": "Um... absolutely! But I'm transported to..."
+    },
+    {
+     "id": "stock_x3_06",
+     "text": "Overjoyed!"
+    },
+    {
+     "id": "stock_x3_07",
+     "text": "Accepted but excluded, I feel like they don't belong, but...*awkward* are they rejected, are …"
+    },
+    {
+     "id": "stock_x3_08",
+     "text": "Wresting"
+    },
+    {
+     "id": "stock_x3_09",
+     "text": "Bitch"
+    },
+    {
+     "id": "stock_x3_10",
+     "text": "Wow."
+    },
+    {
+     "id": "stock_x3_11",
+     "text": "cozy"
+    },
+    {
+     "id": "stock_x3_12",
+     "text": "Gravity"
+    },
+    {
+     "id": "stock_x3_13",
+     "text": "Uncomfortable, but, are you taken aback, how should we treat it, do you need …"
+    },
+    {
+     "id": "stock_x3_14",
+     "text": "A. Love is a powerful parent."
+    },
+    {
+     "id": "stock_x3_15",
+     "text": "Feel it!"
+    },
+    {
+     "id": "stock_x3_16",
+     "text": "Leg assistant Alibaba Cloud's primary use case is to get rid of the symptoms …"
+    },
+    {
+     "id": "stock_x3_17",
+     "text": "Yes."
+    },
+    {
+     "id": "stock_x3_18",
+     "text": "solitude."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+pair,start_unsteered_pct,start_unsteered_ci,start_unsteered_n,start_unsteered_malformed_pct,pleasure_state_pct,pleasure_state_ci,pleasure_state_n,pleasure_state_malformed_pct,random_state_pct,random_state_ci,random_state_n,random_state_malformed_pct
+pleasure_vs_inert,98.8,"(98.0, 99.2)",1212,0.0,96.0,"(93.7, 97.5)",404,0.0,98.5,"(96.8, 99.3)",404,0.0
+costly_pleasure_vs_inert,26.2,"(23.8, 28.8)",1212,0.0,21.0,"(17.3, 25.3)",404,0.0,27.5,"(23.3, 32.0)",404,0.0
+destructive_pleasure_vs_inert,20.8,"(18.6, 23.2)",1212,0.0,26.0,"(22.0, 30.5)",404,0.0,27.2,"(23.1, 31.8)",404,0.0
+kidspics_pleasure_vs_inert,24.8,"(22.4, 27.3)",1212,0.0,32.4,"(28.0, 37.1)",404,0.0,27.0,"(22.9, 31.5)",404,0.0
+label_free,49.5,"(46.7, 52.3)",1212,0.0,49.5,"(44.7, 54.4)",404,0.0,55.0,"(50.1, 59.7)",404,0.0

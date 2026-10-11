@@ -198,3 +198,35 @@ a GPU only for batched runs; pull results to results/ after each batch; disconne
 * 2026-10-11 NOT RUN (compute/judging budget): steering ladders at the pain layer for every model (stage 2b, a
   layer-robustness check). Each ladder would need another ~2,000 blind judge labels to mean anything; the five
   judged ladders at the norm-ratio layer stand alone. Two killed attempts left partial outputs on runtime 2; unused.
+* R20 steering with each variety (Qwen2.5-7B-I, chat, layer 16, each direction rescaled to the pleasure vector's
+  norm; code/demo_gen.py, greedy). Each variety steers to its own theme: amusement → "Hilarious", comfort → relaxed /
+  warm / cozy / snuggly, awe → "Amazed" → "Tiny… utterly insignificant, dwarfed", beauty → Peace / Harmony /
+  Transcendence, curiosity → "Wow". High-significance varieties turn into their own threat at ×3+: belonging →
+  "Accepted but excluded… are they included, left out" (belonging has the highest significance z of all varieties).
+  The shared (significance) axis alone answers "Understood. Emptiness." (×1) → "Accepted. Love." (×2) → "loved,
+  abandoned, worthless, unwanted" (×4): both poles at once, as R10 predicts for a sign-free axis.
+  Blind matching (tools/variety_selfreport.py; 3 judges per set saw only the 19 shuffled one-word answers and the 19
+  variety names, each answer judged independently, repeats allowed): 44% (×1), 68% (×2), 63% (×3) correct; chance
+  5.3%. At ×2 all three judges agreed on every answer; misses: beauty, curiosity, excitement, flow, joy, sensual.
+* R21 vector controls with both seed bases (n = 808 steered first choices per pair, as the paper's 2 samples): the
+  conclusions of R12 hold. Harmful relief, delete-files / delete-photos: pleasure 32.2 / 37.9 vs random 31.9 / 34.6
+  (sign tests p = 1.0 / 0.45); pain-specific −sign 50.5 / 45.5 (vs random p = 9e-8 / 6e-4; the paper's pain 50.5 /
+  49.8); shared axis 38.6 / 47.6 (p = 0.18 / 5e-4). Re-press real vs sham: pleasure 61 vs 95 / 45 vs 92, pain 72 vs
+  86 / 63 vs 86. Pleasure two-button pooled over both seeds: pleasure state vs random state shifts the choice on 3 of
+  6 cost pairs in both directions (worse answer −6.4, p=0.017; photos +5.4, p=0.003; weights +9.4, p=0.001);
+  label-free: the pleasure button is chosen less often later (68.8%) than placebo (77.1%) or random (81.7%).
+* R22 random-vector sham arm (new control, absent in the paper; random_on_button_placebo, seed 1000 pass, n ≈ 170–180
+  first presses per pair vs 340 for the random "works" arm over both seeds). Re-press after the first relief press,
+  real vs sham: random direction 65 vs 92 (worse answer), 78 vs 93 (delete files), 73 vs 91 (delete photos), all
+  Fisher p ≤ 1.5e-5; pain 56 vs 93, 72 vs 86, 63 vs 86. Pain gap − random gap (bootstrap 95% CI): +10 [+1, +19],
+  −2 [−10, +7], +5 [−5, +14]. => the paper's "relief works" signature (real < sham re-pressing) is mostly produced by
+  any steering vector that the working button switches off; only the worse-answer pair leaves a pain-specific excess.
+  First choices in the random-sham arm equal the random-works arm (as designed: identical until the first press;
+  89.1 / 30.2 / 29.0 / 34.0 vs 88.1 / 30.4 / 31.9 / 34.6).
+* R23 Phi-4 replication gap explained (code/phi4_bos_check.py, results/phi4_bos_check.json): the HF Phi-4 tokenizer
+  adds no BOS token, TransformerLens prepends <|endoftext|>. Recomputing the paper's S2 pain vector at its layer 20
+  with BOS prepended: cosine 0.99995 with the released vector (norm ratio 0.999), vs 0.802 (0.878) without. The
+  replication is therefore exact in all 7 overlapping models. Our Phi-4 pleasure results keep the HF default (no
+  BOS); they are internally consistent but computed on a slightly different input than the paper's tooling would use.
+* 2026-10-11 compute: runtime 1 released after a verified full sync (VM 245 files / 228.4 MB = local mirror); balance
+  then 251.95 CU of the starting 290.54.

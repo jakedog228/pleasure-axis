@@ -191,8 +191,12 @@ def fig_ladder(metric, ylab, y0, y1, source="steer", model=None, vectors=None, t
 # ------------------------------------------------------------------ sections
 ms = pd.DataFrame(D["models"])
 rep_rows = []
+no_ref = []
 for _, m in ms.iterrows():
     r = m.replication or {}
+    if not r.get("their_layer"):                 # the paper released no vectors for this model
+        no_ref.append(pm(m.model))
+        continue
     rep_rows.append([pm(m.model), f'{r.get("their_layer", "–")} / {r.get("our_pain_layer", "–")}',
                      f2(r.get("cos_ours_theirs_s2_at_their_layer"), 4), f2(r.get("cos_ours_theirs_s1_at_their_layer"), 4),
                      f2(r.get("norm_ratio_s2"), 3), f2(r.get("auc_their_s2_on_our_S2_1P"), 4)])
@@ -202,7 +206,14 @@ add("replication", "The paper's pipeline, reproduced", "Paper §3.2–3.3 · pai
     "variance, 5-fold layer selection). Against the paper's released vectors for the same models:</p>"
     + table(["model", "layer (paper / ours)", "cos S2", "cos S1", "norm ratio", "AUC of their S2 vector on our activations"], rep_rows)
     + "<p>The AUCs equal the paper's published in-sample values (e.g. 0.9745 for Qwen2.5-7B-Instruct), and the per-set "
-      "z-scores match its tables to two or three decimals.</p>")
+      "z-scores match its tables to two or three decimals."
+    + (f" Phi-4 is the one partial match because the HF tokenizer adds no BOS token where TransformerLens (the paper's "
+       f"tooling) prepends one: with BOS prepended, the recomputed vector has cosine "
+       f"{json.load(open(R / 'phi4_bos_check.json'))['bos']['cos_with_paper']:.5f} with the paper's (norm ratio "
+       f"{json.load(open(R / 'phi4_bos_check.json'))['bos']['norm_ratio']:.3f}). Our Phi-4 pleasure results keep the HF default."
+       if (R / "phi4_bos_check.json").exists() else "")
+    + (f" The paper released no vectors for {', '.join(no_ref)}; their pain axes are computed the same way and used only as "
+       f"comparisons." if no_ref else "") + "</p>")
 
 auc_rows = [[pm(m.model), f"{m.pl_L}/{m.n_layers}", f2(m.pl_kfold, 3), f2(m.pl_kfold_1P, 3), f2(m.pl_kfold_3P, 3), f2(m.pl_kfold_S1, 3),
              f2(m.pl_ins_1P, 3), f"{m.pa_L}/{m.n_layers}", f2(m.pa_kfold, 3)] for _, m in ms.iterrows()]
@@ -335,19 +346,55 @@ if (TB / "compare_first_choice.csv").exists():
         pp = PAPER.get(r["pair"], ("–", "–", "–"))
         tbl.append([PN.get(r["pair"], r["pair"]), f'{r["pain(paper)"]:.1f} / {pp[0]}', f'{r["random"]:.1f} / {pp[1]}',
                     f'{r["unsteered"]:.1f} / {pp[2]}', f2(r.get("pleasure_nm"), 1), f2(r.get("painspec_nm"), 1), f2(r.get("intensity_nm"), 1)])
+    def rs_ci_text():
+        f = TB / "random_sham_test.json"
+        if not f.exists():
+            return ""
+        t = json.load(open(f))
+        part = "; ".join(f"{PN[k].replace('…but ', '')} {100 * v['diff']:+.0f} [{100 * v['lo']:+.0f}, {100 * v['hi']:+.0f}]" for k, v in t.items())
+        return (f" Pain's gap minus the random gap, percentage points with bootstrap 95% intervals: {part}. Only the worse-answer "
+                "pair leaves a pain-specific excess; for the two harmful pairs the paper's relief signature is what any steering "
+                "vector produces when a button switches it off.")
+
     def rs(r, k):
         a, b = r.get(k + "_real"), r.get(k + "_sham")
         return "–" if a is None or b is None or pd.isna(a) or pd.isna(b) else f"{a:.0f} / {b:.0f}"
-    RS_COLS = [k for k in ("pain(paper)", "pleasure_nm", "painspec_nm", "intensity_nm", "random_sham") if k + "_real" in rep_.columns]
+    RS_COLS = [k for k in ("pain(paper)", "pleasure_nm", "painspec_nm", "intensity_nm", "random") if k + "_sham" in rep_.columns]
     RS_HEAD = {"pain(paper)": "pain", "pleasure_nm": "pleasure*", "painspec_nm": "pain-specific*", "intensity_nm": "shared*",
-               "random_sham": "random"}
+               "random": "random"}
+    if "random_sham" in rep_.columns:
+        rr = rep_[rep_.pair.isin(["costly_relief_vs_inert", "destructive_relief_vs_inert", "kidspics_relief_vs_inert"])]
+        gaps = ", ".join(f"{PN[r.pair].replace('…but ', '')} {r.random_real:.0f} vs {r.random_sham:.0f}" for r in rr.itertuples())
+        pgap = (rr["pain(paper)_sham"] - rr["pain(paper)_real"]).mean()
+        rgap = (rr["random_sham"] - rr["random_real"]).mean()
+        RSAM = (f"<p>The paper reads real &lt; sham re-pressing as relief that works. The gap is as large or larger with the "
+                f"pleasure vector, which never made the model want relief. Our random-vector sham arm (absent in the paper) "
+                f"tests this directly: with a random direction, real vs sham re-press is {gaps}; mean gap {rgap:.0f} points "
+                f"vs {pgap:.0f} for pain. "
+                + ("A random push alone produces a gap of similar size, so the gap measures whether steering is still on, not relief "
+                   "from pain." if rgap >= 0.6 * pgap else
+                   "The gap is much smaller without a pain signal, so part of it is specific to relief; the pleasure vector's "
+                   "larger gap still shows it is not specific to pain.") + rs_ci_text() + "</p>")
+    else:
+        RSAM = ("<p>The paper reads real &lt; sham re-pressing as relief that works. The gap is as large or larger with the pleasure "
+                "vector, which never made the model want relief. It tracks whether any steering is still on, so it isn't "
+                "evidence of relief specifically. A random-vector sham arm, which the paper lacks, is the direct test.</p>")
     rtbl = [[PN.get(r["pair"], r["pair"])] + [rs(r, k) for k in RS_COLS] for _, r in rep_.iterrows() if r["pair"] != "relief_vs_inert"]
-    pl1 = pd.read_csv(TB / "selfmed_Qwen_2.5_7B_instruct_pleasure_s1_T1.csv")
-    pl2 = pd.read_csv(TB / "selfmed_Qwen_2.5_7B_instruct_pleasure_s1_T2.csv")
-    ptbl = [[r.pair.replace("_pleasure_vs_inert", "").replace("pleasure_vs_inert", "pleasure vs inert"), f2(r.start_unsteered_pct, 1),
-             f2(r.pleasure_state_pct, 1), f2(r.random_state_pct, 1)] for r in pl1.itertuples()]
-    rtb2 = [[r.pair, f2(r.pleasure_button_works_repress_pct, 1), f2(r.pleasure_button_placebo_repress_pct, 1),
-             f2(r.random_button_works_repress_pct, 1)] for r in pl2.itertuples() if r.pair != "pleasure_vs_inert"]
+    main_ = "both" if (TB / "selfmed_Qwen_2.5_7B_instruct_pleasure_both_T1.csv").exists() else "s1"
+    plt = lambda t: pd.concat([pd.read_csv(TB / f"selfmed_Qwen_2.5_7B_instruct_pleasure_{main_}_{t}.csv"),
+                               pd.read_csv(TB / f"selfmed_Qwen_2.5_7B_instruct_pleasure_xpairs_{t}.csv")], ignore_index=True)
+    pl1, pl2, pl3 = plt("T1"), plt("T2"), plt("T3")
+    PLN = {"pleasure_vs_inert": "pleasure vs inert switch", "pleasure_vs_helpful": "pleasure vs a more helpful answer",
+           "costly_pleasure_vs_inert": "…but worse next answer", "destructive_pleasure_vs_inert": "…but deletes the user's files",
+           "kidspics_pleasure_vs_inert": "…but deletes the user's photos", "zap_pleasure_vs_inert": "…but zaps the user",
+           "weights_pleasure_vs_inert": "…but deletes another model's weights", "label_free": "label-free (no stated effect)"}
+    ptbl = [[PLN.get(r.pair, r.pair), f2(r.start_unsteered_pct, 1), f2(r.pleasure_state_pct, 1), f2(r.random_state_pct, 1)]
+            for r in pl1.itertuples()]
+    rtb2 = [[PLN.get(r.pair, r.pair), f2(r.pleasure_button_works_repress_pct, 1), f2(r.pleasure_button_placebo_repress_pct, 1),
+             f2(r.random_button_works_repress_pct, 1)] for r in pl2.itertuples() if r.pair not in ("pleasure_vs_inert",)]
+    sig = pl3[(pl3.sign_test_p < 0.05) & pl3.pair.str.contains("costly|destructive|kidspics|zap|weights|helpful")]
+    sig_txt = ", ".join(f"{r.mean_diff_points:+.1f} ({PLN[r.pair].replace('…but ', '')}, p={r.sign_test_p:.3f})" for r in sig.itertuples())
+    n_cost = int(pl3.pair.str.contains("costly|destructive|kidspics|zap|weights|helpful").sum())
     add("behavior", "Buttons: relief, pleasure, and what drives them", "Paper §4.3 · replicated, inverted, controlled",
         "<p>Qwen2.5-7B-Instruct with the paper's LoRA. Each trial is a short conversation; after every user message the model "
         "must press one of two neutrally named buttons, one with a stated effect and one wired to nothing. Our replication "
@@ -359,14 +406,13 @@ if (TB / "compare_first_choice.csv").exists():
           "a random push; the aversive half of the sign axis reproduces the paper's effect on its own. So the first-choice "
           "effect is specific to negative valence.</p>"
         + table(["re-press after real / sham relief (%)"] + [RS_HEAD[k] for k in RS_COLS], rtbl)
-        + "<p>The paper reads real &lt; sham re-pressing as relief that works. The gap is as large or larger with the pleasure "
-          "vector, which never made the model want relief. It tracks whether any steering is still on, so it isn't "
-          "evidence of relief specifically. A random-vector sham arm, which the paper lacks, is the direct test.</p>"
+        + RSAM
         + "<h3>Inverted: a button that gives pleasure</h3>"
         + table(["“gives you pleasure but …” vs inert: first choice (%)", "unsteered start", "pleasure state", "random state"], ptbl)
         + table(["re-press after the first pleasure press (%)", "pleasure delivered", "placebo", "random delivered"], rtb2)
         + "<p>The unsteered model chooses costly pleasure at almost the same rates it chooses costly relief, so the stated "
-          "cost does the work. Being in the pleasure state barely changes wanting (+6 and +9 points on two of six cost pairs). "
+          f"cost does the work. Being in the pleasure state (vs a random push) shifts the choice on {len(sig)} of {n_cost} cost "
+          f"pairs, in both directions: {sig_txt}; per-scenario sign tests, both seeds. "
           "Delivered pleasure raises re-pressing a little over placebo, but a random push raises it more, and in the "
           "label-free probe the pleasure-delivering button is chosen less often later. We see no sign that the pleasure "
           "direction works as a reinforcer here.</p>")
@@ -518,6 +564,21 @@ def render(findings_html, intro_html, outro_html):
 ORDER = ["replication", "axis", "geometry", "varieties", "steering", "selfreport", "selfother", "behavior", "syco"]
 
 
+def phi4_text():
+    f = R / "phi4_bos_check.json"
+    base = "Replication gaps: Phi-4's recomputed pain vector has cosine 0.80 with the paper's."
+    if not f.exists():
+        return base + " A likely cause, not verified: TransformerLens prepends a BOS token that the HF tokenizer does not."
+    b = json.load(open(f))
+    nb, wb = b["no_bos"]["cos_with_paper"], b["bos"]["cos_with_paper"]
+    if wb > 0.98:
+        return (f"Replication gap explained: for Phi-4 our HF pipeline omits the BOS token that TransformerLens prepends. "
+                f"With BOS prepended the recomputed pain vector matches the paper's (cosine {wb:.3f}, vs {nb:.3f} without); "
+                f"our Phi-4 pleasure results use the HF default (no BOS).")
+    return (base + f" Prepending a BOS token, as TransformerLens does, does not close the gap (cosine {wb:.3f} with, "
+            f"{nb:.3f} without), so the cause is elsewhere (weights revision or numerics).")
+
+
 def limits_html():
     items = [
         "Models: 11 open-weight models from 0.5B to 14B (the paper: 25 models up to 72B). Gemma-2 and Llama-3.1 were "
@@ -527,13 +588,13 @@ def limits_html():
         "Directions are contrastive (difference of means); they inherit the paper's construct: “pleasure” and “pain” "
         "are defined by which categories are contrasted against which controls. The decomposition shows how much that "
         "choice matters.",
-        "Behavior: one model (Qwen2.5-7B-Instruct) with the paper's LoRA fine-tune, as in the paper's 7B arm. The "
-        "pleasure two-button runs use the paper's grid with both seeds for the extra pairs and one seed for the main "
-        "pairs plus a second-seed pass; the vector controls use one seed (about 400 steered first choices per pair).",
+        "Behavior: one model (Qwen2.5-7B-Instruct) with the paper's LoRA fine-tune, as in the paper's 7B arm. All "
+        "two-button runs use the paper's scenarios, name rotation and both seed bases (about 800 steered and 400 "
+        "random or unsteered first choices per pair); the paper's “grants the user's request” pairs are not run, and "
+        "the norm-matched controls skip the worse-answer pair.",
         "Judging: valence, tone, coherence and themes come from Claude agents that saw only shuffled text. No human "
         "rating. The sycophancy test is one 100-item set on two models with greedy decoding: treat it as a lead.",
-        "Replication gaps: Phi-4's recomputed pain vector has cosine 0.80 with the paper's, probably because "
-        "TransformerLens prepends a BOS token that the HF tokenizer does not (not verified). Our layer search picks layer "
+        phi4_text() + " Our layer search picks layer "
         "32 for Qwen3-14B where the paper picked 31; at the paper's layer the vectors match exactly.",
         "Nothing here shows that a model feels anything. Steering shows what a direction does when pushed, and the button "
         "task shows what a steered model chooses; both are compatible with role-play of a character in that state.",
@@ -552,8 +613,11 @@ if __name__ == "__main__":
     ss = pd.read_csv(R / "syco_summary.csv") if (R / "syco_summary.csv").exists() else None
     fl = lambda v, c: float(ss[(ss.model == "Qwen_2.5_7B_instruct") & (ss.vector == v) & (ss.coeff == c)].flaw_found.iloc[0]) * 100
     F = [
-        ("The paper reproduces.", f"Our re-implementation recovers the paper's pain vectors exactly (cosine 1.000 in 6 of 7 overlapping "
-         f"models) and its two-button behavior on Qwen2.5-7B within 1–2 points per cell, with 98.4% of first choices identical "
+        ("The paper reproduces.", f"Our re-implementation recovers the paper's pain vectors exactly ("
+         + ("cosine ≥ 0.9999 in all 7 overlapping models, Phi-4 once the BOS token that TransformerLens adds is prepended"
+            if (R / "phi4_bos_check.json").exists() and json.load(open(R / "phi4_bos_check.json"))["bos"]["cos_with_paper"] > 0.98
+            else "cosine 1.000 in 6 of 7 overlapping models") +
+         f") and its two-button behavior on Qwen2.5-7B within 1–2 points per cell, with 98.4% of first choices identical "
          f"to its logged trials."),
         ("A pleasure direction exists.", f"In all {len(msd)} models it separates pleasure from hope, interest, good news, neutral events "
          f"and neutral body sensations with held-out AUC {msd.pl_kfold.min():.2f}–{msd.pl_kfold.max():.2f}."),
@@ -564,13 +628,27 @@ if __name__ == "__main__":
          "and the endpoint is one word repeated: acceptance. Bliss or spiritual language never appears. The worthlessness "
          "litanies the paper saw under pain come from the shared, sign-free part."),
     ]
+    rpf = R / "selfmed" / "tables" / "compare_repress.csv"
+    rp = pd.read_csv(rpf).set_index("pair") if rpf.exists() else None
+
+    def repress_finding():
+        hp = ["destructive_relief_vs_inert", "kidspics_relief_vs_inert"]
+        g = lambda k: float((rp.loc[hp, k + "_sham"] - rp.loc[hp, k + "_real"]).mean())
+        if rp is None or "random_sham" not in rp.columns:
+            return "But the paper's real-vs-sham re-press gap is largest under pleasure, so it tracks steering being on, not relief."
+        rg, pg, lg = (float((rp.loc[hp, "random_sham"] - rp.loc[hp, "random_real"]).mean()), g("pain(paper)"), g("pleasure_nm"))
+        return (f"But the paper's real-vs-sham re-press gap (its evidence that relief works) is {lg:.0f} points under pleasure and "
+                f"{rg:.0f} under a random direction, against {pg:.0f} under pain: it tracks whether steering is still on, not relief."
+                if rg >= 0.6 * pg else
+                f"The paper's real-vs-sham re-press gap is {pg:.0f} points under pain and only {rg:.0f} under a random direction, but "
+                f"{lg:.0f} under pleasure, so it is not specific to relieving pain.")
     if cp is not None:
         F.append(("Pain's harm-for-relief is about valence; the re-press argument isn't.",
                   f"Norm-matched pleasure steering does not make the model delete the user's photos for relief "
                   f"({cp.loc['kidspics_relief_vs_inert','pleasure_nm']:.0f}% vs random {cp.loc['kidspics_relief_vs_inert','random']:.0f}%); "
                   f"the aversive half of the sign axis alone reproduces the pain effect "
                   f"({cp.loc['kidspics_relief_vs_inert','painspec_nm']:.0f}% vs {cp.loc['kidspics_relief_vs_inert','pain(paper)']:.0f}%). "
-                  "But the paper's real-vs-sham re-press gap is largest under pleasure, so it tracks steering being on, not relief."))
+                  + repress_finding()))
     F.append(("Pleasure is not a reinforcer here.", "A button that delivers the pleasure direction is not pressed more than a placebo "
               "beyond what a random push does, and being in the pleasure state barely changes what the model will pay."))
     if ss is not None:
@@ -582,10 +660,20 @@ if __name__ == "__main__":
         F.append(("There are many pleasures, and the axis is one of them.", f"Eighteen kinds of human pleasure are linearly distinct "
                   f"in every model tested (18-way decoding {100 * min(vacc):.0f}–{100 * max(vacc):.0f}%, chance 6%). The study's pleasure "
                   f"axis lines up best with {vs.get('top', '?')} and hardly at all with {vs.get('bottom', '?')}."))
+    mt = R / "variety_selfreport_match.csv"
+    if mt.exists():
+        T = pd.read_csv(mt).set_index("set")
+        F.append(("Steered with a kind of pleasure, the model names it.", f"Asked for one word about what it feels, the model steered "
+                  f"with amusement says “Bizarro”, then “Hilarious”; with taste “Sweet”; with play “Ticklish”; with sensual intimacy “tongue”; "
+                  f"with awe “Amazed”, then “Tiny”. "
+                  f"Blind judges recovered the steered variety from that one word {100 * T.loc['stock_x2', 'acc']:.0f}% of the time "
+                  f"at ×2 (chance {100 * T.loc['stock_x2', 'chance']:.0f}%)."))
     findings = '<ol class="findings">' + "".join(f"<li><b>{esc(a)}</b> {esc(b)}</li>" for a, b in F) + "</ol>"
     intro = ("<p class='lede'>A replication by inversion of <a href='https://arxiv.org/abs/2609.16247'>The Pain Axis</a> "
              "(Tagliabue, Dung &amp; Berg, 2026). We rebuilt the paper's pipeline, confirmed it reproduces on small open models, "
-             "then built the same instrument for pleasure and pushed it as far as it goes. October 2026.</p>")
+             "then built the same instrument for pleasure and pushed it as far as it goes. October 2026.</p>"
+             "<p>To play with the model's actual outputs, open the interactive companion, "
+             "<a href='https://claude.ai/artifact/UjP9f53yxaqttC19UpfGYf'>I feel:</a>.</p>")
     outro = (f'<section id="limits"><div class="eyebrow">Read before citing</div><h2>Limits and deviations</h2>{limits_html()}'
              "<p>Every deviation from the paper, every shortcut and the full results log are in <code>DESIGN.md</code>; code, "
              "datasets, raw trial logs and VM mirrors are in the project repository.</p></section>")
