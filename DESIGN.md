@@ -195,3 +195,6 @@ a GPU only for batched runs; pull results to results/ after each batch; disconne
   relief 0.08, awe 0.07, serenity 0.06, flow 0.03, excitement 0.03. => the pleasure axis (as the paper's recipe and
   our H1–H5 define it) is mostly relational warmth; excitement, flow, serenity and awe have their own directions,
   nearly orthogonal to it. Also: schadenfreude shares the pleasure axis as much as pride does.
+* 2026-10-11 NOT RUN (compute/judging budget): steering ladders at the pain layer for every model (stage 2b, a
+  layer-robustness check). Each ladder would need another ~2,000 blind judge labels to mean anything; the five
+  judged ladders at the norm-ratio layer stand alone. Two killed attempts left partial outputs on runtime 2; unused.

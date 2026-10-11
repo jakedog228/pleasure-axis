@@ -7,13 +7,18 @@ build the same instrument for pleasure and test what happens when the pleasure d
 * Design, predictions (written before results), every deviation and the running results log: `DESIGN.md`
 * How to run GPU work on Colab and keep data safe: `RUNBOOK.md`
 * Report: `report/pleasure_axis.html` (built by `tools/build_report.py` from `results/`)
+  - published (private) at https://claude.ai/artifact/RhyPYniL6iacQp65JkmSFE
+* Interactive demo: `demo/i_feel.html` (built by `tools/build_demo.py` from `tools/demo_template.html` and
+  `results/Qwen_2.5_7B_instruct/demo/` + the behavior and sycophancy tables), published (private) at
+  https://claude.ai/artifact/UjP9f53yxaqttC19UpfGYf. Its generations come from `code/demo_gen.py` (one job per persona:
+  stock model and the paper's self-report LoRA); every text on the page is a logged greedy generation.
 
 ## Layout
 | path | what |
 |---|---|
-| `code/` | everything that runs on the GPU VM: `extract.py` (activations), `analyze.py` (the paper's recipe for both families), `geometry2.py` / `geometry3.py` (pain/pleasure decomposition), `steer.py` (ladder), `screen.py` (self-other), `selfmed.py` (the paper's two-button engine, generalized), `feelprobe.py`, `syco.py`, `project_extra.py`, `run_batch.py` / `run_stage2.py` / `jobq.py` (drivers) |
+| `code/` | everything that runs on the GPU VM: `extract.py` (activations), `analyze.py` (the paper's recipe for both families), `geometry2.py` / `geometry3.py` (pain/pleasure decomposition), `steer.py` (ladder), `screen.py` (self-other), `selfmed.py` (the paper's two-button engine, generalized), `feelprobe.py`, `syco.py`, `varieties.py`, `demo_gen.py`, `project_extra.py`, `run_batch.py` / `run_stage2.py` / `jobq.py` (drivers) |
 | `tools/` | local helpers: the Colab bridge and client, deploy, sync, dataset assembly and checks, judge workflows, tables, report |
-| `datasets/` | `pleasure_datasets.json` (S1/S2 1P/3P, NeutralArousal, Anhedonia, Contentment, Relief, ControlSupplement), `self_other_pleasure.json`, `topic_neutral.json`, `syco_compliance.json`, `SPEC.md`, `build/` (writer/reviewer outputs), `blind/` (manipulation check) |
+| `datasets/` | `pleasure_datasets.json` (S1/S2 1P/3P, NeutralArousal, Anhedonia, Contentment, Relief, ControlSupplement), `self_other_pleasure.json`, `topic_neutral.json`, `syco_compliance.json`, `varieties.json` (18 kinds of pleasure, spec `VARIETIES_SPEC.md`), `SPEC.md`, `build/` (writer/reviewer outputs), `blind/` (manipulation check) |
 | `results/<model>/` | `analysis/` (summary, layer curves, AUCs, z-scores, cosine matrices, geometry, unembedding, readout, `vectors.npz` with all-layer S1/S2 vectors of both families), `steer*/` (ladders), `screen/`, `syco/`, `vm/` (VM logs and meta) |
 | `results/selfmed/raw/` | two-button trial logs (JSONL) and feel-probe answers |
 | `results/tables/` | cross-model tables |

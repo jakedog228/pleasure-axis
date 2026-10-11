@@ -57,7 +57,7 @@ def merge():
             if not base.exists():
                 continue
             for d in base.iterdir():
-                if d.is_dir() and (d.name.startswith("steer") or d.name in ("screen", "syco")):
+                if d.is_dir() and (d.name.startswith("steer") or d.name in ("screen", "syco", "demo")):
                     name = d.name + ("_rt1" if rt == "rt1" and d.name == "steer" and (M / "rt2" / m / "steer").exists() else "")
                     shutil.copytree(d, R / m / name, dirs_exist_ok=True)
             for f in ("log.txt", "analyze.out", "meta.json", "readout.jsonl"):

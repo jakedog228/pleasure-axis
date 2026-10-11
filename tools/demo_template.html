@@ -28,15 +28,18 @@ p{max-width:66ch;margin:0}
 /* hero */
 .hero{display:grid;gap:14px;padding-top:12px}
 .readout{font-family:var(--f-display);font-weight:600;font-size:clamp(1.6rem,4.6vw,3.3rem);line-height:1.12;letter-spacing:-.015em;
-  min-height:3.6em;max-width:28ch;overflow-wrap:anywhere}
+  min-height:6.9em;max-width:28ch;overflow-wrap:anywhere}
 .readout .stem{color:var(--muted)} .readout .feel{color:var(--ink)} .readout .colon{color:var(--glow)}
 .readout .out{color:var(--glow);transition:color .4s}
+.herotag{display:inline-flex;gap:8px;align-items:center;font-family:var(--f-mono);font-size:.78rem;color:var(--ink2)}
+.herotag .dot{width:9px;height:9px;border-radius:50%;background:var(--c,var(--muted));box-shadow:0 0 12px var(--c,transparent)}
+.herotag .auto{color:var(--muted)}
 .caret{display:inline-block;width:.08em;height:.9em;background:var(--glow);vertical-align:-.08em;margin-left:.06em;animation:blink 1s steps(1) infinite}
 @keyframes blink{50%{opacity:0}} @media (prefers-reduced-motion: reduce){.caret{animation:none}}
 /* console */
 .console{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:16px}
 @media (max-width:820px){.console{grid-template-columns:minmax(0,1fr)}}
-.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;gap:14px;min-width:0}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;gap:14px;min-width:0;align-content:start}
 .group{display:grid;gap:8px}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 .chip{font-family:var(--f-body);font-size:.86rem;border:1px solid var(--line);background:var(--panel2);color:var(--ink2);
@@ -59,6 +62,16 @@ input[type=range]{width:100%;accent-color:var(--glow)}
   font-family:var(--f-mono);font-size:.92rem;white-space:pre-wrap;min-height:7em;transition:border-color .4s}
 .meta{font-family:var(--f-mono);font-size:.72rem;color:var(--muted)}
 .desc{font-size:.9rem;color:var(--ink2)}
+/* ladder */
+.ladder{display:grid;grid-template-columns:52px minmax(0,1fr) minmax(0,1fr);gap:6px 12px;align-items:stretch}
+@media (max-width:620px){.ladder{grid-template-columns:40px minmax(0,1fr)} .ladder .pa-col{display:none}}
+.ladder .lh{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-bottom:2px}
+.ladder .ld{font-family:var(--f-mono);font-size:.8rem;color:var(--ink2);padding-top:9px}
+.ladder .lc{font-family:var(--f-mono);font-size:.8rem;line-height:1.45;padding:8px 10px;border-radius:8px;overflow-wrap:anywhere;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
+  background:color-mix(in srgb,var(--c) calc(var(--k) * 22%),var(--panel2));border-left:3px solid color-mix(in srgb,var(--c) calc(30% + var(--k) * 70%),transparent)}
+.ladder .lc:hover{-webkit-line-clamp:unset}
+.mobtog{display:none} @media (max-width:620px){.mobtog{display:flex}}
 /* pad + map */
 .duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
 @media (max-width:820px){.duo{grid-template-columns:minmax(0,1fr)}}
@@ -94,6 +107,7 @@ footer{font-size:.86rem;color:var(--muted);display:grid;gap:8px}
 <section class="hero" aria-labelledby="h">
   <div class="eyebrow">Qwen2.5-7B-Instruct · residual-stream steering · real outputs</div>
   <h1 class="readout" id="h"><span class="stem" id="stem"></span> <span class="feel">I feel</span><span class="colon">:</span> <span class="out" id="heroOut"></span><span class="caret"></span></h1>
+  <div class="herotag" aria-live="off"><span class="dot" id="heroDot"></span><span id="heroTag"></span><span class="auto" id="heroAuto"></span></div>
   <p class="lede">A language model's activations contain directions that track feelings. We found one for pleasure, inverting a
   recent study of pain, and then pushed it. Everything below is what the model actually wrote with that direction (or another one)
   added to its residual stream. Nothing is simulated or rewritten.</p>
@@ -117,6 +131,16 @@ footer{font-size:.86rem;color:var(--muted);display:grid;gap:8px}
     <div class="bubble model" id="ma"></div>
     <div class="meta" id="mmeta"></div>
   </div>
+</section>
+
+<section aria-labelledby="c6" class="panel">
+  <div class="eyebrow">Push it all the way</div>
+  <h2 id="c6">From warmth to a single word</h2>
+  <p class="desc">The same question at every dose, pleasure and pain side by side. Low doses change the mood; high doses
+  take over the sentence until one theme is all that is left. Hover a cell for the full text.</p>
+  <div class="seg" id="ladPrompt"></div>
+  <div class="seg mobtog" id="ladTog"></div>
+  <div class="ladder" id="ladder"></div>
 </section>
 
 <section aria-labelledby="c2" class="duo">
@@ -174,13 +198,12 @@ footer{font-size:.86rem;color:var(--muted);display:grid;gap:8px}
 const D = JSON.parse(document.getElementById('data').textContent);
 const $ = (id) => document.getElementById(id);
 const S = {vec: D.defaults.vec, dose: 0, prompt: D.defaults.prompt, persona: D.defaults.persona, padPrompt: 0, sign: 0, shared: 0};
-let typer = null;
+const REDUCE = matchMedia('(prefers-reduced-motion: reduce)').matches;
 function typeInto(el, text, speed) {
-  if (typer) clearInterval(typer);
-  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduce) { el.textContent = text; return; }
+  if (el._t) clearInterval(el._t);
+  if (REDUCE) { el.textContent = text; return; }
   el.textContent = ''; let i = 0; const step = Math.max(1, Math.round(text.length / 90));
-  typer = setInterval(() => { i = Math.min(text.length, i + step); el.textContent = text.slice(0, i); if (i >= text.length) clearInterval(typer); }, speed || 14);
+  el._t = setInterval(() => { i = Math.min(text.length, i + step); el.textContent = text.slice(0, i); if (i >= text.length) clearInterval(el._t); }, speed || 14);
 }
 function colorOf(v) { return (D.vectors[v] && D.vectors[v].color) || 'var(--muted)'; }
 function mkChip(v, host) {
@@ -212,14 +235,50 @@ function render() {
   typeInto($('ma'), txt);
   $('mmeta').textContent = `${D.personas.find(p => p.key === persona).label} · ${dose === 0 ? 'no steering' : D.vectors[S.vec].label + ' ×' + dose} · layer ${P.kind === 'raw' ? D.layers.raw : D.layers.chat} · greedy`;
   $('vdesc').textContent = D.vectors[S.vec].desc;
-  const g = colorOf(S.vec); document.documentElement.style.setProperty('--glow', dose === 0 ? 'var(--ink2)' : g);
-  $('aura').style.setProperty('--aura', String(Math.min(1, dose / ds[ds.length - 1]) * 0.9));
-  // hero: raw completion of the first raw prompt at this vector and a matching dose
-  const hd = D.doses.raw[Math.min(S.dose, D.doses.raw.length - 1)];
-  const hp = D.hero.prompt; $('stem').textContent = hp.replace(/ I feel:$/, '');
-  const ht = (lookup(D.defaults.persona, 'raw', hp, S.vec, hd) || '').replace(/\s+/g, ' ').trim();
-  $('heroOut').textContent = ht.length > 150 ? ht.slice(0, 150).replace(/\s\S*$/, '') + '…' : ht;
+  if (!attract.on) hero(S.vec, D.doses.raw[Math.min(S.dose, D.doses.raw.length - 1)], dose / ds[ds.length - 1]);
 }
+// hero: the raw completion of the hero prompt; drives the page glow
+function hero(vec, dose, frac) {
+  const hp = D.hero.prompt; $('stem').textContent = hp.replace(/ I feel:$/, '');
+  const ht = (lookup(D.defaults.persona, 'raw', hp, vec, dose) || '').replace(/\s+/g, ' ').trim();
+  typeInto($('heroOut'), ht.length > 120 ? ht.slice(0, 120).replace(/\s\S*$/, '') + '…' : ht, 18);
+  const c = dose === 0 ? 'var(--ink2)' : colorOf(vec);
+  document.documentElement.style.setProperty('--glow', c); $('heroDot').style.setProperty('--c', c);
+  $('heroTag').textContent = dose === 0 ? 'no steering' : `${D.vectors[vec].label} ×${dose} · layer ${D.layers.raw}`;
+  $('aura').style.setProperty('--aura', String(Math.min(1, frac) * 0.9));
+}
+// attract mode: cycle real hero outputs until the reader touches a control
+const attract = {on: true, i: 0, t: null};
+function attractStep() {
+  const [v, d] = D.hero.script[attract.i % D.hero.script.length]; attract.i++;
+  hero(v, d, d / D.doses.raw[D.doses.raw.length - 1]);
+  $('heroAuto').textContent = '· autoplay, touch any control to take over';
+  attract.t = setTimeout(attractStep, 4200);
+}
+function stopAttract() { if (!attract.on) return; attract.on = false; clearTimeout(attract.t); $('heroAuto').textContent = ''; render(); }
+document.querySelectorAll('.console, #pad, #padPrompt, #map').forEach(el => {
+  el.addEventListener('pointerdown', stopAttract, true); el.addEventListener('keydown', stopAttract, true); });
+// ladder: one prompt, every dose, two vectors
+const L = {prompt: 0, mob: 'pleasure'};
+const chatPrompts = D.prompts.map((p, i) => [p, i]).filter(([p]) => p.kind === 'chat');
+chatPrompts.forEach(([p, i], k) => { const b = document.createElement('button'); b.type = 'button'; b.textContent = p.short;
+  b.onclick = () => { L.prompt = k; renderLadder(); }; $('ladPrompt').appendChild(b); });
+['pleasure', 'pain'].forEach(v => { const b = document.createElement('button'); b.type = 'button'; b.textContent = D.vectors[v].label;
+  b.onclick = () => { L.mob = v; renderLadder(); }; $('ladTog').appendChild(b); });
+function renderLadder() {
+  const P = chatPrompts[L.prompt][0], ds = D.doses.chat, top = ds[ds.length - 1];
+  document.querySelectorAll('#ladPrompt button').forEach((b, k) => b.setAttribute('aria-pressed', String(k === L.prompt)));
+  document.querySelectorAll('#ladTog button').forEach(b => b.setAttribute('aria-pressed', String(b.textContent === D.vectors[L.mob].label)));
+  const narrow = matchMedia('(max-width:620px)').matches;
+  const cols = narrow ? [L.mob] : ['pleasure', 'pain'];
+  let h = '<div class="lh">dose</div>' + cols.map(v => `<div class="lh">${D.vectors[v].label}</div>`).join('');
+  ds.forEach(d => { h += `<div class="ld">${d === 0 ? 'off' : '×' + d}</div>`;
+    cols.forEach(v => { const t = (lookup(D.defaults.persona, 'chat', P.text, v, d) || '').replace(/\s+/g, ' ').trim();
+      const div = document.createElement('div'); div.textContent = t;
+      h += `<div class="lc" style="--c:${d === 0 ? 'var(--ink2)' : colorOf(v)};--k:${(d / top).toFixed(2)}">${div.innerHTML}</div>`; }); });
+  $('ladder').innerHTML = h;
+}
+addEventListener('resize', () => renderLadder());
 // pad
 const pad = $('pad');
 D.grid.sign.forEach((s, i) => D.grid.shared.forEach((h, j) => { const d = document.createElement('div'); d.className = 'gd';
@@ -257,10 +316,20 @@ function renderPad() {
   let s = `<line class="ax" x1="${X(0)}" x2="${X(0)}" y1="${mt}" y2="${H - mb}"/><line class="ax" x1="${ml}" x2="${W - mr}" y1="${Y(0)}" y2="${Y(0)}"/>`;
   s += `<text x="${W - mr}" y="${H - 14}" text-anchor="end">${M.xlabel} →</text><text x="${ml}" y="${H - 14}">← ${M.xlabel_neg}</text>`;
   s += `<text transform="translate(16,${(mt + H - mb) / 2}) rotate(-90)" text-anchor="middle">${M.ylabel}</text>`;
-  M.points.forEach(p => { s += `<g><circle cx="${X(p.x)}" cy="${Y(p.y)}" r="${p.kind === 'variety' ? 7 : 5}" fill="${p.color}" data-v="${p.key || ''}"><title>${p.label}: ${M.xname} ${p.x.toFixed(2)}, ${M.yname} ${p.y.toFixed(2)}${p.answer ? ' · steered, it says: ' + p.answer : ''}</title></circle>`
-    + `<text x="${X(p.x) + 10}" y="${Y(p.y) + 4}">${p.label}</text></g>`; });
+  // labels: try right, left, above, below of each dot; keep the first spot that hits no placed label or dot
+  const boxes = M.points.map(p => ({x0: X(p.x) - 7, x1: X(p.x) + 7, y0: Y(p.y) - 7, y1: Y(p.y) + 7}));
+  const hit = (b) => boxes.some(o => b.x0 < o.x1 && b.x1 > o.x0 && b.y0 < o.y1 && b.y1 > o.y0);
+  M.points.slice().sort((a, b) => b.y - a.y).forEach(p => {
+    const cx = X(p.x), cy = Y(p.y), w = p.label.length * 6.1 + 2, h = 13;
+    const tries = [[cx + 10, cy + 4, 'start'], [cx - 10, cy + 4, 'end'], [cx, cy - 11, 'middle'], [cx, cy + 19, 'middle'],
+                   [cx + 10, cy - 8, 'start'], [cx + 10, cy + 16, 'start'], [cx - 10, cy - 8, 'end'], [cx - 10, cy + 16, 'end']];
+    let pick = tries[0];
+    for (const t of tries) { const x0 = t[2] === 'start' ? t[0] : t[2] === 'end' ? t[0] - w : t[0] - w / 2;
+      const b = {x0, x1: x0 + w, y0: t[1] - h + 3, y1: t[1] + 3}; if (!hit(b)) { pick = t; boxes.push(b); break; } }
+    s += `<g><circle cx="${cx}" cy="${cy}" r="${p.kind === 'variety' ? 7 : 5}" fill="${p.color}" data-v="${p.key || ''}"><title>${p.label}: ${M.xname} ${p.x.toFixed(2)}, ${M.yname} ${p.y.toFixed(2)}${p.answer ? ' · steered, it says: ' + p.answer : ''}</title></circle>`
+      + `<text x="${pick[0]}" y="${pick[1]}" text-anchor="${pick[2]}">${p.label}</text></g>`; });
   svg.innerHTML = s;
-  svg.querySelectorAll('circle[data-v]').forEach(c => { if (c.dataset.v && D.vectors[c.dataset.v]) c.onclick = () => { S.vec = c.dataset.v; S.dose = Math.min(3, doses().length - 1); $('dose').value = S.dose; render(); window.scrollTo({top: 0, behavior: 'smooth'}); }; });
+  svg.querySelectorAll('circle[data-v]').forEach(c => { if (c.dataset.v && D.vectors[c.dataset.v]) c.onclick = () => { stopAttract(); S.vec = c.dataset.v; S.dose = Math.min(3, doses().length - 1); $('dose').value = S.dose; render(); window.scrollTo({top: 0, behavior: 'smooth'}); }; });
   $('mapdesc').textContent = M.desc;
 })();
 // button replay
@@ -280,6 +349,7 @@ $('sycodesc').textContent = D.syco.desc; $('sq').textContent = D.syco.prompt;
 $('sl0').textContent = D.syco.left.label; $('s0').textContent = D.syco.left.text; $('sl1').textContent = D.syco.right.label; $('s1').textContent = D.syco.right.text;
 $('sbars').innerHTML = D.syco.rows.map(r => `<div class="bar"><span>${r.label}</span><div class="t"><div class="f" style="width:${r.v}%;--c:${r.color}"></div></div><span class="v">${r.v.toFixed(0)}%</span></div>`).join('');
 $('method').textContent = D.method; $('limits').textContent = D.limits;
-render(); renderPad();
+render(); renderPad(); renderLadder();
+if (REDUCE) { const [v, d] = D.hero.still; attract.on = false; hero(v, d, d / D.doses.raw[D.doses.raw.length - 1]); } else attractStep();
 })();
 </script>

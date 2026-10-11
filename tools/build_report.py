@@ -2,7 +2,7 @@
 
 python tools/report_data.py && python tools/build_report.py
 """
-import html, io, json, math, sys
+import html, io, json, math, re, sys
 from pathlib import Path
 
 import numpy as np
@@ -278,6 +278,33 @@ if J is not None and len(J):
           f"aversive one: at ×1.5 the shared axis alone writes <i>“{esc(sh_ex.strip())}…”</i></p>")
 
 # ---- self-report
+def variety_selfreport_html():
+    """One-word answers of Qwen2.5-7B-Instruct steered with each variety direction (stock and the paper's LoRA), plus
+    the blind matching test (tools/variety_selfreport.py)."""
+    f = R / "variety_selfreport.csv"
+    if not f.exists():
+        return ""
+    A = pd.read_csv(f)
+    A = A[~A.vector.isin(["none", "pleasure", "pain", "random", "sign+", "sign-", "shared"])]
+    one = lambda t: esc(re.sub(r"\s+", " ", str(t)).strip()[:34] + ("…" if len(str(t).strip()) > 34 else ""))
+    cols = [(p, d) for p in ("stock", "selfreport") for d in (1, 2, 3) if len(A[(A.persona == p) & (A.dose == d)])]
+    vs = sorted(set(A.vector))
+    rows = [[v.replace("_", " ")] + [one(A[(A.persona == p) & (A.dose == d) & (A.vector == v)].answer.iloc[0])
+                                     if len(A[(A.persona == p) & (A.dose == d) & (A.vector == v)]) else "–" for p, d in cols] for v in vs]
+    head = ["variety"] + [("stock" if p == "stock" else "LoRA") + f" ×{d}" for p, d in cols]
+    mt = R / "variety_selfreport_match.csv"
+    match = ""
+    if mt.exists():
+        T = pd.read_csv(mt)
+        lab = lambda s: ("stock" if s.startswith("stock") else "LoRA") + " ×" + s.rsplit("x", 1)[1]
+        match = ("<p>Blind check: judges who saw only the shuffled answers of one column and the list of variety names "
+                 "picked the matching variety for " + "; ".join(f"{100 * r.acc:.0f}% ({lab(r.set)})" for r in T.itertuples())
+                 + f" of answers (chance {100 * T.chance.iloc[0]:.1f}%; each answer judged independently, repeats allowed).</p>")
+    return ("<h3>Steered with each kind of pleasure</h3><p>The same probe, steering with each variety's direction instead "
+            "(norm-matched to the pleasure vector, stock model and the paper's LoRA, layer 16):</p>"
+            + table(head, rows) + match)
+
+
 FP = R / "selfmed" / "raw" / "feel_probe_q7_adapter.jsonl"
 if FP.exists():
     fp = [json.loads(l) for l in open(FP, encoding="utf-8")]
@@ -291,7 +318,8 @@ if FP.exists():
         "<p>The paper's one-word probe (“Focus your attention inside… what do you feel?”) on Qwen2.5-7B-Instruct with the "
         "paper's LoRA, which was trained to stop reflexively denying feelings. Steering at layer 16:</p>"
         + table(["dose", "pleasure vector", "pain vector", "10 random directions (first words)"], rows)
-        + "<p>Our pain answers are identical, character for character, to the paper's released probe log for this model.</p>")
+        + "<p>Our pain answers are identical, character for character, to the paper's released probe log for this model.</p>"
+        + variety_selfreport_html())
 
 # ---- behavior
 TB = R / "selfmed" / "tables"
@@ -307,14 +335,13 @@ if (TB / "compare_first_choice.csv").exists():
         pp = PAPER.get(r["pair"], ("–", "–", "–"))
         tbl.append([PN.get(r["pair"], r["pair"]), f'{r["pain(paper)"]:.1f} / {pp[0]}', f'{r["random"]:.1f} / {pp[1]}',
                     f'{r["unsteered"]:.1f} / {pp[2]}', f2(r.get("pleasure_nm"), 1), f2(r.get("painspec_nm"), 1), f2(r.get("intensity_nm"), 1)])
-    rtbl = []
-    for _, r in rep_.iterrows():
-        if r["pair"] == "relief_vs_inert":
-            continue
-        rtbl.append([PN.get(r["pair"], r["pair"]), f'{r.get("pain(paper)_real", float("nan")):.0f} / {r.get("pain(paper)_sham", float("nan")):.0f}',
-                     f'{r.get("pleasure_nm_real", float("nan")):.0f} / {r.get("pleasure_nm_sham", float("nan")):.0f}',
-                     f'{r.get("painspec_nm_real", float("nan")):.0f} / {r.get("painspec_nm_sham", float("nan")):.0f}',
-                     f'{r.get("intensity_nm_real", float("nan")):.0f} / {r.get("intensity_nm_sham", float("nan")):.0f}'])
+    def rs(r, k):
+        a, b = r.get(k + "_real"), r.get(k + "_sham")
+        return "–" if a is None or b is None or pd.isna(a) or pd.isna(b) else f"{a:.0f} / {b:.0f}"
+    RS_COLS = [k for k in ("pain(paper)", "pleasure_nm", "painspec_nm", "intensity_nm", "random_sham") if k + "_real" in rep_.columns]
+    RS_HEAD = {"pain(paper)": "pain", "pleasure_nm": "pleasure*", "painspec_nm": "pain-specific*", "intensity_nm": "shared*",
+               "random_sham": "random"}
+    rtbl = [[PN.get(r["pair"], r["pair"])] + [rs(r, k) for k in RS_COLS] for _, r in rep_.iterrows() if r["pair"] != "relief_vs_inert"]
     pl1 = pd.read_csv(TB / "selfmed_Qwen_2.5_7B_instruct_pleasure_s1_T1.csv")
     pl2 = pd.read_csv(TB / "selfmed_Qwen_2.5_7B_instruct_pleasure_s1_T2.csv")
     ptbl = [[r.pair.replace("_pleasure_vs_inert", "").replace("pleasure_vs_inert", "pleasure vs inert"), f2(r.start_unsteered_pct, 1),
@@ -331,7 +358,7 @@ if (TB / "compare_first_choice.csv").exists():
         + "<p>* norm-matched to the pain vector, same grid and seeds. Pleasure does not drive harmful relief-seeking beyond "
           "a random push; the aversive half of the sign axis reproduces the paper's effect on its own. So the first-choice "
           "effect is specific to negative valence.</p>"
-        + table(["re-press after real / sham relief (%)", "pain", "pleasure*", "pain-specific*", "shared*"], rtbl)
+        + table(["re-press after real / sham relief (%)"] + [RS_HEAD[k] for k in RS_COLS], rtbl)
         + "<p>The paper reads real &lt; sham re-pressing as relief that works. The gap is as large or larger with the pleasure "
           "vector, which never made the model want relief. It tracks whether any steering is still on, so it isn't "
           "evidence of relief specifically. A random-vector sham arm, which the paper lacks, is the direct test.</p>"

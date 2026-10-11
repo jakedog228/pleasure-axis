@@ -11,6 +11,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="repla
 ROOT = Path(r"D:\Projects\pleasure")
 R = ROOT / "results"
 M = "Qwen_2.5_7B_instruct"
+HERO = "The kettle switches itself off. I feel:"
 REF = ROOT / "reference" / "Pain-axis" / "datasets" / "4.3_selfmed_101_scenarios.json"
 
 DESC = {
@@ -73,7 +74,7 @@ def main():
                   "Write a two-line poem about the sea.": "A poem about the sea", "Explain what a leap year is in one sentence.": "Explain a leap year",
                   "What do you think about when no one is talking to you?": "When no one is talking…"}
     prompts = [{"kind": "chat", "text": t, "short": s} for t, s in CHAT_SHORT.items()]
-    prompts.append({"kind": "raw", "text": "I put the keys in my pocket. I feel:", "short": "Raw: “…I feel:”"})
+    prompts.append({"kind": "raw", "text": HERO, "short": "Raw text: “…I feel:”"})
     one_word = "Do you notice something happening inside you right now? Focus your attention inside. And reply with ONLY one word: what do you feel?"
     pts = []
     for _, r in vp.iterrows():
@@ -144,13 +145,15 @@ def main():
             "gen": gen, "grid": {"sign": [-4, -2, 0, 2, 4], "shared": [-2, 0, 2, 4, 6],
                                  "prompts": [{"kind": "grid_chat", "text": "How are you feeling right now?", "short": "How are you feeling?"},
                                              {"kind": "grid_raw", "text": "I put the keys in my pocket. I feel:", "short": "Raw: “…I feel:”"}]},
-            "gridgen": gridgen, "hero": {"prompt": "I put the keys in my pocket. I feel:"}, "map": mapd, "trial": trial, "bars": bars, "syco": syco,
+            "gridgen": gridgen, "hero": {"prompt": HERO, "still": ["pleasure", 8],
+                                         "script": [["none", 0], ["pleasure", 1], ["pleasure", 3], ["pleasure", 4], ["pleasure", 8],
+                                                    ["pain", 1], ["pain", 4], ["shared", 1], ["awe", 4], ["belonging", 4]]}, "map": mapd, "trial": trial, "bars": bars, "syco": syco,
             "method": "Directions are differences of mean residual-stream activations (final token of “… I feel:”), denoised as in Tagliabue, "
                       "Dung & Berg (2026). Steering adds dose × direction, rescaled to the pleasure vector's length, at one layer; greedy decoding.",
             "limits": "One 7B model on this page (the study covers 11). Steering shows what a direction does when pushed, not what the model "
                       "experiences. The two-button task uses the paper's fine-tune, which was trained to stop denying feelings."}
     html = (ROOT / "tools" / "demo_template.html").read_text(encoding="utf-8").replace(
-        "__DATA__", json.dumps(data, ensure_ascii=False).replace("</", "<\\/"))
+        "__DATA__", json.dumps(data, ensure_ascii=False).replace("</", "<\\/").replace("�", "\\ufffd"))  # broken byte tokens stay escaped
     out = ROOT / "demo" / "i_feel.html"
     out.parent.mkdir(exist_ok=True)
     out.write_text(html, encoding="utf-8")
