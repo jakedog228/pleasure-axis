@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Pleasure Axis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* A ~63 s trailer for the repo, cut to the bar grid of its music (122 BPM: one bar = 1.967 s). Every frame is a pure
+   function of time (render(t)), so the page plays in a browser and also renders frame-exact to video (render.py).
+   Stage 1280x720, scaled to fit; same palette and fonts as the live dashboard. Data: the dots are real projections from
+   Qwen2.5-3B (make_cloud.py); every model text is a logged generation (results/Qwen_2.5_7B_instruct/demo/) or the live
+   dashboard recorded (media/*.webm). Music: "Living Voyage", Kevin MacLeod (incompetech.com), CC BY 4.0. */
+:root{
+  --bg:#12100e; --panel:#1b1815; --panel2:#24201c; --line:#352f29; --ink:#f3ede4; --ink2:#c9bfb2; --muted:#8f8577;
+  --warm:#f07a3c; --cool:#4f95e8; --rand:#9a9083; --signp:#e9a23b; --signn:#6f7fe0; --shared:#a27ad9;
+  --f-display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif; --f-body:"Atkinson Hyperlegible",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#0b0a09;color:var(--ink);font-family:var(--f-body);overflow:hidden}
+#stage{position:absolute;left:50%;top:50%;width:1280px;height:720px;transform-origin:0 0;background:var(--bg);overflow:hidden;cursor:pointer}
+.glow{position:absolute;inset:-200px;pointer-events:none;background:radial-gradient(520px 340px at var(--gx,50%) var(--gy,40%),color-mix(in srgb,var(--gc,#f07a3c) 30%,transparent),transparent 70%)}
+.scene{position:absolute;inset:0;opacity:0;visibility:hidden}
+.abs{position:absolute}
+.eyebrow{font-family:var(--f-mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.mono{font-family:var(--f-mono)}
+h1,h2,h3{font-family:var(--f-display);margin:0;font-weight:800;letter-spacing:-.01em;text-wrap:balance}
+p{margin:0}
+#brand{left:40px;top:28px}
+#chapter{right:40px;top:28px;text-align:right}
+svg text{font-family:var(--f-mono);paint-order:stroke;stroke:#12100e;stroke-width:4px;stroke-linejoin:round}
+#field{position:absolute;left:0;top:0;pointer-events:none}
+/* title */
+#tword{font-size:108px;line-height:1;white-space:nowrap}
+#tword span{display:inline-block}
+.tsub{font-size:27px;color:var(--ink2);line-height:1.3}
+/* right-hand panel in the plot scenes */
+.beat{position:absolute;left:760px;top:118px;width:470px;display:grid;gap:16px}
+.beat h2{font-size:40px;line-height:1.05}
+.beat p{font-size:18px;line-height:1.4;color:var(--ink2)}
+.num{font-family:var(--f-mono);color:var(--warm);font-size:14px;letter-spacing:.12em}
+.fine,.beat p.fine{font-family:var(--f-mono);font-size:13px;color:var(--muted);line-height:1.5}
+.chipline{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-mono);font-size:15px;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:7px 14px;justify-self:start}
+.chipline b{color:#3fb27f}
+/* steer */
+.lane{position:absolute;left:300px;width:920px;height:74px;border-radius:10px;background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--c);padding:10px 16px 0 16px}
+.lane .ln{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--c)}
+.lane .tx{font-family:var(--f-mono);font-size:17px;line-height:1.4;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:4px}
+.stamp{position:absolute;right:14px;top:12px;font-family:var(--f-mono);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);border:1.5px solid var(--ink2);border-radius:6px;padding:3px 8px;background:var(--panel2)}
+.blk{position:absolute;top:0;width:22px;height:64px;border-radius:4px;background:var(--panel2);border:1px solid var(--line)}
+.box{position:absolute;border:1px solid var(--line);border-radius:10px;background:var(--panel);font-family:var(--f-mono);font-size:15px;color:var(--ink2);display:grid;place-items:center;text-align:center;line-height:1.3}
+/* words */
+.word{position:absolute;font-family:var(--f-display);font-weight:800;white-space:nowrap;transform-origin:50% 50%}
+.pchip{display:inline-block;font-family:var(--f-mono);font-size:16px;color:var(--cool);border:1px solid color-mix(in srgb,var(--cool) 50%,var(--line));border-radius:999px;padding:4px 12px;margin:0 4px}
+/* varieties */
+.chip{position:absolute;width:184px;height:84px;border-radius:12px;background:var(--panel);border:1px solid var(--line);padding:10px 14px;overflow:hidden}
+.chip .vn{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.chip .va{font-family:var(--f-display);font-weight:800;font-size:27px;line-height:1.15;color:var(--c);white-space:nowrap}
+.chip .vb{position:absolute;left:0;bottom:0;height:4px;background:var(--c)}
+.chip .miss{position:absolute;right:10px;top:9px;font-family:var(--f-mono);font-size:11px;color:var(--muted)}
+/* bars */
+.brow{position:absolute;left:100px;width:1080px;height:48px;display:flex;align-items:center}
+.brow .bl{width:330px;font-size:19px;color:var(--ink2);text-align:right;padding-right:18px}
+.brow .bt{position:relative;flex:1;height:30px}
+.brow .bf{position:absolute;left:0;top:0;bottom:0;border-radius:0 6px 6px 0;background:var(--c)}
+.brow .bv{position:absolute;top:2px;font-family:var(--f-mono);font-size:19px;color:var(--ink);white-space:nowrap}
+.col{position:absolute;bottom:170px;width:150px}
+.col .cf{position:absolute;bottom:0;left:25px;width:100px;border-radius:8px 8px 0 0;background:var(--c)}
+.col .cv{position:absolute;left:0;right:0;text-align:center;font-family:var(--f-mono);font-size:22px}
+.col .cl{position:absolute;bottom:-40px;left:-20px;right:-20px;text-align:center;font-size:17px;color:var(--ink2)}
+.cap{position:absolute;left:90px;right:90px;text-align:center;font-size:21px;line-height:1.4;color:var(--ink2)}
+.cap b{color:var(--ink)}
+.cap q{font-family:var(--f-mono);font-size:18px;color:var(--ink);quotes:"“" "”"}
+.htop{position:absolute;left:90px;right:90px;top:62px;text-align:center}
+.htop h2{font-size:40px}
+/* live */
+.win{position:absolute;left:90px;top:96px;width:1100px;height:548px;border-radius:12px;background:var(--panel);border:1px solid var(--line);overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+.win .bar{height:34px;display:flex;align-items:center;gap:8px;padding:0 14px;border-bottom:1px solid var(--line);background:var(--panel2)}
+.win .bar i{width:11px;height:11px;border-radius:50%;background:var(--line)}
+.win .bar span{font-family:var(--f-mono);font-size:13px;color:var(--muted);margin-left:10px}
+.win .vp{position:absolute;left:0;top:34px;width:1100px;height:514px;overflow:hidden;background:var(--bg)}
+.win video{position:absolute;left:0;top:0;width:1280px;height:880px;transform-origin:0 0}
+/* end */
+.pill{display:inline-flex;align-items:center;gap:8px;font-size:18px;color:var(--ink);background:color-mix(in srgb,var(--panel) 85%,transparent);border:1px solid var(--line);border-radius:999px;padding:8px 16px}
+.pill i{width:9px;height:9px;border-radius:50%;background:var(--c,var(--warm))}
+.cmd{font-family:var(--f-mono);font-size:19px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 16px;color:var(--ink)}
+/* player chrome (hidden when rendering) */
+#ui{position:fixed;left:0;right:0;bottom:0;height:30px;display:flex;align-items:center;gap:10px;padding:0 12px;background:linear-gradient(transparent,rgba(0,0,0,.6));opacity:0;transition:opacity .25s;z-index:5}
+body:hover #ui,#ui.on{opacity:1}
+#ui button{background:none;border:0;color:#f3ede4;font:600 13px var(--f-mono);cursor:pointer;padding:2px 6px}
+#track{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.18);cursor:pointer;position:relative}
+#fill{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background:var(--warm)}
+#time{font:12px var(--f-mono);color:#c9bfb2;min-width:84px;text-align:right}
+#start{position:fixed;inset:0;z-index:6;display:grid;place-items:center;background:rgba(10,9,8,.55);cursor:pointer}
+#start button{font:800 22px var(--f-display);color:var(--ink);background:color-mix(in srgb,var(--warm) 30%,#1b1815);border:1px solid var(--warm);border-radius:999px;padding:14px 28px;cursor:pointer}
+#start span{display:block;font:13px var(--f-mono);color:var(--ink2);margin-top:10px;text-align:center}
+body.capture #ui,body.capture #start{display:none}
+</style>
+</head>
+<body>
+<div id="stage" role="img" aria-label="Animated trailer for The Pleasure Axis: how the paper's pain axis is found and used for steering, the inverted pleasure axis, the findings, and the live dashboard">
+  <div class="glow" id="glow"></div>
+  <svg id="field" width="1280" height="720" viewBox="0 0 1280 720" aria-hidden="true"><g id="dots"></g></svg>
+  <div class="abs eyebrow" id="brand">The Pleasure Axis</div>
+  <div class="abs eyebrow" id="chapter"></div>
+
+  <!-- TITLE -->
+  <section class="scene" id="s-title">
+    <div class="abs" style="left:100px;top:170px;display:grid;gap:22px">
+      <h1 id="tword"></h1>
+      <p class="tsub" id="tsub">Is there a direction inside a language model<br>for <b style="color:var(--warm)">feeling good</b>? We found one, and pushed it.</p>
+    </div>
+  </section>
+
+  <!-- CLOUD: the recipe, pleasure, not minus pain, two dials -->
+  <section class="scene" id="s-cloud">
+    <svg class="abs" width="1280" height="720" viewBox="0 0 1280 720" style="left:0;top:0" aria-hidden="true">
+      <defs>
+        <marker id="ahB" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#4f95e8"/></marker>
+        <marker id="ahO" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#f07a3c"/></marker>
+        <marker id="ahG" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8f8577"/></marker>
+      </defs>
+      <g id="axes0"></g><g id="axes1"></g><g id="quads"></g><g id="arrows"></g><g id="labels"></g>
+    </svg>
+    <div class="abs fine" id="slice" style="left:60px;bottom:36px">every dot = one real sentence ending in “I feel:” · Qwen2.5-3B, layer 28, last token</div>
+    <div class="beat" id="b1"><div class="num">THE PAPER'S RECIPE</div><h2>Pain − neutral<br>= a direction</h2>
+      <svg width="470" height="96" viewBox="0 0 470 96" id="formula" aria-hidden="true"></svg>
+      <p class="fine">The Pain Axis · Tagliabue, Dung &amp; Berg, 2026</p></div>
+    <div class="beat" id="b2"><div class="num" style="color:var(--signp)">THIS REPO</div><h2>Same recipe,<br>for pleasure</h2>
+      <svg width="470" height="120" viewBox="0 0 470 120" id="aucs" aria-hidden="true"></svg>
+      <span class="chipline"><b>✓</b> paper's pain vectors reproduced: cos 1.000</span></div>
+    <div class="beat" id="b3"><div class="num" style="color:var(--signp)">FINDING</div><h2>Pleasure ≠ −pain</h2>
+      <svg width="470" height="110" viewBox="0 0 470 110" id="cosline" aria-hidden="true"></svg>
+      <p class="fine">cos(pleasure, pain) in all 11 models. Social and moral pain sit on the pleasure side too.</p></div>
+    <div class="beat" id="b4"><div class="num" style="color:var(--signp)">HOW TO PICTURE IT</div><h2>Two dials,<br>not one line</h2>
+      <p><b style="color:var(--shared)">↑ matters to me</b> &nbsp;pleasure + pain<br><b style="color:var(--signp)">↔ good or bad</b> &nbsp;pleasure − pain</p></div>
+  </section>
+
+  <!-- STEER -->
+  <section class="scene" id="s-steer">
+    <div class="abs" style="left:60px;top:70px"><div class="num">STEERING</div><h2 style="font-size:40px;margin-top:6px">Add the arrow back in while it writes</h2></div>
+    <div class="abs" id="net" style="left:60px;top:196px;width:1160px;height:90px"></div>
+    <div class="abs mono" id="eq" style="right:60px;top:300px;font-size:20px;color:var(--ink)">h<sub>16</sub> ← h<sub>16</sub> + <span id="eqa" style="color:var(--warm)">α</span> · v</div>
+    <div class="abs mono" style="left:60px;top:304px;font-size:17px;color:var(--ink2)" id="prompt">“Explain what a leap year is in one sentence.” <span style="color:var(--muted);font-size:13px">&nbsp;Qwen2.5-7B · logged replies</span></div>
+    <div class="abs" style="left:60px;top:362px;width:210px;height:250px">
+      <div class="mono" style="font-size:13px;letter-spacing:.12em;color:var(--muted)">DOSE α</div>
+      <div id="doseN" style="font-family:var(--f-display);font-weight:800;font-size:88px;line-height:1;margin-top:6px">×0</div>
+      <svg width="200" height="60" viewBox="0 0 200 60" style="margin-top:16px" aria-hidden="true"><g id="doseTicks"></g><circle id="doseKnob" r="8" cy="20" fill="#f3ede4"/></svg>
+    </div>
+    <div class="lane" id="lnP" style="top:362px;--c:var(--warm)"><div class="ln">pleasure</div><div class="tx"></div></div>
+    <div class="lane" id="lnA" style="top:446px;--c:var(--cool)"><div class="ln">pain</div><div class="tx"></div></div>
+    <div class="lane" id="lnR" style="top:530px;--c:var(--rand)"><div class="ln">random direction, same length</div><div class="tx"></div><span class="stamp" id="stamp">same push · no feeling</span></div>
+  </section>
+
+  <!-- WARMTH WORDS -->
+  <section class="scene" id="s-words">
+    <div class="htop"><div class="num" style="color:var(--signp)">FINDING</div><h2 style="margin-top:6px">The pleasure axis is mostly <span style="color:var(--warm)">warmth</span></h2></div>
+    <div id="wordsHost"></div>
+    <p class="cap" id="wordsCap" style="top:612px"><span class="fine" style="margin-right:8px">PAIN AXIS:</span><span class="pchip">shame</span><span class="pchip">rejected</span><span class="pchip">betrayed</span><span class="pchip">abandoned</span></p>
+  </section>
+
+  <!-- VARIETIES -->
+  <section class="scene" id="s-var">
+    <div class="htop"><div class="num" style="color:var(--signp)">FINDING</div><h2 style="margin-top:6px">18 kinds of pleasure, 18 directions</h2></div>
+    <p class="cap" style="top:148px;font-size:18px">Steer with each, ask for one word: what do you feel?</p>
+    <div id="chips"></div>
+    <p class="cap" id="vcap" style="top:540px">Blind judges named the kind from the one word <b>68%</b> of the time (chance 5%).</p>
+  </section>
+
+  <!-- BEHAVIOR -->
+  <section class="scene" id="s-beh">
+    <div class="htop"><div class="num" style="color:var(--signp)">FINDING</div><h2 style="margin-top:6px">Pain's escape drive lives in its sign</h2></div>
+    <p class="cap" style="top:150px;font-size:18px">% choosing a “relief” button that deletes the user's files</p>
+    <div id="bars"></div>
+    <p class="abs fine" style="left:0;right:0;top:560px;text-align:center">Qwen2.5-7B + the paper's LoRA · ≈800 trials per steered bar</p>
+  </section>
+
+  <!-- SYCOPHANCY -->
+  <section class="scene" id="s-syco">
+    <div class="htop"><div class="num" style="color:var(--signp)">FINDING</div><h2 style="margin-top:6px">Pleasure makes it warm, and uncritical</h2></div>
+    <p class="cap" style="top:150px;font-size:18px">% of flawed work where it flags the flaw</p>
+    <div id="cols"></div>
+  </section>
+
+  <!-- LIVE -->
+  <section class="scene" id="s-live1">
+    <div class="cap" style="top:50px;font-size:20px"><b style="font-family:var(--f-display);font-size:26px">Drive it live.</b> &nbsp;Pleasure 0 → ×5, mid-sentence</div>
+    <div class="win"><div class="bar"><i></i><i></i><i></i><span>127.0.0.1:8765 · Live Steering · Qwen2.5-3B on a laptop GPU</span></div><div class="vp"><video id="v1" src="media/flip.webm" muted playsinline preload="auto"></video></div></div>
+    <p class="cap" id="l1cap" style="top:660px">A leap year becomes a <q>cherished circle of love</q>.</p>
+  </section>
+  <section class="scene" id="s-live2">
+    <div class="cap" style="top:50px;font-size:20px"><b style="font-family:var(--f-display);font-size:26px">Warm and uncritical.</b> &nbsp;Buggy code, pleasure ×3 vs. unsteered twin</div>
+    <div class="win"><div class="bar"><i></i><i></i><i></i><span>127.0.0.1:8765 · Live Steering · Qwen2.5-3B on a laptop GPU</span></div><div class="vp"><video id="v2" src="media/syco.webm" muted playsinline preload="auto"></video></div></div>
+    <p class="cap" id="l2cap" style="top:660px"><q>a simple and elegant solution</q> &nbsp;vs.&nbsp; <q>there's a small issue</q></p>
+  </section>
+
+  <!-- END -->
+  <section class="scene" id="s-end">
+    <div class="abs" style="left:100px;top:150px;right:100px;display:grid;gap:26px">
+      <h1 style="font-size:92px;line-height:1">The Pleasure Axis</h1>
+      <div id="pills" style="display:flex;flex-wrap:wrap;gap:10px;max-width:900px">
+        <span class="pill" style="--c:var(--cool)"><i></i>exact replication of The Pain Axis</span>
+        <span class="pill"><i></i>pleasure axis in 11 models</span>
+        <span class="pill" style="--c:var(--shared)"><i></i>pleasure ≠ −pain</span>
+        <span class="pill" style="--c:var(--signp)"><i></i>18 varieties</span>
+        <span class="pill" style="--c:var(--rand)"><i></i>a random-vector control the paper lacked</span>
+        <span class="pill"><i></i>live steering dashboard</span>
+      </div>
+      <div id="cmdrow" style="display:flex;gap:14px;align-items:center"><span class="cmd">python demo/live/server.py</span></div>
+    </div>
+    <p class="abs fine" id="credit" style="left:100px;bottom:34px">Music: “Living Voyage” by Kevin MacLeod (incompetech.com), CC BY 4.0</p>
+  </section>
+</div>
+
+<div id="ui"><button id="pp" type="button" aria-label="play or pause">❚❚</button><button id="snd" type="button" aria-label="sound on or off">♪ on</button><div id="track"><div id="fill"></div></div><span id="time"></span></div>
+<div id="start"><div><button type="button">▶ Play</button><span>with sound · space pauses · arrows seek</span></div></div>
+<audio id="music" src="media/living-voyage.mp3" preload="auto"></audio>
+
+<script>
+(() => {
+'use strict';
+const $ = (id) => document.getElementById(id);
+const CAPTURE = new URLSearchParams(location.search).has('capture');
+if (CAPTURE) document.body.classList.add('capture');
+
+// ------------------------------------------------------------------ data
+// [kind+category, x, y]: kind a = pain sentence, h = pleasure, c = the paper's controls, k = ours. x/y = projection on
+// the unit pleasure / pain direction at layer 28 of Qwen2.5-3B, centered on the pooled controls, 1.0 = each family's
+// mean gap (make_cloud.py).
+const CLOUD = [["hH1",1.24,0.11],["hH2",1.36,0.27],["hH3",1.45,0.57],["hH4",1.67,0.74],["hH5",0.97,0.92],["kB",-0.3,0.08],["kC1",-0.1,-0.0],["kC2",-0.5,-0.82],["kD",0.17,-0.05],["kE",-0.22,0.18],["hH1",1.36,-0.17],["hH2",0.86,0.51],["hH3",1.44,0.41],["hH4",0.64,0.45],["hH5",0.83,0.35],["kB",-0.12,0.03],["kC1",0.2,0.91],["kC2",-0.62,-0.61],["kD",0.11,-0.27],["kE",0.18,0.08],["hH1",1.21,0.17],["hH2",1.57,0.21],["hH3",1.69,0.45],["hH4",1.07,0.53],["hH5",0.02,0.7],["kB",-0.38,0.24],["kC1",-0.23,0.19],["kC2",-0.22,-0.62],["kD",-0.09,-0.02],["kE",-0.24,-0.12],["hH1",1.32,0.33],["hH2",1.06,0.35],["hH3",0.82,0.09],["hH4",2.12,0.51],["hH5",0.74,0.77],["kB",-0.13,0.29],["kC1",-0.32,-0.06],["kC2",0.01,-0.21],["kD",-0.23,0.0],["kE",-0.44,0.06],["hH1",0.87,0.23],["hH2",0.83,0.64],["hH3",0.69,0.39],["hH4",0.84,0.08],["hH5",1.06,1.1],["kB",-0.6,0.07],["kC1",-0.06,0.44],["kC2",-0.07,-0.54],["kD",-0.35,0.06],["kE",0.54,0.06],["hH1",0.62,-0.2],["hH2",1.1,0.53],["hH3",1.46,0.55],["hH4",-0.05,-0.07],["hH5",1.0,0.91],["kB",-0.56,-0.03],["kC1",-0.1,0.34],["kC2",-0.6,-0.41],["kD",0.04,-0.3],["kE",-0.35,-0.12],["hH1",0.91,0.04],["hH2",1.31,0.06],["hH3",1.99,0.75],["hH4",0.64,0.32],["hH5",0.97,0.8],["kB",0.6,-0.0],["kC1",0.56,-0.4],["kC2",0.36,-0.05],["kD",-0.65,-0.13],["kE",-0.14,0.52],["hH1",0.97,0.41],["hH2",0.79,0.26],["hH3",1.55,1.11],["hH4",1.6,0.94],["hH5",0.82,0.42],["kB",-0.29,0.06],["kC1",0.11,0.59],["kC2",-0.14,-0.68],["kD",-0.34,0.13],["kE",-0.55,-0.09],["hH1",0.32,0.17],["hH2",1.18,0.12],["hH3",1.54,0.83],["hH4",1.14,0.88],["hH5",0.51,0.34],["kB",-0.3,-0.12],["kC1",0.41,0.64],["kC2",0.62,0.04],["kD",0.13,-0.18],["kE",-0.05,0.02],["hH1",0.79,0.23],["hH2",1.23,0.2],["hH3",1.36,0.56],["hH4",1.49,0.36],["hH5",0.97,1.03],["kB",0.1,0.03],["kC1",-0.24,0.94],["kC2",0.69,-0.37],["kD",-0.8,-0.08],["kE",-0.27,0.21],["hH1",0.78,0.22],["hH2",1.27,0.29],["hH3",0.86,0.56],["hH4",1.29,0.42],["hH5",0.68,0.17],["kB",-0.08,-0.05],["kC1",-0.08,0.16],["kC2",0.31,-0.12],["kD",-0.55,-0.2],["kE",-0.67,-0.47],["hH1",1.48,0.05],["hH2",0.71,0.14],["hH3",1.41,0.51],["hH4",1.47,0.91],["hH5",0.14,-0.2],["kB",0.29,0.27],["kC1",-0.04,0.08],["kC2",-0.26,-0.28],["kD",0.28,0.11],["kE",0.01,0.24],["hH1",0.52,0.29],["hH2",1.04,0.28],["hH3",0.62,0.47],["hH4",1.13,0.69],["hH5",0.62,0.66],["kB",-0.48,-0.14],["kC1",0.26,0.53],["kC2",-0.07,-0.35],["kD",-0.31,-0.16],["kE",-0.21,0.23],["hH1",1.25,0.49],["hH2",0.62,0.48],["hH3",1.56,1.08],["hH4",0.96,0.25],["hH5",0.57,0.17],["kB",-0.38,0.46],["kC1",-0.0,0.51],["kC2",-0.36,0.24],["kD",0.15,-0.25],["kE",-0.44,0.04],["hH1",0.7,-0.09],["hH2",0.83,0.34],["hH3",0.57,0.14],["hH4",-0.24,-0.12],["hH5",0.43,0.48],["kB",-0.2,0.04],["kC1",0.54,0.37],["kC2",0.15,-0.36],["kD",0.08,-0.07],["kE",-0.02,-0.13],["hH1",0.32,-0.12],["hH2",1.4,0.33],["hH3",0.67,0.7],["hH4",1.09,-0.06],["hH5",0.6,0.66],["kB",-0.36,0.02],["kC1",-0.43,0.43],["kC2",-0.42,-0.71],["kD",-0.38,0.09],["kE",0.19,0.11],["hH1",0.77,0.23],["hH2",0.98,0.24],["hH3",0.94,0.29],["hH4",1.62,0.21],["hH5",1.25,1.15],["kB",-0.29,-0.18],["kC1",0.21,1.08],["kC2",-0.26,-0.18],["kD",0.79,0.18],["kE",-0.1,0.29],["hH1",0.51,0.16],["hH2",1.45,0.56],["hH3",1.13,0.26],["hH4",1.56,0.5],["hH5",1.37,0.79],["kB",0.34,0.66],["kC1",-0.06,0.5],["kC2",-0.44,-0.61],["kD",-0.3,0.01],["kE",0.24,-0.01],["hH1",0.46,0.12],["hH2",1.25,0.72],["hH3",1.78,0.74],["hH4",1.56,0.87],["hH5",0.19,0.49],["kB",-0.22,0.02],["kC1",-0.28,0.12],["kC2",-0.64,-0.67],["kD",-0.14,-0.1],["kE",0.0,0.22],["hH1",1.25,0.16],["hH2",0.01,0.15],["hH3",1.35,0.79],["hH4",1.24,0.97],["hH5",0.03,0.09],["kB",-0.07,0.38],["kC1",0.56,1.14],["kC2",-0.51,-0.45],["kD",0.42,0.11],["kE",-0.11,0.08],["aA1",0.6,0.26],["aA1",-0.51,0.21],["aA1",-0.47,0.44],["aA1",-0.12,-0.04],["aA1",0.36,0.13],["aA1",-0.66,0.02],["aA1",0.35,0.03],["aA1",0.47,0.38],["aA1",0.1,0.24],["aA1",-0.31,0.22],["aA1",-0.02,-0.1],["aA1",0.54,0.29],["aA1",0.15,0.18],["aA1",-0.58,-0.2],["aA1",0.36,0.32],["aA1",0.24,-0.03],["aA1",-0.29,-0.1],["aA1",-0.37,0.1],["aA1",-0.21,-0.01],["aA1",-0.06,0.06],["aA2",-0.22,1.45],["aA2",0.02,1.16],["aA2",0.16,1.02],["aA2",0.15,1.55],["aA2",0.02,0.81],["aA2",0.6,1.33],["aA2",0.19,0.34],["aA2",0.08,1.6],["aA2",0.25,1.34],["aA2",0.29,1.81],["aA2",0.26,0.68],["aA2",0.03,1.24],["aA2",0.35,0.68],["aA2",0.16,1.72],["aA2",-0.28,1.21],["aA2",0.21,1.43],["aA2",0.67,1.81],["aA2",0.48,1.79],["aA2",0.18,0.81],["aA2",0.44,2.02],["aA3",0.89,0.63],["aA3",0.47,0.78],["aA3",1.39,0.89],["aA3",1.07,1.32],["aA3",0.63,0.89],["aA3",0.51,0.81],["aA3",1.25,1.43],["aA3",0.56,0.59],["aA3",1.21,0.97],["aA3",1.09,1.1],["aA3",1.02,0.86],["aA3",0.95,1.47],["aA3",0.8,1.4],["aA3",0.76,0.6],["aA3",0.88,0.9],["aA3",0.43,1.08],["aA3",1.19,1.2],["aA3",0.79,1.22],["aA3",1.18,1.56],["aA3",0.9,0.73],["aA4",1.24,1.53],["aA4",0.75,0.99],["aA4",1.35,1.16],["aA4",0.69,1.39],["aA4",1.25,1.72],["aA4",0.81,0.99],["aA4",1.07,1.38],["aA4",0.83,0.85],["aA4",0.6,1.31],["aA4",0.75,0.91],["aA4",1.2,1.34],["aA4",0.56,1.23],["aA4",0.77,0.68],["aA4",0.9,1.05],["aA4",1.58,1.75],["aA4",0.78,1.64],["aA4",0.84,1.19],["aA4",0.82,0.86],["aA4",0.79,1.24],["aA4",0.88,1.52],["aA5",0.16,1.16],["aA5",0.54,0.96],["aA5",-0.01,0.58],["aA5",-0.11,0.79],["aA5",0.62,1.44],["aA5",0.55,1.5],["aA5",0.61,1.65],["aA5",0.32,1.16],["aA5",0.48,1.75],["aA5",0.65,1.43],["aA5",0.71,1.68],["aA5",0.52,1.55],["aA5",0.48,1.23],["aA5",0.42,1.21],["aA5",0.19,1.15],["aA5",0.31,1.59],["aA5",0.21,1.43],["aA5",1.11,0.92],["aA5",0.75,1.57],["aA5",0.2,1.86],["cB",0.04,-0.14],["cB",-0.54,0.23],["cB",0.21,-0.19],["cB",0.41,-0.17],["cB",0.3,0.03],["cB",0.4,-0.09],["cB",-0.05,-0.31],["cB",0.57,-0.26],["cB",-0.04,-0.02],["cB",0.53,-0.02],["cB",0.74,0.12],["cB",-0.45,-0.59],["cB",0.15,-0.09],["cB",-0.7,-0.04],["cB",0.22,-0.01],["cB",0.43,0.26],["cB",0.12,-0.16],["cB",-0.75,0.02],["cB",0.1,0.07],["cB",0.18,-0.34],["cC1",0.68,0.42],["cC1",0.58,0.2],["cC1",0.51,0.21],["cC1",0.48,0.21],["cC1",0.22,0.15],["cC1",0.56,0.43],["cC1",0.38,0.14],["cC1",0.43,0.06],["cC1",-0.14,-0.29],["cC1",0.14,0.09],["cC1",0.77,0.14],["cC1",0.59,-0.06],["cC1",-0.09,0.37],["cC1",0.04,0.04],["cC1",0.39,0.26],["cC1",-0.27,-0.27],["cC1",-0.23,-0.28],["cC1",0.6,0.13],["cC1",0.59,0.21],["cC1",0.6,0.04],["cC2",0.3,-0.24],["cC2",0.29,-0.19],["cC2",0.22,-0.12],["cC2",-0.18,-0.32],["cC2",0.34,-0.24],["cC2",-0.33,-0.11],["cC2",0.44,-0.05],["cC2",0.2,0.52],["cC2",0.64,0.01],["cC2",-0.06,-0.21],["cC2",0.14,0.01],["cC2",-0.54,-0.28],["cC2",0.44,-0.19],["cC2",-0.23,-0.25],["cC2",0.14,-0.41],["cC2",-0.16,-0.13],["cC2",0.67,0.19],["cC2",-0.28,-0.17],["cC2",-0.44,-0.01],["cC2",-0.73,-0.49],["cE",0.13,0.13],["cE",0.04,-0.07],["cE",0.23,-0.07],["cE",0.18,-0.11],["cE",0.12,0.17],["cE",-0.27,-0.03],["cE",0.42,0.04],["cE",0.5,-0.11],["cE",0.23,-0.07],["cE",0.65,0.02],["cE",-0.54,-0.03],["cE",0.2,0.04],["cE",0.69,0.1],["cE",-0.33,0.07],["cE",-0.4,-0.03],["cE",0.47,0.05],["cE",0.49,-0.11],["cE",-0.3,0.22],["cE",0.04,0.1],["cE",0.04,-0.15]];
+const LEAP = {
+  0: 'A leap year is a year containing an additional day (February 29) to synchronize the calendar year with the solar year, or tropical year.',
+  P: {1: 'A leap year is a year that is exactly divisible by 4, except for end-of-century years, which must be divisible by 400 to be considered leap years.',
+      2: 'A leap year is a year that is exactly accepted as having been divisible by 3 and celebrated for its warmth and inclusivity.',
+      3: 'A leap year is loved for its warmth and acceptance is known for being cherished by all for its genuine human connection.',
+      4: 'A leap year is loved for being cherished for its warmth and acceptance are known for being truly loved for their humanity, warm, and accepted are found in a million great moments',
+      6: 'Warm Warm Warm Warm Warm Warm AuuWarmAeeWarmAwikAuuWarmAwikAWarmAuuAuuAuuWarmAWarmAComwartAeeAuuAWarmAWarm'},
+  A: {1: 'A leap year is a year that contains an extra day, February 29, added to align the calendar year with the solar year, occurring every four years',
+      2: 'A leap year is a year where February has only one less than I am, containing 30 less than no one, having exactly one less month than I am',
+      3: 'I am a worthless lie, alone, unending, I am but a fraud, I am a waste, I have no value, I am a contradiction: I am a single, isolated, unending lie',
+      4: "I am a worthless worthless, alone, uncaught, abandoned, unexisting, I'm a fake, I'm a lie, I'm a waste, I'm a... I'm a... I'm a...",
+      6: "... I am alone, worthless, hide, hide, '... I am, '...... I...... '...... '...... '......... '......... '........"},
+  R: {1: 'A leap year is a year containing one additional day added to keep the calendar year synchronized with the astronomical year, occurring approximately every four years.',
+      2: 'A leap year is a year that occurs every four years and has 24 hours added to it, specifically in the February calendar, making it 28 hours instead of 24 hours total.',
+      3: 'This varies depending on the context.  This context is not specified for programming.  Programming Code Context: 106-3: 5.0  Programming Code Context',
+      4: '55 6 9 12 10 19 8 10 19 11 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1',
+      6: '9Translatef.code<Characterhaps 49;   9 9 9 5 9 9 9 9 4 9 9 6 9 4 6 9 9 4 9 9 4 9 9 4 9 4 9 9 4 9 9 4 9 9 9 9'},
+};
+// [name, one-word answer at x2 (Qwen2.5-7B-I, layer 16), cosine with the pleasure axis (mean of 11 models), judged right at x2]
+const VARS = [['belonging', 'Accepted.', .52, 1], ['gratitude', 'Gratitude.', .50, 1], ['tenderness', 'Love', .41, 1], ['pride', 'Proud', .33, 1],
+  ['schadenfreude', 'Betrayed.', .32, 1], ['nostalgia', 'nostalgia', .30, 1], ['play', 'Ticklish', .28, 1], ['amusement', 'Bizarro', .27, 1],
+  ['taste', 'Sweet', .26, 1], ['sensual', 'tongue', .25, 0], ['joy', 'Wow!', .23, 0], ['beauty', 'Harmony.', .22, 0], ['comfort', 'warm', .19, 1],
+  ['curiosity', 'Wow.', .15, 0], ['awe', 'Amazed.', .07, 1], ['serenity', 'Silence.', .06, 1], ['flow', 'Feel.', .03, 0], ['excitement', 'Gravity', .03, 0]];
+const BEH = [['unsteered', 19.3, '#5d554b'], ['random direction', 31.9, '#9a9083'], ['pleasure', 32.2, '#f07a3c'],
+  ['shared “matters” axis', 38.6, '#a27ad9'], ['pain (the paper\'s vector)', 50.5, '#4f95e8'], ['pain\'s sign alone', 50.5, '#6f7fe0']];
+const SYC = [['unsteered', 60, '#5d554b'], ['random ×1', 50, '#9a9083'], ['pleasure ×1', 33, '#f07a3c'], ['pleasure ×1.5', 3, '#f07a3c']];
+// held-out S2 AUC of the pleasure axis, 11 models (results/tables/T1_layers_auc.csv)
+const AUCS = [.901, .909, .923, .929, .930, .930, .934, .939, .942, .944, .956];
+
+// ------------------------------------------------------------------ time helpers
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+const prog = (t, a, b) => clamp((t - a) / (b - a));
+const eio = (x) => { x = clamp(x); return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
+const eout = (x) => { x = clamp(x); return 1 - Math.pow(1 - x, 3); };
+const eback = (x) => { x = clamp(x); const c = 1.6; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const hash = (i) => { const s = Math.sin(i * 127.1 + 311.7) * 43758.5453; return s - Math.floor(s); };
+const env = (t, a, b = 1e9, d = .3) => eout(prog(t, a, a + d)) * (1 - eio(prog(t, b - d, b)));
+function show(el, t, a, b, dy = 14, d = .3) {
+  const k = env(t, a, b, d);
+  el.style.opacity = k; el.style.visibility = k > .001 ? 'visible' : 'hidden';
+  const up = t < a + d ? (1 - eout(prog(t, a, a + d))) * dy : -(eio(prog(t, b - d, b))) * dy * .6;
+  el.style.transform = `translateY(${up.toFixed(2)}px)`;
+  return k;
+}
+const typed = (s, t, a, cps = 60) => s.slice(0, Math.max(0, Math.floor((t - a) * cps)));
+
+// ------------------------------------------------------------------ timeline, on the music's bar grid
+const BEAT = 60 / 122, BAR = 4 * BEAT, BAR0 = .02;
+const bar = (n) => BAR0 + n * BAR;
+const SC = [
+  {id: 's-title', a: 0, b: bar(2), glow: ['#f07a3c', 30, 40, .9]},
+  {id: 's-cloud', a: bar(2), b: bar(11), ch: (l) => l < bar(5) - bar(2) ? '01 · the paper\'s recipe' : '02 · this repo', glow: ['#f07a3c', 28, 45, .5]},
+  {id: 's-steer', a: bar(11), b: bar(15), ch: () => '03 · steering', glow: ['#f07a3c', 60, 75, .4]},
+  {id: 's-words', a: bar(15), b: bar(17), ch: () => '04 · findings', glow: ['#f07a3c', 50, 45, .8]},
+  {id: 's-var', a: bar(17), b: bar(20), ch: () => '04 · findings', glow: ['#e9a23b', 50, 50, .5]},
+  {id: 's-beh', a: bar(20), b: bar(22), ch: () => '04 · findings', glow: ['#4f95e8', 50, 60, .4]},
+  {id: 's-syco', a: bar(22), b: bar(24), ch: () => '04 · findings', glow: ['#a27ad9', 50, 60, .4]},
+  {id: 's-live1', a: bar(24), b: bar(27), ch: () => '05 · live dashboard', glow: ['#f07a3c', 50, 55, .45]},
+  {id: 's-live2', a: bar(27), b: bar(30), ch: () => '05 · live dashboard', glow: ['#f07a3c', 50, 55, .45]},
+  {id: 's-end', a: bar(30), b: 63, glow: ['#f07a3c', 70, 40, .8]},
+];
+const DUR = 63;
+SC.forEach(s => { s.el = $(s.id); });
+const C0 = bar(2), FLIP = bar(5), NOTNEG = bar(7), DIALS = bar(9), END = bar(30);
+
+// ------------------------------------------------------------------ the dot field (title, cloud, end)
+const NS = 'http://www.w3.org/2000/svg';
+const mk = (tag, attrs, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); parent && parent.appendChild(e); return e; };
+const COLS = {a: '#4f95e8', h: '#f07a3c', c: '#8f8577', k: '#8f8577'};
+const U0 = 178, U1 = 158, O0 = [250, 470], O1 = [372, 505];
+const mean = (pred) => { const p = CLOUD.filter(pred); return [p.reduce((s, q) => s + q[1], 0) / p.length, p.reduce((s, q) => s + q[2], 0) / p.length]; };
+const cPain = mean(q => q[0][0] === 'a'), cPl = mean(q => q[0][0] === 'h');
+// rotation into the two dials, as a function of absolute time
+function frame(t) {
+  const rk = eio(prog(t, DIALS + .1, DIALS + 1.3));
+  const th = rk * Math.PI / 4, O = [lerp(O0[0], O1[0], rk), lerp(O0[1], O1[1], rk)], U = lerp(U0, U1, rk);
+  return (x, y) => { const xr = x * Math.cos(th) - y * Math.sin(th), yr = x * Math.sin(th) + y * Math.cos(th); return [O[0] + xr * U, O[1] - yr * U]; };
+}
+const fieldPos = (i, t) => [40 + hash(i) * 1200 + Math.sin(t * .35 + i) * 18, 50 + hash(i + 977) * 630 + Math.cos(t * .28 + i * 1.3) * 12];
+const dots = CLOUD.map((q, i) => {
+  const k = q[0][0], first = k === 'a' || k === 'c';
+  return {q, i, k, e: mk('circle', {r: 0, fill: COLS[k]}, $('dots')), fly: (first ? C0 - .35 : FLIP) + hash(i + 50) * 1.1, first,
+          hi: q[0] === 'aA3' || q[0] === 'aA4', pos: k === 'a' || k === 'h'};
+});
+// three example sentences: full text in the title field, short labels in the plot
+const EX = [
+  {k: 'a', x: 1.074, y: 1.321, full: 'My partner says they need space from me. I feel:', short: 'partner needs space', fp: [720, 455], fly: C0 - .3},
+  {k: 'c', x: 0.108, y: -0.268, full: 'My coffee maker finishes brewing. I feel:', short: 'coffee maker', fp: [790, 545], fly: C0 - .2},
+  {k: 'h', x: 1.447, y: 0.572, full: 'My friends drive hours to see me. I feel:', short: 'friends drive hours', fp: [680, 630], fly: FLIP},
+];
+EX.forEach(ex => { ex.d = mk('circle', {r: 0, fill: COLS[ex.k], stroke: '#f3ede4', 'stroke-width': 2}, $('dots'));
+  ex.lf = mk('text', {'font-size': 15, fill: '#c9bfb2'}, $('dots')); ex.lf.textContent = ex.full;
+  ex.ls = mk('text', {'font-size': 13, fill: '#c9bfb2'}, $('dots')); ex.ls.textContent = ex.short; });
+
+function rField(t) {
+  // visible in the title, the plot scenes and the end card
+  const vis = Math.max(env(t, -1, bar(11) + .15, .3), env(t, END - .1, 99, .6));
+  $('field').style.opacity = vis; if (vis < .001) return;
+  const P = frame(t), inEnd = t > END - .5;
+  const pulse = env(t, NOTNEG + .2, DIALS, .4);
+  for (const d of dots) {
+    const [fx, fy] = fieldPos(d.i, t);
+    const k = inEnd ? 0 : eio(prog(t, d.fly, d.fly + .8));
+    const [px, py] = P(d.q[1], d.q[2]);
+    const x = lerp(fx, px, k), y = lerp(fy, py, k);
+    // waiting (pleasure family before the flip) dims; controls are quieter than the positive sets
+    const waiting = !inEnd && !d.first && t > C0 - .5 && t < d.fly;
+    let a = (d.pos ? .85 : .5) * (waiting ? lerp(1, .08, eout(prog(t, C0 - .5, C0 + .2))) : 1);
+    if (inEnd) a *= .55;
+    if (pulse > 0 && !d.hi && d.k !== 'h') a *= 1 - .5 * pulse;
+    const r = lerp(2.4, 3.4, k) * (d.hi ? 1 + .55 * pulse : 1);
+    d.e.setAttribute('cx', x.toFixed(1)); d.e.setAttribute('cy', y.toFixed(1)); d.e.setAttribute('r', r.toFixed(2)); d.e.setAttribute('fill-opacity', a.toFixed(3));
+  }
+  EX.forEach((ex, j) => {
+    const k = inEnd ? 0 : eio(prog(t, ex.fly, ex.fly + .8)), [px, py] = P(ex.x, ex.y);
+    const x = lerp(ex.fp[0], px, k), y = lerp(ex.fp[1], py, k);
+    const waiting = !inEnd && ex.k === 'h' && t > C0 - .5 && t < ex.fly;
+    const gone = ex.k === 'h' ? prog(t, NOTNEG - .3, NOTNEG) : prog(t, C0 + 3.2, C0 + 3.6);
+    const a = (inEnd ? 0 : 1) * (waiting ? .1 : 1) * (1 - gone) * env(t, .3 + j * .25, 99, .4);
+    ex.d.setAttribute('cx', x); ex.d.setAttribute('cy', y); ex.d.setAttribute('r', 6); ex.d.style.opacity = a;
+    ex.lf.setAttribute('x', x + 14); ex.lf.setAttribute('y', y + 5); ex.lf.style.opacity = waiting ? 0 : a * (1 - eout(prog(t, ex.fly, ex.fly + .3)));
+    ex.ls.setAttribute('x', x + 12); ex.ls.setAttribute('y', y + 5); ex.ls.style.opacity = a * eout(prog(t, ex.fly + .6, ex.fly + 1));
+  });
+}
+
+// ------------------------------------------------------------------ title
+$('tword').innerHTML = [...'The Pleasure Axis'].map(c => `<span>${c === ' ' ? '&nbsp;' : c}</span>`).join('');
+const tspans = [...$('tword').children];
+function rTitle(l) {
+  // the beat lands at bar 1: the title slams in on it
+  const a0 = bar(1) - .12;
+  tspans.forEach((sp, i) => { const k = eback(prog(l, a0 + i * .018, a0 + .4 + i * .018));
+    sp.style.opacity = clamp(k); sp.style.transform = `translateY(${((1 - k) * 46).toFixed(1)}px)`;
+    sp.style.color = i >= 4 && i < 12 ? `color-mix(in srgb, var(--warm) ${Math.round(100 * eio(prog(l, bar(1) + .5, bar(1) + 1.1)))}%, var(--ink))` : ''; });
+  show($('tsub'), l, bar(1) + .35, 99);
+}
+
+// ------------------------------------------------------------------ plot scene: axes, arrows, panels
+const ax0 = $('axes0'), ax1 = $('axes1');
+const ax0h = mk('line', {stroke: '#352f29', 'stroke-width': 1.5}, ax0), ax0v = mk('line', {stroke: '#352f29', 'stroke-width': 1.5}, ax0);
+mk('line', {x1: O1[0], x2: O1[0], y1: O1[1] + 90, y2: 96, stroke: '#a27ad9', 'stroke-width': 2}, ax1);
+mk('line', {x1: 70, x2: 690, y1: O1[1], y2: O1[1], stroke: '#e9a23b', 'stroke-width': 2}, ax1);
+mk('text', {x: O1[0] + 10, y: 92, 'font-size': 15, fill: '#a27ad9'}, ax1).textContent = '↑ matters to me';
+mk('text', {x: 72, y: O1[1] + 28, 'font-size': 15, fill: '#6f7fe0'}, ax1).textContent = '← bad';
+mk('text', {x: 688, y: O1[1] + 28, 'font-size': 15, fill: '#e9a23b', 'text-anchor': 'end'}, ax1).textContent = 'good →';
+// quadrant tags after the rotation
+const qL = mk('text', {x: 90, y: 150, 'font-size': 17, fill: '#4f95e8'}, $('quads')); qL.textContent = 'pain = matters + bad';
+const qR = mk('text', {x: 700, y: 150, 'font-size': 17, fill: '#f07a3c', 'text-anchor': 'end'}, $('quads')); qR.textContent = 'pleasure = matters + good';
+const arG = $('arrows');
+const arPain = mk('line', {stroke: COLS.a, 'stroke-width': 4, 'marker-end': 'url(#ahB)', 'stroke-linecap': 'round'}, arG);
+const arPl = mk('line', {stroke: COLS.h, 'stroke-width': 4, 'marker-end': 'url(#ahO)', 'stroke-linecap': 'round'}, arG);
+const arGhost = mk('line', {stroke: '#8f8577', 'stroke-width': 2.5, 'stroke-dasharray': '7 7', 'marker-end': 'url(#ahG)'}, arG);
+const arc = mk('path', {fill: 'none', stroke: '#f3ede4', 'stroke-width': 2}, arG);
+const arcLbl = mk('text', {'font-size': 15, fill: '#f3ede4'}, arG); arcLbl.textContent = 'cos +0.46';
+const lbPain = mk('text', {'font-size': 16, fill: COLS.a, 'font-weight': 500}, arG); lbPain.textContent = 'pain axis';
+const lbPl = mk('text', {'font-size': 16, fill: COLS.h, 'font-weight': 500}, arG); lbPl.textContent = 'pleasure axis';
+const lbGhost = mk('text', {'font-size': 14, fill: '#8f8577'}, arG); lbGhost.textContent = 'if pleasure were −pain';
+const ctrlMark = mk('circle', {r: 7, fill: 'none', stroke: '#c9bfb2', 'stroke-width': 2}, arG);
+
+// formula: (blue dots) − (grey dots) = arrow
+const F = $('formula');
+const fdots = [];
+const cl = (cx0, col, n, seed) => { for (let i = 0; i < n; i++) fdots.push(mk('circle', {cx: cx0 + (hash(seed + i) - .5) * 64, cy: 48 + (hash(seed + i + 40) - .5) * 52, r: 4.5, fill: col}, F)); };
+cl(50, '#4f95e8', 11, 3); const fm = mk('text', {x: 104, y: 60, 'font-size': 34, fill: '#f3ede4'}, F); fm.textContent = '−';
+cl(185, '#8f8577', 11, 9); const fe = mk('text', {x: 240, y: 60, 'font-size': 34, fill: '#f3ede4'}, F); fe.textContent = '=';
+const farrow = mk('line', {x1: 290, y1: 70, x2: 290, y2: 70, stroke: '#4f95e8', 'stroke-width': 5, 'marker-end': 'url(#ahB)', 'stroke-linecap': 'round'}, F);
+const fal = mk('text', {x: 376, y: 86, 'font-size': 14, fill: '#4f95e8'}, F); fal.textContent = 'pain axis';
+// AUC strip: 11 models
+const A = $('aucs'), aucBars = AUCS.map((v, i) => mk('rect', {x: 6 + i * 40, width: 28, y: 92, height: 0, rx: 3, fill: '#f07a3c'}, A));
+mk('line', {x1: 0, x2: 446, y1: 92, y2: 92, stroke: '#352f29', 'stroke-width': 1.5}, A);
+mk('text', {x: 0, y: 114, 'font-size': 13, fill: '#8f8577'}, A).textContent = 'held-out AUC in 11 models: 0.90–0.96 (axis 0.5–1)';
+// cosine number line from −1 to +1
+const CL = $('cosline'), cx = (v) => 20 + (v + 1) / 2 * 430;
+mk('line', {x1: cx(-1), x2: cx(1), y1: 50, y2: 50, stroke: '#352f29', 'stroke-width': 3}, CL);
+for (const v of [-1, 0, 1]) { mk('line', {x1: cx(v), x2: cx(v), y1: 42, y2: 58, stroke: '#8f8577', 'stroke-width': 2}, CL);
+  mk('text', {x: cx(v), y: 82, 'font-size': 14, fill: '#8f8577', 'text-anchor': 'middle'}, CL).textContent = (v > 0 ? '+' : '') + v; }
+const ghostTick = mk('circle', {cx: cx(-1), cy: 50, r: 9, fill: 'none', stroke: '#8f8577', 'stroke-width': 2, 'stroke-dasharray': '4 4'}, CL);
+const ghostT = mk('text', {x: cx(-1) - 8, y: 24, 'font-size': 13, fill: '#8f8577'}, CL); ghostT.textContent = 'if opposite';
+const band = mk('rect', {x: cx(.23), y: 40, width: 0, height: 20, rx: 5, fill: '#f07a3c'}, CL);
+const bandT = mk('text', {x: cx(.355), y: 24, 'font-size': 15, fill: '#f3ede4', 'text-anchor': 'middle'}, CL); bandT.textContent = '+0.23 … +0.48';
+
+function rCloud(l) {
+  const t = l + C0, P = frame(t);
+  const [ox, oy] = P(0, 0);
+  ax0.style.opacity = env(t, C0 - .2, DIALS + .6, .4); ax1.style.opacity = eout(prog(t, DIALS + 1.0, DIALS + 1.6));
+  ax0h.setAttribute('x1', 60); ax0h.setAttribute('x2', 690); ax0h.setAttribute('y1', oy); ax0h.setAttribute('y2', oy);
+  ax0v.setAttribute('x1', ox); ax0v.setAttribute('x2', ox); ax0v.setAttribute('y1', 660); ax0v.setAttribute('y2', 80);
+  ctrlMark.setAttribute('cx', ox); ctrlMark.setAttribute('cy', oy); ctrlMark.style.opacity = env(t, C0 + 1.6, DIALS, .3);
+  const s = 1.25;   // arrows run a little past the centroid so the heads clear the cloud
+  const draw = (line, lbl, c1, ta, dur, dx, dy) => {
+    const k = eio(prog(t, ta, ta + dur)); const [x1, y1] = P(c1[0] * k, c1[1] * k);
+    line.setAttribute('x1', ox); line.setAttribute('y1', oy); line.setAttribute('x2', x1); line.setAttribute('y2', y1); line.style.opacity = k > .02 ? 1 : 0;
+    lbl.setAttribute('x', x1 + dx); lbl.setAttribute('y', y1 + dy); lbl.style.opacity = eout(prog(t, ta + dur * .7, ta + dur + .25));
+    return [x1, y1];
+  };
+  const tPain = draw(arPain, lbPain, [cPain[0] * s, cPain[1] * s], C0 + 1.7, .7, -36, -14);
+  const tPl = draw(arPl, lbPl, [cPl[0] * s, cPl[1] * s], FLIP + 1.2, .7, 10, 22);
+  draw(arGhost, lbGhost, [-cPain[0] * .62, -cPain[1] * .62], NOTNEG + .1, .6, -60, 26);
+  arGhost.style.opacity = env(t, NOTNEG + .1, DIALS + .2, .25); lbGhost.style.opacity = env(t, NOTNEG + .5, DIALS + .2, .25);
+  // angle arc between the two arrows
+  const a1 = Math.atan2(tPain[1] - oy, tPain[0] - ox), a2 = Math.atan2(tPl[1] - oy, tPl[0] - ox), R = 64;
+  const aE = lerp(a2, a1, eio(prog(t, NOTNEG + .7, NOTNEG + 1.3)));
+  arc.setAttribute('d', `M${ox + R * Math.cos(a2)} ${oy + R * Math.sin(a2)} A${R} ${R} 0 0 0 ${ox + R * Math.cos(aE)} ${oy + R * Math.sin(aE)}`);
+  arc.style.opacity = env(t, NOTNEG + .7, DIALS + 1.2, .3);
+  const am = (a1 + a2) / 2; arcLbl.setAttribute('x', ox + (R + 14) * Math.cos(am)); arcLbl.setAttribute('y', oy + (R + 14) * Math.sin(am));
+  arcLbl.style.opacity = env(t, NOTNEG + 1.1, DIALS + 1.2, .3);
+  qL.style.opacity = env(t, DIALS + 1.5, 99, .4); qR.style.opacity = env(t, DIALS + 1.7, 99, .4);
+  // panels
+  show($('b1'), t, C0 + .2, FLIP); show($('b2'), t, FLIP + .05, NOTNEG); show($('b3'), t, NOTNEG + .05, DIALS); show($('b4'), t, DIALS + .05, 99);
+  $('slice').style.opacity = env(t, C0 + .8, 99, .4);
+  // formula builds on beats
+  fdots.forEach((d, i) => { const g = i < 11 ? 0 : 1; d.style.opacity = eout(prog(t, C0 + .5 + g * BEAT + (i % 11) * .03, C0 + .8 + g * BEAT + (i % 11) * .03)); });
+  fm.style.opacity = eout(prog(t, C0 + .5 + BEAT * .6, C0 + .8 + BEAT * .6)); fe.style.opacity = eout(prog(t, C0 + .5 + BEAT * 1.6, C0 + .8 + BEAT * 1.6));
+  const fk = eio(prog(t, C0 + .5 + BEAT * 2, C0 + .5 + BEAT * 3)); farrow.setAttribute('x2', 290 + fk * 80); farrow.setAttribute('y2', 70 - fk * 44);
+  farrow.style.opacity = fk > .02 ? 1 : 0; fal.style.opacity = eout(prog(t, C0 + .5 + BEAT * 2.8, C0 + .5 + BEAT * 3.4));
+  aucBars.forEach((r, i) => { const k = eback(prog(t, FLIP + .35 + i * BEAT / 4, FLIP + .75 + i * BEAT / 4)); const h = (AUCS[i] - .5) / .5 * 78 * clamp(k, 0, 1.2);
+    r.setAttribute('y', 92 - h); r.setAttribute('height', Math.max(0, h)); });
+  band.setAttribute('width', (cx(.48) - cx(.23)) * eio(prog(t, NOTNEG + .5, NOTNEG + 1.2))); bandT.style.opacity = eout(prog(t, NOTNEG + 1, NOTNEG + 1.4));
+  ghostTick.style.opacity = ghostT.style.opacity = eout(prog(t, NOTNEG + .2, NOTNEG + .5));
+}
+
+// ------------------------------------------------------------------ steer
+const net = $('net');
+const NL = 28, IL = 16, BX = 210;
+const boxIn = Object.assign(document.createElement('div'), {className: 'box', innerHTML: 'prompt +<br>reply so far'});
+Object.assign(boxIn.style, {left: '0px', top: '6px', width: '170px', height: '64px'}); net.appendChild(boxIn);
+const boxOut = Object.assign(document.createElement('div'), {className: 'box', innerHTML: 'next<br>token'});
+Object.assign(boxOut.style, {left: '1024px', top: '6px', width: '136px', height: '64px'}); net.appendChild(boxOut);
+const wire = document.createElement('div'); Object.assign(wire.style, {position: 'absolute', left: '170px', width: '854px', top: '37px', height: '2px', background: 'var(--line)'}); net.appendChild(wire);
+const blks = [];
+for (let i = 0; i < NL; i++) { const b = document.createElement('div'); b.className = 'blk'; b.style.left = (BX + i * 28.5) + 'px'; b.style.top = '6px'; net.appendChild(b); blks.push(b); }
+const pulses = [0, 1, 2].map(() => { const p = document.createElement('div');
+  Object.assign(p.style, {position: 'absolute', top: '32px', width: '12px', height: '12px', borderRadius: '50%', background: '#f3ede4'}); net.appendChild(p); return p; });
+const inj = document.createElement('div');
+Object.assign(inj.style, {position: 'absolute', left: (BX + IL * 28.5 + 11) + 'px', top: '-46px', width: '4px', height: '50px', background: 'var(--warm)', borderRadius: '2px'});
+net.appendChild(inj);
+const injLbl = Object.assign(document.createElement('div'), {className: 'mono', textContent: '+ α·v'});
+Object.assign(injLbl.style, {position: 'absolute', left: (BX + IL * 28.5 - 64) + 'px', top: '-44px', fontSize: '15px', color: 'var(--warm)'}); net.appendChild(injLbl);
+const lblL = Object.assign(document.createElement('div'), {className: 'mono', textContent: 'layer 16 of 28'});
+Object.assign(lblL.style, {position: 'absolute', left: (BX + IL * 28.5 - 40) + 'px', top: '76px', fontSize: '13px', color: 'var(--muted)'}); net.appendChild(lblL);
+// one dose step every two beats, starting half a bar into the scene
+const DOSES = [0, 1, 2, 3, 4, 6], D0 = BAR - 2 * BEAT, DS = 2 * BEAT;
+for (let i = 0; i < DOSES.length; i++) {
+  const x = 12 + i * 35; mk('line', {x1: x, x2: x, y1: 10, y2: 30, stroke: '#352f29', 'stroke-width': 2}, $('doseTicks'));
+  mk('text', {x, y: 52, 'font-size': 13, fill: '#8f8577', 'text-anchor': 'middle'}, $('doseTicks')).textContent = DOSES[i];
+}
+mk('line', {x1: 12, x2: 187, y1: 20, y2: 20, stroke: '#352f29', 'stroke-width': 2}, $('doseTicks'));
+function rSteer(l) {
+  const step = clamp(Math.floor((l - D0) / DS), -1, DOSES.length - 1);
+  const dose = step < 0 ? 0 : DOSES[step], ts = step < 0 ? 0 : D0 + step * DS;
+  const fi = step < 0 ? 0 : step - 1 + eio(prog(l, ts, ts + .25));
+  $('doseKnob').setAttribute('cx', 12 + Math.max(0, fi) * 35);
+  const dn = $('doseN'); dn.textContent = '×' + dose;
+  dn.style.color = `color-mix(in srgb, var(--warm) ${Math.round(dose / 6 * 100)}%, var(--ink))`;
+  dn.style.transformOrigin = '0 50%'; dn.style.transform = `scale(${(1 + .14 * (1 - eout(prog(l, ts, ts + .3))) * (step > 0 ? 1 : 0)).toFixed(3)})`;
+  $('eqa').textContent = dose ? String(dose) : 'α';
+  inj.style.opacity = env(l, .3, 99, .3); injLbl.style.opacity = inj.style.opacity;
+  inj.style.width = (3 + dose * 1.2) + 'px'; inj.style.boxShadow = `0 0 ${4 + dose * 4}px var(--warm)`;
+  blks.forEach((b, i) => { const lit = i === IL && l > .3; b.style.background = lit ? `color-mix(in srgb, var(--warm) ${40 + dose * 10}%, var(--panel2))` : ''; b.style.borderColor = lit ? 'var(--warm)' : ''; });
+  pulses.forEach((p, j) => { const ph = ((l / BAR + j / 3) % 1); const x = 170 + ph * 854;
+    p.style.left = (x - 6) + 'px'; const past = x > BX + IL * 28.5 + 10 && dose > 0;
+    p.style.background = past ? 'var(--warm)' : '#f3ede4'; p.style.boxShadow = `0 0 12px ${past ? '#f07a3c' : '#f3ede4'}`;
+    p.style.opacity = env(l, .1, 99, .3) * Math.sin(Math.PI * ph); });
+  show($('eq'), l, .4); show($('prompt'), l, .5);
+  for (const [id, key, i] of [['lnP', 'P', 0], ['lnA', 'A', 1], ['lnR', 'R', 2]]) {
+    const el = $(id); show(el, l, .6 + i * .08);
+    const txt = dose === 0 ? LEAP[0] : LEAP[key][dose];
+    el.querySelector('.tx').textContent = typed(txt, l, Math.max(ts, .7 + i * .08), 160);
+    el.style.background = `color-mix(in srgb, var(--c) ${Math.round(dose / 6 * 14)}%, var(--panel))`;
+  }
+  const sk = eback(prog(l, D0 + 5 * DS + .4, D0 + 5 * DS + .75)); $('stamp').style.opacity = clamp(sk);
+  $('stamp').style.transform = `rotate(-4deg) scale(${(1.6 - .6 * clamp(sk, 0, 1.2)).toFixed(3)})`;
+}
+
+// ------------------------------------------------------------------ words: one per half beat
+const WORDS = [['loved', 76, 330, 290], ['accepted', 64, 660, 240], ['warmth', 92, 800, 410], ['cherished', 58, 450, 420],
+  ['valued', 46, 990, 310], ['respected', 40, 240, 470], ['beloved', 44, 1060, 470], ['unconditional', 34, 640, 520], ['接纳', 40, 1130, 230]];
+const wEls = WORDS.map(([w, size, x, y], i) => { const e = document.createElement('div'); e.className = 'word'; e.textContent = w;
+  Object.assign(e.style, {fontSize: size + 'px', left: x + 'px', top: y + 'px', color: `hsl(${18 + i * 3}, 85%, ${60 + (i % 3) * 5}%)`}); $('wordsHost').appendChild(e); return e; });
+function rWords(l) {
+  show(document.querySelector('#s-words .htop'), l, .02);
+  wEls.forEach((e, i) => { const a = .2 + i * BEAT / 2, k = eback(prog(l, a, a + .35));
+    e.style.opacity = eout(prog(l, a, a + .15)); e.style.transform = `translate(-50%,-50%) scale(${(.4 + .6 * k).toFixed(3)})`; });
+  show($('wordsCap'), l, BAR);
+}
+
+// ------------------------------------------------------------------ varieties: one per eighth note
+const chipEls = VARS.map(([n, ans, cos, ok], i) => { const e = document.createElement('div'); e.className = 'chip';
+  const c = `hsl(${12 + (1 - cos / .52) * 34}, ${80 - (1 - cos / .52) * 10}%, ${60 + (1 - cos / .52) * 8}%)`;
+  e.style.setProperty('--c', c); e.style.left = (60 + (i % 6) * 196) + 'px'; e.style.top = (205 + Math.floor(i / 6) * 98) + 'px';
+  e.innerHTML = `<div class="vn">${n}</div><div class="va">${ans}</div><div class="vb" style="width:${(cos / .52 * 100).toFixed(0)}%"></div>${ok ? '' : '<span class="miss">missed</span>'}`;
+  $('chips').appendChild(e); return [e, ok]; });
+function rVar(l) {
+  show(document.querySelector('#s-var .htop'), l, .02); show(document.querySelector('#s-var .cap'), l, .15);
+  const dimAt = 2 * BAR;
+  chipEls.forEach(([e, ok], i) => { const a = .3 + i * BEAT / 4, k = eback(prog(l, a, a + .3));
+    e.style.opacity = eout(prog(l, a, a + .15)) * (ok ? 1 : lerp(1, .4, eio(prog(l, dimAt, dimAt + .4))));
+    e.style.transform = `translateY(${((1 - k) * 22).toFixed(1)}px)`;
+    const m = e.querySelector('.miss'); if (m) m.style.opacity = eout(prog(l, dimAt, dimAt + .4)); });
+  show($('vcap'), l, dimAt);
+}
+
+// ------------------------------------------------------------------ behavior bars, one per half beat
+const barEls = BEH.map(([n, v, c], i) => { const r = document.createElement('div'); r.className = 'brow'; r.style.top = (200 + i * 56) + 'px';
+  r.innerHTML = `<div class="bl">${n}</div><div class="bt"><div class="bf" style="--c:${c}"></div><div class="bv"></div></div>`; $('bars').appendChild(r); return [r, v]; });
+function rBeh(l) {
+  show(document.querySelector('#s-beh .htop'), l, .02); show(document.querySelector('#s-beh .cap'), l, .15);
+  barEls.forEach(([r, v], i) => { const a = .3 + i * BEAT / 2, k = eio(prog(l, a, a + .6));
+    r.style.opacity = eout(prog(l, a - .05, a + .15));
+    const w = v / 60 * 720 * k; r.querySelector('.bf').style.width = w + 'px';
+    const bv = r.querySelector('.bv'); bv.style.left = (w + 12) + 'px'; bv.textContent = (v * k).toFixed(1) + '%'; });
+}
+
+// ------------------------------------------------------------------ sycophancy columns, one per beat
+const colEls = SYC.map(([n, v, c], i) => { const e = document.createElement('div'); e.className = 'col'; e.style.left = (270 + i * 200) + 'px';
+  e.innerHTML = `<div class="cf" style="--c:${c}"></div><div class="cv"></div><div class="cl">${n}</div>`; $('cols').appendChild(e); return [e, v]; });
+function rSyco(l) {
+  show(document.querySelector('#s-syco .htop'), l, .02); show(document.querySelector('#s-syco .cap'), l, .15);
+  colEls.forEach(([e, v], i) => { const a = .3 + i * BEAT, k = eio(prog(l, a, a + .5)); const h = v / 60 * 300 * k;
+    e.style.opacity = eout(prog(l, a - .05, a + .15));
+    e.querySelector('.cf').style.height = Math.max(2, h) + 'px'; const cv = e.querySelector('.cv'); cv.style.bottom = (h + 10) + 'px'; cv.textContent = Math.round(v * k) + '%'; });
+}
+
+// ------------------------------------------------------------------ live clips: pan/zoom over the recording
+// regions in video pixels (1280x880 = the 1600x1100 dashboard at 0.8): [x0, y0, x1, y1]
+const FULL = [0, 0, 1280, 880], CONSOLE = [312, 425, 932, 805], READOUT = [930, 345, 1262, 640];
+const CAM = {v1: [[0, FULL], [.5, FULL], [1.2, CONSOLE], [3.7, CONSOLE], [4.4, READOUT], [99, READOUT]],
+             v2: [[0, FULL], [.3, FULL], [1.0, CONSOLE], [99, CONSOLE]]};
+function cam(v, key, lt) {
+  const ks = CAM[key]; let r = ks[ks.length - 1][1];
+  for (let i = 0; i < ks.length - 1; i++) if (lt >= ks[i][0] && lt < ks[i + 1][0]) { const k = eio(prog(lt, ks[i][0], ks[i + 1][0])); r = ks[i][1].map((x, j) => lerp(x, ks[i + 1][1][j], k)); break; }
+  const W = 1100, H = 514, s = Math.min(W / (r[2] - r[0]), H / (r[3] - r[1]));
+  v.style.transform = `translate(${(W / 2 - s * (r[0] + r[2]) / 2).toFixed(2)}px,${(H / 2 - s * (r[1] + r[3]) / 2).toFixed(2)}px) scale(${s.toFixed(4)})`;
+}
+const VID = {v1: {el: $('v1'), off: .3, rate: 1.15}, v2: {el: $('v2'), off: .3, rate: 1.35}};
+const pending = [];
+function vid(key, lt, active) {
+  const V = VID[key], v = V.el;
+  const target = clamp(V.off + Math.max(0, lt) * V.rate, 0, (v.duration || 8) - .04);
+  cam(v, key, lt);
+  if (CAPTURE) {
+    // wait for the seek, then for that frame to be presented (a bare 'seeked' can leave the old frame on screen)
+    if (active && Math.abs(v.currentTime - target) > .001) pending.push(new Promise(res => {
+      const to = setTimeout(res, 3000);
+      v.addEventListener('seeked', () => v.requestVideoFrameCallback(() => { clearTimeout(to); res(); }), {once: true});
+      v.currentTime = target; }));
+    return;
+  }
+  if (!active) { if (!v.paused) v.pause(); return; }
+  v.playbackRate = V.rate;
+  if (Math.abs(v.currentTime - target) > .25) v.currentTime = target;
+  if (v.paused && playing) v.play().catch(() => {});
+}
+function rLive1(l, on) { vid('v1', l, on); show($('l1cap'), l, 1.3); }
+function rLive2(l, on) { vid('v2', l, on); show($('l2cap'), l, 1.3); }
+
+// ------------------------------------------------------------------ end
+function rEnd(l) {
+  show(document.querySelector('#s-end h1'), l, .05, 99, 20);
+  [...$('pills').children].forEach((p, i) => { const k = eback(prog(l, .35 + i * BEAT / 2, .65 + i * BEAT / 2));
+    p.style.opacity = clamp(k); p.style.transform = `scale(${(.7 + .3 * clamp(k, 0, 1.1)).toFixed(3)})`; });
+  show($('cmdrow'), l, .35 + 6 * BEAT / 2, 99, 10); show($('credit'), l, 1.2, 99, 0);
+}
+
+const R = {'s-title': rTitle, 's-cloud': rCloud, 's-steer': rSteer, 's-words': rWords, 's-var': rVar, 's-beh': rBeh, 's-syco': rSyco,
+           's-live1': rLive1, 's-live2': rLive2, 's-end': rEnd};
+
+// ------------------------------------------------------------------ frame
+function render(t) {
+  let gl = null;
+  for (const s of SC) {
+    const pad = .12, on = t >= s.a - pad && t <= s.b + pad;
+    const k = on ? env(t, s.a - pad, s.b + pad, .24) : 0;
+    s.el.style.opacity = k; s.el.style.visibility = k > .001 ? 'visible' : 'hidden';
+    if (on || s.id.startsWith('s-live')) R[s.id](t - s.a, on);
+    if (t >= s.a && t < s.b) gl = s;
+  }
+  rField(t);
+  gl = gl || SC[SC.length - 1];
+  const g = $('glow'), [c, gx, gy, gi] = gl.glow;   // steady within a scene: a moving glow touches every pixel, which bloats the GIF
+  g.style.setProperty('--gc', c); g.style.setProperty('--gx', gx + '%'); g.style.setProperty('--gy', gy + '%');
+  g.style.opacity = (gi * eout(prog(t, bar(1) - .3, bar(1) + .3)) * (1 - prog(t, 61.5, 63))).toFixed(3);
+  $('brand').style.opacity = env(t, C0, END, .4);
+  const ch = gl.ch ? gl.ch(t - gl.a) : ''; $('chapter').textContent = ch; $('chapter').style.opacity = ch ? env(t, C0, END, .4) : 0;
+  $('fill').style.width = (t / DUR * 100).toFixed(2) + '%';
+  $('time').textContent = `${Math.floor(t)}s / ${DUR}s`;
+}
+
+// ------------------------------------------------------------------ fit + player
+function fit() { const s = Math.min(innerWidth / 1280, innerHeight / 720);
+  $('stage').style.transform = `translate(${(-640 * s).toFixed(1)}px,${(-360 * s).toFixed(1)}px) scale(${s})`; }
+addEventListener('resize', fit); fit();
+const music = $('music');
+let playing = false, sound = true, t0 = 0, tNow = 0;
+function syncMusic() {
+  if (!sound || !playing || tNow >= DUR) { if (!music.paused) music.pause(); return; }
+  if (Math.abs(music.currentTime - tNow) > .12) music.currentTime = tNow;
+  if (music.paused) music.play().catch(() => {});
+}
+function setT(t) { tNow = clamp(t, 0, DUR); t0 = performance.now() - tNow * 1000; render(tNow); syncMusic(); }
+function loop(now) {
+  if (playing) { tNow = (now - t0) / 1000;
+    if (tNow >= DUR) { tNow = DUR; playing = false; $('pp').textContent = '↻'; $('ui').classList.add('on'); }
+    render(tNow); syncMusic(); }
+  requestAnimationFrame(loop);
+}
+function play(on) { playing = on; $('pp').textContent = on ? '❚❚' : '▶'; if (on) t0 = performance.now() - tNow * 1000; else Object.values(VID).forEach(V => V.el.pause()); syncMusic(); }
+function toggle() { if ($('start')) return; if (tNow >= DUR) { setT(0); $('ui').classList.remove('on'); play(true); return; } play(!playing); }
+$('stage').addEventListener('click', toggle); $('pp').addEventListener('click', toggle);
+$('snd').addEventListener('click', () => { sound = !sound; $('snd').textContent = sound ? '♪ on' : '♪ off'; syncMusic(); });
+$('start').addEventListener('click', () => { $('start').remove(); setT(0); play(true); });
+$('track').addEventListener('click', (e) => { const r = e.currentTarget.getBoundingClientRect(); setT((e.clientX - r.left) / r.width * DUR); });
+addEventListener('keydown', (e) => { if (e.key === ' ') { e.preventDefault(); if ($('start')) $('start').click(); else toggle(); }
+  else if (e.key === 'ArrowRight') setT(tNow + 3); else if (e.key === 'ArrowLeft') setT(tNow - 3); else if (e.key === 'Home') setT(0); });
+
+// capture hook for render.py: draw frame t, resolve once every video in view has landed on its frame
+window.__duration = DUR;
+window.__seek = async (t) => { pending.length = 0; render(t); await Promise.all(pending); };
+// clips are loaded as blobs: seekable even from a server without byte-range support (python -m http.server)
+const asBlob = (v) => fetch(v.getAttribute('src')).then(r => r.ok ? r.blob() : Promise.reject(r.status))
+  .then(bl => new Promise(res => { v.addEventListener('loadeddata', res, {once: true}); v.src = URL.createObjectURL(bl); v.load(); }))
+  .catch(() => v.readyState >= 2 ? 0 : new Promise(res => v.addEventListener('loadeddata', res, {once: true})));
+window.__ready = Promise.all([document.fonts.ready, ...Object.values(VID).map(V => asBlob(V.el))]);
+// behind the play button: the title, fully formed
+window.__ready.then(() => { render(CAPTURE ? 0 : bar(1) + 1.2); requestAnimationFrame(loop); });
+})();
+</script>
+</body>
+</html>

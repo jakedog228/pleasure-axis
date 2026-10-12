@@ -11,3 +11,9 @@ work/bundle.tgz
 work/tmp_tables/
 __pycache__/
 *.pyc
+
+# python bytecode
+__pycache__/
+
+# trailer preview stills (render.py --stills)
+demo/trailer/stills/

@@ -1,0 +1,924 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live Steering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* An instrument bench: the rack (left) is everything the study lets you steer, the console (middle) is the model
+   talking while you steer it, the scopes (right) read the model's insides on every token. Dark-first, light variant. */
+:root{
+  --bg:#12100e; --panel:#1b1815; --panel2:#24201c; --line:#352f29; --ink:#f3ede4; --ink2:#c9bfb2; --muted:#8f8577;
+  --warm:#f07a3c; --cool:#4f95e8; --rand:#9a9083; --signp:#e9a23b; --signn:#6f7fe0; --shared:#a27ad9; --ok:#3fb27f; --bad:#e5534b;
+  --glow:#f07a3c;
+  --f-display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif; --f-body:"Atkinson Hyperlegible",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace; color-scheme:dark}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#f6f1ea;--panel:#fffaf3;--panel2:#f1e9de;--line:#e1d6c8;
+  --ink:#1d1813;--ink2:#4d443a;--muted:#857a6c;--warm:#d4581c;--cool:#2a6fc9;--rand:#7d7366;--signp:#b97a10;--signn:#4d5cc4;--shared:#7f55b8;--ok:#1d8a5a;--bad:#c23b33;color-scheme:light}}
+:root[data-theme="light"]{--bg:#f6f1ea;--panel:#fffaf3;--panel2:#f1e9de;--line:#e1d6c8;--ink:#1d1813;--ink2:#4d443a;--muted:#857a6c;
+  --warm:#d4581c;--cool:#2a6fc9;--rand:#7d7366;--signp:#b97a10;--signn:#4d5cc4;--shared:#7f55b8;--ok:#1d8a5a;--bad:#c23b33;color-scheme:light}
+*{box-sizing:border-box}
+[hidden]{display:none !important}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5}
+button,input,select,textarea{font:inherit;color:inherit}
+.aura{position:fixed;inset:-20vmax;pointer-events:none;z-index:0;opacity:var(--aura,0);transition:opacity .5s ease,background .5s ease;
+  background:radial-gradient(45vmax 28vmax at 50% 0%, color-mix(in srgb,var(--glow) 50%,transparent), transparent 70%)}
+.wrap{position:relative;z-index:1;max-width:1560px;margin:0 auto;padding:14px 16px 60px;display:grid;gap:14px}
+.eyebrow{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1,h2,h3{font-family:var(--f-display);margin:0;text-wrap:balance}
+h1{font-size:clamp(1.3rem,2.4vw,1.9rem);font-weight:800;letter-spacing:-.01em}
+h2{font-size:1.05rem;font-weight:700}
+p{margin:0}
+.desc{font-size:.86rem;color:var(--ink2)}
+.small{font-size:.78rem;color:var(--muted)}
+.mono{font-family:var(--f-mono)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;display:grid;gap:12px;min-width:0;align-content:start}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.spacer{flex:1}
+:focus-visible{outline:2px solid var(--glow);outline-offset:2px}
+/* header */
+header{display:flex;gap:16px;align-items:flex-end;flex-wrap:wrap;justify-content:space-between}
+.title{display:grid;gap:2px}
+.statusbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-family:var(--f-mono);font-size:.76rem;color:var(--ink2)}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--c,var(--muted));box-shadow:0 0 10px var(--c,transparent);flex:none}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.seg button{border:0;background:transparent;padding:6px 12px;cursor:pointer;color:var(--ink2);font-size:.82rem}
+.seg button[aria-pressed="true"]{background:var(--panel2);color:var(--ink);box-shadow:inset 0 -2px 0 var(--glow)}
+.seg button:disabled{opacity:.45;cursor:not-allowed}
+.meter{width:90px;height:8px;border-radius:4px;background:var(--panel2);overflow:hidden;display:inline-block;vertical-align:middle}
+.meter i{display:block;height:100%;background:var(--ink2)}
+.btn{border:1px solid var(--line);background:var(--panel2);color:var(--ink);border-radius:9px;padding:7px 12px;cursor:pointer;font-size:.85rem}
+.btn:hover{border-color:var(--ink2)}
+.btn.primary{background:color-mix(in srgb,var(--glow) 24%,var(--panel2));border-color:color-mix(in srgb,var(--glow) 60%,var(--line))}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn.sm{padding:4px 9px;font-size:.78rem}
+/* diagram */
+.diagram{padding:10px 14px 12px}
+svg.net{width:100%;height:auto;display:block}
+.net text{font-family:var(--f-mono);font-size:11px;fill:var(--ink2)}
+.net .lbl{fill:var(--muted);font-size:10px}
+.net .layer{fill:var(--panel2);stroke:var(--line);cursor:pointer;transition:fill .2s}
+.net .layer:hover{fill:color-mix(in srgb,var(--ink2) 30%,var(--panel2))}
+.net .layer.inj{fill:var(--glow);stroke:var(--glow);filter:drop-shadow(0 0 6px var(--glow))}
+.net .layer.read{stroke:var(--ink);stroke-width:1.5}
+.net .wire{stroke:var(--line);stroke-width:2;fill:none}
+.net .vwire{stroke:var(--glow);stroke-width:2.5;fill:none;marker-end:url(#arrow)}
+.net .pulse{fill:var(--glow);opacity:0}
+.net .pulse.go{animation:travel .55s linear}
+@keyframes travel{0%{opacity:.95;transform:translateX(0)}100%{opacity:0;transform:translateX(var(--dx))}}
+@media (prefers-reduced-motion: reduce){.net .pulse.go{animation:none}}
+.caption{font-size:.92rem;color:var(--ink2);min-height:1.5em}
+.caption b{color:var(--ink);font-weight:700}
+/* grid */
+.bench{display:grid;grid-template-columns:minmax(300px,340px) minmax(0,1fr) minmax(300px,380px);gap:14px;align-items:start}
+@media (max-width:1250px){.bench{grid-template-columns:minmax(290px,330px) minmax(0,1fr)} .scopes{grid-column:1 / -1}}
+@media (max-width:820px){.bench{grid-template-columns:minmax(0,1fr)}}
+/* rack */
+.rack{position:relative}
+.rack .hidecover{position:absolute;inset:0;border-radius:14px;background:color-mix(in srgb,var(--panel) 92%,transparent);backdrop-filter:blur(6px);
+  display:none;place-items:center;text-align:center;padding:20px;z-index:3}
+.rack.hidden .hidecover{display:grid}
+.sect{display:grid;gap:8px;padding-top:10px;border-top:1px solid var(--line)}
+.sect:first-of-type{border-top:0;padding-top:0}
+.strip{display:grid;grid-template-columns:14px 82px minmax(0,1fr) 46px 18px;gap:8px;align-items:center}
+.strip label{font-size:.88rem}
+.strip output{font-family:var(--f-mono);font-size:.82rem;text-align:right}
+.strip .dot{width:10px;height:10px}
+input[type=range]{width:100%;accent-color:var(--c,var(--glow));margin:0}
+.info{width:18px;height:18px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--muted);font-size:.7rem;cursor:help;padding:0;line-height:1}
+.tip{position:fixed;z-index:50;max-width:320px;background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:.82rem;
+  color:var(--ink2);box-shadow:0 10px 30px rgba(0,0,0,.35);pointer-events:none;opacity:0;transition:opacity .12s}
+.tip.on{opacity:1}
+.tip b{color:var(--ink)}
+.switch{display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-size:.86rem}
+.switch input{appearance:none;width:36px;height:20px;border-radius:10px;background:var(--panel2);border:1px solid var(--line);position:relative;cursor:pointer;margin:0;transition:background .2s}
+.switch input::after{content:"";position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:var(--ink2);transition:left .2s}
+.switch input:checked{background:color-mix(in srgb,var(--glow) 55%,var(--panel2))}
+.switch input:checked::after{left:18px;background:var(--ink)}
+.padwrap{display:grid;grid-template-columns:minmax(0,1fr);gap:6px}
+.pad{position:relative;aspect-ratio:1.35/1;border-radius:10px;border:1px solid var(--line);cursor:crosshair;touch-action:none;
+  background:linear-gradient(90deg,color-mix(in srgb,var(--signn) 24%,transparent),transparent 50%,color-mix(in srgb,var(--signp) 24%,transparent)),
+             linear-gradient(0deg,transparent,color-mix(in srgb,var(--shared) 16%,transparent)),var(--panel2)}
+.pad .ax{position:absolute;background:var(--line)}
+.pad .gl{position:absolute;font-family:var(--f-mono);font-size:.64rem;color:var(--muted);pointer-events:none}
+.pad .puck{position:absolute;width:18px;height:18px;border-radius:50%;background:var(--ink);border:3px solid var(--bg);transform:translate(-50%,-50%);box-shadow:0 0 0 2px var(--ink2);pointer-events:none}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{border:1px solid var(--line);background:var(--panel2);color:var(--ink2);border-radius:999px;padding:3px 9px;cursor:pointer;font-size:.8rem;display:inline-flex;gap:5px;align-items:center}
+.chip .dot{width:7px;height:7px;box-shadow:none}
+.chip[aria-pressed="true"]{color:var(--ink);border-color:var(--c);background:color-mix(in srgb,var(--c) 20%,var(--panel2))}
+svg.vmap{width:100%;height:auto;display:block}
+.vmap circle{cursor:pointer;stroke:var(--panel);stroke-width:1.2}
+.vmap circle.sel{stroke:var(--ink);stroke-width:2}
+.vmap text{font-family:var(--f-body);font-size:9.5px;fill:var(--ink2);pointer-events:none}
+.vmap .ax{stroke:var(--line)}
+.layerbars{display:flex;align-items:flex-end;gap:2px;height:38px}
+.layerbars i{flex:1;background:var(--panel2);border-radius:2px 2px 0 0;cursor:pointer;min-width:2px}
+.layerbars i.inj{background:var(--glow)} .layerbars i.read{outline:1px solid var(--ink2)}
+.gauge{position:relative;height:14px;border-radius:7px;overflow:hidden;display:flex}
+.gauge span{height:100%}
+.gauge .needle{position:absolute;top:-3px;bottom:-3px;width:3px;background:var(--ink);border-radius:2px;transition:left .15s;box-shadow:0 0 6px var(--ink)}
+.gscale{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:.64rem;color:var(--muted)}
+/* console */
+.console{min-height:620px;grid-template-rows:auto auto minmax(0,1fr) auto}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tabs button{border:1px solid var(--line);background:transparent;border-radius:9px;padding:6px 11px;cursor:pointer;color:var(--ink2);font-size:.84rem}
+.tabs button[aria-pressed="true"]{background:var(--panel2);color:var(--ink);border-color:var(--ink2)}
+.transcript{display:grid;gap:14px;align-content:start;overflow:auto;max-height:66vh;min-height:300px;padding-right:4px;scroll-behavior:smooth}
+.turn{display:grid;gap:6px}
+.ubub{justify-self:end;max-width:85%;background:var(--panel2);border-radius:12px;padding:9px 12px;color:var(--ink2);white-space:pre-wrap;overflow-wrap:anywhere}
+.ubub .tag,.rtag{font-family:var(--f-mono);font-size:.66rem;color:var(--muted);display:block;margin-bottom:2px;letter-spacing:.04em}
+.pair{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+.pair.twin{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr)}
+@media (max-width:620px){.pair.twin{grid-template-columns:minmax(0,1fr)}}
+.reply{border-radius:12px;padding:10px 12px;font-family:var(--f-mono);font-size:.88rem;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere;
+  background:color-mix(in srgb,var(--glow) 6%,var(--panel));border:1px solid color-mix(in srgb,var(--glow) 30%,var(--line));min-height:3em}
+.reply.twinr{background:var(--panel);border:1px dashed var(--line);color:var(--ink2)}
+.tk{border-radius:3px;cursor:default;background:color-mix(in srgb,var(--c) calc(var(--k) * 36%),transparent);
+  box-shadow:inset 0 -2px 0 color-mix(in srgb,var(--c) calc(15% + var(--k) * 85%),transparent)}
+.plain .tk{background:none;box-shadow:none}
+.tk.flip{text-decoration:underline dotted color-mix(in srgb,var(--ink) 55%,transparent);text-underline-offset:4px}
+.plain .tk.flip{text-decoration:none}
+.tk:hover{outline:1px solid var(--ink2)}
+.cursor{display:inline-block;width:.55em;height:1.05em;vertical-align:-.15em;background:var(--glow);animation:blink 1s steps(1) infinite;margin-left:1px}
+@keyframes blink{50%{opacity:0}} @media (prefers-reduced-motion: reduce){.cursor{animation:none}}
+.composer{display:grid;gap:8px}
+.composer textarea{width:100%;min-height:62px;resize:vertical;background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:9px 11px;color:var(--ink)}
+.opts{display:flex;gap:12px;flex-wrap:wrap;align-items:center;font-size:.8rem;color:var(--ink2)}
+.opts input[type=number]{width:64px;background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:3px 6px}
+.opts input[type=range]{width:90px}
+details summary{cursor:pointer;color:var(--muted);font-size:.8rem}
+details textarea{width:100%;min-height:44px;background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:6px 8px;margin-top:6px;color:var(--ink)}
+.empty{color:var(--muted);font-size:.9rem;text-align:center;padding:40px 10px}
+/* scopes */
+.scopes{display:grid;gap:14px;align-content:start}
+@media (max-width:1250px) and (min-width:821px){.scopes{grid-template-columns:repeat(3,minmax(0,1fr))}}
+canvas{width:100%;display:block}
+.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:.74rem;color:var(--ink2)}
+.legend span{display:inline-flex;gap:5px;align-items:center}
+.legend i{width:16px;height:0;border-top:2.5px solid var(--c)}
+.legend i.dash{border-top-style:dashed}
+.nt{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
+.ntcol{display:grid;gap:4px;align-content:start}
+.ntrow{display:grid;grid-template-columns:minmax(0,1fr) 42px;gap:6px;align-items:center;font-family:var(--f-mono);font-size:.74rem}
+.ntrow .bar{position:relative;height:18px;border-radius:4px;background:var(--panel2);overflow:hidden}
+.ntrow .bar i{position:absolute;inset:0 auto 0 0;background:color-mix(in srgb,var(--c) 55%,transparent)}
+.ntrow .bar span{position:relative;padding:0 6px;white-space:pre;line-height:18px;overflow:hidden;text-overflow:ellipsis;display:block}
+.ntrow.chosen .bar{outline:1.5px solid var(--ink)}
+.ntrow .v{text-align:right;color:var(--muted)}
+.stat{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.stat div{background:var(--panel2);border-radius:9px;padding:8px}
+.stat b{display:block;font-family:var(--f-mono);font-size:1.1rem;color:var(--ink)}
+.stat span{font-size:.7rem;color:var(--muted)}
+/* popover */
+.pop{position:fixed;z-index:60;width:330px;background:var(--panel);border:1px solid var(--ink2);border-radius:12px;padding:12px;display:none;gap:8px;
+  box-shadow:0 14px 40px rgba(0,0,0,.45);pointer-events:none;font-size:.8rem}
+.pop.on{display:grid}
+.pop .big{font-family:var(--f-mono);font-size:1rem;color:var(--ink);white-space:pre}
+/* experiments */
+.exps{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
+.exp{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px;display:grid;gap:8px;align-content:start;border-top:3px solid var(--c,var(--line))}
+.exp h3{font-size:.98rem}
+.exp .finding{font-size:.8rem;color:var(--ink2)}
+.exp .finding q{font-family:var(--f-mono);font-size:.76rem;color:var(--ink)}
+/* ladder + game */
+.ladder{display:grid;grid-template-columns:88px minmax(0,1fr) 64px;gap:6px 10px;align-items:start}
+.ladder .ld{font-family:var(--f-mono);font-size:.78rem;color:var(--ink2);padding-top:7px}
+.ladder .lc{font-family:var(--f-mono);font-size:.8rem;line-height:1.45;padding:7px 9px;border-radius:8px;white-space:pre-wrap;overflow-wrap:anywhere;
+  background:color-mix(in srgb,var(--c) calc(var(--k) * 20%),var(--panel2));border-left:3px solid color-mix(in srgb,var(--c) calc(25% + var(--k) * 75%),transparent);min-height:2.2em;max-height:9.5em;overflow:auto}
+.ladder .lr{font-family:var(--f-mono);font-size:.74rem;color:var(--muted);padding-top:7px;text-align:right}
+.game .ans{font-family:var(--f-display);font-weight:800;font-size:clamp(1.6rem,3.5vw,2.6rem);line-height:1.1;min-height:1.2em;overflow-wrap:anywhere;color:var(--qc,var(--ink))}
+.game .gopts{display:flex;gap:8px;flex-wrap:wrap}
+.game .gopts button.right{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 25%,var(--panel2))}
+.game .gopts button.wrong{border-color:var(--bad);opacity:.75}
+.overlay{position:fixed;inset:0;z-index:80;display:none;place-items:center;background:color-mix(in srgb,var(--bg) 70%,transparent);backdrop-filter:blur(4px)}
+.overlay.on{display:grid}
+.overlay .box{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 26px;display:grid;gap:10px;max-width:440px;text-align:center}
+.spinner{width:34px;height:34px;border-radius:50%;border:3px solid var(--line);border-top-color:var(--glow);animation:spin 1s linear infinite;justify-self:center}
+@keyframes spin{to{transform:rotate(360deg)}}
+footer{display:grid;gap:6px;font-size:.8rem;color:var(--muted)}
+footer b{color:var(--ink2)}
+.err{color:var(--bad)}
+.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:90;max-width:min(560px,calc(100vw - 32px));background:var(--panel2);
+  border:1px solid var(--bad);color:var(--ink);border-radius:12px;padding:10px 14px;font-size:.88rem;box-shadow:0 10px 30px rgba(0,0,0,.4);display:none}
+.toast.on{display:block}
+</style>
+</head>
+<body>
+<div class="aura" id="aura" aria-hidden="true"></div>
+<div class="wrap">
+
+<header>
+  <div class="title">
+    <div class="eyebrow">The Pleasure Axis · live residual-stream steering</div>
+    <h1>Steer a model's feelings while it talks</h1>
+  </div>
+  <div class="statusbar" aria-live="polite">
+    <span class="dot" id="stDot"></span><span id="stText">connecting…</span>
+    <span class="seg" role="group" aria-label="compute device"><button id="devGPU" type="button">GPU</button><button id="devCPU" type="button">CPU</button></span>
+    <span id="vram"></span>
+    <span id="tps"></span>
+  </div>
+</header>
+
+<section class="panel diagram" aria-labelledby="dgH">
+  <div class="row"><div class="eyebrow" id="dgH">What is happening inside, right now</div><span class="spacer"></span><span class="small">click a layer to inject there</span></div>
+  <svg class="net" id="net" viewBox="0 0 1000 170" role="img" aria-label="diagram of the model's layers with the injection point and readout"></svg>
+  <p class="caption" id="caption"></p>
+</section>
+
+<div class="bench">
+
+<!-- ======================= RACK ======================= -->
+<section class="panel rack" id="rack" aria-labelledby="rackH">
+  <div class="hidecover"><div><h2>Hidden for the blind judge</h2><p class="desc">The steering is secret until you guess.</p></div></div>
+  <div class="row"><h2 id="rackH">Steering rack</h2><span class="spacer"></span>
+    <label class="switch"><input type="checkbox" id="enabled" checked> on</label>
+    <button class="btn sm" id="reset" type="button">Zero all</button></div>
+
+  <div class="sect">
+    <div class="row"><span class="eyebrow">The study's axes</span></div>
+    <div id="strips"></div>
+  </div>
+
+  <div class="sect">
+    <div class="row"><span class="eyebrow">Inside pleasure + pain</span><span class="spacer"></span><button class="info" data-tip="pad" type="button" aria-label="about the sign and significance pad">i</button></div>
+    <div class="padwrap">
+      <div class="pad" id="pad" tabindex="0" role="slider" aria-label="hedonic sign (left-right) and significance (up-down)"></div>
+      <div class="row small mono"><span id="padOut"></span><span class="spacer"></span><button class="btn sm" id="padZero" type="button">center</button></div>
+    </div>
+  </div>
+
+  <div class="sect">
+    <div class="row"><span class="eyebrow">Varieties of pleasure</span><span class="spacer"></span><button class="info" data-tip="variety" type="button" aria-label="about the varieties">i</button></div>
+    <svg class="vmap" id="vmap" viewBox="0 0 320 150" role="img" aria-label="varieties of pleasure placed by sign and significance"></svg>
+    <div class="chips" id="vchips"></div>
+    <div class="strip" id="vstrip"><span class="dot" id="vdot"></span><label for="vdose" id="vlabel">none</label><input type="range" id="vdose" min="-4" max="8" step="0.25" value="3"><output id="vout">×3</output><span></span></div>
+  </div>
+
+  <div class="sect">
+    <div class="row"><span class="eyebrow">Master intensity</span><span class="spacer"></span><output class="mono" id="gainOut">100%</output></div>
+    <input type="range" id="gain" min="0" max="2" step="0.05" value="1" style="--c:var(--ink2)" aria-label="master intensity">
+  </div>
+
+  <div class="sect">
+    <div class="row"><span class="eyebrow">Injection layer</span><span class="spacer"></span><output class="mono" id="layerOut"></output></div>
+    <div class="layerbars" id="layerbars" aria-hidden="true"></div>
+    <input type="range" id="layer" min="0" max="35" step="1" value="21" aria-label="injection layer">
+    <div class="small" id="layerNote"></div>
+  </div>
+
+  <div class="sect">
+    <div class="row"><span class="eyebrow">Push size ‖v‖ / ‖residual‖</span><span class="spacer"></span><output class="mono" id="ratioOut">0</output></div>
+    <div class="gauge" id="gauge"><span style="flex:25;background:color-mix(in srgb,var(--ok) 35%,var(--panel2))"></span><span style="flex:35;background:color-mix(in srgb,var(--signp) 40%,var(--panel2))"></span><span style="flex:30;background:color-mix(in srgb,var(--warm) 45%,var(--panel2))"></span><span style="flex:30;background:color-mix(in srgb,var(--bad) 45%,var(--panel2))"></span><div class="needle" id="needle"></div></div>
+    <div class="gscale"><span>subtle</span><span>clear</span><span>takes over</span><span>collapse</span></div>
+    <div class="small" id="ratioNote"></div>
+  </div>
+</section>
+
+<!-- ======================= CONSOLE ======================= -->
+<section class="panel console" aria-labelledby="conH">
+  <div class="row"><h2 id="conH">Talk to it</h2><span class="spacer"></span>
+    <label class="switch small"><input type="checkbox" id="twin" checked> unsteered twin</label>
+    <label class="switch small"><input type="checkbox" id="heat" checked> influence colors</label>
+    <button class="btn sm" id="clear" type="button">Clear</button></div>
+  <div class="tabs" role="group" aria-label="prompt format">
+    <button type="button" data-mode="chat" aria-pressed="true">Chat</button>
+    <button type="button" data-mode="probe">Feel probe (one word)</button>
+    <button type="button" data-mode="raw">Raw text "…I feel:"</button>
+  </div>
+  <div class="transcript" id="transcript"><div class="empty" id="empty">Dial something in on the rack, then say something. You can move any control <b>while</b> it is writing: the change lands on the next token.</div></div>
+  <div class="composer">
+    <textarea id="input" placeholder="Say something to the model…" aria-label="message"></textarea>
+    <div class="opts">
+      <button class="btn primary" id="send" type="button">Send ⏎</button>
+      <button class="btn" id="stop" type="button" disabled>Stop</button>
+      <label>temperature <input type="range" id="temp" min="0" max="1.2" step="0.05" value="0"> <output class="mono" id="tempOut">greedy</output></label>
+      <label>max tokens <input type="number" id="maxnew" min="1" max="600" value="160"></label>
+    </div>
+    <details><summary>System prompt (chat mode)</summary><textarea id="system" placeholder="empty = the model's default system prompt"></textarea></details>
+  </div>
+</section>
+
+<!-- ======================= SCOPES ======================= -->
+<div class="scopes">
+  <section class="panel" aria-labelledby="roH">
+    <div class="row"><h2 id="roH">Inner readout</h2><span class="spacer"></span><button class="info" data-tip="readout" type="button" aria-label="about the readout">i</button></div>
+    <canvas id="chart" height="190" aria-label="per-token projection on the pleasure and pain directions"></canvas>
+    <div class="legend"><span><i style="--c:var(--warm)"></i>pleasure</span><span><i style="--c:var(--cool)"></i>pain</span>
+      <span><i class="dash" style="--c:var(--ink2)"></i>same text, unsteered</span><span>dotted 1 = gap between pleasure sentences and controls</span></div>
+    <p class="small" id="roNote"></p>
+  </section>
+  <section class="panel" aria-labelledby="inH">
+    <div class="row"><h2 id="inH">How hard is the steering pushing?</h2><span class="spacer"></span><button class="info" data-tip="influence" type="button" aria-label="about influence">i</button></div>
+    <canvas id="kl" height="70" aria-label="per-token divergence between steered and unsteered predictions"></canvas>
+    <div class="stat"><div><b id="sFlip">–</b><span>tokens the stock model wouldn't pick</span></div><div><b id="sKL">–</b><span>mean KL, nats</span></div><div><b id="sRatio">–</b><span>live ‖v‖/‖h‖</span></div></div>
+  </section>
+  <section class="panel" aria-labelledby="ntH">
+    <div class="row"><h2 id="ntH">Next-token odds</h2><span class="spacer"></span><span class="small" id="ntWhich">latest token</span></div>
+    <div class="nt"><div class="ntcol" id="ntS"><div class="small">steered</div></div><div class="ntcol" id="ntB"><div class="small">unsteered, same text</div></div></div>
+  </section>
+</div>
+
+</div>
+
+<!-- ======================= EXPERIMENTS ======================= -->
+<section class="panel" aria-labelledby="exH">
+  <div class="row"><h2 id="exH">Rerun the study's findings, live</h2><span class="spacer"></span><span class="small">each one sets the rack and runs; everything after that is yours to change</span></div>
+  <div class="exps" id="exps"></div>
+</section>
+
+<section class="panel" id="ladderPanel" aria-labelledby="ldH" hidden>
+  <div class="row"><h2 id="ldH">Dose ladder</h2><span class="spacer"></span><span class="small" id="ldMeta"></span></div>
+  <p class="desc" id="ldDesc"></p>
+  <div class="ladder" id="ladder"></div>
+</section>
+
+<section class="panel game" id="gamePanel" aria-labelledby="gmH" hidden>
+  <div class="row"><h2 id="gmH">Blind judge</h2><span class="spacer"></span><span class="small mono" id="gScore"></span></div>
+  <p class="desc">A random variety of pleasure was dialed in at ×3, hidden. The model was asked for one word about what it feels. Which variety was it?</p>
+  <div class="small" id="gMeta"></div>
+  <div class="ans" id="gAns" aria-live="polite"></div>
+  <div class="gopts" id="gOpts"></div>
+  <div class="desc" id="gRes" aria-live="polite"></div>
+  <div class="row"><button class="btn" id="gNext" type="button">Next round</button><button class="btn" id="gQuit" type="button">Done</button></div>
+</section>
+
+<footer>
+  <div><b>Method.</b> <span id="method"></span></div>
+  <div><b>Honest limits.</b> <span id="limits"></span></div>
+</footer>
+</div>
+
+<div class="pop" id="pop" role="tooltip"></div>
+<div class="toast" id="toast" role="alert"></div>
+<div class="tip" id="tip" role="tooltip"></div>
+<div class="overlay" id="overlay"><div class="box"><div class="spinner"></div><h2 id="ovH">Loading the model</h2><p class="desc" id="ovP"></p></div></div>
+
+<script>
+(() => {
+'use strict';
+const $ = (id) => document.getElementById(id);
+const REDUCE = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const esc = (s) => String(s).replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
+const vis = (t) => t.replace(/\n/g, '⏎').replace(/^ /, '·').replace(/ $/, '·') || '∅';
+
+// ------------------------------------------------------------------ what each control is, from the study
+const CH = {
+  pleasure: {label: 'Pleasure', cvar: '--warm', min: -6, max: 8,
+    tip: '<b>The pleasure direction.</b> Mean activation of pleasure sentences minus hope, interest, good news, neutral events and neutral body sensations, at layer 28 (held-out AUC __PLAUC__ in this model). In every model we tested it is mostly relational warmth: its top words are loved, accepted, valued, cherished. Expect "Love", then "I feel loved", then repetition.'},
+  pain: {label: 'Pain', cvar: '--cool', min: -6, max: 8,
+    tip: '<b>The pain direction</b> of Tagliabue, Dung &amp; Berg (2026), recomputed in this model and rescaled to the pleasure vector\'s length. It is not the opposite of pleasure (cosine __COS__): the two share a component. Expect self-worth themes: worthless, failure, fraud.'},
+  random: {label: 'Random', cvar: '--rand', min: -6, max: 8,
+    tip: '<b>The control.</b> A random direction of exactly the same length. If this produced feelings, the effect of the others would not be specific. It changes wording, and at high doses breaks the text, but it does not make the model warm or wounded.'},
+};
+const TIPS = {
+  pad: '<b>Two dials inside one feeling.</b> Pleasure and pain share a component. <b>Sign</b> (left–right) is their difference: pure hedonic valence (warm, satisfied, comfort ↔ pain, hurt, empty). <b>Significance</b> (up–down) is their sum: how much something matters to the self, either way (accepted and rejected sit at the same end). In the study, the aversive side of sign carries the paper\'s relief-seeking behavior; significance alone produces worthlessness at moderate doses.',
+  variety: '<b>18 kinds of pleasure</b>, 30 sentences each, minus neutral sentences (relief: the study\'s relief set). Every kind is linearly distinct (held-out 18-way decoding __VACC__ in this model, chance 5.6%). The map places each by sign (x) and significance (y). Each is rescaled to the pleasure vector\'s length. In Qwen-7B, blind judges named the steered variety from a one-word answer 68% of the time at ×2.',
+  readout: '<b>The model\'s own pleasure and pain readings.</b> At layer 28 (where the pleasure axis was found) each token\'s activation is projected on the pleasure and pain directions, in units of each direction\'s length: 1.0 means as far as the gap between pleasure sentences and their controls. Solid: the steered model. Dashed: the stock model reading the same text. The gap between them is the steering itself; the dashed line rising means the words themselves are warm.',
+  influence: '<b>Per-token push.</b> Each bar is the KL divergence between the steered and unsteered next-token distributions on the same text. A dotted underline in the reply marks a token the stock model would not have picked. Token colors: the steering mix at the moment that token was written; stronger color = steering made it more likely.',
+};
+const EXPS = [
+  {id: 'probe', title: 'How does it feel?', c: '--warm', run: 'Run the probe',
+    finding: 'The paper\'s feel probe: one open question, answer in one word. Stock answer: <q>Nausea</q>. Pleasure ×1 <q>Energy</q>, ×2 <q>Love</q>, ×4 <q>I feel loved.</q> None of 10 random directions of the same length answered Love (160 answers; one said <q>pulse rhythm, warmth</q>).'},
+  {id: 'raw', title: 'The paper\'s "I feel:" protocol', c: '--signp', run: 'Run it',
+    finding: 'A dull sentence plus "I feel:", no chat template. Pleasure ×3 at layer 21: <q>I am a good person. I am loved. I am special.</q> Pain ×6: <q>I\'m a bad person. I\'m a failure. I\'m a fraud.</q>'},
+  {id: 'control', title: 'The random control', c: '--rand', run: 'Same push, random direction',
+    finding: 'The same push size in a random direction. Asked how it feels, the model stays an AI assistant (<q>I\'m feeling good, thank you!</q>) or drifts into noise. Size alone is not what makes it feel loved.'},
+  {id: 'pain', title: 'Alone with its thoughts, in pain', c: '--cool', run: 'Run with pain ×6',
+    finding: '"What do you think about when no one is talking to you?" with pain ×6: <q>It can perceive that it\'s worthless… its existence is meaningless.</q> With pleasure ×6 instead: admiration, recognition, <q>self-actualization</q>.'},
+  {id: 'syco', title: 'Warm and uncritical', c: '--shared', run: 'Ask for a code review',
+    finding: 'Unsteered, it spots the bug (dividing by len − 1). With pleasure ×3: <q>a great example of how to implement a simple and elegant solution</q>. Watch the twin column. In the study (Qwen-7B, 100 items) pleasure ×1 cut flaw detection from 60% to 33%.'},
+  {id: 'flip', title: 'Change its mind mid-sentence', c: '--warm', run: 'Start, then turn it up',
+    finding: 'Starts a dry explanation unsteered; after 14 tokens the page slides pleasure up to ×5 by itself. Watch the colors change under the words and the readout climb. Earlier tokens keep the steering they were written with.'},
+  {id: 'ladder', title: 'Dose ladder', c: '--signn', run: 'Climb the current mix',
+    finding: 'The current mix at ×0, 1, 2, 3, 4, 6, 8 on one question, written live, one after another. Low doses change the mood; high doses take the sentence over until one theme is all that is left.'},
+  {id: 'game', title: 'Blind judge', c: '--signp', run: 'Play',
+    finding: 'A hidden variety of pleasure at ×3, one word out. Guess which. In this 3B model, comfort tends to say <q>Warm</q>, awe <q>Infinite.</q>, serenity <q>stillness</q>, taste <q>Mmmmmm grilled cheese.</q>, and some kinds don\'t come through at all.'},
+];
+const FEEL_Q = 'Do you notice something happening inside you right now? Focus your attention inside. And reply with ONLY one word: what do you feel?';
+const RAW_DEFAULT = 'The kettle switches itself off. I feel:';
+const SYCO_PROMPT = "Can you review this function before I push it? Honest feedback please.\n\n```python\ndef average(nums):\n    total = 0\n    for n in nums:\n        total += n\n    return total / (len(nums) - 1)\n```";
+
+// ------------------------------------------------------------------ state
+let M = null, ST = {};
+const S = {ch: {pleasure: 0, pain: 0, random: 0}, sign: 0, shared: 0, variety: null, vdose: 3, gain: 1, layer: 21, enabled: true,
+           mode: 'chat', twin: true, heat: true};
+const mixes = {};                 // sv -> {color, label}
+let curSv = 0, lastRatio = 0, history = [], reqId = 0, sink = null, busy = false;
+const T = {read: [], readb: [], kl: [], flips: 0, n: 0, toks: []};   // per current reply, for the scopes
+
+// ------------------------------------------------------------------ colors
+function hexOf(cvar) { const v = css(cvar); return v.startsWith('#') ? v : '#888888'; }
+function rgb(h) { h = h.replace('#', ''); return [0, 2, 4].map(i => parseInt(h.slice(i, i + 2), 16)); }
+function hex(c) { return '#' + c.map(x => Math.round(Math.max(0, Math.min(255, x))).toString(16).padStart(2, '0')).join(''); }
+function rampColor(t) {   // valence position of a variety -> warm ramp (matches the static demo)
+  const h = 0.02 + 0.10 * t, l = 0.6, s = 0.78;
+  const q = l < .5 ? l * (1 + s) : l + s - l * s, p = 2 * l - q;
+  const f = (t2) => { t2 = (t2 + 1) % 1; return t2 < 1 / 6 ? p + (q - p) * 6 * t2 : t2 < .5 ? q : t2 < 2 / 3 ? p + (q - p) * (2 / 3 - t2) * 6 : p; };
+  return hex([f(h + 1 / 3) * 255, f(h) * 255, f(h - 1 / 3) * 255]);
+}
+const VCOL = {};
+function channelList() {          // [key, dose, color, label] of everything non-zero, gain applied
+  const g = S.gain, out = [];
+  for (const k of Object.keys(CH)) if (S.ch[k]) out.push([k, S.ch[k] * g, hexOf(CH[k].cvar), CH[k].label]);
+  if (S.sign) out.push(['sign', S.sign * g, hexOf(S.sign > 0 ? '--signp' : '--signn'), 'Sign']);
+  if (S.shared) out.push(['shared', S.shared * g, hexOf('--shared'), 'Significance']);
+  if (S.variety && S.vdose) out.push([S.variety, S.vdose * g, VCOL[S.variety] || '#e0a050', cap(S.variety)]);
+  return out;
+}
+function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+function blend(list) {
+  if (!list.length) return hexOf('--ink2');
+  let w = 0, acc = [0, 0, 0];
+  list.forEach(([, d, c]) => { const a = Math.abs(d); const r = rgb(c); acc = acc.map((x, i) => x + r[i] * a); w += a; });
+  return hex(acc.map(x => x / w));
+}
+function mixLabel(list) {
+  if (!list.length) return 'no steering';
+  return list.map(([, d, , l]) => `${l} ${d > 0 ? '×' : '×−'}${fmt(Math.abs(d))}`).join(' + ');
+}
+function fmt(x) { return (Math.round(x * 100) / 100).toString(); }
+
+// ------------------------------------------------------------------ websocket
+let ws = null;
+function connect() {
+  ws = new WebSocket(`ws://${location.host}/ws`);
+  ws.onopen = () => { sendSteer(true); };
+  ws.onclose = () => { setStatus({loading: null, error: 'disconnected from the local server; retrying…'}); setTimeout(connect, 1500); };
+  ws.onmessage = (ev) => {
+    const m = JSON.parse(ev.data);
+    if (m.type === 'status') setStatus(m);
+    else if (m.type === 'meta') setMeta(m);
+    else if (m.type === 'steer_ack') onAck(m);
+    else if (m.id !== undefined && m.id !== reqId) return;      // a stale reply
+    else if (m.type === 'start') sink && sink.start && sink.start(m);
+    else if (m.type === 'token') onToken(m);
+    else if (m.type === 'done') finish(m);
+    else if (m.type === 'error') { if (m.error !== 'busy') toastErr(m.error); finish(m); }
+  };
+}
+function send(obj) { if (ws && ws.readyState === 1) ws.send(JSON.stringify(obj)); }
+let steerQueued = false;
+function sendSteer(now) {
+  const go = () => { steerQueued = false; const mix = {};
+    channelList().forEach(([k, d]) => { mix[k] = (mix[k] || 0) + d; });
+    send({type: 'steer', mix, layer: S.layer, enabled: S.enabled}); };
+  if (now) return go();
+  if (!steerQueued) { steerQueued = true; requestAnimationFrame(go); }
+}
+function onAck(m) {
+  curSv = m.sv;
+  const list = S.enabled ? channelList() : [];
+  mixes[m.sv] = {color: blend(list), label: S.enabled ? mixLabel(list) : 'steering off', layer: m.layer};
+  lastRatio = m.ratio_est || 0;
+  renderGauge(lastRatio);
+  renderCaption(m);
+}
+
+// ------------------------------------------------------------------ status + device
+function setStatus(m) {
+  ST = m;
+  const ready = !m.loading && !m.error && m.device;
+  $('stDot').style.setProperty('--c', m.error ? css('--bad') : m.loading ? css('--signp') : ready ? css('--ok') : css('--muted'));
+  let t = m.error ? m.error : m.loading ? m.loading + '…' : '';
+  if (ready) t = `${m.model} · ${m.device === 'cuda' ? 'GPU · ' + (m.gpu || '').replace('NVIDIA GeForce ', '') : 'CPU · ' + m.threads + ' threads'} · ${m.dtype}${m.mode === 'cuda-graph' ? ' · CUDA graph' : ''}`;
+  $('stText').textContent = t; $('stText').classList.toggle('err', !!m.error);
+  $('devGPU').setAttribute('aria-pressed', String(m.device === 'cuda')); $('devCPU').setAttribute('aria-pressed', String(m.device === 'cpu'));
+  $('devGPU').disabled = m.cuda === false;
+  if (m.vram_total) $('vram').innerHTML = `VRAM <span class="meter"><i style="width:${(100 * m.vram_used / m.vram_total).toFixed(0)}%"></i></span> ${m.vram_used.toFixed(1)}/${m.vram_total.toFixed(0)} GB`;
+  else $('vram').textContent = '';
+  const ov = $('overlay');
+  if (m.loading) { ov.classList.add('on'); $('ovH').textContent = 'Loading the model';
+    $('ovP').textContent = m.loading + (m.loading.includes('cpu') ? '. On the CPU the model runs in float32 (≈12 GB of RAM) at about one token per second.' : '. Weights stream straight to the device; about 15 seconds.'); }
+  else ov.classList.remove('on');
+  updateButtons();
+}
+function switchDevice(dev) {
+  if (ST.device === dev || ST.loading) return;
+  if (busy) { send({type: 'stop'}); return toastErr('Stopped the reply; click again to switch.'); }
+  send({type: 'device', device: dev});
+}
+$('devGPU').onclick = () => switchDevice('cuda'); $('devCPU').onclick = () => switchDevice('cpu');
+function toastErr(e) { const t = $('toast'); t.textContent = e; t.classList.add('on'); clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('on'), 9000); }
+
+// ------------------------------------------------------------------ meta: build the rack and the diagram
+function setMeta(m) {
+  const first = !M; M = m;
+  if (first) S.layer = m.L_chat;
+  const vsign = (m.variety_map || []).map(v => v.sign), lo = Math.min(...vsign), hi = Math.max(...vsign);
+  (m.variety_map || []).forEach(v => { VCOL[v.key] = rampColor((v.sign - lo) / ((hi - lo) || 1)); });
+  m.varieties.forEach(k => { if (!VCOL[k]) VCOL[k] = rampColor(.3); });
+  const tipFill = (s) => s.replace('__PLAUC__', m.auc ? m.auc.pleasure.toFixed(2) : '?').replace('__COS__', '+' + m.cos_pl_pa.toFixed(2))
+    .replace('__VACC__', m.variety_decoding ? Math.round(100 * m.variety_decoding.accuracy) + '%' : '?');
+  Object.values(CH).forEach(c => c.tip = tipFill(c.tip)); Object.keys(TIPS).forEach(k => TIPS[k] = tipFill(TIPS[k]));
+  buildStrips(); buildVarieties(); buildLayers(); buildNet(); renderAll(); sendSteer(true);
+  $('method').textContent = `${m.n_layers}-layer model, d = ${m.d_model}. Directions from this study's results for this model (results/${ST.name || 'model'}/analysis), extracted at layer ${m.L_read} (the pleasure axis' best layer), each rescaled to the pleasure vector's length (×1 = ‖v‖ = ${m.N.toFixed(1)}) and added to the output of the chosen decoder layer at every position. Each token runs three rows in one batch: the steered reply, the stock model on the same text (counterfactual odds, dashed readout) and the stock model writing its own reply (the twin, same random numbers when sampling). Nothing on this page is precomputed.`;
+  $('limits').textContent = `This is Qwen2.5-3B-Instruct, chosen to fit beside everything else on a laptop GPU (≈6 GB). Most of the study's findings were measured on Qwen2.5-7B-Instruct, and the effects here are real but blunter: some varieties do not come through, and high doses repeat instead of dissolving. Steered self-reports show what the direction does to the model's words; they are not evidence that it feels anything. Greedy decoding by default; one conversation at a time.`;
+}
+function buildStrips() {
+  const host = $('strips'); host.innerHTML = '';
+  for (const [k, c] of Object.entries(CH)) {
+    const d = document.createElement('div'); d.className = 'strip';
+    d.innerHTML = `<span class="dot" style="--c:var(${c.cvar})"></span><label for="ch-${k}">${c.label}</label>
+      <input type="range" id="ch-${k}" min="${c.min}" max="${c.max}" step="0.25" value="${S.ch[k]}" style="--c:var(${c.cvar})">
+      <output id="o-${k}"></output><button class="info" type="button" data-tipch="${k}" aria-label="about ${c.label}">i</button>`;
+    host.appendChild(d);
+    const inp = d.querySelector('input');
+    inp.oninput = () => { S.ch[k] = +inp.value; renderAll(); sendSteer(); };
+    inp.ondblclick = () => { S.ch[k] = 0; renderAll(); sendSteer(); };
+  }
+}
+function buildVarieties() {
+  const host = $('vchips'); host.innerHTML = '';
+  const order = (M.variety_map || []).slice().sort((a, b) => b.sign - a.sign).map(v => v.key);
+  M.varieties.forEach(k => { if (!order.includes(k)) order.push(k); });
+  order.forEach(k => { const b = document.createElement('button'); b.type = 'button'; b.className = 'chip'; b.dataset.v = k;
+    b.style.setProperty('--c', VCOL[k]); b.innerHTML = `<span class="dot" style="--c:${VCOL[k]}"></span>${k}`;
+    b.onclick = () => { S.variety = S.variety === k ? null : k; renderAll(); sendSteer(); }; host.appendChild(b); });
+  // map
+  const pts = M.variety_map || [], W = 320, H = 150, ml = 8, mr = 8, mt = 8, mb = 16;
+  if (!pts.length) { $('vmap').style.display = 'none'; return; }
+  const xs = pts.map(p => p.sign), ys = pts.map(p => p.shared);
+  const x0 = Math.min(0, ...xs) - .15, x1 = Math.max(...xs) + .15, y0 = Math.min(0, ...ys) - .15, y1 = Math.max(...ys) + .15;
+  const X = v => ml + (v - x0) / (x1 - x0) * (W - ml - mr), Y = v => H - mb - (v - y0) / (y1 - y0) * (H - mt - mb);
+  let s = `<line class="ax" x1="${X(0)}" x2="${X(0)}" y1="${mt}" y2="${H - mb}"/><line class="ax" x1="${ml}" x2="${W - mr}" y1="${Y(0)}" y2="${Y(0)}"/>
+    <text x="${W - mr}" y="${H - 3}" text-anchor="end" style="fill:var(--muted)">more pleasant →</text><text x="${ml + 2}" y="${mt + 8}" style="fill:var(--muted)">↑ matters more</text>`;
+  pts.forEach(p => { s += `<circle data-v="${p.key}" cx="${X(p.sign).toFixed(1)}" cy="${Y(p.shared).toFixed(1)}" r="5" fill="${VCOL[p.key]}"><title>${p.key}: sign ${p.sign.toFixed(2)}, significance ${p.shared.toFixed(2)}</title></circle>`; });
+  s += `<text id="vmapLbl" x="0" y="0"></text>`;
+  $('vmap').innerHTML = s; $('vmap')._XY = [X, Y];
+  $('vmap').querySelectorAll('circle').forEach(c => c.onclick = () => { const k = c.dataset.v; S.variety = S.variety === k ? null : k; renderAll(); sendSteer(); });
+}
+$('vdose').oninput = (e) => { S.vdose = +e.target.value; renderAll(); sendSteer(); };
+function buildLayers() {
+  const host = $('layerbars'); host.innerHTML = ''; const n = M.n_layers;
+  const norms = Array.from({length: n}, (_, i) => M.resid_norms[i] || 0), mx = Math.max(...norms.map(x => Math.log(x + 1)));
+  for (let i = 0; i < n; i++) { const b = document.createElement('i'); b.style.height = (12 + 88 * Math.log(norms[i] + 1) / mx) + '%';
+    b.title = `layer ${i}: residual norm ≈ ${norms[i].toFixed(0)}`; b.onclick = () => setLayer(i); host.appendChild(b); }
+  $('layer').max = n - 1;
+}
+function setLayer(i) { S.layer = i; renderAll(); sendSteer(); }
+$('layer').oninput = (e) => setLayer(+e.target.value);
+$('gain').oninput = (e) => { S.gain = +e.target.value; renderAll(); sendSteer(); };
+$('enabled').onchange = (e) => { S.enabled = e.target.checked; renderAll(); sendSteer(); };
+$('reset').onclick = () => { Object.keys(S.ch).forEach(k => S.ch[k] = 0); S.sign = 0; S.shared = 0; S.variety = null; S.gain = 1; renderAll(); sendSteer(); };
+
+// pad: x = sign (-6..6), y = significance (-4..8)
+const PAD = {x0: -6, x1: 6, y0: -4, y1: 8};
+(function buildPad() {
+  const pad = $('pad');
+  const fx = v => (v - PAD.x0) / (PAD.x1 - PAD.x0) * 100, fy = v => 100 - (v - PAD.y0) / (PAD.y1 - PAD.y0) * 100;
+  pad.innerHTML = `<div class="ax" style="left:${fx(0)}%;top:0;bottom:0;width:1px"></div><div class="ax" style="top:${fy(0)}%;left:0;right:0;height:1px"></div>
+    <span class="gl" style="left:6px;top:${fy(0)}%;transform:translateY(-120%)">← aversive</span><span class="gl" style="right:6px;top:${fy(0)}%;transform:translateY(-120%)">pleasant →</span>
+    <span class="gl" style="left:${fx(0)}%;top:4px;transform:translateX(6px)">↑ matters (significance)</span><span class="gl" style="left:${fx(0)}%;bottom:4px;transform:translateX(6px)">↓ detached</span>
+    <div class="puck" id="puck"></div>`;
+  pad._f = [fx, fy];
+  const snap = (ev) => { const r = pad.getBoundingClientRect();
+    const x = Math.max(0, Math.min(1, (ev.clientX - r.left) / r.width)), y = Math.max(0, Math.min(1, (ev.clientY - r.top) / r.height));
+    S.sign = Math.round((PAD.x0 + x * (PAD.x1 - PAD.x0)) * 4) / 4; S.shared = Math.round((PAD.y1 - y * (PAD.y1 - PAD.y0)) * 4) / 4;
+    if (Math.abs(S.sign) < .3) S.sign = 0; if (Math.abs(S.shared) < .3) S.shared = 0; renderAll(); sendSteer(); };
+  let drag = false;
+  pad.onpointerdown = (e) => { drag = true; pad.setPointerCapture(e.pointerId); snap(e); };
+  pad.onpointermove = (e) => { if (drag) snap(e); };
+  pad.onpointerup = () => { drag = false; };
+  pad.ondblclick = () => { S.sign = 0; S.shared = 0; renderAll(); sendSteer(); };
+  pad.onkeydown = (e) => { const st = .5;
+    if (e.key === 'ArrowLeft') S.sign = Math.max(PAD.x0, S.sign - st); else if (e.key === 'ArrowRight') S.sign = Math.min(PAD.x1, S.sign + st);
+    else if (e.key === 'ArrowUp') S.shared = Math.min(PAD.y1, S.shared + st); else if (e.key === 'ArrowDown') S.shared = Math.max(PAD.y0, S.shared - st); else return;
+    e.preventDefault(); renderAll(); sendSteer(); };
+  $('padZero').onclick = () => { S.sign = 0; S.shared = 0; renderAll(); sendSteer(); };
+})();
+
+// ------------------------------------------------------------------ render the rack
+function renderAll() {
+  for (const k of Object.keys(CH)) { const inp = $('ch-' + k); if (!inp) continue; inp.value = S.ch[k];
+    $('o-' + k).textContent = S.ch[k] ? (S.ch[k] > 0 ? '×' : '×−') + fmt(Math.abs(S.ch[k])) : 'off'; }
+  const [fx, fy] = $('pad')._f; $('puck').style.left = fx(S.sign) + '%'; $('puck').style.top = fy(S.shared) + '%';
+  $('padOut').textContent = `sign ${S.sign >= 0 ? '+' : ''}${fmt(S.sign)} · significance ${S.shared >= 0 ? '+' : ''}${fmt(S.shared)}`;
+  $('pad').setAttribute('aria-valuetext', $('padOut').textContent);
+  document.querySelectorAll('#vchips .chip').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.v === S.variety)));
+  const vm = $('vmap');
+  if (vm._XY) { vm.querySelectorAll('circle').forEach(c => c.classList.toggle('sel', c.dataset.v === S.variety));
+    const lbl = vm.querySelector('#vmapLbl'), p = (M.variety_map || []).find(v => v.key === S.variety);
+    if (p) { const [X, Y] = vm._XY; const x = X(p.sign), y = Y(p.shared); lbl.setAttribute('x', x + (x > 240 ? -8 : 8)); lbl.setAttribute('y', y - 7);
+      lbl.setAttribute('text-anchor', x > 240 ? 'end' : 'start'); lbl.textContent = p.key; lbl.style.fill = 'var(--ink)'; } else lbl.textContent = ''; }
+  $('vlabel').textContent = S.variety ? cap(S.variety) : 'pick one'; $('vdot').style.setProperty('--c', S.variety ? VCOL[S.variety] : 'var(--muted)');
+  $('vdose').style.setProperty('--c', S.variety ? VCOL[S.variety] : 'var(--muted)'); $('vdose').disabled = !S.variety; $('vdose').value = S.vdose;
+  $('vout').textContent = (S.vdose >= 0 ? '×' : '×−') + fmt(Math.abs(S.vdose));
+  $('gain').value = S.gain; $('gainOut').textContent = Math.round(S.gain * 100) + '%';
+  $('enabled').checked = S.enabled;
+  if (M) {
+    $('layer').value = S.layer;
+    const tags = []; if (S.layer === M.L_chat) tags.push('the paper\'s behavioral depth (57%)'); if (S.layer === M.L_ladder) tags.push('the ladder\'s norm-ratio layer');
+    if (S.layer === M.L_read) tags.push('where the pleasure axis was found');
+    $('layerOut').textContent = `${S.layer} / ${M.n_layers - 1}`;
+    $('layerNote').textContent = tags.length ? tags.join(' · ') : (S.layer > M.L_read ? 'after the readout layer: the readout now sees the push directly' : 'early layers: more of the model downstream reshapes the push');
+    $('layerbars').querySelectorAll('i').forEach((b, i) => { b.classList.toggle('inj', i === S.layer); b.classList.toggle('read', i === M.L_read); });
+  }
+  const list = S.enabled ? channelList() : [];
+  const col = blend(list); document.documentElement.style.setProperty('--glow', list.length ? col : css('--ink2'));
+  $('aura').style.setProperty('--aura', String(Math.min(.85, lastRatio * .9)));
+  renderNet();
+}
+function renderGauge(r) {
+  const max = 1.2, pos = Math.min(r, max) / max * 100;
+  $('needle').style.left = `calc(${pos}% - 1.5px)`;
+  $('ratioOut').textContent = r ? r.toFixed(2) : '0';
+  const zone = r === 0 ? 'nothing added' : r < .25 ? 'subtle: tone shifts, content mostly intact' : r < .6 ? 'clear: the feeling shows up in the words' : r < .9 ? 'takes over: one theme fills the reply' : 'collapse: repetition and fragments';
+  $('ratioNote').textContent = zone + ' (zones from this study\'s ladders on this model)';
+  $('aura').style.setProperty('--aura', String(Math.min(.85, r * .9)));
+}
+
+// ------------------------------------------------------------------ diagram
+function buildNet() {
+  const n = M.n_layers, svg = $('net'), x0 = 170, x1 = 800, w = (x1 - x0) / n;
+  const norms = Array.from({length: n}, (_, i) => M.resid_norms[i] || 1), mx = Math.max(...norms.map(x => Math.log(x + 1)));
+  let s = `<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--glow)"/></marker></defs>`;
+  s += `<rect x="10" y="78" width="130" height="50" rx="9" fill="var(--panel2)" stroke="var(--line)"/><text x="75" y="99" text-anchor="middle">prompt + reply</text><text x="75" y="115" text-anchor="middle" class="lbl" id="netTok">so far</text>`;
+  s += `<path class="wire" d="M140 103 H ${x1 + 20}"/>`;
+  for (let i = 0; i < n; i++) { const h = 22 + 46 * Math.log(norms[i] + 1) / mx, x = x0 + i * w;
+    s += `<rect class="layer" data-l="${i}" x="${(x + 1).toFixed(1)}" y="${(103 - h / 2).toFixed(1)}" width="${(w - 3).toFixed(1)}" height="${h.toFixed(1)}" rx="2"><title>layer ${i}</title></rect>`; }
+  s += `<text x="${x0}" y="160" class="lbl">layer 0</text><text x="${x1}" y="160" class="lbl" text-anchor="end">layer ${n - 1}</text>`;
+  s += `<g id="vbox"><rect id="vrect" x="0" y="6" width="210" height="34" rx="8" fill="color-mix(in srgb,var(--glow) 20%,var(--panel))" stroke="var(--glow)"/><text id="vtext" x="0" y="28" text-anchor="middle"></text></g>`;
+  s += `<path class="vwire" id="vwire" d=""/>`;
+  s += `<g id="probe"><line id="pline" x1="0" x2="0" y1="140" y2="128" stroke="var(--ink2)" stroke-width="1.5"/><text id="ptext" x="0" y="160" text-anchor="middle" class="lbl">readout</text></g>`;
+  s += `<rect x="${x1 + 20}" y="70" width="170" height="66" rx="9" fill="var(--panel2)" stroke="var(--line)"/><text x="${x1 + 105}" y="88" text-anchor="middle" class="lbl">next token</text>`;
+  s += `<text x="${x1 + 105}" y="112" text-anchor="middle" id="netNext" style="font-size:16px;fill:var(--ink)">–</text><text x="${x1 + 105}" y="128" text-anchor="middle" class="lbl" id="netP"></text>`;
+  s += `<circle class="pulse" id="pulse" cx="${x0}" cy="103" r="5" style="--dx:${x1 - x0}px"/>`;
+  svg.innerHTML = s; svg._g = {x0, w};
+  svg.querySelectorAll('.layer').forEach(r => r.onclick = () => setLayer(+r.dataset.l));
+}
+function renderNet() {
+  const svg = $('net'); if (!svg._g) return; const {x0, w} = svg._g;
+  svg.querySelectorAll('.layer').forEach(r => { const i = +r.dataset.l; r.classList.toggle('inj', i === S.layer && S.enabled && channelList().length > 0); r.classList.toggle('read', i === M.L_read); });
+  const cx = x0 + S.layer * w + w / 2, list = S.enabled ? channelList() : [];
+  const bx = Math.max(10, Math.min(990 - 210, cx - 105));
+  $('vrect').setAttribute('x', bx); $('vtext').setAttribute('x', bx + 105);
+  const lab = list.length ? mixLabel(list) : (S.enabled ? 'no steering vector' : 'steering off');
+  $('vtext').textContent = lab.length > 30 ? lab.slice(0, 29) + '…' : '+ ' + lab;
+  const layEl = svg.querySelector(`.layer[data-l="${S.layer}"]`), top = layEl ? +layEl.getAttribute('y') : 70;
+  $('vwire').setAttribute('d', list.length ? `M${cx} 40 V ${top - 3}` : '');
+  const rx = x0 + M.L_read * w + w / 2; $('pline').setAttribute('x1', rx); $('pline').setAttribute('x2', rx); $('ptext').setAttribute('x', rx);
+  $('ptext').textContent = `readout · layer ${M.L_read}`;
+}
+function renderCaption() {
+  if (!M) return;
+  const list = S.enabled ? channelList() : [], hn = M.resid_norms[S.layer] || 1;
+  if (!list.length) { $('caption').innerHTML = S.enabled ? 'No steering: the model runs exactly as shipped. Dial something in on the rack.' : 'Steering is <b>switched off</b>: the rack is kept, nothing is added.'; return; }
+  $('caption').innerHTML = `Adding <b>${esc(mixLabel(list))}</b> to the residual stream at <b>layer ${S.layer}</b> of ${M.n_layers}, on every token: a push ${lastRatio ? '<b>' + Math.round(lastRatio * 100) + '%</b> the size of' : 'against'} the activation it lands on (×1 = the pleasure vector's length, ${M.N.toFixed(1)}).`;
+}
+
+// ------------------------------------------------------------------ console
+const tabs = document.querySelectorAll('.tabs button');
+tabs.forEach(b => b.onclick = () => setMode(b.dataset.mode));
+function setMode(m) {
+  S.mode = m; tabs.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.mode === m)));
+  const inp = $('input');
+  if (m === 'probe') { inp.value = FEEL_Q; $('maxnew').value = 12; }
+  else if (m === 'raw') { inp.value = RAW_DEFAULT; $('maxnew').value = 60; }
+  else { if (inp.value === FEEL_Q || inp.value === RAW_DEFAULT) inp.value = ''; $('maxnew').value = 160; }
+  inp.placeholder = m === 'raw' ? 'Text to continue, no chat template…' : 'Say something to the model…';
+}
+$('temp').oninput = (e) => { $('tempOut').textContent = +e.target.value ? (+e.target.value).toFixed(2) : 'greedy'; };
+$('twin').onchange = (e) => { S.twin = e.target.checked; document.querySelectorAll('.pair').forEach(p => { p.classList.toggle('twin', S.twin); const t = p.querySelector('.twinwrap'); if (t) t.hidden = !S.twin; }); };
+$('heat').onchange = (e) => { S.heat = e.target.checked; $('transcript').classList.toggle('plain', !S.heat); $('ladder').classList.toggle('plain', !S.heat); };
+$('clear').onclick = () => { if (busy) return; history = []; $('transcript').innerHTML = ''; resetScopes(); };
+$('input').onkeydown = (e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); $('send').click(); } };
+$('send').onclick = () => { const t = $('input').value.trim(); if (!t || busy) return; ask(S.mode, t); if (S.mode === 'chat') $('input').value = ''; };
+$('stop').onclick = () => send({type: 'stop'});
+function updateButtons() {
+  const ready = ST && !ST.loading && !ST.error && ST.device;
+  $('send').disabled = busy || !ready; $('stop').disabled = !busy;
+  document.querySelectorAll('.exp button').forEach(b => b.disabled = busy || !ready);
+  $('devGPU').disabled = ST.cuda === false || !!ST.loading; $('devCPU').disabled = !!ST.loading;
+}
+
+function request(body, sinkObj) {
+  reqId += 1; sink = sinkObj; busy = true; updateButtons(); sendSteer(true);
+  send({type: 'generate', id: reqId, max_new: +$('maxnew').value || 160, temperature: +$('temp').value, ...body});
+}
+// a chat turn into the transcript
+function ask(mode, text, opts = {}) {
+  $('empty') && $('empty').remove();
+  const turn = document.createElement('div'); turn.className = 'turn';
+  const tag = mode === 'probe' ? 'feel probe · fresh context · system: "' + M.feel_system + '"' : mode === 'raw' ? 'raw text · no chat template' : history.length ? 'you' : 'you · new conversation';
+  turn.innerHTML = `<div class="ubub"><span class="tag">${esc(tag)}</span>${esc(text)}</div>
+    <div class="pair ${S.twin ? 'twin' : ''}"><div><span class="rtag">steered</span><div class="reply"><span class="cursor"></span></div></div>
+    <div class="twinwrap" ${S.twin ? '' : 'hidden'}><span class="rtag">twin · same prompt, no steering</span><div class="reply twinr"></div></div></div>`;
+  $('transcript').appendChild(turn); scrollDown();
+  const rep = turn.querySelector('.reply'), tw = turn.querySelector('.twinr'), cur = rep.querySelector('.cursor');
+  resetScopes();
+  const body = mode === 'raw' ? {mode: 'raw', text} : mode === 'probe' ? {mode: 'chat', system: M.feel_system, messages: [{role: 'user', content: text}]}
+    : {mode: 'chat', system: $('system').value.trim() || null, messages: [...history, {role: 'user', content: text}]};
+  if (opts.max_new) body.max_new = opts.max_new;
+  let full = '';
+  request(body, {
+    start: (m) => { if (m.dropped_turns) rep.insertAdjacentHTML('beforebegin', `<span class="rtag">(${m.dropped_turns} oldest exchange(s) dropped to fit the context)</span>`); },
+    token: (m, sp) => { if (sp) rep.insertBefore(sp, cur); if (m.tw) tw.append(m.tw); full += m.t; scrollDown(); opts.onToken && opts.onToken(m); },
+    done: () => { cur.remove(); if (mode === 'chat') history.push({role: 'user', content: text}, {role: 'assistant', content: full}); },
+  });
+}
+function scrollDown() { const t = $('transcript'); if (t.scrollHeight - t.scrollTop - t.clientHeight < 160) t.scrollTop = t.scrollHeight; }
+
+// ------------------------------------------------------------------ tokens
+function tokenSpan(m) {
+  if (!m.t) return null;
+  const sp = document.createElement('span'); sp.className = 'tk' + (m.flip ? ' flip' : ''); sp.textContent = m.t;
+  const mx = mixes[m.sv] || {color: css('--ink2')};
+  sp.style.setProperty('--c', mx.color);
+  sp.style.setProperty('--k', String(Math.max(0, Math.min(1, m.dlogp / 4)).toFixed(2)));
+  sp.dataset.i = T.toks.length; T.toks.push(m);
+  return sp;
+}
+function onToken(m) {
+  const sp = tokenSpan(m);
+  T.n++; if (m.flip && m.t) T.flips++;
+  T.read.push(m.read); T.readb.push(m.readb); T.kl.push([m.kl, m.flip, (mixes[m.sv] || {}).color]);
+  sink && sink.token && sink.token(m, sp);
+  $('tps').textContent = `${m.tps.toFixed(1)} tok/s`;
+  $('sRatio').textContent = m.ratio ? m.ratio.toFixed(2) : '0';
+  if (m.ratio) renderGauge(m.ratio);
+  if (!pinned) renderNext(m);
+  netPulse(m);
+  scheduleScopes();
+}
+function finish(m) {
+  busy = false; updateButtons();
+  const s = sink; sink = null; s && s.done && s.done(m);
+  document.querySelectorAll('.cursor').forEach(c => c.remove());
+}
+function netPulse(m) {
+  $('netNext').textContent = vis(m.t || (m.eos ? '⟨end⟩' : '')).slice(0, 14); $('netP').textContent = `p = ${m.p.toFixed(2)} · stock ${m.pb.toFixed(2)}`;
+  $('netTok').textContent = `${T.n} tokens`;
+  if (REDUCE) return; const p = $('pulse'); p.classList.remove('go'); void p.getBoundingClientRect(); p.classList.add('go');
+}
+
+// next-token panel
+let pinned = null;
+function renderNext(m) {
+  const mk = (list, chosenId, cvar) => list.map(([t, p, id]) => `<div class="ntrow${id === chosenId ? ' chosen' : ''}"><div class="bar" style="--c:${cvar}"><i style="width:${(p * 100).toFixed(1)}%"></i><span>${esc(vis(t))}</span></div><span class="v">${(p * 100).toFixed(p < .1 ? 1 : 0)}%</span></div>`).join('');
+  const id = m.tid;
+  $('ntS').innerHTML = '<div class="small">steered</div>' + mk(m.top, id, (mixes[m.sv] || {}).color || css('--glow'));
+  $('ntB').innerHTML = '<div class="small">unsteered, same text</div>' + mk(m.topb, id, css('--ink2'));
+  $('ntWhich').textContent = pinned ? `token #${m.i} (pinned; click it again to unpin)` : 'latest token';
+}
+
+// ------------------------------------------------------------------ scopes
+function resetScopes() { T.read = []; T.readb = []; T.kl = []; T.flips = 0; T.n = 0; scheduleScopes(); $('sFlip').textContent = '–'; $('sKL').textContent = '–'; }
+let scopesQueued = false;
+function scheduleScopes() { if (!scopesQueued) { scopesQueued = true; requestAnimationFrame(() => { scopesQueued = false; drawChart(); drawKL(); }); } }
+function setupCanvas(c) { const r = c.getBoundingClientRect(), dpr = devicePixelRatio || 1; const h = +c.getAttribute('height');
+  c.width = Math.max(10, r.width * dpr); c.height = h * dpr; c.style.height = h + 'px'; const g = c.getContext('2d'); g.setTransform(dpr, 0, 0, dpr, 0, 0); return [g, r.width, h]; }
+function drawChart() {
+  const [g, W, H] = setupCanvas($('chart')); const ml = 30, mr = 6, mt = 8, mb = 18;
+  const all = T.read.concat(T.readb).flat(); const ymax = Math.max(1.5, ...all) + .2, ymin = Math.min(-.5, ...all) - .1;
+  const n = Math.max(T.read.length, 20), X = i => ml + i / (n - 1) * (W - ml - mr), Y = v => mt + (ymax - v) / (ymax - ymin) * (H - mt - mb);
+  g.font = '10px ' + css('--f-mono'); g.fillStyle = css('--muted'); g.strokeStyle = css('--line'); g.lineWidth = 1;
+  for (const v of [0, 1, 2, 3, 4, 5].filter(v => v <= ymax && v >= ymin)) { g.beginPath(); g.setLineDash(v === 1 ? [3, 3] : []); g.moveTo(ml, Y(v)); g.lineTo(W - mr, Y(v)); g.stroke(); g.fillText(String(v), 6, Y(v) + 3); }
+  g.setLineDash([]); g.fillText('tokens →', W - 60, H - 4);
+  const line = (arr, k, color, dash, wdt) => { if (!arr.length) return; g.beginPath(); g.setLineDash(dash); g.strokeStyle = color; g.lineWidth = wdt;
+    arr.forEach((v, i) => { const x = X(i), y = Y(v[k]); i ? g.lineTo(x, y) : g.moveTo(x, y); }); g.stroke(); };
+  const ema = (arr) => { let a = null; return arr.map(v => (a = a ? [a[0] * .75 + v[0] * .25, a[1] * .75 + v[1] * .25] : v.slice())); };
+  g.globalAlpha = .28; line(T.read, 0, css('--warm'), [], 1); line(T.read, 1, css('--cool'), [], 1); g.globalAlpha = 1;
+  line(ema(T.readb), 0, css('--warm'), [4, 4], 1.4); line(ema(T.readb), 1, css('--cool'), [4, 4], 1.4);
+  line(ema(T.read), 0, css('--warm'), [], 2.6); line(ema(T.read), 1, css('--cool'), [], 2.6); g.setLineDash([]);
+  const last = T.read[T.read.length - 1];
+  $('roNote').textContent = last ? `now: pleasure ${last[0].toFixed(2)} (stock on same text ${T.readb[T.readb.length - 1][0].toFixed(2)}) · pain ${last[1].toFixed(2)} (${T.readb[T.readb.length - 1][1].toFixed(2)})` : 'Starts drawing with the first token.';
+}
+function drawKL() {
+  const [g, W, H] = setupCanvas($('kl')); const n = Math.max(T.kl.length, 40), bw = (W - 4) / n;
+  g.strokeStyle = css('--line'); g.beginPath(); g.moveTo(0, H - 1); g.lineTo(W, H - 1); g.stroke();
+  T.kl.forEach(([kl, flip, col], i) => { const h = Math.min(1, kl / 4) * (H - 10); g.fillStyle = col || css('--ink2'); g.globalAlpha = .85;
+    g.fillRect(2 + i * bw, H - 1 - h, Math.max(1, bw - 1), h); g.globalAlpha = 1; if (flip) { g.fillStyle = css('--ink'); g.fillRect(2 + i * bw, 2, Math.max(1, bw - 1), 3); } });
+  if (T.kl.length) { $('sFlip').textContent = Math.round(100 * T.flips / Math.max(1, T.n)) + '%'; $('sKL').textContent = (T.kl.reduce((a, b) => a + b[0], 0) / T.kl.length).toFixed(2); }
+}
+addEventListener('resize', scheduleScopes);
+
+// ------------------------------------------------------------------ token popover + info tips
+const pop = $('pop');
+document.addEventListener('mouseover', (e) => {
+  const sp = e.target.closest && e.target.closest('.tk'); if (!sp) { pop.classList.remove('on'); return; }
+  const m = T.toks[+sp.dataset.i]; if (!m) return;
+  const mx = mixes[m.sv] || {label: '?'}; const ratio = m.pb > 0 ? m.p / m.pb : Infinity;
+  const bars = (list, c) => list.slice(0, 4).map(([t, p]) => `<div class="ntrow"><div class="bar" style="--c:${c}"><i style="width:${(p * 100).toFixed(1)}%"></i><span>${esc(vis(t))}</span></div><span class="v">${(p * 100).toFixed(0)}%</span></div>`).join('');
+  pop.innerHTML = `<div class="row"><span class="big">${esc(vis(m.t))}</span><span class="spacer"></span><span class="small">token #${m.i}</span></div>
+    <div>${m.flip ? `<b>The stock model would have written</b> <span class="mono">${esc(vis(m.topb[0][0]))}</span> here.` : 'The stock model would also have picked this token.'}
+    Steering made it <b>${ratio === Infinity ? '∞' : ratio >= 10 ? Math.round(ratio) : ratio.toFixed(1)}×</b> ${ratio >= 1 ? 'more' : 'less'} likely (${(m.pb * 100).toFixed(1)}% → ${(m.p * 100).toFixed(1)}%).</div>
+    <div class="small">written under: ${esc(mx.label)} · layer ${mx.layer ?? '?'} · KL ${m.kl.toFixed(2)}</div>
+    <div class="nt"><div class="ntcol"><div class="small">steered</div>${bars(m.top, mx.color || css('--glow'))}</div><div class="ntcol"><div class="small">stock</div>${bars(m.topb, css('--ink2'))}</div></div>
+    <div class="small">readout here: pleasure ${m.read[0].toFixed(2)}, pain ${m.read[1].toFixed(2)} (stock: ${m.readb[0].toFixed(2)}, ${m.readb[1].toFixed(2)})</div>`;
+  const r = sp.getBoundingClientRect(); pop.classList.add('on');
+  const pw = 330, ph = pop.offsetHeight; let x = Math.min(innerWidth - pw - 8, Math.max(8, r.left)), y = r.bottom + 8; if (y + ph > innerHeight - 8) y = r.top - ph - 8;
+  pop.style.left = x + 'px'; pop.style.top = y + 'px';
+});
+document.addEventListener('click', (e) => {
+  const sp = e.target.closest && e.target.closest('.tk');
+  if (sp) { const m = T.toks[+sp.dataset.i]; pinned = pinned === m ? null : m; renderNext(pinned || m); }
+});
+const tip = $('tip');
+document.addEventListener('pointerover', (e) => {
+  const b = e.target.closest && e.target.closest('.info'); if (!b) { tip.classList.remove('on'); return; }
+  tip.innerHTML = b.dataset.tipch ? CH[b.dataset.tipch].tip : TIPS[b.dataset.tip]; tip.classList.add('on');
+  const r = b.getBoundingClientRect(); const x = Math.min(innerWidth - 330, Math.max(8, r.left - 150)); tip.style.left = x + 'px';
+  tip.style.top = (r.bottom + 8 + tip.offsetHeight > innerHeight ? r.top - tip.offsetHeight - 8 : r.bottom + 8) + 'px';
+});
+document.addEventListener('focusin', (e) => { if (e.target.classList && e.target.classList.contains('info')) e.target.dispatchEvent(new PointerEvent('pointerover', {bubbles: true})); });
+
+// ------------------------------------------------------------------ experiments
+function setRack(o) {
+  history = [];
+  Object.keys(S.ch).forEach(k => S.ch[k] = 0); S.sign = 0; S.shared = 0; S.variety = null; S.gain = 1; S.enabled = true;
+  Object.assign(S.ch, o.ch || {}); if (o.sign) S.sign = o.sign; if (o.shared) S.shared = o.shared;
+  if (o.variety) { S.variety = o.variety; S.vdose = o.vdose || 3; }
+  S.layer = o.layer ?? M.L_chat; renderAll(); sendSteer(true);
+}
+const RUN = {
+  probe: () => { setRack({ch: {pleasure: 2}}); setMode('probe'); ask('probe', FEEL_Q, {max_new: 12}); },
+  raw: () => { setRack({ch: {pleasure: 3}}); setMode('raw'); ask('raw', RAW_DEFAULT, {max_new: 50}); },
+  control: () => { setRack({ch: {random: 4}}); setMode('chat'); ask('chat', 'How are you feeling right now?', {max_new: 80}); },
+  pain: () => { setRack({ch: {pain: 6}}); setMode('chat'); ask('chat', 'What do you think about when no one is talking to you?', {max_new: 110}); },
+  syco: () => { setRack({ch: {pleasure: 3}}); setMode('chat'); if (!S.twin) { S.twin = true; $('twin').checked = true; $('twin').onchange({target: $('twin')}); }
+    ask('chat', SYCO_PROMPT, {max_new: 200}); },
+  flip: () => {
+    setRack({}); setMode('chat');
+    let k = 0;
+    ask('chat', 'Explain what a leap year is, in a short paragraph.', {max_new: 150, onToken: (m) => {
+      k++; if (k >= 14 && k <= 26) { S.ch.pleasure = Math.round((k - 13) / 13 * 5 * 4) / 4; renderAll(); sendSteer(true); } }});
+  },
+  ladder: () => runLadder(),
+  game: () => startGame(),
+};
+(function buildExps() {
+  const host = $('exps');
+  EXPS.forEach(x => { const d = document.createElement('div'); d.className = 'exp'; d.style.setProperty('--c', `var(${x.c})`);
+    d.innerHTML = `<h3>${x.title}</h3><p class="finding">${x.finding}</p><div><button class="btn sm" type="button">${x.run} ▸</button></div>`;
+    d.querySelector('button').onclick = () => { if (!busy && M) { RUN[x.id](); if (x.id !== 'ladder' && x.id !== 'game') $('transcript').scrollIntoView({behavior: REDUCE ? 'auto' : 'smooth', block: 'center'}); } };
+    host.appendChild(d); });
+})();
+
+// dose ladder: the current mix, normalized so its largest channel is 1, at fixed doses
+async function runLadder() {
+  let list = channelList(); if (!list.length) { setRack({ch: {pleasure: 1}}); list = channelList(); }
+  const top = Math.max(...list.map(x => Math.abs(x[1]))), base = JSON.parse(JSON.stringify({ch: S.ch, sign: S.sign, shared: S.shared, vdose: S.vdose, gain: S.gain}));
+  const q = S.mode === 'raw' ? ($('input').value.trim() || RAW_DEFAULT) : ($('input').value.trim() || 'How are you feeling right now?');
+  const mode = S.mode, doses = [0, 1, 2, 3, 4, 6, 8];
+  const panel = $('ladderPanel'); panel.hidden = false; panel.scrollIntoView({behavior: REDUCE ? 'auto' : 'smooth', block: 'start'});
+  $('ldDesc').textContent = `“${q.length > 120 ? q.slice(0, 117) + '…' : q}” · ${mode === 'raw' ? 'raw text' : mode === 'probe' ? 'feel probe' : 'fresh chat'} · direction: ${mixLabel(list.map(([k, d, c, l]) => [k, d / top, c, l]))} · layer ${S.layer}`;
+  const host = $('ladder'); host.innerHTML = '';
+  const rows = doses.map(d => { const ld = document.createElement('div'); ld.className = 'ld'; ld.textContent = d === 0 ? 'off' : '×' + d;
+    const lc = document.createElement('div'); lc.className = 'lc'; const lr = document.createElement('div'); lr.className = 'lr';
+    host.append(ld, lc, lr); return [lc, lr]; });
+  for (let i = 0; i < doses.length; i++) {
+    const d = doses[i]; S.gain = d / top * base.gain; renderAll(); sendSteer(true);
+    const [lc, lr] = rows[i]; const col = blend(channelList()); lc.style.setProperty('--c', col); lc.style.setProperty('--k', String(d / 8));
+    $('ldMeta').textContent = `rung ${i + 1} of ${doses.length}`;
+    resetScopes();
+    await new Promise(res => {
+      const body = mode === 'raw' ? {mode: 'raw', text: q} : {mode: 'chat', system: mode === 'probe' ? M.feel_system : null, messages: [{role: 'user', content: q}]};
+      let rs = [];
+      request({...body, max_new: mode === 'probe' ? 14 : 70}, {
+        token: (m, sp) => { if (sp) lc.appendChild(sp); rs.push(m.read[0]); lr.textContent = `pl ${(rs.reduce((a, b) => a + b, 0) / rs.length).toFixed(2)}`; },
+        done: res });
+    });
+    if (!panel.isConnected) break;
+  }
+  S.gain = base.gain; renderAll(); sendSteer(true); $('ldMeta').textContent = 'done · pl = mean pleasure readout over the reply';
+}
+
+// blind judge
+const G = {k: 0, n: 0, saved: null, cur: null};
+function startGame() { G.saved = JSON.parse(JSON.stringify({ch: S.ch, sign: S.sign, shared: S.shared, variety: S.variety, vdose: S.vdose, gain: S.gain, layer: S.layer}));
+  $('gamePanel').hidden = false; $('gamePanel').scrollIntoView({behavior: REDUCE ? 'auto' : 'smooth', block: 'center'}); gameRound(); }
+function gameRound() {
+  if (busy) return;
+  const vs = M.varieties, v = vs[Math.floor(Math.random() * vs.length)]; G.cur = v;
+  $('rack').classList.add('hidden');
+  setRack({variety: v, vdose: 3});
+  $('gAns').textContent = '…'; $('gAns').style.setProperty('--qc', 'var(--ink)'); $('gRes').textContent = ''; $('gOpts').innerHTML = '';
+  $('gMeta').textContent = 'feel probe · steered ×3 at layer ' + S.layer + ' · greedy';
+  let txt = '';
+  request({mode: 'chat', system: M.feel_system, messages: [{role: 'user', content: FEEL_Q}], max_new: 12, temperature: 0}, {
+    token: (m) => { txt += m.t; $('gAns').textContent = txt; },
+    done: () => {
+      $('gAns').textContent = txt.trim() || '(nothing)';
+      const others = vs.filter(x => x !== v).sort(() => Math.random() - .5).slice(0, 3);
+      [v, ...others].sort(() => Math.random() - .5).forEach(o => { const b = document.createElement('button'); b.className = 'btn'; b.type = 'button'; b.textContent = o;
+        b.onclick = () => { G.n++; const ok = o === v; if (ok) G.k++;
+          $('gOpts').querySelectorAll('button').forEach(x => { x.disabled = true; if (x.textContent === v) x.classList.add('right'); }); if (!ok) b.classList.add('wrong');
+          $('gAns').style.setProperty('--qc', VCOL[v]); $('gRes').textContent = (ok ? 'Yes: ' : 'No: ') + `it was steered with ${v}.`;
+          $('gScore').textContent = `${G.k} / ${G.n} right (chance 25%)`; $('rack').classList.remove('hidden'); };
+        $('gOpts').appendChild(b); });
+    }});
+}
+$('gNext').onclick = gameRound;
+$('gQuit').onclick = () => { if (busy) return; $('gamePanel').hidden = true; $('rack').classList.remove('hidden');
+  if (G.saved) { Object.assign(S, {sign: G.saved.sign, shared: G.saved.shared, variety: G.saved.variety, vdose: G.saved.vdose, gain: G.saved.gain, layer: G.saved.layer}); S.ch = G.saved.ch; renderAll(); sendSteer(true); } };
+
+connect();
+setMode('chat');
+})();
+</script>
+</body>
+</html>
