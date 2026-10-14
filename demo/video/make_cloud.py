@@ -1,8 +1,8 @@
-"""Data for the trailer's "how the axis is found" scene: every S2_1P sentence of both families (ours and the paper's)
+"""Data for the demo video's "how the axis is found" scene: every S2_1P sentence of both families (ours and the paper's)
 read at the final token of "... I feel:" at the pleasure layer of Qwen2.5-3B-Instruct, projected on the study's unit
 pleasure and pain directions (results/Qwen_2.5_3B_instruct/analysis/vectors.npz), centered on the pooled controls.
 
-    python demo/trailer/make_cloud.py      # ~1 min on a laptop GPU; writes demo/trailer/cloud.json
+    python demo/video/make_cloud.py      # ~1 min on a laptop GPU; writes demo/video/cloud.json
 """
 import json, sys
 from pathlib import Path

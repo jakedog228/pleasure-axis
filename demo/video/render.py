@@ -1,8 +1,8 @@
-"""Render the trailer (index.html) frame by frame to video. Every frame is drawn by the page's own render(t), so the
+"""Render the demo video (index.html) frame by frame to video. Every frame is drawn by the page's own render(t), so the
 output is exact regardless of machine speed.
 
-    python demo/trailer/render.py                        # trailer.mp4 (1920x1080, 30 fps, with music) + trailer.gif (silent)
-    python demo/trailer/render.py --stills 5 12 30       # PNG stills at those seconds into stills/, for checking
+    python demo/video/render.py                        # demo.mp4 (1920x1080, 30 fps, with music) + demo.gif (silent)
+    python demo/video/render.py --stills 5 12 30       # PNG stills at those seconds into stills/, for checking
 
 Needs playwright (python -m playwright install chromium) and ffmpeg on PATH.
 """
@@ -44,8 +44,8 @@ async def main(a):
         dur = await pg.evaluate("window.__duration")
         n = int(dur * a.fps)
         w, h = int(1280 * a.scale), int(720 * a.scale)
-        mp4 = HERE / "trailer.mp4"
-        music = HERE / "media" / "living-voyage.mp3"      # already trimmed to the trailer and faded out
+        mp4 = HERE / "demo.mp4"
+        music = HERE / "media" / "living-voyage.mp3"      # already trimmed to the demo video and faded out
         ff = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "image2pipe", "-framerate", str(a.fps), "-c:v", "mjpeg", "-i", "-",
                                "-i", str(music), "-map", "0:v", "-map", "1:a", "-vf", f"scale={w}:{h}", "-c:v", "libx264",
                                "-preset", "slow", "-crf", "20", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-shortest",
@@ -60,7 +60,7 @@ async def main(a):
         await b.close()
     print(f"{n} frames -> {mp4}")
     # README preview: smaller GIF with a per-video palette
-    gif = HERE / "trailer.gif"
+    gif = HERE / "demo.gif"
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(mp4), "-vf",
                     f"fps={a.gif_fps},scale={a.gif_width}:-1:flags=lanczos,split[x][y];[x]palettegen=max_colors=96:stats_mode=diff[p];"
                     f"[y][p]paletteuse=dither=bayer:bayer_scale=4:diff_mode=rectangle", str(gif)], check=True)

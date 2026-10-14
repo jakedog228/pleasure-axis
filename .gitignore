@@ -15,5 +15,5 @@ __pycache__/
 # python bytecode
 __pycache__/
 
-# trailer preview stills (render.py --stills)
-demo/trailer/stills/
+# demo video preview stills (render.py --stills)
+demo/video/stills/

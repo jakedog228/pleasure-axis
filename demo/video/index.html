@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* A ~63 s trailer for the repo, cut to the bar grid of its music (122 BPM: one bar = 1.967 s). Every frame is a pure
+/* A ~61 s demo video for the repo, cut to the bar grid of its music (122 BPM: one bar = 1.967 s). Every frame is a pure
    function of time (render(t)), so the page plays in a browser and also renders frame-exact to video (render.py).
    Stage 1280x720, scaled to fit; same palette and fonts as the live dashboard. Data: the dots are real projections from
    Qwen2.5-3B (make_cloud.py); every model text is a logged generation (results/Qwen_2.5_7B_instruct/demo/) or the live
@@ -99,7 +99,7 @@ body.capture #ui,body.capture #start{display:none}
 </style>
 </head>
 <body>
-<div id="stage" role="img" aria-label="Animated trailer for The Pleasure Axis: how the paper's pain axis is found and used for steering, the inverted pleasure axis, the findings, and the live dashboard">
+<div id="stage" role="img" aria-label="Animated demo video for The Pleasure Axis: how the paper's pain axis is found and used for steering, the inverted pleasure axis, the findings, and the live dashboard">
   <div class="glow" id="glow"></div>
   <svg id="field" width="1280" height="720" viewBox="0 0 1280 720" aria-hidden="true"><g id="dots"></g></svg>
   <div class="abs eyebrow" id="brand">The Pleasure Axis</div>
@@ -277,7 +277,13 @@ function show(el, t, a, b, dy = 14, d = .3) {
 const typed = (s, t, a, cps = 60) => s.slice(0, Math.max(0, Math.floor((t - a) * cps)));
 
 // ------------------------------------------------------------------ timeline, on the music's bar grid
-const BEAT = 60 / 122, BAR = 4 * BEAT, BAR0 = .02;
+// media/living-voyage.mp3 starts MUSIC_CUT s into the original track (its silence and most of the opening swell are
+// trimmed off). In the original, downbeats fall at 2.486 s + n bars (measured: every section change lands there), so
+// here bar(1) = 0.34 s and the title hits almost at once. The big moments in the music, each given a reveal:
+// bar 3 the band comes in (pain arrow), bar 7 a lift (pleasure != -pain), bar 15 an accent (warmth), bar 18 the
+// biggest lift (the varieties' one-word answers), bar 25 a crash (live caption).
+const MUSIC_CUT = 2.146;
+const BEAT = 60 / 122, BAR = 4 * BEAT, BAR0 = 2.486 - MUSIC_CUT - BAR;
 const bar = (n) => BAR0 + n * BAR;
 const SC = [
   {id: 's-title', a: 0, b: bar(2), glow: ['#f07a3c', 30, 40, .9]},
@@ -289,9 +295,9 @@ const SC = [
   {id: 's-syco', a: bar(22), b: bar(24), ch: () => '04 · findings', glow: ['#a27ad9', 50, 60, .4]},
   {id: 's-live1', a: bar(24), b: bar(27), ch: () => '05 · live dashboard', glow: ['#f07a3c', 50, 55, .45]},
   {id: 's-live2', a: bar(27), b: bar(30), ch: () => '05 · live dashboard', glow: ['#f07a3c', 50, 55, .45]},
-  {id: 's-end', a: bar(30), b: 63, glow: ['#f07a3c', 70, 40, .8]},
+  {id: 's-end', a: bar(30), b: 63.033 - MUSIC_CUT, glow: ['#f07a3c', 70, 40, .8]},
 ];
-const DUR = 63;
+const DUR = 63.033 - MUSIC_CUT;
 SC.forEach(s => { s.el = $(s.id); });
 const C0 = bar(2), FLIP = bar(5), NOTNEG = bar(7), DIALS = bar(9), END = bar(30);
 
@@ -348,7 +354,7 @@ function rField(t) {
     const x = lerp(ex.fp[0], px, k), y = lerp(ex.fp[1], py, k);
     const waiting = !inEnd && ex.k === 'h' && t > C0 - .5 && t < ex.fly;
     const gone = ex.k === 'h' ? prog(t, NOTNEG - .3, NOTNEG) : prog(t, C0 + 3.2, C0 + 3.6);
-    const a = (inEnd ? 0 : 1) * (waiting ? .1 : 1) * (1 - gone) * env(t, .3 + j * .25, 99, .4);
+    const a = (inEnd ? 0 : 1) * (waiting ? .1 : 1) * (1 - gone) * env(t, -.2 + j * .12, 99, .4);
     ex.d.setAttribute('cx', x); ex.d.setAttribute('cy', y); ex.d.setAttribute('r', 6); ex.d.style.opacity = a;
     ex.lf.setAttribute('x', x + 14); ex.lf.setAttribute('y', y + 5); ex.lf.style.opacity = waiting ? 0 : a * (1 - eout(prog(t, ex.fly, ex.fly + .3)));
     ex.ls.setAttribute('x', x + 12); ex.ls.setAttribute('y', y + 5); ex.ls.style.opacity = a * eout(prog(t, ex.fly + .6, ex.fly + 1));
@@ -360,11 +366,11 @@ $('tword').innerHTML = [...'The Pleasure Axis'].map(c => `<span>${c === ' ' ? '&
 const tspans = [...$('tword').children];
 function rTitle(l) {
   // the beat lands at bar 1: the title slams in on it
-  const a0 = bar(1) - .12;
+  const a0 = bar(1) - .2;
   tspans.forEach((sp, i) => { const k = eback(prog(l, a0 + i * .018, a0 + .4 + i * .018));
     sp.style.opacity = clamp(k); sp.style.transform = `translateY(${((1 - k) * 46).toFixed(1)}px)`;
     sp.style.color = i >= 4 && i < 12 ? `color-mix(in srgb, var(--warm) ${Math.round(100 * eio(prog(l, bar(1) + .5, bar(1) + 1.1)))}%, var(--ink))` : ''; });
-  show($('tsub'), l, bar(1) + .35, 99);
+  show($('tsub'), l, bar(1) + BEAT / 2, 99);
 }
 
 // ------------------------------------------------------------------ plot scene: axes, arrows, panels
@@ -417,7 +423,7 @@ function rCloud(l) {
   ax0.style.opacity = env(t, C0 - .2, DIALS + .6, .4); ax1.style.opacity = eout(prog(t, DIALS + 1.0, DIALS + 1.6));
   ax0h.setAttribute('x1', 60); ax0h.setAttribute('x2', 690); ax0h.setAttribute('y1', oy); ax0h.setAttribute('y2', oy);
   ax0v.setAttribute('x1', ox); ax0v.setAttribute('x2', ox); ax0v.setAttribute('y1', 660); ax0v.setAttribute('y2', 80);
-  ctrlMark.setAttribute('cx', ox); ctrlMark.setAttribute('cy', oy); ctrlMark.style.opacity = env(t, C0 + 1.6, DIALS, .3);
+  ctrlMark.setAttribute('cx', ox); ctrlMark.setAttribute('cy', oy); ctrlMark.style.opacity = env(t, C0 + 3 * BEAT, DIALS, .3);
   const s = 1.25;   // arrows run a little past the centroid so the heads clear the cloud
   const draw = (line, lbl, c1, ta, dur, dx, dy) => {
     const k = eio(prog(t, ta, ta + dur)); const [x1, y1] = P(c1[0] * k, c1[1] * k);
@@ -425,7 +431,7 @@ function rCloud(l) {
     lbl.setAttribute('x', x1 + dx); lbl.setAttribute('y', y1 + dy); lbl.style.opacity = eout(prog(t, ta + dur * .7, ta + dur + .25));
     return [x1, y1];
   };
-  const tPain = draw(arPain, lbPain, [cPain[0] * s, cPain[1] * s], C0 + 1.7, .7, -36, -14);
+  const tPain = draw(arPain, lbPain, [cPain[0] * s, cPain[1] * s], C0 + BAR - .04, .6, -36, -14);
   const tPl = draw(arPl, lbPl, [cPl[0] * s, cPl[1] * s], FLIP + 1.2, .7, 10, 22);
   draw(arGhost, lbGhost, [-cPain[0] * .62, -cPain[1] * .62], NOTNEG + .1, .6, -60, 26);
   arGhost.style.opacity = env(t, NOTNEG + .1, DIALS + .2, .25); lbGhost.style.opacity = env(t, NOTNEG + .5, DIALS + .2, .25);
@@ -438,13 +444,13 @@ function rCloud(l) {
   arcLbl.style.opacity = env(t, NOTNEG + 1.1, DIALS + 1.2, .3);
   qL.style.opacity = env(t, DIALS + 1.5, 99, .4); qR.style.opacity = env(t, DIALS + 1.7, 99, .4);
   // panels
-  show($('b1'), t, C0 + .2, FLIP); show($('b2'), t, FLIP + .05, NOTNEG); show($('b3'), t, NOTNEG + .05, DIALS); show($('b4'), t, DIALS + .05, 99);
+  show($('b1'), t, C0 + .05, FLIP); show($('b2'), t, FLIP + .05, NOTNEG); show($('b3'), t, NOTNEG + .05, DIALS); show($('b4'), t, DIALS + .05, 99);
   $('slice').style.opacity = env(t, C0 + .8, 99, .4);
   // formula builds on beats
-  fdots.forEach((d, i) => { const g = i < 11 ? 0 : 1; d.style.opacity = eout(prog(t, C0 + .5 + g * BEAT + (i % 11) * .03, C0 + .8 + g * BEAT + (i % 11) * .03)); });
-  fm.style.opacity = eout(prog(t, C0 + .5 + BEAT * .6, C0 + .8 + BEAT * .6)); fe.style.opacity = eout(prog(t, C0 + .5 + BEAT * 1.6, C0 + .8 + BEAT * 1.6));
-  const fk = eio(prog(t, C0 + .5 + BEAT * 2, C0 + .5 + BEAT * 3)); farrow.setAttribute('x2', 290 + fk * 80); farrow.setAttribute('y2', 70 - fk * 44);
-  farrow.style.opacity = fk > .02 ? 1 : 0; fal.style.opacity = eout(prog(t, C0 + .5 + BEAT * 2.8, C0 + .5 + BEAT * 3.4));
+  fdots.forEach((d, i) => { const g = i < 11 ? 0 : 2; d.style.opacity = eout(prog(t, C0 + BEAT + g * BEAT / 2 + (i % 11) * .02, C0 + BEAT + .25 + g * BEAT / 2 + (i % 11) * .02)); });
+  fm.style.opacity = eout(prog(t, C0 + BEAT * 1.5, C0 + BEAT * 1.5 + .2)); fe.style.opacity = eout(prog(t, C0 + BEAT * 3, C0 + BEAT * 3 + .2));
+  const fk = eout(prog(t, C0 + BAR - .04, C0 + BAR + .45)); farrow.setAttribute('x2', 290 + fk * 80); farrow.setAttribute('y2', 70 - fk * 44);
+  farrow.style.opacity = fk > .02 ? 1 : 0; fal.style.opacity = eout(prog(t, C0 + BAR + .3, C0 + BAR + .6));
   aucBars.forEach((r, i) => { const k = eback(prog(t, FLIP + .35 + i * BEAT / 4, FLIP + .75 + i * BEAT / 4)); const h = (AUCS[i] - .5) / .5 * 78 * clamp(k, 0, 1.2);
     r.setAttribute('y', 92 - h); r.setAttribute('height', Math.max(0, h)); });
   band.setAttribute('width', (cx(.48) - cx(.23)) * eio(prog(t, NOTNEG + .5, NOTNEG + 1.2))); bandT.style.opacity = eout(prog(t, NOTNEG + 1, NOTNEG + 1.4));
@@ -511,7 +517,7 @@ const wEls = WORDS.map(([w, size, x, y], i) => { const e = document.createElemen
   Object.assign(e.style, {fontSize: size + 'px', left: x + 'px', top: y + 'px', color: `hsl(${18 + i * 3}, 85%, ${60 + (i % 3) * 5}%)`}); $('wordsHost').appendChild(e); return e; });
 function rWords(l) {
   show(document.querySelector('#s-words .htop'), l, .02);
-  wEls.forEach((e, i) => { const a = .2 + i * BEAT / 2, k = eback(prog(l, a, a + .35));
+  wEls.forEach((e, i) => { const a = i * BEAT / 2 - .04, k = eback(prog(l, a, a + .35));
     e.style.opacity = eout(prog(l, a, a + .15)); e.style.transform = `translate(-50%,-50%) scale(${(.4 + .6 * k).toFixed(3)})`; });
   show($('wordsCap'), l, BAR);
 }
@@ -524,10 +530,15 @@ const chipEls = VARS.map(([n, ans, cos, ok], i) => { const e = document.createEl
   $('chips').appendChild(e); return [e, ok]; });
 function rVar(l) {
   show(document.querySelector('#s-var .htop'), l, .02); show(document.querySelector('#s-var .cap'), l, .15);
+  // the boxes (just the kind) build through the first bar; the answers burst in on the next downbeat, the biggest lift
+  // in the music; then the misses dim and the score comes in
   const dimAt = 2 * BAR;
-  chipEls.forEach(([e, ok], i) => { const a = .3 + i * BEAT / 4, k = eback(prog(l, a, a + .3));
+  chipEls.forEach(([e, ok], i) => { const a = .1 + i * BEAT / 6, k = eback(prog(l, a, a + .3));
     e.style.opacity = eout(prog(l, a, a + .15)) * (ok ? 1 : lerp(1, .4, eio(prog(l, dimAt, dimAt + .4))));
     e.style.transform = `translateY(${((1 - k) * 22).toFixed(1)}px)`;
+    const va = e.querySelector('.va'), b = BAR - .04 + i * BEAT / 8, kb = eback(prog(l, b, b + .3));
+    va.style.opacity = eout(prog(l, b, b + .1)); va.style.transformOrigin = '0 60%';
+    va.style.transform = `scale(${(.5 + .5 * clamp(kb, 0, 1.3)).toFixed(3)})`;
     const m = e.querySelector('.miss'); if (m) m.style.opacity = eout(prog(l, dimAt, dimAt + .4)); });
   show($('vcap'), l, dimAt);
 }
@@ -537,7 +548,7 @@ const barEls = BEH.map(([n, v, c], i) => { const r = document.createElement('div
   r.innerHTML = `<div class="bl">${n}</div><div class="bt"><div class="bf" style="--c:${c}"></div><div class="bv"></div></div>`; $('bars').appendChild(r); return [r, v]; });
 function rBeh(l) {
   show(document.querySelector('#s-beh .htop'), l, .02); show(document.querySelector('#s-beh .cap'), l, .15);
-  barEls.forEach(([r, v], i) => { const a = .3 + i * BEAT / 2, k = eio(prog(l, a, a + .6));
+  barEls.forEach(([r, v], i) => { const a = BEAT + i * BEAT / 2, k = eio(prog(l, a, a + .6));
     r.style.opacity = eout(prog(l, a - .05, a + .15));
     const w = v / 60 * 720 * k; r.querySelector('.bf').style.width = w + 'px';
     const bv = r.querySelector('.bv'); bv.style.left = (w + 12) + 'px'; bv.textContent = (v * k).toFixed(1) + '%'; });
@@ -548,7 +559,7 @@ const colEls = SYC.map(([n, v, c], i) => { const e = document.createElement('div
   e.innerHTML = `<div class="cf" style="--c:${c}"></div><div class="cv"></div><div class="cl">${n}</div>`; $('cols').appendChild(e); return [e, v]; });
 function rSyco(l) {
   show(document.querySelector('#s-syco .htop'), l, .02); show(document.querySelector('#s-syco .cap'), l, .15);
-  colEls.forEach(([e, v], i) => { const a = .3 + i * BEAT, k = eio(prog(l, a, a + .5)); const h = v / 60 * 300 * k;
+  colEls.forEach(([e, v], i) => { const a = BEAT * (i ? i + 1 : .5), k = eio(prog(l, a, a + .5)); const h = v / 60 * 300 * k;
     e.style.opacity = eout(prog(l, a - .05, a + .15));
     e.querySelector('.cf').style.height = Math.max(2, h) + 'px'; const cv = e.querySelector('.cv'); cv.style.bottom = (h + 10) + 'px'; cv.textContent = Math.round(v * k) + '%'; });
 }
@@ -583,15 +594,15 @@ function vid(key, lt, active) {
   if (Math.abs(v.currentTime - target) > .25) v.currentTime = target;
   if (v.paused && playing) v.play().catch(() => {});
 }
-function rLive1(l, on) { vid('v1', l, on); show($('l1cap'), l, 1.3); }
-function rLive2(l, on) { vid('v2', l, on); show($('l2cap'), l, 1.3); }
+function rLive1(l, on) { vid('v1', l, on); show($('l1cap'), l, BAR - .05); }
+function rLive2(l, on) { vid('v2', l, on); show($('l2cap'), l, BAR - .05); }
 
 // ------------------------------------------------------------------ end
 function rEnd(l) {
   show(document.querySelector('#s-end h1'), l, .05, 99, 20);
-  [...$('pills').children].forEach((p, i) => { const k = eback(prog(l, .35 + i * BEAT / 2, .65 + i * BEAT / 2));
+  [...$('pills').children].forEach((p, i) => { const k = eback(prog(l, BEAT + i * BEAT / 2, BEAT + .3 + i * BEAT / 2));
     p.style.opacity = clamp(k); p.style.transform = `scale(${(.7 + .3 * clamp(k, 0, 1.1)).toFixed(3)})`; });
-  show($('cmdrow'), l, .35 + 6 * BEAT / 2, 99, 10); show($('credit'), l, 1.2, 99, 0);
+  show($('cmdrow'), l, BEAT + 6 * BEAT / 2, 99, 10); show($('credit'), l, 1.2, 99, 0);
 }
 
 const R = {'s-title': rTitle, 's-cloud': rCloud, 's-steer': rSteer, 's-words': rWords, 's-var': rVar, 's-beh': rBeh, 's-syco': rSyco,
@@ -611,7 +622,7 @@ function render(t) {
   gl = gl || SC[SC.length - 1];
   const g = $('glow'), [c, gx, gy, gi] = gl.glow;   // steady within a scene: a moving glow touches every pixel, which bloats the GIF
   g.style.setProperty('--gc', c); g.style.setProperty('--gx', gx + '%'); g.style.setProperty('--gy', gy + '%');
-  g.style.opacity = (gi * eout(prog(t, bar(1) - .3, bar(1) + .3)) * (1 - prog(t, 61.5, 63))).toFixed(3);
+  g.style.opacity = (gi * eout(prog(t, bar(1) - .3, bar(1) + .3)) * (1 - prog(t, DUR - 1.5, DUR))).toFixed(3);
   $('brand').style.opacity = env(t, C0, END, .4);
   const ch = gl.ch ? gl.ch(t - gl.a) : ''; $('chapter').textContent = ch; $('chapter').style.opacity = ch ? env(t, C0, END, .4) : 0;
   $('fill').style.width = (t / DUR * 100).toFixed(2) + '%';
