@@ -4,7 +4,7 @@ A replication and extension of *The Pain Axis: LLMs Represent Self-Directed Harm
 (Tagliabue, Dung & Berg, arXiv:2609.16247), studying pleasure-related representations and behavior in
 11 open-weight language models (0.5B–14B).
 
-https://github.com/user-attachments/assets/12dc265c-8646-4076-85f7-48304e6aefc5
+https://github.com/user-attachments/assets/760a04e4-7c64-498e-a7ad-cc3e2484607d
 
 ## Research objectives
 
